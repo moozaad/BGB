@@ -1,11 +1,26 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <script src="./jquery.min.js"></script>
+        <link type="text/css" href="css/ui-lightness/jquery-ui-1.9.2.custom.min.css" rel="Stylesheet" />
+         <style>
+             .selectable .ui-selecting {
+             background: #ccc;
+             }
+             .selectable .ui-selected {
+             background: #999;
+         }
+         .entry {
+             width:300px;
+            }
+
+
+         </style>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
         <script type="text/javascript">
             // should IDs be programatically generated greg, seems like it would be safer and less hassle
             // in the long wrong
-            // but what is using ids in saving/sharing lists? Can't have them changing!
+            // but what if using ids in saving/sharing lists? Can't have them changing!
             var forces = [
                 {
                     "id":1,
@@ -93,8 +108,9 @@ function render_name(force) {
 function render_sections(force) {
     var text="";
     for(var i = 0; i < force['sections'].length; i++) {
-        text = text + "<div id=" + force.id + "_" + force['sections'][i].id + "></div>";
+        text = text + "<div class=' section ui-widget selectable' id=" + force.id + "_" + force['sections'][i].id + ">";
         text = text+render_entries(force['sections'][i]);
+        text = text + "</div>";
     }
     return text;
 //        for(key in force['sections'])
@@ -103,7 +119,7 @@ function render_sections(force) {
 function render_entries(section) {
     var text="";
     for(var i = 0; i < section['entries'].length; i++) {
-        text = text + "<div id='greg_" + section['entries'][i].id+"'>";
+        text = text + "<div class='entry ui-widget-content' id='greg_" + section['entries'][i].id+"'>";
         text = text + "<p>"+section['entries'][i].name+"</p>";
         for(var j = 0; j < section['entries'][i]['options'].length; j++) {
             text = text + '<select name="' + section['entries'][i]['options'][j]['name']+'">';
@@ -136,20 +152,17 @@ function render() {
     render_force(0);
 }
             $( document ).ready( function() {
-                //$("input[type='text'], textarea, input[type='password']").focus(function() { alert('focus'); });
-                /*for(var i = 0; i < forces.length; i++) {
-                    for(key in forces[i]) {
-                        alert(key + " :: " + forces[i][key]);
-                    }
-                    }*/
                 render();
+                $( ".selectable" ).bind("mousedown", function(e) {
+                      e.metaKey = true;
+                      }).selectable({ filter: 'div' });
             });
         </script>
     </head>
     <body><h1>It works!</h1>
 <p>This is the default web page for this server.</p>
 <p>The web server software is running but no content has been added, yet.</p>
-<div id="main" style="width:100%; clear:both;">abc</div>
+<div id="main" style="width:100%; clear:both;" class="ui-widget">abc</div>
 
 
 </body></html>
