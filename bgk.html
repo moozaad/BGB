@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="./jquery.min.js"></script>
+        <script type="text/javascript">
+            // should IDs be programatically generated greg, seems like it would be safer and less hassle
+            // in the long wrong
+            // but what is using ids in saving/sharing lists? Can't have them changing!
+            var forces = [
+                {
+                    "id":1,
+                    "name":"Panzer Division Battlegroup",
+                    "sections":[
+                        {
+                            "id":1, 
+                            "name":"Forward Headquarters Units",
+                            "allows":[6,7,8],
+                            "entries":[
+                            {
+                                "id":1,
+                                "name":"Forward Headquarters",
+                                "options":[
+                                    {
+                                        "name":"Transport",
+                                        "choices":[
+                                            {"id":1,"text":"SdKfz 251/3","cost":0},
+                                            {"id":2,"text":"SdKfz 251/6","cost":0},
+                                            {"id":3,"text":"Panzer II/F","cost":0},
+                                            {"id":4,"text":"Panzer III/J","cost":6},
+                                            {"id":5,"text":"Panzer IV/G","cost":26},
+                                            {"id":6,"text":"Panzer IV/H","cost":32},
+                                            {"id":7,"text":"Tiger","cost":61},
+                                        ]
+                                    }
+                                    
+                                 ]
+
+                            },
+                            {
+                                "id":2,
+                                "name":"Luftwaffe Air Control Officer",
+                                "options":[
+                                    {
+                                        "name":"Transport",
+                                        "choices":[
+                                            {"id":1,"text":"Kübelwagon","cost":0},
+                                            {"id":2,"text":"Medium Truck","cost":2},
+                                            {"id":3,"text":"SdKfz 250/3","cost":12},
+                                            {"id":4,"text":"SdKfz 251/3","cost":12},
+                                        ]
+                                    }
+                                    
+                                 ]
+
+                            }
+                            ]
+
+                        },
+                    /*
+                        {
+                            "id":2, 
+                            "name":"Infantry Units",
+                            "allows":[6,7,8]
+                        },
+                        {
+                            "id":3, 
+                            "name":"Tank Units",
+                            "allows":[6,7,8]
+                        },
+                        {
+                            "id":4, 
+                            "name":"Artillery Units",
+                            "allows":[6,7,8]
+                        },
+                        {
+                            "id":5, 
+                            "name":"Defences",
+                            "allows":[6,7,8]
+                            },
+                            */
+                    ],
+                },
+                {
+                    "id":2,
+                    "name":"Second Battlegroup",
+                },
+                ];
+
+// maybe make it get which value from a select?
+function render_name(force) {
+    return("<p>"+force['name']+"</p>");
+}
+function render_sections(force) {
+    var text="";
+    for(var i = 0; i < force['sections'].length; i++) {
+        text = text + "<div id=" + force.id + "_" + force['sections'][i].id + "></div>";
+        text = text+render_entries(force['sections'][i]);
+    }
+    return text;
+//        for(key in force['sections'])
+}
+
+function render_entries(section) {
+    var text="";
+    for(var i = 0; i < section['entries'].length; i++) {
+        text = text + "<div id='greg_" + section['entries'][i].id+"'>";
+        text = text + "<p>"+section['entries'][i].name+"</p>";
+        for(var j = 0; j < section['entries'][i]['options'].length; j++) {
+            text = text + '<select name="' + section['entries'][i]['options'][j]['name']+'">';
+            for (var k=0; k<section.entries[i].options[j].choices.length; k++) {
+                text = text + "<option cost='"+section.entries[i].options[j].choices[k].cost+"' value='" + section.entries[i].options[j].choices[k].id +"'>"+section.entries[i].options[j].choices[k].text + "</option>"; 
+            }
+            text = text + "</select>";
+        }
+
+
+
+        text = text + "</div>"
+    }
+    return text;
+}
+
+function render_force(which) {
+    var text="";
+    var force = forces[which];
+    text = render_name(force);
+    text = text + render_sections(force);
+    for(key in force) {
+        text = text+key;
+    }
+    $('#main').html(text);
+
+}
+
+function render() {
+    render_force(0);
+}
+            $( document ).ready( function() {
+                //$("input[type='text'], textarea, input[type='password']").focus(function() { alert('focus'); });
+                /*for(var i = 0; i < forces.length; i++) {
+                    for(key in forces[i]) {
+                        alert(key + " :: " + forces[i][key]);
+                    }
+                    }*/
+                render();
+            });
+        </script>
+    </head>
+    <body><h1>It works!</h1>
+<p>This is the default web page for this server.</p>
+<p>The web server software is running but no content has been added, yet.</p>
+<div id="main" style="width:100%; clear:both;">abc</div>
+
+
+</body></html>
+
