@@ -11,9 +11,14 @@
          }
          .entry {
              width:300px;
-            }
-
-
+             display:inline-block;
+             float:left;
+             margin:1px;
+         }
+         .section {
+             width:100%;
+             overflow:auto;
+         }
          </style>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
@@ -83,8 +88,8 @@
                                         "name":"Transport",
                                         "choices":[
                                             {"id":1,"text":"Medium Radio Truck","cost":0},
-                                            {"id":2,"text":"SdKfz 251/3 Radio Half Track","cost":6},
-                                            {"id":3,"text":"SdKfz 250/3 Radio Half Track","cost":6},
+                                            {"id":2,"text":"SdKfz 251/3 Radio H.T.","cost":6},
+                                            {"id":3,"text":"SdKfz 250/3 Radio H.T.","cost":6},
                                             {"id":4,"text":"SdKfz 236","cost":6},
                                             {"id":5,"text":"SdKfz 223","cost":6},
                                             {"id":6,"text":"Panzer III M","cost":42, "br":2},
@@ -117,19 +122,54 @@
                             ]
 
                         },
-                    /*
                         {
                             "id":2, 
                             "name":"Infantry Units",
                             "allows":[6,7,8],
                             "requires":false,
+                            "entries":[
+                                {
+                                    "id":1,
+                                    "name":"Sniper",
+                                    "cost":10,
+                                    "br":1,
+                                    "options":[
+                                        {
+                                            "name":"Unit Composition",
+                                            "choices":[
+                                                {"id":1,"text":"1 man","cost":0},
+                                                {"id":2,"text":"+Spotter","cost":5},
+                                            ]
+                                        }
+                                    ]
+
+                                },
+                            ],
                         },
                         {
                             "id":3, 
                             "name":"Tank Units",
                             "allows":[6,7,8],
                             "requires":false,
-                        },
+                            "entries":[
+                                {
+                                    "id":1,
+                                    "name":"Sniper",
+                                    "cost":10,
+                                    "br":1,
+                                    "options":[
+                                        {
+                                            "name":"Unit Composition",
+                                            "choices":[
+                                                {"id":1,"text":"1 man","cost":0},
+                                                {"id":2,"text":"+Spotter","cost":5},
+                                            ]
+                                        }
+                                    ]
+
+                                },
+                            ],
+                        },/*
                         {
                             "id":4, 
                             "name":"Artillery Units",
@@ -167,6 +207,93 @@
                             },
                         ],
                     },
+                    {
+                        "id":7, 
+                        "name":"Engineer Support Units",
+                        "allows":null,
+                        "requires":true,
+                        "entries":[
+                            {
+                                "id":1,
+                                "name":"Light Bridging Unit",
+                                "cost":18,
+                                "br":2,
+                                "options":[
+                                    {
+                                        "name":"Unit Composition",
+                                        "choices":[
+                                            {"id":1,"text":"Heavy Truck","cost":0},
+                                            {"id":2,"text":"SdKfz 251/7","cost":8},
+                                        ]
+                                    }
+                                ]
+                            },
+                        ],
+                    },
+                    {
+                        "id":8, 
+                        "name":"Logistics Support Units",
+                        "allows":null,
+                        "requires":true,
+                        "entries":[
+                            {
+                                "id":1,
+                                "name":"Supply Column",
+                                "cost":8,
+                                "br":1,
+                                "options":[
+                                    {
+                                        "name":"Unit Composition",
+                                        "choices":[
+                                            {"id":1,"text":"1 medium truck","cost":0},
+                                            {"id":2,"text":"2 medium trucks","cost":4},
+                                            {"id":3,"text":"3 medium trucks","cost":8},
+                                            {"id":4,"text":"4 medium trucks","cost":12},
+                                        ]
+                                    },
+                                    {
+                                        "name":"Armoured carriers",
+                                        "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"Replace 1 truck","cost":6},
+                                        ]
+                                    },
+
+                                ]
+                            },
+                        ],
+                    },
+                    {
+                        "id":9, 
+                        "name":"Specialist Support Units",
+                        "allows":null,
+                        "requires":true,
+                        "entries":[
+                            {
+                                "id":1,
+                                "name":"Heavy Anti-Tank Gun",
+                                "cost":51,
+                                "br":3,
+                                "options":[
+                                    {
+                                        "name":"Loader team",
+                                        "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"3-man","cost":10},
+                                        ]
+                                    },
+                                    {
+                                        "name":"Tow",
+                                        "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"SdkFz 7","cost":8},
+                                        ]
+                                    },
+
+                                ]
+                            },
+                        ],
+                    },
                     ],
                 },
                 {
@@ -182,10 +309,12 @@ function render_name(force) {
 function render_sections(force) {
     var text="";
     for(var i = 0; i < force['sections'].length; i++) {
+        text = text + "<div data-allows='"+ force['sections'][i].allows +"' class='section ui-widget ";
         if (force.sections[i].requires)
-            text = text + "<div allows='"+ force['sections'][i].allows +"' class=' section ui-widget ui-state-disabled' id=" + force.id + "_" + force['sections'][i].id + ">";
+            text = text + "ui-state-disabled";
         else
-            text = text + "<div allows='"+ force['sections'][i].allows +"' class=' section ui-widget selectable' id=" + force.id + "_" + force['sections'][i].id + ">";
+            text = text + "selectable";
+        text = text + "' id=" + force.id + "_" + force['sections'][i].id + ">";
         text = text+render_entries(force['sections'][i]);
         text = text + "</div>";
     }
@@ -193,13 +322,32 @@ function render_sections(force) {
 //        for(key in force['sections'])
 }
 
+function count_allows() {
+    var selected = $('.ui-selected');
+    var allowed = {};
+    var array = $.map(selected, function(a)
+           // { alert($(a).parent().attr('id'));} );
+            { return ($(a).parent().data('allows')); } );
+    var totals={};
+    for (var i=0; i<array.length; i++){
+        var values = array[i].split(',');
+        for (var j=0; j<values.length; j++){
+            if (totals[values[j]])
+                totals[values[j]]=totals[values[j]]+1; // should use multiplier
+            else
+                totals[values[j]]=1; // should use multiplier
+        }
+    }
+    alert(JSON.stringify(totals));
+}
+
 function render_entries(section) {
     var text="";
     for(var i = 0; i < section['entries'].length; i++) {
-        text = text + "<div class='entry ui-widget-content' id='greg_" + section['entries'][i].id+"'>";
+        text = text + "<div data-allows-multiplier='"+ section['entries'][i].allows_multiplier + "' class='entry ui-widget-content' id='greg_" + section['entries'][i].id+"'>";
         text = text + "<p>"+section['entries'][i].name+"</p>";
         for(var j = 0; j < section['entries'][i]['options'].length; j++) {
-            text = text + '<select name="' + section['entries'][i]['options'][j]['name']+'">';
+            text = text + '<p style="display:inline">'+section['entries'][i]['options'][j]['name']+'</p><select name="' + section['entries'][i]['options'][j]['name']+'">';
             for (var k=0; k<section.entries[i].options[j].choices.length; k++) {
                 text = text + "<option cost='"+section.entries[i].options[j].choices[k].cost+"' value='" + section.entries[i].options[j].choices[k].id +"'>"+section.entries[i].options[j].choices[k].text + "</option>"; 
             }
@@ -240,6 +388,7 @@ function unselected(event, ui){
     // alert($(ui.unselected).parent().attr('allows'));
     // Decide if we need to disable any segments
     // actually no good get currently disabled allows, we need to get all currently selected allows and compare versus currently selected requires perhaps?
+    count_allows(); //greg
 }
 
 function update_dynamic(){
@@ -255,10 +404,8 @@ function update_dynamic(){
 // greg http://stackoverflow.com/questions/4492987/programmatically-unselect-a-jquery-ui-selectable-widget
         </script>
     </head>
-    <body><h1>It works!</h1>
-<p>This is the default web page for this server.</p>
-<p>The web server software is running but no content has been added, yet.</p>
-<div id="main" style="width:100%; clear:both;" class="ui-widget">abc</div>
+    <body>
+<div id="main" style="width:100%; clear:both;" class="ui-widget">An error has occurred in the javascript rendering of this page. Do you have an uptodate browser?</div>
 
 
 </body></html>
