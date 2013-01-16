@@ -330,6 +330,7 @@ function render_name(force) {
 function render_sections(force) {
     var text="";
     for(var i = 0; i < force['sections'].length; i++) {
+        text = text + "<div class='group'><h3>" + force['sections'][i].name+"</h3>";
         text = text + "<div data-allows='"+ force['sections'][i].allows +"' class='section ui-widget ";
         if (force.sections[i].requires)
             text = text + "ui-state-disabled";
@@ -337,10 +338,9 @@ function render_sections(force) {
             text = text + "selectable";
         text = text + "' id=" + force.id + "_" + force['sections'][i].id + ">";
         text = text+render_entries(force['sections'][i]);
-        text = text + "</div>";
+        text = text + "</div></div>";
     }
     return text;
-//        for(key in force['sections'])
 }
 
 function count_allows() {
@@ -386,10 +386,7 @@ function render_force(which) {
     var text="";
     var force = forces[which];
     text = render_name(force);
-    text = text + render_sections(force);
-    for(key in force) {
-        text = text+key;
-    }
+    text = text + "<div id='accordion'>" + render_sections(force) + "</div>";
     $('#main').html(text);
 
 }
@@ -413,7 +410,7 @@ function unselected(event, ui){
 }
 
 function update_entry_cost(entry) {
-    var cost_field = $(entry).contents().filter( function() { return $(this).attr('id')=='cost'; });
+    var cost_field = $(entry).find('p').filter( function() { return $(this).attr('id')=='cost'; });
     var selects = $(entry).find("select option").filter(':selected');
     var newCost = $(cost_field).data('initial-cost');
 
@@ -423,13 +420,23 @@ function update_entry_cost(entry) {
 }
 
 function option_change(event) {
-    //    alert(JSON.stringify(event));
-    //alert(JSON.stringify($(event.target)));
-    update_entry_cost($(this).parent(".entry"));
+    update_entry_cost($(this).parents(".entry"));
 }
 
 
 function update_dynamic(){
+    $("#accordion").accordion({
+        heightStyle: "content",
+        header: '> div > h3',
+        }).sortable({
+        axis: "y",
+        handle: "h3",
+        stop: function( event, ui ) {
+            // IE doesn't register the blur when sorting
+            // so trigger focusout handlers to remove .ui-state-focus
+            ui.item.children( "h3" ).triggerHandler( "focusout" );
+        }
+    });
     $( ".selectable" ).bind("mousedown", function(e) {
             e.metaKey = true;
             }).selectable({ filter: '.entry', unselecting:unselecting, unselected:unselected });
