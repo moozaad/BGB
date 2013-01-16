@@ -10,15 +10,36 @@
              background: #999;
          }
          .entry {
-             width:300px;
+             width:250px;
              display:inline-block;
              float:left;
              margin:1px;
+         }
+         .entry_name {
+             display:inline;
+             float:left;
          }
          .section {
              width:100%;
              overflow:auto;
          }
+         .opt_select {
+             display:inline;
+             float:right;
+             max-width:54%;
+         }
+         .choice {
+             clear:both;
+             border:solid;
+             overflow:hidden;
+        }
+        .opt_text {
+            max-width:45%;
+            display:inline;
+            float:left;
+            margin:0px 1px 0px 0px;
+            overflow:hidden;
+        }
          </style>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
@@ -135,7 +156,7 @@
                                     "br":1,
                                     "options":[
                                         {
-                                            "name":"Unit Composition",
+                                            "name":"Composition",
                                             "choices":[
                                                 {"id":1,"text":"1 man","cost":0},
                                                 {"id":2,"text":"+Spotter","cost":5},
@@ -159,7 +180,7 @@
                                     "br":1,
                                     "options":[
                                         {
-                                            "name":"Unit Composition",
+                                            "name":"Composition",
                                             "choices":[
                                                 {"id":1,"text":"1 man","cost":0},
                                                 {"id":2,"text":"+Spotter","cost":5},
@@ -196,7 +217,7 @@
                                 "br":1,
                                 "options":[
                                     {
-                                        "name":"Unit Composition",
+                                        "name":"Composition",
                                         "choices":[
                                             {"id":1,"text":"1 man","cost":0},
                                             {"id":2,"text":"+Spotter","cost":5},
@@ -220,7 +241,7 @@
                                 "br":2,
                                 "options":[
                                     {
-                                        "name":"Unit Composition",
+                                        "name":"Composition",
                                         "choices":[
                                             {"id":1,"text":"Heavy Truck","cost":0},
                                             {"id":2,"text":"SdKfz 251/7","cost":8},
@@ -243,7 +264,7 @@
                                 "br":1,
                                 "options":[
                                     {
-                                        "name":"Unit Composition",
+                                        "name":"Composition",
                                         "choices":[
                                             {"id":1,"text":"1 medium truck","cost":0},
                                             {"id":2,"text":"2 medium trucks","cost":4},
@@ -345,13 +366,13 @@ function render_entries(section) {
     var text="";
     for(var i = 0; i < section['entries'].length; i++) {
         text = text + "<div data-allows-multiplier='"+ section['entries'][i].allows_multiplier + "' class='entry ui-widget-content' id='greg_" + section['entries'][i].id+"'>";
-        text = text + "<p>"+section['entries'][i].name+"</p>";
+        text = text + "<div><p class='entry_name'>"+section['entries'][i].name+"</p><p id='cost' data-initial-cost='"+section['entries'][i].cost+"' style='display:inline; float:right;'>"+section['entries'][i].cost+"</p></div>";
         for(var j = 0; j < section['entries'][i]['options'].length; j++) {
-            text = text + '<p style="display:inline">'+section['entries'][i]['options'][j]['name']+'</p><select name="' + section['entries'][i]['options'][j]['name']+'">';
+            text = text + '<div class="choice"><p class="opt_text">'+section['entries'][i]['options'][j]['name']+'</p><select class="opt_select" name="' + section['entries'][i]['options'][j]['name']+'">';
             for (var k=0; k<section.entries[i].options[j].choices.length; k++) {
-                text = text + "<option cost='"+section.entries[i].options[j].choices[k].cost+"' value='" + section.entries[i].options[j].choices[k].id +"'>"+section.entries[i].options[j].choices[k].text + "</option>"; 
+                text = text + "<option data-cost='"+section.entries[i].options[j].choices[k].cost+"' value='" + section.entries[i].options[j].choices[k].id +"'>"+section.entries[i].options[j].choices[k].text + "</option>"; 
             }
-            text = text + "</select>";
+            text = text + "</select></div>";
         }
 
 
@@ -391,10 +412,28 @@ function unselected(event, ui){
     count_allows(); //greg
 }
 
+function update_entry_cost(entry) {
+    var cost_field = $(entry).contents().filter( function() { return $(this).attr('id')=='cost'; });
+    var selects = $(entry).find("select option").filter(':selected');
+    var newCost = $(cost_field).data('initial-cost');
+
+    for (var i=0; i<selects.length; i++)
+        newCost = newCost + $(selects[i]).data('cost');
+    $(cost_field).html(newCost);
+}
+
+function option_change(event) {
+    //    alert(JSON.stringify(event));
+    //alert(JSON.stringify($(event.target)));
+    update_entry_cost($(this).parent(".entry"));
+}
+
+
 function update_dynamic(){
     $( ".selectable" ).bind("mousedown", function(e) {
             e.metaKey = true;
-            }).selectable({ filter: 'div', unselecting:unselecting, unselected:unselected });
+            }).selectable({ filter: '.entry', unselecting:unselecting, unselected:unselected });
+    $(".opt_select").change(option_change);
 }
 
     $( document ).ready( function() {
