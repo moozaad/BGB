@@ -333,10 +333,10 @@ function render_sections(force) {
         text = text + "<div class='group'><h3>" + force['sections'][i].name+"</h3>";
         text = text + "<div data-allows='"+ force['sections'][i].allows +"' class='section ui-widget ";
         if (force.sections[i].requires)
-            text = text + "ui-state-disabled";
+            text = text + "ui-state-disabled' data-requires='true'";
         else
-            text = text + "selectable";
-        text = text + "' id=" + force.id + "_" + force['sections'][i].id + ">";
+            text = text + "selectable ' data-requires='false'";
+        text = text + " id=section_" + force['sections'][i].id + ">";
         text = text+render_entries(force['sections'][i]);
         text = text + "</div></div>";
     }
@@ -359,13 +359,30 @@ function count_allows() {
                 totals[values[j]]=1; // should use multiplier
         }
     }
-    alert(JSON.stringify(totals));
+    return totals;
+}
+
+function allow_removed() {
+    var requires = $('.section').filter( function() { return $(this).data('requires'); } );
+    $(requires).addClass('ui-state-disabled');
+    $(requires).removeClass('selectable');
+}
+
+function allow_enables() {
+    var allows = count_allows();
+    for (var key in allows) {
+        var section = $('#section_'+key);
+        section.removeClass('ui-state-disabled');
+        section.addClass('selectable');
+    }
+    update_dynamic();
+    //alert(JSON.stringify(totals));
 }
 
 function render_entries(section) {
     var text="";
     for(var i = 0; i < section['entries'].length; i++) {
-        text = text + "<div data-allows-multiplier='"+ section['entries'][i].allows_multiplier + "' class='entry ui-widget-content' id='greg_" + section['entries'][i].id+"'>";
+        text = text + "<div data-allows-multiplier='"+ section['entries'][i].allows_multiplier + "' class='entry ui-widget-content'>";
         text = text + "<div><p class='entry_name'>"+section['entries'][i].name+"</p><p id='cost' data-initial-cost='"+section['entries'][i].cost+"' style='display:inline; float:right;'>"+section['entries'][i].cost+"</p></div>";
         for(var j = 0; j < section['entries'][i]['options'].length; j++) {
             text = text + '<div class="choice"><p class="opt_text">'+section['entries'][i]['options'][j]['name']+'</p><select class="opt_select" name="' + section['entries'][i]['options'][j]['name']+'">';
@@ -402,11 +419,15 @@ function unselecting(event, ui){
         $(ui.unselecting).addClass('ui-selected');
 }
 function unselected(event, ui){
-    // can print allows attribute with following
-    // alert($(ui.unselected).parent().attr('allows'));
-    // Decide if we need to disable any segments
-    // actually no good get currently disabled allows, we need to get all currently selected allows and compare versus currently selected requires perhaps?
-    count_allows(); //greg
+    if ($(ui.unselected).parents('.section').data('allows')) {
+        alert('did allow something');
+        allow_removed(); // only do if this one provided an allows greg
+    }
+}
+
+function selected(event, ui){
+    allow_enables(); // greg see if this item provides any allows first
+
 }
 
 function update_entry_cost(entry) {
@@ -439,7 +460,7 @@ function update_dynamic(){
     });
     $( ".selectable" ).bind("mousedown", function(e) {
             e.metaKey = true;
-            }).selectable({ filter: '.entry', unselecting:unselecting, unselected:unselected });
+            }).selectable({ filter: '.entry', unselecting:unselecting, unselected:unselected, selected:selected });
     $(".opt_select").change(option_change);
 }
 
