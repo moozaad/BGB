@@ -43,6 +43,7 @@
          </style>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.multi-accordion-1.5.3.js"></script>
         <script type="text/javascript">
             // should IDs be programatically generated greg, seems like it would be safer and less hassle
             // in the long wrong
@@ -327,8 +328,9 @@ function perm(inArr, choose, callback, callback_arg) {
     var c = [];
     var found = false;
     var inner = function(tmpArray, choose_) {
-        if ( found )
-            return;
+        if ( found ) {
+            alert('found');
+            return;}
         if (choose_ == 0) {
             found = callback(c, callback_arg);
         } else {
@@ -342,8 +344,27 @@ function perm(inArr, choose, callback, callback_arg) {
         }
     }
     inner(inArr, choose);
+    alert('found value: ' + found);
     return found;
 }
+
+function requires_match(item, requires) {
+    alert(JSON.stringify(requires)+' => ' +JSON.stringify(item));
+    for (var i=0; i<item.length; i++) {
+        alert('testing ' + requires[i] + ' against ' + JSON.stringify(item[i]));
+        //greg if its one entry is it an array still?
+        var haystack = item[i].split(',');
+        if ($.inArray(requires[i], haystack) == -1) {
+            for (var j=0; j<haystack.length; j++)
+                alert('haystack['+j+'] is ' + haystack[j]);
+            return false;
+        }
+        else
+            alert('inarray match');
+    }
+    return true;
+}
+
 
 // maybe make it get which value from a select?
 function render_name(force) {
@@ -352,15 +373,17 @@ function render_name(force) {
 function render_sections(force) {
     var text="";
     for(var i = 0; i < force['sections'].length; i++) {
-        text = text + "<div class='group'><h3>" + force['sections'][i].name+"</h3>";
+        //text = text + "<div class='group'><h3>" + force['sections'][i].name+"</h3>"; // if using sortable accordion
+        text = text + "<h3>" + force['sections'][i].name+"</h3>";
         text = text + "<div data-allows='"+ force['sections'][i].allows +"' class='section ui-widget ";
         if (force.sections[i].requires)
             text = text + "ui-state-disabled' data-requires='true'";
         else
             text = text + "selectable ' data-requires='false'";
-        text = text + " id=section_" + force['sections'][i].id + ">";
+        text = text + " id=section_" + force['sections'][i].id + " data-section-no="+ force['sections'][i].id + ">";
         text = text+render_entries(force['sections'][i]);
-        text = text + "</div></div>";
+        // text = text + "</div></div>"; if using sortable accordion
+        text = text + "</div>";
     }
     return text;
 }
@@ -391,18 +414,26 @@ function count_requires() {
     var requires = {};
     var array = $.map(selected, function(a)
             { if ($(a).parent().data('requires'))
-                return ($(a).parent().attr('id')); // greg should use multiplier
+                return ($(a).parent().data('section-no')); // greg should use multiplier
             });
-    alert(JSON.stringify(array));
+    //alert(JSON.stringify(array));
     return array;
 }
 
 function allow_requires() {
-    var allows = get_allows();
-    alert(JSON.stringify(allows));
     var requires = count_requires();
-    alert(JSON.stringify(requires));
-    return true; // greg
+    if (requires.length == 0) // no requirements, auto pass
+        return true;
+    var allows = get_allows();
+    if (allows.length == 0) // no allows but requirements, fail
+        return false;
+    if ( allows.length > 0 && requires.length <= allows.length )
+        return perm(allows, requires.length, requires_match, requires);
+    return false;
+
+    /*alert(JSON.stringify(requires));
+    alert(JSON.stringify(allows));
+    alert(JSON.stringify(requires)); */
 }
 
 function allow_removed() {
@@ -493,7 +524,8 @@ function option_change(event) {
 
 
 function update_dynamic(){
-    $("#accordion").accordion({
+    $("#accordion").multiAccordion({active:false});
+    /*$("#accordion").accordion({
         heightStyle: "content",
         header: '> div > h3',
         }).sortable({
@@ -504,7 +536,7 @@ function update_dynamic(){
             // so trigger focusout handlers to remove .ui-state-focus
             ui.item.children( "h3" ).triggerHandler( "focusout" );
         }
-    });
+    }); */
     $( ".selectable" ).bind("mousedown", function(e) {
             e.metaKey = true;
             }).selectable({ filter: '.entry', tolerance: "fit", unselecting:unselecting, unselected:unselected, selected:selected });
