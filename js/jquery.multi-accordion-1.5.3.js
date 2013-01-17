@@ -41,7 +41,9 @@
 				$this.addClass(options._classes.h3).prepend('<span style="display:inline; float:left; padding-right:5px;" class="{class}"></span>'.replace(/{class}/, options._classes.span));
 				if(self._isActive(index)) {
 					self._showTab($this)
-				}
+				} else {
+					self._hideTab($this)
+                }
 			}); // end h3 each
 			
 			$this.children('div').each(function(index){
