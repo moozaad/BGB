@@ -55,7 +55,7 @@
                         {
                             "id":1, 
                             "name":"Forward Headquarters Units",
-                            "allows":[8,10],
+                            "allows":'[8,10]',
                             "requires":false,
                             "entries":[
                             {
@@ -146,7 +146,7 @@
                         {
                             "id":2, 
                             "name":"Infantry Units",
-                            "allows":[6,7,8],
+                            "allows":'[6,7,8]',
                             "requires":false,
                             "entries":[
                                 {
@@ -170,7 +170,7 @@
                         {
                             "id":3, 
                             "name":"Tank Units",
-                            "allows":[6,7,8],
+                            "allows":'[6,7,8]',
                             "requires":false,
                             "entries":[
                                 {
@@ -327,9 +327,8 @@ function perm(inArr, choose, callback, callback_arg) {
     var c = [];
     var found = false;
     var inner = function(tmpArray, choose_) {
-        if ( found ) {
-            alert('found');
-            return;}
+        if ( found )
+            return;
         if (choose_ == 0) {
             found = callback(c, callback_arg);
         } else {
@@ -343,24 +342,16 @@ function perm(inArr, choose, callback, callback_arg) {
         }
     }
     inner(inArr, choose);
-    alert('found value: ' + found);
     return found;
 }
 
 function requires_match(item, requires) {
     alert(JSON.stringify(requires)+' => ' +JSON.stringify(item));
     for (var i=0; i<item.length; i++) {
-        alert('testing ' + requires[i] + ' against ' + JSON.stringify(item[i]));
-        //greg if its one entry is it an array still?
-        var haystack = item[i].split(',');
-        if ($.inArray(requires[i], haystack) == -1) {
-            for (var j=0; j<haystack.length; j++)
-                alert('haystack['+j+'] is ' + haystack[j]);
+        if ($.inArray(requires[i], item[i]) == -1)
             return false;
-        }
-        else
-            alert('inarray match');
     }
+    alert('requries_match success');
     return true;
 }
 
@@ -388,20 +379,18 @@ function render_sections(force) {
 function get_allows() {
     var selected = $('.ui-selected');
     var array = $.map(selected, function(a)
-           // { alert($(a).parent().attr('id'));} );
-    { return ($(a).parent().data('allows')); } );
+       { return [($(a).parent().data('allows'))]; } );
     return array;
 }
 function count_allows() {
     var array = get_allows();
     var totals={};
     for (var i=0; i<array.length; i++){
-        var values = array[i].split(',');
-        for (var j=0; j<values.length; j++){
-            if (totals[values[j]])
-                totals[values[j]]=totals[values[j]]+1; // should use multiplier
+        for (var j=0; j<array[i].length; j++){
+            if (totals[array[i][j]])
+                totals[array[i][j]]=totals[array[i][j]]+1; // should use multiplier
             else
-                totals[values[j]]=1; // should use multiplier
+                totals[array[i][j]]=1; // should use multiplier
         }
     }
     return totals;
@@ -413,7 +402,6 @@ function count_requires() {
             { if ($(a).parent().data('requires'))
                 return ($(a).parent().data('section-no')); // greg should use multiplier
             });
-    //alert(JSON.stringify(array));
     return array;
 }
 
@@ -427,10 +415,6 @@ function allow_requires() {
     if ( allows.length > 0 && requires.length <= allows.length )
         return perm(allows, requires.length, requires_match, requires);
     return false;
-
-    /*alert(JSON.stringify(requires));
-    alert(JSON.stringify(allows));
-    alert(JSON.stringify(requires)); */
 }
 
 function allow_removed() {
@@ -448,7 +432,6 @@ function allow_enables() {
         // greg section.css('background:EEE');
     }
     update_dynamic();
-    //alert(JSON.stringify(totals));
 }
 
 function render_entries(section) {
