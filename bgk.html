@@ -44,9 +44,8 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script type="text/javascript">
-            // should IDs be programatically generated greg, seems like it would be safer and less hassle
-            // in the long wrong
-            // but what if using ids in saving/sharing lists? Can't have them changing!
+            // IDs are manually generated and must remain static as they will be used for saving
+            // lists
             var forces = [
                 {
                     "id":1,
@@ -139,6 +138,18 @@
                                     
                                  ]
 
+                            },
+                            {
+                                "id":5,
+                                "name":"Wire Team",
+                                "br":0,
+                                "cost":7,
+                            },
+                            {
+                                "id":6,
+                                "name":"Motorcycle Dispatch Rider",
+                                "br":0,
+                                "cost":12,
                             }
                             ]
 
@@ -151,7 +162,7 @@
                             "entries":[
                                 {
                                     "id":1,
-                                    "name":"Sniper",
+                                    "name":"Fix me!",
                                     "cost":10,
                                     "br":1,
                                     "options":[
@@ -175,15 +186,17 @@
                             "entries":[
                                 {
                                     "id":1,
-                                    "name":"Sniper",
-                                    "cost":10,
-                                    "br":1,
+                                    "name":"Panzer III Squadron",
+                                    "cost":85,
+                                    "multiplier":3,
+                                    "br":9,
                                     "options":[
                                         {
                                             "name":"Composition",
                                             "choices":[
-                                                {"id":1,"text":"1 man","cost":0},
-                                                {"id":2,"text":"+Spotter","cost":5},
+                                                {"id":1,"text":"3 Panzer III Js","cost":0},
+                                                {"id":1,"text":"Upgrade to Ausf. Ls","cost":20},
+                                                {"id":1,"text":"Upgrade to Ausf. Ms","cost":25},
                                             ]
                                         }
                                     ]
@@ -346,7 +359,7 @@ function perm(inArr, choose, callback, callback_arg) {
 }
 
 function requires_match(item, requires) {
-    alert(JSON.stringify(requires)+' => ' +JSON.stringify(item));
+    //alert(JSON.stringify(requires)+' => ' +JSON.stringify(item));
     for (var i=0; i<item.length; i++) {
         if ($.inArray(requires[i], item[i]) == -1)
             return false;
@@ -377,9 +390,17 @@ function render_sections(force) {
 }
 
 function get_allows() {
-    var selected = $('.ui-selected');
+    var selected = $('.ui-selected').filter( function() {
+        return ($(this).parent().data('allows')); //only entries with a data-allows field
+    });
     var array = $.map(selected, function(a)
-       { return [($(a).parent().data('allows'))]; } );
+    { // take allows 'multiplier' into account when calculating allows
+        var rv = [];
+        for (var i=0; i<($(a).data('multiplier')); i++) {
+            rv.push($(a).parent().data('allows'));
+        }
+        return rv;
+    });
     return array;
 }
 function count_allows() {
@@ -388,9 +409,9 @@ function count_allows() {
     for (var i=0; i<array.length; i++){
         for (var j=0; j<array[i].length; j++){
             if (totals[array[i][j]])
-                totals[array[i][j]]=totals[array[i][j]]+1; // should use multiplier
+                totals[array[i][j]]=totals[array[i][j]]+1;
             else
-                totals[array[i][j]]=1; // should use multiplier
+                totals[array[i][j]]=1;
         }
     }
     return totals;
@@ -399,9 +420,15 @@ function count_requires() {
     var selected = $('.ui-selected');
     var requires = {};
     var array = $.map(selected, function(a)
-            { if ($(a).parent().data('requires'))
-                return ($(a).parent().data('section-no')); // greg should use multiplier
-            });
+        { 
+            if ($(a).parent().data('requires')) {
+                var rv=[];
+                for (var i=0; i<($(a).data('multiplier')); i++) {
+                    rv.push($(a).parent().data('section-no'));
+                }
+                return rv;
+            }
+        });
     return array;
 }
 
@@ -412,6 +439,7 @@ function allow_requires() {
     var allows = get_allows();
     if (allows.length == 0) // no allows but requirements, fail
         return false;
+    alert('allows length is ' +allows.length + 'requires.length is ' + requires.length);
     if ( allows.length > 0 && requires.length <= allows.length )
         return perm(allows, requires.length, requires_match, requires);
     return false;
@@ -437,17 +465,22 @@ function allow_enables() {
 function render_entries(section) {
     var text="";
     for(var i = 0; i < section['entries'].length; i++) {
-        text = text + "<div data-allows-multiplier='"+ section['entries'][i].allows_multiplier + "' class='entry ui-widget-content'>";
+        text = text + "<div data-multiplier='";
+        if (section['entries'][i].multiplier)
+            text = text + section['entries'][i].multiplier;
+        else
+            text = text + "1";
+        text = text + "' class='entry ui-widget-content'>";
         text = text + "<div><p class='entry_name'>"+section['entries'][i].name+"</p><p id='cost' data-initial-cost='"+section['entries'][i].cost+"' style='display:inline; float:right;'>"+section['entries'][i].cost+"</p></div>";
-        for(var j = 0; j < section['entries'][i]['options'].length; j++) {
-            text = text + '<div class="choice"><p class="opt_text">'+section['entries'][i]['options'][j]['name']+'</p><select class="opt_select" name="' + section['entries'][i]['options'][j]['name']+'">';
-            for (var k=0; k<section.entries[i].options[j].choices.length; k++) {
-                text = text + "<option data-cost='"+section.entries[i].options[j].choices[k].cost+"' value='" + section.entries[i].options[j].choices[k].id +"'>"+section.entries[i].options[j].choices[k].text + "</option>"; 
+        if ( section['entries'][i]['options'] ) {
+            for(var j = 0; j < section['entries'][i]['options'].length; j++) {
+                text = text + '<div class="choice"><p class="opt_text">'+section['entries'][i]['options'][j]['name']+'</p><select class="opt_select" name="' + section['entries'][i]['options'][j]['name']+'">';
+                for (var k=0; k<section.entries[i].options[j].choices.length; k++) {
+                    text = text + "<option data-cost='"+section.entries[i].options[j].choices[k].cost+"' value='" + section.entries[i].options[j].choices[k].id +"'>"+section.entries[i].options[j].choices[k].text + "</option>"; 
+                }
+                text = text + "</select></div>";
             }
-            text = text + "</select></div>";
         }
-
-
 
         text = text + "</div>"
     }
@@ -482,6 +515,9 @@ function unselected(event, ui){
     allow_enables();
     update_dynamic();
 }
+
+//greg see if allow_requires is valid when using a selecting callback
+
 
 function selected(event, ui){
     allow_enables(); // greg see if this item provides any allows first
@@ -526,7 +562,6 @@ function update_dynamic(){
             render();
             update_dynamic();
         });
-// greg http://stackoverflow.com/questions/4492987/programmatically-unselect-a-jquery-ui-selectable-widget
         </script>
     </head>
     <body>
