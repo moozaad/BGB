@@ -43,7 +43,6 @@
          </style>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
-        <script src="js/jquery.multi-accordion-1.5.3.js"></script>
         <script type="text/javascript">
             // should IDs be programatically generated greg, seems like it would be safer and less hassle
             // in the long wrong
@@ -373,8 +372,7 @@ function render_name(force) {
 function render_sections(force) {
     var text="";
     for(var i = 0; i < force['sections'].length; i++) {
-        //text = text + "<div class='group'><h3>" + force['sections'][i].name+"</h3>"; // if using sortable accordion
-        text = text + "<h3>" + force['sections'][i].name+"</h3>";
+        text = text + "<div class='group'><h3>" + force['sections'][i].name+"</h3>";
         text = text + "<div data-allows='"+ force['sections'][i].allows +"' class='section ui-widget ";
         if (force.sections[i].requires)
             text = text + "ui-state-disabled' data-requires='true'";
@@ -382,8 +380,7 @@ function render_sections(force) {
             text = text + "selectable ' data-requires='false'";
         text = text + " id=section_" + force['sections'][i].id + " data-section-no="+ force['sections'][i].id + ">";
         text = text+render_entries(force['sections'][i]);
-        // text = text + "</div></div>"; if using sortable accordion
-        text = text + "</div>";
+        text = text + "</div></div>";
     }
     return text;
 }
@@ -524,8 +521,7 @@ function option_change(event) {
 
 
 function update_dynamic(){
-    $("#accordion").multiAccordion({active:false});
-    /*$("#accordion").accordion({
+    $("#accordion").accordion({
         heightStyle: "content",
         header: '> div > h3',
         }).sortable({
@@ -536,7 +532,7 @@ function update_dynamic(){
             // so trigger focusout handlers to remove .ui-state-focus
             ui.item.children( "h3" ).triggerHandler( "focusout" );
         }
-    }); */
+    });
     $( ".selectable" ).bind("mousedown", function(e) {
             e.metaKey = true;
             }).selectable({ filter: '.entry', tolerance: "fit", unselecting:unselecting, unselected:unselected, selected:selected });
