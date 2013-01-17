@@ -14,11 +14,22 @@
              display:inline-block;
              float:left;
              margin:1px;
+             min-height:120px;
+         }
+         .entry_cost {
+             margin:12px 1px 12px 1px;
+             display:inline;
+             max-width:10%;
+             float:right;
          }
          .entry_name {
+             margin:12px 1px 12px 1px;
              display:inline;
              float:left;
-         }
+             max-width:88%;
+             white-space:nowrap;
+             overflow:hidden;
+         } 
          .section {
              width:100%;
              overflow:auto;
@@ -224,7 +235,7 @@
                                     "name":"Panzer V Squadron",
                                     "cost":220,
                                     "multiplier":3,
-                                    "restricted":true;
+                                    "restricted":true,
                                     "br":9,
                                     "options":[
                                         {
@@ -276,6 +287,70 @@
                                         }
                                     ]
 
+                                },
+                                {
+                                    "id":7,
+                                    "name":"Panzer IV",
+                                    "cost":44,
+                                    "br":3,
+                                    "options":[
+                                        {
+                                            "name":"Composition",
+                                            "choices":[
+                                                {"id":1,"text":"Panzer IV E","cost":0, "restricted":true},
+                                                {"id":2,"text":"Panzer IV F1","cost":0, "restricted":true},
+                                                {"id":3,"text":"Panzer IV G","cost":6},
+                                                {"id":4,"text":"Panzer IV H","cost":12, "restricted":true},
+                                            ]
+                                        }
+                                    ]
+
+                                },
+                                {
+                                    "id":8,
+                                    "name":"Panzer V Panther",
+                                    "cost":85,
+                                    "restricted":true,
+                                    "br":3,
+                                    "options":[
+                                        {
+                                            "name":"Composition",
+                                            "choices":[
+                                                {"id":1,"text":"1 Panther D","cost":0},
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":9,
+                                    "name":"StuG III",
+                                    "cost":24,
+                                    "br":3,
+                                    "options":[
+                                        {
+                                            "name":"Composition",
+                                            "choices":[
+                                                {"id":1,"text":"StuG III A-E","cost":0, "restricted":true},
+                                                {"id":2,"text":"StuG III F","cost":16},
+                                                {"id":3,"text":"StuG III G","cost":24},
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":10,
+                                    "name":"Panzer II",
+                                    "cost":24,
+                                    "restricted":true,
+                                    "br":2,
+                                    "options":[
+                                        {
+                                            "name":"Composition",
+                                            "choices":[
+                                                {"id":1,"text":"1 Panzer II F","cost":0},
+                                            ]
+                                        }
+                                    ]
                                 },
                             ],
                         },/*
@@ -331,8 +406,80 @@
                                     {
                                         "name":"Composition",
                                         "choices":[
-                                            {"id":1,"text":"Heavy Truck","cost":0},
-                                            {"id":2,"text":"SdKfz 251/7","cost":8},
+                                            {"id":1,"text":"Heavy Truck & 6 men","cost":0},
+                                            {"id":2,"text":"SdKfz 251/7 & 6 men","cost":8},
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":2,
+                                "name":"Heavy Bridging Unit",
+                                "cost":36,
+                                "br":3,
+                                "restricted":true,
+                                "options":[
+                                    {
+                                        "name":"Composition",
+                                        "choices":[
+                                            {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                            {"id":1,"text":"3 Heavy Trucks & 18 men","cost":24},
+                                            {"id":1,"text":"4 Heavy Trucks & 24 men","cost":48},
+                                            {"id":1,"text":"5 Heavy Trucks & 30 men","cost":72},
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":3,
+                                "name":"Flammpanzer III",
+                                "cost":50,
+                                "br":3,
+                                "restricted":true,
+                                "options":[
+                                    {
+                                        "name":"Composition",
+                                        "choices":[
+                                            {"id":1,"text":"1 Flammpanzer III Ausf. M","cost":0}
+                                        ]
+                                    },
+                                ]
+                            },
+                            {
+                                "id":4,
+                                "name":"Recovery Vehicle",
+                                "cost":18,
+                                "br":1,
+                                "options":[
+                                    {
+                                        "name":"Composition",
+                                        "choices":[
+                                            {"id":1,"text":"SdKfz 9 'Famo'","cost":0},
+                                            {"id":2,"text":"Bergpanther","cost":20, "br":1, "restricted":true},
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":5,
+                                "name":"Borgward Demolition Squadron",
+                                "cost":74,
+                                "br":5,
+                                "options":[
+                                    {
+                                        "name":"Command",
+                                        "choices":[
+                                            {"id":1,"text":"StuG III Ausf. F","cost":0},
+                                            {"id":2,"text":"Panzer III Ausf. L","cost":0},
+                                            ]
+                                    },
+                                    {
+                                        "name":"Borgwards",
+                                        "choices":[
+                                            {"id":1,"text":"1 Borgward B-IV","cost":0},
+                                            {"id":2,"text":"2 Borgward B-IV","cost":10, "br":1},
+                                            {"id":3,"text":"3 Borgward B-IV","cost":20, "br":2},
+                                            {"id":4,"text":"4 Borgward B-IV","cost":30, "br":3},
                                         ]
                                     }
                                 ]
@@ -370,6 +517,52 @@
 
                                 ]
                             },
+                            {
+                                "id":2,
+                                "name":"Stretcher Party",
+                                "cost":10,
+                                "br":1,
+                                "options":[
+                                    {
+                                    "name":"Composition",
+                                    "choices":[
+                                        {"id":1,"text":"2 men","cost":0}
+                                    ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":3,
+                                "name":"Ambulance",
+                                "cost":14,
+                                "br":2,
+                                "restricted":true,
+                                "options":[
+                                    {
+                                    "name":"Composition",
+                                    "choices":[
+                                        {"id":1,"text":"Kübelwagon Ambulance","cost":0},
+                                        {"id":2,"text":"Ambulance medium truck","cost":2},
+                                        {"id":3,"text":"SdKfz 251/8 Ambulance","cost":6},
+                                    ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":4,
+                                "name":"Forward Aid Post",
+                                "cost":20,
+                                "br":5,
+                                "restricted":true,
+                                "options":[
+                                    {
+                                    "name":"Composition",
+                                    "choices":[
+                                        {"id":1,"text":"4 men with a tent","cost":0}
+                                    ]
+                                    }
+                                ]
+                            },
                         ],
                     },
                     {
@@ -401,6 +594,183 @@
 
                                 ]
                             },
+                            {
+                                "id":2,
+                                "name":"Self-Propelled Anti-Tank Gun",
+                                "cost":30,
+                                "br":1,
+                                "restricted":true,
+                                "options":[
+                                    {
+                                        "name":"Composition",
+                                        "choices":[
+                                            {"id":1,"text":"Marder II","cost":0},
+                                            {"id":2,"text":"Marder III H","cost":4},
+                                            {"id":3,"text":"Marder III M","cost":-2},
+                                            {"id":4,"text":"Marder 38t (36r)","cost":4},
+                                        ]
+                                    }
+                                ]
+
+                            },
+                            {
+                                "id":3,
+                                "name":"Panzer VI Squadron",
+                                "cost":223,
+                                "br":12,
+                                "multiplier":3,
+                                "options":[
+                                    {
+                                    "name":"Composition",
+                                    "choices":[
+                                        {"id":1,"text":"3 Tigers Is","cost":0, "restricted":true},
+                                    ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":4,
+                                "name":"Heavy Tank Hunter",
+                                "cost":136,
+                                "br":5,
+                                "options":[
+                                    {
+                                        "name":"Composition",
+                                        "choices":[
+                                            {"id":1,"text":"1 Ferdinand","cost":0, "restricted":true},
+                                            {"id":2,"text":"1 Hornisse","cost":-80, "restricted":true, "br":-2},
+                                        ]
+                                    },
+                                ]
+                            },
+                            {
+                                "id":5,
+                                "name":"Captured Tank",
+                                "cost":42,
+                                "br":3,
+                                "options":[
+                                    {
+                                        "name":"Composition",
+                                        "choices":[
+                                            {"id":1,"text":"1 Panzer T-34r","cost":0}
+                                        ]
+                                    },
+                                ]
+                            },
+                            {
+                                "id":6,
+                                "name":"Anti-Aircraft Vehicle",
+                                "cost":16,
+                                "br":1,
+                                "options":[
+                                    {
+                                        "name":"Composition",
+                                        "choices":[
+                                        {"id":1,"text":"SdKfz 10 with 20mm","cost":0, "restricted":true},
+                                        {"id":2,"text":"SdKfz with 37mm","cost":4, "restricted":true},
+                                        {"id":3,"text":"SdKfz with 20mma Flakvierling","cost":20, "restricted":true},
+                                        ]
+                                    },
+                                ]
+                            },
+                            {
+                                "id":7,
+                                "name":"Assault Howitzer",
+                                "cost":44,
+                                "br":3,
+                                "options":[
+                                    {
+                                        "name":"Composition",
+                                        "choices":[
+                                            {"id":1,"text":"StuH 42 F","cost":0, "restricted":true},
+                                            {"id":2,"text":"StuH 42 G","cost":6, "restricted":true},
+                                            {"id":3,"text":"Brummbär","cost":20, "restricted":true, "br":1},
+                                        ]
+                                    },
+                                ]
+                            },
+                            {
+                                "id":8,
+                                "name":"Panzer VI",
+                                "cost":85,
+                                "br":4,
+                                "restricted":true,
+                                "options":[
+                                    {
+                                        "name":"Composition",
+                                        "choices":[
+                                            {"id":1,"text":"1 Panzer VI Tiger","cost":0}
+                                        ]
+                                    },
+                                ]
+                            },
+                        ],
+                    },
+                    {
+                        "id":10, 
+                        "name":"Additional Fire Support",
+                        "allows":null,
+                        "requires":true,
+                        "entries":[
+                            {
+                                "id":1,
+                                "name":"Off-Table Artillery Request",
+                                "cost":5,
+                                "br":0,
+                                "options":[
+                                    {
+                                        "name":"Target Priority",
+                                        "choices":[
+                                            {"id":1,"text":"3rd (5+)","cost":0},
+                                            {"id":2,"text":"2nd (4+)","cost":5},
+                                            {"id":3,"text":"1st (2+)","cost":15},
+                                        ]
+                                    },
+                                ]
+                            },
+                        {
+                            "id":2,
+                            "name":"Pre-Registered Target Point",
+                            "cost":15,
+                            "br":0,
+                        },
+                        {
+                            "id":3,
+                            "name":"Counter-Battery Fire Mission",
+                            "cost":10,
+                            "br":0,
+                        },
+                        {
+                            "id":4,
+                            "name":"Timed 105mm Barrage",
+                            "cost":10,
+                            "br":0,
+                        },
+                        {
+                            "id":5,
+                            "name":"Timed 150mm Barrage",
+                            "cost":20,
+                            "br":0,
+                        },
+                        {
+                            "id":6,
+                            "name":"Timed FW-190 Air Strike",
+                            "cost":5,
+                            "br":0,
+                        },
+                        {
+                            "id":7,
+                            "name":"Timed Ju-87 Air Strike",
+                            "cost":15,
+                            "br":0,
+                        },
+                        {
+                            "id":8,
+                            "name":"Timed He-111 Air Strike",
+                            "cost":25,
+                            "restricted":true,
+                            "br":0,
+                        },
                         ],
                     },
                     ],
@@ -408,6 +778,132 @@
                 {
                     "id":2,
                     "name":"Second Battlegroup",
+                    "sections":[
+                        {
+                            "id":9, 
+                            "name":"Specialist Support Units",
+                            "allows":null,
+                            "requires":true,
+                            "entries":[
+                                {
+                                    "id":1,
+                                    "name":"Heavy Anti-Tank Gun",
+                                    "cost":51,
+                                    "br":3,
+                                    "options":[
+                                        {
+                                            "name":"Loader team",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"3-man","cost":10},
+                                            ]
+                                        },
+                                        {
+                                            "name":"Tow",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"SdkFz 7","cost":8},
+                                            ]
+                                        },
+
+                                    ]
+                                },
+                                {
+                                    "id":2,
+                                    "name":"Heavy Tank Hunter",
+                                    "cost":136,
+                                    "br":5,
+                                    "options":[
+                                        {
+                                            "name":"Composition",
+                                            "choices":[
+                                                {"id":1,"text":"1 Ferdinand","cost":0, "restricted":true},
+                                                {"id":2,"text":"1 Hornisse","cost":-80, "restricted":true, "br":-2},
+                                            ]
+                                        },
+                                    ]
+                                },
+                                {
+                                    "id":3,
+                                    "name":"Assault Howitzer",
+                                    "cost":44,
+                                    "br":3,
+                                    "options":[
+                                        {
+                                            "name":"Composition",
+                                            "choices":[
+                                                {"id":1,"text":"StuH 42 F","cost":0, "restricted":true},
+                                                {"id":2,"text":"StuH 42 G","cost":6, "restricted":true},
+                                                {"id":3,"text":"Brummbär","cost":20, "restricted":true, "br":1},
+                                            ]
+                                        },
+                                    ]
+                                },
+                                {
+                                    "id":4,
+                                    "name":"Anti-Aircraft Vehicle",
+                                    "cost":16,
+                                    "br":1,
+                                    "options":[
+                                        {
+                                            "name":"Composition",
+                                            "choices":[
+                                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0, "restricted":true},
+                                            {"id":2,"text":"SdKfz with 37mm","cost":4, "restricted":true},
+                                            {"id":3,"text":"SdKfz with 20mma Flakvierling","cost":20, "restricted":true},
+                                            ]
+                                        },
+                                    ]
+                                },
+                                {
+                                    "id":5,
+                                    "name":"Towed 20mm AA Gun",
+                                    "cost":28,
+                                    "br":1,
+                                    "options":[
+                                        {
+                                            "name":"Loader team",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"3-man","cost":10},
+                                                ]
+                                        },
+                                        {
+                                            "name":"Tow",
+                                            "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"Medium Truck tow","cost":4},
+                                            {"id":3,"text":"SdKfz halftrack", "cost":4}
+                                            ]
+                                        },
+                                    ]
+                                },
+                                {
+                                    "id":6,
+                                    "name":"Towed 37mm AA Gun",
+                                    "cost":36,
+                                    "br":1,
+                                    "options":[
+                                        {
+                                            "name":"Loader team",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"3-man","cost":10},
+                                                ]
+                                        },
+                                        {
+                                            "name":"Tow",
+                                            "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"Medium Truck tow","cost":4},
+                                            {"id":3,"text":"SdKfz halftrack", "cost":8}
+                                            ]
+                                        },
+                                    ]
+                                },
+                            ],
+                        },
+                    ],
                 },
                 ];
 
@@ -546,7 +1042,7 @@ function render_entries(section) {
         else
             text = text + "1";
         text = text + "' class='entry ui-widget-content'>";
-        text = text + "<div><p class='entry_name'>"+section['entries'][i].name+"</p><p id='cost' data-initial-cost='"+section['entries'][i].cost+"' style='display:inline; float:right;'>"+section['entries'][i].cost+"</p></div>";
+        text = text + "<div><p class='entry_name'>"+section['entries'][i].name+"</p><p id='cost' data-initial-cost='"+section['entries'][i].cost+"' class='entry_cost'>"+section['entries'][i].cost+"</p></div>";
         if ( section['entries'][i]['options'] ) {
             for(var j = 0; j < section['entries'][i]['options'].length; j++) {
                 text = text + '<div class="choice"><p class="opt_text">'+section['entries'][i]['options'][j]['name']+'</p><select class="opt_select" name="' + section['entries'][i]['options'][j]['name']+'">';
