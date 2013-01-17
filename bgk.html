@@ -323,6 +323,28 @@
                 },
                 ];
 
+function perm(inArr, choose, callback, callback_arg) {
+    var c = [];
+    var found = false;
+    var inner = function(tmpArray, choose_) {
+        if ( found )
+            return;
+        if (choose_ == 0) {
+            found = callback(c, callback_arg);
+        } else {
+            for (var i = 0; i < tmpArray.length; ++i) {
+                c.push(tmpArray[i]);
+                var newArray = tmpArray.slice(0);
+                newArray.splice(i, 1);
+                inner(newArray, choose_ - 1);
+                c.pop();
+            }
+        }
+    }
+    inner(inArr, choose);
+    return found;
+}
+
 // maybe make it get which value from a select?
 function render_name(force) {
     return("<p>"+force['name']+"</p>");
@@ -343,12 +365,15 @@ function render_sections(force) {
     return text;
 }
 
-function count_allows() {
+function get_allows() {
     var selected = $('.ui-selected');
-    var allowed = {};
     var array = $.map(selected, function(a)
            // { alert($(a).parent().attr('id'));} );
-            { return ($(a).parent().data('allows')); } );
+    { return ($(a).parent().data('allows')); } );
+    return array;
+}
+function count_allows() {
+    var array = get_allows();
     var totals={};
     for (var i=0; i<array.length; i++){
         var values = array[i].split(',');
@@ -360,6 +385,24 @@ function count_allows() {
         }
     }
     return totals;
+}
+function count_requires() {
+    var selected = $('.ui-selected');
+    var requires = {};
+    var array = $.map(selected, function(a)
+            { if ($(a).parent().data('requires'))
+                return ($(a).parent().attr('id')); // greg should use multiplier
+            });
+    alert(JSON.stringify(array));
+    return array;
+}
+
+function allow_requires() {
+    var allows = get_allows();
+    alert(JSON.stringify(allows));
+    var requires = count_requires();
+    alert(JSON.stringify(requires));
+    return true; // greg
 }
 
 function allow_removed() {
@@ -374,6 +417,7 @@ function allow_enables() {
         var section = $('#section_'+key);
         section.removeClass('ui-state-disabled');
         section.addClass('selectable');
+        // greg section.css('background:EEE');
     }
     update_dynamic();
     //alert(JSON.stringify(totals));
@@ -413,16 +457,19 @@ function render() {
 }
 
 function unselecting(event, ui){
-    //ui.unselecting.addClass('ui-selected');
-    // can prevent un-selecting here if desired
-    if ( false )
-        $(ui.unselecting).addClass('ui-selected');
+    // If removing this would stop us meeting our requires, then prevent its removal
+    if ($(ui.unselecting).parents('.section').data('allows')) {
+        if ( !allow_requires() ) {
+            $(ui.unselecting).addClass('ui-selected');
+            alert('Removing this item would result in you having more support choices than allowed.\nRemove those first.');
+        }
+    }
+
 }
 function unselected(event, ui){
-    if ($(ui.unselected).parents('.section').data('allows')) {
-        alert('did allow something');
-        allow_removed(); // only do if this one provided an allows greg
-    }
+    allow_removed();
+    allow_enables();
+    update_dynamic();
 }
 
 function selected(event, ui){
@@ -460,7 +507,7 @@ function update_dynamic(){
     });
     $( ".selectable" ).bind("mousedown", function(e) {
             e.metaKey = true;
-            }).selectable({ filter: '.entry', unselecting:unselecting, unselected:unselected, selected:selected });
+            }).selectable({ filter: '.entry', tolerance: "fit", unselecting:unselecting, unselected:unselected, selected:selected });
     $(".opt_select").change(option_change);
 }
 
