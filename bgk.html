@@ -1275,7 +1275,7 @@ function render_entries(entries) {
             if ( entries[i]['sub_units'] ) {
                 var div = $('<div class="selectable">').addClass('sub_div hidden');
                 $(div).uniqueId();
-                text = text + "' data-sub='" + $(div).attr('id')+"'";
+                text = text + "' data-sub='" + $(div).attr('id');
                 jQuery.when( sub_timeout([entries[i]['sub_units']], div)).done(render_sub_units_to);
 
             }
