@@ -1009,20 +1009,302 @@
                                     ]
                                 },
                             ],
-                        },/*
+                        },
                         {
                             "id":4, 
                             "name":"Artillery Units",
-                            "allows":[10],
+                            "allows":[10], //greg this isn't allowing additional fire support for some reason
                             "requires":false,
+                            "entries":[
+                                {
+                                    "id":1,
+                                    "name":"Forward Observer Team",
+                                    "cost":16,
+                                    "br":1,
+                                    "options":[
+                                        {
+                                            "name":"Transport",
+                                            "choices":[
+                                                {"id":1,"text":"Kübelwagon","cost":0},
+                                                {"id":2,"text":"SdKfz 250/12 (as SdKfz 250/3)","cost":16},
+                                                {"id":3,"text":"SdKfz 251/18 (as SdKfz 251/3)","cost":16},
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":2,
+                                    "name":"Aerial Artillery Observer",
+                                    "cost":66,
+                                    "br":3,
+                                },
+                                {
+                                    "id":3,
+                                    "name":"Light Panzer Artillery Battery",
+                                    "cost":86,
+                                    "br":3,
+                                },
+                                {
+                                    "id":4,
+                                    "name":"Medium Panzer Artillery Battery",
+                                    "cost":136,
+                                    "br":4,
+                                    "restricted":true,
+                                },
+                                {
+                                    "id":5,
+                                    "name":"Nebelwerfer Artillery Battery",
+                                    "cost":86,
+                                    "br":2,
+                                    "restricted":true,
+                                },
+                                {
+                                    "id":6,
+                                    "name":"Self-Propelled Artillery",
+                                    "cost":43,
+                                    "br":2,
+                                    "options":[
+                                        {
+                                            "name":"Composition",
+                                            "choices":[
+                                                {"id":1,"text":"Wespe","cost":0},
+                                                {"id":2,"text":"Hummel","cost":25, "restricted":true},
+                                                {"id":3,"text":"SdKfz Wurfrahmen","cost":0, "restricted":true},
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":7,
+                                    "name":"Off-Table Artillery Fire",
+                                    "cost":90,
+                                    "br":0,
+                                    "options":[
+                                        {
+                                            "name":"Composition",
+                                            "choices":[
+                                                {"id":1,"text":"2 105mm howitzer","cost":0},
+                                                {"id":2,"text":"2 150mm howitzer","cost":45},
+                                                {"id":3,"text":"2 100mm cannon","cost":36},
+                                                {"id":4,"text":"2 170mm cannon","cost":108},
+                                                {"id":5,"text":"2 150mm Nebelwerfer","cost":45},
+                                                {"id":6,"text":"2 210mm Nebelwerfer","cost":118},
+                                                {"id":7,"text":"2 280mm Nebelwerfer","cost":162},
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":8,
+                                    "name":"Armoured Forward Observer",
+                                    "cost":29,
+                                    "br":2,
+                                    "options":[
+                                        {
+                                            "name":"Composition",
+                                            "choices":[
+                                                {"id":1,"text":"1 Panzer II F","cost":0},
+                                                {"id":2,"text":"1 Panzer III H","cost":0},
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":9,
+                                    "name":"Heavy Mortar Team",
+                                    "cost":29,
+                                    "br":1,
+                                    "options":[
+                                        {
+                                            "name":"Loader team",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"3-man","cost":10},
+                                            ]
+                                        },
+                                        {
+                                            "name":"Mount",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"Medium Truck or Heavy Car","cost":0},
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":10,
+                                    "name":"105mm Howitzer",
+                                    "cost":36,
+                                    "br":2,
+                                    "options":[
+                                        {
+                                            "name":"Loader team",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"3-man","cost":10},
+                                            ]
+                                        },
+                                        {
+                                            "name":"Tow",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"Medium Truck","cost":4},
+                                                {"id":3,"text":"SdKfz 6 halftrack","cost":8},
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":11,
+                                    "name":"150mm Howitzer",
+                                    "cost":54,
+                                    "br":2,
+                                    "options":[
+                                        {
+                                            "name":"Loader team",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"3-man","cost":10},
+                                            ]
+                                        },
+                                        {
+                                            "name":"Tow",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"Heavy Truck","cost":6},
+                                                {"id":3,"text":"SdKfz 6 halftrack","cost":8},
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":12,
+                                    "name":"100mm Cannon",
+                                    "cost":50,
+                                    "br":2,
+                                    "restricted":true,
+                                    "options":[
+                                        {
+                                            "name":"Loader team",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"3-man","cost":10},
+                                            ]
+                                        },
+                                        {
+                                            "name":"Tow",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"Medium Truck","cost":6},
+                                                {"id":3,"text":"SdKfz 6 halftrack","cost":8},
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":13,
+                                    "name":"150mm Infantry Gun",
+                                    "cost":54,
+                                    "br":2,
+                                    "options":[
+                                        {
+                                            "name":"Loader team",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"3-man","cost":10},
+                                            ]
+                                        },
+                                        {
+                                            "name":"Tow",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"Medium Truck","cost":6},
+                                                {"id":3,"text":"SdKfz 6 halftrack","cost":8},
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":14,
+                                    "name":"Off-Table Mortar Fire",
+                                    "cost":54,
+                                    "br":0,
+                                    "options":[
+                                        {
+                                            "name":"Composition",
+                                            "choices":[
+                                                {"id":1,"text":"2 80mm mortars","cost":0},
+                                                {"id":2,"text":"2 120mm mortars","cost":20},
+                                            ]
+                                        },
+                                    ]
+                                },
+                            ]
                         },
                         {
                             "id":5, 
                             "name":"Defences",
                             "allows":null,
                             "requires":false,
-                            },
-                            */
+                            "entries":[
+                                {
+                                    "id":1,
+                                    "name":"Improvised Barricades",
+                                    "cost":5,
+                                    "br":0,
+                                },
+                                {
+                                    "id":2,
+                                    "name":"Machine Gun Dug-out",
+                                    "cost":32,
+                                    "br":1,
+                                },
+                                {
+                                    "id":3,
+                                    "name":"Mortar Pit",
+                                    "cost":32,
+                                    "br":1,
+                                },
+                                {
+                                    "id":4,
+                                    "name":"Fortified Building",
+                                    "cost":30,
+                                    "br":0,
+                                },
+                                {
+                                    "id":5,
+                                    "name":"Foxholes",
+                                    "cost":10,
+                                    "br":0,
+                                },
+                                {
+                                    "id":6,
+                                    "name":"Sniper Hideout",
+                                    "cost":15,
+                                    "br":0,
+                                    "restricted":true
+                                },
+                                {
+                                    "id":7,
+                                    "name":"AT Gun Dug-out",
+                                    "cost":20,
+                                    "br":0,
+                                    "restricted":true
+                                },
+                                {
+                                    "id":8,
+                                    "name":"Booby Trapped Building",
+                                    "cost":25,
+                                    "br":0,
+                                },
+                                {
+                                    "id":9,
+                                    "name":"Improvised Road Block",
+                                    "cost":5,
+                                    "br":0,
+                                },
+                            ]
+                        },
                     {
                         "id":6, 
                         "name":"Reconnaissance Support Units",
