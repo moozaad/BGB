@@ -1226,7 +1226,6 @@ function requires_match(item, requires) {
         if ($.inArray(requires[i], item[i]) == -1)
             return false;
     }
-    alert('requries_match success');
     return true;
 }
 
@@ -1302,7 +1301,7 @@ function allow_requires() {
     var allows = get_allows();
     if (allows.length == 0) // no allows but requirements, fail
         return false;
-    alert('allows length is ' +allows.length + 'requires.length is ' + requires.length);
+    //alert('allows length is ' +allows.length + 'requires.length is ' + requires.length);
     if ( allows.length > 0 && requires.length <= allows.length )
         return perm(allows, requires.length, requires_match, requires);
     return false;
