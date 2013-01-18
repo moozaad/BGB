@@ -10,7 +10,7 @@
              background: #999;
          }
          .entry {
-             width:250px;
+             width:300px;
              display:inline-block;
              float:left;
              margin:1px;
@@ -19,14 +19,14 @@
          .entry_cost {
              margin:12px 1px 12px 1px;
              display:inline;
-             max-width:10%;
+             max-width:11%;
              float:right;
          }
          .entry_name {
              margin:12px 1px 12px 1px;
              display:inline;
              float:left;
-             max-width:88%;
+             max-width:87%;
              white-space:nowrap;
              overflow:hidden;
          } 
@@ -51,10 +51,27 @@
             margin:0px 1px 0px 0px;
             overflow:hidden;
         }
+        .sub_button {
+        }
+        .sub_div {
+            width:80%;
+            height:80%;
+        }
+        .hidden {
+            display:none;
+        }
          </style>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script type="text/javascript">
+            function sub_timeout(sub_units, div) {
+                 var dfd = jQuery.Deferred();
+                  setTimeout(function() {
+                            dfd.resolveWith(div, sub_units);
+                             }, 1400);
+                   return dfd.promise();
+            }
+
             // IDs are manually generated and must remain static as they will be used for saving
             // lists
             var forces = [
@@ -173,15 +190,192 @@
                             "entries":[
                                 {
                                     "id":1,
-                                    "name":"Fix me!",
-                                    "cost":10,
-                                    "br":1,
+                                    "name":"Panzer Grenadier Platoon",
+                                    "cost":100,
+                                    "br":11,
+                                    'multiplier':4,
                                     "options":[
                                         {
                                             "name":"Composition",
                                             "choices":[
                                                 {"id":1,"text":"1 man","cost":0},
                                                 {"id":2,"text":"+Spotter","cost":5},
+                                            ]
+                                        },
+                                    ],
+                                    "sub_text":"Platoon Components",
+                                    "sub_units":[
+                                        {
+                                            "id":1,
+                                            "name":"Command Squad",
+                                            "cost":0,
+                                            "br":0,
+                                            "mandatory":true,
+                                            "options":[
+                                                {
+                                                    "name":"Transport",
+                                                    "choices":[
+                                                        {"id":1,"text":"None","cost":0},
+                                                        {"id":2,"text":"Medium truck","cost":4},
+                                                    ]
+                                                },
+                                                {
+                                                    "name":"AT grenades",
+                                                    "choices":[
+                                                        {"id":1,"text":"None","cost":0},
+                                                        {"id":2,"text":"Anti-tank grenades","cost":5},
+                                                    ]
+                                                },
+                                            ]
+                                        },
+                                        {
+                                            "id":2,
+                                            "name":"Panzer Grenadier Squad",
+                                            "cost":0,
+                                            "count":3,
+                                            "br":0,
+                                            "mandatory":true,
+                                            "options":[
+                                                {
+                                                    "name":"Transport",
+                                                    "choices":[
+                                                        {"id":1,"text":"None","cost":0},
+                                                        {"id":2,"text":"Medium truck","cost":4},
+                                                    ]
+                                                },
+                                                {
+                                                    "name":"MG",
+                                                    "choices":[
+                                                        {"id":1,"text":"Bipod MG34","cost":0},
+                                                        {"id":2,"text":"Bipod MG42","cost":4},
+                                                    ]
+                                                },
+                                                {
+                                                    "name":"AT grenades",
+                                                    "choices":[
+                                                        {"id":1,"text":"None","cost":0},
+                                                        {"id":2,"text":"Anti-tank grenades","cost":5},
+                                                    ]
+                                                },
+                                            ]
+
+                                        },
+                                        {
+                                            "id":3,
+                                            "name":"Combat Medic",
+                                            "cost":8,
+                                            "br":0,
+                                        },
+                                        {
+                                            "id":4,
+                                            "name":"Light Mortar Team",
+                                            "cost":12,
+                                            "br":1,
+                                            "options":[
+                                                {
+                                                    "name":"Loader team",
+                                                    "choices":[
+                                                        {"id":1,"text":"None","cost":0},
+                                                        {"id":2,"text":"3-man","cost":10},
+                                                    ]
+                                                },
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":4,
+                                    "name":"Panzer Grenadier Squad",
+                                    "cost":26, // greg confirm
+                                    "br":2,
+                                    "options":[
+                                        {
+                                            "name":"Transport",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"Medium truck","cost":4},
+                                            ]
+                                        },
+                                        {
+                                            "name":"MG",
+                                            "choices":[
+                                                {"id":1,"text":"Bipod MG34","cost":0},
+                                                {"id":2,"text":"Bipod MG42","cost":4},
+                                            ]
+                                        },
+                                        {
+                                            "name":"AT grenades",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"Anti-tank grenades","cost":5},
+                                            ]
+                                        },
+                                    ]
+
+                                },
+                                {
+                                    "id":5,
+                                    "name":"Armoured Panzer Grenadier Squad",
+                                    "cost":42,
+                                    "br":3,
+                                    "options":[
+                                        {
+                                            "name":"MG",
+                                            "choices":[
+                                                {"id":1,"text":"Bipod MG34","cost":0},
+                                                {"id":2,"text":"Bipod MG42","cost":4},
+                                            ]
+                                        },
+                                        {
+                                            "name":"AT grenades",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"Anti-tank grenades","cost":5},
+                                            ]
+                                        },
+                                        {
+                                            "name":"Troop Quality",
+                                            "choices":[
+                                                {"id":1,"text":"Veteran","cost":0},
+                                                {"id":2,"text":"Elite","cost":12, "br":1},
+                                            ]
+                                        }
+                                    ]
+
+                                },
+                                {
+                                    "id":6,
+                                    "name":"Armoured Pioneer Squad",
+                                    "cost":54,
+                                    "br":3,
+                                    "restricted":true,
+                                    "options":[
+                                        {
+                                            "name":"MG",
+                                            "choices":[
+                                                {"id":1,"text":"Bipod MG34","cost":0},
+                                                {"id":2,"text":"Bipod MG42","cost":4},
+                                            ]
+                                        },
+                                        {
+                                            "name":"Flame-thrower",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"One Flame-thrower","cost":10},
+                                            ]
+                                        },
+                                        {
+                                            "name":"Mine sweeper",
+                                            "choices":[
+                                                {"id":1,"text":"None","cost":0},
+                                                {"id":2,"text":"One mine sweeper","cost":5},
+                                            ]
+                                        },
+                                        {
+                                            "name":"Troop Quality",
+                                            "choices":[
+                                                {"id":1,"text":"Veteran","cost":0},
+                                                {"id":2,"text":"Elite","cost":12, "br":1},
                                             ]
                                         }
                                     ]
@@ -926,6 +1120,15 @@
                 },
                 ];
 
+function render_sub_units_to(sub) {
+//    $(this).removeClass('hidden'); // greg
+    $(this).html(render_entries(sub));
+    $(this).bind("mousedown", function(e) {
+            e.metaKey = true;
+            }).selectable({ filter: '.entry', tolerance: "fit", unselecting:unselecting, unselected:unselected, selected:selected });
+    $('body').append($(this));
+}
+
 function perm(inArr, choose, callback, callback_arg) {
     var c = [];
     var found = false;
@@ -973,7 +1176,7 @@ function render_sections(force) {
         else
             text = text + "selectable ' data-requires='false'";
         text = text + " id=section_" + force['sections'][i].id + " data-section-no="+ force['sections'][i].id + ">";
-        text = text+render_entries(force['sections'][i]);
+        text = text+render_entries(force['sections'][i]['entries']);
         text = text + "</div></div>";
     }
     return text;
@@ -1052,31 +1255,47 @@ function allow_enables() {
     update_dynamic();
 }
 
-function render_entries(section) {
+function render_entries(entries) {
     var text="";
-    for(var i = 0; i < section['entries'].length; i++) {
-        text = text + "<div data-multiplier='";
-        if (section['entries'][i].multiplier)
-            text = text + section['entries'][i].multiplier;
-        else {
-            if (section['entries'][i].multiplier == 0)
-                text = text + "0";
-            else
-                text = text + "1";
+    for(var i = 0; i < entries.length; i++) {
+        var count = 1;
+        if (entries[i].count) {
+            count = entries[i].count;
         }
-        text = text + "' class='entry ui-widget-content'>";
-        text = text + "<div><p class='entry_name'>"+section['entries'][i].name+"</p><p id='cost' data-initial-cost='"+section['entries'][i].cost+"' class='entry_cost'>"+section['entries'][i].cost+"</p></div>";
-        if ( section['entries'][i]['options'] ) {
-            for(var j = 0; j < section['entries'][i]['options'].length; j++) {
-                text = text + '<div class="choice"><p class="opt_text">'+section['entries'][i]['options'][j]['name']+'</p><select class="opt_select" name="' + section['entries'][i]['options'][j]['name']+'">';
-                for (var k=0; k<section.entries[i].options[j].choices.length; k++) {
-                    text = text + "<option data-cost='"+section.entries[i].options[j].choices[k].cost+"' value='" + section.entries[i].options[j].choices[k].id +"'>"+section.entries[i].options[j].choices[k].text + "</option>"; 
-                }
-                text = text + "</select></div>";
+        for (var count_loop=0; count_loop<count; count_loop++) {
+            text = text + "<div data-multiplier='";
+            if (entries[i].multiplier)
+                text = text + entries[i].multiplier;
+            else {
+                if (entries[i].multiplier == 0)
+                    text = text + "0";
+                else
+                    text = text + "1";
             }
-        }
+            if ( entries[i]['sub_units'] ) {
+                var div = $('<div class="selectable">').addClass('sub_div hidden');
+                $(div).uniqueId();
+                text = text + "' data-sub='" + $(div).attr('id')+"'";
+                jQuery.when( sub_timeout([entries[i]['sub_units']], div)).done(render_sub_units_to);
 
-        text = text + "</div>"
+            }
+            text = text + "' class='entry ui-widget-content";
+            if ( entries[i]['mandatory'] )
+                text = text + ' ui-selected mandatory';
+            text = text + "'><div><p class='entry_name'>"+entries[i].name+"</p><p id='cost' data-initial-cost='"+entries[i].cost+"' class='entry_cost'>"+entries[i].cost+"</p></div>";
+            if ( entries[i]['options'] ) {
+                for(var j = 0; j < entries[i]['options'].length; j++) {
+                    text = text + '<div class="choice"><p class="opt_text">'+entries[i]['options'][j]['name']+'</p><select class="opt_select" name="' + entries[i]['options'][j]['name']+'">';
+                    for (var k=0; k<entries[i].options[j].choices.length; k++) {
+                        text = text + "<option data-cost='"+entries[i].options[j].choices[k].cost+"' value='" + entries[i].options[j].choices[k].id +"'>"+entries[i].options[j].choices[k].text + "</option>"; 
+                    }
+                    text = text + "</select></div>";
+                }
+            }
+            if ( entries[i]['sub_units'] )
+                text = text + "<button class='sub_button'>"+entries[i]['sub_text']+"</button>";
+            text = text + "</div>"
+        }
     }
     return text;
 }
@@ -1095,13 +1314,18 @@ function render() {
 }
 
 function unselecting(event, ui){
+    var abort = false;
     // If removing this would stop us meeting our requires, then prevent its removal
-    if ($(ui.unselecting).parents('.section').data('allows')) {
+    if ($(ui.unselecting).hasClass('mandatory'))
+        abort = true;
+    else if ($(ui.unselecting).parents('.section').data('allows')) {
         if ( !allow_requires() ) {
-            $(ui.unselecting).addClass('ui-selected');
             alert('Removing this item would result in you having more support choices than allowed.\nRemove those first.');
+            abort=true;
         }
     }
+    if (abort)
+        $(ui.unselecting).addClass('ui-selected');
 
 }
 function unselected(event, ui){
@@ -1145,6 +1369,10 @@ function update_dynamic(){
             // so trigger focusout handlers to remove .ui-state-focus
             ui.item.children( "h3" ).triggerHandler( "focusout" );
         }
+    });
+    $(".sub_button").button().click(function( event ) {
+        event.preventDefault();
+        $('#'+$(this).parent().data('sub')).dialog({title:$(this).html(), modal:true, width:'80%'});
     });
     $( ".selectable" ).bind("mousedown", function(e) {
             e.metaKey = true;
