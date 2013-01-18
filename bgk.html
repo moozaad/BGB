@@ -2111,12 +2111,20 @@ function unselected(event, ui){
     update_dynamic();
 }
 
-//greg see if allow_requires is valid when using a selecting callback
-
-
 function selected(event, ui){
-    update_cost();
-    allow_enables(); // greg see if this item provides any allows first
+    var abort=false;
+    if ($(ui.selected).parents('.section').data('requires')) {
+        if ( !allow_requires() ) {
+            alert('Selecting this item would result in you having more support choices than allowed.');
+            abort=true;
+        }
+    }
+    if (abort) {
+        $(ui.selected).removeClass('ui-selected');
+    } else {
+        update_cost();
+        allow_enables();
+    }
 
 }
 
