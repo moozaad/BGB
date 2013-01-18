@@ -747,7 +747,7 @@
                                 {
                                     "id":4,
                                     "name":"Panzer Grenadier Squad",
-                                    "cost":26, // greg confirm
+                                    "cost":26,
                                     "br":2,
                                     "options":[
                                         {
@@ -1013,7 +1013,7 @@
                         {
                             "id":4, 
                             "name":"Artillery Units",
-                            "allows":[10], //greg this isn't allowing additional fire support for some reason
+                            "allows":[10],
                             "requires":false,
                             "entries":[
                                 {
@@ -1343,8 +1343,84 @@
                                 ]
 
                             },
-                            //greg finish this section
-                            //greg also make it check allows/requires BEFORE selecting a new unit
+                            {
+                                "id":3,
+                                "name":"Motorcycle Reconnaissance Patrol",
+                                "cost":18,
+                                "br":1,
+                            },
+                            {
+                                "id":4,
+                                "name":"Recon Platoon Command",
+                                "cost":44,
+                                "br":2,
+                                "options":[
+                                    {
+                                        "name":"Transport",
+                                        "choices":[
+                                            {"id":1,"text":"SdKfz 250/10","cost":0},
+                                            {"id":2,"text":"SdKfz 250/11","cost":0},
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":5,
+                                "name":"Panzer Grenadier Foot Patrol",
+                                "cost":36,
+                                "count":3,
+                                "br":0,
+                                "options":[
+                                    {
+                                        "name":"MG",
+                                        "choices":[
+                                            {"id":1,"text":"Bipod MG34","cost":0},
+                                            {"id":2,"text":"Bipod MG42","cost":4},
+                                        ]
+                                    },
+                                    {
+                                        "name":"AT grenades",
+                                        "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"Anti-tank grenades","cost":5},
+                                        ]
+                                    },
+                                ]
+                            },
+                            {
+                                "id":6,
+                                "name":"Armoured Car",
+                                "cost":20,
+                                "br":1,
+                                "options":[
+                                    {
+                                        "name":"Composition",
+                                        "choices":[
+                                            {"id":1,"text":"SdKfz 222","cost":0},
+                                            {"id":2,"text":"SdKfz 231 or 232","cost":4},
+                                            {"id":3,"text":"SdKfz 233","cost":14},
+                                            {"id":4,"text":"SdKfz 250/7","cost":10, restricted:"true"},
+                                            {"id":5,"text":"SdKfz 250/8","cost":4, restricted:"true"},
+                                            {"id":6,"text":"SdKfz 250/9","cost":4, restricted:"true"},
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":7,
+                                "name":"Aerial Reconnaissance",
+                                "cost":50,
+                                "br":2,
+                                "options":[
+                                    {
+                                        "name":"Composition",
+                                        "choices":[
+                                            {"id":1,"text":"Hs-126","cost":0},
+                                            {"id":2,"text":"Fw-189A 'UHU'","cost":20, br:"1"},
+                                        ]
+                                    }
+                                ]
+                            },
                         ],
                     },
                     {
@@ -1864,7 +1940,6 @@
                 ];
 
 function render_sub_units_to(sub) {
-//    $(this).removeClass('hidden'); // greg
     $(this).html(render_entries(sub, true));
     $(this).bind("mousedown", function(e) {
             e.metaKey = true;
@@ -2031,7 +2106,6 @@ function render_entries(entries, sub_entries) {
             if ( entries[i]['mandatory'] )
                 text = text + ' ui-selected mandatory';
             text = text + "'><div><p class='entry_name'>"+entries[i].name+"</p><p id='cost' data-initial-cost='"+entries[i].cost+"' class='entry_cost'>"+entries[i].cost+"</p><p class='entry_cost' id='br' data-initial-br='"+entries[i].br+"'>"+entries[i].br+"<font size='1.2em'>BR</font></p></div>";
-            //greg here
             if ( entries[i]['options'] ) {
                 for(var j = 0; j < entries[i]['options'].length; j++) {
                     text = text + '<div class="choice"><p class="opt_text">'+entries[i]['options'][j]['name']+'</p><select class="opt_select" name="' + entries[i]['options'][j]['name']+'">';
