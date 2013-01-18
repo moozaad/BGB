@@ -1058,8 +1058,12 @@ function render_entries(section) {
         text = text + "<div data-multiplier='";
         if (section['entries'][i].multiplier)
             text = text + section['entries'][i].multiplier;
-        else
-            text = text + "1";
+        else {
+            if (section['entries'][i].multiplier == 0)
+                text = text + "0";
+            else
+                text = text + "1";
+        }
         text = text + "' class='entry ui-widget-content'>";
         text = text + "<div><p class='entry_name'>"+section['entries'][i].name+"</p><p id='cost' data-initial-cost='"+section['entries'][i].cost+"' class='entry_cost'>"+section['entries'][i].cost+"</p></div>";
         if ( section['entries'][i]['options'] ) {
