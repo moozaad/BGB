@@ -1933,7 +1933,11 @@ function get_allows() {
     { // take allows 'multiplier' into account when calculating allows
         var rv = [];
         for (var i=0; i<($(a).data('multiplier')); i++) {
-            rv.push($(a).parent().data('allows'));
+            var allows = $(a).parent().data('allows');
+            if ($.isArray(allows))
+                rv.push($(a).parent().data('allows'));
+            else
+                rv.push([$(a).parent().data('allows')]);
         }
         return rv;
     });
