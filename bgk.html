@@ -168,7 +168,7 @@
                         {
                             "id":2, 
                             "name":"Infantry Units",
-                            "allows":'[6,7,8]',
+                            "allows":'[6,7,9]',
                             "requires":false,
                             "entries":[
                                 {
@@ -192,7 +192,7 @@
                         {
                             "id":3, 
                             "name":"Tank Units",
-                            "allows":'[6,7,8]',
+                            "allows":'[6,7,8,9]',
                             "requires":false,
                             "entries":[
                                 {
@@ -267,6 +267,7 @@
                                 {
                                     "id":5,
                                     "name":"Panzer Ace",
+                                    "multiplier":0,
                                     "cost":20,
                                     "br":0,
                                 },
@@ -357,7 +358,7 @@
                         {
                             "id":4, 
                             "name":"Artillery Units",
-                            "allows":[6,7,8],
+                            "allows":[10],
                             "requires":false,
                         },
                         {
@@ -382,13 +383,31 @@
                                     {
                                         "name":"Composition",
                                         "choices":[
-                                            {"id":1,"text":"1 man","cost":0},
-                                            {"id":2,"text":"+Spotter","cost":5},
+                                            {"id":1,"text":"1 sniper","cost":0},
+                                            {"id":2,"text":"1 sniper + 1 spotter","cost":5},
                                         ]
                                     }
                                 ]
 
                             },
+                            {
+                                "id":2,
+                                "name":"Mounted Panzer Grenadier Patrol",
+                                "cost":28,
+                                "br":3,
+                                "options":[
+                                    {
+                                        "name":"AT grenades",
+                                        "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"Anti-tank grenades","cost":5},
+                                        ]
+                                    }
+                                ]
+
+                            },
+                            //greg finish this section
+                            //greg also make it check allows/requires BEFORE selecting a new unit
                         ],
                     },
                     {
