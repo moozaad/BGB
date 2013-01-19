@@ -2218,6 +2218,15 @@ function unselected(event, ui){
     update_dynamic();
 }
 
+function duplicate_entry(entry) {
+    if ($(entry).data('unique'))
+        return;
+    var dupe = $(entry).clone(true, true);
+    dupe.removeClass('ui-selected');
+    //greg add close button to dupes...
+    $(entry).after(dupe);
+}
+
 function selected(event, ui){
     var abort=false;
     if ($(ui.selected).parents('.section').data('requires')) {
@@ -2229,6 +2238,7 @@ function selected(event, ui){
     if (abort) {
         $(ui.selected).removeClass('ui-selected');
     } else {
+        duplicate_entry(ui.selected);
         update_cost();
         allow_enables();
     }
