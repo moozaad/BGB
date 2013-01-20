@@ -65,7 +65,8 @@
         }
          </style>
         <script src="js/jquery.min.js"></script>
-        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-1.9.2.custom.js"></script>
+        <!-- greg        <script src="js/jquery-ui.min.js"></script> -->
         <script type="text/javascript">
             function sub_timeout(sub_units, div) {
                  var dfd = jQuery.Deferred();
@@ -1972,9 +1973,7 @@
 
 function render_sub_units_to(sub) {
     $(this).html(render_entries(sub, true));
-    $(this).bind("mousedown", function(e) {
-            e.metaKey = true;
-            }).selectable({ filter: '.entry', tolerance: "fit", unselecting:unselecting, unselected:unselected, selected:selected });
+    update_selectable($(this));
     $('body').append($(this));
 }
 
@@ -2105,7 +2104,7 @@ function allow_enables() {
         section.addClass('selectable');
         // greg section.css('background:EEE');
     }
-    update_dynamic();
+    update_accordion();
 }
 
 function render_entries(entries, sub_entries) {
@@ -2126,7 +2125,7 @@ function render_entries(entries, sub_entries) {
                     text = text + "1";
             }
             if ( entries[i]['sub_units'] ) {
-                var div = $('<div class="selectable">').addClass('sub_div hidden');
+                var div = $('<div>').addClass('selectable sub_div hidden');
                 $(div).uniqueId();
                 text = text + "' data-sub='" + $(div).attr('id');
                 jQuery.when( sub_timeout([entries[i]['sub_units']], div)).done(render_sub_units_to);
@@ -2215,20 +2214,36 @@ function unselected(event, ui){
     update_cost();
     allow_removed();
     allow_enables();
-    update_dynamic();
+    update_accordion();
 }
 
 function duplicate_entry(entry) {
     if ($(entry).data('unique'))
         return;
-    var dupe = $(entry).clone(true, true);
+    var dupe = $(entry).clone(true, false);
+    // greg set uniqueID
+    $(dupe).attr('id', null);
+    $(dupe).uniqueId();
     dupe.removeClass('ui-selected');
     //greg add close button to dupes...
     $(entry).after(dupe);
+    //Clone any sub div
+    if ($(dupe).data('sub')) {
+        // If this dupe has sub units then also duplicate that sub div and
+        // change the sub and parents reference to each others in the new clones
+        var sub = $('#'+$(dupe).data('sub')).clone(false, false);
+        $(sub).attr('id', null);
+        $(sub).uniqueId();
+        $(sub).data('sub_parent', $(dupe).attr('id'));
+        $('body').append($(sub));
+        $(dupe).data('sub', $(sub).attr('id'));
+        update_selectable();
+    }
 }
 
 function selected(event, ui){
     var abort=false;
+    alert('selected');
     if ($(ui.selected).parents('.section').data('requires')) {
         if ( !allow_requires() ) {
             alert('Selecting this item would result in you having more support choices than allowed.');
@@ -2236,6 +2251,7 @@ function selected(event, ui){
         }
     }
     if (abort) {
+        alert('abort triggered');
         $(ui.selected).removeClass('ui-selected');
     } else {
         duplicate_entry(ui.selected);
@@ -2268,7 +2284,7 @@ function option_change(event) {
 }
 
 
-function update_dynamic(){
+function update_accordion(){
     $("#accordion").accordion({
         heightStyle: "content",
         header: '> div > h3',
@@ -2281,25 +2297,43 @@ function update_dynamic(){
             ui.item.children( "h3" ).triggerHandler( "focusout" );
         }
     });
-    $(".sub_button").button().click(function( event ) {
+}
+function update_selectable()
+{
+    alert( 'sl is ' + $('.selectable').length + '/' + $('.selectable:visible').length + '/' + $('.selectable:hidden').length );
+    
+    $('.selectable').bind("mousedown", function(e) {
+            e.metaKey = true;
+            }).selectable({ filter: '.entry', tolerance: "fit", unselecting:unselecting, unselected:unselected, selected:selected }, 'refresh');
+    $(".opt_select").change(option_change);
+}
+
+function sub_button_bind() {
+    //$(".sub_button").button().click(function( event ) {
+    /*
+    $("#dataTable tbody").on("click", "tr", function(event){
+            alert($(this).text());
+            }); */
+    $('.sub_button').button();
+    $('body').on('click', '.sub_button', function( event) {
         event.preventDefault();
         var parent = $(this).parent();
         var sub = $('#'+parent.data('sub'));
+        alert('opening:'+parent.data('sub'));
         // Apply a uniqueId to the sub's owner and put it in the sub div's data
         // so that the sub div can reference its owner
         $(parent).uniqueId();
         sub.data('sub_parent', $(parent).attr('id'));
         sub.dialog({title:$(this).html(), modal:true, width:'950'});
-    });
-    $( ".selectable" ).bind("mousedown", function(e) {
-            e.metaKey = true;
-            }).selectable({ filter: '.entry', tolerance: "fit", unselecting:unselecting, unselected:unselected, selected:selected });
-    $(".opt_select").change(option_change);
+        });
+
 }
 
     $( document ).ready( function() {
-            render();
-            update_dynamic();
+        render();
+        update_selectable();
+        sub_button_bind();
+        update_accordion();
         });
         </script>
     </head>
