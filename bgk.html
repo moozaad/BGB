@@ -2174,12 +2174,14 @@ function render() {
 // is currently un-selected
 function get_selected_entries() {
     return $('.ui-selected').filter( function() {
-        // check if they are a sub entry - if so require parent entry to be selected
-        if ($(this).data('sub_entry')) {
-            if ($(this).parents('.ui-selectable').data('sub_parent') &&
-                $('#'+$(this).parents('.ui-selectable').data('sub_parent')).hasClass('ui-selected'))
-                    return true;
-            return false;
+        // check if they are a sub entry - if so require all parent entries to be selected
+        var which = $(this);
+        while (which.data('sub_entry')) {
+            if ( ! $(which).parents('.ui-selectable').data('sub_parent') || 
+                ! $('#'+$(which).parents('.ui-selectable').data('sub_parent')).hasClass('ui-selected')) {
+                    return false;
+                    }
+            which = $('#'+$(which).parents('.ui-selectable').data('sub_parent'));
         }
         return true; } );
 }
@@ -2216,6 +2218,21 @@ function unselected(event, ui){
     update_accordion();
 }
 
+function duplicate_sub(dupe) {
+    // If this dupe has sub units then also duplicate that sub div and
+    // change the sub and parents reference to each others in the new clones
+    var sub = $('#'+$(dupe).data('sub')).clone(false, false);
+    $(sub).attr('id', null);
+    $(sub).uniqueId();
+    $(sub).data('sub_parent', $(dupe).attr('id'));
+    $('body').append($(sub));
+    $(dupe).data('sub', $(sub).attr('id'));
+    // check if any of the duplicated sub-entries also have sub-entries
+    $(sub).find('.entry').each( function( index ) {
+            if ($(this).data('sub'))
+                duplicate_sub(this);
+    });
+}
 function duplicate_entry(entry) {
     if ($(entry).data('unique'))
         return;
@@ -2228,21 +2245,13 @@ function duplicate_entry(entry) {
     $(entry).after(dupe);
     //Clone any sub div
     if ($(dupe).data('sub')) {
-        // If this dupe has sub units then also duplicate that sub div and
-        // change the sub and parents reference to each others in the new clones
-        var sub = $('#'+$(dupe).data('sub')).clone(false, false);
-        $(sub).attr('id', null);
-        $(sub).uniqueId();
-        $(sub).data('sub_parent', $(dupe).attr('id'));
-        $('body').append($(sub));
-        $(dupe).data('sub', $(sub).attr('id'));
+        duplicate_sub(dupe);
         update_selectable();
     }
 }
 
 function selected(event, ui){
     var abort=false;
-    alert('selected');
     if ($(ui.selected).parents('.section').data('requires')) {
         if ( !allow_requires() ) {
             alert('Selecting this item would result in you having more support choices than allowed.');
@@ -2310,7 +2319,6 @@ function sub_button_bind() {
         event.preventDefault();
         var parent = $(this).parent();
         var sub = $('#'+parent.data('sub'));
-        alert('opening:'+parent.data('sub'));
         // Apply a uniqueId to the sub's owner and put it in the sub div's data
         // so that the sub div can reference its owner
         $(parent).uniqueId();
