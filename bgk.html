@@ -65,8 +65,7 @@
         }
          </style>
         <script src="js/jquery.min.js"></script>
-        <script src="js/jquery-ui-1.9.2.custom.js"></script>
-        <!-- greg        <script src="js/jquery-ui.min.js"></script> -->
+        <script src="js/jquery-ui.min.js"></script>
         <script type="text/javascript">
             function sub_timeout(sub_units, div) {
                  var dfd = jQuery.Deferred();
@@ -2221,11 +2220,11 @@ function duplicate_entry(entry) {
     if ($(entry).data('unique'))
         return;
     var dupe = $(entry).clone(true, false);
-    // greg set uniqueID
+    // set uniqueID
     $(dupe).attr('id', null);
     $(dupe).uniqueId();
     dupe.removeClass('ui-selected');
-    //greg add close button to dupes...
+    //greg consider adding close button to dupes...
     $(entry).after(dupe);
     //Clone any sub div
     if ($(dupe).data('sub')) {
@@ -2300,20 +2299,12 @@ function update_accordion(){
 }
 function update_selectable()
 {
-    alert( 'sl is ' + $('.selectable').length + '/' + $('.selectable:visible').length + '/' + $('.selectable:hidden').length );
-    
     $('.selectable').bind("mousedown", function(e) {
             e.metaKey = true;
             }).selectable({ filter: '.entry', tolerance: "fit", unselecting:unselecting, unselected:unselected, selected:selected }, 'refresh');
-    $(".opt_select").change(option_change);
 }
 
 function sub_button_bind() {
-    //$(".sub_button").button().click(function( event ) {
-    /*
-    $("#dataTable tbody").on("click", "tr", function(event){
-            alert($(this).text());
-            }); */
     $('.sub_button').button();
     $('body').on('click', '.sub_button', function( event) {
         event.preventDefault();
@@ -2334,6 +2325,7 @@ function sub_button_bind() {
         update_selectable();
         sub_button_bind();
         update_accordion();
+        $('body').on('change', '.opt_select', option_change);
         });
         </script>
     </head>
