@@ -67,10 +67,10 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script type="text/javascript">
-            function sub_timeout(sub_units, div) {
-                 var dfd = jQuery.Deferred();
+            function sub_timeout(sub_units, div, bg_id_prefix) {
+                var dfd = jQuery.Deferred();
                   setTimeout(function() {
-                            dfd.resolveWith(div, sub_units);
+                            dfd.resolveWith(div, [sub_units, bg_id_prefix]);
                              }, 1400);
                    return dfd.promise();
             }
@@ -3166,8 +3166,8 @@
                 },
                 ];
 
-function render_sub_units_to(sub) {
-    $(this).html(render_entries(sub, true));
+function render_sub_units_to(sub, prefix) {
+    $(this).html(render_entries(sub, prefix, true));
     update_selectable($(this));
     $('body').append($(this));
 }
@@ -3219,7 +3219,7 @@ function render_sections(force) {
         else
             text = text + "selectable ' data-requires='false'";
         text = text + " id=section_" + force['sections'][i].id + " data-section-no="+ force['sections'][i].id + ">";
-        text = text+render_entries(force['sections'][i]['entries'], false);
+        text = text+render_entries(force['sections'][i]['entries'], force['sections'][i].id+'_', false);
         text = text + "</div></div>";
     }
     return text;
@@ -3302,7 +3302,7 @@ function allow_enables() {
     update_accordion();
 }
 
-function render_entries(entries, sub_entries) {
+function render_entries(entries, bg_id_prefix, sub_entries) {
     var text="";
     for(var i = 0; i < entries.length; i++) {
         var count = 1;
@@ -3319,11 +3319,12 @@ function render_entries(entries, sub_entries) {
                 else
                     text = text + "1";
             }
+            text = text + "' data-bg_id='" + bg_id_prefix + entries[i].id;
             if ( entries[i]['sub_units'] ) {
                 var div = $('<div>').addClass('selectable sub_div hidden');
                 $(div).uniqueId();
                 text = text + "' data-sub='" + $(div).attr('id');
-                jQuery.when( sub_timeout([entries[i]['sub_units']], div)).done(render_sub_units_to);
+                jQuery.when( sub_timeout(entries[i]['sub_units'], div, bg_id_prefix+entries[i].id+'_')).done(render_sub_units_to);
             }
             if (sub_entries)
                 text = text + "' data-sub_entry='true";
@@ -3362,9 +3363,30 @@ function render_force(which) {
 
 }
 
+function decode( character ) {
+    return character.charCodeAt(0) - 65;
+}
+
+function load_item(item) {
+    alert(item);
+}
+
+function load( string ) {
+    var list = string.split(',');
+    render_force(decode(list[0]));
+
+    // greg disable the callbacks for sub divs when doing this...
+
+    for ( var i = 1; i<list.length; i++ ) {
+        load_item(list[i]);
+    }
+
+}
+
 function render() {
-    //render_force(0);
-    render_force(1);
+    render_force(0);
+    //    render_force(1);
+    //load('A,AA,AC,AC');
 }
 
 // Function gets selected entries but excludes any sub entries whose parent entry
