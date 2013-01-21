@@ -3387,6 +3387,7 @@ function decode( character ) {
         return -1;
     }
     var code = character.charCodeAt(0);
+    //alert(character + ' decode to ' + code);
     if ( code >= 65 && code <= 90 )
         return character.charCodeAt(0) - 64;
     else if ( code >= 97 && code <= 122 )
@@ -3405,18 +3406,32 @@ function encode( integer ){
 function split_and_load(items, depth, panel) {
     // Split on 0, then 1, then 2 etc as we go deeper
     var list = items.split(String.fromCharCode(depth+48));
-    // alert('split_and_load:' + JSON.stringify(list));
+    alert('split_and_load:' + JSON.stringify(list));
     for (var i=0; i<list.length; i++) {
-        load_item(list[i], depth, panel);
+        if(typeof(panel)==='undefined') {
+            var section_number = decode(list[i][0]);
+            section = $('.section').filter( function() {
+                if ($(this).data('section-no') == section_number){
+                    return true;
+                }
+                return false;
+            });
+            // skip the first entry - the section code
+            load_item(list[i].slice(1), depth, section[0]);
+        } else {
+            load_item(list[i], depth, panel);
+        }
     }
 }
 
 function load_item(item, depth, panel) {
     var entry_count = 0; // is it instance N of this entry?
     var pointer=0; // index into item where current data coming from
+    var sub_delim = String.fromCharCode(49+depth);
     var section = null;
     alert('item: '+JSON.stringify(item));
     if(typeof(panel)==='undefined') {
+        alert('no panel');
         var section_number = decode(item[0]);
         pointer++;
         section = $('.section').filter( function() {
@@ -3435,40 +3450,49 @@ function load_item(item, depth, panel) {
         }
         return false;
     });
-    if ( item[pointer+1] ) { // see if this refers to the Nth one of this entry
-        var code = decode(item[pointer+1]);
-        if ( code > 0 ) {
-            entry_count = code-1; // zero-base
-            pointer++;
+    if ( item[pointer+1] == '_' ) { // see if this refers to the Nth one of this entry
+        pointer = pointer +2;
+        var count = decode(item[pointer]);
+        if ( count > 0 ) {
+            entry_count = count-1; // zero-base
         }
     }
     enable_entry(entries[entry_count]);
     pointer ++;
     // check for any option selects
-    while ( item[pointer== '=' ) {
-        pointer++;
-        alert('greg now set option');
+    while ( item[pointer] == '-' ) {
+        var which = decode(item[pointer+1]);
+        var value = decode(item[pointer+2]);
+        pointer = pointer +2;
+        $(entries[entry_count]).find('select').each( function() {
+            if ($(this).data('bg_id') == which )
+                $(this).val(value);
+        });
     }
-    if ( item[pointer] == '_' ) { // sub entries
-        var endPointer = item.lastIndexOf('_');  // find the last _, it's this one's match
+    if ( item[pointer] == sub_delim ) { // sub entries
+        alert('got a sub_delimiter match at ' + pointer + ' on: ' + sub_delim);
+        var endPointer = item.indexOf(sub_delim, pointer+1);  // find the next sub-delim
+        alert('pointer: ' + pointer + "endPointer:" +  endPointer);
         var sub = $('#'+$(entries[entry_count]).data('sub'));
         pointer++;
-        alert(JSON.stringify(item));
-        alert(JSON.stringify(item.slice(pointer)));
 
         var subArray = null;
         if ( endPointer > pointer ) {
+            alert('sub div: ' + JSON.stringify(item.slice(pointer, endPointer)));
             alert('greg 2 ('+item+'), pointer:' + pointer + ' endPointer:' + endPointer);
-            split_and_load(item.slice(pointer, endPointer), depth+1, sub);
+            load_item(item.slice(pointer, endPointer), depth+1, sub);
+            pointer = endPointer+1;
+            //split_and_load(item.slice(pointer, endPointer), depth+1, sub);
             // greg can there be any remaining string here to parse?
             // pretty sure there can be
-            if (endPointer < item.length)
-                alert('greg handle the remainder of string');
-        }
-        else {
-            split_and_load(item.slice(pointer), depth+1, sub);
+        } else {
+            alert('sub div test endPointer>pointer failed');
+
         }
     }
+
+    if (pointer < item.length)
+        load_item(item.slice(pointer), depth, panel);
 }
 
 function load( string ) {
@@ -3477,13 +3501,21 @@ function load( string ) {
 }
 
 function render() {
-//    render_force(0, true);
+    /* greg still have to note that a saved entry is the Nth of that type of entr
+       possibly don't save mandatory items in sub fields unless they have non-standard select options */
+    //render_force(0, true);
     //    render_force(1);
     //load('AAA0AC0ACB0BA_F1G_0BAB_E');
     //load('ABA_F1G_0BAB_E');
     //load('0A=170B=14');
     //load('AA=110B=11');
-    load('AA=AG0B=AB');
+    // the below means - force A, panel A, item A - option 1 value G, item B, item C (option 1, value B) _split on 0, panel C, item A
+    //load('AAA-AGBC-AB0CA');
+    // B_B means entry type B (2) instance B (2)
+    load('ABA1ABB_B-BBB_CCD-AB10');
+    //load('AAA-AGBC-AB0CA');
+    //    AAA-AGBC-AB0CA0
+    //AA-AG0B0C-ABA
 }
 
 // Function gets selected entries but excludes any sub entries whose parent entry
@@ -3550,7 +3582,7 @@ function duplicate_sub(dupe) {
     });
 }
 function duplicate_entry(entry) {
-    if ($(entry).data('unique'))
+    if ($(entry).data('unique') || $(entry).hasClass('mandatory'))
         return;
     var dupe = $(entry).clone(true, false);
     // set uniqueID
@@ -3649,20 +3681,25 @@ function sub_button_bind() {
 
 }
 
-function save_entry(entry) {
+function save_entry(entry, depth) {
     var text=[];
+    var sub;
     text.push(encode($(entry).data('bg_id')));
-    alert('selects =' + ($(entry).find('select').length));
+    //greg need to save if this is Nth entry
     $(entry).find('select').each( function() {
         var num_opts = $(this).children('option').length;
         // only bother saving ones with more than 1 possible choice
         // and which are not the default value
         if (num_opts > 1 && $(this).val() > 1) {
-            text.push( '=', encode($(this).data('bg_id')), encode(parseInt($(this).val())));
+            text.push( '-', encode($(this).data('bg_id')), encode(parseInt($(this).val())));
         }
-    });
-
-    // greg do sub entries...
+        });
+    subID = $(entry).data('sub');
+    if (subID) {
+        alert('have subID');
+        var sub = $('#'+subID);
+        text = text.concat(save_section( sub , depth+1));
+    }
     return text;
 }
 
@@ -3671,18 +3708,24 @@ function depth_seperator(depth) {
 }
 
 function save_section(section, depth) {
-    var text=[];
     var entries = $(section).children('.ui-selected');
-    for (var i=0; i<entries.length; i++) {
-        if (i>0)
-            text.push(depth_seperator(depth));
-        text = text.concat(save_entry(entries[i]));
+    alert('entries length is ' + entries.length);
+    var text = [];
+    if ( entries.length > 0 ) {
+        if (depth == 0) //only include section code for top level sections
+            text.push(encode($(section).data('section-no')));
+        else
+            text.push(depth); // push sub section start marker for this depth
+        for (var i=0; i<entries.length; i++) {
+            // need to determine if it's Nth instance of this entry and save that information
+            text = text.concat(save_entry(entries[i], depth, N));
+        }
+        text.push(depth);
     }
     return text;
 }
 
 function save(event) {
-    //greg figure out force id
     var text = [];
     text.push(encode($('#main').data('bg_id')));
     var sections = $('.section').not('.ui-state-disabled');
@@ -3691,7 +3734,6 @@ function save(event) {
     var saveText='';
     for (var j=0; j<text.length; j++)
         saveText = saveText + text[j];
-    alert(JSON.stringify(text));
     alert(saveText);
 }
 
