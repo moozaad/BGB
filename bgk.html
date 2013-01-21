@@ -67,10 +67,10 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script type="text/javascript">
-            function sub_timeout(sub_units, div, bg_id_prefix) {
+            function sub_timeout(sub_units, div) {
                 var dfd = jQuery.Deferred();
                   setTimeout(function() {
-                            dfd.resolveWith(div, [sub_units, bg_id_prefix]);
+                            dfd.resolveWith(div, [sub_units]);
                              }, 1400);
                    return dfd.promise();
             }
@@ -3166,8 +3166,8 @@
                 },
                 ];
 
-function render_sub_units_to(sub, prefix) {
-    $(this).html(render_entries(sub, prefix, true));
+function render_sub_units_to(sub) {
+    $(this).html(render_entries(sub, true, false));
     update_selectable($(this));
     $('body').append($(this));
 }
@@ -3209,7 +3209,7 @@ function render_name(force) {
     var text = "<div class='ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix'><span class='ui-dialog-title'>"+force['name']+"</span><span class='force_cost' id='force_cost'>0</span></div>"
     return(text);
 }
-function render_sections(force) {
+function render_sections(force, async) {
     var text="";
     for(var i = 0; i < force['sections'].length; i++) {
         text = text + "<div class='group'><h3>" + force['sections'][i].name+"</h3>";
@@ -3219,7 +3219,7 @@ function render_sections(force) {
         else
             text = text + "selectable ' data-requires='false'";
         text = text + " id=section_" + force['sections'][i].id + " data-section-no="+ force['sections'][i].id + ">";
-        text = text+render_entries(force['sections'][i]['entries'], force['sections'][i].id+'_', false);
+        text = text+render_entries(force['sections'][i]['entries'], force['sections'][i].id+'_', false, async);
         text = text + "</div></div>";
     }
     return text;
@@ -3302,7 +3302,7 @@ function allow_enables() {
     update_accordion();
 }
 
-function render_entries(entries, bg_id_prefix, sub_entries) {
+function render_entries(entries, sub_entries, async) {
     var text="";
     for(var i = 0; i < entries.length; i++) {
         var count = 1;
@@ -3319,12 +3319,18 @@ function render_entries(entries, bg_id_prefix, sub_entries) {
                 else
                     text = text + "1";
             }
-            text = text + "' data-bg_id='" + bg_id_prefix + entries[i].id;
+            text = text + "' data-bg_id='" + entries[i].id;
             if ( entries[i]['sub_units'] ) {
                 var div = $('<div>').addClass('selectable sub_div hidden');
                 $(div).uniqueId();
                 text = text + "' data-sub='" + $(div).attr('id');
-                jQuery.when( sub_timeout(entries[i]['sub_units'], div, bg_id_prefix+entries[i].id+'_')).done(render_sub_units_to);
+                // Do not populate sub panel asynchronously if async == false
+                // This is important if we are loading a saved list as we will
+                // need panel contents immediately
+                if ( async )
+                    jQuery.when( sub_timeout(entries[i]['sub_units'], div)).done(render_sub_units_to);
+                else
+                    render_sub_units_to.apply(div, [entries[i]['sub_units']]);
             }
             if (sub_entries)
                 text = text + "' data-sub_entry='true";
@@ -3354,39 +3360,104 @@ function render_entries(entries, bg_id_prefix, sub_entries) {
     return text;
 }
 
-function render_force(which) {
+function render_force(which, async) {
     var text="";
     var force = forces[which];
     text = render_name(force);
-    text = text + "<div id='accordion'>" + render_sections(force) + "</div>";
+    text = text + "<div id='accordion'>" + render_sections(force, async) + "</div>";
     $('#main').html(text);
 
 }
 
+// return -1 on error character
 function decode( character ) {
-    return character.charCodeAt(0) - 65;
+    /* greg remove after debugging */
+    if (typeof(character)==='undefined') {
+        alert('passed undefined to decode');
+        return -1;
+    }
+    var code = character.charCodeAt(0);
+    if ( code >= 65 && code <= 90 )
+        return character.charCodeAt(0) - 64;
+    else if ( code >= 97 && code <= 122 )
+        return character.charCodeAt(0) - 70;
+    return -1;
 }
 
-function load_item(item) {
-    alert(item);
+function split_and_load(items, depth, panel) {
+    // Split on 0, then 1, then 2 etc as we go deeper
+    var list = items.split(String.fromCharCode(depth+48));
+    // alert('split_and_load:' + JSON.stringify(list));
+    for (var i=0; i<list.length; i++) {
+        load_item(list[i], depth, panel);
+    }
+}
+
+function load_item(item, depth, panel) {
+    var entry_count = 0; // is it instance N of this entry?
+    var pointer=0; // index into item where current data coming from
+    var section = null;
+    alert('item: '+JSON.stringify(item));
+    if(typeof(panel)==='undefined') {
+        var section_number = decode(item[0]);
+        pointer++;
+        section = $('.section').filter( function() {
+            if ($(this).data('section-no') == section_number){
+                return true;
+            }
+            return false;
+        });
+    } else {
+        section = panel;
+    }
+    var entry_number = decode(item[pointer]);
+    var entries = $(section).children('.entry').filter( function() {
+        if ($(this).data('bg_id') == entry_number) {
+            return true;
+        }
+        return false;
+    });
+    if ( item[pointer+1] ) { // see if this refers to the Nth one of this entry
+        var code = decode(item[pointer+1]);
+        if ( code > 0 ) {
+            entry_count = code-1; // zero-base
+            pointer++;
+        }
+    }
+    enable_entry(entries[entry_count]);
+    pointer ++;
+    if ( item[pointer] == '_' ) { // sub entries
+        var endPointer = item.lastIndexOf('_');  // find the last _, it's this one's match
+        var sub = $('#'+$(entries[entry_count]).data('sub'));
+        pointer++;
+        alert(JSON.stringify(item));
+        alert(JSON.stringify(item.slice(pointer)));
+
+        var subArray = null;
+        if ( endPointer > pointer ) {
+            alert('greg 2 ('+item+'), pointer:' + pointer + ' endPointer:' + endPointer);
+            split_and_load(item.slice(pointer, endPointer), depth+1, sub);
+            // greg can there be any remaining string here to parse?
+            // pretty sure there can be
+            if (endPointer < item.length)
+                alert('greg handle the remainder of string');
+        }
+        else {
+            split_and_load(item.slice(pointer), depth+1, sub);
+        }
+    }
 }
 
 function load( string ) {
-    var list = string.split(',');
-    render_force(decode(list[0]));
-
-    // greg disable the callbacks for sub divs when doing this...
-
-    for ( var i = 1; i<list.length; i++ ) {
-        load_item(list[i]);
-    }
-
+    render_force(decode(string[0]), false);
+    split_and_load(string.slice(1), 0);
 }
 
 function render() {
-    render_force(0);
+    render_force(0, true);
     //    render_force(1);
-    //load('A,AA,AC,AC');
+    //load('AAA0AC0ACB0BA_F1G_0BAB_E');
+    //load('ABA_F1G_0BAB_E');
 }
 
 // Function gets selected entries but excludes any sub entries whose parent entry
@@ -3469,6 +3540,13 @@ function duplicate_entry(entry) {
     }
 }
 
+function enable_entry(entry) {
+    duplicate_entry(entry);
+    $(entry).addClass('ui-selected');
+    update_cost();
+    allow_enables();
+}
+
 function selected(event, ui){
     var abort=false;
     if ($(ui.selected).parents('.section').data('requires')) {
@@ -3481,9 +3559,7 @@ function selected(event, ui){
         alert('abort triggered');
         $(ui.selected).removeClass('ui-selected');
     } else {
-        duplicate_entry(ui.selected);
-        update_cost();
-        allow_enables();
+        enable_entry(ui.selected);
     }
 
 }
