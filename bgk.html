@@ -2,7 +2,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link type="text/css" href="css/ui-lightness/jquery-ui-1.9.2.custom.min.css" rel="Stylesheet" />
-         <style>
+        <style>
+        button#save .ui-button-text {
+            padding:1;
+        }
              .selectable .ui-selecting {
              background: #ccc;
              }
@@ -19,14 +22,14 @@
          .entry_cost {
              margin:12px 2px 12px 5px;
              display:inline;
-             max-width:11%;
+             max-width:10%;
              float:right;
          }
          .entry_name {
              margin:12px 1px 12px 1px;
              display:inline;
              float:left;
-             max-width:74%;
+             max-width:75%;
              white-space:nowrap;
              overflow:hidden;
          } 
@@ -62,6 +65,11 @@
         }
         .force_cost{
             float:right;
+        }
+        .save_button{
+            float:left;
+            margin:0px 24px 0px 12px;
+            padding:0px;
         }
          </style>
         <script src="js/jquery.min.js"></script>
@@ -362,7 +370,7 @@
                                 },
                                 {
                                     "id":2,
-                                    "name":"Armoured Assault Pioneer Platoon",
+                                    "name":"Armoured Pioneer Platoon",
                                     "cost":199,
                                     "br":19,
                                     "restricted":true,
@@ -546,7 +554,7 @@
                                 },
                                 {
                                     "id":3,
-                                    "name":"Armoured Panzer Grenadier Platoon",
+                                    "name":"Armoured Pzr Gren Platoon",
                                     "cost":162,
                                     "br":15,
                                     'multiplier':4,
@@ -798,7 +806,7 @@
                                 },
                                 {
                                     "id":5,
-                                    "name":"Armoured Panzer Grenadier Squad",
+                                    "name":"Armoured Pzr Gren Squad",
                                     "cost":42,
                                     "br":3,
                                     "options":[
@@ -3206,7 +3214,7 @@ function requires_match(item, requires) {
 
 // maybe make it get which value from a select?
 function render_name(force) {
-    var text = "<div class='ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix'><span class='ui-dialog-title'>"+force['name']+"</span><span class='force_cost' id='force_cost'>0</span></div>"
+    var text = "<div class='ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix'><span class='ui-dialog-title'>"+force['name']+"</span><div style='display:inline; float:right'><button id='save' class='save_button'>Save</button><span class='force_cost' id='force_cost'>0</span></div></div>"
     return(text);
 }
 function render_sections(force, async) {
@@ -3299,6 +3307,7 @@ function allow_enables() {
         section.addClass('selectable');
         // greg section.css('background:EEE');
     }
+    update_selectable();
     update_accordion();
 }
 
@@ -3342,7 +3351,7 @@ function render_entries(entries, sub_entries, async) {
             text = text + "'><div><p class='entry_name'>"+entries[i].name+"</p><p id='cost' data-initial-cost='"+entries[i].cost+"' class='entry_cost'>"+entries[i].cost+"</p><p class='entry_cost' id='br' data-initial-br='"+entries[i].br+"'>"+entries[i].br+"<font size='1.2em'>BR</font></p></div>";
             if ( entries[i]['options'] ) {
                 for(var j = 0; j < entries[i]['options'].length; j++) {
-                    text = text + '<div class="choice"><p class="opt_text">'+entries[i]['options'][j]['name']+'</p><select class="opt_select" name="' + entries[i]['options'][j]['name']+'">';
+                    text = text + '<div class="choice"><p class="opt_text">'+entries[i]['options'][j]['name']+'</p><select class="opt_select" name="' + entries[i]['options'][j]['name']+ '" data-bg_id="' + (j+1) +  '">';
                     for (var k=0; k<entries[i].options[j].choices.length; k++) {
                         text = text + "<option data-cost='"+entries[i].options[j].choices[k].cost;
                         if (entries[i].options[j].choices[k].br)
@@ -3365,6 +3374,7 @@ function render_force(which, async) {
     var force = forces[which];
     text = render_name(force);
     text = text + "<div id='accordion'>" + render_sections(force, async) + "</div>";
+    $('#main').data('bg_id', which+1);
     $('#main').html(text);
 
 }
@@ -3382,6 +3392,14 @@ function decode( character ) {
     else if ( code >= 97 && code <= 122 )
         return character.charCodeAt(0) - 70;
     return -1;
+}
+
+function encode( integer ){
+    if ( integer >= 0 && integer <= 26 )
+        return String.fromCharCode(64+integer);
+    if ( integer >= 27 && integer <= 52 )
+        return String.fromCharCode(97+integer);
+    return '!'
 }
 
 function split_and_load(items, depth, panel) {
@@ -3426,6 +3444,11 @@ function load_item(item, depth, panel) {
     }
     enable_entry(entries[entry_count]);
     pointer ++;
+    // check for any option selects
+    while ( item[pointer== '=' ) {
+        pointer++;
+        alert('greg now set option');
+    }
     if ( item[pointer] == '_' ) { // sub entries
         var endPointer = item.lastIndexOf('_');  // find the last _, it's this one's match
         var sub = $('#'+$(entries[entry_count]).data('sub'));
@@ -3449,15 +3472,18 @@ function load_item(item, depth, panel) {
 }
 
 function load( string ) {
-    render_force(decode(string[0]), false);
+    render_force(decode(string[0])-1, false);
     split_and_load(string.slice(1), 0);
 }
 
 function render() {
-    render_force(0, true);
+//    render_force(0, true);
     //    render_force(1);
     //load('AAA0AC0ACB0BA_F1G_0BAB_E');
     //load('ABA_F1G_0BAB_E');
+    //load('0A=170B=14');
+    //load('AA=110B=11');
+    load('AA=AG0B=AB');
 }
 
 // Function gets selected entries but excludes any sub entries whose parent entry
@@ -3623,10 +3649,58 @@ function sub_button_bind() {
 
 }
 
+function save_entry(entry) {
+    var text=[];
+    text.push(encode($(entry).data('bg_id')));
+    alert('selects =' + ($(entry).find('select').length));
+    $(entry).find('select').each( function() {
+        var num_opts = $(this).children('option').length;
+        // only bother saving ones with more than 1 possible choice
+        // and which are not the default value
+        if (num_opts > 1 && $(this).val() > 1) {
+            text.push( '=', encode($(this).data('bg_id')), encode(parseInt($(this).val())));
+        }
+    });
+
+    // greg do sub entries...
+    return text;
+}
+
+function depth_seperator(depth) {
+    return String.fromCharCode(48+depth);
+}
+
+function save_section(section, depth) {
+    var text=[];
+    var entries = $(section).children('.ui-selected');
+    for (var i=0; i<entries.length; i++) {
+        if (i>0)
+            text.push(depth_seperator(depth));
+        text = text.concat(save_entry(entries[i]));
+    }
+    return text;
+}
+
+function save(event) {
+    //greg figure out force id
+    var text = [];
+    text.push(encode($('#main').data('bg_id')));
+    var sections = $('.section').not('.ui-state-disabled');
+    for (var i=0; i<sections.length; i++)
+        text = text.concat(save_section(sections[i], 0));
+    var saveText='';
+    for (var j=0; j<text.length; j++)
+        saveText = saveText + text[j];
+    alert(JSON.stringify(text));
+    alert(saveText);
+}
+
     $( document ).ready( function() {
         render();
         update_selectable();
         sub_button_bind();
+        $('.save_button').button();
+        $('.save_button').on('click', save);
         update_accordion();
         $('body').on('change', '.opt_select', option_change);
         });
