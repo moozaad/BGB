@@ -1,5 +1,8 @@
+button#load .ui-button-text {
+    padding:0;
+}
 button#save .ui-button-text {
-    padding:1;
+    padding:0;
 }
 .selectable .ui-selecting {
     background: #ccc;
@@ -62,7 +65,11 @@ button#save .ui-button-text {
     float:right;
 }
 .save_button{
+    margin:0px 4px 0px 4px;
+    padding:0px;
+}
+.load_button{
     float:left;
-    margin:0px 24px 0px 12px;
+    margin:0px 4px 0px 4px;
     padding:0px;
 }
