@@ -3381,9 +3381,8 @@ function render_force(which, async) {
 
 // return -1 on error character
 function decode( character ) {
-    /* greg remove after debugging */
     if (typeof(character)==='undefined') {
-        alert('passed undefined to decode');
+        //alert('passed undefined to decode');
         return -1;
     }
     var code = character.charCodeAt(0);
@@ -3429,9 +3428,9 @@ function load_item(item, depth, panel) {
     var pointer=0; // index into item where current data coming from
     var sub_delim = String.fromCharCode(49+depth);
     var section = null;
-    alert('item: '+JSON.stringify(item));
+    //alert('item: '+JSON.stringify(item));
     if(typeof(panel)==='undefined') {
-        alert('no panel');
+        //alert('no panel');
         var section_number = decode(item[0]);
         pointer++;
         section = $('.section').filter( function() {
@@ -3470,7 +3469,7 @@ function load_item(item, depth, panel) {
         });
     }
     if ( item[pointer] == sub_delim ) { // sub entries
-        alert('got a sub_delimiter match at ' + pointer + ' on: ' + sub_delim);
+        //alert('got a sub_delimiter match at ' + pointer + ' on: ' + sub_delim);
         var endPointer = item.indexOf(sub_delim, pointer+1);  // find the next sub-delim
         alert('pointer: ' + pointer + "endPointer:" +  endPointer);
         var sub = $('#'+$(entries[entry_count]).data('sub'));
@@ -3478,8 +3477,8 @@ function load_item(item, depth, panel) {
 
         var subArray = null;
         if ( endPointer > pointer ) {
-            alert('sub div: ' + JSON.stringify(item.slice(pointer, endPointer)));
-            alert('greg 2 ('+item+'), pointer:' + pointer + ' endPointer:' + endPointer);
+            /*alert('sub div: ' + JSON.stringify(item.slice(pointer, endPointer)));
+            alert('greg 2 ('+item+'), pointer:' + pointer + ' endPointer:' + endPointer); */
             load_item(item.slice(pointer, endPointer), depth+1, sub);
             pointer = endPointer+1;
             //split_and_load(item.slice(pointer, endPointer), depth+1, sub);
@@ -3503,18 +3502,10 @@ function load( string ) {
 function render() {
     /* greg still have to note that a saved entry is the Nth of that type of entr
        possibly don't save mandatory items in sub fields unless they have non-standard select options */
-    //render_force(0, true);
+    render_force(0, true);
     //    render_force(1);
-    //load('AAA0AC0ACB0BA_F1G_0BAB_E');
-    //load('ABA_F1G_0BAB_E');
-    //load('0A=170B=14');
-    //load('AA=110B=11');
-    // the below means - force A, panel A, item A - option 1 value G, item B, item C (option 1, value B) _split on 0, panel C, item A
-    //load('AAA-AGBC-AB0CA');
     // B_B means entry type B (2) instance B (2)
-    load('ABA1ABB_B-BBB_CCD-AB10');
-    //load('AAA-AGBC-AB0CA');
-    //    AAA-AGBC-AB0CA0
+    //load('ABA1ABB_B-BBB_C-ABCD-AB10');
     //AA-AG0B0C-ABA
 }
 
@@ -3681,11 +3672,12 @@ function sub_button_bind() {
 
 }
 
-function save_entry(entry, depth) {
+function save_entry(entry, depth, N) {
     var text=[];
     var sub;
     text.push(encode($(entry).data('bg_id')));
-    //greg need to save if this is Nth entry
+    if (N > 1) // Save if this is the Nth of this entry
+        text.push('_', encode(N));
     $(entry).find('select').each( function() {
         var num_opts = $(this).children('option').length;
         // only bother saving ones with more than 1 possible choice
@@ -3717,7 +3709,18 @@ function save_section(section, depth) {
         else
             text.push(depth); // push sub section start marker for this depth
         for (var i=0; i<entries.length; i++) {
+            var N=1;
             // need to determine if it's Nth instance of this entry and save that information
+            if (i > 0 ) {
+                var previous=0;
+                var bg_id=$(entries[i]).data('bg_id');
+                for (var j=0; j<i; j++){
+                    if ($(entries[j]).data('bg_id') == bg_id)
+                        previous++;
+                }
+                if (previous)
+                    N = previous+1;
+            }
             text = text.concat(save_entry(entries[i], depth, N));
         }
         text.push(depth);
