@@ -3401,7 +3401,6 @@ function load_item(item, depth, panel) {
     if ( item[pointer] == sub_delim ) { // sub entries
         //alert('got a sub_delimiter match at ' + pointer + ' on: ' + sub_delim);
         var endPointer = item.indexOf(sub_delim, pointer+1);  // find the next sub-delim
-        alert('pointer: ' + pointer + "endPointer:" +  endPointer);
         var sub = $('#'+$(entries[entry_count]).data('sub'));
         pointer++;
 
@@ -3617,7 +3616,6 @@ function save_entry(entry, depth, N) {
         });
     subID = $(entry).data('sub');
     if (subID) {
-        alert('have subID');
         var sub = $('#'+subID);
         text = text.concat(save_section( sub , depth+1));
     }
