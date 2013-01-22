@@ -2,7 +2,7 @@ function sub_timeout(sub_units, div) {
     var dfd = jQuery.Deferred();
         setTimeout(function() {
                 dfd.resolveWith(div, [sub_units]);
-                    }, 1400);
+                    }, 1200);
         return dfd.promise();
 }
 
@@ -3132,7 +3132,7 @@ function requires_match(item, requires) {
 
 // maybe make it get which value from a select?
 function render_name(force) {
-    var text = "<div class='ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix'><span class='ui-dialog-title'>"+force['name']+"</span><div style='display:inline; float:right'><button id='save' class='save_button'>Save</button><span class='force_cost' id='force_cost'>0</span></div></div>"
+    var text = "<div class='ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix'><span class='ui-dialog-title'>"+force['name']+"</span><div style='display:inline; float:right'><div style=' margin-right:12px; display:inline; float=left'><button id='load' class='load_button'>Load</button><button id='save' class='save_button'>Save</button></div><span class='force_cost' id='force_cost'>0</span></div></div>"
     return(text);
 }
 function render_sections(force, async) {
@@ -3145,7 +3145,7 @@ function render_sections(force, async) {
         else
             text = text + "selectable ' data-requires='false'";
         text = text + " id=section_" + force['sections'][i].id + " data-section-no="+ force['sections'][i].id + ">";
-        text = text+render_entries(force['sections'][i]['entries'], force['sections'][i].id+'_', false, async);
+        text = text+render_entries(force['sections'][i]['entries'], false, async);
         text = text + "</div></div>";
     }
     return text;
@@ -3523,7 +3523,6 @@ function selected(event, ui){
         }
     }
     if (abort) {
-        alert('abort triggered');
         $(ui.selected).removeClass('ui-selected');
     } else {
         enable_entry(ui.selected);
@@ -3646,6 +3645,24 @@ function save_section(section, depth) {
     return text;
 }
 
+function loadDialog() {
+    $('#load_div').dialog({title:"Load Force", modal:true,
+    buttons: {
+        Cancel: function() {
+                    $( this ).dialog( "close" );
+                },
+        OK: function() {
+                    $( this ).dialog( "close" );
+                    $('#main').empty();
+                    $('.sub_div').remove();
+                    load($('#load_input').val());
+                    $('.save_button, .load_button, .sub_button').button();
+                }
+        }
+    });
+
+}
+
 function save(event) {
     var text = [];
     text.push(encode($('#main').data('bg_id')));
@@ -3662,8 +3679,9 @@ $( document ).ready( function() {
     render();
     update_selectable();
     sub_button_bind();
-    $('.save_button').button();
-    $('.save_button').on('click', save);
+    $('.save_button, .load_button').button();
+    $('body').on('click', '.save_button', save);
+    $('body').on('click', '.load_button', loadDialog);
     update_accordion();
     $('body').on('change', '.opt_select', option_change);
 });
