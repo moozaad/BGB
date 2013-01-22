@@ -3132,7 +3132,14 @@ function requires_match(item, requires) {
 
 // maybe make it get which value from a select?
 function render_name(force) {
-    var text = "<div class='ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix'><span class='ui-dialog-title'>"+force['name']+"</span><div style='display:inline; float:right'><div style=' margin-right:12px; display:inline; float=left'><button id='load' class='load_button'>Load</button><button id='save' class='save_button'>Save</button></div><span class='force_cost' id='force_cost'>0</span></div></div>"
+    var text = "<div class='ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix'><select id=forceChoice>"; 
+    for (var i=0; i<forces.length; i++) {
+        text = text + "<option value=" + forces[i].id;
+        if (force.id == forces[i].id)
+            text = text + " selected";
+        text=text+">"+forces[i].name+"</option>";
+    }
+    text = text +"</select><div style='display:inline; float:right'><div style=' margin-right:12px; display:inline; float=left'><button id='load' class='load_button'>Load</button><button id='save' class='save_button'>Save</button></div><span class='force_cost' id='force_cost'>0</span></div></div>"
     return(text);
 }
 function render_sections(force, async) {
@@ -3287,14 +3294,19 @@ function render_entries(entries, sub_entries, async) {
     return text;
 }
 
+function force_by_id(which) {
+    for (var i=0; i<forces.length; i++)
+        if (which == forces[i].id)
+            return forces[i];
+    return forces[0];
+}
 function render_force(which, async) {
     var text="";
-    var force = forces[which];
+    var force = force_by_id(which);
     text = render_name(force);
     text = text + "<div id='accordion'>" + render_sections(force, async) + "</div>";
-    $('#main').data('bg_id', which+1);
+    $('#main').data('bg_id', which);
     $('#main').html(text);
-
 }
 
 // return -1 on error character
@@ -3323,7 +3335,7 @@ function encode( integer ){
 function split_and_load(items, depth, panel) {
     // Split on 0, then 1, then 2 etc as we go deeper
     var list = items.split(String.fromCharCode(depth+48));
-    alert('split_and_load:' + JSON.stringify(list));
+    //alert('split_and_load:' + JSON.stringify(list));
     for (var i=0; i<list.length; i++) {
         if(typeof(panel)==='undefined') {
             var section_number = decode(list[i][0]);
@@ -3346,7 +3358,7 @@ function load_item(item, depth, panel) {
     var pointer=0; // index into item where current data coming from
     var sub_delim = String.fromCharCode(49+depth);
     var section = null;
-    //alert('item: '+JSON.stringify(item));
+    // alert('load item: '+JSON.stringify(item));
     if(typeof(panel)==='undefined') {
         //alert('no panel');
         var section_number = decode(item[0]);
@@ -3380,7 +3392,7 @@ function load_item(item, depth, panel) {
     while ( item[pointer] == '-' ) {
         var which = decode(item[pointer+1]);
         var value = decode(item[pointer+2]);
-        pointer = pointer +2;
+        pointer = pointer +3;
         $(entries[entry_count]).find('select').each( function() {
             if ($(this).data('bg_id') == which )
                 $(this).val(value);
@@ -3413,14 +3425,14 @@ function load_item(item, depth, panel) {
 }
 
 function load( string ) {
-    render_force(decode(string[0])-1, false);
+    render_force(decode(string[0]), false);
     split_and_load(string.slice(1), 0);
 }
 
 function render() {
     /* greg still have to note that a saved entry is the Nth of that type of entr
        possibly don't save mandatory items in sub fields unless they have non-standard select options */
-    render_force(0, true);
+    render_force(1, true);
     //    render_force(1);
     // B_B means entry type B (2) instance B (2)
     //load('ABA1ABB_B-BBB_C-ABCD-AB10');
@@ -3618,7 +3630,7 @@ function depth_seperator(depth) {
 
 function save_section(section, depth) {
     var entries = $(section).children('.ui-selected');
-    alert('entries length is ' + entries.length);
+    // alert('entries length is ' + entries.length);
     var text = [];
     if ( entries.length > 0 ) {
         if (depth == 0) //only include section code for top level sections
@@ -3645,6 +3657,20 @@ function save_section(section, depth) {
     return text;
 }
 
+function emptyPage() {
+    $('#main').empty();
+    $('.sub_div').remove();
+}
+function saveDialog(text){
+    $('#save_div').html("<p>"+text+"</p>");
+    $('#save_div').dialog({title:'Save String', modal:true,
+        buttons: {
+            Close: function () {
+                $( this ).dialog( "close" );
+            }
+        }
+    });
+}
 function loadDialog() {
     $('#load_div').dialog({title:"Load Force", modal:true,
     buttons: {
@@ -3653,14 +3679,12 @@ function loadDialog() {
                 },
         OK: function() {
                     $( this ).dialog( "close" );
-                    $('#main').empty();
-                    $('.sub_div').remove();
+                    emptyPage();
                     load($('#load_input').val());
                     $('.save_button, .load_button, .sub_button').button();
                 }
         }
     });
-
 }
 
 function save(event) {
@@ -3672,16 +3696,23 @@ function save(event) {
     var saveText='';
     for (var j=0; j<text.length; j++)
         saveText = saveText + text[j];
-    alert(saveText);
+    saveDialog(saveText);
+}
+
+function changeForce(event){
+    emptyPage();
+    render_force(parseInt($(this).val()), true);
+    update_accordion();
 }
 
 $( document ).ready( function() {
     render();
     update_selectable();
     sub_button_bind();
+    update_accordion();
     $('.save_button, .load_button').button();
     $('body').on('click', '.save_button', save);
     $('body').on('click', '.load_button', loadDialog);
-    update_accordion();
+    $('body').on('change', '#forceChoice', changeForce);
     $('body').on('change', '.opt_select', option_change);
 });
