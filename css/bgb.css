@@ -1,0 +1,68 @@
+button#save .ui-button-text {
+    padding:1;
+}
+.selectable .ui-selecting {
+    background: #ccc;
+    }
+    .selectable .ui-selected {
+    background: #999;
+}
+.entry {
+    width:300px;
+    display:inline-block;
+    float:left;
+    margin:1px;
+    min-height:120px;
+}
+.entry_cost {
+    margin:12px 2px 12px 5px;
+    display:inline;
+    max-width:10%;
+    float:right;
+}
+.entry_name {
+    margin:12px 1px 12px 1px;
+    display:inline;
+    float:left;
+    max-width:75%;
+    white-space:nowrap;
+    overflow:hidden;
+} 
+.section {
+    width:100%;
+    overflow:auto;
+}
+.opt_select {
+    display:inline;
+    float:right;
+    max-width:54%;
+}
+.choice {
+    clear:both;
+    border:solid;
+    overflow:hidden;
+}
+.opt_text {
+    max-width:45%;
+    display:inline;
+    float:left;
+    margin:0px 1px 0px 0px;
+    overflow:hidden;
+}
+.sub_button {
+}
+.sub_div {
+    width:80%;
+    height:80%;
+}
+.hidden {
+    display:none;
+}
+.force_cost{
+    float:right;
+}
+.save_button{
+    float:left;
+    margin:0px 24px 0px 12px;
+    padding:0px;
+}
