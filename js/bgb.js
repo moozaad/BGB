@@ -3139,13 +3139,13 @@ function render_name(force) {
             text = text + " selected";
         text=text+">"+forces[i].name+"</option>";
     }
-    text = text +"</select><div style='display:inline; float:right'><div style=' margin-right:12px; display:inline; float=left'><button id='load' class='load_button'>Load</button><button id='save' class='save_button'>Save</button></div><span class='force_cost' id='force_cost'>0</span></div></div>"
+    text = text +"</select><div style='display:inline; float:right'><div style=' margin-right:12px; display:inline; float=left'><button id='print' class='save_button'>Print</button><button id='load' class='save_button'>Load</button><button id='save' class='save_button'>Save</button></div><span class='force_cost' id='force_cost'>0</span></div></div>"
     return(text);
 }
 function render_sections(force, async) {
     var text="";
     for(var i = 0; i < force['sections'].length; i++) {
-        text = text + "<div class='group'><h3>" + force['sections'][i].name+"</h3>";
+        text = text + "<div class='group'><h3 class='section_title'>" + force['sections'][i].name+"</h3>";
         text = text + "<div data-allows='"+ force['sections'][i].allows +"' class='section ui-widget ";
         if (force.sections[i].requires)
             text = text + "ui-state-disabled' data-requires='true'";
@@ -3702,15 +3702,61 @@ function changeForce(event){
     render_force(parseInt($(this).val()), true);
     update_accordion();
 }
+function print_header(force) {
+    var text = "<h3 class='p_h3'>"+ force.name + "</h3>";
+    return text;
+}
+function print_with_sub(entry){
+    var text="";
+    return text;
+}
+function print_entry(entry){
+    if ($(entry).data('sub'))
+        return print_with_sub(entry);
+    var text = "<div class='p_entry'><h2 class='p_h2'>" + $(entry).find('.entry_name').text() +"</h2>";
+    text= text+"</div>";
+    return text;
+}
+function print_section(section){
+    var text="<div class='p_section'><h3 class='p_h3'>";
+    text=text+$(section).parent('.group').find('.section_title').text()+"</h3>";
+    var entries = $(section).children('.ui-selected');
+    for (var i=0; i<entries.length; i++){
+        text = text + print_entry(entries[i]);
+    }
+    text=text+"</div>";
+    return text;
+}
+function print_sections() {
+    var sections = $('.section:has(.ui-selected)');
+    var text="";
+    for (var i=0; i<sections.length; i++) {
+        text = text + print_section(sections[i]);
+    }
+/*
+    return $('.ui-selected').filter( function() {
+        print_render */
+    return text;
+}
+function print_render(){
+    var force = force_by_id($('#main').data('bg_id'));
+    var text=print_header(force);
+    text = text + print_sections();
+    $('#print_div').html(text).show();
+    $('#main').hide();
+}
 
 $( document ).ready( function() {
     render();
     update_selectable();
     sub_button_bind();
     update_accordion();
-    $('.save_button, .load_button').button();
-    $('body').on('click', '.save_button', save);
-    $('body').on('click', '.load_button', loadDialog);
+    $('.save_button').button();
+    $('body').on('click','#print_div', function () {
+        $('#main').show(); $('#print_div').hide();});
+    $('body').on('click', '#save', save);
+    $('body').on('click', '#load', loadDialog);
+    $('body').on('click', '#print', print_render);
     $('body').on('change', '#forceChoice', changeForce);
     $('body').on('change', '.opt_select', option_change);
 });
