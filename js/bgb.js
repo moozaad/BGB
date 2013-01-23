@@ -4756,6 +4756,7 @@ function save(event) {
 function changeForce(event){
     emptyPage();
     render_force(parseInt($(this).val()), true);
+    $('.save_button, .load_button, .sub_button').button();
     update_accordion();
 }
 function print_header(force) {
