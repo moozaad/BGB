@@ -5295,7 +5295,6 @@ function perm(inArr, choose, callback, callback_arg) {
 }
 
 function requires_match(item, requires) {
-    //alert(JSON.stringify(requires)+' => ' +JSON.stringify(item));
     for (var i=0; i<item.length; i++) {
         if ($.inArray(requires[i], item[i]) == -1)
             return false;
@@ -5386,9 +5385,38 @@ function allow_requires() {
     var allows = get_allows();
     if (allows.length == 0) // no allows but requirements, fail
         return false;
-    //alert('allows length is ' +allows.length + 'requires.length is ' + requires.length);
-    if ( allows.length > 0 && requires.length <= allows.length )
-        return perm(allows, requires.length, requires_match, requires);
+    alert('allows length is ' +allows.length + 'requires.length is ' + requires.length);
+    if ( allows.length > 0 && requires.length <= allows.length ) {
+        // potentially speed things with some simple checks
+        for (var i=0; i<allows.length; i++) {
+            var matches = 0;
+            var match=0;
+
+            for (var j=0; j<allows[i].length; j++) {
+                match = $.inArray(allows[i][j], requires);
+                if (match != -1) {
+                    alert('match of ' + JSON.stringify(allows[i])+' ('+allows[i][j] +') ' + JSON.stringify(requires));
+                    matches ++;
+                }
+            }
+            alert('greg, see comment and develop code');
+            // greg should sort array, and see if number of matches == number of this allows in the array.
+            // if so then we can remove all matches and all of this allows type
+            if (matches <= 1) {
+                if (matches==1) { // remove the sole requirer of this entry
+                    requires.splice(match,1);
+                }
+                allows.splice(i,1);
+
+
+            } //greg do something if 1 perhaps?
+        }
+        alert(JSON.stringify(allows) + '=>' +JSON.stringify(requires));
+        // greg see if still needs testing
+        if ( allows.length > 0 && requires.length <= allows.length ) {
+            return perm(allows, requires.length, requires_match, requires);
+        }
+    }
     return false;
 }
 
