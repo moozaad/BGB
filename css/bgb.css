@@ -65,7 +65,7 @@ body{
     float:left;
 }
 button.save_button .ui-button-text {
-    padding:0 3 0 3;
+    padding:0px 3px;
 }
 .selectable .ui-selecting {
     background: #ccc;
