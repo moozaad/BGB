@@ -4809,7 +4809,7 @@ function print_render(){
     var text=print_header(force);
     var width=200;
     text = text + print_sections();
-    $('#p_div').html(text);
+    $('body').append($('<div id="p_div" class="p_div clearfix"></div>').html(text));
     width=$('#p_div').children('.p_section').outerWidth();
     $('#p_div').show();
     $('#p_div').isotope({
@@ -4829,7 +4829,7 @@ $( document ).ready( function() {
     update_accordion();
     $('.save_button').button();
     $('body').on('click','#p_div', function () {
-        $('#main').show(); $('#p_div').isotope('destroy');$('#p_div').hide();});
+        $('#main').show(); $('#p_div').remove();});
     $('body').on('click', '#save', save);
     $('body').on('click', '#load', loadDialog);
     $('body').on('click', '#print', print_render);
