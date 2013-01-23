@@ -4486,8 +4486,8 @@ function load( string ) {
 function render() {
     /* greg still have to note that a saved entry is the Nth of that type of entr
        possibly don't save mandatory items in sub fields unless they have non-standard select options */
-//    render_force(1, true);
-    load('AABCC_B0BA1ABB_BB_CCD1B1ABB_BB_C1DEE_B0CAE0');
+    render_force(1, true);
+    //load('AABCC_B0BA1ABB_BB_CCD1B1ABB_BB_C1DEE_B0CAE0');
     //    render_force(1);
     // B_B means entry type B (2) instance B (2)
     //load('ABA1ABB_B-BBB_C-ABCD-AB10');
