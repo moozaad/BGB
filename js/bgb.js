@@ -3357,28 +3357,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "name":"AT grenades",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Anti-tank grenades","cost":5},
-                                ]
-                            },
-                        ]
-                    },
-                    {
-                        "id":3,
-                        "name":"Motorised Rifle Squad",
-                        "cost":14,
-                        "br":1,
-                        "options":[
-                            {
-                                "name":"Transport",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium truck","cost":4},
-                                ]
-                            },
-                            {
                                 "name":"Gun Type",
                                 "choices":[
                                     {"id":1,"text":"Rifle","cost":0},
@@ -3395,7 +3373,7 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
+                        "id":3,
                         "name":"Tank Rider Squad",
                         "cost":12,
                         "br":1,
