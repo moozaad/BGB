@@ -1,25 +1,68 @@
-.p_div {
+body{
+    margin:0;
+    padding:0;
+}
+.p_title{
     width:100%;
+    min-width:90%;
+    height:18px;
+    min-height:18px;
+    overflow:auto;
+}
+.p_div {
     height:100%;
+    overflow:auto;
     clear:both;
     background:white;
     margin:0;
     padding:0;
     border:0;
+    font-size:
 }
 .p_h3 {
     color: #333333;
     text-align: center;
+    font-size:16px;
+    padding:0;
+    margin:4;
+}
+.p_h4 {
+    color: #333333;
+    text-align: center;
+    font-size:12px;
+    margin:2px;
+    display:inline;
+    clear:both;
+}
+.right {
+    float:right;
+}
+.left {
+    float:left;
 }
 .p_section {
-    width:49%;
+    margin:4px;
+    padding:0px;
+    width:47%;
+    border:solid;
+    border-width:1px;
+    float:left;
+}
+.p_parent {
+    width:100%;
     padding:0;
     border:solid;
+    border-width:1px;
+    float:left;
 }
 .p_entry {
     width:49%;
+    min-width:49%;
+    min-height:10px;
     padding:0;
-    border:dashed;
+    border:none;
+    border-width:1px;
+    float:left;
 }
 button.save_button .ui-button-text {
     padding:0 3 0 3;
@@ -88,3 +131,6 @@ button.save_button .ui-button-text {
     margin:0px 5px 0px 5px;
     padding:0px;
 }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }

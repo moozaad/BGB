@@ -3431,7 +3431,8 @@ function load( string ) {
 function render() {
     /* greg still have to note that a saved entry is the Nth of that type of entr
        possibly don't save mandatory items in sub fields unless they have non-standard select options */
-    render_force(1, true);
+//    render_force(1, true);
+    load('AABCC_B0BA1ABB_BB_CCD1B1ABB_BB_C1DEE_B0CAE0');
     //    render_force(1);
     // B_B means entry type B (2) instance B (2)
     //load('ABA1ABB_B-BBB_C-ABCD-AB10');
@@ -3703,26 +3704,35 @@ function changeForce(event){
     update_accordion();
 }
 function print_header(force) {
-    var text = "<h3 class='p_h3'>"+ force.name + "</h3>";
+    var text = "<h3 class='p_title p_h3'>"+ force.name + "</h3>";
     return text;
 }
 function print_with_sub(entry){
-    var text="";
+    var sub=$('#'+$(entry).data('sub'));
+    var text = "<div class='p_parent'>";
+    var entries = $(sub).children('.ui-selected');
+    for (var i=0; i<entries.length; i++){
+        text = text + "<div class='p_parent'>"+print_entry(entries[i]) + "</div>";
+    }
+    text = text +"</div>";
     return text;
 }
+function print_entry_name(entry){
+    return "<h4 class='p_h4'>" + $(entry).find('.entry_name').text() +"</h4><p class='p_h4 right'>"+$(entry).find('#cost').text() + "/" + $(entry).find('#br').text() + "</p>";
+}
 function print_entry(entry){
+    var text = print_entry_name(entry);
     if ($(entry).data('sub'))
-        return print_with_sub(entry);
-    var text = "<div class='p_entry'><h2 class='p_h2'>" + $(entry).find('.entry_name').text() +"</h2>";
-    text= text+"</div>";
+        text = text + print_with_sub(entry);
     return text;
 }
 function print_section(section){
+    //greg print any with subs first for layout reasons
     var text="<div class='p_section'><h3 class='p_h3'>";
     text=text+$(section).parent('.group').find('.section_title').text()+"</h3>";
     var entries = $(section).children('.ui-selected');
     for (var i=0; i<entries.length; i++){
-        text = text + print_entry(entries[i]);
+        text = text + "<div class='p_entry'>"+ print_entry(entries[i]) +"</div>";
     }
     text=text+"</div>";
     return text;
@@ -3741,8 +3751,17 @@ function print_sections() {
 function print_render(){
     var force = force_by_id($('#main').data('bg_id'));
     var text=print_header(force);
+    var width=200;
     text = text + print_sections();
-    $('#print_div').html(text).show();
+    $('#p_div').html(text).show();
+    width=$('#p_div').children('.p_section').outerWidth();
+    $('#p_div').isotope({
+        itemSelector : '.p_section, .p_title',
+        layoutMode: 'masonry',
+        masonry: {
+                columnWidth: width+10
+          }
+    });
     $('#main').hide();
 }
 
@@ -3752,8 +3771,8 @@ $( document ).ready( function() {
     sub_button_bind();
     update_accordion();
     $('.save_button').button();
-    $('body').on('click','#print_div', function () {
-        $('#main').show(); $('#print_div').hide();});
+    $('body').on('click','#p_div', function () {
+        $('#main').show(); $('#p_div').hide();});
     $('body').on('click', '#save', save);
     $('body').on('click', '#load', loadDialog);
     $('body').on('click', '#print', print_render);
