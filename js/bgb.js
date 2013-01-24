@@ -5369,10 +5369,11 @@ function get_allows() {
         var rv = [];
         for (var i=0; i<($(a).data('multiplier')); i++) {
             var allows = $(a).parent().data('allows');
-            if ($.isArray(allows))
-                rv.push($(a).parent().data('allows'));
+            if ($.isArray(allows)) // use slice to copy by value
+                rv.push(allows.slice());
+                //rv.push($.extend(true, {}, allows));
             else
-                rv.push([$(a).parent().data('allows')]);
+                rv.push([allows]);
         }
         return rv;
     });
@@ -5406,45 +5407,105 @@ function count_requires() {
         });
     return array;
 }
+function reduce(allows, requires, index, max) {
+    var indexArray = index.split(',');
+    var localMax = max;
+    for (var i=allows.length-1, localMax=max; i >= 0 && localMax > 0; i--){
+        if (allows[i] == index) {
+            allows.splice(i,1);
+            localMax--;
+        }
+    }
+    for (i=requires.length-1, localMax=max; i >= 0 && localMax > 0; i--){
+        if ($.inArray(""+requires[i],indexArray) != -1) {
+            requires.splice(i,1);
+            localMax--;
+        }
+    }
+}
+// Remove any allows/requires pairs that have sufficient allows
+function reduce_by_count(allows, requires) {
+    var count = {};
+    var requiresCount= {};
+    var found = false;
+    for (var i=0;i<allows.length; i++){
+        if (!count[allows[i]])
+            count[allows[i]]=1;
+        else
+            count[allows[i]] = count[allows[i]]+1;
+    }
+    for(var index in count) {
+        var indexArray = index.split(',');
+        for (var j=0; j<requires.length; j++)
+            if ($.inArray(""+requires[j], indexArray) != -1) {
+                if (!requiresCount[index])
+                    requiresCount[index]=1;
+                else
+                    requiresCount[index]=requiresCount[index]+1;
+            }
+    }
+    for (var index in count){
+        if (requiresCount[index] <= count[index]) {
+            found = true;
+            reduce(allows, requires, index, count[index]);
+            count[index]=0; // to stop us trying to remove again below if a single item entry
+        } else if ( index.split(',').length == 1) {
+            reduce(allows, requires, index, count[index]);
+            changed = true;
+        }
+    }
+        
+    if (found) // reduced, so try to reduce again
+        (reduce_by_count(allows, requires));
+    /*alert(JSON.stringify(count));
+    alert(JSON.stringify(requiresCount)); */
+    return found;
+}
+// Reduce allow array entry to lowest common denominator
+// by removing any sub-allows that are not required
+function simplify_allows(allows, requires) {
+    var changed = false;
+    for (var i=allows.length-1; i>=0; i--) {
+        for (var j=allows[i].length-1; j>=0; j--) {
+            if ($.inArray(allows[i][j], requires) ==-1) {
+                allows[i].splice(j,1);
+                changed = true;
+            }
+        }
+        if (allows[i].length == 0) {
+            allows.splice(i,1);
+        }
+    }
+    return changed;
+}
 
 function allow_requires() {
     var requires = count_requires();
     if (requires.length == 0) // no requirements, auto pass
         return true;
     var allows = get_allows();
-    if (allows.length == 0) // no allows but requirements, fail
+    if (requires.length > allows.length)
         return false;
-    alert('allows length is ' +allows.length + 'requires.length is ' + requires.length);
+
+    for (var i=0; i<requires.length; i++) {
+        var match = false;
+        for (var j=0; j<allows.length && match==false; j++){
+            if ($.inArray(requires[i], allows[j]) != -1)
+                match = true;
+        }
+        if (match == false) {
+            return false;
+        }
+    }
+    // loop simplifying until it simplifies no more
+    while ( requires.length > 0 && (simplify_allows(allows, requires) || reduce_by_count(allows, requires) )){
+        ;
+    }
+    if (requires.length == 0)
+        return true;
     if ( allows.length > 0 && requires.length <= allows.length ) {
-        // potentially speed things with some simple checks
-        for (var i=0; i<allows.length; i++) {
-            var matches = 0;
-            var match=0;
-
-            for (var j=0; j<allows[i].length; j++) {
-                match = $.inArray(allows[i][j], requires);
-                if (match != -1) {
-                    alert('match of ' + JSON.stringify(allows[i])+' ('+allows[i][j] +') ' + JSON.stringify(requires));
-                    matches ++;
-                }
-            }
-            alert('greg, see comment and develop code');
-            // greg should sort array, and see if number of matches == number of this allows in the array.
-            // if so then we can remove all matches and all of this allows type
-            if (matches <= 1) {
-                if (matches==1) { // remove the sole requirer of this entry
-                    requires.splice(match,1);
-                }
-                allows.splice(i,1);
-
-
-            } //greg do something if 1 perhaps?
-        }
-        alert(JSON.stringify(allows) + '=>' +JSON.stringify(requires));
-        // greg see if still needs testing
-        if ( allows.length > 0 && requires.length <= allows.length ) {
-            return perm(allows, requires.length, requires_match, requires);
-        }
+        alert('Simplifaction process failed. If using the online (ie uptodate copy) then please report the following string to "quozl" on the guild gamers forum. Your feedback can help improve this builder!:' +JSON.stringify(allows) + " requires: " +JSON.stringify(requires));
+        return perm(allows, requires.length, requires_match, requires);
     }
     return false;
 }
@@ -5542,12 +5603,11 @@ function render_force(which, async) {
 
 // return -1 on error character
 function decode( character ) {
-    if (typeof(character)==='undefined') {
-        //alert('passed undefined to decode');
+    if (typeof(character)==='undefined')
         return -1;
-    }
+
     var code = character.charCodeAt(0);
-    //alert(character + ' decode to ' + code);
+
     if ( code >= 65 && code <= 90 )
         return character.charCodeAt(0) - 64;
     else if ( code >= 97 && code <= 122 )
