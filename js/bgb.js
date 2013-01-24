@@ -4566,60 +4566,99 @@ var forces = [
                 "entries":[
                     {
                         "id":1,
-                        "name":"T-34 Company",
-                        "cost":350,
-                        "multiplier":6,
-                        "br":30,
-                        "officer":true,
-                    },
-                    {
-                        "id":2,
                         "name":"T-34 Platoon",
                         "cost":100,
                         "multiplier":2,
                         "br":9,
                     },
                     {
-                        "id":3,
-                        "name":"Light Tank Squadron",
-                        "cost":50,
-                        "multiplier":2,
-                        "br":6,
-                    },
-                    {
-                        "id":4,
-                        "name":"SU-76 Battery",
-                        "cost":75,
-                        "multiplier":2,
-                        "br":6,
-                        "restricted":true,
-                    },
-                    {
-                        "id":5,
+                        "id":2,
                         "name":"T-34",
                         "cost":40,
                         "br":3,
                     },
                     {
-                        "id":6,
-                        "name":"Light Tank",
-                        "cost":20,
-                        "br":2,
+                        "id":3,
+                        "name":"KV-1 Platoon",
+                        "cost":140,
+                        "multiplier":2,
+                        "br":6,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"T-60","cost":0},
-                                    {"id":2,"text":"T-70","cost":5},
+                                    {"id":1,"text":"3 KV-1Ss","cost":0},
+                                    {"id":2,"text":"3 KV-1Es","cost":9},
                                 ]
                             }
                         ]
                     },
                     {
-                        "id":7,
-                        "name":"SU-76",
-                        "cost":30,
-                        "br":2,
+                        "id":4,
+                        "name":"KV-1 Tank",
+                        "cost":56,
+                        "br":3,
+                        "restricted":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"KV-1S","cost":0},
+                                    {"id":2,"text":"KV-1E","cost":3},
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":5,
+                        "name":"Lend-Lease Light Tank Platoon",
+                        "cost":84,
+                        "br":6,
+                        "multiplier":2,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"3 Valentine IIIs","cost":0},
+                                    {"id":2,"text":"3 M3 Stuarts","cost":6},
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":6,
+                        "name":"Lend-Lease Medium Tank Platoon",
+                        "cost":70,
+                        "br":9,
+                        "multiplier":2,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"3 Matilda IIs","cost":0},
+                                    {"id":2,"text":"3 M3 Grants","cost":40},
+                                    {"id":3,"text":"3 Churchill III or IVs","cost":56},
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":6,
+                        "name":"Lend-Lease Tank",
+                        "cost":48,
+                        "br":3,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"Churchill III or IV","cost":0},
+                                    {"id":2,"text":"M3 Grant","cost":-4},
+                                    {"id":3,"text":"Matilda II","cost":-20},
+                                    {"id":4,"text":"Valentine III","cost":-14,"br":-1},
+                                    {"id":5,"text":"M3 Stuart","cost":-10,"br":-1},
+                                ]
+                            }
+                        ]
                     },
                 ],
             },
