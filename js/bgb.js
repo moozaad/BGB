@@ -25,6 +25,7 @@ var forces = [
                     "cost":24,
                     "br":3,
                     "unique":true,
+                    "officer":true,
                     "options":[
                         {
                             "name":"Transport",
@@ -46,6 +47,7 @@ var forces = [
                     "cost":26,
                     "br":1,
                     "unique":true,
+                    "officer":true,
                     "options":[
                         {
                             "name":"Transport",
@@ -133,6 +135,7 @@ var forces = [
                                 "cost":0,
                                 "br":0,
                                 "mandatory":true,
+                                "officer":true,
                                 "options":[
                                     {
                                         "name":"Transport",
@@ -310,6 +313,7 @@ var forces = [
                                 "cost":0,
                                 "br":0,
                                 "mandatory":true,
+                                "officer":true,
                                 "options":[
                                     {
                                         "name":"Transport",
@@ -493,6 +497,7 @@ var forces = [
                                 "cost":0,
                                 "br":0,
                                 "mandatory":true,
+                                "officer":true,
                                 "options":[
                                     {
                                         "name":"Transport",
@@ -804,6 +809,7 @@ var forces = [
                         "cost":85,
                         "multiplier":3,
                         "br":9,
+                        "officer":true,
                         "options":[
                             {
                                 "name":"Composition",
@@ -822,6 +828,7 @@ var forces = [
                         "cost":135,
                         "multiplier":3,
                         "br":9,
+                        "officer":true,
                         "options":[
                             {
                                 "name":"Composition",
@@ -841,6 +848,7 @@ var forces = [
                         "restricted":true,
                         "br":9,
                         "unique":true,
+                        "officer":true,
                         "options":[
                             {
                                 "name":"Composition",
@@ -857,6 +865,7 @@ var forces = [
                         "cost":110,
                         "multiplier":3,
                         "br":9,
+                        "officer":true,
                         "options":[
                             {
                                 "name":"Composition",
@@ -1306,6 +1315,7 @@ var forces = [
                     "cost":44,
                     "br":2,
                     "unique":true,
+                    "officer":true,
                     "options":[
                         {
                             "name":"Transport",
@@ -1450,6 +1460,7 @@ var forces = [
                     "name":"Borgward Demolition Squadron",
                     "cost":74,
                     "br":5,
+                    "officer":true,
                     "options":[
                         {
                             "name":"Command",
@@ -1607,6 +1618,7 @@ var forces = [
                     "br":12,
                     "multiplier":3,
                     "unique":true,
+                    "officer":true,
                     "options":[
                         {
                         "name":"Composition",
@@ -1779,6 +1791,7 @@ var forces = [
                     "cost":24,
                     "br":3,
                     "unique":true,
+                    "officer":true,
                     "options":[
                         {
                             "name":"Transport",
@@ -1796,6 +1809,7 @@ var forces = [
                     "cost":26,
                     "br":1,
                     "unique":true,
+                    "officer":true,
                     "options":[
                         {
                             "name":"Transport",
@@ -1864,6 +1878,7 @@ var forces = [
                                 "cost":0,
                                 "br":0,
                                 "mandatory":true,
+                                "officer":true,
                                 "options":[
                                     {
                                         "name":"Transport",
@@ -2049,6 +2064,7 @@ var forces = [
                                 "cost":0,
                                 "br":0,
                                 "mandatory":true,
+                                "officer":true,
                                 "options":[
                                     {
                                         "name":"Transport",
@@ -2274,6 +2290,7 @@ var forces = [
                         "cost":110,
                         "multiplier":3,
                         "br":9,
+                        "officer":true,
                         "options":[
                             {
                                 "name":"Composition",
@@ -2748,6 +2765,7 @@ var forces = [
                     "cost":35,
                     "br":2,
                     "unique":true,
+                    "officer":true,
                     "options":[
                         {
                             "name":"Transport",
@@ -3097,6 +3115,7 @@ var forces = [
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
+                "officer":true,
                 "entries":[
                 {
                     "id":1,
@@ -3121,6 +3140,7 @@ var forces = [
                     "cost":26,
                     "br":1,
                     "unique":true,
+                    "officer":true,
                     "options":[
                         {
                             "name":"Transport",
@@ -3167,6 +3187,7 @@ var forces = [
                 {
                     "id":7,
                     "name":"NKVD Officer",
+                    "officer":true,
                     "br":0,
                     "cost":26,
                 }
@@ -3193,6 +3214,7 @@ var forces = [
                                 "cost":0,
                                 "br":0,
                                 "mandatory":true,
+                                "officer":true,
                                 "options":[
                                     {
                                         "name":"Transport",
@@ -3401,6 +3423,7 @@ var forces = [
                         "cost":350,
                         "multiplier":6,
                         "br":30,
+                        "officer":true,
                     },
                     {
                         "id":2,
@@ -3727,7 +3750,7 @@ var forces = [
                 {
                     "id":6,
                     "name":"Infantry Foot Patrol",
-                    "cost":22, //greg confirm cost
+                    "cost":22,
                     "br":2,
                     "options":[
                         {
@@ -4139,6 +4162,7 @@ var forces = [
                     "cost":22,
                     "br":3,
                     "unique":true,
+                    "officer":true,
                     "options":[
                         {
                             "name":"Transport",
@@ -4155,6 +4179,7 @@ var forces = [
                     "cost":26,
                     "br":1,
                     "unique":true,
+                    "officer":true,
                     "options":[
                         {
                             "name":"Transport",
@@ -4227,6 +4252,7 @@ var forces = [
                                 "cost":0,
                                 "br":0,
                                 "mandatory":true,
+                                "officer":true,
                                 "options":[
                                     {
                                         "name":"AT grenades",
@@ -4382,6 +4408,7 @@ var forces = [
                                 "name":"Company Command Squad",
                                 "cost":0,
                                 "br":0,
+                                "officer":true,
                                 "mandatory":true,
                             },
                             {
@@ -4399,6 +4426,7 @@ var forces = [
                                         "cost":0,
                                         "br":0,
                                         "mandatory":true,
+                                        "officer":true,
                                         "options":[
                                             {
                                                 "name":"AT grenades",
@@ -4542,6 +4570,7 @@ var forces = [
                         "cost":350,
                         "multiplier":6,
                         "br":30,
+                        "officer":true,
                     },
                     {
                         "id":2,
