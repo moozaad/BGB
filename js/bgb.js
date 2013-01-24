@@ -5458,14 +5458,14 @@ function requires_match(item, requires) {
 
 // maybe make it get which value from a select?
 function render_name(force) {
-    var text = "<div class='ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix'><select id=forceChoice>"; 
+    var text = "<div class='ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix'><div style='display:inline'><select id=forceChoice style='display:inline; float:left; margin-right:20px'>"; 
     for (var i=0; i<forces.length; i++) {
         text = text + "<option value=" + forces[i].id;
         if (force.id == forces[i].id)
             text = text + " selected";
         text=text+">"+forces[i].name+"</option>";
     }
-    text = text +"</select><div style='display:inline; float:right'><div style=' margin-right:12px; display:inline; float=left'><button id='print' class='save_button'>Print</button><button id='load' class='save_button'>Load</button><button id='save' class='save_button'>Save</button></div><span class='force_cost' id='force_cost'>0</span></div></div>"
+    text = text +"</select>Officers:<p id='officer_count' style='display:inline; margin-right:20px;'>0</p>Restricted:<p style='display:inline' id='restricted_count'>0</p></div><div style='display:inline; float:right'><div style=' margin-right:12px; display:inline; float=left'><button id='print' class='save_button'>Print</button><button id='load' class='save_button'>Load</button><button id='save' class='save_button'>Save</button></div><span class='force_cost' id='force_cost'>0</span></div></div>"
     return(text);
 }
 function render_sections(force, async) {
@@ -5684,6 +5684,10 @@ function render_entries(entries, sub_entries, async) {
             }
             if (sub_entries)
                 text = text + "' data-sub_entry='true";
+            if (entries[i].officer)
+                text = text + "' data-officer='true";
+            if (entries[i].restricted)
+                text = text + "' data-restricted='true";
             if (entries[i].unique)
                 text = text + "' data-unique='true";
             text = text + "' class='entry ui-widget-content";
@@ -5878,6 +5882,10 @@ function update_cost() {
             cost = cost + parseInt($(this).find('#cost').text());
             br = br + parseInt($(this).find('#br').text());});
     $('#force_cost').text(cost + ' ' + br +'br');
+    var officers = entries.filter( function() { if ($(this).data('officer')) return true; return false; } );
+    $('#officer_count').text(officers.length);
+    var restricted = entries.filter( function() { if ($(this).data('restricted')) return true; return false; } );
+    $('#restricted_count').text(restricted.length);
 }
 
 function unselecting(event, ui){
