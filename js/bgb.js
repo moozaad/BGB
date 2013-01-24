@@ -3535,8 +3535,9 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"2 Loader teams","cost":20},
-                                    {"id":3,"text":"3 Loader teams","cost":30},
+                                    {"id":2,"text":"1 Loader team","cost":10},
+                                    {"id":3,"text":"2 Loader teams","cost":20},
+                                    {"id":4,"text":"3 Loader teams","cost":30},
                                 ]
                             },
                         ]
@@ -4643,7 +4644,7 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
+                        "id":7,
                         "name":"Lend-Lease Tank",
                         "cost":48,
                         "br":3,
@@ -4700,12 +4701,47 @@ var forces = [
                     },
                     {
                         "id":3,
-                        "name":"Off-Table Artillery Fire",
-                        "cost":125,
-                        "br":0,
+                        "name":"Field Artillery Battery",
+                        "cost":55,
+                        "br":4,
+                        "options":[
+                            {
+                                "name":"Tow",
+                                "choices":[
+                                    {"id":1,"text":"No tow","cost":0},
+                                    {"id":2,"text":"1 horse & limber tow","cost":4},
+                                    {"id":3,"text":"2 horse & limber tows","cost":4},
+                                ]
+                            },
+                            {
+                                "name":"Loader team",
+                                "choices":[
+                                    {"id":1,"text":"None","cost":0},
+                                    {"id":2,"text":"1 Loader team","cost":10},
+                                    {"id":3,"text":"2 Loader teams","cost":20},
+                                ]
+                            },
+                        ]
                     },
                     {
                         "id":4,
+                        "name":"Off-Table Artillery Fire",
+                        "cost":125,
+                        "br":0,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0},
+                                    {"id":2,"text":"2 76.2mm Zis3","cost":-55},
+                                    {"id":3,"text":"2 122mm howitzers","cost":-9},
+                                    {"id":4,"text":"2 152mm howitzers","cost":0},
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":5,
                         "name":"Mortar Battery",
                         "cost":44,
                         "br":2,
@@ -4721,14 +4757,15 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"2 Loader teams","cost":20},
-                                    {"id":3,"text":"3 Loader teams","cost":30},
+                                    {"id":2,"text":"1 Loader team","cost":10},
+                                    {"id":3,"text":"2 Loader teams","cost":20},
+                                    {"id":4,"text":"3 Loader teams","cost":30},
                                 ]
                             },
                         ]
                     },
                     {
-                        "id":5,
+                        "id":6,
                         "name":"Heavy Mortar Battery",
                         "cost":58,
                         "br":1,
@@ -4744,23 +4781,56 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"2 Loader teams","cost":20},
-                                    {"id":3,"text":"3 Loader teams","cost":30},
+                                    {"id":2,"text":"1 Loader team","cost":10},
+                                    {"id":3,"text":"2 Loader teams","cost":20},
+                                    {"id":4,"text":"3 Loader teams","cost":30},
                                 ]
                             },
                         ]
                     },
                     {
-                        "id":6,
+                        "id":7,
                         "name":"Off-Table Mortar Fire",
-                        "cost":54,
+                        "cost":80,
                         "br":0,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 82mm mortars","cost":0},
-                                    {"id":2,"text":"2 120mm mortars","cost":18},
+                                    {"id":1,"text":"3 82mm mortars","cost":0},
+                                    {"id":2,"text":"3 120mm mortars","cost":28},
+                                ]
+                            },
+                        ]
+                    },
+                    {
+                        "id":8,
+                        "name":"Heavy Artillery Battery",
+                        "cost":86,
+                        "br":0,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"2 122mm L23 howitzers","cost":0},
+                                    {"id":2,"text":"2 122mm L24 howitzers","cost":8},
+                                    {"id":3,"text":"2 122mm L46 cannons","cost":36},
+                                ]
+                            },
+                            {
+                                "name":"Loader team",
+                                "choices":[
+                                    {"id":1,"text":"None","cost":0},
+                                    {"id":2,"text":"1 Loader team","cost":10},
+                                    {"id":3,"text":"2 Loader teams","cost":20},
+                                ]
+                            },
+                            {
+                                "name":"Tow",
+                                "choices":[
+                                    {"id":1,"text":"No tow","cost":0},
+                                    {"id":2,"text":"1 horse & limber tow","cost":4},
+                                    {"id":3,"text":"2 horse & limber tows","cost":4},
                                 ]
                             },
                         ]
