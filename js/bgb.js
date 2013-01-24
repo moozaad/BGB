@@ -5231,63 +5231,30 @@ var forces = [
             "entries":[
                 {
                     "id":1,
-                    "name":"Lend-Lease Tank",
-                    "cost":48,
+                    "name":"Heavy Infantry Support Tank",
+                    "cost":60,
+                    "unique":true,
                     "br":3,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Churchill III or IV","cost":0},
-                                {"id":2,"text":"M3 Grant","cost":-4},
-                                {"id":3,"text":"Matilda II","cost":-20},
-                                {"id":4,"text":"Valentine III","cost":-14, "br":-1},
-                                {"id":5,"text":"M5 Stuart","cost":-10, "br":-1},
+                                {"id":1,"text":"KV-2","cost":0},
                             ]
                         }
                     ]
                 },
                 {
                     "id":2,
-                    "name":"Heavy Assault Gun",
-                    "cost":48,
-                    "br":3,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"1 SU-122","cost":0},
-                                {"id":2,"text":"1 SU-152","cost":4},
-                            ]
-                        },
-                    ]
-                },
-                {
-                    "id":3,
-                    "name":"Anti-Aircraft Vehicle",
-                    "cost":28,
-                    "br":1,
-                    "restricted":true,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"Gaz truck with quad Maxim MGs","cost":0},
-                            ]
-                        },
-                    ]
-                },
-                {
-                    "id":4,
                     "name":"Heavy Anti-Tank Gun",
-                    "cost":43,
+                    "cost":33,
                     "br":2,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
                                 {"id":1,"text":"76.2mm L54 Zis 3","cost":0},
-                                {"id":2,"text":"57mm L73 Zis 2","cost":10},
+                                {"id":2,"text":"85mm L53 AA gun","cost":51, "br":1},
                             ]
                         },
                         {
@@ -5301,23 +5268,59 @@ var forces = [
                             "name":"Tow",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Medium truck","cost":4},
-                                {"id":3,"text":"Komsomolyets tractor","cost":8},
+                                {"id":2,"text":"Horse & limber","cost":2},
+                                {"id":3,"text":"Medium truck","cost":4},
+                                {"id":4,"text":"Komsomolyets tractor","cost":8},
                             ]
                         },
 
                     ]
                 },
                 {
-                    "id":5,
+                    "id":3,
+                    "name":"45mm AT Gun Battery",
+                    "cost":48,
+                    "br":3,
+                    "unique":true,
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"3 45mm L46 guns","cost":0},
+                                {"id":2,"text":"3 45mm L66 guns","cost":20},
+                            ]
+                        },
+                        {
+                            "name":"Loader team",
+                            "choices":[
+                                {"id":1,"text":"None","cost":0},
+                                {"id":2,"text":"1 Loader team","cost":10},
+                                {"id":3,"text":"2 Loader teams","cost":20},
+                                {"id":4,"text":"3 Loader teams","cost":30},
+                            ]
+                        },
+                        {
+                            "name":"Tow",
+                            "choices":[
+                                {"id":1,"text":"None","cost":0},
+                                {"id":2,"text":"Horse & limber","cost":2},
+                                {"id":3,"text":"Medium truck","cost":4},
+                            ]
+                        },
+
+                    ]
+                },
+                {
+                    "id":4,
                     "name":"Towed Anti-Aircraft Gun",
-                    "cost":36,
+                    "cost":24,
                     "br":1,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"37mm AA gun","cost":0},
+                                {"id":1,"text":"DshK HMG","cost":0},
+                                {"id":2,"text":"37mm AA gun","cost":10},
                             ]
                         },
                         {
