@@ -2674,7 +2674,7 @@ var forces = [
                     },
                     {
                         "id":19,
-                        "name":"Off=table 88 Anti-Tnk shot",
+                        "name":"Off=table 88 Anti-Tank shot",
                         "cost":5,
                         "br":0,
                     },
@@ -4857,63 +4857,141 @@ var forces = [
                     },
                     {
                         "id":3,
+                        "name":"Machine Gun Pillbox",
+                        "cost":54,
+                        "br":1,
+                        "restricted":true,
+                    },
+                    {
+                        "id":4,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1,
                     },
                     {
-                        "id":4,
+                        "id":5,
+                        "name":"Fortified Building",
+                        "cost":30,
+                        "br":0,
+                    },
+                    {
+                        "id":6,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0,
                     },
                     {
-                        "id":5,
+                        "id":7,
+                        "name":"Trenches",
+                        "cost":10,
+                        "br":0,
+                    },
+                    {
+                        "id":8,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0,
-                        "restricted":true
                     },
                     {
-                        "id":6,
+                        "id":9,
                         "name":"AT Rifle-Team Hide",
                         "cost":20,
                         "br":1,
                     },
                     {
-                        "id":7,
-                        "name":"Dug-in T-34",
-                        "cost":50,
+                        "id":10,
+                        "name":"Barbed Wire",
+                        "cost":10,
+                        "br":0,
+                    },
+                    {
+                        "id":11,
+                        "name":"AT Gun Dug-out",
+                        "cost":20,
+                        "br":0,
+                        "restricted":true
+                    },
+                    {
+                        "id":12,
+                        "name":"AT Gun Bunker",
+                        "cost":30,
+                        "br":0,
+                        "restricted":true
+                    },
+                    {
+                        "id":13,
+                        "name":"Artillery Observation Point",
+                        "cost":26,
+                        "unique":true,
+                        "br":1,
+                    },
+                    {
+                        "id":14,
+                        "name":"Command Bunker",
+                        "cost":30,
                         "br":3,
+                        "restricted":true,
+                        "officer":true,
+                        "unique":true
                     },
                     {
-                        "id":8,
-                        "name":"Dug-in T-34 Platoon",
-                        "cost":125,
-                        "br":9,
+                        "id":15,
+                        "name":"Booby Trapped Building",
+                        "cost":25,
+                        "br":0,
                     },
                     {
-                        "id":9,
+                        "id":16,
+                        "name":"Minefield",
+                        "cost":15,
+                        "br":0,
+                    },
+                    {
+                        "id":17,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0,
                     },
                     {
-                        "id":10,
-                        "name":"Anti-Tank Ditch",
-                        "cost":20,
-                        "br":0,
-                        "restricted":true,
+                        "id":18,
+                        "name":"Dug-in T-34",
+                        "cost":50,
+                        "br":3,
                     },
                     {
-                        "id":11,
+                        "id":19,
+                        "name":"Dug-in T-34 Platoon",
+                        "cost":125,
+                        "br":9,
+                    },
+                    {
+                        "id":20,
+                        "name":"Dug-in KV-1E",
+                        "cost":69,
+                        "br":3,
+                    },
+                    {
+                        "id":21,
                         "name":"Counter Bombardment",
                         "cost":20,
                         "br":0,
                         "unique":true,
                     },
                     {
-                        "id":12,
+                        "id":22,
+                        "name":"Off-table Zis 3 AT shot",
+                        "cost":5,
+                        "br":0,
+                    },
+                    {
+                        "id":23,
+                        "name":"Anti-Tank Ditch/Embankment",
+                        "cost":20,
+                        "br":0,
+                        "restricted":true,
+                    },
+                    {
+                        "id":24,
                         "name":"For the Motherland!",
                         "cost":15,
                         "br":0,
@@ -4944,67 +5022,27 @@ var forces = [
                 },
                 {
                     "id":2,
-                    "name":"Mechanised Infantry Patrol",
-                    "cost":28,
-                    "br":3,
+                    "name":"Armoured Car",
+                    "cost":26,
+                    "br":1,
+                    "restricted":true,
                     "options":[
                         {
-                            "name":"Transport",
+                            "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"White Scout Car","cost":0},
-                                {"id":2,"text":"M5 halftrack","cost":4},
-                            ]
-                        },
-                        {
-                            "name":"AT grenades",
-                            "choices":[
-                                {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Anti-tank grenades","cost":5},
+                                {"id":1,"text":"BA-10","cost":0},
                             ]
                         }
                     ]
-
                 },
                 {
                     "id":3,
-                    "name":"Jeep Reconnaissance Team",
-                    "cost":18,
+                    "name":"Cavalry Squadron",
+                    "cost":30,
                     "br":2,
                 },
                 {
                     "id":4,
-                    "name":"Light Tank",
-                    "cost":30,
-                    "br":2,
-                    "unique":true,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"T-60","cost":0},
-                                {"id":2,"text":"T-70","cost":5},
-                                {"id":3,"text":"Valentine III","cost":14}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":5,
-                    "name":"Aerial Reconnaissance",
-                    "cost":50,
-                    "br":2,
-                    "unique":true,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"PO-2","cost":0},
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":6,
                     "name":"Infantry Foot Patrol",
                     "cost":22,
                     "br":2,
@@ -5019,27 +5057,10 @@ var forces = [
                     ]
                 },
                 {
-                    "id":7,
+                    "id":5,
                     "name":"Motorcycle Reconnaissance Patrol",
                     "cost":18,
                     "br":1,
-                },
-                {
-                    "id":8,
-                    "name":"Armoured Car",
-                    "cost":26,
-                    "br":1,
-                    "restricted":true,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"BA-10","cost":0},
-                                {"id":2,"text":"BA-64","cost":-6},
-                                {"id":3,"text":"M3A1 White Scout Car","cost":-6},
-                            ]
-                        }
-                    ]
                 },
             ],
         },
@@ -5096,7 +5117,7 @@ var forces = [
                     "id":3,
                     "name":"Heavy Bridging Unit",
                     "cost":36,
-                    "br":4,
+                    "br":3,
                     "restricted":true,
                     "unique":true,
                     "options":[
@@ -5146,40 +5167,16 @@ var forces = [
                                 {"id":3,"text":"3 Horse drawn wagon","cost":8},
                             ]
                         },
-                        {
-                            "name":"Medium trucks",
-                            "choices":[
-                                {"id":1,"text":"Replace 1 wagon with truck","cost":0},
-                                {"id":2,"text":"Replace 2 wagons with trucks","cost":4},
-                                {"id":3,"text":"Replace 3 wagons with trucks","cost":8},
-                            ]
-                        },
                     ]
                 },
                 {
                     "id":2,
-                    "name":"Forward Aid Post",
-                    "cost":20,
-                    "br":5,
-                    "restricted":true,
-                    "unique":true,
-                    "options":[
-                        {
-                        "name":"Composition",
-                        "choices":[
-                            {"id":1,"text":"4 men with a tent","cost":0}
-                        ]
-                        }
-                    ]
-                },
-                {
-                    "id":3,
                     "name":"Combat Medic",
                     "cost":8,
                     "br":0,
                 },
                 {
-                    "id":4,
+                    "id":3,
                     "name":"Stretcher Party",
                     "cost":10,
                     "br":1,
@@ -5193,7 +5190,7 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
+                    "id":4,
                     "name":"Ambulance",
                     "cost":14,
                     "br":2,
@@ -5204,7 +5201,22 @@ var forces = [
                         "choices":[
                             {"id":1,"text":"Jeep Ambulance","cost":0},
                             {"id":2,"text":"Ambulance medium truck","cost":2},
-                            {"id":3,"text":"M5 halftrack Ambulance","cost":6},
+                        ]
+                        }
+                    ]
+                },
+                {
+                    "id":5,
+                    "name":"Forward Aid Post",
+                    "cost":20,
+                    "br":5,
+                    "restricted":true,
+                    "unique":true,
+                    "options":[
+                        {
+                        "name":"Composition",
+                        "choices":[
+                            {"id":1,"text":"4 men with a tent","cost":0}
                         ]
                         }
                     ]
