@@ -6,6 +6,8 @@ function sub_timeout(sub_units, div) {
         return dfd.promise();
 }
 
+var my_uuid=0;
+
 // IDs are manually generated and must remain static as they will be used for saving
 // lists
 var forces = [
@@ -5716,9 +5718,11 @@ function render_entries(entries, sub_entries, async) {
             }
             text = text + "' data-bg_id='" + entries[i].id;
             if ( entries[i]['sub_units'] ) {
+                var id = my_uuid++;
                 var div = $('<div>').addClass('selectable sub_div hidden');
                 $(div).uniqueId();
-                text = text + "' data-sub='" + $(div).attr('id');
+                $(div).data('sub_parent','id'+id);
+                text = text + "' data-sub='" + $(div).attr('id') + "' id='id"+id;
                 // Do not populate sub panel asynchronously if async == false
                 // This is important if we are loading a saved list as we will
                 // need panel contents immediately
@@ -6061,12 +6065,8 @@ function sub_button_bind() {
         event.preventDefault();
         var parent = $(this).parent();
         var sub = $('#'+parent.data('sub'));
-        // Apply a uniqueId to the sub's owner and put it in the sub div's data
-        // so that the sub div can reference its owner
-        $(parent).uniqueId();
-        sub.data('sub_parent', $(parent).attr('id'));
         sub.dialog({title:$(this).html(), modal:true, width:'950'});
-        });
+    });
 
 }
 
