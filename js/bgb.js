@@ -5797,7 +5797,6 @@ function encode( integer ){
 function split_and_load(items, depth, panel) {
     // Split on 0, then 1, then 2 etc as we go deeper
     var list = items.split(String.fromCharCode(depth+48));
-    //alert('split_and_load:' + JSON.stringify(list));
     for (var i=0; i<list.length; i++) {
         if(typeof(panel)==='undefined') {
             var section_number = decode(list[i][0]);
@@ -5820,9 +5819,8 @@ function load_item(item, depth, panel) {
     var pointer=0; // index into item where current data coming from
     var sub_delim = String.fromCharCode(49+depth);
     var section = null;
-    // alert('load item: '+JSON.stringify(item));
+
     if(typeof(panel)==='undefined') {
-        //alert('no panel');
         var section_number = decode(item[0]);
         pointer++;
         section = $('.section').filter( function() {
@@ -5863,23 +5861,23 @@ function load_item(item, depth, panel) {
         });
     }
     if ( item[pointer] == sub_delim ) { // sub entries
-        //alert('got a sub_delimiter match at ' + pointer + ' on: ' + sub_delim);
         var endPointer = item.indexOf(sub_delim, pointer+1);  // find the next sub-delim
         var sub = $('#'+$(entries[entry_count]).data('sub'));
+        // If the parent has been rendered not duplicated then it will have
+        // no subID. We need to set one so that we can count selected sub elements
+        if (!$(entries[entry_count]).attr('id')) {
+            $($(entries[entry_count])).uniqueId();
+            $(sub).data('sub_parent', $(entries[entry_count]).attr('id'));
+        }
+
         pointer++;
 
         var subArray = null;
         if ( endPointer > pointer ) {
-            /*alert('sub div: ' + JSON.stringify(item.slice(pointer, endPointer)));
-            alert('greg 2 ('+item+'), pointer:' + pointer + ' endPointer:' + endPointer); */
             load_item(item.slice(pointer, endPointer), depth+1, sub);
             pointer = endPointer+1;
-            //split_and_load(item.slice(pointer, endPointer), depth+1, sub);
-            // greg can there be any remaining string here to parse?
-            // pretty sure there can be
         } else {
             alert('sub div test endPointer>pointer failed');
-
         }
     }
 
@@ -5974,7 +5972,6 @@ function duplicate_entry(entry) {
     $(dupe).attr('id', null);
     $(dupe).uniqueId();
     dupe.removeClass('ui-selected');
-    //greg consider adding close button to dupes...
     $(entry).after(dupe);
     //Clone any sub div
     if ($(dupe).data('sub')) {
