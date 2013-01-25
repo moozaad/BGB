@@ -5530,7 +5530,9 @@ function count_requires() {
         });
     return array;
 }
-function reduce(allows, requires, index, max) {
+// if uniqueRequire is non-null then we will only remove this requirement
+// rather than any that are in index
+function reduce(allows, requires, index, max, uniqueRequire) {
     var indexArray = index.split(',');
     var localMax = max;
     for (var i=allows.length-1, localMax=max; i >= 0 && localMax > 0; i--){
@@ -5540,7 +5542,8 @@ function reduce(allows, requires, index, max) {
         }
     }
     for (i=requires.length-1, localMax=max; i >= 0 && localMax > 0; i--){
-        if ($.inArray(""+requires[i],indexArray) != -1) {
+        if ((uniqueRequire==null || requires[i] == uniqueRequire)
+            && $.inArray(""+requires[i],indexArray) != -1) {
             requires.splice(i,1);
             localMax--;
         }
@@ -5570,11 +5573,10 @@ function reduce_by_count(allows, requires) {
     for (var index in count){
         if (requiresCount[index] <= count[index]) {
             found = true;
-            reduce(allows, requires, index, count[index]);
-            count[index]=0; // to stop us trying to remove again below if a single item entry
+            reduce(allows, requires, index, count[index], null);
         } else if ( index.split(',').length == 1) {
-            reduce(allows, requires, index, count[index]);
-            changed = true;
+            reduce(allows, requires, index, count[index], null);
+            found = true;
         }
     }
         
@@ -5601,6 +5603,50 @@ function simplify_allows(allows, requires) {
     }
     return changed;
 }
+// Check for a requires that exists in only 1 allows
+function simplify_requires(allows, requires){
+    var changed=false;
+    var uniqueRequires={};
+    var uniqueAllows={};
+    var countRequires={};
+    var countAllows={};
+    for (var i=0; i<requires.length; i++){
+        if (!uniqueRequires[requires[i]]) {
+            uniqueRequires[requires[i]]=requires[i];
+            countRequires[requires[i]]=1;
+        } else {
+            countRequires[requires[i]]++;
+        }
+    }
+    for (i=0; i<allows.length; i++){
+        if (!uniqueAllows[allows[i]]) {
+            uniqueAllows[allows[i]]=allows[i];
+            countAllows[allows[i]]=1;
+        } else {
+            countAllows[allows[i]]++;
+        }
+    }
+    for (var rKey in uniqueRequires){
+        var count=0;
+        var index=null;
+        for (var aKey in uniqueAllows){
+            if ($.inArray(uniqueRequires[rKey], uniqueAllows[aKey]) != -1){
+                count++;
+                index=aKey;
+            }
+        }
+        if (count <= 1){
+            var howMany=countRequires[rKey];
+            if (countAllows[aKey] < howMany)
+                howMany = countAllows[aKey];
+
+            changed=true;
+            reduce(allows, requires, index, howMany, rKey); // only remove this rKey
+            break;
+        }
+    }
+    return changed;
+}
 
 function allow_requires() {
     var requires = count_requires();
@@ -5621,7 +5667,7 @@ function allow_requires() {
         }
     }
     // loop simplifying until it simplifies no more
-    while ( requires.length > 0 && (simplify_allows(allows, requires) || reduce_by_count(allows, requires) )){
+    while ( requires.length > 0 && (simplify_allows(allows, requires) || simplify_requires(allows, requires) || reduce_by_count(allows, requires) )){
         ;
     }
     if (requires.length == 0)
