@@ -5856,8 +5856,10 @@ function load_item(item, depth, panel) {
         var value = decode(item[pointer+2]);
         pointer = pointer +3;
         $(entries[entry_count]).find('select').each( function() {
-            if ($(this).data('bg_id') == which )
+            if ($(this).data('bg_id') == which ) {
                 $(this).val(value);
+                $(this).change(); // triggers the update cost code
+            }
         });
     }
     if ( item[pointer] == sub_delim ) { // sub entries
