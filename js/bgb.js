@@ -59,7 +59,6 @@ var forces = [
                             ]
                         }
                     ]
-
                 },
                 {
                     "id":3,
@@ -140,7 +139,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None","cost":0, "np":true},
                                             {"id":2,"text":"Medium truck","cost":4},
                                         ]
                                     },
@@ -203,7 +202,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -226,7 +225,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -249,7 +248,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -272,7 +271,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                     {
@@ -341,14 +340,14 @@ var forces = [
                                         "name":"Flame-thrower",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"One Flame-thrower","cost":10},
+                                            {"id":2,"text":"Flame-thrower","cost":10},
                                         ]
                                     },
                                     {
                                         "name":"Mine sweeper",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"One mine sweeper","cost":5},
+                                            {"id":2,"text":"Mine sweeper","cost":5},
                                         ]
                                     },
                                     {
@@ -386,7 +385,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -416,7 +415,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                     {
@@ -563,7 +562,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -586,7 +585,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -616,7 +615,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -639,7 +638,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                     {
@@ -774,15 +773,15 @@ var forces = [
                             {
                                 "name":"Flame-thrower",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"One Flame-thrower","cost":10},
+                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":2,"text":"Flame-thrower","cost":10},
                                 ]
                             },
                             {
                                 "name":"Mine sweeper",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"One mine sweeper","cost":5},
+                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":2,"text":"Mine sweeper","cost":5},
                                 ]
                             },
                             {
@@ -1079,7 +1078,7 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man","cost":10},
+                                    {"id":2,"text":"3-man loader team","cost":10},
                                 ]
                             },
                             {
@@ -1101,7 +1100,7 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man","cost":10},
+                                    {"id":2,"text":"3-man loader team","cost":10},
                                 ]
                             },
                             {
@@ -1124,7 +1123,7 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man","cost":10},
+                                    {"id":2,"text":"3-man loader team","cost":10},
                                 ]
                             },
                             {
@@ -1148,7 +1147,7 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man","cost":10},
+                                    {"id":2,"text":"3-man loader team","cost":10},
                                 ]
                             },
                             {
@@ -1171,7 +1170,7 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man","cost":10},
+                                    {"id":2,"text":"3-man loader team","cost":10},
                                 ]
                             },
                             {
@@ -1579,7 +1578,7 @@ var forces = [
                             "name":"Loader team",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"3-man","cost":10},
+                                {"id":2,"text":"3-man loader team","cost":10},
                             ]
                         },
                         {
@@ -1938,7 +1937,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -1961,7 +1960,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -1984,7 +1983,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -2010,7 +2009,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                     {
@@ -2034,7 +2033,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                     {
@@ -2093,22 +2092,22 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None","cost":0,'np':true},
                                             {"id":2,"text":"Medium truck","cost":4},
                                         ]
                                     },
                                     {
                                         "name":"Flame-thrower",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"One Flame-thrower","cost":10},
+                                            {"id":1,"text":"None","cost":0,'np':true},
+                                            {"id":2,"text":"Flame-thrower","cost":10},
                                         ]
                                     },
                                     {
                                         "name":"Mine sweeper",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"One mine sweeper","cost":5},
+                                            {"id":1,"text":"None","cost":0,'np':true},
+                                            {"id":2,"text":"Mine sweeper","cost":5},
                                         ]
                                     },
                                     {
@@ -2138,7 +2137,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -2161,7 +2160,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -2185,7 +2184,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                     {
@@ -2210,7 +2209,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -2257,14 +2256,14 @@ var forces = [
                                 "name":"Flame-thrower",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"One Flame-thrower","cost":10},
+                                    {"id":2,"text":"Flame-thrower","cost":10},
                                 ]
                             },
                             {
                                 "name":"Mine sweeper",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"One mine sweeper","cost":5},
+                                    {"id":2,"text":"Mine sweeper","cost":5},
                                 ]
                             },
                             {
@@ -2403,7 +2402,7 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man","cost":10},
+                                    {"id":2,"text":"3-man loader team","cost":10},
                                 ]
                             },
                             {
@@ -2426,7 +2425,7 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man","cost":10},
+                                    {"id":2,"text":"3-man loader team","cost":10},
                                 ]
                             },
                             {
@@ -2450,7 +2449,7 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man","cost":10},
+                                    {"id":2,"text":"3-man loader team","cost":10},
                                 ]
                             },
                             {
@@ -2473,7 +2472,7 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man","cost":10},
+                                    {"id":2,"text":"3-man loader team","cost":10},
                                 ]
                             },
                             {
@@ -2503,7 +2502,7 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man","cost":10},
+                                    {"id":2,"text":"3-man loader team","cost":10},
                                 ]
                             },
                             {
@@ -2927,7 +2926,7 @@ var forces = [
                             "name":"Loader team",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"3-man","cost":10},
+                                {"id":2,"text":"3-man loader team","cost":10},
                             ]
                         },
                         {
@@ -2999,7 +2998,7 @@ var forces = [
                             "name":"Loader team",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"3-man","cost":10},
+                                {"id":2,"text":"3-man loader team","cost":10},
                                 ]
                         },
                         {
@@ -3022,7 +3021,7 @@ var forces = [
                             "name":"Loader team",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"3-man","cost":10},
+                                {"id":2,"text":"3-man loader team","cost":10},
                                 ]
                         },
                         {
@@ -3267,7 +3266,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -3283,7 +3282,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -3313,7 +3312,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                     {
@@ -3343,7 +3342,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                     {
@@ -4027,7 +4026,7 @@ var forces = [
                             "name":"Loader team",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"3-man","cost":10},
+                                {"id":2,"text":"3-man loader team","cost":10},
                             ]
                         },
                         {
@@ -4057,7 +4056,7 @@ var forces = [
                             "name":"Loader team",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"3-man","cost":10},
+                                {"id":2,"text":"3-man loader team","cost":10},
                             ]
                         },
                         {
@@ -4292,7 +4291,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -4308,7 +4307,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                 ]
@@ -4338,7 +4337,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                     {
@@ -4367,7 +4366,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10},
                                         ]
                                     },
                                     {
@@ -4466,7 +4465,7 @@ var forces = [
                                                 "name":"Loader team",
                                                 "choices":[
                                                     {"id":1,"text":"None","cost":0},
-                                                    {"id":2,"text":"3-man","cost":10},
+                                                    {"id":2,"text":"3-man loader team","cost":10},
                                                 ]
                                             },
                                         ]
@@ -4482,7 +4481,7 @@ var forces = [
                                                 "name":"Loader team",
                                                 "choices":[
                                                     {"id":1,"text":"None","cost":0},
-                                                    {"id":2,"text":"3-man","cost":10},
+                                                    {"id":2,"text":"3-man loader team","cost":10},
                                                 ]
                                             },
                                         ]
@@ -4512,7 +4511,7 @@ var forces = [
                                                 "name":"Loader team",
                                                 "choices":[
                                                     {"id":1,"text":"None","cost":0},
-                                                    {"id":2,"text":"3-man","cost":10},
+                                                    {"id":2,"text":"3-man loader team","cost":10},
                                                 ]
                                             },
                                             {
@@ -4541,7 +4540,7 @@ var forces = [
                                                 "name":"Loader team",
                                                 "choices":[
                                                     {"id":1,"text":"None","cost":0},
-                                                    {"id":2,"text":"3-man","cost":10},
+                                                    {"id":2,"text":"3-man loader team","cost":10},
                                                 ]
                                             },
                                             {
@@ -5261,7 +5260,7 @@ var forces = [
                             "name":"Loader team",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"3-man","cost":10},
+                                {"id":2,"text":"3-man loader team","cost":10},
                             ]
                         },
                         {
@@ -5327,7 +5326,7 @@ var forces = [
                             "name":"Loader team",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"3-man","cost":10},
+                                {"id":2,"text":"3-man loader team","cost":10},
                             ]
                         },
                         {
@@ -5531,7 +5530,9 @@ function count_requires() {
         });
     return array;
 }
-function reduce(allows, requires, index, max) {
+// if uniqueRequire is non-null then we will only remove this requirement
+// rather than any that are in index
+function reduce(allows, requires, index, max, uniqueRequire) {
     var indexArray = index.split(',');
     var localMax = max;
     for (var i=allows.length-1, localMax=max; i >= 0 && localMax > 0; i--){
@@ -5541,7 +5542,8 @@ function reduce(allows, requires, index, max) {
         }
     }
     for (i=requires.length-1, localMax=max; i >= 0 && localMax > 0; i--){
-        if ($.inArray(""+requires[i],indexArray) != -1) {
+        if ((uniqueRequire==null || requires[i] == uniqueRequire)
+            && $.inArray(""+requires[i],indexArray) != -1) {
             requires.splice(i,1);
             localMax--;
         }
@@ -5571,11 +5573,10 @@ function reduce_by_count(allows, requires) {
     for (var index in count){
         if (requiresCount[index] <= count[index]) {
             found = true;
-            reduce(allows, requires, index, count[index]);
-            count[index]=0; // to stop us trying to remove again below if a single item entry
+            reduce(allows, requires, index, count[index], null);
         } else if ( index.split(',').length == 1) {
-            reduce(allows, requires, index, count[index]);
-            changed = true;
+            reduce(allows, requires, index, count[index], null);
+            found = true;
         }
     }
         
@@ -5602,6 +5603,50 @@ function simplify_allows(allows, requires) {
     }
     return changed;
 }
+// Check for a requires that exists in only 1 allows
+function simplify_requires(allows, requires){
+    var changed=false;
+    var uniqueRequires={};
+    var uniqueAllows={};
+    var countRequires={};
+    var countAllows={};
+    for (var i=0; i<requires.length; i++){
+        if (!uniqueRequires[requires[i]]) {
+            uniqueRequires[requires[i]]=requires[i];
+            countRequires[requires[i]]=1;
+        } else {
+            countRequires[requires[i]]++;
+        }
+    }
+    for (i=0; i<allows.length; i++){
+        if (!uniqueAllows[allows[i]]) {
+            uniqueAllows[allows[i]]=allows[i];
+            countAllows[allows[i]]=1;
+        } else {
+            countAllows[allows[i]]++;
+        }
+    }
+    for (var rKey in uniqueRequires){
+        var count=0;
+        var index=null;
+        for (var aKey in uniqueAllows){
+            if ($.inArray(uniqueRequires[rKey], uniqueAllows[aKey]) != -1){
+                count++;
+                index=aKey;
+            }
+        }
+        if (count <= 1){
+            var howMany=countRequires[rKey];
+            if (countAllows[aKey] < howMany)
+                howMany = countAllows[aKey];
+
+            changed=true;
+            reduce(allows, requires, index, howMany, rKey); // only remove this rKey
+            break;
+        }
+    }
+    return changed;
+}
 
 function allow_requires() {
     var requires = count_requires();
@@ -5622,7 +5667,7 @@ function allow_requires() {
         }
     }
     // loop simplifying until it simplifies no more
-    while ( requires.length > 0 && (simplify_allows(allows, requires) || reduce_by_count(allows, requires) )){
+    while ( requires.length > 0 && (simplify_allows(allows, requires) || simplify_requires(allows, requires) || reduce_by_count(allows, requires) )){
         ;
     }
     if (requires.length == 0)
@@ -5699,6 +5744,8 @@ function render_entries(entries, sub_entries, async) {
                     text = text + '<div class="choice"><p class="opt_text">'+entries[i]['options'][j]['name']+'</p><select class="opt_select" name="' + entries[i]['options'][j]['name']+ '" data-bg_id="' + (j+1) +  '">';
                     for (var k=0; k<entries[i].options[j].choices.length; k++) {
                         text = text + "<option data-cost='"+entries[i].options[j].choices[k].cost;
+                        if (entries[i].options[j].choices[k].np)
+                           text = text +"' data-np='"+entries[i].options[j].choices[k].br; 
                         if (entries[i].options[j].choices[k].br)
                            text = text +"' data-br='"+entries[i].options[j].choices[k].br; 
                         text = text + "' value='" + entries[i].options[j].choices[k].id +"'>"+entries[i].options[j].choices[k].text + "</option>"; 
@@ -5754,7 +5801,6 @@ function encode( integer ){
 function split_and_load(items, depth, panel) {
     // Split on 0, then 1, then 2 etc as we go deeper
     var list = items.split(String.fromCharCode(depth+48));
-    //alert('split_and_load:' + JSON.stringify(list));
     for (var i=0; i<list.length; i++) {
         if(typeof(panel)==='undefined') {
             var section_number = decode(list[i][0]);
@@ -5777,9 +5823,8 @@ function load_item(item, depth, panel) {
     var pointer=0; // index into item where current data coming from
     var sub_delim = String.fromCharCode(49+depth);
     var section = null;
-    // alert('load item: '+JSON.stringify(item));
+
     if(typeof(panel)==='undefined') {
-        //alert('no panel');
         var section_number = decode(item[0]);
         pointer++;
         section = $('.section').filter( function() {
@@ -5813,28 +5858,30 @@ function load_item(item, depth, panel) {
         var value = decode(item[pointer+2]);
         pointer = pointer +3;
         $(entries[entry_count]).find('select').each( function() {
-            if ($(this).data('bg_id') == which )
+            if ($(this).data('bg_id') == which ) {
                 $(this).val(value);
+                $(this).change(); // triggers the update cost code
+            }
         });
     }
     if ( item[pointer] == sub_delim ) { // sub entries
-        //alert('got a sub_delimiter match at ' + pointer + ' on: ' + sub_delim);
         var endPointer = item.indexOf(sub_delim, pointer+1);  // find the next sub-delim
         var sub = $('#'+$(entries[entry_count]).data('sub'));
+        // If the parent has been rendered not duplicated then it will have
+        // no subID. We need to set one so that we can count selected sub elements
+        if (!$(entries[entry_count]).attr('id')) {
+            $($(entries[entry_count])).uniqueId();
+            $(sub).data('sub_parent', $(entries[entry_count]).attr('id'));
+        }
+
         pointer++;
 
         var subArray = null;
         if ( endPointer > pointer ) {
-            /*alert('sub div: ' + JSON.stringify(item.slice(pointer, endPointer)));
-            alert('greg 2 ('+item+'), pointer:' + pointer + ' endPointer:' + endPointer); */
             load_item(item.slice(pointer, endPointer), depth+1, sub);
             pointer = endPointer+1;
-            //split_and_load(item.slice(pointer, endPointer), depth+1, sub);
-            // greg can there be any remaining string here to parse?
-            // pretty sure there can be
         } else {
             alert('sub div test endPointer>pointer failed');
-
         }
     }
 
@@ -5933,7 +5980,6 @@ function duplicate_entry(entry) {
     $(dupe).attr('id', null);
     $(dupe).uniqueId();
     dupe.removeClass('ui-selected');
-    //greg consider adding close button to dupes...
     $(entry).after(dupe);
     //Clone any sub div
     if ($(dupe).data('sub')) {
@@ -6142,10 +6188,28 @@ function print_with_sub(entry){
     return text;
 }
 function print_entry_name(entry){
-    return "<h4 class='p_h4'>" + $(entry).find('.entry_name').text() +"</h4><p class='p_h4 right'>"+$(entry).find('#cost').text() + "/" + $(entry).find('#br').text() + "</p>";
+    return "<div><h4 class='p_h4'>" + $(entry).find('.entry_name').text() +"</h4><p class='p_h4 right'>"+$(entry).find('#cost').text() + "/" + $(entry).find('#br').text() + "</p></div>";
+}
+function print_entry_options(entry){
+    var text="<div><h5 class='p_h5'>";
+    var selects = $(entry).find('.opt_select');
+    var printed = 0;
+    if ($(selects).length > 0) {
+        $(selects).each( function() {
+            var selected = $(this).children("select option").filter(':selected')
+            if (!$(selected).data('np') && $(this).children("select option").filter(':selected').text()!='None') {
+                if (printed > 0)
+                    text = text+', ';
+                text=text+$(this).children("select option").filter(':selected').text();
+                printed = printed +1;
+            }
+        });
+    }
+    return text + "</h5></div>";
 }
 function print_entry(entry){
     var text = print_entry_name(entry);
+    text = text + print_entry_options(entry);
     if ($(entry).data('sub'))
         text = text + print_with_sub(entry);
     return text;

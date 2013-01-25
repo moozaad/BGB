@@ -29,7 +29,16 @@ body{
 .p_h4 {
     color: #333333;
     text-align: center;
+    font-size:14px;
+    margin:2px;
+    display:inline;
+    clear:both;
+}
+.p_h5 {
+    color: #555555;
+    text-align: center;
     font-size:12px;
+    font-style:italic;
     margin:2px;
     display:inline;
     clear:both;
