@@ -6179,12 +6179,11 @@ function print_header(force) {
 }
 function print_with_sub(entry){
     var sub=$('#'+$(entry).data('sub'));
-    var text = "<div class='p_parent'>";
     var entries = $(sub).children('.ui-selected');
+    var text="";
     for (var i=0; i<entries.length; i++){
-        text = text + "<div class='p_parent'>"+print_entry(entries[i]) + "</div>";
+        text = text + "<div class='p_entry'>"+print_entry(entries[i]) + "</div>";
     }
-    text = text +"</div>";
     return text;
 }
 function print_entry_name(entry){
@@ -6215,13 +6214,16 @@ function print_entry(entry){
     return text;
 }
 function print_section(section){
-    //greg print any with subs first for layout reasons
     var text="<div class='p_section'><h3 class='p_h3'>";
     text=text+$(section).parent('.group').find('.section_title').text()+"</h3>";
     var entries = $(section).children('.ui-selected');
-    for (var i=0; i<entries.length; i++){
-        text = text + "<div class='p_entry'>"+ print_entry(entries[i]) +"</div>";
-    }
+    var withSub = $(entries).filter(function(){ if ($(this).data('sub')) return true; return false;});
+    var withoutSub = $(entries).filter(function(){ if ($(this).data('sub')) return false; return true;});
+    // print any with subs first for layout reasons
+    for (var i=0; i<withoutSub.length; i++)
+        text = text + "<div class='p_entry'>"+ print_entry(withoutSub[i]) +"</div>";
+    for (i=0; i<withSub.length; i++)
+        text = text + "<div class='p_parent'>"+ print_entry(withSub[i]) +"</div>";
     text=text+"</div>";
     return text;
 }
@@ -6244,12 +6246,14 @@ function print_render(){
     $('body').append($('<div id="p_div" class="p_div clearfix"></div>').html(text));
     width=$('#p_div').children('.p_section').outerWidth();
     $('#p_div').show();
-    $('#p_div').isotope({
-        itemSelector : '.p_section, .p_title',
-        layoutMode: 'masonry',
-        masonry: {
-                columnWidth: width+10
-          }
+
+    $('p_div').children('.p_section').masonry({
+        itemSelector:'.p_entry, p_parent',
+        isFitWidth:true,
+    });
+    $('p_div').masonry({
+        itemSelector:'.p_section',
+        isFitWidth:true,
     });
     $('#main').hide();
 }
