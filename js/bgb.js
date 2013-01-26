@@ -5932,7 +5932,7 @@ function update_cost() {
     $(entries).each(function() {
             cost = cost + parseInt($(this).find('#cost').text());
             br = br + parseInt($(this).find('#br').text());});
-    $('#force_cost').text(cost + ' ' + br +'br');
+    $('#force_cost').text(cost + ' / ' + br +'br');
     var officers = entries.filter( function() { if ($(this).data('officer')) return true; return false; } );
     $('#officer_count').text(officers.length);
     var restricted = entries.filter( function() { if ($(this).data('restricted')) return true; return false; } );
@@ -6174,7 +6174,7 @@ function changeForce(event){
     update_accordion();
 }
 function print_header(force) {
-    var text = "<h3 class='p_title p_h3'>"+ force.name + "</h3>";
+    var text = "<div style='margin:0px auto; width:30%;'><h3 class='p_title p_h3' style='display:inline; padding:auto;'>"+ force.name + "</h3><h4 class='p_+h4' style='display:inline; float:right; margin:0px;'>"+$('#force_cost').text()+"</h4></div>";
     return text;
 }
 function print_with_sub(entry){
