@@ -59,12 +59,14 @@ body{
     border-radius:5px;
 }
 .p_parent {
-    width:100%;
-    padding:0;
+    width:99%;
+    padding:2px;
+    margin:auto;
     border:solid;
     border-width:1px;
     float:left;
     display:inline;
+    border-radius:5px;
 }
 .p_entry {
     width:49%;
