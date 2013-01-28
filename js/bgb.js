@@ -1782,7 +1782,7 @@ var forces = [
                             "choices":[
                                 {"id":1,"text":"Kübelwagon","cost":0},
                                 {"id":2,"text":"Heavy Car","cost":0},
-                                {"id":3,"text":"Schwimmwagen","cost":2},
+                                {"id":3,"text":"Schwimmwagen","cost":2}
                             ]
                         }
                         ]
@@ -1801,7 +1801,7 @@ var forces = [
                                 {"id":1,"text":"Kübelwagon","cost":0},
                                 {"id":2,"text":"Medium Truck","cost":2},
                                 {"id":3,"text":"SdKfz 250/3","cost":12},
-                                {"id":4,"text":"SdKfz 251/3","cost":12},
+                                {"id":4,"text":"SdKfz 251/3","cost":12}
                             ]
                         }
                         ]
@@ -1816,7 +1816,7 @@ var forces = [
                             "name":"Transport",
                             "choices":[
                                 {"id":1,"text":"Medium Radio Truck","cost":0},
-                                {"id":2,"text":"Radio van","cost":0},
+                                {"id":2,"text":"Radio van","cost":0}
                             ]
                         }
                         ]
@@ -1825,19 +1825,19 @@ var forces = [
                     "id":4,
                     "name":"Comms Relay Team",
                     "br":0,
-                    "cost":14,
+                    "cost":14
                 },
                 {
                     "id":5,
                     "name":"Wire Team",
                     "br":0,
-                    "cost":7,
+                    "cost":7
                 },
                 {
                     "id":6,
                     "name":"Motorcycle Dispatch Rider",
                     "br":0,
-                    "cost":12,
+                    "cost":12
                 }
                 ]
             },
@@ -1868,16 +1868,16 @@ var forces = [
                                         "name":"Transport",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Medium truck or heavy car","cost":4},
+                                            {"id":2,"text":"Medium truck or heavy car","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"AT grenades",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Anti-tank grenades","cost":5},
+                                            {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
-                                    },
+                                    }
                                 ]
                             },
                             {
@@ -1899,9 +1899,9 @@ var forces = [
                                         "name":"AT grenades",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Anti-tank grenades","cost":5},
+                                            {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
-                                    },
+                                    }
                                 ]
                             },
                             {
@@ -1915,16 +1915,16 @@ var forces = [
                                         "name":"Machine Gun",
                                         "choices":[
                                             {"id":1,"text":"Tripod MG34","cost":0},
-                                            {"id":2,"text":"Tripod MG42","cost":4},
+                                            {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man loader team","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10}
                                         ]
-                                    },
+                                    }
                                 ]
                             },
                             {
@@ -1932,7 +1932,7 @@ var forces = [
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
-                                "unique":true,
+                                "unique":true
                             },
                             {
                                 "id":5,
@@ -1945,9 +1945,9 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man loader team","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10}
                                         ]
-                                    },
+                                    }
                                 ]
                             },
                             {
@@ -1955,7 +1955,7 @@ var forces = [
                                 "name":"Anti-tank Rifle Team",
                                 "cost":14,
                                 "br":1,
-                                "unique":true,
+                                "unique":true
                             },
                             {
                                 "id":7,
@@ -1968,9 +1968,9 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man loader team","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10}
                                         ]
-                                    },
+                                    }
                                 ]
                             },
                             {
@@ -1987,14 +1987,14 @@ var forces = [
                                             {"id":2,"text":"50mm PaK38","cost":8},
                                             {"id":3,"text":"75mm PaK97/38","cost":12},
                                             {"id":4,"text":"76.2mm PaK36(r)","cost":14},
-                                            {"id":5,"text":"75mm PaK40","cost":22},
+                                            {"id":5,"text":"75mm PaK40","cost":22}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man loader team","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
@@ -2002,9 +2002,9 @@ var forces = [
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
                                             {"id":2,"text":"Horse and limber","cost":2},
-                                            {"id":3,"text":"Medium truck","cost":4},
+                                            {"id":3,"text":"Medium truck","cost":4}
                                         ]
-                                    },
+                                    }
                                 ]
                             },
                             {
@@ -2018,7 +2018,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man loader team","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
@@ -2026,11 +2026,11 @@ var forces = [
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
                                             {"id":2,"text":"Horse and limber","cost":2},
-                                            {"id":3,"text":"Medium truck","cost":4},
+                                            {"id":3,"text":"Medium truck","cost":4}
                                         ]
                                     },
                                 ]
-                            },
+                            }
                         ]
                     },
                     {
@@ -2054,16 +2054,16 @@ var forces = [
                                         "name":"Transport",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Heavy car","cost":4},
+                                            {"id":2,"text":"Heavy car","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"AT grenades",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Anti-tank grenades","cost":5},
+                                            {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
-                                    },
+                                    }
                                 ]
                             },
                             {
@@ -2078,30 +2078,30 @@ var forces = [
                                         "name":"Transport",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0,'np':true},
-                                            {"id":2,"text":"Medium truck","cost":4},
+                                            {"id":2,"text":"Medium truck","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Flame-thrower",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0,'np':true},
-                                            {"id":2,"text":"Flame-thrower","cost":10},
+                                            {"id":2,"text":"Flame-thrower","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mine sweeper",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0,'np':true},
-                                            {"id":2,"text":"Mine sweeper","cost":5},
+                                            {"id":2,"text":"Mine sweeper","cost":5}
                                         ]
                                     },
                                     {
                                         "name":"MG",
                                         "choices":[
                                             {"id":1,"text":"Bipod MG34","cost":0},
-                                            {"id":2,"text":"Bipod MG42","cost":4},
+                                            {"id":2,"text":"Bipod MG42","cost":4}
                                         ]
-                                    },
+                                    }
                                 ]
                             },
                             {
@@ -2109,7 +2109,7 @@ var forces = [
                                 "name":"Combat Medic",
                                 "cost":9,
                                 "br":0,
-                                "unique":true,
+                                "unique":true
                             },
                             {
                                 "id":4,
@@ -2122,9 +2122,9 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man loader team","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10}
                                         ]
-                                    },
+                                    }
                                 ]
                             },
                             {
@@ -2138,16 +2138,16 @@ var forces = [
                                         "name":"Machine Gun",
                                         "choices":[
                                             {"id":1,"text":"Tripod MG34","cost":0},
-                                            {"id":2,"text":"Tripod MG42","cost":4},
+                                            {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man loader team","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10}
                                         ]
-                                    },
+                                    }
                                 ]
                             },
                             {
@@ -2162,14 +2162,14 @@ var forces = [
                                         "choices":[
                                             {"id":1,"text":"37mm PaK36","cost":0},
                                             {"id":2,"text":"50mm PaK38","cost":8},
-                                            {"id":3,"text":"75mm PaK40","cost":22},
+                                            {"id":3,"text":"75mm PaK40","cost":22}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man loader team","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
@@ -2178,9 +2178,9 @@ var forces = [
                                             {"id":1,"text":"None","cost":0},
                                             {"id":2,"text":"Horse and limber","cost":2},
                                             {"id":3,"text":"Medium truck","cost":4},
-                                            {"id":4,"text":"SdKfz 6 halftrack","cost":8},
+                                            {"id":4,"text":"SdKfz 6 halftrack","cost":8}
                                         ]
-                                    },
+                                    }
                                 ]
                             },
                             {
@@ -2194,11 +2194,11 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man loader team","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10}
                                         ]
-                                    },
+                                    }
                                 ]
-                            },
+                            }
                         ]
                     },
                     {
@@ -2211,16 +2211,16 @@ var forces = [
                                 "name":"Transport",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium truck","cost":4},
+                                    {"id":2,"text":"Medium truck","cost":4}
                                 ]
                             },
                             {
                                 "name":"AT grenades",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Anti-tank grenades","cost":5},
+                                    {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
-                            },
+                            }
                         ]
                     },
                     {
@@ -2234,33 +2234,33 @@ var forces = [
                                 "name":"Transport",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium truck","cost":4},
+                                    {"id":2,"text":"Medium truck","cost":4}
                                 ]
                             },
                             {
                                 "name":"Flame-thrower",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Flame-thrower","cost":10},
+                                    {"id":2,"text":"Flame-thrower","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mine sweeper",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Mine sweeper","cost":5},
+                                    {"id":2,"text":"Mine sweeper","cost":5}
                                 ]
                             },
                             {
                                 "name":"MG",
                                 "choices":[
                                     {"id":1,"text":"Bipod MG34","cost":0},
-                                    {"id":2,"text":"Bipod MG42","cost":4},
+                                    {"id":2,"text":"Bipod MG42","cost":4}
                                 ]
-                            },
+                            }
                         ]
-                    },
-                ],
+                    }
+                ]
             },
             {
                 "id":3, 
@@ -2280,11 +2280,10 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"3 Stug III Fs","cost":0},
-                                    {"id":2,"text":"Upgrade to Ausf. Gs","cost":20},
+                                    {"id":2,"text":"Upgrade to Ausf. Gs","cost":20}
                                 ]
                             }
                         ]
-
                     },
                     {
                         "id":2,
@@ -2298,11 +2297,10 @@ var forces = [
                                     {"id":1,"text":"Panzer IV E","cost":0, "restricted":true},
                                     {"id":2,"text":"Panzer IV F1","cost":0, "restricted":true},
                                     {"id":3,"text":"Panzer IV G","cost":6},
-                                    {"id":4,"text":"Panzer IV H","cost":12},
+                                    {"id":4,"text":"Panzer IV H","cost":12}
                                 ]
                             }
                         ]
-
                     },
                     {
                         "id":3,
@@ -2315,7 +2313,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"StuG III A-E","cost":0, "restricted":true},
                                     {"id":2,"text":"StuG III F","cost":16},
-                                    {"id":3,"text":"StuG III G","cost":24},
+                                    {"id":3,"text":"StuG III G","cost":24}
                                 ]
                             }
                         ]
@@ -2332,7 +2330,7 @@ var forces = [
                                     {"id":1,"text":"Panzer III J","cost":0, "restricted":true},
                                     {"id":2,"text":"Panzer III L","cost":8},
                                     {"id":3,"text":"Panzer III M","cost":10},
-                                    {"id":4,"text":"Panzer III N","cost":8, "restricted":true},
+                                    {"id":4,"text":"Panzer III N","cost":8, "restricted":true}
                                 ]
                             }
                         ]
@@ -2350,12 +2348,12 @@ var forces = [
                                     {"id":1,"text":"Marder II","cost":0},
                                     {"id":2,"text":"Marder III H","cost":4},
                                     {"id":3,"text":"Marder III M","cost":-2},
-                                    {"id":4,"text":"Marder 38t (36r)","cost":4},
+                                    {"id":4,"text":"Marder 38t (36r)","cost":4}
                                 ]
                             }
                         ]
-                    },
-                ],
+                    }
+                ]
             },
             {
                 "id":4, 
@@ -2372,7 +2370,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Kübelwagon","cost":0},
+                                    {"id":1,"text":"Kübelwagon","cost":0}
                                 ]
                             }
                         ]
@@ -2387,7 +2385,7 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man loader team","cost":10},
+                                    {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
@@ -2395,7 +2393,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
                                     {"id":2,"text":"Medium Truck","cost":4},
-                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8},
+                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8}
                                 ]
                             }
                         ]
@@ -2410,7 +2408,7 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man loader team","cost":10},
+                                    {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
@@ -2418,7 +2416,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
                                     {"id":2,"text":"Heavy Truck","cost":6},
-                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8},
+                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8}
                                 ]
                             }
                         ]
@@ -2434,7 +2432,7 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man loader team","cost":10},
+                                    {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
@@ -2442,7 +2440,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
                                     {"id":2,"text":"Medium Truck","cost":6},
-                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8},
+                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8}
                                 ]
                             }
                         ]
@@ -2457,7 +2455,7 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man loader team","cost":10},
+                                    {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
@@ -2465,7 +2463,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
                                     {"id":2,"text":"Medium Truck","cost":6},
-                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8},
+                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8}
                                 ]
                             }
                         ]
@@ -2475,7 +2473,7 @@ var forces = [
                         "name":"Aerial Artillery Observer",
                         "cost":66,
                         "br":3,
-                        "unique":true,
+                        "unique":true
                     },
                     {
                         "id":7,
@@ -2487,14 +2485,14 @@ var forces = [
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man loader team","cost":10},
+                                    {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mount",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium Truck or Heavy Car","cost":4},
+                                    {"id":2,"text":"Medium Truck or Heavy Car","cost":4}
                                 ]
                             }
                         ]
@@ -2514,7 +2512,7 @@ var forces = [
                                     {"id":4,"text":"2 170mm cannon","cost":108},
                                     {"id":5,"text":"2 150mm Nebelwerfer","cost":45},
                                     {"id":6,"text":"2 210mm Nebelwerfer","cost":118},
-                                    {"id":7,"text":"2 280mm Nebelwerfer","cost":162},
+                                    {"id":7,"text":"2 280mm Nebelwerfer","cost":162}
                                 ]
                             }
                         ]
@@ -2529,11 +2527,11 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"2 80mm mortars","cost":0},
-                                    {"id":2,"text":"2 120mm mortars","cost":18},
+                                    {"id":2,"text":"2 120mm mortars","cost":18}
                                 ]
-                            },
+                            }
                         ]
-                    },
+                    }
                 ]
             },
             {
