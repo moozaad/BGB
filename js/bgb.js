@@ -205,7 +205,7 @@ var forces = [
                                             {"id":1,"text":"None","cost":0},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
-                                    },
+                                    }
                                 ]
                             },
                             {
@@ -251,7 +251,7 @@ var forces = [
                                             {"id":1,"text":"None","cost":0},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
-                                    },
+                                    }
                                 ]
                             },
                             {
@@ -387,7 +387,7 @@ var forces = [
                                             {"id":1,"text":"None","cost":0},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
-                                    },
+                                    }
                                 ]
                             },
                             {
@@ -408,14 +408,14 @@ var forces = [
                                         "name":"Gun type",
                                         "choices":[
                                             {"id":1,"text":"50mm PaK38","cost":0},
-                                            {"id":2,"text":"75mm PaK40","cost":14},
+                                            {"id":2,"text":"75mm PaK40","cost":14}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man loader team","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
@@ -425,7 +425,7 @@ var forces = [
                                             {"id":2,"text":"Medium truck","cost":4},
                                             {"id":3,"text":"Opel Maultier","cost":8},
                                             {"id":4,"text":"SdKfz 6 half track","cost":8},
-                                            {"id":5,"text":"SdKfz 251/1","cost":16},
+                                            {"id":5,"text":"SdKfz 251/1","cost":16}
                                         ]
                                     }
                                 ]
@@ -1892,7 +1892,7 @@ var forces = [
                                         "name":"Transport",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Medium truck","cost":4},
+                                            {"id":2,"text":"Medium truck","cost":4}
                                         ]
                                     },
                                     {
@@ -2028,7 +2028,7 @@ var forces = [
                                             {"id":2,"text":"Horse and limber","cost":2},
                                             {"id":3,"text":"Medium truck","cost":4}
                                         ]
-                                    },
+                                    }
                                 ]
                             }
                         ]
@@ -2914,7 +2914,7 @@ var forces = [
                             "name":"Tow",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"SdkFz 7","cost":8},
+                                {"id":2,"text":"SdkFz 7","cost":8}
                             ]
                         }
                     ]
@@ -3370,7 +3370,7 @@ var forces = [
                                     {"id":1,"text":"None","cost":0},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
-                            },
+                            }
                         ]
                     },
                     {
