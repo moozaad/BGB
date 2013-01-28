@@ -190,7 +190,7 @@ var forces = [
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
-                                "unique":true,
+                                "unique":true
                             },
                             {
                                 "id":4,
@@ -226,7 +226,7 @@ var forces = [
                                         "name":"Loader team",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"3-man loader team","cost":10},
+                                            {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
                                 ]
@@ -236,7 +236,7 @@ var forces = [
                                 "name":"Anti-tank Rifle Team",
                                 "cost":14,
                                 "br":1,
-                                "unique":true,
+                                "unique":true
                             },
                             {
                                 "id":7,
@@ -6013,7 +6013,7 @@ function option_change(event) {
 function update_accordion(){
     $("#accordion").accordion({
         heightStyle: "content",
-        header: '> div > h3',
+        header: '> div > h3'
         }).sortable({
         axis: "y",
         handle: "h3",
@@ -6221,11 +6221,11 @@ function print_render(){
 
     $('p_div').children('.p_section').masonry({
         itemSelector:'.p_entry, p_parent',
-        isFitWidth:true,
+        isFitWidth:true
     });
     $('p_div').masonry({
         itemSelector:'.p_section',
-        isFitWidth:true,
+        isFitWidth:true
     });
     $('#main').hide();
 }
