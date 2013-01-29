@@ -5940,6 +5940,7 @@ function duplicate_sub(dupe) {
     $(sub).attr('id', null);
     $(sub).uniqueId();
     $(sub).data('sub_parent', $(dupe).attr('id'));
+    $(sub).hide();
     $('body').append($(sub));
     $(dupe).data('sub', $(sub).attr('id'));
     // check if any of the duplicated sub-entries also have sub-entries
@@ -5984,7 +5985,6 @@ function selected(event, ui){
     } else {
         enable_entry(ui.selected);
     }
-
 }
 
 function update_entry_cost(entry) {
