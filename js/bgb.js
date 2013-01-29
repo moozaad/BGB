@@ -5717,7 +5717,7 @@ function render_entries(entries, sub_entries, async) {
             text = text + "'><div><p class='entry_name'>"+entries[i].name+"</p><p id='cost' data-initial-cost='"+entries[i].cost+"' class='entry_cost'>"+entries[i].cost+"</p><p class='entry_cost' id='br' data-initial-br='"+entries[i].br+"'>"+entries[i].br+"<font size='1.2em'>BR</font></p></div>";
             if ( entries[i]['options'] ) {
                 for(var j = 0; j < entries[i]['options'].length; j++) {
-                    text = text + '<div class="choice"><p class="opt_text">'+entries[i]['options'][j]['name']+'</p><select class="opt_select" name="' + entries[i]['options'][j]['name']+ '" data-bg_id="' + (j+1) +  '">';
+                    text = text + '<div class="choice ui-helper-clearfix"><p class="opt_text">'+entries[i]['options'][j]['name']+'</p><select class="opt_select" name="' + entries[i]['options'][j]['name']+ '" data-bg_id="' + (j+1) +  '">';
                     for (var k=0; k<entries[i].options[j].choices.length; k++) {
                         text = text + "<option data-cost='"+entries[i].options[j].choices[k].cost;
                         if (entries[i].options[j].choices[k].np)
