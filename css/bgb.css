@@ -10,8 +10,8 @@ body{
     overflow:auto;
 }
 .p_div {
-    height:auto;
-    overflow:auto;
+    height:100%;
+    overflow:visible;
     clear:both;
     background:white;
     margin:0;
