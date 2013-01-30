@@ -2517,7 +2517,15 @@ var forces = [
                         "name":"Aerial Artillery Observer",
                         "cost":66,
                         "br":3,
-                        "unique":true
+                        "unique":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"1 Fieseler Storch","cost":0}
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id":7,
