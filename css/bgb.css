@@ -10,14 +10,13 @@ body{
     overflow:auto;
 }
 .p_div {
-    height:100%;
+    height:auto;
     overflow:auto;
     clear:both;
     background:white;
     margin:0;
     padding:0;
     border:0;
-    font-size:
 }
 .p_h3 {
     color: #333333;
