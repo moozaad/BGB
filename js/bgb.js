@@ -985,27 +985,59 @@ var forces = [
                         "name":"Aerial Artillery Observer",
                         "cost":66,
                         "br":3,
-                        "unique":true
+                        "unique":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"1 Fieseler Storch","cost":0}
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id":3,
                         "name":"Light Panzer Artillery Battery",
                         "cost":86,
-                        "br":3
+                        "br":4,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"2 Wespe","cost":0}
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id":4,
                         "name":"Medium Panzer Artillery Battery",
                         "cost":136,
                         "br":4,
-                        "restricted":true
+                        "restricted":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"2 Hummel","cost":0}
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id":5,
                         "name":"Nebelwerfer Artillery Battery",
                         "cost":86,
                         "br":2,
-                        "restricted":true
+                        "restricted":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"2 SdKfz 251 Wurfrahmen 40","cost":0}
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id":6,
@@ -3420,21 +3452,46 @@ var forces = [
                         "cost":350,
                         "multiplier":6,
                         "br":30,
-                        "officer":true
+                        "officer":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"10 T-34/43s","cost":0}
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id":2,
                         "name":"T-34 Platoon",
                         "cost":100,
                         "multiplier":2,
-                        "br":9
+                        "br":9,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"3 T-34/43s","cost":0}
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id":3,
-                        "name":"Light Tank Squadron",
+                        "name":"Light Tank Platoon",
                         "cost":50,
                         "multiplier":2,
-                        "br":6
+                        "br":6,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"3 T-60s","cost":0},
+                                    {"id":2,"text":"3 T-70s","cost":15}
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id":4,
@@ -3442,7 +3499,15 @@ var forces = [
                         "cost":75,
                         "multiplier":2,
                         "br":6,
-                        "restricted":true
+                        "restricted":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"3 SU-76s","cost":0}
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id":5,
@@ -3513,7 +3578,15 @@ var forces = [
                         "id":3,
                         "name":"Off-Table Artillery Fire",
                         "cost":125,
-                        "br":0
+                        "br":0,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0}
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id":4,
@@ -3795,7 +3868,15 @@ var forces = [
                     "name":"Repair Vehicle",
                     "cost":12,
                     "br":2,
-                    "restricted":true
+                    "restricted":true,
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"Repair Truck","cost":0}
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id":2,
@@ -3856,7 +3937,15 @@ var forces = [
                     "id":4,
                     "name":"Light Bridging Unit",
                     "cost":18,
-                    "br":2
+                    "br":2,
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"Heavy Truck & 6 men","cost":0}
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id":5,
@@ -4564,7 +4653,15 @@ var forces = [
                         "name":"T-34 Platoon",
                         "cost":100,
                         "multiplier":2,
-                        "br":9
+                        "br":9,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"3 T-34/43s","cost":0}
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id":2,
