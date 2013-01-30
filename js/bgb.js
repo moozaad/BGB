@@ -1065,6 +1065,12 @@ var forces = [
                         "br":1,
                         "options":[
                             {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"120mm mortar & 3 crew","cost":0}
+                                ]
+                            },
+                            {
                                 "name":"Loader team",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
@@ -1561,6 +1567,12 @@ var forces = [
                     "cost":51,
                     "br":3,
                     "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"88mm AA/AT with 4 crew","cost":0}
+                            ]
+                        },
                         {
                             "name":"Loader team",
                             "choices":[
@@ -2481,6 +2493,12 @@ var forces = [
                         "cost":29,
                         "br":1,
                         "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"120mm mortar & 3 crew","cost":0}
+                                ]
+                            },
                             {
                                 "name":"Loader team",
                                 "choices":[
