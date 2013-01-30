@@ -6328,25 +6328,15 @@ function print_sections() {
     for (var i=0; i<sections.length; i++) {
         text = text + print_section(sections[i]);
     }
-/*
-    return $('.ui-selected').filter( function() {
-        print_render */
     return text;
 }
 function print_render(){
     var force = force_by_id($('#main').data('bg_id'));
-    var text=print_header(force);
-    var width=200;
-    text = text + print_sections();
-    $('body').append($('<div id="p_div" class="p_div clearfix"></div>').html(text));
-    width=$('#p_div').children('.p_section').outerWidth();
+    $('body').append($('<div id="p_div" class="p_div clearfix"></div>').html(print_header(force)));
+    $('#p_div').append($('<div id="p_div_inner" class="p_div clearfix"></div>').html(print_sections));
     $('#p_div').show();
 
-    $('p_div').children('.p_section').masonry({
-        itemSelector:'.p_entry, p_parent',
-        isFitWidth:true
-    });
-    $('p_div').masonry({
+    $('#p_div_inner').masonry({
         itemSelector:'.p_section',
         isFitWidth:true
     });
