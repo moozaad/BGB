@@ -4805,6 +4805,12 @@ var forces = [
                         "br":4,
                         "options":[
                             {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"Two 76.2mm L54 Zis 3s","cost":0},
+                                ]
+                            },
+                            {
                                 "name":"Tow",
                                 "choices":[
                                     {"id":1,"text":"No tow","cost":0},
@@ -4832,7 +4838,7 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"2 BM-13 Katyusha","cost":0},
-                                    {"id":2,"text":"2 76.2mm Zis3","cost":-55},
+                                    {"id":2,"text":"2 76.2mm Zis 3","cost":-55},
                                     {"id":3,"text":"2 122mm howitzers","cost":-9},
                                     {"id":4,"text":"2 152mm howitzers","cost":0}
                                 ]
