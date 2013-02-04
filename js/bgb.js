@@ -3185,8 +3185,8 @@ var forces = [
                             "name":"Transport",
                             "choices":[
                                 {"id":1,"text":"Gaz Jeep","cost":0},
-                                {"id":2,"text":"White Scout car","cost":18},
-                                {"id":3,"text":"T-34/43","cost":27}
+                                {"id":2,"text":"White Scout car","cost":18,"v":84},
+                                {"id":3,"text":"T-34/43","cost":27,"v":75}
                             ]
                         }
                     ]
@@ -3480,6 +3480,7 @@ var forces = [
                         "cost":350,
                         "multiplier":6,
                         "br":30,
+                        "v":75,
                         "officer":true,
                         "options":[
                             {
@@ -3496,6 +3497,7 @@ var forces = [
                         "cost":100,
                         "multiplier":2,
                         "br":9,
+                        "v":75,
                         "options":[
                             {
                                 "name":"Composition",
@@ -3515,8 +3517,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 T-60s","cost":0},
-                                    {"id":2,"text":"3 T-70s","cost":15}
+                                    {"id":1,"text":"3 T-60s","cost":0,"v":71},
+                                    {"id":2,"text":"3 T-70s","cost":15,"v":72}
                                 ]
                             }
                         ]
@@ -3528,6 +3530,7 @@ var forces = [
                         "multiplier":2,
                         "br":6,
                         "restricted":true,
+                        "v":76,
                         "options":[
                             {
                                 "name":"Composition",
@@ -3541,7 +3544,8 @@ var forces = [
                         "id":5,
                         "name":"T-34",
                         "cost":40,
-                        "br":3
+                        "br":3,
+                        "v":75
                     },
                     {
                         "id":6,
@@ -3552,8 +3556,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"T-60","cost":0},
-                                    {"id":2,"text":"T-70","cost":5}
+                                    {"id":1,"text":"T-60","cost":0,"v":71},
+                                    {"id":2,"text":"T-70","cost":5,"v":72}
                                 ]
                             }
                         ]
@@ -3562,6 +3566,7 @@ var forces = [
                         "id":7,
                         "name":"SU-76",
                         "cost":30,
+                        "v":76,
                         "br":2
                     }
                 ]
@@ -3582,7 +3587,7 @@ var forces = [
                                 "name":"Transport",
                                 "choices":[
                                     {"id":1,"text":"Gaz Jeep","cost":0},
-                                    {"id":2,"text":"Bren Carrier","cost":2}
+                                    {"id":2,"text":"Bren Carrier","cost":2,"v":82}
                                 ]
                             }
                         ]
@@ -3597,7 +3602,7 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"2 BM-13 Katyusha","cost":0},
-                                    {"id":2,"text":"2 BM-8-13 Katyusha","cost":20}
+                                    {"id":2,"text":"2 BM-8-13 Katyusha","cost":20,"v":79}
                                 ]
                             }
                         ]
@@ -3727,12 +3732,14 @@ var forces = [
                         "id":7,
                         "name":"Dug-in T-34",
                         "cost":50,
-                        "br":3
+                        "br":3,
+                        "v":75
                     },
                     {
                         "id":8,
                         "name":"Dug-in T-34 Platoon",
                         "cost":125,
+                        "v":75,
                         "br":9
                     },
                     {
@@ -3794,8 +3801,8 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"White Scout Car","cost":0},
-                                {"id":2,"text":"M5 halftrack","cost":4}
+                                {"id":1,"text":"White Scout Car","cost":0,"v":84},
+                                {"id":2,"text":"M5 halftrack","cost":4,"v":83}
                             ]
                         },
                         {
@@ -3823,9 +3830,9 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"T-60","cost":0},
-                                {"id":2,"text":"T-70","cost":5},
-                                {"id":3,"text":"Valentine III","cost":14}
+                                {"id":1,"text":"T-60","cost":0,"v":71},
+                                {"id":2,"text":"T-70","cost":5,"v":72},
+                                {"id":3,"text":"Valentine III","cost":14,"v":87}
                             ]
                         }
                     ]
@@ -3876,9 +3883,9 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"BA-10","cost":0},
-                                {"id":2,"text":"BA-64","cost":-6},
-                                {"id":3,"text":"M3A1 White Scout Car","cost":-6}
+                                {"id":1,"text":"BA-10","cost":0,"v":80},
+                                {"id":2,"text":"BA-64","cost":-6,"v":81},
+                                {"id":3,"text":"M3A1 White Scout Car","cost":-6,"v":84}
                             ]
                         }
                     ]
@@ -4062,7 +4069,7 @@ var forces = [
                         "choices":[
                             {"id":1,"text":"Jeep Ambulance","cost":0},
                             {"id":2,"text":"Ambulance medium truck","cost":2},
-                            {"id":3,"text":"M5 halftrack Ambulance","cost":6}
+                            {"id":3,"text":"M5 halftrack Ambulance","cost":6,"v":83}
                         ]
                         }
                     ]
@@ -4084,11 +4091,11 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Churchill III or IV","cost":0},
-                                {"id":2,"text":"M3 Grant","cost":-4},
-                                {"id":3,"text":"Matilda II","cost":-20},
-                                {"id":4,"text":"Valentine III","cost":-14, "br":-1},
-                                {"id":5,"text":"M5 Stuart","cost":-10, "br":-1}
+                                {"id":1,"text":"Churchill III or IV","cost":0,"v":88},
+                                {"id":2,"text":"M3 Grant","cost":-4,"v":85},
+                                {"id":3,"text":"Matilda II","cost":-20,"v":86},
+                                {"id":4,"text":"Valentine III","cost":-14, "br":-1,"v":87},
+                                {"id":5,"text":"M5 Stuart","cost":-10, "br":-1,"v":89}
                             ]
                         }
                     ]
@@ -4102,8 +4109,8 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 SU-122","cost":0},
-                                {"id":2,"text":"1 SU-152","cost":4}
+                                {"id":1,"text":"1 SU-122","cost":0,"v":77},
+                                {"id":2,"text":"1 SU-152","cost":4,"v":78}
                             ]
                         }
                     ]
