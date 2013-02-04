@@ -9,15 +9,15 @@ function army_size_string() { // todo check this costs in the book!
     var cost =  parseInt($('#force_cost').text());
     if (cost <= 350 )
         return 'Squad';
-    if (cost <= 500 )
-        return 'Platoon';
     if (cost <= 750 )
+        return 'Platoon';
+    if (cost <= 1500 )
         return 'Company';
-    if (cost <= 1000 )
-        return 'Battalion';
+    return 'Battalion';
 }
 
 var my_uuid=0;
+var listVehicles = null;
 
 // IDs are manually generated and must remain static as they will be used for saving
 // lists
@@ -5860,6 +5860,8 @@ function render_entries(entries, sub_entries, async) {
                 text = text + "' data-restricted='true";
             if (entries[i].unique)
                 text = text + "' data-unique='true";
+            if (entries[i].v)
+                text = text + "' data-v='"+entries[i].v;
             text = text + "' class='entry ui-widget-content";
             if ( entries[i]['mandatory'] )
                 text = text + ' ui-selected mandatory';
@@ -5873,6 +5875,8 @@ function render_entries(entries, sub_entries, async) {
                            text = text +"' data-np='"+entries[i].options[j].choices[k].br; 
                         if (entries[i].options[j].choices[k].br)
                            text = text +"' data-br='"+entries[i].options[j].choices[k].br; 
+                        if (entries[i].options[j].choices[k].v)
+                           text = text +"' data-v='"+entries[i].options[j].choices[k].v; 
                         text = text + "' value='" + entries[i].options[j].choices[k].id +"'>"+entries[i].options[j].choices[k].text + "</option>"; 
                     }
                     text = text + "</select></div>";
@@ -6020,14 +6024,7 @@ function load( string ) {
 }
 
 function render() {
-    /* greg still have to note that a saved entry is the Nth of that type of entr
-       possibly don't save mandatory items in sub fields unless they have non-standard select options */
     render_force(1, true);
-    //load('AABCC_B0BA1ABB_BB_CCD1B1ABB_BB_C1DEE_B0CAE0');
-    //    render_force(1);
-    // B_B means entry type B (2) instance B (2)
-    //load('ABA1ABB_B-BBB_C-ABCD-AB10');
-    //AA-AG0B0C-ABA
 }
 
 // Function gets selected entries but excludes any sub entries whose parent entry
@@ -6329,6 +6326,19 @@ function print_entry_options(entry){
 }
 function print_entry(entry){
     var text = print_entry_name(entry);
+
+    // Find any vehicles used by these entries
+    var v = $(entry).data('v');
+    if ( !v ) {
+        var selects = $(entry).find("select option").filter(':selected');
+        for (var i=0; i<selects.length; i++) {
+            if ( $(selects[i]).data('v') )
+                v = $(selects[i]).data('v');
+        }
+    }
+    if (v)
+        listVehicles[v]=1
+
     text = text + print_entry_options(entry);
     if ($(entry).data('sub'))
         text = text + print_with_sub(entry);
@@ -6358,9 +6368,12 @@ function print_sections() {
 }
 function print_render(){
     var force = force_by_id($('#main').data('bg_id'));
+    listVehicles = {};
     $('body').append($('<div id="p_div" class="p_div clearfix"></div>').html(print_header(force)));
     $('#p_div').append($('<div id="p_div_inner" class="p_div clearfix"></div>').html(print_sections));
-    $('#p_div').show();
+    if ( typeof print_vehicles === 'function' ) {
+        $('#p_div').append($('<div id="p_div_v" class="p_div clearfix"></div>').html(print_vehicles(listVehicles)));
+    }
 
     $('#p_div_inner').masonry({
         itemSelector:'.p_section',
