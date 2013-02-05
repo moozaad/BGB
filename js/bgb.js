@@ -277,8 +277,8 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"50mm PaK38","cost":0},
-                                            {"id":2,"text":"75mm PaK40","cost":14}
+                                            {"id":1,"text":"50mm PaK38","cost":0,"w":9},
+                                            {"id":2,"text":"75mm PaK40","cost":14,"w":14}
                                         ]
                                     },
                                     {
@@ -420,8 +420,8 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"50mm PaK38","cost":0},
-                                            {"id":2,"text":"75mm PaK40","cost":14}
+                                            {"id":1,"text":"50mm PaK38","cost":0,"w":9},
+                                            {"id":2,"text":"75mm PaK40","cost":14,"w":14}
                                         ]
                                     },
                                     {
@@ -620,7 +620,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"80mm mortar","cost":0},
+                                            {"id":1,"text":"80mm mortar","cost":0,"w":2},
                                             {"id":2,"text":"SdKfz 251/2 (80mm mortar)","cost":6,"v":38}
                                         ]
                                     },
@@ -643,8 +643,8 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"50mm PaK38","cost":0},
-                                            {"id":2,"text":"75mm PaK40","cost":14}
+                                            {"id":1,"text":"50mm PaK38","cost":0,"w":9},
+                                            {"id":2,"text":"75mm PaK40","cost":14,"w":14}
                                         ]
                                     },
                                     {
@@ -1115,6 +1115,7 @@ var forces = [
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":1,
+                        "w":3,
                         "options":[
                             {
                                 "name":"Composition",
@@ -1190,6 +1191,7 @@ var forces = [
                         "name":"100mm Cannon",
                         "cost":50,
                         "br":2,
+                        "w":21,
                         "restricted":true,
                         "options":[
                             {
@@ -1621,6 +1623,7 @@ var forces = [
                     "name":"Heavy Anti-Tank Gun",
                     "cost":51,
                     "br":3,
+                    "w":20,
                     "options":[
                         {
                             "name":"Composition",
@@ -2053,11 +2056,11 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"37mm PaK36","cost":0},
-                                            {"id":2,"text":"50mm PaK38","cost":8},
+                                            {"id":1,"text":"37mm PaK36","cost":0,"w":7},
+                                            {"id":2,"text":"50mm PaK38","cost":8,"w":9},
                                             {"id":3,"text":"75mm PaK97/38","cost":12},
                                             {"id":4,"text":"76.2mm PaK36(r)","cost":14},
-                                            {"id":5,"text":"75mm PaK40","cost":22}
+                                            {"id":5,"text":"75mm PaK40","cost":22,"w":14}
                                         ]
                                     },
                                     {
@@ -2558,6 +2561,7 @@ var forces = [
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":1,
+                        "w":3,
                         "options":[
                             {
                                 "name":"Composition",
@@ -3371,8 +3375,8 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"45mm L46","cost":0},
-                                            {"id":2,"text":"45mm L66","cost":8}
+                                            {"id":1,"text":"45mmL46","cost":0,"w":38},
+                                            {"id":2,"text":"45mmL66","cost":8,"w":39}
                                         ]
                                     },
                                     {
@@ -3610,7 +3614,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0},
+                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0,"w":51,"v":91},
                                     {"id":2,"text":"2 BM-8-13 Katyusha","cost":20,"v":79}
                                 ]
                             }
@@ -3635,6 +3639,7 @@ var forces = [
                         "name":"Mortar Battery",
                         "cost":44,
                         "br":2,
+                        "w":34,
                         "options":[
                             {
                                 "name":"Composition",
@@ -3659,6 +3664,7 @@ var forces = [
                         "name":"Heavy Mortar Battery",
                         "cost":58,
                         "br":1,
+                        "w":3,
                         "options":[
                             {
                                 "name":"Composition",
@@ -4149,7 +4155,7 @@ var forces = [
                             "name":"Composition",
                             "choices":[
                                 {"id":1,"text":"76.2mm L54 Zis 3","cost":0,"w":45},
-                                {"id":2,"text":"57mm L73 Zis 2","cost":10}
+                                {"id":2,"text":"57mm L73 Zis 2","cost":10,"w":40}
                             ]
                         },
                         {
@@ -4458,8 +4464,8 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"45mm L46","cost":0},
-                                            {"id":2,"text":"45mm L66","cost":8}
+                                            {"id":1,"text":"45mmL46","cost":0,"w":38},
+                                            {"id":2,"text":"45mmL66","cost":8,"w":39}
                                         ]
                                     },
                                     {
@@ -4831,7 +4837,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0},
+                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0,"w":51},
                                     {"id":2,"text":"2 BM-8-13 Katyusha","cost":20,"v":79}
                                 ]
                             }
@@ -4890,6 +4896,7 @@ var forces = [
                         "name":"Mortar Battery",
                         "cost":44,
                         "br":2,
+                        "w":34,
                         "options":[
                             {
                                 "name":"Composition",
@@ -4914,6 +4921,7 @@ var forces = [
                         "name":"Heavy Mortar Battery",
                         "cost":58,
                         "br":1,
+                        "w":3,
                         "options":[
                             {
                                 "name":"Composition",
@@ -4957,9 +4965,9 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 122mm L23 howitzers","cost":0},
-                                    {"id":2,"text":"2 122mm L24 howitzers","cost":8},
-                                    {"id":3,"text":"2 122mm L46 cannons","cost":36}
+                                    {"id":1,"text":"2 122mmL23 howitzers","cost":0,"w":47},
+                                    {"id":2,"text":"2 152mmL24 howitzers","cost":8,"w":49},
+                                    {"id":3,"text":"2 122mmL46 cannons","cost":36,"w":48}
                                 ]
                             },
                             {
@@ -5437,8 +5445,8 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"3 45mm L46 guns","cost":0},
-                                {"id":2,"text":"3 45mm L66 guns","cost":20}
+                                {"id":1,"text":"3 45mmL46 guns","cost":0,"w":38},
+                                {"id":2,"text":"3 45mmL66 guns","cost":20,"w":39}
                             ]
                         },
                         {
