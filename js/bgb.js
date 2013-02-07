@@ -6,7 +6,7 @@ function sub_timeout(sub_units, div) {
         return dfd.promise();
 }
 function army_size_string() { // todo check this costs in the book!
-    var cost =  parseInt($('#force_cost').text());
+    var cost =  parseInt($('#force_cost').text(),10);
     if (cost <= 350 )
         return 'Squad';
     if (cost <= 750 )
@@ -4853,7 +4853,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Two 76.2mm L54 Zis 3s","cost":0},
+                                    {"id":1,"text":"Two 76.2mm L54 Zis 3s","cost":0}
                                 ]
                             },
                             {
@@ -5588,7 +5588,7 @@ function perm(inArr, choose, callback, callback_arg) {
     var inner = function(tmpArray, choose_) {
         if ( found )
             return;
-        if (choose_ == 0) {
+        if (choose_ === 0) {
             found = callback(c, callback_arg);
         } else {
             for (var i = 0; i < tmpArray.length; ++i) {
@@ -5599,7 +5599,7 @@ function perm(inArr, choose, callback, callback_arg) {
                 c.pop();
             }
         }
-    }
+    };
     inner(inArr, choose);
     return found;
 }
@@ -5622,7 +5622,7 @@ function render_name(force) {
             text = text + " selected";
         text=text+">"+forces[i].name+"</option>";
     }
-    text = text +"</select>Officers:<p id='officer_count' style='display:inline; margin-right:20px;'>0</p>Restricted:<p style='display:inline' id='restricted_count'>0</p></div><div style='display:inline; float:right'><div style=' margin-right:12px; display:inline; float=left'><button id='print' class='save_button'>Print</button><button id='load' class='save_button'>Load</button><button id='save' class='save_button'>Save</button></div><span class='force_cost' id='force_cost'>0</span></div></div>"
+    text = text +"</select>Officers:<p id='officer_count' style='display:inline; margin-right:20px;'>0</p>Restricted:<p style='display:inline' id='restricted_count'>0</p></div><div style='display:inline; float:right'><div style=' margin-right:12px; display:inline; float=left'><button id='print' class='save_button'>Print</button><button id='load' class='save_button'>Load</button><button id='save' class='save_button'>Save</button></div><span class='force_cost' id='force_cost'>0</span></div></div>";
     return(text);
 }
 function render_sections(force, async) {
@@ -5693,15 +5693,14 @@ function count_requires() {
 function reduce(allows, requires, index, max, uniqueRequire) {
     var indexArray = index.split(',');
     var localMax = max;
-    for (var i=allows.length-1, localMax=max; i >= 0 && localMax > 0; i--){
+    for (var i=allows.length-1; i >= 0 && localMax > 0; i--){
         if (allows[i] == index) {
             allows.splice(i,1);
             localMax--;
         }
     }
     for (i=requires.length-1, localMax=max; i >= 0 && localMax > 0; i--){
-        if ((uniqueRequire==null || requires[i] == uniqueRequire)
-            && $.inArray(""+requires[i],indexArray) != -1) {
+        if ((uniqueRequire==null || requires[i] == uniqueRequire) && $.inArray(""+requires[i],indexArray) != -1) {
             requires.splice(i,1);
             localMax--;
         }
@@ -5720,15 +5719,16 @@ function reduce_by_count(allows, requires) {
     }
     for(var index in count) {
         var indexArray = index.split(',');
-        for (var j=0; j<requires.length; j++)
+        for (var j=0; j<requires.length; j++) {
             if ($.inArray(""+requires[j], indexArray) != -1) {
                 if (!requiresCount[index])
                     requiresCount[index]=1;
                 else
                     requiresCount[index]=requiresCount[index]+1;
             }
+        }
     }
-    for (var index in count){
+    for (index in count){
         if (requiresCount[index] <= count[index]) {
             found = true;
             reduce(allows, requires, index, count[index], null);
@@ -5739,7 +5739,7 @@ function reduce_by_count(allows, requires) {
     }
         
     if (found) // reduced, so try to reduce again
-        (reduce_by_count(allows, requires));
+        reduce_by_count(allows, requires);
     /*alert(JSON.stringify(count));
     alert(JSON.stringify(requiresCount)); */
     return found;
@@ -5755,7 +5755,7 @@ function simplify_allows(allows, requires) {
                 changed = true;
             }
         }
-        if (allows[i].length == 0) {
+        if (allows[i].length === 0) {
             allows.splice(i,1);
         }
     }
@@ -5808,7 +5808,7 @@ function simplify_requires(allows, requires){
 
 function allow_requires() {
     var requires = count_requires();
-    if (requires.length == 0) // no requirements, auto pass
+    if (requires.length === 0) // no requirements, auto pass
         return true;
     var allows = get_allows();
     if (requires.length > allows.length)
@@ -5816,7 +5816,7 @@ function allow_requires() {
 
     for (var i=0; i<requires.length; i++) {
         var match = false;
-        for (var j=0; j<allows.length && match==false; j++){
+        for (var j=0; j<allows.length && match===false; j++){
             if ($.inArray(requires[i], allows[j]) != -1)
                 match = true;
         }
@@ -5826,7 +5826,6 @@ function allow_requires() {
     }
     // loop simplifying until it simplifies no more
     while ( requires.length > 0 && (simplify_allows(allows, requires) || simplify_requires(allows, requires) || reduce_by_count(allows, requires) )){
-        ;
     }
     if (requires.length == 0)
         return true;
@@ -5867,7 +5866,7 @@ function render_entries(entries, sub_entries, async) {
             if (entries[i].multiplier)
                 text = text + entries[i].multiplier;
             else {
-                if (entries[i].multiplier == 0)
+                if (entries[i].multiplier === 0)
                     text = text + "0";
                 else
                     text = text + "1";
@@ -5923,16 +5922,17 @@ function render_entries(entries, sub_entries, async) {
             }
             if ( entries[i]['sub_units'] )
                 text = text + "<button class='sub_button'>"+entries[i]['sub_text']+"</button>";
-            text = text + "</div>"
+            text = text + "</div>";
         }
     }
     return text;
 }
 
 function force_by_id(which) {
-    for (var i=0; i<forces.length; i++)
+    for (var i=0; i<forces.length; i++){
         if (which == forces[i].id)
             return forces[i];
+    }
     return forces[0];
 }
 function render_force(which, async) {
@@ -5963,7 +5963,7 @@ function encode( integer ){
         return String.fromCharCode(64+integer);
     if ( integer >= 27 && integer <= 52 )
         return String.fromCharCode(97+integer);
-    return '!'
+    return '!';
 }
 
 function split_and_load(items, depth, panel) {
@@ -6087,8 +6087,8 @@ function update_cost() {
     var br=0;
     var entries = get_selected_entries();
     $(entries).each(function() {
-            cost = cost + parseInt($(this).find('#cost').text());
-            br = br + parseInt($(this).find('#br').text());});
+            cost = cost + parseInt($(this).find('#cost').text(),10);
+            br = br + parseInt($(this).find('#br').text(),10);});
     $('#force_cost').text(cost + ' / ' + br +'br');
     var officers = entries.filter( function() { if ($(this).data('officer')) return true; return false; } );
     $('#officer_count').text(officers.length);
@@ -6229,7 +6229,6 @@ function sub_button_bind() {
 
 function save_entry(entry, depth, N) {
     var text=[];
-    var sub;
     text.push(encode($(entry).data('bg_id')));
     if (N > 1) // Save if this is the Nth of this entry
         text.push('_', encode(N));
@@ -6238,7 +6237,7 @@ function save_entry(entry, depth, N) {
         // only bother saving ones with more than 1 possible choice
         // and which are not the default value
         if (num_opts > 1 && $(this).val() > 1) {
-            text.push( '-', encode($(this).data('bg_id')), encode(parseInt($(this).val())));
+            text.push( '-', encode($(this).data('bg_id')), encode(parseInt($(this).val(),10)));
         }
         });
     subID = $(entry).data('sub');
@@ -6258,7 +6257,7 @@ function save_section(section, depth) {
     // alert('entries length is ' + entries.length);
     var text = [];
     if ( entries.length > 0 ) {
-        if (depth == 0) //only include section code for top level sections
+        if (depth === 0) //only include section code for top level sections
             text.push(encode($(section).data('section-no')));
         else
             text.push(depth); // push sub section start marker for this depth
@@ -6326,7 +6325,7 @@ function save(event) {
 
 function changeForce(event){
     emptyPage();
-    render_force(parseInt($(this).val()), true);
+    render_force(parseInt($(this).val(),10), true);
     $('.save_button, .load_button, .sub_button').button();
     update_accordion();
 }
@@ -6352,7 +6351,7 @@ function print_entry_options(entry){
     var printed = 0;
     if ($(selects).length > 0) {
         $(selects).each( function() {
-            var selected = $(this).children("select option").filter(':selected')
+            var selected = $(this).children("select option").filter(':selected');
             if (!$(selected).data('np') && $(this).children("select option").filter(':selected').text()!='None') {
                 if (printed > 0)
                     text = text+', ';
@@ -6379,8 +6378,8 @@ function print_entry(entry){
         listVehicles[v]=1;
     var w = $(entry).data('w');
     if ( !w ) {
-        var selects = $(entry).find("select option").filter(':selected');
-        for (var i=0; i<selects.length; i++) {
+        selects = $(entry).find("select option").filter(':selected');
+        for (i=0; i<selects.length; i++) {
             if ( $(selects[i]).data('w') )
                 w = $(selects[i]).data('w');
         }
