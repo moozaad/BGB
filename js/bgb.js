@@ -5702,7 +5702,7 @@ function reduce(allows, requires, index, max, uniqueRequire) {
         }
     }
     for (i=requires.length-1, localMax=max; i >= 0 && localMax > 0; i--){
-        if ((uniqueRequire==null || requires[i] == uniqueRequire) && $.inArray(""+requires[i],indexArray) != -1) {
+        if ((uniqueRequire===null || requires[i] == uniqueRequire) && $.inArray(""+requires[i],indexArray) != -1) {
             requires.splice(i,1);
             localMax--;
         }
@@ -5822,14 +5822,14 @@ function allow_requires() {
             if ($.inArray(requires[i], allows[j]) != -1)
                 match = true;
         }
-        if (match == false) {
+        if (match === false) {
             return false;
         }
     }
     // loop simplifying until it simplifies no more
     while ( requires.length > 0 && (simplify_allows(allows, requires) || simplify_requires(allows, requires) || reduce_by_count(allows, requires) )){
     }
-    if (requires.length == 0)
+    if (requires.length === 0)
         return true;
     if ( allows.length > 0 && requires.length <= allows.length ) {
         alert('Simplifaction process failed. If using the online (ie uptodate copy) then please report the following string to "quozl" on the guild gamers forum. Your feedback can help improve this builder!:' +JSON.stringify(allows) + " requires: " +JSON.stringify(requires));
