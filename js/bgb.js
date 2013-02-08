@@ -15,7 +15,9 @@ function army_size_string() { // todo check this costs in the book!
         return 'Company';
     return 'Battalion';
 }
-
+function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+}
 var my_uuid=0;
 var listVehicles = null;
 var listWeapons = null;
@@ -6063,7 +6065,14 @@ function load( string ) {
 }
 
 function render() {
-    render_force(1, true);
+    var toLoad = getURLParameter('load');
+    if (toLoad) {
+        load(toLoad);
+        if (getURLParameter('roster'))
+            print_render();
+    }
+    else
+        render_force(1, true);
 }
 
 // Function gets selected entries but excludes any sub entries whose parent entry
