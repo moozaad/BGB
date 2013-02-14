@@ -1,3 +1,4 @@
+var sizes = [350, 750, 1500, 99999];
 function sub_timeout(sub_units, div) {
     var dfd = jQuery.Deferred();
         setTimeout(function() {
@@ -28,6 +29,12 @@ var forces = [
     {
         "id":1,
         "name":"Panzer Division Battlegroup",
+        "infantry":[
+            [[1,0],[0,1]],
+            [[0,1],[0,2]],
+            [[0,1],[0,2]],
+            [[0,2],[0,4]]
+        ],
         "sections":[
             {
                 "id":1, 
@@ -141,6 +148,7 @@ var forces = [
                         "name":"Panzer Grenadier Platoon",
                         "cost":100,
                         "br":11,
+                        "p":1,
                         'multiplier':4,
                         "sub_text":"Platoon Components",
                         "sub_units":[
@@ -311,6 +319,7 @@ var forces = [
                         "br":19,
                         "restricted":true,
                         "multiplier":4,
+                        "p":1,
                         "options":[
                             {
                                 "name":"Troop Quality",
@@ -495,6 +504,7 @@ var forces = [
                         "cost":162,
                         "br":15,
                         'multiplier':4,
+                        "p":1,
                         "options":[
                             {
                                 "name":"Troop Quality",
@@ -717,6 +727,7 @@ var forces = [
                         "name":"Panzer Grenadier Squad",
                         "cost":26,
                         "br":2,
+                        "s":1,
                         "options":[
                             {
                                 "name":"Transport",
@@ -746,6 +757,7 @@ var forces = [
                         "name":"Armoured Pzr Gren Squad",
                         "cost":42,
                         "br":3,
+                        "s":1,
                         "options":[
                             {
                                 "name":"MG",
@@ -776,6 +788,7 @@ var forces = [
                         "cost":54,
                         "br":3,
                         "restricted":true,
+                        "s":1,
                         "options":[
                             {
                                 "name":"MG",
@@ -1381,6 +1394,7 @@ var forces = [
                     "name":"Panzer Grenadier Foot Patrol",
                     "cost":36,
                     "br":3,
+                    "s":1,
                     "options":[
                         {
                             "name":"MG",
@@ -1929,6 +1943,7 @@ var forces = [
                         "cost":100,
                         "br":11,
                         'multiplier':4,
+                        "p":1,
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
@@ -2115,6 +2130,7 @@ var forces = [
                         "br":8,
                         "restricted":true,
                         "multiplier":4,
+                        "p":1,
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
@@ -2281,6 +2297,7 @@ var forces = [
                         "name":"Grenadier Squad",
                         "cost":26,
                         "br":3,
+                        "s":1,
                         "options":[
                             {
                                 "name":"Transport",
@@ -2303,6 +2320,7 @@ var forces = [
                         "name":"Assault Pioneer Squad",
                         "cost":46,
                         "br":3,
+                        "s":1,
                         "restricted":true,
                         "options":[
                             {
@@ -3279,6 +3297,7 @@ var forces = [
                         "br":5,
                         'multiplier':4,
                         "sub_text":"Platoon Components",
+                        "p":1,
                         "sub_units":[
                             {
                                 "id":1,
@@ -3442,6 +3461,7 @@ var forces = [
                         "name":"Motorised Rifle Squad",
                         "cost":14,
                         "br":1,
+                        "s":1,
                         "options":[
                             {
                                 "name":"Transport",
@@ -3471,6 +3491,7 @@ var forces = [
                         "name":"Tank Rider Squad",
                         "cost":12,
                         "br":1,
+                        "s":1,
                         "options":[
                             {
                                 "name":"AT grenades",
@@ -3935,6 +3956,7 @@ var forces = [
                     "name":"Sapper Squad",
                     "cost":21,
                     "br":2,
+                    "s":1,
                     "options":[
                         {
                             "name":"Transport",
@@ -4382,6 +4404,7 @@ var forces = [
                         "br":5,
                         'multiplier':4,
                         "sub_text":"Platoon Components",
+                        "p":1,
                         "sub_units":[
                             {
                                 "id":1,
@@ -4522,6 +4545,7 @@ var forces = [
                         "name":"Rifle Squad",
                         "cost":14,
                         "br":1,
+                        "s":1,
                         "options":[
                             {
                                 "name":"AT grenades",
@@ -4554,6 +4578,7 @@ var forces = [
                                 "cost":0,
                                 "count":3,
                                 "br":0,
+                                "p":1,
                                 "mandatory":true,
                                 "sub_text":"Platoon Components",
                                 "sub_units":[
@@ -5241,6 +5266,7 @@ var forces = [
                     "name":"Sapper Squad",
                     "cost":21,
                     "br":2,
+                    "s":1,
                     "options":[
                         {
                             "name":"Transport",
@@ -5896,6 +5922,10 @@ function render_entries(entries, sub_entries, async) {
                 text = text + "' data-restricted='true";
             if (entries[i].unique)
                 text = text + "' data-unique='true";
+            if (entries[i].p)
+                text = text + "' data-p='"+entries[i].p;
+            if (entries[i].s)
+                text = text + "' data-s='"+entries[i].s;
             if (entries[i].v)
                 text = text + "' data-v='"+entries[i].v;
             if (entries[i].w)
@@ -6090,7 +6120,53 @@ function get_selected_entries() {
         }
         return true; } );
 }
+// returns 1 if not enough infantry and 2 if too many
+function enough_squads(squads, platoons, cost) {
+    // greg need to check force specific platoon restrictions
+    var forceId = parseInt($('#forceChoice').val(),10);
+    var size = 0;
+    rv = 0;
+    for (var i=0; i<sizes.length; i++) {
+        if (cost < sizes[i]) {
+           size = i;
+           break;
+        }
+    }
+    var min = forces[forceId].infantry[size][0];
+    var max = forces[forceId].infantry[size][1];
+    if ( min[0] ) {
+        if ( squads < min[0] )
+            return 1;
+    }
+    if ( min[1] ) {
+        if ( platoons < min[1] )
+            return 1;
+    }
+    if ( max[0] ) {
+        if ( squads > min[0] )
+            return 2;
+    }
+    if ( max[1] ) {
+        if ( platoons > min[1] )
+            return 2;
+    }
+    return 0;
+}
+function squads_check(cost, entries) {
+    var squads = 0;
+    var platoons = 0;
+    var rv;
+    $(entries).each(function() {
+        if ($(this).data('s'))
+            squads++;
+        if ($(this).data('p'))
+            platoons++;
+    });
+    rv = enough_squads(squads, platoons, cost);
+    if ( rv == 1 )
+        greg set no:w
 
+}
 function update_cost() {
     var cost = 0;
     var br=0;
@@ -6103,6 +6179,7 @@ function update_cost() {
     $('#officer_count').text(officers.length);
     var restricted = entries.filter( function() { if ($(this).data('restricted')) return true; return false; } );
     $('#restricted_count').text(restricted.length);
+    squads_check(cost, entries);
 }
 
 function unselecting(event, ui){
