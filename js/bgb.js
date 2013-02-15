@@ -23,6 +23,1434 @@ var my_uuid=0;
 var listVehicles = null;
 var listWeapons = null;
 
+
+var vehicles = [
+{
+    'name':'Blank'
+},
+{
+    'id':1,
+    'name':'Panzer III J',
+    'armour':true,
+    'weapons':[8],
+    'mg':true
+},
+{
+    'id':2,
+    'name':'Panzer III L',
+    'armour':true,
+    'weapons':[9],
+    'mg':true
+},
+{
+    'id':3,
+    'name':'Panzer III M',
+    'armour':true,
+    'weapons':[9],
+    'mg':true
+},
+{
+    'id':4,
+    'name':'Panzer III N',
+    'armour':true,
+    'weapons':[11],
+    'mg':true
+},
+{
+    'id':5,
+    'name':'Flammpanzer III',
+    'armour':true,
+    'weapons':[32],
+    'mg':true
+},
+{
+    'id':6,
+    'name':'Panzer III H Observation Tank',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':7,
+    'name':'Panzer IV E-F1',
+    'armour':true,
+    'weapons':[11],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':8,
+    'name':'Panzer IV G',
+    'armour':true,
+    'weapons':[13],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':9,
+    'name':'Panzer IV H',
+    'armour':true,
+    'weapons':[15],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':10,
+    'name':'Panzer V',
+    'armour':true,
+    'special':'Unreliable',
+    'weapons':[16],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':11,
+    'name':'Panzer VI',
+    'armour':true,
+    'weapons':[19],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':12,
+    'name':'Panzer T-34(r)',
+    'armour':true,
+    'weapons':[44],
+    'mg':true,
+    'special':'T-34 Mobility',
+    'weapons':[17],
+    'ammo':true
+},
+{
+    'id':13,
+    'name':'Panzer II',
+    'armour':true,
+    'weapons':[4],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':14,
+    'name':'Borgward B-IV',
+    'armour':true,
+    'special':'Remote control',
+    'weapons':[15],
+    'ammo':true
+},
+{
+    'id':15,
+    'name':'StuG III A-E',
+    'armour':true,
+    'weapons':[11],
+    'ammo':true
+},
+{
+    'id':16,
+    'name':'StuG III F',
+    'armour':true,
+    'weapons':[13],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':17,
+    'name':'StuH 42 F',
+    'armour':true,
+    'weapons':[22],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':18,
+    'name':'StuG III G',
+    'armour':true,
+    'weapons':[15],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':19,
+    'name':'StuH 42 G',
+    'armour':true,
+    'weapons':[22],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':20,
+    'name':'Marder II',
+    'armour':true,
+    'open':true,
+    'weapons':[14],
+    'ammo':true
+},
+{
+    'id':21,
+    'name':'Marder III H',
+    'armour':true,
+    'open':true,
+    'weapons':[14],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':22,
+    'name':'Marder III M',
+    'armour':true,
+    'open':true,
+    'weapons':[14],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':23,
+    'name':'Marder III (38t PaK 36r)',
+    'armour':true,
+    'open':true,
+    'weapons':[18],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':24,
+    'name':'Ferdinand',
+    'armour':true,
+    'weapons':[20],
+    'ammo':true
+},
+{
+    'id':25,
+    'name':'Hornisse',
+    'armour':true,
+    'open':true,
+    'weapons':[20],
+    'ammo':true
+},
+{
+    'id':26,
+    'name':'Brummbar',
+    'armour':true,
+    'weapons':[25],
+    'ammo':true
+},
+{
+    'id':27,
+    'name':'Grille H',
+    'armour':true,
+    'open':true,
+    'weapons':[25],
+    'ammo':true
+},
+{
+    'id':28,
+    'name':'Grille K',
+    'armour':true,
+    'open':true,
+    'weapons':[25],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':29,
+    'name':'Wespe',
+    'armour':true,
+    'open':true,
+    'weapons':[22],
+    'ammo':true
+},
+{
+    'id':30,
+    'name':'Hummel',
+    'armour':true,
+    'open':true,
+    'weapons':[26],
+    'ammo':true
+},
+{
+    'id':31,
+    'name':'Munitions Carrier',
+    'armour':true
+},
+{
+    'id':32,
+    'name':'SdKfz 222',
+    'armour':true,
+    'weapons':[4],
+    'ammo':true
+},
+{
+    'id':33,
+    'name':'SdKfz 223',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':34,
+    'name':'SdKfz 232',
+    'armour':true,
+    'weapons':[4],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':35,
+    'name':'SdKfz 233',
+    'armour':true,
+    'open':true,
+    'weapons':[11],
+    'ammo':true
+},
+{
+    'id':36,
+    'name':'SdKfz 236',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':37,
+    'name':'SdKfz 251/1',
+    'armour':true,
+    'open':true,
+    'mg':true
+},
+{
+    'id':38,
+    'name':'SdKfz 251/2',
+    'armour':true,
+    'open':true,
+    'weapons':[2],
+    'ammo':true
+},
+{
+    'id':39,
+    'name':'SdKfz 251/3',
+    'armour':true,
+    'open':true,
+    'mg':true
+},
+{
+    'id':40,
+    'name':'SdKfz 251/9',
+    'armour':true,
+    'open':true,
+    'weapons':[11],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':41,
+    'name':'SdKfz 251/10',
+    'armour':true,
+    'open':true,
+    'weapons':[7],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':42,
+    'name':'SdKfz 251/16',
+    'armour':true,
+    'open':true,
+    'weapons':[32],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':43,
+    'name':'SdKfz 250/1',
+    'armour':true,
+    'open':true,
+    'mg':true
+},
+{
+    'id':44,
+    'name':'SdKfz 250/3',
+    'armour':true,
+    'open':true,
+    'mg':true
+},
+{
+    'id':45,
+    'name':'SdKfz 250/7',
+    'armour':true,
+    'open':true,
+    'weapons':[2],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':46,
+    'name':'SdKfz 250/8',
+    'armour':true,
+    'open':true,
+    'weapons':[11],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':47,
+    'name':'SdKfz 250/9',
+    'armour':true,
+    'open':true,
+    'weapons':[4],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':48,
+    'name':'SdKfz 250/10',
+    'armour':true,
+    'open':true,
+    'weapons':[7],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':49,
+    'name':'SdKfz 250/11',
+    'armour':true,
+    'open':true,
+    'weapons':[6],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':50,
+    'name':'Motorcycle',
+    'hits':true,
+    'capacity':1
+},
+{
+    'id':51,
+    'name':'Motorcycle and sidecar',
+    'hits':true,
+    'capacity':2
+},
+{
+    'id':52,
+    'name':'Kettenkrad',
+    'hits':true,
+    'capacity':2
+},
+{
+    'id':53,
+    'name':'Staff car',
+    'hits':true,
+    'capacity':3
+},
+{
+    'id':54,
+    'name':'Kübelwagen',
+    'hits':true,
+    'capacity':3
+},
+{
+    'id':55,
+    'name':'Schwimmwagen',
+    'hits':true,
+    'capacity':3,
+    'special':'amphibious'
+},
+{
+    'id':56,
+    'name':'Steyr Heavy car',
+    'hits':true,
+    'capacity':5
+},
+{
+    'id':57,
+    'name':'Krupp Protze',
+    'hits':true,
+    'capacity':8
+},
+{
+    'id':58,
+    'name':'Opel Blitz',
+    'hits':true,
+    'capacity':12
+},
+{
+    'id':59,
+    'name':'Opel Maultier',
+    'hits':true,
+    'capacity':12
+},
+{
+    'id':60,
+    'name':'RSO',
+    'hits':true,
+    'capacity':10
+},
+{
+    'id':61,
+    'name':'Heavy Truck',
+    'hits':true,
+    'capacity':24
+},
+{
+    'id':62,
+    'name':'1 tonne SdKfz 10',
+    'hits':true,
+    'capacity':5
+},
+{
+    'id':63,
+    'name':'3 tonne SdKfz 11',
+    'hits':true,
+    'capacity':8
+},
+{
+    'id':64,
+    'name':'5 tonne SdKfz 6',
+    'hits':true,
+    'capacity':10
+},
+{
+    'id':65,
+    'name':'8 tonne SdKfz 7',
+    'hits':true,
+    'capacity':12
+},
+{
+    'id':66,
+    'name':'12 tonne SdKfz 8',
+    'hits':true,
+    'capacity':15
+},
+{
+    'id':67,
+    'name':'18 tonne SdKfz 9',
+    'hits':true,
+    'special':'repair, recovery'
+},
+{},{},
+{
+    'id':70,
+    'name':'KV-1S',
+    'armour':true,
+    'weapons':[44],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':71,
+    'name':'T-60',
+    'armour':true,
+    'weapons':[35],
+    'mg':true
+},
+{
+    'id':72,
+    'name':'T-70',
+    'armour':true,
+    'weapons':[38],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':73,
+    'name':'KV-1E',
+    'armour':true,
+    'weapons':[44],
+    'special':'Unreliable',
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':74,
+    'name':'KV-2',
+    'armour':true,
+    'weapons':[49],
+    'special':'Unreliable',
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':75,
+    'name':'T-34/43',
+    'armour':true,
+    'weapons':[44],
+    'mg':true,
+    'special':'T-34 Mobility',
+    'ammo':true
+},
+{
+    'id':76,
+    'name':'SU-76M',
+    'armour':true,
+    'open':true,
+    'weapons':[45],
+    'ammo':true
+},
+{
+    'id':77,
+    'name':'SU-122',
+    'armour':true,
+    'weapons':[47],
+    'ammo':true
+},
+{
+    'id':78,
+    'name':'SU-152',
+    'armour':true,
+    'weapons':[50],
+    'ammo':true
+},
+{
+    'id':79,
+    'name':'BM-8-13 Katyusha',
+    'armour':true,
+    'weapons':[51],
+    'ammo':true
+},
+{
+    'id':80,
+    'name':'BA-10',
+    'armour':true,
+    'weapons':[37],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':81,
+    'name':'BA-64',
+    'armour':true,
+    'open':true,
+    'mg':true
+},
+{
+    'id':82,
+    'name':'Bren Carrier',
+    'armour':true,
+    'open':true,
+    'mg':true
+},
+{
+    'id':83,
+    'name':'M5 Halftrack',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':84,
+    'name':'White Scout Car',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':85,
+    'name':'M3 Grant',
+    'armour':true,
+    'weapons':[56,57],
+    'mg':true,
+    'ammo':[14,5]
+},
+{
+    'id':86,
+    'name':'Matilda II',
+    'armour':true,
+    'weapons':[58],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':87,
+    'name':'Valentine III',
+    'armour':true,
+    'weapons':[58],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':88,
+    'name':'Churchill III/IV',
+    'armour':true,
+    'weapons':[59],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':89,
+    'name':'M3A1 Stuart',
+    'armour':true,
+    'weapons':[56],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':90, //greg confirm
+    'name':'Gaz Jeep TBC',
+    'hits':true,
+    'capacity':3
+},
+{
+    'id':91, //greg confirm
+    'name':'Medium Truck TBC',
+    'hits':true,
+    'capacity':12
+},
+{ // greg confirm
+    'id':92,
+    'name':'Radio Van TBC',
+    'hits':true
+},
+{
+    'id':93,
+    'name':'Horse & Limber',
+    'hits':true
+},
+{
+    'id':94,
+    'name':'Horse drawn wagon',
+    'hits':true
+},
+{
+    'id':95,
+    'name':'Komsomolyets tractor',
+    'hits':true
+}
+];
+
+var weapons = {
+    1:{
+        'name':'50mm mortar',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    2:{
+        'name':'80mm mortar',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    3:{
+        'name':'120mm mortar',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    4:{
+        'name':'20mmL55',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'-',
+            'strength':['_','_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    5:{
+        'name':'37mmL98',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'-',
+            'strength':['_','_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    6:{
+        'name':'28mmPzB41',
+        'stats':[
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    7:{
+        'name':'37mmL43 (PaK36)',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    8:{
+        'name':'50mmL42',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    9:{
+        'name':'50mmL60 (PaK38)',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    10:{
+        'name':'75mm (IG18)',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    11:{
+        'name':'75mmL24',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    12:{
+        'name':'75mmL36',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    13:{
+        'name':'75mmL43',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    14:{
+        'name':'75mmL46 (PaK40)',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    15:{
+        'name':'75mmL48',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    16:{
+        'name':'75mmL70',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    17:{
+        'name':'76.2mmL42',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    18:{
+        'name':'76.2mmL54',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    19:{
+        'name':'88mmL56',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    20:{
+        'name':'88mmL71 (PaK43)',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    21:{
+        'name':'100mmK18',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    22:{
+        'name':'105mmL28',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    23:{
+        'name':'105mmL42',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    24:{
+        'name':'122mmL23',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    25:{
+        'name':'150mmL12 (SiG33)',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    26:{
+        'name':'150mmL30',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    27:{
+        'name':'150mm Nebelwerfer',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    28:{
+        'name':'170mmL50',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    29:{
+        'name':'210mmL31',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    30:{
+        'name':'210mm Nebelwerfer',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    31:{
+        'name':'280mm Nebelwerfer',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    32:{
+        'name':'Flamethrower',
+        'stats':[
+        {
+            'type':'Flame'
+        }
+        ]
+    },
+    34:{
+        'name':'82mm mortar',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    35:{
+        'name':'20mm',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'-',
+            'strength':['_','_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    36:{
+        'name':'37mmL60',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'-',
+            'strength':['_','_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    37:{
+        'name':'37mmL45',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    38:{
+        'name':'45mmL46',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    39:{
+        'name':'45mmL66',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    40:{
+        'name':'57mmL73 (Zis2)',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    41:{
+        'name':'76.2mmL16',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    42:{
+        'name':'76.2mmL26',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    43:{
+        'name':'76.2mmL30',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    44:{
+        'name':'76.2mmL42',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    45:{
+        'name':'76.2mmL54 (Zis3)',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    46:{
+        'name':'85mmL54',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    47:{
+        'name':'122mmL23',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    48:{
+        'name':'122mmL46',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    49:{
+        'name':'152mmL24',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    50:{
+        'name':'152mmL29',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    51:{
+        'name':'132mm Rocket',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    52:{
+        'name':'203mmL49',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_','_']
+        }
+        ]
+    },
+    53:{
+        'name':'PTRD AT Rifle',
+        'stats':[
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':[2,1]
+        }
+        ]
+    },
+    54:{
+        'name':'82mm Rocket',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    55:{
+        'name':'PTAB Bomb',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    56:{
+        'name':'37mmL53',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    57:{
+        'name':'75mmL30',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    58:{
+        'name':'2 pdr',
+        'stats':[
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    },
+    59:{
+        'name':'6 pdr',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'_/_+',
+            'strength':['_','_','_','_','_']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['_','_','_','_','_']
+        }
+        ]
+    }
+};
+
 // IDs are manually generated and must remain static as they will be used for saving
 // lists
 var forces = [
@@ -6182,7 +7610,7 @@ function squads_check(cost, entries) {
     });
     rv = enough_squads(squads, platoons, cost);
     if ( rv == 1 )
-        greg set no:w
+        alert('greg WIP');
 
 }
 function update_cost() {
@@ -6197,7 +7625,7 @@ function update_cost() {
     $('#officer_count').text(officers.length);
     var restricted = entries.filter( function() { if ($(this).data('restricted')) return true; return false; } );
     $('#restricted_count').text(restricted.length);
-    squads_check(cost, entries);
+    //greg WIP squads_check(cost, entries);
 }
 
 function unselecting(event, ui){
@@ -6518,15 +7946,98 @@ function print_sections() {
     }
     return text;
 }
+function print_weapons(listWeapons) {
+    var text="";
+    for (var key in listWeapons) {
+        var weapon = weapons[key];
+        text = text + '<table><tr><th>'+weapon.name+'</th><th>0"-10"</th><th>10"-20"</th><th>20"-30"</th><th>30"-40"</th><th>40"-50"</th><th>50"-70"</th></tr>';
+        for (var i=0; i < weapon.stats.length; i++) {
+            var mode = weapon.stats[i];
+            text = text + "<tr><td>"+mode.type;
+            if ( mode.effect )
+                text = text + " ("+mode.effect + ")</td>";
+            for (var j=0; j<mode.strength.length; j++)
+                text = text + "<td>"+mode.strength[j]+"</td>";
+            text = text + "</tr>";
+        }
+    }
+    text = text+"</table>";
+    return text;
+}
+function print_vehicles(listV, listW) {
+    var text="";
+    var first = true;
+    text = text + "<div class='p_section'>";
+    for (var key in listV) {
+        var v = vehicles[key];
+        if (first) {
+            first=false;
+            text = text + "<table style='border:1px;'><tr><th></th><th>Move</th><th>Armour</th><th>Weapon</th><th>Special</th></tr>";
+        }
+        text = text +"<tr><td>"+v.name+"</td><td>";
+        if (v.move)
+            text = text+v.move[0]+" / "+v.move[1]+"</td><td>";
+        else
+            text = text+"__/__</td><td>";
+        if (v.armour) {
+            if (v.armour === true)
+                text = text + "__/__/__</td><td>";
+            else
+                text = text +v.armour[0]+" / " + v.armour[1]+" / "+v.armour[2]+"</td><td>";
+        }
+        else {
+            text = text + v.hits;
+            if (v.hits === true)
+                text = text + "   hit(s)";
+            else {
+                if ( v.hits <= 1 )
+                    text = text + " hit";
+                else
+                    text = text + " hits";
+            }
+            text = text + "</td><td>";
+        }
+
+        if (v.weapons){
+            for (var k=0; k<v.weapons.length; k++) {
+                if ( k>0 )
+                    text = text +", ";
+                text = text + weapons[v.weapons[k]].name;
+                if ( v.ammo ) {
+                    if ( v.ammo === true )
+                        text = text + " (H:_ A:_)";
+                    else
+                        text = text + " (" + v.ammo[k]+")";
+                }
+                listW[v.weapons[k]]=1;
+            }
+            text = text +"</td><td>";
+        } else {
+            text = text + "</td><td>";
+        }
+        var special = "";
+        if (v.open)
+            special = "Open-Topped";
+        if (v.special) {
+            if (v.open)
+                special = special + ", ";
+            special = special + v.special;
+        }
+        text = text + special + "</td></tr>";
+    }
+    if (!first)
+        text = text + "</table>";
+    text = text + "</div>";
+    text = text + "<div class='p_section'>"+ print_weapons(listW) + "</div>";
+    return text;
+}
 function print_render(){
     var force = force_by_id($('#main').data('bg_id'));
     listVehicles = {};
     listWeapons = {};
     $('body').append($('<div id="p_div" class="p_div clearfix"></div>').html(print_header(force)));
     $('#p_div').append($('<div id="p_div_inner" class="p_div clearfix"></div>').html(print_sections));
-    if ( typeof print_vehicles === 'function' ) {
-        $('#p_div').append($('<div id="p_div_v" class="p_div clearfix"></div>').html(print_vehicles(listVehicles,listWeapons)));
-    }
+    $('#p_div').append($('<div id="p_div_v" class="p_div clearfix"></div>').html(print_vehicles(listVehicles,listWeapons)));
 
     $('#p_div_inner').masonry({
         itemSelector:'.p_section',
