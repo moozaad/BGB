@@ -1,4 +1,4 @@
-var sizes = [350, 750, 1500, 99999];
+var sizes = [350, 750, 1500, 3000,99999];
 function sub_timeout(sub_units, div) {
     var dfd = jQuery.Deferred();
         setTimeout(function() {
@@ -32,8 +32,8 @@ var forces = [
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
-            [[0,1],[0,2]],
-            [[0,2],[0,4]]
+            [[0,2],[0,3]],
+            [[0,3],[0,6]]
         ],
         "sections":[
             {
@@ -1851,6 +1851,12 @@ var forces = [
     {
         "id":2,
         "name":"Infantry Division Battlegroup",
+        "infantry":[
+            [[1,0],[0,1]],
+            [[0,1],[0,2]],
+            [[0,2],[0,3]],
+            [[0,3],[0,6]]
+        ],
         "sections":[
             {
                 "id":1, 
@@ -3199,6 +3205,12 @@ var forces = [
     {
         "id":3,
         "name":"Tank Corps Battlegroup",
+        "infantry":[
+            [[1,0],[0,2]],
+            [[0,1],[0,4]],
+            [[0,2],[0,6]],
+            [[0,3],[0,9]]
+        ],
         "sections":[
             {
                 "id":1, 
@@ -4307,6 +4319,12 @@ var forces = [
     {
         "id":4,
         "name":"Rifle Division Battlegroup",
+        "infantry":[
+            [[1,0],[0,2]],
+            [[0,1],[0,4]],
+            [[0,2],[0,6]],
+            [[0,3],[0,9]]
+        ],
         "sections":[
             {
                 "id":1, 
@@ -6122,7 +6140,7 @@ function get_selected_entries() {
 }
 // returns 1 if not enough infantry and 2 if too many
 function enough_squads(squads, platoons, cost) {
-    // greg need to check force specific platoon restrictions
+    // need to check force specific platoon restrictions
     var forceId = parseInt($('#forceChoice').val(),10);
     var size = 0;
     rv = 0;
@@ -6135,7 +6153,7 @@ function enough_squads(squads, platoons, cost) {
     var min = forces[forceId].infantry[size][0];
     var max = forces[forceId].infantry[size][1];
     if ( min[0] ) {
-        if ( squads < min[0] )
+        if ( squads < min[0] && platoons == 0 )
             return 1;
     }
     if ( min[1] ) {
@@ -6143,7 +6161,7 @@ function enough_squads(squads, platoons, cost) {
             return 1;
     }
     if ( max[0] ) {
-        if ( squads > min[0] )
+        if ( platoons > min[0] )
             return 2;
     }
     if ( max[1] ) {
