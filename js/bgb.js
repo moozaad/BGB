@@ -8011,10 +8011,10 @@ function print_vehicles(listV, listW) {
                 text = text +v.armour[0]+" / " + v.armour[1]+" / "+v.armour[2]+"</td><td>";
         }
         else {
-            text = text + v.hits;
             if (v.hits === true)
                 text = text + "   hit(s)";
             else {
+                text = text + v.hits;
                 if ( v.hits <= 1 )
                     text = text + " hit";
                 else
