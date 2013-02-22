@@ -4449,6 +4449,12 @@ var forces = [
                     "br":3,
                     "options":[
                         {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"88mm AA/AT with 4 crew","cost":0}
+                            ]
+                        },
+                        {
                             "name":"Loader team",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
