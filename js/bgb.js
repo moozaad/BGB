@@ -7587,7 +7587,7 @@ function enough_squads(squads, platoons, cost) {
     var min = forces[forceId].infantry[size][0];
     var max = forces[forceId].infantry[size][1];
     if ( min[0] ) {
-        if ( squads < min[0] && platoons == 0 )
+        if ( squads < min[0] && platoons === 0 )
             return 1;
     }
     if ( min[1] ) {
