@@ -8012,7 +8012,7 @@ function print_vehicles(listV, listW) {
         }
         else {
             if (v.hits === true)
-                text = text + "   hit(s)";
+                text = text + "___hit(s)";
             else {
                 text = text + v.hits;
                 if ( v.hits <= 1 )
