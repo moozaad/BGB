@@ -8009,11 +8009,8 @@ function print_vehicles(listV, listW) {
                 if ( k>0 )
                     text = text +", ";
                 text = text + weapons[v.weapons[k]].name;
-                if ( v.ammo ) {
-                    if ( v.ammo === true )
-                        text = text + " (H:_ A:_)";
-                    else
-                        text = text + " (" + v.ammo[k]+")";
+                if ( v.ammo and v.ammo !== true ) {
+                    text = text + " (" + v.ammo[k]+")";
                 }
                 listW[v.weapons[k]]=1;
             }
