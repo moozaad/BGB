@@ -715,7 +715,7 @@ var weapons = {
         'name':'50mm mortar',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [VL]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         }
@@ -725,7 +725,7 @@ var weapons = {
         'name':'80mm mortar',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         }
@@ -735,7 +735,7 @@ var weapons = {
         'name':'120mm mortar',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         }
@@ -785,7 +785,7 @@ var weapons = {
         'name':'37mmL43 (PaK36)',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [VL]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -800,7 +800,7 @@ var weapons = {
         'name':'50mmL42',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [VL]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -815,7 +815,7 @@ var weapons = {
         'name':'50mmL60 (PaK38)',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [VL]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -830,7 +830,7 @@ var weapons = {
         'name':'75mm (IG18)',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         }
@@ -840,7 +840,7 @@ var weapons = {
         'name':'75mmL24',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -855,7 +855,7 @@ var weapons = {
         'name':'75mmL36',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         },
@@ -870,7 +870,7 @@ var weapons = {
         'name':'75mmL43',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         },
@@ -885,7 +885,7 @@ var weapons = {
         'name':'75mmL46 (PaK40)',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         },
@@ -900,7 +900,7 @@ var weapons = {
         'name':'75mmL48',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         },
@@ -915,7 +915,7 @@ var weapons = {
         'name':'75mmL70',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         },
@@ -930,7 +930,7 @@ var weapons = {
         'name':'76.2mmL42',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -945,7 +945,7 @@ var weapons = {
         'name':'76.2mmL54',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         }
@@ -955,7 +955,7 @@ var weapons = {
         'name':'88mmL56',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [M]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         },
@@ -970,7 +970,7 @@ var weapons = {
         'name':'88mmL71 (PaK43)',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [M]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         },
@@ -985,7 +985,7 @@ var weapons = {
         'name':'100mmK18',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [M]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         },
@@ -1000,7 +1000,7 @@ var weapons = {
         'name':'105mmL28',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [M]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         }
@@ -1010,7 +1010,7 @@ var weapons = {
         'name':'105mmL42',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [M]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         }
@@ -1020,7 +1020,7 @@ var weapons = {
         'name':'122mmL23',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [M]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         }
@@ -1030,7 +1030,7 @@ var weapons = {
         'name':'150mmL12 (SiG33)',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [M]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         }
@@ -1040,7 +1040,7 @@ var weapons = {
         'name':'150mmL30',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [M]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         }
@@ -1050,7 +1050,7 @@ var weapons = {
         'name':'150mm Nebelwerfer',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [M]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         }
@@ -1060,7 +1060,7 @@ var weapons = {
         'name':'170mmL50',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [H]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         }
@@ -1070,7 +1070,7 @@ var weapons = {
         'name':'210mmL31',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [H]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         }
@@ -1080,7 +1080,7 @@ var weapons = {
         'name':'210mm Nebelwerfer',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [H]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         }
@@ -1090,7 +1090,7 @@ var weapons = {
         'name':'280mm Nebelwerfer',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [H]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         }
@@ -1108,7 +1108,7 @@ var weapons = {
         'name':'82mm mortar',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         }
@@ -1148,7 +1148,7 @@ var weapons = {
         'name':'37mmL45',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [VL]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -1163,7 +1163,7 @@ var weapons = {
         'name':'45mmL46',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [VL]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -1178,7 +1178,7 @@ var weapons = {
         'name':'45mmL66',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [VL]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -1193,7 +1193,7 @@ var weapons = {
         'name':'57mmL73 (Zis2)',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [VL]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -1208,7 +1208,7 @@ var weapons = {
         'name':'76.2mmL16',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         }
@@ -1218,7 +1218,7 @@ var weapons = {
         'name':'76.2mmL26',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -1233,7 +1233,7 @@ var weapons = {
         'name':'76.2mmL30',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -1248,7 +1248,7 @@ var weapons = {
         'name':'76.2mmL42',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -1263,7 +1263,7 @@ var weapons = {
         'name':'76.2mmL54 (Zis3)',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [L]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -1278,7 +1278,7 @@ var weapons = {
         'name':'85mmL54',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [M]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -1293,7 +1293,7 @@ var weapons = {
         'name':'122mmL23',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [M]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -1308,7 +1308,7 @@ var weapons = {
         'name':'122mmL46',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [M]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -1323,7 +1323,7 @@ var weapons = {
         'name':'152mmL24',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [M]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         }
@@ -1333,7 +1333,7 @@ var weapons = {
         'name':'152mmL29',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [M]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         },
@@ -1348,7 +1348,7 @@ var weapons = {
         'name':'132mm Rocket',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [M]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_']
         }
@@ -1358,7 +1358,7 @@ var weapons = {
         'name':'203mmL49',
         'stats':[
         {
-            'type':'HE',
+            'type':'HE [H]',
             'effect':'_/_+',
             'strength':['_','_','_','_','_','_']
         }
@@ -8051,7 +8051,26 @@ function print_render(){
     });
     $('#main').hide();
 }
-
+function merge_vehicles(){
+    for (var i=0; i<vehicles_private.length; i++) {
+        if (vehicles_private[i].move)
+            vehicles[i].move=vehicles_private[i].move;
+        if (vehicles_private[i].armour)
+            vehicles[i].armour=vehicles_private[i].armour;
+        if (vehicles_private[i].ammo)
+            vehicles[i].ammo=vehicles_private[i].ammo;
+        if (vehicles_private[i].mg)
+            vehicles[i].mg=vehicles_private[i].mg;
+        if (vehicles_private[i].hits)
+            vehicles[i].hits=vehicles_private[i].hits;
+    }
+}
+function merge_weapons(){
+    for (var key in weapons) {
+        if (weapons_private[key].stats)
+            weapons[key].stats = weapons_private[key].stats;
+    }
+}
 $( document ).ready( function() {
     render();
     update_selectable();
@@ -8066,7 +8085,7 @@ $( document ).ready( function() {
     $('body').on('change', '#forceChoice', changeForce);
     $('body').on('change', '.opt_select', option_change);
     if ( vehicles_private !== undefined )
-        vehicles = vehicles_private;
+        merge_vehicles();
     if ( weapons_private !== undefined )
-        weapons = weapons_private;
+        merge_weapons();
 });
