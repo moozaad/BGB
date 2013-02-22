@@ -8065,4 +8065,8 @@ $( document ).ready( function() {
     $('body').on('click', '#print', print_render);
     $('body').on('change', '#forceChoice', changeForce);
     $('body').on('change', '.opt_select', option_change);
+    if ( vehicles_private !== undefined )
+        vehicles = vehicles_private;
+    if ( weapons_private !== undefined )
+        weapons = weapons_private;
 });
