@@ -7267,7 +7267,7 @@ function simplify_requires(allows, requires){
                 index=aKey;
             }
         }
-        if (count <= 1){
+        if (count == 1){
             var howMany=countRequires[rKey];
             if (countAllows[aKey] < howMany)
                 howMany = countAllows[aKey];
