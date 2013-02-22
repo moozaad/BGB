@@ -7967,8 +7967,16 @@ function print_weapons(listWeapons) {
     var text="";
     for (var key in listWeapons) {
         var weapon = weapons[key];
-        text = text + '<table><tr><th>'+weapon.name+'</th><th>0"-10"</th><th>10"-20"</th><th>20"-30"</th><th>30"-40"</th><th>40"-50"</th><th>50"-70"</th></tr>';
+        var long=false;
         for (var i=0; i < weapon.stats.length; i++) {
+            if (weapon.stats[i].strength.length==6)
+                long = true;
+        }
+        text = text + '<table><tr><th>'+weapon.name+'</th><th>0"-10"</th><th>10"-20"</th><th>20"-30"</th><th>30"-40"</th><th>40"-50"</th>';
+        if (long)
+            text = text+'<th>50"-70"</th>';
+        text = text + '</tr>';
+        for (i=0; i < weapon.stats.length; i++) {
             var mode = weapon.stats[i];
             text = text + "<tr><td>"+mode.type;
             if ( mode.effect )
@@ -7991,11 +7999,11 @@ function print_vehicles(listV, listW) {
             first=false;
             text = text + "<table style='border:1px;'><tr><th></th><th>Move</th><th>Armour</th><th>Weapon</th><th>Special</th></tr>";
         }
-        text = text +"<tr><td>"+v.name+"</td><td>";
+        text = text +"<tr><td>"+v.name+"</td><td style='white-space:nowrap;'>";
         if (v.move)
-            text = text+v.move[0]+" / "+v.move[1]+"</td><td>";
+            text = text+v.move[0]+" / "+v.move[1]+"</td><td style='white-space:nowrap;'>";
         else
-            text = text+"__/__</td><td>";
+            text = text+"__/__</td><td style='white-space:nowrap;'>";
         if (v.armour) {
             if (v.armour === true)
                 text = text + "__/__/__</td><td>";
