@@ -1648,6 +1648,7 @@ var forces = [
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
+                                "w":1,
                                 "unique":true,
                                 "options":[
                                     {
@@ -1694,6 +1695,7 @@ var forces = [
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
+                                "w":2,
                                 "unique":true,
                                 "options":[
                                     {
@@ -2009,6 +2011,7 @@ var forces = [
                                 "name":"Light Mortar Team",
                                 "cost":14,
                                 "br":1,
+                                "w":1,
                                 "unique":true,
                                 "options":[
                                     {
@@ -2055,6 +2058,7 @@ var forces = [
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
+                                "w":2,
                                 "unique":true,
                                 "options":[
                                     {
@@ -2686,8 +2690,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 80mm mortars","cost":0},
-                                    {"id":2,"text":"2 120mm mortars","cost":20}
+                                    {"id":1,"text":"2 80mm mortars","cost":0,"w":2},
+                                    {"id":2,"text":"2 120mm mortars","cost":20,"w":3}
                                 ]
                             }
                         ]
@@ -3463,6 +3467,7 @@ var forces = [
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
+                                "w":1,
                                 "unique":true,
                                 "options":[
                                     {
@@ -3486,6 +3491,7 @@ var forces = [
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
+                                "w":2,
                                 "unique":true,
                                 "options":[
                                     {
@@ -3641,6 +3647,7 @@ var forces = [
                                 "name":"Light (50mm) Mortar Team",
                                 "cost":12,
                                 "br":1,
+                                "w":1,
                                 "unique":true,
                                 "options":[
                                     {
@@ -3714,6 +3721,7 @@ var forces = [
                                 "cost":12,
                                 "br":1,
                                 "unique":true,
+                                "w":2,
                                 "options":[
                                     {
                                         "name":"Loader team",
@@ -4068,8 +4076,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 80mm mortars","cost":0},
-                                    {"id":2,"text":"2 120mm mortars","cost":18}
+                                    {"id":1,"text":"2 80mm mortars","cost":0,"w":2},
+                                    {"id":2,"text":"2 120mm mortars","cost":18,"w":3}
                                 ]
                             }
                         ]
@@ -4814,6 +4822,7 @@ var forces = [
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
+                                "w":1,
                                 "unique":true,
                                 "options":[
                                     {
@@ -5161,8 +5170,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 82mm mortars","cost":0},
-                                    {"id":2,"text":"2 120mm mortars","cost":18}
+                                    {"id":1,"text":"2 82mm mortars","cost":0,"w":34},
+                                    {"id":2,"text":"2 120mm mortars","cost":18,"w":3}
                                 ]
                             }
                         ]
@@ -5913,6 +5922,7 @@ var forces = [
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
+                                "w":1,
                                 "unique":true,
                                 "options":[
                                     {
@@ -6089,6 +6099,7 @@ var forces = [
                                         "name":"Light Mortar Team",
                                         "cost":12,
                                         "br":1,
+                                        "w":1,
                                         "unique":true,
                                         "options":[
                                             {
@@ -6429,8 +6440,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 82mm mortars","cost":0},
-                                    {"id":2,"text":"3 120mm mortars","cost":28}
+                                    {"id":1,"text":"3 82mm mortars","cost":0,"w":34},
+                                    {"id":2,"text":"3 120mm mortars","cost":28,"w":3}
                                 ]
                             }
                         ]
