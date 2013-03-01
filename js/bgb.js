@@ -4659,7 +4659,6 @@ var forces = [
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
-                "officer":true,
                 "entries":[
                 {
                     "id":1,
@@ -4667,6 +4666,7 @@ var forces = [
                     "cost":22,
                     "br":3,
                     "unique":true,
+                    "officer":true,
                     "options":[
                         {
                             "name":"Transport",
