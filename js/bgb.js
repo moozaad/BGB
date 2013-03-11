@@ -2531,13 +2531,13 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 105mm howitzer","cost":0},
+                                    {"id":1,"text":"2 105mm howitzer","cost":0,'w':22},
                                     {"id":2,"text":"2 150mm howitzer","cost":45},
-                                    {"id":3,"text":"2 100mm cannon","cost":36},
-                                    {"id":4,"text":"2 170mm cannon","cost":108},
-                                    {"id":5,"text":"2 150mm Nebelwerfer","cost":45},
-                                    {"id":6,"text":"2 210mm Nebelwerfer","cost":118},
-                                    {"id":7,"text":"2 280mm Nebelwerfer","cost":162}
+                                    {"id":3,"text":"2 100mm cannon","cost":36,'w':21},
+                                    {"id":4,"text":"2 170mm cannon","cost":108,'w':28},
+                                    {"id":5,"text":"2 150mm Nebelwerfer","cost":45,'w':27},
+                                    {"id":6,"text":"2 210mm Nebelwerfer","cost":118,'w':30},
+                                    {"id":7,"text":"2 280mm Nebelwerfer","cost":162,'w':31}
                                 ]
                             }
                         ]
@@ -2592,6 +2592,7 @@ var forces = [
                         "name":"105mm Howitzer",
                         "cost":36,
                         "br":2,
+                        "w":22,
                         "options":[
                             {
                                 "name":"Loader team",
@@ -3248,6 +3249,7 @@ var forces = [
             {
                 "id":4,
                 "name":"Timed 105mm Barrage",
+                "w":22,
                 "cost":10,
                 "br":0
             },
@@ -3915,6 +3917,7 @@ var forces = [
                         "name":"105mm Howitzer",
                         "cost":36,
                         "br":2,
+                        "w":22,
                         "options":[
                             {
                                 "name":"Loader team",
@@ -3961,6 +3964,7 @@ var forces = [
                         "name":"100mm Cannon",
                         "cost":50,
                         "br":2,
+                        "w":21,
                         "restricted":true,
                         "options":[
                             {
@@ -4056,13 +4060,13 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 105mm howitzer","cost":0},
+                                    {"id":1,"text":"2 105mm howitzer","cost":0,'w':22},
                                     {"id":2,"text":"2 150mm howitzer","cost":45},
-                                    {"id":3,"text":"2 100mm cannon","cost":36},
-                                    {"id":4,"text":"2 170mm cannon","cost":108},
-                                    {"id":5,"text":"2 150mm Nebelwerfer","cost":45},
-                                    {"id":6,"text":"2 210mm Nebelwerfer","cost":118},
-                                    {"id":7,"text":"2 280mm Nebelwerfer","cost":162}
+                                    {"id":3,"text":"2 100mm cannon","cost":36,'w':21},
+                                    {"id":4,"text":"2 170mm cannon","cost":108,'w':28},
+                                    {"id":5,"text":"2 150mm Nebelwerfer","cost":45,'w':27},
+                                    {"id":6,"text":"2 210mm Nebelwerfer","cost":118,'w':30},
+                                    {"id":7,"text":"2 280mm Nebelwerfer","cost":162,'w':31}
                                 ]
                             }
                         ]
@@ -4612,6 +4616,7 @@ var forces = [
             {
                 "id":4,
                 "name":"Timed 105mm Barrage",
+                "w":22,
                 "cost":10,
                 "br":0
             },
@@ -5721,12 +5726,14 @@ var forces = [
             {
                 "id":4,
                 "name":"Timed 122mm Barrage",
+                "w":47,
                 "cost":20,
                 "br":0
             },
             {
                 "id":5,
                 "name":"Timed 152mm Barrage",
+                "w":49,
                 "cost":30,
                 "br":0
             },
@@ -6375,8 +6382,8 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"2 BM-13 Katyusha","cost":0},
                                     {"id":2,"text":"2 76.2mm Zis 3","cost":-55},
-                                    {"id":3,"text":"2 122mm howitzers","cost":-9},
-                                    {"id":4,"text":"2 152mm howitzers","cost":0}
+                                    {"id":3,"text":"2 122mm howitzers","cost":-9,'w':47},
+                                    {"id":4,"text":"2 152mm howitzers","cost":0,"w":49}
                                 ]
                             }
                         ]
@@ -7027,12 +7034,14 @@ var forces = [
             {
                 "id":4,
                 "name":"Timed 122mm Barrage",
+                "w":47,
                 "cost":20,
                 "br":0
             },
             {
                 "id":5,
                 "name":"Timed 152mm Barrage",
+                "w":49,
                 "cost":30,
                 "br":0
             },
@@ -7967,13 +7976,13 @@ function print_weapons(listWeapons) {
     var text="";
     for (var key in listWeapons) {
         var weapon = weapons[key];
-        var long=false;
+        var extendedRange=false;
         for (var i=0; i < weapon.stats.length; i++) {
             if (weapon.stats[i].strength.length==6)
-                long = true;
+                extendedRange = true;
         }
         text = text + '<table><tr><th>'+weapon.name+'</th><th>0"-10"</th><th>10"-20"</th><th>20"-30"</th><th>30"-40"</th><th>40"-50"</th>';
-        if (long)
+        if (extendedRange)
             text = text+'<th>50"-70"</th>';
         text = text + '</tr>';
         for (i=0; i < weapon.stats.length; i++) {
