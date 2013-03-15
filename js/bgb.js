@@ -5513,9 +5513,10 @@ var forces = [
                         {
                             "name":"Medium trucks",
                             "choices":[
-                                {"id":1,"text":"Replace 1 wagon with truck","cost":0},
-                                {"id":2,"text":"Replace 2 wagons with trucks","cost":4},
-                                {"id":3,"text":"Replace 3 wagons with trucks","cost":8}
+                                {"id":1,"text":"---","cost":0},
+                                {"id":2,"text":"Replace 1 wagon with truck","cost":4},
+                                {"id":3,"text":"Replace 2 wagons with trucks","cost":8},
+                                {"id":4,"text":"Replace 3 wagons with trucks","cost":12}
                             ]
                         }
                     ]
