@@ -1503,7 +1503,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Kübelwagen","cost":0,"v":54,"v":54},
+                                {"id":1,"text":"Kübelwagen","cost":0,"v":54},
                                 {"id":2,"text":"Medium Truck","cost":2,"v":58},
                                 {"id":3,"text":"SdKfz 250/3","cost":12,"v":44},
                                 {"id":4,"text":"SdKfz 251/3","cost":12,"v":39}
