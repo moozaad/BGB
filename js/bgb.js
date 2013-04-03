@@ -8015,7 +8015,7 @@ function print_weapons(listWeapons) {
             }
             for (var j=0; j<mode.strength.length; j++) {
                 if (mode.strength[j] == '')
-                    text = text + "<td></td>";
+                    text = text + "<td>&nbsp;</td>";
                 else
                     text = text + "<td>"+mode.strength[j]+"</td>";
             }
@@ -8088,7 +8088,7 @@ function print_vehicles(listV, listW) {
             }
             text = text +"</td><td>";
         } else {
-            text = text + "</td><td>";
+            text = text + "&nbsp;</td><td>";
         }
         var special = "";
         if (v.open)
