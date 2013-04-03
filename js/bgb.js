@@ -8113,12 +8113,21 @@ function print_render(){
     var force = force_by_id($('#main').data('bg_id'));
     listVehicles = {};
     listWeapons = {};
+    var sort = null;
+    if ( false ) // if set to true will layout largest section first.
+        sort = 'height';
     $('body').append($('<div id="p_div" class="p_div clearfix"></div>').html(print_header(force)));
     $('#p_div').append($('<div id="p_div_inner" class="p_div clearfix"></div>').html(print_sections()+print_vehicles(listVehicles,listWeapons)));
 
     $('#p_div_inner').isotope({
         itemSelector:'.p_section',
-        layoutMode:'masonry'
+        layoutMode:'masonry',
+        getSortData : {
+            height : function( $elem ) {
+                return -1*$elem.height();
+            }
+        },
+        sortBy:sort
     });
     $('#p_ammo').isotope({itemSelector:'.p_parent'});
     $('#main').hide();
