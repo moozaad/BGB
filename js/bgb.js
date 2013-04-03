@@ -717,7 +717,7 @@ var weapons = {
         {
             'type':'HE [VL]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -727,7 +727,7 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -737,7 +737,7 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -747,12 +747,12 @@ var weapons = {
         {
             'type':'HE',
             'effect':'-',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -762,12 +762,12 @@ var weapons = {
         {
             'type':'HE',
             'effect':'-',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -777,7 +777,7 @@ var weapons = {
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -787,12 +787,12 @@ var weapons = {
         {
             'type':'HE [VL]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -802,12 +802,12 @@ var weapons = {
         {
             'type':'HE [VL]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -817,12 +817,12 @@ var weapons = {
         {
             'type':'HE [VL]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -832,7 +832,7 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -842,12 +842,12 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -857,12 +857,12 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -872,12 +872,12 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -887,12 +887,12 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -902,12 +902,12 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -917,12 +917,12 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -932,12 +932,12 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -947,7 +947,7 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -957,12 +957,12 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -972,12 +972,12 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -987,12 +987,12 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -1002,7 +1002,7 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1012,7 +1012,7 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1022,7 +1022,7 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1032,7 +1032,7 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1042,7 +1042,7 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1052,7 +1052,7 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -1062,7 +1062,7 @@ var weapons = {
         {
             'type':'HE [H]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -1072,7 +1072,7 @@ var weapons = {
         {
             'type':'HE [H]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -1082,7 +1082,7 @@ var weapons = {
         {
             'type':'HE [H]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -1092,7 +1092,7 @@ var weapons = {
         {
             'type':'HE [H]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -1110,7 +1110,7 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -1120,12 +1120,12 @@ var weapons = {
         {
             'type':'HE',
             'effect':'-',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1135,12 +1135,12 @@ var weapons = {
         {
             'type':'HE',
             'effect':'-',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1150,12 +1150,12 @@ var weapons = {
         {
             'type':'HE [VL]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1165,12 +1165,12 @@ var weapons = {
         {
             'type':'HE [VL]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1180,12 +1180,12 @@ var weapons = {
         {
             'type':'HE [VL]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1195,12 +1195,12 @@ var weapons = {
         {
             'type':'HE [VL]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1210,7 +1210,7 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1220,12 +1220,12 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1235,12 +1235,12 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1250,12 +1250,12 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1265,12 +1265,12 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1280,12 +1280,12 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1295,12 +1295,12 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1310,12 +1310,12 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1325,7 +1325,7 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1335,12 +1335,12 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1350,7 +1350,7 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1360,7 +1360,7 @@ var weapons = {
         {
             'type':'HE [H]',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_','_']
+            'strength':['','','','','','']
         }
         ]
     },
@@ -1380,7 +1380,7 @@ var weapons = {
         {
             'type':'HE',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1390,7 +1390,7 @@ var weapons = {
         {
             'type':'HE',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1400,12 +1400,12 @@ var weapons = {
         {
             'type':'HE',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1415,12 +1415,12 @@ var weapons = {
         {
             'type':'HE',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1430,7 +1430,7 @@ var weapons = {
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     },
@@ -1440,12 +1440,12 @@ var weapons = {
         {
             'type':'HE',
             'effect':'_/_+',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         },
         {
             'type':'AP',
             'effect':'-',
-            'strength':['_','_','_','_','_']
+            'strength':['','','','','']
         }
         ]
     }
@@ -8010,8 +8010,12 @@ function print_weapons(listWeapons) {
             text = text + "<tr><td>"+mode.type;
             if ( mode.effect )
                 text = text + " ("+mode.effect + ")</td>";
-            for (var j=0; j<mode.strength.length; j++)
-                text = text + "<td>"+mode.strength[j]+"</td>";
+            for (var j=0; j<mode.strength.length; j++) {
+                if (mode.strength[j] == '')
+                    text = text + "<td></td>";
+                else
+                    text = text + "<td>"+mode.strength[j]+"</td>";
+            }
             text = text + "</tr>";
         }
     }
