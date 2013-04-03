@@ -2283,6 +2283,7 @@ var forces = [
                         "name":"Panzer IV Squadron",
                         "cost":135,
                         "multiplier":3,
+                        "vc":3,
                         "br":9,
                         "officer":true,
                         "options":[
@@ -2319,6 +2320,7 @@ var forces = [
                         "name":"StuG III Squadron",
                         "cost":110,
                         "multiplier":3,
+                        "vc":3,
                         "br":9,
                         "officer":true,
                         "options":[
@@ -3810,6 +3812,7 @@ var forces = [
                         "name":"StuG III Squadron",
                         "cost":110,
                         "multiplier":3,
+                        "vc":3,
                         "br":9,
                         "officer":true,
                         "options":[
@@ -4994,6 +4997,7 @@ var forces = [
                         "multiplier":2,
                         "br":9,
                         "v":75,
+                        "vc":3,
                         "options":[
                             {
                                 "name":"Composition",
@@ -5009,6 +5013,7 @@ var forces = [
                         "cost":50,
                         "multiplier":2,
                         "br":6,
+                        "vc":3,
                         "options":[
                             {
                                 "name":"Composition",
@@ -7401,6 +7406,8 @@ function render_entries(entries, sub_entries, async) {
                 text = text + "' data-s='"+entries[i].s;
             if (entries[i].v)
                 text = text + "' data-v='"+entries[i].v;
+            if (entries[i].vc)
+                text = text + "' data-vc='"+entries[i].vc;
             if (entries[i].w)
                 text = text + "' data-w='"+entries[i].w;
             text = text + "' class='entry ui-widget-content";
@@ -7418,6 +7425,8 @@ function render_entries(entries, sub_entries, async) {
                            text = text +"' data-br='"+entries[i].options[j].choices[k].br; 
                         if (entries[i].options[j].choices[k].v)
                            text = text +"' data-v='"+entries[i].options[j].choices[k].v; 
+                        if (entries[i].options[j].choices[k].vc)
+                           text = text +"' data-vc='"+entries[i].options[j].choices[k].v; 
                         if (entries[i].options[j].choices[k].w)
                            text = text +"' data-w='"+entries[i].options[j].choices[k].w; 
                         text = text + "' value='" + entries[i].options[j].choices[k].id +"'>"+entries[i].options[j].choices[k].text + "</option>"; 
@@ -7926,15 +7935,25 @@ function print_entry(entry){
 
     // Find any vehicles used by these entries
     var v = $(entry).data('v');
+    var vc = $(entry).data('vc');
     if ( !v ) {
         var selects = $(entry).find("select option").filter(':selected');
         for (var i=0; i<selects.length; i++) {
-            if ( $(selects[i]).data('v') )
+            if ( $(selects[i]).data('v') ) {
                 v = $(selects[i]).data('v');
+                if (!vc)
+                    vc = $(selects[i]).data('vc');
+            }
         }
     }
-    if (v)
-        listVehicles[v]=1;
+    if (v) {
+        if ( !vc )
+            vc = 1;
+        if ( listVehicles[v] )
+            listVehicles[v] = listVehicles[v] + vc;
+        else
+            listVehicles[v] = vc;
+    }
     var w = $(entry).data('w');
     if ( !w ) {
         selects = $(entry).find("select option").filter(':selected');
@@ -7999,6 +8018,23 @@ function print_weapons(listWeapons) {
     text = text+"</table>";
     return text;
 }
+function print_ammo(listV) {
+    var text="";
+    for (var key in listV) {
+        var v = vehicles[key];
+        if ( v.ammo ) {
+            text = text + "<div class='p_section'>";
+            text = text + "<h4 class='p_h4_ammo'>" + v.name +"</h4>";
+            for (var i=0; i<listV[key]; i++)
+                text = text + "<div class='p_entry'><span class='p_ammo_name'>ID:</span><span class='p_ammo_number'>H:</span><span class='p_ammo_number'>A:</span></div>";
+            //    text = text + "<div><h4 class='p_h4'>" + v.name +"</h4><p class='p_h4 right'>"+$(entry).find('#cost').text() + "/" + $(entry).find('#br').text() + "</p></div>";
+            text = text + "</div>";
+        }
+    }
+
+
+    return text;
+}
 function print_vehicles(listV, listW) {
     var text="";
     var first = true;
@@ -8061,6 +8097,9 @@ function print_vehicles(listV, listW) {
         text = text + "</table>";
     text = text + "</div>";
     text = text + "<div class='p_section'>"+ print_weapons(listW) + "</div>";
+    
+    //text = text + "<div class='p_section' id='p_ammo'>"+ print_ammo(listV) + "</div>";
+    text = text + print_ammo(listV);
     return text;
 }
 function print_render(){
@@ -8068,13 +8107,13 @@ function print_render(){
     listVehicles = {};
     listWeapons = {};
     $('body').append($('<div id="p_div" class="p_div clearfix"></div>').html(print_header(force)));
-    $('#p_div').append($('<div id="p_div_inner" class="p_div clearfix"></div>').html(print_sections));
-    $('#p_div').append($('<div id="p_div_v" class="p_div clearfix"></div>').html(print_vehicles(listVehicles,listWeapons)));
+    $('#p_div').append($('<div id="p_div_inner" class="p_div clearfix"></div>').html(print_sections()+print_vehicles(listVehicles,listWeapons)));
 
-    $('#p_div_inner').masonry({
+    $('#p_div_inner').isotope({
         itemSelector:'.p_section',
-        isFitWidth:true
+        layoutMode:'masonry'
     });
+    $('#p_ammo').isotope({itemSelector:'.p_parent'});
     $('#main').hide();
 }
 function merge_vehicles(){

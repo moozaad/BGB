@@ -5,6 +5,10 @@ body{
 td {
     border: 1px solid #CCCCCC;
 }
+
+table {
+    font-size:small;
+}
 .p_title{
     width:100%;
     min-width:90%;
@@ -14,6 +18,7 @@ td {
 }
 .p_div {
     height:100%;
+    width:28cm;
     overflow:visible;
     clear:both;
     background:white;
@@ -52,8 +57,8 @@ td {
     float:left;
 }
 .p_section {
-    margin:5px;
-    padding:5px;
+    margin:3px;
+    padding:4px;
     width:47%;
     border:solid;
     border-width:1px;
@@ -70,14 +75,38 @@ td {
     display:inline;
     border-radius:5px;
 }
+.p_ammo_parent {
+    width:45%;
+
+}
 .p_entry {
     width:49%;
-    min-width:49%;
-    min-height:10px;
+    margin:auto;
     padding:0;
     border:none;
-    border-width:1px;
+    border-width:0;
     float:left;
+    display:inline;
+}
+.p_ammo_entry {
+    width:96%;
+    border:solid;
+    border-width:1px;
+    border-radius:5px;
+}
+.p_h4_ammo {
+    color: #333333;
+    text-align: center;
+    font-size:14px;
+    margin:2px;
+}
+.p_ammo_name {
+    float:left;
+    margin-right:11%;
+}
+.p_ammo_number {
+    float:left;
+    margin-right:25%;
 }
 button.save_button .ui-button-text {
     padding:0px 3px;
