@@ -8052,20 +8052,20 @@ function print_vehicles(listV, listW) {
             first=false;
             text = text + "<table style='border:1px;'><tr><th></th><th>Move</th><th>Armour</th><th>Weapon</th><th>Special</th></tr>";
         }
-        text = text +"<tr><td>"+v.name+"</td><td style='white-space:nowrap;'>";
+        text = text +"<tr><td>"+v.name+"</td><td style='white-space:pre;'>";
         if (v.move)
-            text = text+v.move[0]+" / "+v.move[1]+"</td><td style='white-space:nowrap;'>";
+            text = text+v.move[0]+"   /   "+v.move[1]+"</td><td style='white-space:pre;'>";
         else
-            text = text+"__/__</td><td style='white-space:nowrap;'>";
+            text = text+"    /    </td><td style='white-space:pre;'>";
         if (v.armour) {
             if (v.armour === true)
-                text = text + "__/__/__</td><td>";
+                text = text + "    /    /    </td><td>";
             else
                 text = text +v.armour[0]+" / " + v.armour[1]+" / "+v.armour[2]+"</td><td>";
         }
         else {
             if (v.hits === true)
-                text = text + "___hit(s)";
+                text = text + "    hit(s)";
             else {
                 text = text + v.hits;
                 if ( v.hits <= 1 )
