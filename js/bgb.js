@@ -1,3 +1,9 @@
+/**
+ * © Greg Farrell greg@gregfarrell.org 
+ * Do as you wish with this code but please respect the IP of any authors for 
+ * whose game you create a force builder using any of this code.
+ * @license MIT
+ */
 var sizes = [350, 750, 1500, 3000,99999];
 function sub_timeout(sub_units, div) {
     var dfd = jQuery.Deferred();
@@ -7181,7 +7187,6 @@ function count_allows() {
 }
 function count_requires() {
     var selected = $('.ui-selected');
-    var requires = {};
     var array = $.map(selected, function(a)
         { 
             if ($(a).parent().data('requires')) {
@@ -7558,7 +7563,6 @@ function load_item(item, depth, panel) {
 
         pointer++;
 
-        var subArray = null;
         if ( endPointer > pointer ) {
             load_item(item.slice(pointer, endPointer), depth+1, sub);
             pointer = endPointer+1;
