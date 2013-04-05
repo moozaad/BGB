@@ -4766,6 +4766,15 @@ var forces = [
                         'multiplier':4,
                         "sub_text":"Platoon Components",
                         "p":1,
+                        "options":[
+                            {
+                                "name":"Weapon",
+                                "choices":[
+                                    {"id":1,"text":"Rifles","cost":0, "np":true},
+                                    {"id":2,"text":"Replace rifles with SMGs","cost":0}
+                                ]
+                            }
+                        ],
                         "sub_units":[
                             {
                                 "id":1,
@@ -4940,10 +4949,10 @@ var forces = [
                                 ]
                             },
                             {
-                                "name":"Gun Type",
+                                "name":"Weapon",
                                 "choices":[
-                                    {"id":1,"text":"Rifle","cost":0},
-                                    {"id":2,"text":"SMG","cost":4}
+                                    {"id":1,"text":"Rifles","cost":0, "np":true},
+                                    {"id":2,"text":"Replace rifles with SMGs","cost":0}
                                 ]
                             },
                             {
@@ -5885,6 +5894,15 @@ var forces = [
                         'multiplier':4,
                         "sub_text":"Platoon Components",
                         "p":1,
+                        "options":[
+                            {
+                                "name":"Weapon",
+                                "choices":[
+                                    {"id":1,"text":"Rifles","cost":0, "np":true},
+                                    {"id":2,"text":"Replace rifles with SMGs","cost":0}
+                                ]
+                            }
+                        ],
                         "sub_units":[
                             {
                                 "id":1,
@@ -6033,6 +6051,13 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
+                                ]
+                            },
+                            {
+                                "name":"Weapon",
+                                "choices":[
+                                    {"id":1,"text":"Rifles","cost":0, "np":true},
+                                    {"id":2,"text":"Replace rifles with SMGs","cost":0}
                                 ]
                             }
                         ]
