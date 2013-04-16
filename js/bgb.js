@@ -689,8 +689,8 @@ var vehicles = [
     'capacity':3
 },
 {
-    'id':91, //greg confirm
-    'name':'Medium Truck TBC',
+    'id':91,
+    'name':'Medium Truck',
     'hits':true,
     'capacity':12
 },
@@ -5534,9 +5534,9 @@ var forces = [
                             "name":"Medium trucks",
                             "choices":[
                                 {"id":1,"text":"---","cost":0},
-                                {"id":2,"text":"Replace 1 wagon with truck","cost":4},
-                                {"id":3,"text":"Replace 2 wagons with trucks","cost":8},
-                                {"id":4,"text":"Replace 3 wagons with trucks","cost":12}
+                                {"id":2,"text":"Replace 1 wagon with truck","cost":4,"v":91},
+                                {"id":3,"text":"Replace 2 wagons with trucks","cost":8,"v":91},
+                                {"id":4,"text":"Replace 3 wagons with trucks","cost":12,"v":91}
                             ]
                         }
                     ]
@@ -5674,7 +5674,7 @@ var forces = [
                             "name":"Tow",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Medium truck","cost":4},
+                                {"id":2,"text":"Medium truck","cost":4,"v":91},
                                 {"id":3,"text":"Komsomolyets tractor","cost":8}
                             ]
                         }
@@ -7895,6 +7895,9 @@ function saveDialog(text){
 function loadDialog() {
     $('#load_div').dialog({title:"Load Force", modal:true,
     buttons: {
+        Clear: function() {
+            $('#load_input').val('');
+        },
         Cancel: function() {
                     $( this ).dialog( "close" );
                 },
