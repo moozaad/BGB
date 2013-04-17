@@ -7313,11 +7313,20 @@ var forces = [
                 "entries":[
                 {
                     "id":1,
-                    "name":"Commando Assault Boat Troop",
+                    "name":"Commando A. Boat Troop",
                     "cost":148,
                     "br":15,
                     "p":1,
                     'multiplier':4,
+                    "options":[
+                        {
+                            "name":"Troop Quality",
+                            "choices":[
+                                {"id":1,"text":"Veteran","cost":0},
+                                {"id":2,"text":"Elite","cost":32, "br":4}
+                            ]
+                        }
+                    ],
                     "sub_text":"Troop Components",
                     "sub_units":[
                         {
