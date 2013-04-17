@@ -713,6 +713,128 @@ var vehicles = [
     'id':95,
     'name':'Komsomolyets tractor',
     'hits':true
+},
+{
+    'id':100,
+    'name':'M4 Sherman (A1,A2,A3)',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':101,
+    'name':'M4A4 Sherman',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':102,
+    'name':'M4A4 Sherman Firefly',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':103,
+    'name':'M4A4 Sherman HQ',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':104,
+    'name':'M4 Sherman (76mm)',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':105,
+    'name':'M4 Sherman (105mm)',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':106,
+    'name':'M4 DD Sherman',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':107,
+    'name':'M4 Sherman Crab',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':108,
+    'name':'M4 Sherman Dozer',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':109,
+    'name':'M4 Sherman ARV',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':110,
+    'name':'M4 Sherman BARV',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':111,
+    'name':'Cromwell IV or V',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':112,
+    'name':'Cromwell IV or V HQ',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':113,
+    'name':'Cromwell ARV',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':114,
+    'name':'Challenger',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
 }
 ];
 
