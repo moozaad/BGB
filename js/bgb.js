@@ -7232,6 +7232,144 @@ var forces = [
             ]
         }
         ]
+    },
+    {
+        "id":5,
+        "name":"(Coming Soon) British Amphibious Assault Battlegroup",
+        "infantry":[
+            [[1,0],[0,1]],
+            [[0,1],[0,2]],
+            [[0,2],[0,3]],
+            [[0,3],[0,6]]
+        ],
+        "sections":[
+            {
+                "id":1, 
+                "name":"Forward Headquarters Units",
+                "allows":'[8,10]',
+                "requires":false,
+                "entries":[
+                {
+                    "id":1,
+                    "name":"Landing Craft Support",
+                    "cost":30,
+                    "br":3,
+                    "unique":true,
+                    "restricted":true,
+                    "officer":true,
+                    "options":[
+                        {
+                            "name":"Transport",
+                            "choices":[
+                                {"id":1,"text":"1 LCS","cost":0}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":2,
+                    "name":"Beach Landing Party HQ",
+                    "cost":26,
+                    "br":3,
+                    "unique":true,
+                    "officer":true,
+                    "options":[
+                        {
+                            "name":"Transport",
+                            "choices":[
+                                {"id":1,"text":"Jeep","cost":0}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":3,
+                    "name":"Shore & Beach Party Communications Team",
+                    "br":1,
+                    "cost":12
+                },
+                {
+                    "id":4,
+                    "name":"Air Liaison Shore Party",
+                    "cost":16,
+                    "br":1,
+                    "unique":true,
+                    "options":[
+                        {
+                            "name":"Transport",
+                            "choices":[
+                                {"id":1,"text":"Jeep","cost":0}
+                            ]
+                        }
+                    ]
+                }
+                ]
+            },
+            {
+                "id":2, 
+                "name":"Infantry Units",
+                "allows":'[6,7,9]',
+                "requires":false,
+                "entries":[
+                {
+                    "id":1,
+                    "name":"Commando Assault Boat Troop",
+                    "cost":148,
+                    "br":15,
+                    "p":1,
+                    'multiplier':4,
+                    "sub_text":"Troop Components",
+                    "sub_units":[
+                        {
+                            "id":1,
+                            "name":"Troop HQ",
+                            "cost":0,
+                            "br":0,
+                            "mandatory":true,
+                            "officer":true
+                        },
+                        {
+                            "id":2,
+                            "name":"Bren Team",
+                            "cost":0,
+                            "count":2,
+                            "br":0,
+                            "mandatory":true,
+                            "options":[
+                                {
+                                    "name":"MG",
+                                    "choices":[
+                                        {"id":1,"text":"Bren Gun","cost":0},
+                                        {"id":2,"text":"2 Bren Guns","cost":2},
+                                        {"id":2,"text":"K-Gun","cost":2},
+                                        {"id":2,"text":"1 Bren Gun, 1 K-Gun","cost":4}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id":3,
+                            "name":"Light Mortar Team",
+                            "cost":12,
+                            "br":1,
+                            "w":1,
+                            "count":2,
+                            "mandatory":true
+                        },
+                        {
+                            "id":4,
+                            "name":"Sniper Team",
+                            "cost":12,
+                            "br":1,
+                            "w":1,
+                            "count":2,
+                            "mandatory":true
+                        }
+                    ]
+                }
+                ]
+            }
+        ]
     }
 ];
 
