@@ -7235,9 +7235,18 @@ var forces = [
         }
         ]
     },
-    /*
     {
         "id":5,
+        "name":"(Coming Soon) British 6th Airborne Division",
+        "infantry":[
+            [[1,0],[0,1]],
+            [[0,1],[0,2]],
+            [[0,2],[0,3]],
+            [[0,3],[0,6]]
+        ],
+    ,}
+    {
+        "id":6,
         "name":"(Coming Soon) British Amphibious Assault Battlegroup",
         "infantry":[
             [[1,0],[0,1]],
@@ -7382,23 +7391,45 @@ var forces = [
                 ]
             }
         ]
-    },*/
-    /*
-    {
-        "id":6,
-        "name":"(Coming Soon) British Amphibious Assault Battlegroup"
     },
     {
         "id":7,
-        "name":"(Coming Soon) British Amphibious Assault Battlegroup"
+        "name":"(Coming Soon) American Airborne Division Battlegroup"
     },
     {
         "id":8,
-        "name":"(Coming Soon) British Amphibious Assault Battlegroup"
+        "name":"(Coming Soon) American Amphibious Assault Battlegroup"
     },
-    */
     {
         "id":9,
+        "name":"(Coming Soon) Atlantic Wall Resistance Nest"
+    },
+    {
+        "id":10,
+        "name":"(Coming Soon) Panzer 'Ersatz' Battlegroup"
+    },
+    {
+        "id":11,
+        "name":"(Coming Soon) British Armoured Division Battlegroup"
+    },
+    {
+        "id":12,
+        "name":"(Coming Soon) British Infantry Division Battlegroup"
+    },
+    {
+        "id":13,
+        "name":"(Coming Soon) American Armoured Division Battlegroup"
+    },
+    {
+        "id":14,
+        "name":"(Coming Soon) American Infantry Division Battlegroup"
+    },
+    {
+        "id":15,
+        "name":"(Coming Soon) German Panzer Division Battlegroup"
+    },
+    {
+        "id":16,
         "name":"German Fallschirmjaeger Battlegroup",
         "infantry":[
             [[1,0],[0,1]],
@@ -8610,7 +8641,7 @@ var forces = [
         ]
     },
     {
-        "id":10,
+        "id":17,
         "name":"German Infantry Division Battlegroup (Overlord)",
         "infantry":[
             [[1,0],[0,1]],
