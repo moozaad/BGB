@@ -3415,7 +3415,7 @@ var forces = [
     },
     {
         "id":2,
-        "name":"Kursk Infantry Division Battlegroup",
+        "name":"German Infantry Division Battlegroup (Kursk)",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
@@ -8611,7 +8611,7 @@ var forces = [
     },
     {
         "id":10,
-        "name":"Overlord German Infantry Division Battlegroup",
+        "name":"German Infantry Division Battlegroup (Overlord)",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
