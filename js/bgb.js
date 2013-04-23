@@ -7244,7 +7244,272 @@ var forces = [
             [[0,2],[0,3]],
             [[0,3],[0,6]]
         ],
-    ,}
+        "sections":[
+            {
+                "id":1,
+                "name":"Forward Headquarters Units",
+                "allows":'[8,10]',
+                "requires":false,
+                "entries":[
+                {
+                    "id":1,
+                    "name":"Forward Headquarters",
+                    "cost":24,
+                    "br":3,
+                    "unique":true,
+                    "officer":true,
+                    "options":[
+                        {
+                            "name":"Transport",
+                            "choices":[
+                                {"id":1,"text":"Jeep","cost":0,"v":0},
+                                {"id":2,"text":"White Scout car","cost":6,"v":84},
+                                {"id":3,"text":"Tetrarch Tank with Littlejohn Adaptor","cost":16,"v":0}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":2,
+                    "name":"Wire Team",
+                    "br":0,
+                    "cost":8
+                },
+                {
+                    "id":3,
+                    "name":"Forward Signals Unit",
+                    "br":1,
+                    "cost":16,
+                    "options":[
+                        {
+                            "name":"Transport",
+                            "choices":[
+                                {"id":1,"text":"Jeep","cost":0,"v":0},
+                                {"id":2,"text":"White Scout Car","cost":6,"v":0}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":4,
+                    "name":"Comms Relay Team",
+                    "br":0,
+                    "cost":14
+                }
+                ]
+            },
+            {
+                "id":2,
+                "name":"Infantry Units",
+                "allows":'[6,7,9]',
+                "requires":false,
+                "unique":true,
+                "options":[
+                    {
+                        "name":"Troop Quality",
+                        "choices":[
+                            {"id":1,"text":"Veteran","cost":0},
+                            {"id":2,"text":"Elite","cost":40, "br":4}
+                        ]
+                    }
+                ],
+                "entries":[
+                    {
+                        "id":1,
+                        "name":"Airborne Infantry Platoon",
+                        "cost":147,
+                        "br":15,
+                        'multiplier':4,
+                        "sub_text":"Platoon Components",
+                        "p":1,
+                        "sub_units":[
+                            {
+                                "id":1,
+                                "name":"Command Section",
+                                "cost":0,
+                                "br":0,
+                                "mandatory":true,
+                                "officer":true,
+                                "options":[
+                                    {
+                                        "name":"AT grenades",
+                                        "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"Anti-tank grenades","cost":5}
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":2,
+                                "name":"Rifle Sections",
+                                "cost":0,
+                                "count":3,
+                                "br":0,
+                                "mandatory":true,
+                                "options":[
+                                    {
+                                        "name":"AT grenades",
+                                        "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"Anti-tank grenades","cost":5}
+                                        ]
+                                    },
+                                    {
+                                        "name":"Bren Guns",
+                                        "choices":[
+                                            {"id":1,"text":"1 Bren Gun","cost":0},
+                                            {"id":2,"text":"2 Bren Guns","cost":2}
+                                        ]
+                                    },
+                                    {
+                                        "name":"Weapon",
+                                        "choices":[
+                                            {"id":1,"text":"Rifles","cost":0, "np":true},
+                                            {"id":2,"text":"Replace rifles with SMGs","cost":0}
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":3,
+                                "name":"Light Mortar Team",
+                                "cost":0,
+                                "br":0,
+                                "w":0,
+                                "mandatory":true,
+                                "unique":true,
+                                "options":[
+                                    {
+                                        "name":"Loader team",
+                                        "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"3-man loader team","cost":10}
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":4,
+                                "name":"PIAT Team",
+                                "cost":0,
+                                "br":0,
+                                "mandatory":true,
+                                "unique":true
+                            },
+                            {
+                                "id":5,
+                                "name":"Combat Medic",
+                                "cost":9,
+                                "br":0
+                            },
+                            {
+                                "id":6,
+                                "name":"Heavy Machine Gun team",
+                                "cost":25,
+                                "br":1,
+                                "unique":true,
+                                "options":[
+                                    {
+                                        "name":"Loaders/Jeep",
+                                        "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"3-man loader team","cost":10},
+                                            {"id":3,"text":"Mount in a Jeep","cost":2}
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":7,
+                                "name":"PIAT Team",
+                                "cost":0,
+                                "br":0,
+                                "unique":true
+                            },
+                            {
+                                "id":8,
+                                "name":"Medium Mortar Team",
+                                "cost":27,
+                                "br":1,
+                                "w":0,
+                                "unique":true,
+                                "options":[
+                                    {
+                                        "name":"Loaders/Jeep",
+                                        "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"3-man loader team","cost":10},
+                                            {"id":3,"text":"Mount in a Jeep","cost":2}
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":9,
+                                "name":"Anti-tank Gun",
+                                "cost":37,
+                                "br":2,
+                                "unique":true,
+                                "options":[
+                                    {
+                                        "name":"Gun type",
+                                        "choices":[
+                                            {"id":1,"text":"6 pdr","cost":0,"w":0}
+                                        ]
+                                    },
+                                    {
+                                        "name":"Loader team",
+                                        "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"3-man loader team","cost":10}
+                                        ]
+                                    },
+                                    {
+                                        "name":"Tow",
+                                        "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"Jeep","cost":2,"v":0}
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":2,
+                        "name":"Airborne Infantry Section",
+                        "cost":31,
+                        "br":3,
+                        "s":1,
+                        "options":[
+                            {
+                                "name":"AT grenades",
+                                "choices":[
+                                    {"id":1,"text":"None","cost":0},
+                                    {"id":2,"text":"Anti-tank grenades","cost":5}
+                                ]
+                            },
+                            {
+                                "name":"Weapon",
+                                "choices":[
+                                    {"id":1,"text":"Rifles","cost":0, "np":true},
+                                    {"id":2,"text":"Replace rifles with SMGs","cost":0}
+                                ]
+                            },
+                            {
+                                "name":"Bren Guns",
+                                "choices":[
+                                    {"id":1,"text":"1 Bren Gun","cost":0},
+                                    {"id":2,"text":"2 Bren Guns","cost":2}
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
     {
         "id":6,
         "name":"(Coming Soon) British Amphibious Assault Battlegroup",
