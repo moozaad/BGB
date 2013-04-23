@@ -7507,6 +7507,270 @@ var forces = [
                         ]
                     }
                 ]
+            },
+            { 
+                "id":3,  
+                "name":"Tank Units", 
+                "allows":'[6,7,8,9]', 
+                "requires":false, 
+                "entries":[ 
+                    { 
+                        "id":1, 
+                        "name":"Sherman Troop", 
+                        "cost":130, 
+                        "multiplier":3, 
+                        "br":9, 
+                        "v":101, 
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"3 M4A4","cost":0}, 
+                                // greg need to allow 2 vehicle types for below firefly entry 
+                                    {"id":1,"text":"2 M4A4, 1 Firefly","cost":16} 
+                                ] 
+                            } 
+                        ] 
+                    }, 
+                    { 
+                        "id":2, 
+                        "name":"Self-Propelled Anti-Tank Gun", 
+                        "cost":34, 
+                        "br":3, 
+                        "restricted":true, 
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"M10 Wolverine","cost":0,"v":0}, 
+                                    {"id":2,"text":"M10 Achilles","cost":20,"v":0} 
+                                ] 
+                            } 
+                        ] 
+                    } 
+                ] 
+            }, 
+            {
+                "id":4,
+                "name":"Artillery Units",
+                "allows":[10],
+                "requires":false,
+                "entries":[
+                    {
+                        "id":1,
+                        "name":"Forward Observer Team",
+                        "cost":16,
+                        "br":1,
+                        "options":[
+                            {
+                                "name":"Transport",
+                                "choices":[
+                                    {"id":1,"text":"Jeep","cost":0,"v":0}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":2,
+                        "name":"Airborne Artillery Battery",
+                        "cost":56,
+                        "br":4,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"2 75mm howitzers","cost":0,"w":0}
+                                ]
+                            },
+                            {
+                                "name":"Tow",
+                                "choices":[
+                                    {"id":1,"text":"None","cost":0},
+                                    {"id":2,"text":"2 Jeep tows","cost":4}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":3,
+                        "name":"Off-Table Artillery Fire",
+                        "cost":70,
+                        "br":0,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"2 75mmL16 howtizers","cost":0},
+                                    {"id":2,"text":"2 25 pdrs","cost":20}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":4,
+                        "name":"Off-Table Mortar Fire",
+                        "cost":81,
+                        "br":0,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"3 3\" mortars","cost":0,"w":0}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":5,
+                        "name":"Aerial Artillery Observer",
+                        "cost":66,
+                        "br":3,
+                        "unique":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"1 Auster III","cost":0}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":6,
+                        "name":"Towed Airborne Artillery Gun",
+                        "cost":28,
+                        "br":2,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"75mmL16 howitzer","cost":0,"w":0}
+                                ]
+                            },
+                            {
+                                "name":"Loader team",
+                                "choices":[
+                                    {"id":1,"text":"None","cost":0},
+                                    {"id":2,"text":"1 Loader team","cost":10}
+                                ]
+                            },
+                            {
+                                "name":"Tow",
+                                "choices":[
+                                    {"id":1,"text":"No tow","cost":0},
+                                    {"id":2,"text":"Jeep tow","cost":4,"v":0}
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id":5,
+                "name":"Defences",
+                "allows":null,
+                "requires":false,
+                "entries":[
+                    {
+                        "id":1,
+                        "name":"Improvised Barricades",
+                        "cost":5,
+                        "br":0
+                    },
+                    {
+                        "id":2,
+                        "name":"Machine Gun Dug-out",
+                        "cost":32,
+                        "br":1
+                    },
+                    {
+                        "id":3,
+                        "name":"Mortar Pit",
+                        "cost":32,
+                        "br":1
+                    },
+                    {
+                        "id":4,
+                        "name":"Fortified Building",
+                        "cost":30,
+                        "br":0
+                    },
+                    {
+                        "id":5,
+                        "name":"Foxholes",
+                        "cost":10,
+                        "br":0
+                    },
+                    {
+                        "id":6,
+                        "name":"Trenches",
+                        "cost":10,
+                        "br":0
+                    },
+                    {
+                        "id":7,
+                        "name":"Sniper Hideout",
+                        "cost":15,
+                        "br":0
+                    },
+                    {
+                        "id":8,
+                        "name":"AT Gun Dug-out",
+                        "cost":20,
+                        "br":0
+                    },
+                    {
+                        "id":9,
+                        "name":"Minefield",
+                        "cost":20,
+                        "br":0
+                    },
+                    {
+                        "id":10,
+                        "name":"Artillery Observation Post",
+                        "cost":26,
+                        "br":1,
+                        "unique":true
+                    },
+                    {
+                        "id":11,
+                        "name":"Booby Trapped Building",
+                        "cost":25,
+                        "br":0
+                    },
+                    {
+                        "id":12,
+                        "name":"Barbed Wire",
+                        "cost":10,
+                        "br":0
+                    },
+                    {
+                        "id":13,
+                        "name":"Improvised Road Block",
+                        "cost":5,
+                        "br":0
+                    },
+                    {
+                        "id":14,
+                        "name":"Anti-Tank Ditch/Embankment",
+                        "cost":20,
+                        "br":0,
+                        "restricted":true
+                    },
+                    {
+                        "id":15,
+                        "name":"Off-table 17 pdr AT shot",
+                        "cost":5,
+                        "br":0
+                    },
+                    {
+                        "id":16,
+                        "name":"Go To It!",
+                        "cost":15,
+                        "br":0,
+                        "unique":true
+                    }
+                ]
             }
         ]
     },
