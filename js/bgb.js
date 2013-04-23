@@ -9383,9 +9383,9 @@ var forces = [
                 "entries":[ 
                     { 
                         "id":1, 
-                        "name":"Sherman Troop", 
-                        "cost":130, 
-                        "multiplier":3, 
+                        "name":"Sherman Tank Platoon", 
+                        "cost":140, 
+                        "multiplier":4, 
                         "br":9, 
                         "v":100,
                         "vc":3,
@@ -9401,18 +9401,48 @@ var forces = [
                             }
                         ] 
                     }, 
-                    { 
+                    {
                         "id":2, 
-                        "name":"Self-Propelled Anti-Tank Gun", 
-                        "cost":34, 
+                        "name":"Additional Tank",
+                        "cost":50, 
                         "br":3, 
-                        "restricted":true, 
                         "options":[ 
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M10 Wolverine","cost":0,"v":0}, 
-                                    {"id":2,"text":"M10 Achilles","cost":20,"v":0} 
+                                    {"id":1,"text":"M4 Sherman","cost":0,"v":100}, 
+                                    {"id":2,"text":"M5 Stuart","cost":-20,"v":89} 
+                                ] 
+                            } 
+                        ] 
+                    },
+                    {
+                        "id":3, 
+                        "name":"Light Tank Platoon",
+                        "cost":90, 
+                        "br":6, 
+                        "v":89,
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"3 M5 Stuarts","cost":0}, 
+                                    {"id":2,"text":"4 M5 Stuarts","cost":30,"br":2}, 
+                                    {"id":3,"text":"5 M5 Stuarts","cost":60,"br":4}
+                                ] 
+                            } 
+                        ] 
+                    },
+                    { 
+                        "id":4, 
+                        "name":"Self-Propelled Tank Destroyer", 
+                        "cost":34, 
+                        "br":2, 
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"M10 Wolverine","cost":0,"v":0}
                                 ] 
                             } 
                         ] 
@@ -9428,7 +9458,7 @@ var forces = [
                     {
                         "id":1,
                         "name":"Forward Observer Team",
-                        "cost":16,
+                        "cost":23,
                         "br":1,
                         "options":[
                             {
@@ -9448,7 +9478,14 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 75mm howitzers","cost":0,"w":0}
+                                    {"id":1,"text":"2 75mmL16 howitzers","cost":0,"w":0}
+                                ]
+                            },
+                            {
+                                "name":"Loader teams",
+                                "choices":[
+                                    {"id":1,"text":"None","cost":0},
+                                    {"id":2,"text":"2 Loader teams","cost":20}
                                 ]
                             },
                             {
@@ -9470,7 +9507,7 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"2 75mmL16 howtizers","cost":0},
-                                    {"id":2,"text":"2 25 pdrs","cost":20}
+                                    {"id":2,"text":"2 105mmL16 howitzers","cost":20}
                                 ]
                             }
                         ]
@@ -9478,13 +9515,13 @@ var forces = [
                     {
                         "id":4,
                         "name":"Off-Table Mortar Fire",
-                        "cost":81,
+                        "cost":54,
                         "br":0,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 3\" mortars","cost":0,"w":0}
+                                    {"id":1,"text":"2 81mm mortars","cost":0,"w":0}
                                 ]
                             }
                         ]
@@ -9492,28 +9529,29 @@ var forces = [
                     {
                         "id":5,
                         "name":"Aerial Artillery Observer",
-                        "cost":66,
+                        "cost":71,
                         "br":3,
                         "unique":true,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Auster III","cost":0}
+                                    {"id":1,"text":"1 L4 Piper Cub","cost":0}
                                 ]
                             }
                         ]
                     },
                     {
                         "id":6,
-                        "name":"Towed Airborne Artillery Gun",
+                        "name":"Towed Artillery Gun",
                         "cost":28,
                         "br":2,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"75mmL16 howitzer","cost":0,"w":0}
+                                    {"id":1,"text":"75mmL16 howitzer","cost":0,"w":0},
+                                    {"id":2,"text":"105mmL16 howitzer","cost":4,"w":0}
                                 ]
                             },
                             {
@@ -9628,13 +9666,13 @@ var forces = [
                     },
                     {
                         "id":15,
-                        "name":"Off-table 17 pdr AT shot",
+                        "name":"Off-table 76mm AT shot",
                         "cost":5,
                         "br":0
                     },
                     {
                         "id":16,
-                        "name":"Go To It!",
+                        "name":"Curahee!",
                         "cost":15,
                         "br":0,
                         "unique":true
@@ -9664,36 +9702,22 @@ var forces = [
                     },
                     {
                         "id":2,
-                        "name":"Mounted Infantry Patrol",
-                        "cost":24,
-                        "br":3,
-                        "options":[
-                            {
-                                "name":"Transport",
-                                "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":0},
-                                    {"id":2,"text":"Bren Carrier","cost":4,"v":82}
-                                ]
-                            },
-                            {
-                                "name":"AT grenades",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Anti-tank grenades","cost":5}
-                                ]
-                            }
-                        ]
+                        "name":"Jeep Reconnaissance Team",
+                        "cost":26,
+                        "br":1
                     },
                     {
                         "id":3,
                         "name":"Recon Platoon Command",
-                        "cost":29,
+                        "cost":36, // greg confirm
                         "br":2,
+                        "officer":true,
+                        "unique":true,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"4 men and a jeep","cost":0}
+                                    {"id":1,"text":"3 men and a jeep","cost":0} //greg confirm composition
                                 ]
                             }
                         ]
@@ -9701,8 +9725,8 @@ var forces = [
                     {
                         "id":4,
                         "name":"Infantry Foot Patrol",
-                        "cost":41,
-                        "br":3, // confirm - greg
+                        "cost":51,
+                        "br":3,
                         "options":[
                             {
                                 "name":"AT grenades",
@@ -9712,65 +9736,25 @@ var forces = [
                                 ]
                             },
                             {
-                                "name":"Bren Guns",
+                                "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"1 Bren Gun","cost":0},
-                                    {"id":2,"text":"2 Bren Guns","cost":2}
-                                ]
-                            },
-                            {
-                                "name":"Weapon",
-                                "choices":[
-                                    {"id":1,"text":"Rifles","cost":0, "np":true},
-                                    {"id":2,"text":"Replace rifles with SMGs","cost":0}
+                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":2,"text":"Elite","cost":12, "br":1}
                                 ]
                             }
                         ]
                     },
                     {
                         "id":5,
-                        "name":"Armoured Recce Troop",
-                        "cost":70,
-                        "br":3, // greg confirm
-                        "officer":true,
-                        "unique":true,
+                        "name":"Armoured Car",
+                        "cost":26, //greg confirm
+                        "br":1, // greg confirm
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Tetrarch (LJ adaptors)","cost":0,"v":0},
-                                    {"id":2,"text":"1 Tetrarch CS, 2 Tetrarch (LJ adaptors)","cost":0,"v":0}, //greg confirm cost
-                                    {"id":3,"text":"3 Cromwells", "cost":85,"v":111}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id":6,
-                        "name":"Armoured Recce Tank",
-                        "cost":35,
-                        "br":1, // greg confirm br
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"id":1,"text":"Tetrarch (LJ adaptor)","cost":0,"v":0},
-                                    {"id":2,"text":"Tetrarch CS","cost":0,"v":0}, //greg confirm cost
-                                    {"id":3,"text":"Cromwells", "cost":28,"v":111} // greg confirm cost
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id":7,
-                        "name":"Armoured Recce HQ",
-                        "cost":45, //greg confirm cost
-                        "br":2, //greg confirm br
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"id":1,"text":"Tetrarch (LJ adaptor)","cost":0,"v":0}
+                                    {"id":1,"text":"M8 Greyhound","cost":0,"v":0}, //greg confirm all
+                                    {"id":2,"text":"M20 Utility Car","cost":-8,"v":0} //greg confirm all
                                 ]
                             }
                         ]
@@ -9787,7 +9771,7 @@ var forces = [
                         "id":1,
                         "name":"Light Bridging Unit",
                         "cost":18,
-                        "br":2, //greg confirm BR
+                        "br":2,
                         "v":61,
                         "options":[
                             {
@@ -9801,53 +9785,33 @@ var forces = [
                     },
                     {
                         "id":2,
-                        "name":"Pontoon Bridging Unit",
-                        "cost":14,
-                        "br":1,
-                        "v":58,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"id":1,"text":"Medium Truck & 6 men","cost":0},
-                                    {"id":2,"text":"2 Medium Trucks & 12 men","cost":14}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id":3,
-                        "name":"Armoured Bulldozer",
-                        "cost":12,
-                        "br":1,
-                        "v":0,
-                        "unique":true
-                    },
-                    {
-                        "id":4,
                         "name":"Recovery Vehicle",
-                        "cost":16,
+                        "cost":22,
                         "br":1,
-                        "v":0,
-                        "unique":true,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Scammel Recovery Truck","cost":0},
-                                    {"id":2,"text":"Sherman ARV","cost":6}
+                                    {"id":1,"text":"Sherman ARV","cost":0,"v":109},
+                                    {"id":2,"text":"M1 Wrecker Heavy Truck","cost":-4,"v":61}
                                 ]
                             }
                         ]
                     },
                     {
                         "id":5,
-                        "name":"Airborne Engineer Section",
-                        "cost":41,
+                        "name":"Airborne Combat Engineer Section",
+                        "cost":43,
                         "br":3,
                         "restricted":true,
                         "s":1,
                         "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"BAR, AT grenades, 2 demo charges","cost":0}
+                                ]
+                            },
                             {
                                 "name":"Flame-thrower",
                                 "choices":[
@@ -9863,21 +9827,13 @@ var forces = [
                                 ]
                             },
                             {
-                                "name":"Troop Quality",
+                                "name":"Bazooka",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
-                                    {"id":2,"text":"Elite","cost":10, "br":1}
+                                    {"id":1,"text":"None","cost":0},
+                                    {"id":2,"text":"1 Bazooka","cost":12}
                                 ]
                             }
                         ]
-                    },
-                    {
-                        "id":3,
-                        "name":"Centaur",
-                        "cost":46,
-                        "br":3,
-                        "v":0,
-                        "restricted":true
                     }
                 ]
             },
