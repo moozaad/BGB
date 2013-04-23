@@ -6192,7 +6192,7 @@ var forces = [
                                 ]
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -7051,7 +7051,7 @@ var forces = [
                             },
                             {
                                 "id":6,
-                                "name":Heavy Machine Gun team",
+                                "name":"Heavy Machine Gun team",
                                 "cost":25,
                                 "br":1,
                                 "unique":true,
@@ -7119,7 +7119,7 @@ var forces = [
                                         ]
                                     }
                                 ]
-                            },
+                            }
                         ]
                     }, //greg got to here
                     {
@@ -8193,7 +8193,7 @@ var forces = [
             ]
         }
         ]
-    ,}
+    },
     {
         "id":6,
         "name":"(Coming Soon) British Amphibious Assault Battlegroup",
