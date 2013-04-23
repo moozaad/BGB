@@ -9855,7 +9855,8 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"1 Jeep with a trailer","cost":0},
                                     {"id":2,"text":"2 Jeeps with trailers","cost":4},
-                                    {"id":3,"text":"3 Jeeps with trailers","cost":8}
+                                    {"id":3,"text":"3 Jeeps with trailers","cost":8},
+                                    {"id":4,"text":"4 Jeeps with trailers","cost":12}
                                 ]
                             }
                         ]
@@ -9884,8 +9885,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":0},
-                                {"id":2,"text":"Ambulance Carrier","cost":2}
+                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":0}
                             ]
                             }
                         ]
@@ -9917,38 +9917,9 @@ var forces = [
                 "entries":[
                     {
                         "id":1,
-                        "name":"Heavy Anti-Tank Gun",
-                        "cost":53,
-                        "br":3,
-                        "restricted":true,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"id":1,"text":"17 pdr AT gun with 4 crew","cost":0,"w":0}
-                                ]
-                            },
-                            {
-                                "name":"Loader team",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man loader team","cost":10}
-                                ]
-                            },
-                            {
-                                "name":"Tow",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium Truck tow","cost":4}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id":2,
-                        "name":"Towed 20mm Polsten AA Gun",
-                        "cost":36,
-                        "br":1, //greg - confirm
+                        "name":"Anti-Aircraft Machine Gun",
+                        "cost":22,
+                        "br":1,
                         "restricted":true,
                         "options":[
                             {
@@ -9959,33 +9930,10 @@ var forces = [
                                     ]
                             },
                             {
-                                "name":"Tow",
+                                "name":"Mount",
                                 "choices":[
                                 {"id":1,"text":"None","cost":0},
                                 {"id":2,"text":"Jeep","cost":2}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id":3,
-                        "name":"Towed 40mm Bofurs AA Gun",
-                        "cost":28, // greg - confirm
-                        "br":1, //greg confirm
-                        "restricted":true,
-                        "options":[
-                            {
-                                "name":"Loader team",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man loader team","cost":10}
-                                    ]
-                            },
-                            {
-                                "name":"Tow",
-                                "choices":[
-                                {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Medium Truck tow","cost":4}
                                 ]
                             }
                         ]
@@ -10030,40 +9978,40 @@ var forces = [
                     "id":4,
                     "name":"Timed 75mmL16 Howitzer Barrage",
                     "w":0,
-                    "cost":10,
+                    "cost":5,
                     "br":0
                 },
                 {
                     "id":5,
-                    "name":"Timed 25 pdr Barrage",
+                    "name":"Timed 105mm Barrage",
                     "w":0,
-                    "cost":20,
+                    "cost":10,
                     "br":0
                 },
                 {
                     "id":6,
-                    "name":"Timed 5.5\" Barrage",
-                    "cost":30,
+                    "name":"Timed 155mm Barrage",
+                    "cost":20,
                     "w":0,
                     "br":0
                 },
                 {
                     "id":7,
-                    "name":"Timed 8\" Barrage",
-                    "cost":40,
+                    "name":"Timed 14\" Barrage",
+                    "cost":50,
                     "w":0,
                     "br":0
                 },
                 {
                     "id":8,
-                    "name":"Timed Spitfire Air Strike",
-                    "cost":10,
+                    "name":"Timed P-51 Air Strike",
+                    "cost":5,
                     "br":0
                 },
                 {
                     "id":9,
-                    "name":"Timed Typhoon Air Strike",
-                    "cost":20,
+                    "name":"Timed P-47 Air Strike",
+                    "cost":10,
                     "w":0,
                     "br":0
                 }
