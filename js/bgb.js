@@ -9230,6 +9230,7 @@ var forces = [
                         "name":"Sherman Crab Troop",
                         "cost":165, 
                         "br":11, 
+                        "multiplier":3,
                         "officer":true, 
                         "options":[ 
                             { 
@@ -9245,6 +9246,7 @@ var forces = [
                         "name":"Centaur IV Troop",
                         "cost":170, 
                         "br":11, 
+                        "multiplier":3,
                         "officer":true, 
                         "options":[ 
                             { 
@@ -9267,6 +9269,7 @@ var forces = [
                         "cost":220, 
                         "br":11, //greg -confirm
                         "officer":true, 
+                        "multiplier":3,
                         "options":[ 
                             { 
                                 "name":"Composition", 
@@ -9281,12 +9284,50 @@ var forces = [
                         "name":"Engineer Churchill Troop",
                         "cost":147, 
                         "br":11, 
+                        "multiplier":3,
                         "officer":true, 
                         "options":[ 
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
                                     {"id":1,"text":"1 Fascine, 1 Ark, 1 AVRE","cost":0,"v":107} 
+                                ] 
+                            } 
+                        ] 
+                    },
+                    { 
+                        "id":7, 
+                        "name":"Beach Assault Tank Troop",
+                        "cost":180, 
+                        "br":11, 
+                        "multiplier":3,
+                        "officer":true, 
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"2 Churchill AVRE, 1 Sherman Crab","cost":0,"v":123},  //greg need to support N vehicles, and below
+                                    {"id":2,"text":"1 Churchill AVRE, 1 Churchill Fascine, 1 Sherman Crab","cost":0,"v":123},  //greg need to support N vehicles, and below
+                                    {"id":3,"text":"1 Churchill AVRE, 1 Churchill Bridgelayer, 1 Sherman Crab","cost":0,"v":123},  //greg need to support N vehicles, and below
+                                    {"id":4,"text":"2 Churchill Bridgelayers, 1 Sherman Crab","cost":0,"v":123},  //greg need to support N vehicles, and below
+                                    {"id":5,"text":"2 Churchill Fascines, 1 Sherman Crab","cost":0,"v":123}  //greg need to support N vehicles, and below
+                                ] 
+                            } 
+                        ] 
+                    },
+                    { 
+                        "id":8, 
+                        "name":"Sherman Tank Squadron",
+                        "cost":785, 
+                        "br":44, 
+                        "multiplier":10,
+                        "restricted":true,
+                        "officer":4,  // greg 4 officers
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"10 M4A4 Shermans, 3 Fireflies","cost":0,"v":102} //greg need multiple vehicles +v101
                                 ] 
                             } 
                         ] 
@@ -9439,9 +9480,9 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"1 DUKW","cost":0},
-                                    {"id":2,"text":"2 DUKWs","cost":10},
-                                    {"id":3,"text":"3 DUKWs","cost":20},
-                                    {"id":4,"text":"4 DUKWs","cost":30}
+                                    {"id":2,"text":"2 DUKWs","cost":10,"br":1},
+                                    {"id":3,"text":"3 DUKWs","cost":20,"br":2},
+                                    {"id":4,"text":"4 DUKWs","cost":30,"br":3}
                                 ]
                             }
                         ]
@@ -10762,7 +10803,637 @@ var forces = [
     },
     {
         "id":8,
-        "name":"(Coming Soon) American Amphibious Assault Battlegroup"
+        "name":"American Amphibious Assault Battlegroup"
+        "infantry":[
+            [[1,0],[0,1]],
+            [[0,1],[0,2]],
+            [[0,2],[0,3]],
+            [[0,3],[0,6]]
+        ],
+        "sections":[
+            {
+                "id":1, 
+                "name":"Forward Headquarters Units",
+                "allows":'[8,10]',
+                "requires":false,
+                "entries":[
+                {
+                    "id":1,
+                    "name":"Landing Craft Support",
+                    "cost":30,
+                    "br":3,
+                    "unique":true,
+                    "restricted":true,
+                    "officer":true,
+                    "options":[
+                        {
+                            "name":"Transport",
+                            "choices":[
+                                {"id":1,"text":"1 LCS","cost":0}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":2,
+                    "name":"Beach Landing Party HQ",
+                    "cost":23,
+                    "br":3,
+                    "unique":true,
+                    "officer":true,
+                    "options":[
+                        {
+                            "name":"Transport",
+                            "choices":[
+                                {"id":1,"text":"Jeep","cost":0}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":3,
+                    "name":"Air Liaison Shore Party",
+                    "cost":18,
+                    "br":1,
+                    "unique":true,
+                    "options":[
+                        {
+                            "name":"Transport",
+                            "choices":[
+                                {"id":1,"text":"Jeep","cost":0}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":4,
+                    "name":"Landing Craft Control",
+                    "br":1,
+                    "cost":45,
+                    "unique":true,
+                    "officer":true
+                },
+                {
+                    "id":5,
+                    "name":"Shore & Beach Party Communications Team",
+                    "br":1,
+                    "cost":12
+                }
+                ]
+            },
+            {
+                "id":2, 
+                "name":"Infantry Units",
+                "allows":'[6,7,9]',
+                "requires":false,
+                "entries":[
+                {
+                    "id":1,
+                    "name":"Assault Boat Team",
+                    "cost":140,
+                    "br":10,
+                    "p":1,
+                    'multiplier':6,
+                    "sub_text":"Team Components",
+                    "sub_units":[
+                        {
+                            "id":1,
+                            "name":"Boat Team Leader",
+                            "cost":0,
+                            "br":0,
+                            "mandatory":true,
+                            "officer":true
+                        },
+                        {
+                            "id":2,
+                            "name":"Rifle Squad",
+                            "cost":0,
+                            "br":0,
+                            "mandatory":true,
+                            "count":2
+                        },
+                        {
+                            "id":3,
+                            "name":"Light Mortar Team",
+                            "cost":0,
+                            "br":0,
+                            "w":0,
+                            "mandatory":true
+                        },
+                        {
+                            "id":4,
+                            "name":"Flamethrower Team",
+                            "cost":0,
+                            "br":0,
+                            "mandatory":true
+                        },
+                        {
+                            "id":5,
+                            "name":"Demolitions Team",
+                            "cost":0,
+                            "br":0,
+                            "mandatory":true
+                        }
+                        {
+                            "id":6,
+                            "name":"Combat Medic",
+                            "cost":0,
+                            "br":0,
+                            "mandatory":true
+                        }
+                    ]
+                },
+                {
+                    "id":2,
+                    "name":"Ranger Assault Boat Team",
+                    "cost":85,
+                    "br":7,
+                    "p":1,
+                    'multiplier':4,
+                    "options":[ 
+                        { 
+                            "name":"Transport", 
+                            "choices":[ 
+                                {"id":1,"text":"DUKW","cost":0},
+                                {"id":2,"text":"LCA","cost":0},
+                                {"id":3,"text":"LCA with rocket-prop. grapnels","cost":5} 
+                            ] 
+                        } 
+                    ] 
+                    "sub_text":"Team Components",
+                    "sub_units":[
+                        {
+                            "id":1,
+                            "name":"Boat Team Leader",
+                            "cost":0,
+                            "br":0,
+                            "mandatory":true,
+                            "officer":true
+                        },
+                        {
+                            "id":2,
+                            "name":"Rifle Squad",
+                            "cost":0,
+                            "br":0,
+                            "mandatory":true
+                        },
+                        {
+                            "id":3,
+                            "name":"Light Mortar Team",
+                            "cost":0,
+                            "br":0,
+                            "w":0,
+                            "mandatory":true
+                        },
+                        {
+                            "id":4,
+                            "name":"Bazooka Team",
+                            "cost":0,
+                            "br":0,
+                            "mandatory":true
+                        }
+                    ]
+                }
+                ]
+            },
+            { 
+                "id":3,  
+                "name":"Tank Units", 
+                "allows":'[6,7,8,9]', 
+                "requires":false, 
+                "entries":[ 
+                    { 
+                        "id":1, 
+                        "name":"DD Sherman Platoon", 
+                        "cost":135, 
+                        "multiplier":3, 
+                        "br":9,
+                        "officer":true,
+                        "v":106, 
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"3 DD Shermans","cost":0} 
+                                ] 
+                            } 
+                        ] 
+                    }, 
+                    { 
+                        "id":2, 
+                        "name":"Sherman Platoon",
+                        "cost":160, 
+                        "br":12, 
+                        "officer":true, 
+                        "v":100,
+                        "multiplier":3,
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"2 Shermans, 1 Sherman Dozer","cost":0} 
+                                ] 
+                            } 
+                        ] 
+                    },
+                    { 
+                        "id":3, 
+                        "name":"DD Sherman",
+                        "cost":52, 
+                        "v":106, 
+                        "br":3
+                    },
+                    { 
+                        "id":4, 
+                        "name":"Sherman Tank Company",
+                        "cost":675, 
+                        "br":44,
+                        "restricted":true,
+                        "v":100,
+                        "multiplier":10,
+                        "officer":4,  // greg 4 officers! Need code to support this
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"13 M4 Sherman Tanks","cost":0} 
+                                ] 
+                            } 
+                        ] 
+                    }
+                ] 
+            }, 
+            {
+                "id":4,
+                "name":"Artillery Units",
+                "allows":[10],
+                "requires":false,
+                "entries":[
+                    {
+                        "id":1,
+                        "name":"Shore Fire Control Party",
+                        "cost":20,
+                        "br":1,
+                        "options":[
+                            {
+                                "name":"Transport",
+                                "choices":[
+                                    {"id":1,"text":"Jeep","cost":0,"v":0}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":2,
+                        "name":"M7 Priest",
+                        "cost":58,
+                        "br":3
+                    },
+                    {
+                        "id":3,
+                        "name":"M2A1 105mm Howitzer",
+                        "cost":50,
+                        "w":0,
+                        "br":2
+                    },
+                    {
+                        "id":4,
+                        "name":"Aerial Artillery Observer",
+                        "cost":66,
+                        "br":3,
+                        "unique":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"1 Piper Cub","cost":0}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":5,
+                        "name":"Priest Battery",
+                        "cost":170,
+                        "br":8,
+                        "multiplier":3,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"3 M7 Priests in a LCT","cost":0,"w":0}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":6,
+                        "name":"Off-Table Naval Gun Fire",
+                        "cost":80,
+                        "br":0,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"2 3.5\" guns","cost":0},
+                                    {"id":2,"text":"2 4.7\" guns","cost":28},
+                                    {"id":3,"text":"2 5\" guns","cost":46},
+                                    {"id":4,"text":"2 6\" guns","cost":55}
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id":7, 
+                "name":"Engineer Support Units",
+                "allows":null,
+                "requires":true,
+                "entries":[
+                    {
+                        "id":1,
+                        "name":"Gap Team",
+                        "cost":158,
+                        "br":14,
+                        "p":1,
+                        "sub_text":"Party Components",
+                        "sub_units":[
+                            {
+                                "id":1,
+                                "name":"Gap Team Leader",
+                                "cost":0,
+                                "br":0,
+                                "mandatory":true,
+                                "officer":true
+                            },
+                            {
+                                "id":2,
+                                "name":"Demo Squad",
+                                "cost":0,
+                                "br":0,
+                                "mandatory":true,
+                                "count":4
+                            },
+                            {
+                                "id":3,
+                                "name":"Combat Medic",
+                                "cost":0,
+                                "br":0,
+                                "count":1,
+                                "mandatory":true
+                            },
+                            {
+                                "id":3,
+                                "name":"Sherman Bulldozer",
+                                "cost":0,
+                                "br":0,
+                                "count":1,
+                                "v":0, //greg ?
+                                "mandatory":true
+                            }
+                        ]
+                    },
+                    {
+                        "id":2,
+                        "name":"Armoured Bulldozer",
+                        "cost":12,
+                        "br":1,
+                        "v":0
+                    },
+                    {
+                        "id":3,
+                        "name":"DUKW with ladder",
+                        "cost":12,
+                        "br":1,
+                        "v":0 //greg
+                    }
+                ]
+            },
+            {
+                "id":8, 
+                "name":"Logistics Support Units",
+                "allows":null,
+                "requires":true,
+                "entries":[
+                    {
+                        "id":1,
+                        "name":"Supply Column",
+                        "cost":10,
+                        "br":1,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"1 DUKW","cost":0},
+                                    {"id":2,"text":"2 DUKWs","cost":10,"br":1},
+                                    {"id":3,"text":"3 DUKWs","cost":20,"br":2},
+                                    {"id":4,"text":"4 DUKWs","cost":30,"br":3}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":2,
+                        "name":"Stretcher Party",
+                        "cost":10,
+                        "br":1,
+                        "options":[
+                            {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"2 men","cost":0}
+                            ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":3,
+                        "name":"Combat Medic",
+                        "cost":8,
+                        "br":0
+                    }
+                ]
+            },
+            {
+                "id":9, 
+                "name":"Specialist Support Units",
+                "allows":null,
+                "requires":true,
+                "entries":[
+                    {
+                        "id":1,
+                        "name":"Support Boat Team",
+                        "cost":120,
+                        "br":10,
+                        "multiplier":5,
+                        "sub_text":"Team Components",
+                        "sub_units":[
+                            {
+                                "id":1,
+                                "name":"Team Leader",
+                                "cost":0,
+                                "br":0,
+                                "mandatory":true,
+                                "officer":true
+                            },
+                            {
+                                "id":2,
+                                "name":"Rifle Squad",
+                                "cost":0,
+                                "br":0,
+                                "count":1,
+                                "mandatory":true
+                            },
+                            {
+                                "id":3,
+                                "name":"Medium Mortar Team",
+                                "cost":0,
+                                "br":0,
+                                "count":1,
+                                "w":0,
+                                "mandatory":true,
+                                "options":[
+                                    {
+                                        "name":"Loader team",
+                                        "choices":[
+                                            {"id":1,"text":"3-man loader team","cost":0}
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":4,
+                                "name":"MG Team",
+                                "cost":0,
+                                "br":0,
+                                "count":2,
+                                "mandatory":true
+                            },
+                            {
+                                "id":5,
+                                "name":"Demo Team",
+                                "cost":0,
+                                "br":0,
+                                "mandatory":true,
+                                "count":1
+                            }
+                        ]
+                    },
+                    {
+                        "id":2,
+                        "name":"Additional Landing Craft",
+                        "cost":10,
+                        "br":1,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"LCA","cost":0},
+                                    {"id":2,"text":"LCM","cost":4},
+                                    {"id":3,"text":"LCT","cost":20,"br":1},
+                                    {"id":4,"text":"LCVP","cost":8}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":3,
+                        "name":"Landing Craft Gun",
+                        "cost":112,
+                        "br":4,
+                        "restricted":true,
+                        "unique":true
+                    },
+                    {
+                        "id":4,
+                        "name":"Landing Craft Rocket",
+                        "cost":108,
+                        "br":4,
+                        "restricted":true,
+                        "unique":true
+                    },
+                    {
+                        "id":5,
+                        "name":"Landing Craft Flak",
+                        "cost":142,
+                        "br":4,
+                        "restricted":true,
+                        "unique":true
+                    }
+                ]
+            },
+            {
+                "id":10, 
+                "name":"Additional Fire Support",
+                "allows":null,
+                "requires":true,
+                "entries":[
+                    {
+                        "id":1,
+                        "name":"Off-Table Artillery Request",
+                        "cost":20,
+                        "br":0,
+                        "options":[
+                            {
+                                "name":"Target Priority",
+                                "choices":[
+                                    {"id":1,"text":"1st (2+)","cost":0}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":2,
+                        "name":"Pre-Registered Target Point",
+                        "cost":10,
+                        "br":0
+                    },
+                    {
+                        "id":3,
+                        "name":"Counter-Battery Fire Mission",
+                        "cost":10,
+                        "br":0
+                    },
+                {
+                    "id":4,
+                    "name":"Timed 6\" Barrage",
+                    "w":0,
+                    "cost":20,
+                    "br":0
+                },
+                {
+                    "id":5,
+                    "name":"Timed 8\" Barrage",
+                    "w":0,
+                    "cost":30,
+                    "br":0
+                },
+                {
+                    "id":6,
+                    "name":"Timed 14\" Barrage",
+                    "w":0,
+                    "cost":40,
+                    "br":0
+                },
+                {
+                    "id":7,
+                    "name":"Timed P-47 Air Strike",
+                    "cost":10,
+                    "w":0,
+                    "br":0
+                },
+                {
+                    "id":8,
+                    "name":"Timed B-26 Air Strike",
+                    "cost":25,
+                    "restricted":true,
+                    "w":0,
+                    "br":0
+                }
+                ]
+            }
+        ]
     },
     {
         "id":9,
