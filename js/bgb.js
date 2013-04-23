@@ -1059,8 +1059,8 @@ var vehicles = [
     'ammo':true
 },
 {
-    'id':144, // greg anti-aircraft half-tracks
-    'name':'Unknown - greg',
+    'id':144,
+    'name':'M16',
     'armour':true,
     'weapons':[1],
     'mg':true,
@@ -1068,7 +1068,7 @@ var vehicles = [
 },
 {
     'id':145,
-    'name':'Unknown - greg',
+    'name':'M15',
     'armour':true,
     'weapons':[1],
     'mg':true,
@@ -8575,7 +8575,7 @@ var forces = [
                         "id":4,
                         "name":"Infantry Foot Patrol",
                         "cost":41,
-                        "br":3, // confirm - greg
+                        "br":3,
                         "options":[
                             {
                                 "name":"AT grenades",
@@ -8604,16 +8604,16 @@ var forces = [
                         "id":5,
                         "name":"Armoured Recce Troop",
                         "cost":70,
-                        "br":3, // greg confirm
+                        "br":3,
                         "officer":true,
                         "unique":true,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Tetrarch (LJ adaptors)","cost":0,"v":0},
-                                    {"id":2,"text":"1 Tetrarch CS, 2 Tetrarch (LJ adaptors)","cost":0,"v":0}, //greg confirm cost
-                                    {"id":3,"text":"3 Cromwells", "cost":85,"v":111}
+                                    {"id":1,"text":"3 Tetrarch (LJ adaptors)","cost":0,"v":118},
+                                    {"id":2,"text":"1 Tetrarch CS, 2 Tetrarch (LJ adaptors)","cost":0,"v":119}, //need 118 too greg
+                                    {"id":3,"text":"3 Cromwells", "cost":85,"v":111,"br":3}
                                 ]
                             }
                         ]
@@ -8622,14 +8622,14 @@ var forces = [
                         "id":6,
                         "name":"Armoured Recce Tank",
                         "cost":35,
-                        "br":1, // greg confirm br
+                        "br":1,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Tetrarch (LJ adaptor)","cost":0,"v":0},
-                                    {"id":2,"text":"Tetrarch CS","cost":0,"v":0}, //greg confirm cost
-                                    {"id":3,"text":"Cromwells", "cost":28,"v":111} // greg confirm cost
+                                    {"id":1,"text":"Tetrarch (LJ adaptor)","cost":0,"v":118},
+                                    {"id":2,"text":"Tetrarch CS","cost":0,"v":119},
+                                    {"id":3,"text":"Cromwells", "cost":28,"v":111,"br":2}
                                 ]
                             }
                         ]
@@ -8637,13 +8637,14 @@ var forces = [
                     {
                         "id":7,
                         "name":"Armoured Recce HQ",
-                        "cost":45, //greg confirm cost
-                        "br":2, //greg confirm br
+                        "cost":45,
+                        "br":2,
+                        "officer":true,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Tetrarch (LJ adaptor)","cost":0,"v":0}
+                                    {"id":1,"text":"Tetrarch (LJ adaptor)","cost":0,"v":118}
                                 ]
                             }
                         ]
@@ -8660,7 +8661,7 @@ var forces = [
                         "id":1,
                         "name":"Light Bridging Unit",
                         "cost":18,
-                        "br":2, //greg confirm BR
+                        "br":2,
                         "v":61,
                         "options":[
                             {
@@ -8865,7 +8866,7 @@ var forces = [
                         "id":2,
                         "name":"Towed 20mm Polsten AA Gun",
                         "cost":36,
-                        "br":1, //greg - confirm
+                        "br":1,
                         "restricted":true,
                         "options":[
                             {
@@ -8887,8 +8888,8 @@ var forces = [
                     {
                         "id":3,
                         "name":"Towed 40mm Bofurs AA Gun",
-                        "cost":28, // greg - confirm
-                        "br":1, //greg confirm
+                        "cost":28,
+                        "br":1,
                         "restricted":true,
                         "options":[
                             {
@@ -9267,7 +9268,7 @@ var forces = [
                         "id":5, 
                         "name":"AVRE Squadron",
                         "cost":220, 
-                        "br":11, //greg -confirm
+                        "br":11,
                         "officer":true, 
                         "multiplier":3,
                         "options":[ 
@@ -9363,14 +9364,14 @@ var forces = [
                     {
                         "id":3,
                         "name":"Aerial Artillery Observer",
-                        "cost":66, // greg confirm
-                        "br":3, // greg confirm
+                        "cost":66,
+                        "br":3,
                         "unique":true,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Auster III","cost":0}
+                                    {"id":1,"text":"1 Westland Lysander","cost":0}
                                 ]
                             }
                         ]
@@ -9378,8 +9379,9 @@ var forces = [
                     {
                         "id":4,
                         "name":"Priest Battery",
-                        "cost":144, // greg confirm
-                        "br":6, // greg confirm
+                        "multiplier":3,
+                        "cost":144,
+                        "br":8,
                         "options":[
                             {
                                 "name":"Composition",
@@ -9399,8 +9401,8 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"2 3.5\" guns","cost":0},
-                                    {"id":2,"text":"2 4.7\" guns","cost":28}, // greg confirm cost
-                                    {"id":3,"text":"2 5\" guns","cost":46} // greg confirm cost
+                                    {"id":2,"text":"2 4.7\" guns","cost":28},
+                                    {"id":3,"text":"2 5\" guns","cost":46}
                                 ]
                             }
                         ]
@@ -9585,7 +9587,7 @@ var forces = [
                                     {"id":1,"text":"LCA","cost":0},
                                     {"id":2,"text":"LCM","cost":4},
                                     {"id":3,"text":"LCT","cost":20,"br":1},
-                                    {"id":4,"text":"LCI","cost":30,"br":2} // greg confirm cost & br
+                                    {"id":4,"text":"LCI","cost":70,"br":2}
                                 ]
                             }
                         ]
@@ -9795,7 +9797,7 @@ var forces = [
                         "id":1,
                         "name":"Airborne Infantry Platoon",
                         "cost":137,
-                        "br":13, // greg confirm
+                        "br":13,
                         'multiplier':4,
                         "options":[
                             {
@@ -10006,8 +10008,8 @@ var forces = [
                     {
                         "id":3,
                         "name":"Glider Infantry Platoon",
-                        "cost":81, //greg confirm
-                        "br":8, // greg confirm
+                        "cost":81,
+                        "br":8,
                         'multiplier':4,
                         "p":1,
                         "sub_text":"Platoon Components",
@@ -10491,7 +10493,7 @@ var forces = [
                     {
                         "id":3,
                         "name":"Recon Platoon Command",
-                        "cost":36, // greg confirm
+                        "cost":36,
                         "br":2,
                         "officer":true,
                         "unique":true,
@@ -10499,7 +10501,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 men and a jeep","cost":0} //greg confirm composition
+                                    {"id":1,"text":"3 men, Jeep mounted .30 cal","cost":0}
                                 ]
                             }
                         ]
@@ -10529,14 +10531,14 @@ var forces = [
                     {
                         "id":5,
                         "name":"Armoured Car",
-                        "cost":26, //greg confirm
-                        "br":1, // greg confirm
+                        "cost":26,
+                        "br":1,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M8 Greyhound","cost":0,"v":0}, //greg confirm all
-                                    {"id":2,"text":"M20 Utility Car","cost":-8,"v":0} //greg confirm all
+                                    {"id":1,"text":"M8 Greyhound","cost":0,"v":0},
+                                    {"id":2,"text":"M20 Utility Car","cost":-8,"v":0}
                                 ]
                             }
                         ]
