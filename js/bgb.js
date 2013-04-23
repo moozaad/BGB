@@ -835,6 +835,352 @@ var vehicles = [
     'ammo':true
 },
 {
+    'id':115,
+    'name':'M3A3 \'Honey\'',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':116,
+    'name':'M5 Stuart',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':117,
+    'name':'M5 Stuart \'Recce\'',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':118,
+    'name':'Tetrarch',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':119,
+    'name':'Tetrarch CS',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':120,
+    'name':'Churchill V',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':121,
+    'name':'Churchill VI',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':122,
+    'name':'Churchill VII',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':123,
+    'name':'Churchill AVRE',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':124,
+    'name':'Churchill Crocodile',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':125,
+    'name':'Churchill Ark',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':126,
+    'name':'Churchill ARV',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':127,
+    'name':'Centaur IV',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':128,
+    'name':'Centaur AA',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':129,
+    'name':'Crusader AA I',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':130,
+    'name':'Crusader AA II',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':131,
+    'name':'Valentine Bridge',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':132,
+    'name':'M10 Wolverine',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':133,
+    'name':'M10 Achilles',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':134,
+    'name':'Humber Scout Car',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':135,
+    'name':'Humber IV',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':136,
+    'name':'Dingo',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':137,
+    'name':'Daimler',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':138,
+    'name':'Staghound',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':139,
+    'name':'Staghound AA',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':140,
+    'name':'AEC III',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':141,
+    'name':'Humber Light Recce Vehicle I',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':142,
+    'name':'M8 Greyhound',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':143,
+    'name':'M20 Utility Car',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':144, // greg anti-aircraft half-tracks
+    'name':'Unknown - greg',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':145,
+    'name':'Unknown - greg',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':146,
+    'name':'M5/M9 Halftrack',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':147,
+    'name':'Ram Kangaroo',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':148,
+    'name':'M3 Halftrack',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':149,
+    'name':'Bren Carrier',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':150,
+    'name':'Loyd Carrier',
+    'armour':true
+},
+{
+    'id':151,
+    'name':'Wasp',
+    'armour':true,
+    'weapons':[32],
+    'ammo':true
+},
+{
+    'id':152,
+    'name':'Crusader Tractor',
+    'armour':true
+},
+{
+    'id':153,
+    'name':'M35 Primer Mover',
+    'armour':true
+},
+{
+    'id':154,
+    'name':'Sexton',
+    'armour':true,
+    'weapons':[1],
+    'ammo':true
+},
+{
+    'id':155,
+    'name':'Priest',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':156,
+    'name':'M8 HMC',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':157,
+    'name':'M4 or M21 Halftrack',
+    'armour':true,
+    'weapons':[1],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':158,
+    'name':'M12 Halftrack',
+    'armour':true,
+    'weapons':[1],
+    'ammo':true
+},
+{
+    'id':159,
+    'name':'Dorchester ACV',
+    'armour':true
+},
+{
+    'id':160,
+    'name':'Armoured Bulldozer',
+    'armour':true
+},
+{
+    'id':161,
+    'name':'M32 ARV',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':162,
+    'name':'M30 Cargo Carrier',
+    'armour':true,
+    'mg':true
+},
+{
 }
 ];
 
