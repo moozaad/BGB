@@ -1185,6 +1185,16 @@ var vehicles = [
 ];
 
 var weapons = {
+    0:{
+        'name':'Placeholder',
+        'stats':[
+        {
+            'type':'HE [VL]',
+            'effect':'',
+            'strength':['','','','','','']
+        }
+        ]
+    },
     1:{
         'name':'50mm mortar',
         'stats':[
@@ -1916,6 +1926,151 @@ var weapons = {
             'effect':'',
             'strength':['','','','','']
         },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    60:{
+        'name':'2\" mortar',
+        'stats':[
+        {
+            'type':'HE [VL]',
+            'effect':'',
+            'strength':['','','','','','']
+        }
+        ]
+    },
+    61:{
+        'name':'3\" mortar',
+        'stats':[
+        {
+            'type':'HE [L]',
+            'effect':'',
+            'strength':['','','','','','']
+        }
+        ]
+    },
+    62:{
+        'name':'4.2\" mortar',
+        'stats':[
+        {
+            'type':'HE [L]',
+            'effect':'',
+            'strength':['','','','','','']
+        }
+        ]
+    },
+    63:{
+        'name':'40mmL60 Bofors',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'',
+            'strength':['','','','','','']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    64:{
+        'name':'37mmL53',
+        'stats':[
+        {
+            'type':'HE [VL]',
+            'effect':'',
+            'strength':['','','','','']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    65:{
+        'name':'75mmL16',
+        'stats':[
+        {
+            'type':'HE [L]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    66:{
+        'name':'75mmL30',
+        'stats':[
+        {
+            'type':'HE [L]',
+            'effect':'',
+            'strength':['','','','','']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    67:{
+        'name':'3\" naval gun',
+        'stats':[
+        {
+            'type':'HE [L]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    68:{
+        'name':'75mmL40',
+        'stats':[
+        {
+            'type':'HE [L]',
+            'effect':'',
+            'strength':['','','','','']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    69:{
+        'name':'76mmL53',
+        'stats':[
+        {
+            'type':'HE [L]',
+            'effect':'',
+            'strength':['','','','','']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    70:{
+        'name':'17 pdr',
+        'stats':[
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['','','','','','']
+        }
+        ]
+    },
+    71:{
+        'name':'2 pdr (Littlejohn)',
+        'stats':[
         {
             'type':'AP',
             'effect':'-',
