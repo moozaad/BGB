@@ -2077,6 +2077,246 @@ var weapons = {
             'strength':['','','','','']
         }
         ]
+    },
+    72:{
+        'name':'95mmL20',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    73:{
+        'name':'25 pdr',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    74:{
+        'name':'3.5" naval gun',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    75:{
+        'name':'105mmL16',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    76:{
+        'name':'105mmL22',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    77:{
+        'name':'4.5"',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    78:{
+        'name':'4.7" naval gun',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    79:{
+        'name':'5" naval gun',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    80:{
+        'name':'5.5"',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    81:{
+        'name':'6" naval gun',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    82:{
+        'name':'155mmL13',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    83:{
+        'name':'155mmL36',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    84:{
+        'name':'155mmL45',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    85:{
+        'name':'7.2"',
+        'stats':[
+        {
+            'type':'HE [H]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    86:{
+        'name':'8" (230mmL50)',
+        'stats':[
+        {
+            'type':'HE [H]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    87:{
+        'name':'210mmL31',
+        'stats':[
+        {
+            'type':'HE [H]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    88:{
+        'name':'240mmL30',
+        'stats':[
+        {
+            'type':'HE [H]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    89:{
+        'name':'280mm Petard',
+        'stats':[
+        {
+            'type':'HE [H]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    90:{
+        'name':'14" naval gun',
+        'stats':[
+        {
+            'type':'HE [H]',
+            'effect':'',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    91:{
+        'name':'PIAT',
+        'stats':[
+        {
+            'type':'AP',
+            'effect':'',
+            'strength':['']
+        }
+        ]
+    },
+    92:{
+        'name':'Bazooka',
+        'stats':[
+        {
+            'type':'HE [VL]',
+            'effect':'',
+            'strength':['']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['']
+        }
+        ]
+    },
+    93:{
+        'name':'60lb Rocket',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'',
+            'strength':['','','']
+        }
+        ]
+    },
+    94:{
+        'name':'5" Rocket',
+        'stats':[
+        {
+            'type':'HE',
+            'effect':'',
+            'strength':['','','']
+        }
+        ]
     }
 };
 
