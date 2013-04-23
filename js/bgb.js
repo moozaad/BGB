@@ -10803,7 +10803,7 @@ var forces = [
     },
     {
         "id":8,
-        "name":"American Amphibious Assault Battlegroup"
+        "name":"American Amphibious Assault Battlegroup",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
@@ -10933,7 +10933,7 @@ var forces = [
                             "cost":0,
                             "br":0,
                             "mandatory":true
-                        }
+                        },
                         {
                             "id":6,
                             "name":"Combat Medic",
@@ -10959,7 +10959,7 @@ var forces = [
                                 {"id":3,"text":"LCA with rocket-prop. grapnels","cost":5} 
                             ] 
                         } 
-                    ] 
+                    ],
                     "sub_text":"Team Components",
                     "sub_units":[
                         {
