@@ -7520,7 +7520,8 @@ var forces = [
                         "cost":130, 
                         "multiplier":3, 
                         "br":9, 
-                        "v":101, 
+                        "v":101,
+                        "officer":true,
                         "options":[ 
                             { 
                                 "name":"Composition", 
@@ -7529,7 +7530,7 @@ var forces = [
                                 // greg need to allow 2 vehicle types for below firefly entry 
                                     {"id":1,"text":"2 M4A4, 1 Firefly","cost":16} 
                                 ] 
-                            } 
+                            }
                         ] 
                     }, 
                     { 
@@ -8248,7 +8249,7 @@ var forces = [
     },
     {
         "id":6,
-        "name":"(Coming Soon) British Amphibious Assault Battlegroup",
+        "name":"British Amphibious Assault Battlegroup",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
@@ -8352,6 +8353,14 @@ var forces = [
                         },
                         {
                             "id":2,
+                            "name":"Rifle Group",
+                            "cost":0,
+                            "br":0,
+                            "mandatory":true,
+                            "count":2
+                        },
+                        {
+                            "id":3,
                             "name":"Bren Team",
                             "cost":0,
                             "count":2,
@@ -8370,25 +8379,250 @@ var forces = [
                             ]
                         },
                         {
-                            "id":3,
+                            "id":4,
                             "name":"Light Mortar Team",
-                            "cost":12,
-                            "br":1,
-                            "w":1,
+                            "cost":0,
+                            "br":0,
+                            "w":0,
                             "count":2,
                             "mandatory":true
                         },
                         {
-                            "id":4,
+                            "id":5,
                             "name":"Sniper Team",
-                            "cost":12,
-                            "br":1,
+                            "cost":0,
+                            "br":0,
                             "w":1,
                             "count":2,
                             "mandatory":true
                         }
                     ]
+                },
+                {
+                    "id":2,
+                    "name":"Assault Platoon",
+                    "cost":90,
+                    "br":9,
+                    "p":1,
+                    'multiplier':4,
+                    "options":[
+                        {
+                            "name":"Troop Quality",
+                            "choices":[
+                                {"id":1,"text":"Regular","cost":0},
+                                {"id":2,"text":"Veteran","cost":26, "br":4}
+                            ]
+                        }
+                    ],
+                    "sub_text":"Platoon Components",
+                    "sub_units":[
+                        {
+                            "id":1,
+                            "name":"Assault Platoon HQ",
+                            "cost":0,
+                            "br":0,
+                            "mandatory":true,
+                            "officer":true
+                        },
+                        {
+                            "id":2,
+                            "name":"Rifle Section",
+                            "cost":0,
+                            "br":0,
+                            "mandatory":true,
+                            "count":2
+                        },
+                        {
+                            "id":3,
+                            "name":"Light Mortar Team",
+                            "cost":0,
+                            "br":0,
+                            "w":0,
+                            "count":1,
+                            "mandatory":true
+                        },
+                        {
+                            "id":4,
+                            "name":"Sniper Team",
+                            "cost":0,
+                            "br":0,
+                            "count":1,
+                            "mandatory":true
+                        },
+                        {
+                            "id":5,
+                            "name":"Combat Medic",
+                            "cost":0,
+                            "br":0,
+                            "count":1,
+                            "mandatory":true
+                        }
+                    ]
                 }
+                ]
+            },
+            { 
+                "id":3,  
+                "name":"Tank Units", 
+                "allows":'[6,7,8,9]', 
+                "requires":false, 
+                "entries":[ 
+                    { 
+                        "id":1, 
+                        "name":"DD Sherman Troop", 
+                        "cost":135, 
+                        "multiplier":3, 
+                        "br":9,
+                        "officer":true,
+                        "v":106, 
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"3 DD Shermans","cost":0} 
+                                ] 
+                            } 
+                        ] 
+                    }, 
+                    { 
+                        "id":2, 
+                        "name":"Sherman Crab Troop",
+                        "cost":165, 
+                        "br":11, 
+                        "officer":true, 
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"3 Sherman Crabs","cost":0,"v":107} 
+                                ] 
+                            } 
+                        ] 
+                    },
+                    { 
+                        "id":3, 
+                        "name":"Centaur IV Troop",
+                        "cost":170, 
+                        "br":11, 
+                        "officer":true, 
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"3 Sherman Crabs","cost":0,"v":107} 
+                                ] 
+                            } 
+                        ] 
+                    },
+                    { 
+                        "id":4, 
+                        "name":"DD Sherman",
+                        "cost":52, 
+                        "br":3
+                    },
+                    { 
+                        "id":5, 
+                        "name":"AVRE Squadron",
+                        "cost":220, 
+                        "br":11, //greg -confirm
+                        "officer":true, 
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"3 Churchill AVREs","cost":0,"v":0} 
+                                ] 
+                            } 
+                        ] 
+                    },
+                    { 
+                        "id":6, 
+                        "name":"Engineer Churchill Troop",
+                        "cost":147, 
+                        "br":11, 
+                        "officer":true, 
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"1 Fascine, 1 Ark, 1 AVRE","cost":0,"v":107} 
+                                ] 
+                            } 
+                        ] 
+                    }
+                ] 
+            }, 
+            {
+                "id":4,
+                "name":"Artillery Units",
+                "allows":[10],
+                "requires":false,
+                "entries":[
+                    {
+                        "id":1,
+                        "name":"Shore Fire Control Party",
+                        "cost":20,
+                        "br":1,
+                        "options":[
+                            {
+                                "name":"Transport",
+                                "choices":[
+                                    {"id":1,"text":"Jeep","cost":0,"v":0}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":2,
+                        "name":"Priest",
+                        "cost":60,
+                        "br":3
+                    },
+                    {
+                        "id":3,
+                        "name":"Aerial Artillery Observer",
+                        "cost":66, // greg confirm
+                        "br":3, // greg confirm
+                        "unique":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"1 Auster III","cost":0}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":4,
+                        "name":"Priest Battery",
+                        "cost":144, // greg confirm
+                        "br":6, // greg confirm
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"3 M7 Priests in a LCT","cost":0,"w":0}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":5,
+                        "name":"Off-Table Naval Gun Fire",
+                        "cost":80,
+                        "br":0,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"2 3.5\" guns","cost":0},
+                                    {"id":2,"text":"2 4.7\" guns","cost":28}, // greg confirm cost
+                                    {"id":3,"text":"2 5\" guns","cost":46} // greg confirm cost
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         ]
