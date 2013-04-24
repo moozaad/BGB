@@ -4039,13 +4039,14 @@ var forces = [
                     "cost":16,
                     "br":1,
                     "v":62,
+                    "restricted":true,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
-                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0, "restricted":true},
-                            {"id":2,"text":"SdKfz with 37mm","cost":4, "restricted":true},
-                            {"id":3,"text":"SdKfz with 20mm Flakvierling","cost":20, "restricted":true}
+                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0},
+                            {"id":2,"text":"SdKfz with 37mm","cost":4},
+                            {"id":3,"text":"SdKfz with 20mm Flakvierling","cost":20}
                             ]
                         }
                     ]
@@ -11439,7 +11440,7 @@ var forces = [
     },
     {
         "id":9,
-        "name":"Atlantic Wall Resistance Nest"
+        "name":"Atlantic Wall Resistance Nest",
         "infantry":[
             [[1,0],[2,0]],
             [[2,0],[0,1]],
@@ -11459,7 +11460,7 @@ var forces = [
                     "cost":21,
                     "br":3,
                     "unique":true,
-                    "officer":true,
+                    "officer":true
                 },
                 {
                     "id":2,
@@ -11477,7 +11478,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Radio Van","cost":0,"v":0},
+                                {"id":1,"text":"Radio Van","cost":0,"v":0}
                             ]
                         }
                     ]
@@ -15416,6 +15417,8 @@ function render_entries(entries, sub_entries, async) {
                            text = text +"' data-vc='"+entries[i].options[j].choices[k].v; 
                         if (entries[i].options[j].choices[k].w)
                            text = text +"' data-w='"+entries[i].options[j].choices[k].w; 
+                        if (entries[i].options[j].choices[k].restricted)
+                           text = text +"' data-restricted='"+entries[i].options[j].choices[k].w; 
                         text = text + "' value='" + entries[i].options[j].choices[k].id +"'>"+entries[i].options[j].choices[k].text + "</option>"; 
                     }
                     text = text + "</select></div>";
@@ -15645,7 +15648,19 @@ function update_cost() {
     $('#force_cost').text(cost + ' / ' + br +'br');
     var officers = entries.filter( function() { if ($(this).data('officer')) return true; return false; } );
     $('#officer_count').text(officers.length);
-    var restricted = entries.filter( function() { if ($(this).data('restricted')) return true; return false; } );
+    var restricted = entries.filter( 
+        function() {
+            if ($(this).data('restricted'))
+                return true;
+            // also filter for any entries that have 'restricted' on their selected options
+            var selects = $(this).find("select option").filter(':selected');
+            for (var i=0; i<selects.length; i++) {
+                if ($(selects[i]).data('restricted')){
+                    return true;
+                }
+            }
+            return false;
+        });
     $('#restricted_count').text(restricted.length);
     //greg WIP squads_check(cost, entries);
 }
