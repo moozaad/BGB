@@ -12324,7 +12324,8 @@ var forces = [
     {
         "id":10,
         "group":"German",
-        "name":"(Coming Soon) Panzer 'Ersatz' Battlegroup"
+        "name":"(Coming Soon) Panzer 'Ersatz' Battlegroup",
+        "sections":[]
     },
     {
         "id":11,
@@ -13669,22 +13670,26 @@ var forces = [
     {
         "id":12,
         "group":"British",
-        "name":"(Coming Soon) British Infantry Division"
+        "name":"(Coming Soon) British Infantry Division",
+        "sections":[]
     },
     {
         "id":13,
         "group":"American",
-        "name":"(Coming Soon) American Armoured Division"
+        "name":"(Coming Soon) American Armoured Division",
+        "sections":[]
     },
     {
         "id":14,
         "group":"American",
-        "name":"(Coming Soon) American Infantry Division"
+        "name":"(Coming Soon) American Infantry Division",
+        "sections":[]
     },
     {
         "id":15,
         "group":"German",
-        "name":"(Coming Soon) Panzer Division"
+        "name":"(Coming Soon) Panzer Division",
+        "sections":[]
     },
     {
         "id":16,
@@ -17435,8 +17440,8 @@ $( document ).ready( function() {
     $('body').on('click', '#print', print_render);
     $('body').on('change', '#forceChoice', changeForce);
     $('body').on('change', '.opt_select', option_change);
-    if ( vehicles_private !== undefined )
+    if ( typeof vehicles_private !== 'undefined' )
         merge_vehicles();
-    if ( weapons_private !== undefined )
+    if ( typeof weapons_private !== 'undefined' )
         merge_weapons();
 });
