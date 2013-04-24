@@ -17368,7 +17368,7 @@ function print_vehicles(listV, listW) {
 function print_help() {
     var dialog = $('<div><span>Click on roster text to return to edit screen.</span></div>').appendTo($('#p_div'));
     dialog.dialog({title:'Help', modal:true, resizable:false, closeOnEscape:true });
-    dialog.delay(1500).fadeOut(function(){ $(this).remove(); });
+    dialog.delay(1750).fadeOut(function(){ $(this).remove(); });
 }
 function print_render(){
     var force = force_by_id($('#main').data('bg_id'));
