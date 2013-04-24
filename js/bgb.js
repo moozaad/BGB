@@ -11440,7 +11440,7 @@ var forces = [
     },
     {
         "id":9,
-        "name":"Atlantic Wall Resistance Nest",
+        "name":"(Coming Soon) Atlantic Wall Resistance Nest",
         "infantry":[
             [[1,0],[2,0]],
             [[2,0],[0,1]],
@@ -16113,6 +16113,11 @@ function print_vehicles(listV, listW) {
     text = text + print_ammo(listV);
     return text;
 }
+function print_help() {
+    var dialog = $('<div><span>Click on roster text to return to edit screen.</span></div>').appendTo($('#p_div'));
+    dialog.dialog({title:'Help', modal:true, resizable:false, closeOnEscape:true });
+    dialog.delay(1500).fadeOut(function(){ $(this).remove(); });
+}
 function print_render(){
     var force = force_by_id($('#main').data('bg_id'));
     listVehicles = {};
@@ -16135,6 +16140,7 @@ function print_render(){
     });
     $('#p_ammo').isotope({itemSelector:'.p_parent'});
     $('#main').hide();
+    print_help();
 }
 function merge_vehicles(){
     for (var i=0; i<vehicles_private.length; i++) {
