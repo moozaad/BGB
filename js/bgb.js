@@ -2325,7 +2325,8 @@ var weapons = {
 var forces = [
     {
         "id":1,
-        "name":"Panzer Division Battlegroup",
+        "group":"German",
+        "name":"Panzer Division (Kursk)",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
@@ -4157,7 +4158,8 @@ var forces = [
     },
     {
         "id":2,
-        "name":"German Infantry Division Battlegroup (Kursk)",
+        "name":"German Infantry Division (Kursk)",
+        "group":"German",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
@@ -5526,7 +5528,8 @@ var forces = [
     },
     {
         "id":3,
-        "name":"Russian Tank Corps Battlegroup",
+        "name":"Russian Tank Corps",
+        "group":"Russian",
         "infantry":[
             [[1,0],[0,2]],
             [[0,1],[0,4]],
@@ -6655,7 +6658,8 @@ var forces = [
     },
     {
         "id":4,
-        "name":"Russian Rifle Division Battlegroup",
+        "name":"Russian Rifle Division",
+        "group":"Russian",
         "infantry":[
             [[1,0],[0,2]],
             [[0,1],[0,4]],
@@ -7979,7 +7983,8 @@ var forces = [
     },
     {
         "id":5,
-        "name":"British 6th Airborne Division",
+        "name":"6th Airborne Division",
+        "group":"British",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
@@ -8993,6 +8998,7 @@ var forces = [
     {
         "id":6,
         "name":"British Amphibious Assault Battlegroup",
+        "group":"British",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
@@ -9721,6 +9727,7 @@ var forces = [
     {
         "id":7,
         "name":"American Airborne Division",
+        "group":"American",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
@@ -10807,6 +10814,7 @@ var forces = [
     {
         "id":8,
         "name":"American Amphibious Assault Battlegroup",
+        "group":"American",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
@@ -11441,6 +11449,7 @@ var forces = [
     {
         "id":9,
         "name":"Atlantic Wall Resistance Nest",
+        "group":"German",
         "infantry":[
             [[1,0],[2,0]],
             [[2,0],[0,1]],
@@ -12314,31 +12323,38 @@ var forces = [
     },
     {
         "id":10,
+        "group":"German",
         "name":"(Coming Soon) Panzer 'Ersatz' Battlegroup"
     },
     {
         "id":11,
-        "name":"(Coming Soon) British Armoured Division Battlegroup"
+        "name":"(Coming Soon) British Armoured Division",
+        "group":"British"
     },
     {
         "id":12,
-        "name":"(Coming Soon) British Infantry Division Battlegroup"
+        "group":"British",
+        "name":"(Coming Soon) British Infantry Division"
     },
     {
         "id":13,
-        "name":"(Coming Soon) American Armoured Division Battlegroup"
+        "group":"American",
+        "name":"(Coming Soon) American Armoured Division"
     },
     {
         "id":14,
-        "name":"(Coming Soon) American Infantry Division Battlegroup"
+        "group":"American",
+        "name":"(Coming Soon) American Infantry Division"
     },
     {
         "id":15,
-        "name":"(Coming Soon) German Panzer Division Battlegroup"
+        "group":"German",
+        "name":"(Coming Soon) Panzer Division"
     },
     {
         "id":16,
-        "name":"German Fallschirmjaeger Battlegroup",
+        "name":"Fallschirmjaeger Battlegroup",
+        "group":"German",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
@@ -13550,7 +13566,8 @@ var forces = [
     },
     {
         "id":17,
-        "name":"German Infantry Division Battlegroup (Overlord)",
+        "name":"German Infantry Division (Overlord)",
+        "group":"German",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
@@ -14998,8 +15015,15 @@ function requires_match(item, requires) {
 
 // maybe make it get which value from a select?
 function render_name(force) {
+    var group=null;
     var text = "<div class='ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix'><div style='display:inline'><select id=forceChoice style='display:inline; float:left; margin-right:20px'>"; 
     for (var i=0; i<forces.length; i++) {
+        if (group != forces[i].group) {
+            if ( group !== null )
+                text = text + "</optgroup>";
+            group = forces[i].group;
+            text = text + '<optgroup label="' + group + '">';
+        }
         text = text + "<option value=" + forces[i].id;
         if (force.id == forces[i].id)
             text = text + " selected";
@@ -16050,7 +16074,20 @@ function merge_weapons(){
             weapons[key].stats = weapons_private[key].stats;
     }
 }
+function SortByName(a, b){
+    var aGroup = a.group.toLowerCase();
+    var bGroup = b.group.toLowerCase();
+    if ( aGroup < bGroup )
+        return(-1);
+    if ( aGroup > bGroup )
+        return(1);
+    var aName = a.name.toLowerCase();
+    var bName = b.name.toLowerCase(); 
+    return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
+}
+
 $( document ).ready( function() {
+    forces.sort(SortByName);
     render();
     update_selectable();
     sub_button_bind();
