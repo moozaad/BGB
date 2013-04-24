@@ -11440,7 +11440,7 @@ var forces = [
     },
     {
         "id":9,
-        "name":"(Coming Soon) Atlantic Wall Resistance Nest",
+        "name":"Atlantic Wall Resistance Nest",
         "infantry":[
             [[1,0],[2,0]],
             [[2,0],[0,1]],
@@ -11840,7 +11840,6 @@ var forces = [
                     }
                 ]
             },
-            //greg got to here
             {
                 "id":5, 
                 "name":"Defences",
@@ -11849,181 +11848,236 @@ var forces = [
                 "entries":[
                     {
                         "id":1,
+                        "name":"Off Shore Mines",
+                        "unique":true,
+                        "cost":20,
+                        "br":0
+                    },
+                    {
+                        "id":2,
+                        "name":"Sea Rocks",
+                        "cost":5,
+                        "restricted":true,
+                        "br":0
+                    },
+                    {
+                        "id":3,
+                        "name":"Mined Sea Obstacles",
+                        "cost":20,
+                        "unique":true,
+                        "br":0
+                    },
+                    {
+                        "id":4,
+                        "name":"Beach Obstacles",
+                        "cost":5,
+                        "br":0
+                    },
+                    {
+                        "id":5,
+                        "name":"Soft Sand",
+                        "cost":10,
+                        "restricted":true,
+                        "br":0
+                    },
+                    {
+                        "id":6,
+                        "name":"Mined Beach",
+                        "cost":10,
+                        "br":0,
+                        "unique":true
+                    },
+                    {
+                        "id":7,
+                        "name":"Mined Barbed Wire",
+                        "cost":20,
+                        "br":0
+                    },
+                    {
+                        "id":8,
+                        "name":"Sea Cliffs",
+                        "cost":30,
+                        "unique":true,
+                        "br":0
+                    },
+                    {
+                        "id":9,
+                        "name":"Left Flank Enfilade Fire",
+                        "cost":10,
+                        "br":0
+                    },
+                    {
+                        "id":10,
+                        "name":"Right Flank Enfilade Fire",
+                        "cost":10,
+                        "br":0
+                    },
+                    {
+                        "id":11,
+                        "name":"Barbed Wire",
+                        "cost":10,
+                        "br":0
+                    },
+                    {
+                        "id":12,
+                        "name":"Booby-Trapped Building",
+                        "cost":25,
+                        "br":0
+                    },
+                    {
+                        "id":13,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
-                        "name":"Machine Gun Dug-out",
-                        "cost":32,
-                        "br":1
+                        "id":14,
+                        "name":"Inland Minefield",
+                        "cost":15,
+                        "br":0
                     },
                     {
-                        "id":3,
-                        "name":"Mortar Pit",
-                        "cost":32,
-                        "br":1
+                        "id":15,
+                        "name":"Improvised Road Block",
+                        "cost":5,
+                        "br":0
                     },
                     {
-                        "id":4,
+                        "id":16,
+                        "name":"Dragon's Teeth",
+                        "cost":15,
+                        "br":0
+                    },
+                    {
+                        "id":17,
+                        "name":"Anti-Tank Ditch/Embankment",
+                        "cost":20,
+                        "restricted":true,
+                        "br":0
+                    },
+                    {
+                        "id":18,
+                        "name":"Flooded Field",
+                        "cost":10,
+                        "unique":true,
+                        "br":0
+                    },
+                    {
+                        "id":19,
+                        "name":"MG Tobruk Pit",
+                        "cost":40,
+                        "br":2
+                    },
+                    {
+                        "id":20,
+                        "name":"MG Pillbox",
+                        "cost":50,
+                        "br":2
+                    },
+                    {
+                        "id":21,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":5,
-                        "name":"Foxholes",
-                        "cost":10,
+                        "id":22,
+                        "name":"Heavily Fortified Building",
+                        "cost":40,
+                        "unique":true,
                         "br":0
                     },
                     {
-                        "id":6,
-                        "name":"Sniper Hideout",
-                        "cost":15,
-                        "br":0,
-                        "restricted":true
-                    },
-                    {
-                        "id":7,
-                        "name":"AT Gun Dug-out",
+                        "id":23,
+                        "name":"Reinforced Trenches",
                         "cost":20,
-                        "br":0,
-                        "restricted":true
-                    },
-                    {
-                        "id":8,
-                        "name":"Booby Trapped Building",
-                        "cost":25,
                         "br":0
                     },
                     {
-                        "id":9,
-                        "name":"Improvised Road Block",
+                        "id":24,
+                        "name":"AT Gun Bunker",
+                        "cost":30,
+                        "br":0
+                    },
+                    {
+                        "id":25,
+                        "name":"Artillery Observation Bunker",
+                        "cost":26,
+                        "unique":true,
+                        "br":1
+                    },
+                    {
+                        "id":26,
+                        "name":"Command Bunker",
+                        "cost":30,
+                        "unique":true,
+                        "restricted":true,
+                        "officer":true,
+                        "br":3
+                    },
+                    {
+                        "id":27,
+                        "name":"Mortar Pit",
+                        "cost":32,
+                        "br":1
+                    },
+                    {
+                        "id":28,
+                        "name":"Automated 50mm Mortar Pit",
+                        "cost":36,
+                        "br":1
+                    },
+                    {
+                        "id":29,
+                        "name":"50mm Pedestal Gun",
+                        "cost":42,
+                        "br":2
+                    },
+                    {
+                        "id":30,
+                        "name":"Underground Personnel Shelter",
+                        "cost":30,
+                        "unique":true,
+                        "br":0
+                    },
+                    {
+                        "id":31,
+                        "name":"Dummy Bunker",
                         "cost":5,
+                        "unique":true,
+                        "br":0
+                    },
+                    {
+                        "id":32,
+                        "name":"Deserters will be Shot!",
+                        "cost":15,
                         "br":0
                     }
                 ]
             },
-        {
-            "id":6, 
-            "name":"Reconnaissance Support Units",
-            "allows":null,
-            "requires":true,
-            "entries":[
-                {
-                    "id":1,
-                    "name":"Sniper",
-                    "cost":10,
-                    "br":1,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"1 sniper","cost":0},
-                                {"id":2,"text":"1 sniper + 1 spotter","cost":5}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":2,
-                    "name":"Mounted Panzer Grenadier Patrol",
-                    "cost":28,
-                    "br":3,
-                    "options":[
-                        {
-                            "name":"AT grenades",
-                            "choices":[
-                                {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Anti-tank grenades","cost":5}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":3,
-                    "name":"Motorcycle Reconnaissance Patrol",
-                    "cost":18,
-                    "br":1
-                },
-                {
-                    "id":4,
-                    "name":"Recon Platoon Command",
-                    "cost":44,
-                    "br":2,
-                    "unique":true,
-                    "officer":true,
-                    "options":[
-                        {
-                            "name":"Transport",
-                            "choices":[
-                                {"id":1,"text":"SdKfz 250/10","cost":0,"v":48},
-                                {"id":2,"text":"SdKfz 250/11","cost":0,"v":49}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":5,
-                    "name":"Panzer Grenadier Foot Patrol",
-                    "cost":36,
-                    "br":3,
-                    "s":1,
-                    "options":[
-                        {
-                            "name":"MG",
-                            "choices":[
-                                {"id":1,"text":"Bipod MG34","cost":0},
-                                {"id":2,"text":"Bipod MG42","cost":4}
-                            ]
-                        },
-                        {
-                            "name":"AT grenades",
-                            "choices":[
-                                {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Anti-tank grenades","cost":5}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":6,
-                    "name":"Armoured Car",
-                    "cost":20,
-                    "br":1,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"SdKfz 222","cost":0,"v":32},
-                                {"id":2,"text":"SdKfz 231 or 232","cost":4,"v":34},
-                                {"id":3,"text":"SdKfz 233","cost":14,"v":35},
-                                {"id":4,"text":"SdKfz 250/7","cost":10, restricted:"true","v":45},
-                                {"id":5,"text":"SdKfz 250/8","cost":4, restricted:"true","v":46},
-                                {"id":6,"text":"SdKfz 250/9","cost":4, restricted:"true","v":47}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":7,
-                    "name":"Aerial Reconnaissance",
-                    "cost":50,
-                    "br":2,
-                    "unique":true,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"Hs-126","cost":0},
-                                {"id":2,"text":"Fw-189A 'UHU'","cost":20, br:"1"}
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
+            {
+                "id":6, 
+                "name":"Reconnaissance Support Units",
+                "allows":null,
+                "requires":true,
+                "entries":[
+                    {
+                        "id":1,
+                        "name":"Sniper",
+                        "cost":10,
+                        "br":1,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"1 sniper","cost":0},
+                                    {"id":2,"text":"1 sniper + 1 spotter","cost":5}
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
         {
             "id":7, 
             "name":"Engineer Support Units",
@@ -12032,93 +12086,25 @@ var forces = [
             "entries":[
                 {
                     "id":1,
-                    "name":"Light Bridging Unit",
-                    "cost":18,
+                    "name":"Goliath Demo Squadron",
+                    "cost":14,
                     "br":2,
+                    "unique":true,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Heavy Truck & 6 men","cost":0,"v":61},
-                                {"id":2,"text":"SdKfz 251/7 & 6 men","cost":8}
+                                {"id":1,"text":"1 Goliath","cost":0},
+                                {"id":2,"text":"2 Goliaths","cost":10}
                             ]
                         }
                     ]
                 },
                 {
                     "id":2,
-                    "name":"Heavy Bridging Unit",
-                    "cost":36,
-                    "br":3,
-                    "restricted":true,
-                    "v":61,
-                    "unique":true,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
-                                {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
-                                {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
-                                {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":3,
-                    "name":"Flammpanzer III",
-                    "cost":50,
-                    "br":3,
-                    "restricted":true,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"1 Flammpanzer III Ausf. M","cost":0,"v":5}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":4,
-                    "name":"Recovery Vehicle",
-                    "cost":18,
-                    "br":1,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"SdKfz 9 'Famo'","cost":0,"v":67},
-                                {"id":2,"text":"Bergpanther","cost":20, "br":1, "restricted":true}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":5,
-                    "name":"Borgward Demolition Squadron",
-                    "cost":74,
-                    "br":5,
-                    "officer":true,
-                    "options":[
-                        {
-                            "name":"Command",
-                            "choices":[
-                                {"id":1,"text":"StuG III Ausf. F","cost":0,"v":16},
-                                {"id":2,"text":"Panzer III Ausf. L","cost":0,"v":2}
-                                ]
-                        },
-                        {
-                            "name":"Borgwards",
-                            "choices":[
-                                {"id":1,"text":"1 Borgward B-IV","cost":0,"v":14},
-                                {"id":2,"text":"2 Borgward B-IV","cost":10, "br":1,"v":14},
-                                {"id":3,"text":"3 Borgward B-IV","cost":20, "br":2,"v":14},
-                                {"id":4,"text":"4 Borgward B-IV","cost":30, "br":3,"v":14}
-                            ]
-                        }
-                    ]
+                    "name":"Conscript Labour Squad",
+                    "cost":10,
+                    "br":1
                 }
             ]
         },
@@ -12131,25 +12117,17 @@ var forces = [
                 {
                     "id":1,
                     "name":"Supply Column",
-                    "cost":8,
+                    "cost":6,
                     "br":1,
-                    "v":58,
                     "unique":true,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 medium truck","cost":0},
-                                {"id":2,"text":"2 medium trucks","cost":4},
-                                {"id":3,"text":"3 medium trucks","cost":8},
-                                {"id":4,"text":"4 medium trucks","cost":12}
-                            ]
-                        },
-                        {
-                            "name":"Armoured carriers",
-                            "choices":[
-                                {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Replace 1 truck","cost":6}
+                                {"id":1,"text":"1 horse drawn wagon","cost":0},
+                                {"id":2,"text":"1 medium truck","cost":2,"v":58},
+                                {"id":3,"text":"1 horse drawn wagon, 1 medium truck","cost":8,"v":58},
+                                {"id":4,"text":"2 medium trucks","cost":10,"v":58}
                             ]
                         }
                     ]
@@ -12184,22 +12162,6 @@ var forces = [
                         ]
                         }
                     ]
-                },
-                {
-                    "id":4,
-                    "name":"Forward Aid Post",
-                    "cost":20,
-                    "br":5,
-                    "restricted":true,
-                    "unique":true,
-                    "options":[
-                        {
-                        "name":"Composition",
-                        "choices":[
-                            {"id":1,"text":"4 men with a tent","cost":0}
-                        ]
-                        }
-                    ]
                 }
             ]
         },
@@ -12211,15 +12173,20 @@ var forces = [
             "entries":[
                 {
                     "id":1,
-                    "name":"Heavy Anti-Tank Gun",
-                    "cost":51,
+                    "name":"Coastal Artillery Casemate",
+                    "cost":82,
                     "br":3,
-                    "w":20,
+                    "unique":true,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"88mm AA/AT with 4 crew","cost":0}
+                                {"id":1,"text":"122mmL46","cost":0,"w":48},
+                                {"id":2,"text":"152mmL29","cost":4,"w":50},
+                                {"id":3,"text":"170mmL50","cost":16,"w":28},
+                                {"id":4,"text":"240mmL35","cost":26,"br":1,"w":23},
+                                {"id":5,"text":"280mmL45","cost":32,"br":1,"w":0},
+                                {"id":6,"text":"340mmL47","cost":50,"br":2,"w":0}
                             ]
                         },
                         {
@@ -12228,126 +12195,71 @@ var forces = [
                                 {"id":1,"text":"None","cost":0},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
-                        },
-                        {
-                            "name":"Tow",
-                            "choices":[
-                                {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"SdkFz 7","cost":8,"v":65}
-                            ]
                         }
                     ]
                 },
                 {
                     "id":2,
-                    "name":"Self-Propelled Anti-Tank Gun",
-                    "cost":30,
+                    "name":"Panzerturm",
+                    "cost":18,
+                    "unique":true,
                     "br":1,
                     "restricted":true,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Marder II","cost":0,"v":20},
-                                {"id":2,"text":"Marder III H","cost":4,"v":21},
-                                {"id":3,"text":"Marder III M","cost":-2,"v":22},
-                                {"id":4,"text":"Marder 38t (36r)","cost":4,"v":23}
+                                {"id":1,"text":"R-35 with MG42","cost":0},
+                                {"id":2,"text":"R-35 with 37mmL21","cost":-3,"w":0},
+                                {"id":3,"text":"H-38 with 37mmL21","cost":-3,"w":0},
+                                {"id":4,"text":"Pz III with 75mmL24","cost":7,"w":11}
                             ]
                         }
                     ]
                 },
                 {
                     "id":3,
-                    "name":"Panzer VI Squadron",
-                    "cost":223,
-                    "br":12,
-                    "multiplier":3,
+                    "name":"Anti-Aircraft Gun Emplacement",
+                    "cost":43,
+                    "br":1,
                     "unique":true,
-                    "officer":true,
-                    "v":11,
                     "options":[
                         {
-                        "name":"Composition",
-                        "choices":[
-                            {"id":1,"text":"3 Tigers Is","cost":0, "restricted":true}
-                        ]
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"20mm FlaK gun","cost":0},
+                                {"id":2,"text":"20mm FlaK Vierling","cost":20},
+                                {"id":3,"text":"37mm AA gun","cost":8}
+                            ]
+                        },
+                        {
+                            "name":"Loader team",
+                            "choices":[
+                                {"id":1,"text":"None","cost":0},
+                                {"id":2,"text":"3-man loader team","cost":10}
+                            ]
                         }
                     ]
                 },
                 {
                     "id":4,
-                    "name":"Heavy Tank Hunter",
-                    "cost":136,
-                    "br":5,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"1 Ferdinand","cost":0, "restricted":true,"v":24},
-                                {"id":2,"text":"1 Hornisse","cost":-80, "restricted":true,"br":-2,"v":25}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":5,
-                    "name":"Captured Tank",
-                    "cost":42,
+                    "name":"Heavy Anti-Tank Gun",
+                    "cost":69,
                     "br":3,
+                    "unique":true,
+                    "w":20,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 Panzer T-34r","cost":0,"v":12}
+                                {"id":1,"text":"88mmL71 PaK43 with 4 crew","cost":0}
                             ]
-                        }
-                    ]
-                },
-                {
-                    "id":6,
-                    "name":"Anti-Aircraft Vehicle",
-                    "cost":16,
-                    "br":1,
-                    "v":62,
-                    "options":[
+                        },
                         {
-                            "name":"Composition",
+                            "name":"Loader team",
                             "choices":[
-                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0, "restricted":true},
-                            {"id":2,"text":"SdKfz with 37mm","cost":4, "restricted":true},
-                            {"id":3,"text":"SdKfz with 20mm Flakvierling","cost":20, "restricted":true}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":7,
-                    "name":"Assault Howitzer",
-                    "cost":44,
-                    "br":3,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"StuH 42 F","cost":0, "restricted":true,"v":17},
-                                {"id":2,"text":"StuH 42 G","cost":6, "restricted":true,"v":19},
-                                {"id":3,"text":"Brummbär","cost":20, "restricted":true, "br":1,"v":26}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":8,
-                    "name":"Panzer VI",
-                    "cost":85,
-                    "br":4,
-                    "restricted":true,
-                    "v":11,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"1 Panzer VI Tiger","cost":0}
+                                {"id":1,"text":"None","cost":0},
+                                {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         }
                     ]
@@ -12384,8 +12296,9 @@ var forces = [
             },
             {
                 "id":3,
-                "name":"Counter-Battery Fire Mission",
-                "cost":10,
+                "name":"Timed 80mm Mortar Barrage",
+                "w":2,
+                "cost":5,
                 "br":0
             },
             {
@@ -12393,31 +12306,6 @@ var forces = [
                 "name":"Timed 105mm Barrage",
                 "w":22,
                 "cost":10,
-                "br":0
-            },
-            {
-                "id":5,
-                "name":"Timed 150mm Barrage",
-                "cost":20,
-                "br":0
-            },
-            {
-                "id":6,
-                "name":"Timed FW-190 Air Strike",
-                "cost":5,
-                "br":0
-            },
-            {
-                "id":7,
-                "name":"Timed Ju-87 Air Strike",
-                "cost":15,
-                "br":0
-            },
-            {
-                "id":8,
-                "name":"Timed He-111 Air Strike",
-                "cost":25,
-                "restricted":true,
                 "br":0
             }
             ]
