@@ -8046,15 +8046,6 @@ var forces = [
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
-                "options":[
-                    {
-                        "name":"Troop Quality",
-                        "choices":[
-                            {"id":1,"text":"Veteran","cost":0},
-                            {"id":2,"text":"Elite","cost":40, "br":4}
-                        ]
-                    }
-                ],
                 "entries":[
                     {
                         "id":1,
@@ -8064,6 +8055,15 @@ var forces = [
                         'multiplier':4,
                         "sub_text":"Platoon Components",
                         "p":1,
+                        "options":[
+                            {
+                                "name":"Troop Quality",
+                                "choices":[
+                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":2,"text":"Elite","cost":40, "br":4}
+                                ]
+                            }
+                        ],
                         "sub_units":[
                             {
                                 "id":1,
