@@ -12328,7 +12328,7 @@ var forces = [
     },
     {
         "id":11,
-        "name":"(Coming Soon) British Armoured Division",
+        "name":"British Armoured Division",
         "group":"British",
         "infantry":[
             [[1,0],[0,1]],
