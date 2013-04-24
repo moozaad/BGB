@@ -12466,8 +12466,8 @@ var forces = [
                                 "id":3,
                                 "name":"Light Mortar Team",
                                 "cost":0,
-                                "br":1,
-                                "w":1,
+                                "br":0,
+                                "w":60,
                                 "mandatory":true
                             },
                             {
@@ -12799,7 +12799,7 @@ var forces = [
                                 "name":"Carrier Light Mortar Team",
                                 "cost":0,
                                 "br":0,
-                                "w":0,
+                                "w":60,
                                 "mandatory":true,
                                 "options":[
                                     {
@@ -13254,7 +13254,7 @@ var forces = [
                                     {"id":1,"text":"Cromwell IV","cost":0,"v":111},
                                     {"id":2,"text":"M3A3 'Honey'","cost":-24,"v":115},
                                     {"id":3,"text":"M5 Stuart","cost":-22,"v":89},
-                                    {"id":4,"text":"M5 Stuart","cost":-38,"v":117}
+                                    {"id":4,"text":"M5 Stuart 'recce'","cost":-38,"v":117}
                                 ] 
                             } 
                         ] 
