@@ -714,6 +714,7 @@ var vehicles = [
     'name':'Komsomolyets tractor',
     'hits':true
 },
+{},{},{},{},
 {
     'id':100,
     'name':'M4 Sherman (A1,A2,A3)',
