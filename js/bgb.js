@@ -93,7 +93,7 @@ var vehicles = [
 },
 {
     'id':9,
-    'name':'Panzer IV H',
+    'name':'Panzer IV H/J',
     'armour':true,
     'weapons':[15],
     'mg':true,
@@ -101,7 +101,7 @@ var vehicles = [
 },
 {
     'id':10,
-    'name':'Panzer V',
+    'name':'Panther D',
     'armour':true,
     'special':'Unreliable',
     'weapons':[16],
@@ -110,7 +110,7 @@ var vehicles = [
 },
 {
     'id':11,
-    'name':'Panzer VI',
+    'name':'Tiger I',
     'armour':true,
     'weapons':[19],
     'mg':true,
@@ -287,6 +287,7 @@ var vehicles = [
     'id':33,
     'name':'SdKfz 223',
     'armour':true,
+    'weapons':[11],
     'mg':true
 },
 {
@@ -1039,7 +1040,7 @@ var vehicles = [
 },
 {
     'id':141,
-    'name':'Humber Light Recce Vehicle I',
+    'name':'Humber LRC I',
     'armour':true,
     'mg':true
 },
@@ -1313,6 +1314,258 @@ var vehicles = [
     'hits':true,
     'capacity':0
 },
+{
+    'id':185,
+    'name':'Panzer IV D',
+    'armour':true,
+    'weapons':[11],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':186,
+    'name':'Tiger II',
+    'armour':true,
+    'weapons':[11],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':187,
+    'name':'Panther A/G',
+    'armour':true,
+    'weapons':[16],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':188,
+    'name':'Bergepanther',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':189,
+    'name':'StuG IV',
+    'armour':true,
+    'weapons':[15],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':190,
+    'name':'Bergepanzer III',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':191,
+    'name':'Jagdpanzer IV',
+    'armour':true,
+    'weapons':[15],
+    'ammo':true
+},
+{
+    'id':192,
+    'name':'Jagdpanther',
+    'armour':true,
+    'weapons':[20],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':193,
+    'name':'Panzerwerfer',
+    'armour':true,
+    'weapons':[27],
+    'ammo':true
+},
+{
+    'id':194,
+    'name':'Flakpanzer 38(t)',
+    'armour':true,
+    'weapons':[4],
+    'ammo':true
+},
+{
+    'id':195,
+    'name':'Möbelwagen',
+    'armour':true,
+    'weapons':[95],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':196,
+    'name':'Wirbelwind',
+    'armour':true,
+    'weapons':[4],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':197,
+    'name':'Armoured SdKfz 7/1',
+    'armour':true,
+    'weapons':[95],
+    'ammo':true
+},
+{
+    'id':198,
+    'name':'SdKfz 263',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':199,
+    'name':'SdKfz 234/1',
+    'armour':true,
+    'weapons':[4],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':200,
+    'name':'SdKfz 234/2',
+    'armour':true,
+    'weapons':[9],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':201,
+    'name':'SdKfz 234/3',
+    'armour':true,
+    'weapons':[11],
+    'ammo':true
+},
+{
+    'id':202,
+    'name':'Panhard 178',
+    'armour':true,
+    'weapons':[111],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':203,
+    'name':'SdKfz 251 Werfrahmen 40',
+    'armour':true,
+    'weapons':[31],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':204,
+    'name':'R-35',
+    'armour':true,
+    'weapons':[112],
+    'ammo':true
+},
+{
+    'id':205,
+    'name':'R-35 (MG only)',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':206,
+    'name':'H-38',
+    'armour':true,
+    'weapons':[112],
+    'ammo':true
+},
+{
+    'id':207,
+    'name':'Pz-III Panzerturm',
+    'armour':true,
+    'weapons':[11],
+    'ammo':true
+},
+{
+    'id':208,
+    'name':'75mm PaK40 auf Lorraine',
+    'armour':true,
+    'weapons':[14],
+    'ammo':true
+},
+{
+    'id':209,
+    'name':'105mm leFH13 auf Lorraine',
+    'armour':true,
+    'weapons':[22],
+    'ammo':true
+},
+{
+    'id':210,
+    'name':'150mm sFH13 auf Lorraine',
+    'armour':true,
+    'weapons':[26],
+    'ammo':true
+},
+{
+    'id':211,
+    'name':'lsSPW U304(f)',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':212,
+    'name':'lsSPW U304(f) Funk',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':213,
+    'name':'lsSPW U304(f) FlaK38',
+    'armour':true,
+    'weapons':[4],
+    'ammo':true
+},
+{
+    'id':214,
+    'name':'mSPW S303(f)',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':215,
+    'name':'mSPW S307(f)',
+    'armour':true
+},
+{
+    'id':216,
+    'name':'mSPW S307(f) greg confirm',
+    'armour':true,
+    'weapons':[16],
+    'ammo':true //greg confirm
+},
+{
+    'id':217,
+    'name':'mSPW S307(f) R. Vielfachwerfer',
+    'armour':true,
+    'weapons':[110],
+    'ammo':true
+},
+{
+    'id':218,
+    'name':'Panzer 38H 735(f) auf 28cm Wurfrahmen',
+    'armour':true,
+    'weapons':[31], // greg also carries (112) 37mmL21
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':219,
+    'name':'Panzer 39H Beobachtunswagen',
+    'armour':true
+},
+{
+    'id':220,
+    'name':'Lorraine Schlepper Beobachtunswagen',
+    'armour':true
+},
+
     // greg to-do, landing craft
 {
 }
@@ -3171,6 +3424,7 @@ var forces = [
                                 "cost":31,
                                 "br":2,
                                 "unique":true,
+                                "w":4,
                                 "options":[
                                     {
                                         "name":"Gun type",
@@ -3397,6 +3651,7 @@ var forces = [
                                 "cost":28,
                                 "br":2,
                                 "unique":true,
+                                "w":4,
                                 "options":[
                                     {
                                         "name":"Gun type",
@@ -4439,9 +4694,9 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":0},
-                            {"id":2,"text":"SdKfz with 37mm","cost":4,"w":0},
-                            {"id":3,"text":"SdKfz with 20mm Flakvierling","cost":20,"w":0}
+                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":4},
+                            {"id":2,"text":"SdKfz with 37mm","cost":4,"w":5},
+                            {"id":3,"text":"SdKfz with 20mm Flakvierling","cost":20,"w":4}
                             ]
                         }
                     ]
@@ -4579,7 +4834,7 @@ var forces = [
                             "name":"Transport",
                             "choices":[
                                 {"id":1,"text":"Kübelwagen","cost":0,"v":54},
-                                {"id":2,"text":"Heavy Car","cost":0},
+                                {"id":2,"text":"Heavy Car","cost":0,"v":56},
                                 {"id":3,"text":"Schwimmwagen","cost":2,"v":55}
                             ]
                         }
@@ -5152,10 +5407,10 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Marder II","cost":0},
-                                    {"id":2,"text":"Marder III H","cost":4},
-                                    {"id":3,"text":"Marder III M","cost":-2},
-                                    {"id":4,"text":"Marder 38t (36r)","cost":4}
+                                    {"id":1,"text":"Marder II","cost":0,"v":20},
+                                    {"id":2,"text":"Marder III H","cost":4,"v":21},
+                                    {"id":3,"text":"Marder III M","cost":-2,"v":22},
+                                    {"id":4,"text":"Marder 38t (36r)","cost":4,"v":23}
                                 ]
                             }
                         ]
@@ -5317,7 +5572,8 @@ var forces = [
                                 "name":"Mount",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium Truck or Heavy Car","cost":4}
+                                    {"id":2,"text":"Medium Truck","cost":4,"v":58},
+                                    {"id":3,"text":"Heavy Car","cost":4,"v":56}
                                 ]
                             }
                         ]
@@ -5794,13 +6050,14 @@ var forces = [
                     "cost":16,
                     "br":1,
                     "restricted":true,
+                    "v":62,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
-                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":0},
-                            {"id":2,"text":"SdKfz with 37mm","cost":4,"w":0},
-                            {"id":3,"text":"SdKfz with 20mm Flakvierling","cost":20,"w":0}
+                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":4},
+                            {"id":2,"text":"SdKfz with 37mm","cost":4,"w":5},
+                            {"id":3,"text":"SdKfz with 20mm Flakvierling","cost":20,"w":4}
                             ]
                         }
                     ]
@@ -5810,6 +6067,7 @@ var forces = [
                     "name":"Towed 20mm AA Gun",
                     "cost":28,
                     "br":1,
+                    "w":4,
                     "options":[
                         {
                             "name":"Loader team",
@@ -5823,7 +6081,7 @@ var forces = [
                             "choices":[
                             {"id":1,"text":"None","cost":0},
                             {"id":2,"text":"Medium Truck tow","cost":4,"v":91},
-                            {"id":3,"text":"SdKfz 10 halftrack", "cost":8}
+                            {"id":3,"text":"SdKfz 10 halftrack", "cost":8,"v":62}
                             ]
                         }
                     ]
@@ -6912,7 +7170,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Gaz truck with quad Maxim MGs","cost":0,"v":91,"w":0}
+                                {"id":1,"text":"Gaz truck with quad Maxim MGs","cost":0,"v":91}
                             ]
                         }
                     ]
@@ -8688,8 +8946,8 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M10 Wolverine","cost":0,"v":0}, 
-                                    {"id":2,"text":"M10 Achilles","cost":20,"v":0} 
+                                    {"id":1,"text":"M10 Wolverine","cost":0,"v":132}, 
+                                    {"id":2,"text":"M10 Achilles","cost":20,"v":133} 
                                 ] 
                             } 
                         ] 
@@ -8725,7 +8983,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 75mm howitzers","cost":0,"w":0}
+                                    {"id":1,"text":"2 75mmL16 howitzers","cost":0,"w":65}
                                 ]
                             },
                             {
@@ -8746,8 +9004,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 75mmL16 howtizers","cost":0},
-                                    {"id":2,"text":"2 25 pdrs","cost":20}
+                                    {"id":1,"text":"2 75mmL16 howitzers","cost":0,"w":65},
+                                    {"id":2,"text":"2 25 pdrs","cost":20,"w":73}
                                 ]
                             }
                         ]
@@ -8790,7 +9048,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"75mmL16 howitzer","cost":0,"w":0}
+                                    {"id":1,"text":"75mmL16 howitzer","cost":0,"w":65}
                                 ]
                             },
                             {
@@ -8966,12 +9224,12 @@ var forces = [
                         "name":"Recon Platoon Command",
                         "cost":29,
                         "br":2,
-                        "v":0,
+                        "v":163,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"4 men and a jeep","cost":0}
+                                    {"id":1,"text":"4 men and a Jeep","cost":0}
                                 ]
                             }
                         ]
@@ -9248,7 +9506,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"17 pdr AT gun with 4 crew","cost":0,"w":0}
+                                    {"id":1,"text":"17 pdr AT gun with 4 crew","cost":0,"w":70}
                                 ]
                             },
                             {
@@ -9272,6 +9530,7 @@ var forces = [
                         "name":"Towed 20mm Polsten AA Gun",
                         "cost":36,
                         "br":1,
+                        "w":4,
                         "restricted":true,
                         "options":[
                             {
@@ -9352,14 +9611,14 @@ var forces = [
                 {
                     "id":4,
                     "name":"Timed 75mmL16 Howitzer Barrage",
-                    "w":0,
+                    "w":65,
                     "cost":10,
                     "br":0
                 },
                 {
                     "id":5,
                     "name":"Timed 25 pdr Barrage",
-                    "w":0,
+                    "w":73,
                     "cost":20,
                     "br":0
                 },
@@ -9680,11 +9939,13 @@ var forces = [
                         "br":11,
                         "officer":true, 
                         "multiplier":3,
+                        "v":123,
+                        "vc":3,
                         "options":[ 
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 Churchill AVREs","cost":0,"v":0} 
+                                    {"id":1,"text":"3 Churchill AVREs","cost":0} 
                                 ] 
                             } 
                         ] 
@@ -10640,7 +10901,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M10 Wolverine","cost":0,"v":0}
+                                    {"id":1,"text":"M10 Wolverine","cost":0,"v":132}
                                 ] 
                             } 
                         ] 
@@ -10676,7 +10937,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 75mmL16 howitzers","cost":0,"w":0}
+                                    {"id":1,"text":"2 75mmL16 howitzers","cost":0,"w":65}
                                 ]
                             },
                             {
@@ -10704,8 +10965,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 75mmL16 howtizers","cost":0},
-                                    {"id":2,"text":"2 105mmL16 howitzers","cost":20}
+                                    {"id":1,"text":"2 75mmL16 howtizers","cost":0,"w":65},
+                                    {"id":2,"text":"2 105mmL16 howitzers","cost":20,"w":75}
                                 ]
                             }
                         ]
@@ -10748,8 +11009,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"75mmL16 howitzer","cost":0,"w":0},
-                                    {"id":2,"text":"105mmL16 howitzer","cost":4,"w":0}
+                                    {"id":1,"text":"75mmL16 howitzer","cost":0,"w":65},
+                                    {"id":2,"text":"105mmL16 howitzer","cost":4,"w":75}
                                 ]
                             },
                             {
@@ -11178,7 +11439,7 @@ var forces = [
                 {
                     "id":4,
                     "name":"Timed 75mmL16 Howitzer Barrage",
-                    "w":0,
+                    "w":65,
                     "cost":5,
                     "br":0
                 },
@@ -11547,7 +11808,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 M7 Priests in a LCT","cost":0,"w":0}
+                                    {"id":1,"text":"3 M7 Priests in a LCT","cost":0}
                                 ]
                             }
                         ]
@@ -12653,9 +12914,9 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"20mm FlaK gun","cost":0},
-                                {"id":2,"text":"20mm FlaK Vierling","cost":20},
-                                {"id":3,"text":"37mm AA gun","cost":8}
+                                {"id":1,"text":"20mm FlaK gun","cost":0,"w":4},
+                                {"id":2,"text":"20mm FlaK Vierling","cost":20,"w":4},
+                                {"id":3,"text":"37mm AA gun","cost":8,"w":5}
                             ]
                         },
                         {
@@ -12777,10 +13038,10 @@ var forces = [
                                 {"id":3,"text":"3 men & M5 Halftrack","cost":8,"v":83},
                                 {"id":4,"text":"3 men & White Scout Car","cost":10,"v":84},
                                 {"id":5,"text":"Dingo Scout car","cost":0,"v":136},
-                                {"id":6,"text":"Humber Scout car","cost":0,"v":0},
-                                {"id":7,"text":"M4A4 Sherman","cost":44,"v":0},
-                                {"id":8,"text":"M4A4 Sherman HQ","cost":34,"v":0},
-                                {"id":9,"text":"Cromwell IV","cost":46,"v":0},
+                                {"id":6,"text":"Humber Scout car","cost":0,"v":134},
+                                {"id":7,"text":"M4A4 Sherman","cost":44,"v":101},
+                                {"id":8,"text":"M4A4 Sherman HQ","cost":34,"v":103},
+                                {"id":9,"text":"Cromwell IV","cost":46,"v":111},
                                 {"id":10,"text":"Cromwell IV HQ","cost":36,"v":112}
                             ]
                         }
@@ -12802,7 +13063,7 @@ var forces = [
                                 {"id":3,"text":"2 men & M5 Radio Halftrack","cost":8,"v":83},
                                 {"id":4,"text":"2 men & Bren Carrier","cost":4,"v":82},
                                 {"id":5,"text":"Dingo Scout car","cost":0,"v":136},
-                                {"id":6,"text":"Humber LRC I","cost":0,"v":0}
+                                {"id":6,"text":"Humber LRC I","cost":0,"v":141}
                             ]
                         }
                     ]
@@ -13634,7 +13895,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"3 men & Jeep","cost":0,"v":163},
                                     {"id":2,"text":"Dingo","cost":4,"v":136},
-                                    {"id":3,"text":"Humber Scout Car","cost":4,"v":0},
+                                    {"id":3,"text":"Humber Scout Car","cost":4,"v":134},
                                     {"id":4,"text":"M3 White Scout Car","cost":10,"v":84}
                                 ]
                             }
@@ -13827,7 +14088,7 @@ var forces = [
                                     {"id":2,"text":"M4 Sherman Crab","cost":0,"v":107},
                                     {"id":3,"text":"Armoured Bulldozer","cost":-44,"br":-2,"v":160},
                                     {"id":4,"text":"Churchill Ark","cost":-32,"v":125,"br":-1},
-                                    {"id":5,"text":"Churchill IV Fascine","cost":-4,"v":0},
+                                    {"id":5,"text":"Churchill IV Fascine","cost":-4,"v":123},
                                     {"id":6,"text":"Churchill AVRE Bridgelayer","cost":6,"v":123},
                                     {"id":7,"text":"Valentine Bridgelayer","cost":-38,"br":-1,"v":131}
                                 ]
@@ -13929,7 +14190,7 @@ var forces = [
                         "cost":50,
                         "br":3,
                         "restricted":true,
-                        "w":20,
+                        "w":70,
                         "options":[
                             {
                                 "name":"Composition",
@@ -14058,7 +14319,7 @@ var forces = [
                 {
                     "id":4,
                     "name":"Timed 25 pdr Barrage",
-                    "w":0,
+                    "w":73,
                     "cost":20,
                     "br":0
                 },
@@ -14139,7 +14400,7 @@ var forces = [
                             "name":"Transport",
                             "choices":[
                                 {"id":1,"text":"Kübelwagen","cost":0,"v":54},
-                                {"id":2,"text":"Heavy Car","cost":0}
+                                {"id":2,"text":"Heavy Car","cost":0,"v":56}
                             ]
                         }
                         ]
@@ -14682,7 +14943,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
                                     {"id":2,"text":"Medium Truck","cost":4,'v':58},
-                                    {"id":3,"text":"Heavy Car","cost":4,'v':0}
+                                    {"id":3,"text":"Heavy Car","cost":4,'v':56}
                                 ]
                             }
                         ]
@@ -14907,7 +15168,7 @@ var forces = [
                             "name":"Composition",
                             "choices":[
                                 {"id":1,"text":"SdKfz 222","cost":0,"v":32},
-                                {"id":2,"text":"Panhard 178","cost":4,"v":0}
+                                {"id":2,"text":"Panhard 178","cost":4,"v":202}
                             ]
                         }
                     ]
@@ -15150,10 +15411,10 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                            {"id":1,"text":"Medium Truck with 20mm","cost":0,"w":0},
-                            {"id":2,"text":"SdKfz 10 with 20mm","cost":2,"w":0},
-                            {"id":3,"text":"SdKfz with 37mm","cost":6,"w":0},
-                            {"id":4,"text":"SdKfz with 20mm Flakvierling","cost":22,"w":0}
+                            {"id":1,"text":"Medium Truck with 20mm","cost":0,"w":4},
+                            {"id":2,"text":"SdKfz 10 with 20mm","cost":2,"w":4,"v":62},
+                            {"id":3,"text":"SdKfz with 37mm","cost":6,"w":5,"v":62},
+                            {"id":4,"text":"SdKfz with 20mm Flakvierling","cost":22,"w":4,"v":62}
                             ]
                         }
                     ]
@@ -15192,6 +15453,7 @@ var forces = [
                     "name":"Towed 20mm AA Gun",
                     "cost":28,
                     "br":1,
+                    "w":4,
                     "options":[
                         {
                             "name":"Loader team",
@@ -15206,7 +15468,7 @@ var forces = [
                             {"id":1,"text":"None","cost":0},
                             {"id":2,"text":"Kettenkrad","cost":2},
                             {"id":3,"text":"Medium Truck tow","cost":4},
-                            {"id":4,"text":"SdKfz 10 halftrack", "cost":8}
+                            {"id":4,"text":"SdKfz 10 halftrack", "cost":8,"v":62}
                             ]
                         }
                     ]
@@ -15239,6 +15501,7 @@ var forces = [
                     "name":"Towed 20mm FlaK Vierling",
                     "cost":42,
                     "br":1,
+                    "w":4,
                     "options":[
                         {
                             "name":"Loader team",
@@ -15353,7 +15616,7 @@ var forces = [
                             "name":"Transport",
                             "choices":[
                                 {"id":1,"text":"Kübelwagen","cost":0,"v":54},
-                                {"id":2,"text":"Heavy Car","cost":2},
+                                {"id":2,"text":"Heavy Car","cost":2,"v":56},
                                 {"id":3,"text":"Schwimmwagen","cost":2,"v":55}
                             ]
                         }
@@ -15865,10 +16128,10 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Marder II","cost":0},
-                                    {"id":2,"text":"Marder III H","cost":4},
-                                    {"id":3,"text":"Marder III M","cost":-2},
-                                    {"id":4,"text":"Marder 38t (36r)","cost":4}
+                                    {"id":1,"text":"Marder II","cost":0,"v":20},
+                                    {"id":2,"text":"Marder III H","cost":4,"v":21},
+                                    {"id":3,"text":"Marder III M","cost":-2,"v":22},
+                                    {"id":4,"text":"Marder 38t (36r)","cost":4,"v":23}
                                 ]
                             }
                         ]
@@ -16054,7 +16317,8 @@ var forces = [
                                 "name":"Mount",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium Truck or Heavy Car","cost":4}
+                                    {"id":2,"text":"Medium Truck","cost":4,"v":58},
+                                    {"id":2,"text":"Heavy Car","cost":4,"v":56}
                                 ]
                             }
                         ]
@@ -16248,7 +16512,7 @@ var forces = [
                             "name":"Composition",
                             "choices":[
                                 {"id":1,"text":"SdKfz 222","cost":0,"v":32},
-                                {"id":2,"text":"Panhard 178","cost":4,"v":0}
+                                {"id":2,"text":"Panhard 178","cost":4,"v":202}
                             ]
                         }
                     ]
@@ -16579,9 +16843,9 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":0},
-                            {"id":2,"text":"SdKfz 6 with 37mm","cost":4,"w":0},
-                            {"id":3,"text":"SdKfz 7 with 20mm Flakvierling","cost":20,"w":0}
+                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":4,"v":62},
+                            {"id":2,"text":"SdKfz 6 with 37mm","cost":4,"w":5},
+                            {"id":3,"text":"SdKfz 7 with 20mm Flakvierling","cost":20,"w":4}
                             ]
                         }
                     ]
@@ -16591,6 +16855,7 @@ var forces = [
                     "name":"Towed 20mm AA Gun",
                     "cost":28,
                     "br":1,
+                    "w":4,
                     "options":[
                         {
                             "name":"Loader team",
@@ -16637,6 +16902,7 @@ var forces = [
                     "name":"Towed 20mm FlaK Vierling",
                     "cost":42,
                     "br":1,
+                    "w":4,
                     "options":[
                         {
                             "name":"Loader team",
@@ -17880,7 +18146,7 @@ function test_forces() {
     }
 }
 
-var debug = true;
+var debug = false;
 $( document ).ready( function() {
     forces.sort(SortByName);
     if ( debug ) {
