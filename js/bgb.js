@@ -4439,9 +4439,9 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0},
-                            {"id":2,"text":"SdKfz with 37mm","cost":4},
-                            {"id":3,"text":"SdKfz with 20mm Flakvierling","cost":20}
+                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":0},
+                            {"id":2,"text":"SdKfz with 37mm","cost":4,"w":0},
+                            {"id":3,"text":"SdKfz with 20mm Flakvierling","cost":20,"w":0}
                             ]
                         }
                     ]
@@ -5534,6 +5534,7 @@ var forces = [
                     "name":"Armoured Car",
                     "cost":20,
                     "br":1,
+                    "v":32,
                     "options":[
                         {
                             "name":"Composition",
@@ -5572,6 +5573,7 @@ var forces = [
                     "br":2,
                     "unique":true,
                     "officer":true,
+                    "v":32,
                     "options":[
                         {
                             "name":"Transport",
@@ -5796,9 +5798,9 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0},
-                            {"id":2,"text":"SdKfz with 37mm","cost":4},
-                            {"id":3,"text":"SdKfz with 20mm Flakvierling","cost":20}
+                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":0},
+                            {"id":2,"text":"SdKfz with 37mm","cost":4,"w":0},
+                            {"id":3,"text":"SdKfz with 20mm Flakvierling","cost":20,"w":0}
                             ]
                         }
                     ]
@@ -5820,7 +5822,7 @@ var forces = [
                             "name":"Tow",
                             "choices":[
                             {"id":1,"text":"None","cost":0},
-                            {"id":2,"text":"Medium Truck tow","cost":4},
+                            {"id":2,"text":"Medium Truck tow","cost":4,"v":91},
                             {"id":3,"text":"SdKfz 10 halftrack", "cost":8}
                             ]
                         }
@@ -5843,7 +5845,7 @@ var forces = [
                             "name":"Tow",
                             "choices":[
                             {"id":1,"text":"None","cost":0},
-                            {"id":2,"text":"Medium Truck tow","cost":4},
+                            {"id":2,"text":"Medium Truck tow","cost":4,"v":91},
                             {"id":3,"text":"SdKfz halftrack", "cost":8}
                             ]
                         }
@@ -5968,7 +5970,7 @@ var forces = [
                             "name":"Transport",
                             "choices":[
                                 {"id":1,"text":"Gaz Jeep","cost":0,"v":90},
-                                {"id":2,"text":"Medium Truck","cost":2}
+                                {"id":2,"text":"Medium Truck","cost":2,"v":91}
                             ]
                         }
                     ]
@@ -6707,7 +6709,7 @@ var forces = [
                             "name":"Transport",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Medium Truck","cost":4}
+                                {"id":2,"text":"Medium Truck","cost":4,"v":91}
                             ]
                         },
                         {
@@ -6910,7 +6912,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Gaz truck with quad Maxim MGs","cost":0}
+                                {"id":1,"text":"Gaz truck with quad Maxim MGs","cost":0,"v":91,"w":0}
                             ]
                         }
                     ]
@@ -8407,7 +8409,7 @@ var forces = [
                             "choices":[
                                 {"id":1,"text":"Jeep","cost":0,"v":163},
                                 {"id":2,"text":"White Scout car","cost":6,"v":84},
-                                {"id":3,"text":"Tetrarch Tank with Littlejohn Adaptor","cost":16,"v":0}
+                                {"id":3,"text":"Tetrarch Tank with Littlejohn Adaptor","cost":16,"v":118}
                             ]
                         }
                     ]
@@ -8428,7 +8430,7 @@ var forces = [
                             "name":"Transport",
                             "choices":[
                                 {"id":1,"text":"Jeep","cost":0,"v":163},
-                                {"id":2,"text":"White Scout Car","cost":6,"v":0}
+                                {"id":2,"text":"White Scout Car","cost":6,"v":84}
                             ]
                         }
                     ]
@@ -8759,7 +8761,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 3\" mortars","cost":0,"w":0}
+                                    {"id":1,"text":"3 3\" mortars","cost":0,"w":61}
                                 ]
                             }
                         ]
@@ -9097,7 +9099,7 @@ var forces = [
                         "name":"Armoured Bulldozer",
                         "cost":12,
                         "br":1,
-                        "v":0,
+                        "v":160,
                         "unique":true
                     },
                     {
@@ -9260,7 +9262,7 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium Truck tow","cost":4}
+                                    {"id":2,"text":"Medium Truck tow","cost":4,"v":91}
                                 ]
                             }
                         ]
@@ -9306,7 +9308,7 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Medium Truck tow","cost":4}
+                                {"id":2,"text":"Medium Truck tow","cost":4,"v":91}
                                 ]
                             }
                         ]
@@ -9766,6 +9768,7 @@ var forces = [
                         "id":2,
                         "name":"Priest",
                         "cost":60,
+                        "v":155,
                         "br":3
                     },
                     {
@@ -9789,11 +9792,13 @@ var forces = [
                         "multiplier":3,
                         "cost":144,
                         "br":8,
+                        "v":155,
+                        "vc":3,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 M7 Priests in a LCT","cost":0,"w":0}
+                                    {"id":1,"text":"3 M7 Priests in a LCT","cost":0}
                                 ]
                             }
                         ]
@@ -9862,7 +9867,7 @@ var forces = [
                         "name":"Armoured Bulldozer",
                         "cost":12,
                         "br":1,
-                        "v":0
+                        "v":160
                     },
                     {
                         "id":3,
@@ -10714,7 +10719,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 81mm mortars","cost":0,"w":0}
+                                    {"id":1,"text":"2 81mm mortars","cost":0,"w":2}
                                 ]
                             }
                         ]
@@ -10948,8 +10953,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M8 Greyhound","cost":0,"v":0},
-                                    {"id":2,"text":"M20 Utility Car","cost":-8,"v":0}
+                                    {"id":1,"text":"M8 Greyhound","cost":0,"v":142},
+                                    {"id":2,"text":"M20 Utility Car","cost":-8,"v":143}
                                 ]
                             }
                         ]
@@ -11334,7 +11339,7 @@ var forces = [
                             "name":"Light Mortar Team",
                             "cost":0,
                             "br":0,
-                            "w":0,
+                            "w":60,
                             "mandatory":true
                         },
                         {
@@ -11399,7 +11404,7 @@ var forces = [
                             "name":"Light Mortar Team",
                             "cost":0,
                             "br":0,
-                            "w":0,
+                            "w":60,
                             "mandatory":true
                         },
                         {
@@ -11505,6 +11510,7 @@ var forces = [
                         "id":2,
                         "name":"M7 Priest",
                         "cost":58,
+                        "v":155,
                         "br":3
                     },
                     {
@@ -11535,6 +11541,8 @@ var forces = [
                         "cost":170,
                         "br":8,
                         "multiplier":3,
+                        "v":155,
+                        "vc":3,
                         "options":[
                             {
                                 "name":"Composition",
@@ -11617,7 +11625,7 @@ var forces = [
                         "name":"Armoured Bulldozer",
                         "cost":12,
                         "br":1,
-                        "v":0
+                        "v":160
                     },
                     {
                         "id":3,
@@ -11710,7 +11718,7 @@ var forces = [
                                 "cost":0,
                                 "br":0,
                                 "count":1,
-                                "w":0,
+                                "w":61,
                                 "mandatory":true,
                                 "options":[
                                     {
@@ -12766,14 +12774,14 @@ var forces = [
                             "choices":[
                                 {"id":1,"text":"3 men","cost":0},
                                 {"id":2,"text":"3 men & Jeep","cost":2,"v":163},
-                                {"id":3,"text":"3 men & M5 Halftrack","cost":8,"v":0},
-                                {"id":4,"text":"3 men & White Scout Car","cost":10,"v":0},
-                                {"id":5,"text":"Dingo Scout car","cost":0,"v":0},
+                                {"id":3,"text":"3 men & M5 Halftrack","cost":8,"v":83},
+                                {"id":4,"text":"3 men & White Scout Car","cost":10,"v":84},
+                                {"id":5,"text":"Dingo Scout car","cost":0,"v":136},
                                 {"id":6,"text":"Humber Scout car","cost":0,"v":0},
                                 {"id":7,"text":"M4A4 Sherman","cost":44,"v":0},
                                 {"id":8,"text":"M4A4 Sherman HQ","cost":34,"v":0},
                                 {"id":9,"text":"Cromwell IV","cost":46,"v":0},
-                                {"id":10,"text":"Cromwell IV HQ","cost":36,"v":0}
+                                {"id":10,"text":"Cromwell IV HQ","cost":36,"v":112}
                             ]
                         }
                     ]
@@ -12790,10 +12798,10 @@ var forces = [
                             "name":"Composition",
                             "choices":[
                                 {"id":1,"text":"2 men & Jeep","cost":0,"v":163},
-                                {"id":2,"text":"2 men & Radio Medium Truck","cost":2,"v":0},
-                                {"id":3,"text":"2 men & M5 Radio halftrack","cost":8,"v":0},
-                                {"id":4,"text":"2 men & Bren Carrier","cost":4,"v":0},
-                                {"id":5,"text":"Dingo Scout car","cost":0,"v":0},
+                                {"id":2,"text":"2 men & Radio Medium Truck","cost":2,"v":91},
+                                {"id":3,"text":"2 men & M5 Radio Halftrack","cost":8,"v":83},
+                                {"id":4,"text":"2 men & Bren Carrier","cost":4,"v":82},
+                                {"id":5,"text":"Dingo Scout car","cost":0,"v":136},
                                 {"id":6,"text":"Humber LRC I","cost":0,"v":0}
                             ]
                         }
@@ -12910,7 +12918,7 @@ var forces = [
                                         "name":"Mount",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Bren Carrier","cost":6}
+                                            {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
                                 ]
@@ -12926,7 +12934,7 @@ var forces = [
                                         "name":"Mount",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Bren Carrier","cost":6}
+                                            {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
                                 ]
@@ -12936,7 +12944,7 @@ var forces = [
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
-                                "w":0,
+                                "w":61,
                                 "unique":true,
                                 "options":[
                                     {
@@ -12950,7 +12958,7 @@ var forces = [
                                         "name":"Mount",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Bren Carrier","cost":6}
+                                            {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
                                 ]
@@ -13018,11 +13026,12 @@ var forces = [
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
+                                "w":60,
                                 "options":[
                                     {
                                         "name":"Composition",
                                         "choices":[
-                                            {"id":1,"text":"4 men with 2\" mortar","cost":0,"w":0}
+                                            {"id":1,"text":"4 men with 2\" mortar","cost":0}
                                         ]
                                     },
                                     {
@@ -13087,7 +13096,7 @@ var forces = [
                                         "name":"Mount",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Bren Carrier","cost":6}
+                                            {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
                                 ]
@@ -13103,7 +13112,7 @@ var forces = [
                                         "name":"Mount",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Bren Carrier","cost":6}
+                                            {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
                                 ]
@@ -13113,7 +13122,7 @@ var forces = [
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
-                                "w":0,
+                                "w":61,
                                 "unique":true,
                                 "options":[
                                     {
@@ -13127,7 +13136,7 @@ var forces = [
                                         "name":"Mount",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Bren Carrier","cost":6}
+                                            {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
                                 ]
@@ -13376,7 +13385,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"Jeep","cost":0,"v":163},
                                     {"id":2,"text":"Bren Carrier","cost":4,"v":82},
-                                    {"id":3,"text":"Dingo Scout Car","cost":4,"v":0}
+                                    {"id":3,"text":"Dingo Scout Car","cost":4,"v":136}
                                 ]
                             }
                         ]
@@ -13391,7 +13400,7 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"M4 Sherman HQ","cost":0,"v":103},
-                                    {"id":2,"text":"Cromwell IV HQ","cost":2,"v":0}
+                                    {"id":2,"text":"Cromwell IV HQ","cost":2,"v":112}
                                 ]
                             }
                         ]
@@ -13448,6 +13457,7 @@ var forces = [
                         "cost":80,
                         "br":4,
                         "v":154,
+                        "vc":2,
                         "options":[
                             {
                                 "name":"Composition",
@@ -13463,7 +13473,7 @@ var forces = [
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":1,
-                        "w":0,
+                        "w":62,
                         "options":[
                             {
                                 "name":"Composition",
@@ -13496,8 +13506,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 3\" mortars","cost":0,"w":0},
-                                    {"id":2,"text":"2 4.2\" mortars","cost":18,"w":0}
+                                    {"id":1,"text":"2 3\" mortars","cost":0,"w":61},
+                                    {"id":2,"text":"2 4.2\" mortars","cost":18,"w":62}
                                 ]
                             }
                         ]
@@ -13623,9 +13633,9 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"3 men & Jeep","cost":0,"v":163},
-                                    {"id":2,"text":"Dingo","cost":4,"v":0},
+                                    {"id":2,"text":"Dingo","cost":4,"v":136},
                                     {"id":3,"text":"Humber Scout Car","cost":4,"v":0},
-                                    {"id":4,"text":"M3 White Scout Car","cost":10,"v":0}
+                                    {"id":4,"text":"M3 White Scout Car","cost":10,"v":84}
                                 ]
                             }
                         ]
@@ -13640,8 +13650,8 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"M3 White Scout Car","cost":0,"v":84},
-                                    {"id":2,"text":"Humber Scout Car","cost":-12,"v":0},
-                                    {"id":3,"text":"Humber IV Armoured Car","cost":10,"v":0},
+                                    {"id":2,"text":"Humber Scout Car","cost":-12,"v":134},
+                                    {"id":3,"text":"Humber IV Armoured Car","cost":10,"v":135},
                                     {"id":4,"text":"Daimler","cost":8,"v":137},
                                     {"id":5,"text":"Dingo","cost":-12,"v":136},
                                     {"id":6,"text":"Staghound","cost":12,"v":138},
@@ -13815,7 +13825,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"M4 Sherman Dozer","cost":0,"v":108},
                                     {"id":2,"text":"M4 Sherman Crab","cost":0,"v":107},
-                                    {"id":3,"text":"Armoured Bulldozer","cost":-44,"br":-2,"v":0},
+                                    {"id":3,"text":"Armoured Bulldozer","cost":-44,"br":-2,"v":160},
                                     {"id":4,"text":"Churchill Ark","cost":-32,"v":125,"br":-1},
                                     {"id":5,"text":"Churchill IV Fascine","cost":-4,"v":0},
                                     {"id":6,"text":"Churchill AVRE Bridgelayer","cost":6,"v":123},
@@ -13953,7 +13963,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Ram Kangaroo","cost":0,"v":0},
+                                    {"id":1,"text":"Ram Kangaroo","cost":0,"v":147},
                                     {"id":2,"text":"Churchill AVRE","cost":39,"br":2,"restricted":true,"v":123},
                                     {"id":3,"text":"Churchill Crocodile","cost":65,"br":2,"restricted":true,"v":124},
                                     {"id":4,"text":"Centaur IV","cost":31,"br":2,"restricted":true,"v":127},
@@ -13967,7 +13977,7 @@ var forces = [
                         "name":"Towed Anti-Aircraft Gun",
                         "cost":36,
                         "br":1,
-                        "w":0,
+                        "w":63,
                         "options":[
                             {
                                 "name":"Composition",
@@ -13986,7 +13996,7 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium Truck tow","cost":4,"v":0}
+                                    {"id":2,"text":"Medium Truck tow","cost":4,"v":91}
                                 ]
                             }
                         ]
@@ -14001,7 +14011,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                {"id":1,"text":"Medium Truck with 40mm Bofors","cost":0},
+                                {"id":1,"text":"Medium Truck with 40mm Bofors","cost":91,"w":63},
                                 {"id":2,"text":"Crusader AA Mk I","cost":10,"br":2},
                                 {"id":3,"text":"Crusader AA Mk II","cost":18,"br":2},
                                 {"id":4,"text":"Centaur AA Mk II","cost":15,"br":2}
@@ -14579,7 +14589,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
                                     {"id":2,"text":"Horse drawn limber","cost":2},
-                                    {"id":3,"text":"Medium Truck","cost":4}
+                                    {"id":3,"text":"Medium Truck","cost":4,"v":91}
                                 ]
                             }
                         ]
@@ -14626,7 +14636,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
                                     {"id":2,"text":"Horse drawn limber","cost":2},
-                                    {"id":3,"text":"Medium Truck","cost":6}
+                                    {"id":3,"text":"Medium Truck","cost":6,"v":91}
                                 ]
                             }
                         ]
@@ -14671,7 +14681,8 @@ var forces = [
                                 "name":"Mount",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium Truck or Heavy Car","cost":4}
+                                    {"id":2,"text":"Medium Truck","cost":4,'v':58},
+                                    {"id":3,"text":"Heavy Car","cost":4,'v':0}
                                 ]
                             }
                         ]
@@ -14895,8 +14906,8 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"SdKfz 222","cost":0},
-                                {"id":2,"text":"Panhard 178","cost":4}
+                                {"id":1,"text":"SdKfz 222","cost":0,"v":32},
+                                {"id":2,"text":"Panhard 178","cost":4,"v":0}
                             ]
                         }
                     ]
@@ -15139,10 +15150,10 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                            {"id":1,"text":"Medium Truck with 20mm","cost":0},
-                            {"id":2,"text":"SdKfz 10 with 20mm","cost":2},
-                            {"id":3,"text":"SdKfz with 37mm","cost":6},
-                            {"id":4,"text":"SdKfz with 20mm Flakvierling","cost":22}
+                            {"id":1,"text":"Medium Truck with 20mm","cost":0,"w":0},
+                            {"id":2,"text":"SdKfz 10 with 20mm","cost":2,"w":0},
+                            {"id":3,"text":"SdKfz with 37mm","cost":6,"w":0},
+                            {"id":4,"text":"SdKfz with 20mm Flakvierling","cost":22,"w":0}
                             ]
                         }
                     ]
@@ -16236,8 +16247,8 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"SdKfz 222","cost":0},
-                                {"id":2,"text":"Panhard 178","cost":4}
+                                {"id":1,"text":"SdKfz 222","cost":0,"v":32},
+                                {"id":2,"text":"Panhard 178","cost":4,"v":0}
                             ]
                         }
                     ]
@@ -16568,9 +16579,9 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0},
-                            {"id":2,"text":"SdKfz 6 with 37mm","cost":4},
-                            {"id":3,"text":"SdKfz 7 with 20mm Flakvierling","cost":20}
+                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":0},
+                            {"id":2,"text":"SdKfz 6 with 37mm","cost":4,"w":0},
+                            {"id":3,"text":"SdKfz 7 with 20mm Flakvierling","cost":20,"w":0}
                             ]
                         }
                     ]
@@ -17869,7 +17880,7 @@ function test_forces() {
     }
 }
 
-var debug = false;
+var debug = true;
 $( document ).ready( function() {
     forces.sort(SortByName);
     if ( debug ) {
