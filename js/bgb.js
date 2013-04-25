@@ -635,11 +635,13 @@ var vehicles = [
     'id':83,
     'name':'M5 Halftrack',
     'armour':true,
+    'open':true,
     'mg':true
 },
 {
     'id':84,
     'name':'White Scout Car',
+    'open':true,
     'armour':true,
     'mg':true
 },
@@ -943,6 +945,7 @@ var vehicles = [
 {
     'id':128,
     'name':'Centaur AA',
+    'open':true,
     'armour':true,
     'weapons':[1],
     'mg':true,
@@ -952,6 +955,7 @@ var vehicles = [
     'id':129,
     'name':'Crusader AA I',
     'armour':true,
+    'open':true,
     'weapons':[1],
     'mg':true,
     'ammo':true
@@ -976,6 +980,7 @@ var vehicles = [
     'id':132,
     'name':'M10 Wolverine',
     'armour':true,
+    'open':true,
     'weapons':[1],
     'mg':true,
     'ammo':true
@@ -984,6 +989,7 @@ var vehicles = [
     'id':133,
     'name':'M10 Achilles',
     'armour':true,
+    'open':true,
     'weapons':[1],
     'mg':true,
     'ammo':true
@@ -1006,6 +1012,7 @@ var vehicles = [
     'id':136,
     'name':'Dingo',
     'armour':true,
+    'open':true,
     'mg':true
 },
 {
@@ -1047,6 +1054,7 @@ var vehicles = [
 {
     'id':142,
     'name':'M8 Greyhound',
+    'open':true,
     'armour':true,
     'weapons':[1],
     'mg':true,
@@ -1055,6 +1063,7 @@ var vehicles = [
 {
     'id':143,
     'name':'M20 Utility Car',
+    'open':true,
     'armour':true,
     'weapons':[1],
     'mg':true,
@@ -1063,6 +1072,7 @@ var vehicles = [
 {
     'id':144,
     'name':'M16',
+    'open':true,
     'armour':true,
     'weapons':[1],
     'mg':true,
@@ -1070,6 +1080,7 @@ var vehicles = [
 },
 {
     'id':145,
+    'open':true,
     'name':'M15',
     'armour':true,
     'weapons':[1],
@@ -1079,35 +1090,37 @@ var vehicles = [
 {
     'id':146,
     'name':'M9 Halftrack',
+    'open':true,
     'armour':true,
     'mg':true
 },
 {
     'id':147,
     'name':'Ram Kangaroo',
+    'open':true,
     'armour':true,
     'mg':true
 },
 {
     'id':148,
     'name':'M3 Halftrack',
+    'open':true,
     'armour':true,
     'mg':true
 },
 {
-    'id':149,
-    'name':'Bren Carrier',
-    'armour':true,
-    'mg':true
+    'id':149
 },
 {
     'id':150,
     'name':'Loyd Carrier',
+    'open':true,
     'armour':true
 },
 {
     'id':151,
     'name':'Wasp',
+    'open':true,
     'armour':true,
     'weapons':[32],
     'ammo':true
@@ -1115,11 +1128,13 @@ var vehicles = [
 {
     'id':152,
     'name':'Crusader Tractor',
+    'open':true,
     'armour':true
 },
 {
     'id':153,
     'name':'M35 Primer Mover',
+    'open':true,
     'armour':true
 },
 {
@@ -1132,6 +1147,7 @@ var vehicles = [
 {
     'id':155,
     'name':'Priest',
+    'open':true,
     'armour':true,
     'weapons':[1],
     'mg':true,
@@ -1141,6 +1157,7 @@ var vehicles = [
     'id':156,
     'name':'M8 HMC',
     'armour':true,
+    'open':true,
     'weapons':[1],
     'mg':true,
     'ammo':true
@@ -1148,6 +1165,7 @@ var vehicles = [
 {
     'id':157,
     'name':'M4 or M21 Halftrack',
+    'open':true,
     'armour':true,
     'weapons':[1],
     'mg':true,
@@ -1156,6 +1174,7 @@ var vehicles = [
 {
     'id':158,
     'name':'M12 Halftrack',
+    'open':true,
     'armour':true,
     'weapons':[1],
     'ammo':true
@@ -1173,12 +1192,14 @@ var vehicles = [
 {
     'id':161,
     'name':'M32 ARV',
+    'open':true,
     'armour':true,
     'mg':true
 },
 {
     'id':162,
     'name':'M30 Cargo Carrier',
+    'open':true,
     'armour':true,
     'mg':true
 },
@@ -1383,6 +1404,7 @@ var vehicles = [
 {
     'id':194,
     'name':'Flakpanzer 38(t)',
+    'open':true,
     'armour':true,
     'weapons':[4],
     'ammo':true
@@ -1390,6 +1412,7 @@ var vehicles = [
 {
     'id':195,
     'name':'Möbelwagen',
+    'open':true,
     'armour':true,
     'weapons':[95],
     'mg':true,
@@ -1398,6 +1421,7 @@ var vehicles = [
 {
     'id':196,
     'name':'Wirbelwind',
+    'open':true,
     'armour':true,
     'weapons':[4],
     'mg':true,
@@ -1406,6 +1430,7 @@ var vehicles = [
 {
     'id':197,
     'name':'Armoured SdKfz 7/1',
+    'open':true,
     'armour':true,
     'weapons':[95],
     'ammo':true
@@ -1435,6 +1460,7 @@ var vehicles = [
 {
     'id':201,
     'name':'SdKfz 234/3',
+    'open':true,
     'armour':true,
     'weapons':[11],
     'ammo':true
@@ -1450,6 +1476,7 @@ var vehicles = [
 {
     'id':203,
     'name':'SdKfz 251 Werfrahmen 40',
+    'open':true,
     'armour':true,
     'weapons':[31],
     'ammo':true,
@@ -6844,7 +6871,7 @@ var forces = [
                             "name":"Transport",
                             "choices":[
                                 {"id":1,"text":"White Scout Car","cost":0,"v":84},
-                                {"id":2,"text":"M5 halftrack","cost":4,"v":83}
+                                {"id":2,"text":"M5 Halftrack","cost":4,"v":83}
                             ]
                         },
                         {
@@ -7114,7 +7141,7 @@ var forces = [
                         "choices":[
                             {"id":1,"text":"Jeep Ambulance","cost":163},
                             {"id":2,"text":"Ambulance medium truck","cost":2},
-                            {"id":3,"text":"M5 halftrack Ambulance","cost":6,"v":83}
+                            {"id":3,"text":"M5 Halftrack Ambulance","cost":6,"v":83}
                         ]
                         }
                     ]
@@ -14041,7 +14068,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
                                     {"id":2,"text":"Medium truck","cost":4,"v":58},
-                                    {"id":3,"text":"M5 halftrack","cost":8,"v":83}
+                                    {"id":3,"text":"M5 Halftrack","cost":8,"v":83}
                                 ]
                             },
                             {
@@ -14220,7 +14247,7 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"M5 halftrack tow","cost":8,"v":83},
+                                    {"id":2,"text":"M5 Halftrack tow","cost":8,"v":83},
                                     {"id":3,"text":"Crusader Tractor tow","cost":10,"v":152}
                                 ]
                             }
