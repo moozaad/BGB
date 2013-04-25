@@ -808,7 +808,7 @@ var vehicles = [
     'id':111,
     'name':'Cromwell IV or V',
     'armour':true,
-    'weapons':[1],
+    'weapons':[59],
     'mg':true,
     'ammo':true
 },
@@ -936,7 +936,7 @@ var vehicles = [
     'id':127,
     'name':'Centaur IV',
     'armour':true,
-    'weapons':[1],
+    'weapons':[72],
     'mg':true,
     'ammo':true
 },
@@ -1078,7 +1078,7 @@ var vehicles = [
 },
 {
     'id':146,
-    'name':'M5/M9 Halftrack',
+    'name':'M9 Halftrack',
     'armour':true,
     'mg':true
 },
@@ -9916,6 +9916,7 @@ var forces = [
                         "br":11, 
                         "multiplier":3,
                         "v":127,
+                        "vc":3,
                         "officer":true, 
                         "options":[ 
                             { 
@@ -13298,7 +13299,8 @@ var forces = [
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"M5 or M9 halftrack","cost":0,"v":146}
+                                            {"id":1,"text":"M5 Halftrack","cost":0,"v":83},
+                                            {"id":2,"text":"M9 Halftrack","cost":0,"v":146}
                                         ]
                                     }
                                 ]
@@ -13314,7 +13316,8 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":2,"text":"M5 or M9 halftrack","cost":0,"v":146}
+                                            {"id":1,"text":"M5 Halftrack","cost":0,"v":83},
+                                            {"id":2,"text":"M9 Halftrack","cost":0,"v":146}
                                         ]
                                     }
                                 ]
@@ -13443,7 +13446,8 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"M5 or M9 halftrack","cost":0,"v":146}
+                                    {"id":1,"text":"M5 Halftrack","cost":0,"v":83},
+                                    {"id":2,"text":"M9 Halftrack","cost":0,"v":146}
                                 ]
                             }
                         ]
@@ -13956,7 +13960,8 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"M5 or M9 halftrack","cost":0,"v":146}
+                                    {"id":1,"text":"M5 Halftrack","cost":0,"v":83},
+                                    {"id":2,"text":"M9 Halftrack","cost":0,"v":146}
                                 ]
                             }
                         ]
