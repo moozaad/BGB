@@ -694,9 +694,9 @@ var vehicles = [
     'hits':true,
     'capacity':12
 },
-{ // greg confirm
+{
     'id':92,
-    'name':'Radio Van TBC',
+    'name':'Radio Van',
     'hits':true
 },
 {
@@ -1258,6 +1258,60 @@ var vehicles = [
     'hits':true,
     'capacity':25
 },
+{
+    'id':176,
+    'name':'Bedford MWD',
+    'hits':true,
+    'capacity':8
+},
+{
+    'id':177,
+    'name':'Bedford OXD',
+    'hits':true,
+    'capacity':12
+},
+{
+    'id':178,
+    'name':'Bedford OYD',
+    'hits':true,
+    'capacity':14
+},
+{
+    'id':179,
+    'name':'Bedford QLT/QLD',
+    'hits':true,
+    'capacity':22
+},
+{
+    'id':180,
+    'name':'Leyland Hippo',
+    'hits':true,
+    'capacity':32
+},
+{
+    'id':181,
+    'name':'AEC Matador',
+    'hits':true,
+    'capacity':0
+},
+{
+    'id':182,
+    'name':'Morris Quad',
+    'hits':true,
+    'capacity':0
+},
+{
+    'id':183,
+    'name':'Scammel Pioneer',
+    'hits':true,
+    'capacity':0
+},
+{
+    'id':184,
+    'name':'Austin K2 ambulance',
+    'hits':true,
+    'capacity':0
+},
     // greg to-do, landing craft
 {
 }
@@ -1515,7 +1569,7 @@ var weapons = {
         ]
     },
     19:{
-        'name':'88mmL56',
+        'name':'88mmL56 (FlaK36)',
         'stats':[
         {
             'type':'HE [M]',
@@ -4558,7 +4612,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Medium Radio Truck","cost":0},
+                                {"id":1,"text":"Medium Radio Truck","cost":91},
                                 {"id":2,"text":"Radio van","cost":0}
                             ]
                         }
@@ -5675,6 +5729,7 @@ var forces = [
                     "name":"Heavy Anti-Tank Gun",
                     "cost":51,
                     "br":3,
+                    "w":20,
                     "options":[
                         {
                             "name":"Composition",
@@ -5693,7 +5748,7 @@ var forces = [
                             "name":"Tow",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"SdkFz 7","cost":8}
+                                {"id":2,"text":"SdkFz 7","cost":8,"v":65}
                             ]
                         }
                     ]
@@ -5932,8 +5987,8 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Medium Radio Truck","cost":0},
-                                {"id":2,"text":"Radio Van","cost":0}
+                                {"id":1,"text":"Medium Radio Truck","cost":91},
+                                {"id":2,"text":"Radio Van","cost":92}
                             ]
                         }
                     ]
@@ -5996,7 +6051,7 @@ var forces = [
                                         "name":"Transport",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Jeep","cost":2,"v":0}
+                                            {"id":2,"text":"Gaz Jeep","cost":2,"v":90}
                                         ]
                                     },
                                     {
@@ -6544,7 +6599,7 @@ var forces = [
                     "id":3,
                     "name":"Jeep Reconnaissance Team",
                     "cost":18,
-                    "v":0,
+                    "v":163,
                     "br":2
                 },
                 {
@@ -6796,7 +6851,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"Jeep Ambulance","cost":0},
+                            {"id":1,"text":"Jeep Ambulance","cost":163},
                             {"id":2,"text":"Ambulance medium truck","cost":2},
                             {"id":3,"text":"M5 halftrack Ambulance","cost":6,"v":83}
                         ]
@@ -8349,7 +8404,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Jeep","cost":0,"v":0},
+                                {"id":1,"text":"Jeep","cost":0,"v":163},
                                 {"id":2,"text":"White Scout car","cost":6,"v":84},
                                 {"id":3,"text":"Tetrarch Tank with Littlejohn Adaptor","cost":16,"v":0}
                             ]
@@ -8371,7 +8426,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Jeep","cost":0,"v":0},
+                                {"id":1,"text":"Jeep","cost":0,"v":163},
                                 {"id":2,"text":"White Scout Car","cost":6,"v":0}
                             ]
                         }
@@ -8502,7 +8557,7 @@ var forces = [
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
                                             {"id":2,"text":"3-man loader team","cost":10},
-                                            {"id":3,"text":"Mount in a Jeep","cost":2}
+                                            {"id":3,"text":"Mount in a Jeep","cost":2,"v":163}
                                         ]
                                     }
                                 ]
@@ -8527,7 +8582,7 @@ var forces = [
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
                                             {"id":2,"text":"3-man loader team","cost":10},
-                                            {"id":3,"text":"Mount in a Jeep","cost":2}
+                                            {"id":3,"text":"Mount in a Jeep","cost":2,"v":163}
                                         ]
                                     }
                                 ]
@@ -8556,7 +8611,7 @@ var forces = [
                                         "name":"Tow",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Jeep","cost":2,"v":0}
+                                            {"id":2,"text":"Jeep","cost":2,"v":163}
                                         ]
                                     }
                                 ]
@@ -8653,7 +8708,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":0}
+                                    {"id":1,"text":"Jeep","cost":0,"v":163}
                                 ]
                             }
                         ]
@@ -8674,7 +8729,7 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"2 Jeep tows","cost":4}
+                                    {"id":2,"text":"2 Jeep tows","cost":4,"v":163}
                                 ]
                             }
                         ]
@@ -8746,7 +8801,7 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"id":1,"text":"No tow","cost":0},
-                                    {"id":2,"text":"Jeep tow","cost":4,"v":0}
+                                    {"id":2,"text":"Jeep tow","cost":4,"v":163}
                                 ]
                             }
                         ]
@@ -8890,7 +8945,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":0},
+                                    {"id":1,"text":"Jeep","cost":0,"v":163},
                                     {"id":2,"text":"Bren Carrier","cost":4,"v":82}
                                 ]
                             },
@@ -8908,6 +8963,7 @@ var forces = [
                         "name":"Recon Platoon Command",
                         "cost":29,
                         "br":2,
+                        "v":0,
                         "options":[
                             {
                                 "name":"Composition",
@@ -9048,14 +9104,13 @@ var forces = [
                         "name":"Recovery Vehicle",
                         "cost":16,
                         "br":1,
-                        "v":0,
                         "unique":true,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Scammel Recovery Truck","cost":0},
-                                    {"id":2,"text":"Sherman ARV","cost":6}
+                                    {"id":1,"text":"Scammel Recovery Truck","cost":0,"v":183},
+                                    {"id":2,"text":"Sherman ARV","cost":6,"v":109}
                                 ]
                             }
                         ]
@@ -9096,7 +9151,7 @@ var forces = [
                         "name":"Centaur",
                         "cost":46,
                         "br":3,
-                        "v":0,
+                        "v":127,
                         "restricted":true
                     }
                 ]
@@ -9112,6 +9167,7 @@ var forces = [
                         "name":"Supply Column",
                         "cost":8,
                         "br":1,
+                        "v":163,
                         "unique":true,
                         "options":[
                             {
@@ -9148,7 +9204,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":0},
+                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":163},
                                 {"id":2,"text":"Ambulance Carrier","cost":2}
                             ]
                             }
@@ -9226,7 +9282,7 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Jeep","cost":2}
+                                {"id":2,"text":"Jeep","cost":2,"v":163}
                                 ]
                             }
                         ]
@@ -9376,6 +9432,7 @@ var forces = [
                     "br":3,
                     "unique":true,
                     "officer":true,
+                    "v":163,
                     "options":[
                         {
                             "name":"Transport",
@@ -9397,6 +9454,7 @@ var forces = [
                     "cost":16,
                     "br":1,
                     "unique":true,
+                    "v":163,
                     "options":[
                         {
                             "name":"Transport",
@@ -9595,12 +9653,13 @@ var forces = [
                         "cost":170, 
                         "br":11, 
                         "multiplier":3,
+                        "v":127,
                         "officer":true, 
                         "options":[ 
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 Centaur IV","cost":0,"v":107} 
+                                    {"id":1,"text":"3 Centaur IV","cost":0} 
                                 ] 
                             } 
                         ] 
@@ -9697,7 +9756,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":0}
+                                    {"id":1,"text":"Jeep","cost":0,"v":163}
                                 ]
                             }
                         ]
@@ -10093,8 +10152,8 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"None","cost":0,"v":0},
-                                {"id":2,"text":"Jeep","cost":2,"v":0}
+                                {"id":1,"text":"None","cost":0},
+                                {"id":2,"text":"Jeep","cost":2,"v":163}
                             ]
                         },
                         {
@@ -10116,7 +10175,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Radio Jeep","cost":0,"v":0}
+                                {"id":1,"text":"Radio Jeep","cost":0,"v":163}
                             ]
                         }
                     ]
@@ -10251,7 +10310,7 @@ var forces = [
                                         "name":"Mount",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Jeep","cost":2}
+                                            {"id":2,"text":"Jeep","cost":2,"v":163}
                                         ]
                                     }
                                 ]
@@ -10282,7 +10341,7 @@ var forces = [
                                         "name":"Mount",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Jeep mount","cost":2}
+                                            {"id":2,"text":"Jeep mount","cost":2,"v":163}
                                         ]
                                     }
                                 ]
@@ -10311,7 +10370,7 @@ var forces = [
                                         "name":"Tow",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Jeep tow","cost":2,"v":0}
+                                            {"id":2,"text":"Jeep tow","cost":2,"v":163}
                                         ]
                                     }
                                 ]
@@ -10414,7 +10473,7 @@ var forces = [
                                         "name":"Mount",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Jeep mount","cost":2}
+                                            {"id":2,"text":"Jeep mount","cost":2,"v":163}
                                         ]
                                     }
                                 ]
@@ -10463,7 +10522,7 @@ var forces = [
                                         "name":"Mount",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Jeep mount","cost":2}
+                                            {"id":2,"text":"Jeep mount","cost":2,"v":163}
                                         ]
                                     }
                                 ]
@@ -10492,7 +10551,7 @@ var forces = [
                                         "name":"Tow",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Jeep tow","cost":2,"v":0}
+                                            {"id":2,"text":"Jeep tow","cost":2,"v":163}
                                         ]
                                     }
                                 ]
@@ -10597,7 +10656,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":0}
+                                    {"id":1,"text":"Jeep","cost":0,"v":163}
                                 ]
                             }
                         ]
@@ -10625,7 +10684,7 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"2 Jeep tows","cost":4}
+                                    {"id":2,"text":"2 Jeep tows","cost":4,"v":163}
                                 ]
                             }
                         ]
@@ -10698,7 +10757,7 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"id":1,"text":"No tow","cost":0},
-                                    {"id":2,"text":"Jeep tow","cost":4,"v":0}
+                                    {"id":2,"text":"Jeep tow","cost":4,"v":163}
                                 ]
                             }
                         ]
@@ -10837,7 +10896,7 @@ var forces = [
                         "id":2,
                         "name":"Jeep Reconnaissance Team",
                         "cost":26,
-                        "v":0,
+                        "v":163,
                         "br":1
                     },
                     {
@@ -10847,6 +10906,7 @@ var forces = [
                         "br":2,
                         "officer":true,
                         "unique":true,
+                        "v":163,
                         "options":[
                             {
                                 "name":"Composition",
@@ -10927,7 +10987,7 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"Sherman ARV","cost":0,"v":109},
-                                    {"id":2,"text":"M1 Wrecker Heavy Truck","cost":-4,"v":61}
+                                    {"id":2,"text":"M1 Wrecker Heavy Truck","cost":-4,"v":172}
                                 ]
                             }
                         ]
@@ -10983,6 +11043,7 @@ var forces = [
                         "cost":8,
                         "br":1,
                         "unique":true,
+                        "v":163,
                         "options":[
                             {
                                 "name":"Composition",
@@ -11019,7 +11080,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":0}
+                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":163}
                             ]
                             }
                         ]
@@ -11067,7 +11128,7 @@ var forces = [
                                 "name":"Mount",
                                 "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Jeep","cost":2}
+                                {"id":2,"text":"Jeep","cost":2,"v":163}
                                 ]
                             }
                         ]
@@ -11194,6 +11255,7 @@ var forces = [
                     "br":3,
                     "unique":true,
                     "officer":true,
+                    "v":163,
                     "options":[
                         {
                             "name":"Transport",
@@ -11209,6 +11271,7 @@ var forces = [
                     "cost":18,
                     "br":1,
                     "unique":true,
+                    "v":163,
                     "options":[
                         {
                             "name":"Transport",
@@ -11421,6 +11484,7 @@ var forces = [
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
+                "v":163,
                 "entries":[
                     {
                         "id":1,
@@ -11431,7 +11495,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":0}
+                                    {"id":1,"text":"Jeep","cost":0}
                                 ]
                             }
                         ]
@@ -11826,11 +11890,12 @@ var forces = [
                     "br":1,
                     "cost":18,
                     "unique":true,
+                    "v":92,
                     "options":[
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Radio Van","cost":0,"v":0}
+                                {"id":1,"text":"Radio Van","cost":0}
                             ]
                         }
                     ]
@@ -12175,10 +12240,10 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"75mmL11 Infantry Gun","cost":0,'w':0},
-                                    {"id":2,"text":"76.2mmL16 Infantry Gun","cost":0,'w':0},
-                                    {"id":3,"text":"10mmL19 Infantry Gun","cost":25,'w':0},
-                                    {"id":4,"text":"150mmL12 Infantry Gun","cost":35,'br':1,'w':0}
+                                    {"id":1,"text":"75mmL11 Infantry Gun","cost":0,'w':99},
+                                    {"id":2,"text":"76.2mmL16 Infantry Gun","cost":0,'w':41},
+                                    {"id":3,"text":"100mmL19 Infantry Gun","cost":25,'w':101},
+                                    {"id":4,"text":"150mmL12 Infantry Gun","cost":35,'br':1,'w':25}
                                 ]
                             },
                             {
@@ -12699,7 +12764,7 @@ var forces = [
                             "name":"Composition",
                             "choices":[
                                 {"id":1,"text":"3 men","cost":0},
-                                {"id":2,"text":"3 men & Jeep","cost":2},
+                                {"id":2,"text":"3 men & Jeep","cost":2,"v":163},
                                 {"id":3,"text":"3 men & M5 Halftrack","cost":8,"v":0},
                                 {"id":4,"text":"3 men & White Scout Car","cost":10,"v":0},
                                 {"id":5,"text":"Dingo Scout car","cost":0,"v":0},
@@ -12723,7 +12788,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men & Jeep","cost":0,"v":54},
+                                {"id":1,"text":"2 men & Jeep","cost":0,"v":163},
                                 {"id":2,"text":"2 men & Radio Medium Truck","cost":2,"v":0},
                                 {"id":3,"text":"2 men & M5 Radio halftrack","cost":8,"v":0},
                                 {"id":4,"text":"2 men & Bren Carrier","cost":4,"v":0},
@@ -13308,7 +13373,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":0},
+                                    {"id":1,"text":"Jeep","cost":0,"v":163},
                                     {"id":2,"text":"Bren Carrier","cost":4,"v":82},
                                     {"id":3,"text":"Dingo Scout Car","cost":4,"v":0}
                                 ]
@@ -13355,8 +13420,8 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"1 Morris Quad","cost":4,"v":0},
-                                    {"id":3,"text":"2 Morris Quads","cost":8,"v":0}
+                                    {"id":2,"text":"1 Morris Quad","cost":4,"v":182},
+                                    {"id":3,"text":"2 Morris Quads","cost":8,"v":182}
                                 ]
                             }
                         ]
@@ -13556,7 +13621,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 men & Jeep","cost":0,"v":48},
+                                    {"id":1,"text":"3 men & Jeep","cost":0,"v":163},
                                     {"id":2,"text":"Dingo","cost":4,"v":0},
                                     {"id":3,"text":"Humber Scout Car","cost":4,"v":0},
                                     {"id":4,"text":"M3 White Scout Car","cost":10,"v":0}
@@ -13732,8 +13797,8 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"M4 Sherman ARV","cost":0,"v":109},
                                     {"id":2,"text":"Cromwell ARV","cost":2,"v":113},
-                                    {"id":3,"text":"Scammel Pioneer","cost":-6},
-                                    {"id":4,"text":"M1 Wrecker Heavy Truck","cost":-6}
+                                    {"id":3,"text":"Scammel Pioneer","cost":-6,"v":183},
+                                    {"id":4,"text":"M1 Wrecker Heavy Truck","cost":-6,"v":172}
                                 ]
                             }
                         ]
@@ -13832,7 +13897,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":0},
+                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":163},
                                 {"id":2,"text":"Ambulance medium truck","cost":2,"v":58},
                                 {"id":3,"text":"M5 Halftrack Ambulance","cost":6,"v":83}
                             ]
@@ -15043,8 +15108,8 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"88mm FlaK36 AA/AT with 4 crew","cost":0,"w":0},
-                                {"id":2,"text":"88mmL71 PaK43  with 4 crew","cost":23,"w":0}
+                                {"id":1,"text":"88mm FlaK36 AA/AT with 4 crew","cost":0,"w":19},
+                                {"id":2,"text":"88mmL71 PaK43  with 4 crew","cost":23,"w":20}
                             ]
                         },
                         {
@@ -16393,11 +16458,12 @@ var forces = [
                     "cost":48,
                     "br":3,
                     "restricted":true,
+                    "w":19,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"88mm FlaK36 AA/AT with 4 crew","cost":0,"w":0}
+                                {"id":1,"text":"88mm FlaK36 AA/AT with 4 crew","cost":0}
                             ]
                         },
                         {
@@ -16428,7 +16494,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"105mmL63 FlaK39 AA/AT with 4 crew","cost":0,"w":0}
+                                {"id":1,"text":"105mmL63 FlaK39 AA/AT with 4 crew","cost":0}
                             ]
                         },
                         {
@@ -16457,7 +16523,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"88mmL71 PaK43  with 4 crew","cost":23,"w":0}
+                                {"id":1,"text":"88mmL71 PaK43  with 4 crew","cost":23,"w":20}
                             ]
                         },
                         {
@@ -17772,11 +17838,9 @@ function SortByName(a, b){
 
 function test_forces() {
     for (var i=0; i<forces.length; i++){
-        console.log(forces[i].name);
         for (var j=0; j<forces[i].sections.length; j++) {
-            console.log(forces[i].sections[j].name);
             for (var k=0; k<forces[i].sections[j].entries.length; k++) {
-                console.log(forces[i].sections[j].entries[k].name);
+                //console.log(forces[i].sections[j].entries[k].name);
                 var entry = forces[i].sections[j].entries[k];
                 var print = false;
                 if ( entry.v === 0 ){
@@ -17794,14 +17858,17 @@ function test_forces() {
                         }
                     }
                 }
-                if ( print === true )
+                if ( print === true ){
+                    console.log(forces[i].name);
+                    console.log(forces[i].sections[j].name);
                     console.log("Error: " +forces[i].sections[j].entries[k].name);
+                }
             }
         }
     }
 }
 
-var debug = true;
+var debug = false;
 $( document ).ready( function() {
     forces.sort(SortByName);
     if ( debug ) {
