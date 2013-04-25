@@ -2665,7 +2665,7 @@ var weapons = {
         'stats':[
         {
             'type':'AP',
-            'effect':'',
+            'effect':'-',
             'strength':['']
         }
         ]
@@ -8796,6 +8796,7 @@ var forces = [
                                 "id":4,
                                 "name":"PIAT Team",
                                 "cost":0,
+                                "w":91,
                                 "br":0,
                                 "mandatory":true,
                                 "unique":true
@@ -8828,6 +8829,7 @@ var forces = [
                                 "name":"PIAT Team",
                                 "cost":0,
                                 "br":0,
+                                "w":91,
                                 "unique":true
                             },
                             {
@@ -13119,7 +13121,7 @@ var forces = [
                                         "name":"PIAT",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"PIAT","cost":5}
+                                            {"id":2,"text":"PIAT","cost":5,"w":91}
                                         ]
                                     }
                                 ]
@@ -13190,6 +13192,7 @@ var forces = [
                                 "name":"PIAT Team",
                                 "cost":14,
                                 "br":1,
+                                "w":91,
                                 "unique":true,
                                 "options":[
                                     {
@@ -13326,6 +13329,7 @@ var forces = [
                                 "id":3,
                                 "name":"PIAT Team",
                                 "cost":0,
+                                "w":91,
                                 "br":0,
                                 "mandatory":true
                             },
@@ -13370,6 +13374,7 @@ var forces = [
                                 "name":"PIAT Team",
                                 "cost":14,
                                 "br":1,
+                                "w":91,
                                 "unique":true,
                                 "options":[
                                     {
@@ -13498,6 +13503,7 @@ var forces = [
                                 "name":"Carrier PIAT Team",
                                 "cost":0,
                                 "br":0,
+                                "w":91,
                                 "mandatory":true,
                                 "options":[
                                     {
@@ -14484,8 +14490,8 @@ var forces = [
                                         "name":"Panzerfausts",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"1 Panzerfaust","cost":5},
-                                            {"id":3,"text":"2 Panzerfausts","cost":10}
+                                            {"id":2,"text":"1 Panzerfaust","cost":5,"w":107},
+                                            {"id":3,"text":"2 Panzerfausts","cost":10,"w":107}
                                         ]
                                     }
                                 ]
@@ -14509,8 +14515,8 @@ var forces = [
                                         "name":"Panzerfausts",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"1 Panzerfaust","cost":5},
-                                            {"id":3,"text":"2 Panzerfausts","cost":10}
+                                            {"id":2,"text":"1 Panzerfaust","cost":5,"w":107},
+                                            {"id":3,"text":"2 Panzerfausts","cost":10,"w":107}
                                         ]
                                     },
                                     {
@@ -14580,8 +14586,8 @@ var forces = [
                                     {
                                         "name":"Weapon",
                                         "choices":[
-                                            {"id":1,"text":"1 Panzerschreck","cost":0},
-                                            {"id":2,"text":"1 Püppchen","cost":0}
+                                            {"id":1,"text":"1 Panzerschreck","cost":0,"w":108},
+                                            {"id":2,"text":"1 Püppchen","cost":0,"w":109}
                                         ]
                                     }
                                 ]
@@ -14688,8 +14694,8 @@ var forces = [
                                 "name":"Panzerfausts",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"1 Panzerfaust","cost":5},
-                                    {"id":3,"text":"2 Panzerfausts","cost":10}
+                                    {"id":2,"text":"1 Panzerfaust","cost":5,"w":107},
+                                    {"id":3,"text":"2 Panzerfausts","cost":10,"w":107}
                                 ]
                             },
                             {
@@ -15148,6 +15154,7 @@ var forces = [
                     "name":"Motorised Reconnaissance Patrol",
                     "cost":32,
                     "br":1,
+                    "w":91,
                     "options":[
                         {
                             "name":"Composition",
@@ -15195,8 +15202,8 @@ var forces = [
                             "name":"Panzerfausts",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"1 Panzerfaust","cost":5},
-                                {"id":3,"text":"2 Panzerfausts","cost":10}
+                                {"id":2,"text":"1 Panzerfaust","cost":5,"w":107},
+                                {"id":3,"text":"2 Panzerfausts","cost":10,"w":107}
                             ]
                         },
                         {
@@ -15429,6 +15436,7 @@ var forces = [
                     "name":"Panzerjaeger Team",
                     "cost":24,
                     "br":1,
+                    "w":108,
                     "options":[
                         {
                             "name":"Composition",
@@ -15698,7 +15706,7 @@ var forces = [
                                         "name":"Panzerfaust",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"1 Panzerfaust","cost":5}
+                                            {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                         ]
                                     }
                                 ]
@@ -15722,7 +15730,7 @@ var forces = [
                                         "name":"Panzerfaust",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"1 Panzerfaust","cost":5}
+                                            {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                         ]
                                     },
                                     {
@@ -15784,6 +15792,7 @@ var forces = [
                             {
                                 "id":6,
                                 "name":"Panzerschreck Team",
+                                "w":108,
                                 "cost":22,
                                 "br":1,
                                 "unique":true
@@ -15895,7 +15904,7 @@ var forces = [
                                         "name":"Panzerfaust",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"1 Panzerfaust","cost":5}
+                                            {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                         ]
                                     }
                                 ]
@@ -16035,7 +16044,7 @@ var forces = [
                                 "name":"Panzerfaust",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"1 Panzerfaust","cost":5}
+                                    {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                 ]
                             },
                             {
@@ -16492,6 +16501,7 @@ var forces = [
                     "name":"Motorised Reconnaissance Patrol",
                     "cost":25,
                     "br":1,
+                    "w":107,
                     "options":[
                         {
                             "name":"Composition",
@@ -16548,7 +16558,7 @@ var forces = [
                             "name":"Panzerfaust",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"1 Panzerfaust","cost":5}
+                                {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                             ]
                         },
                         {
@@ -16624,6 +16634,7 @@ var forces = [
                     "br":3,
                     "restricted":true,
                     "s":1,
+                    "w":107,
                     "options":[
                         {
                             "name":"Composition",
@@ -16931,6 +16942,7 @@ var forces = [
                     "name":"Panzerjaeger Team",
                     "cost":22,
                     "br":1,
+                    "w":108,
                     "options":[
                         {
                             "name":"Composition",
