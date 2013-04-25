@@ -683,8 +683,8 @@ var vehicles = [
     'ammo':true
 },
 {
-    'id':90, //greg confirm
-    'name':'Gaz Jeep TBC',
+    'id':90,
+    'name':'Gaz Jeep',
     'hits':true,
     'capacity':3
 },
@@ -1180,6 +1180,85 @@ var vehicles = [
     'armour':true,
     'mg':true
 },
+{
+    'id':163,
+    'name':'Jeep',
+    'hits':true,
+    'capacity':3
+},
+{
+    'id':164,
+    'name':'3/4 tonne truck \'Beep\'',
+    'hits':true,
+    'capacity':3
+},
+{
+    'id':165,
+    'name':'1 1/2 tonne truck',
+    'hits':true,
+    'capacity':12
+},
+{
+    'id':166,
+    'name':'2 1/2 tonne truck',
+    'hits':true,
+    'capacity':20
+},
+{
+    'id':167,
+    'name':'4 tonne truck',
+    'hits':true,
+    'capacity':28
+},
+{
+    'id':168,
+    'name':'6 tonne truck',
+    'hits':true,
+    'capacity':36
+},
+{
+    'id':169,
+    'name':'M29 Water Weasel',
+    'hits':true,
+    'capacity':4
+},
+{
+    'id':170,
+    'name':'M4 High Speed Tractor',
+    'hits':true,
+    'capacity':0
+},
+{
+    'id':171,
+    'name':'M5 High Speed Tractor',
+    'hits':true,
+    'capacity':0
+},
+{
+    'id':172,
+    'name':'M1 Wrecker',
+    'hits':true,
+    'capacity':1
+},
+{
+    'id':173,
+    'name':'1/4 tonne amphibian',
+    'hits':true,
+    'capacity':3
+},
+{
+    'id':174,
+    'name':'Dodge ambulance',
+    'hits':true,
+    'capacity':0
+},
+{
+    'id':175,
+    'name':'DUKW',
+    'hits':true,
+    'capacity':25
+},
+    // greg to-do, landing craft
 {
 }
 ];
@@ -5917,7 +5996,7 @@ var forces = [
                                         "name":"Transport",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Jeep","cost":2}
+                                            {"id":2,"text":"Jeep","cost":2,"v":0}
                                         ]
                                     },
                                     {
@@ -6465,6 +6544,7 @@ var forces = [
                     "id":3,
                     "name":"Jeep Reconnaissance Team",
                     "cost":18,
+                    "v":0,
                     "br":2
                 },
                 {
@@ -9744,6 +9824,7 @@ var forces = [
                         "name":"Supply Column",
                         "cost":10,
                         "br":1,
+                        "v":175,
                         "options":[
                             {
                                 "name":"Composition",
@@ -10756,6 +10837,7 @@ var forces = [
                         "id":2,
                         "name":"Jeep Reconnaissance Team",
                         "cost":26,
+                        "v":0,
                         "br":1
                     },
                     {
@@ -11225,7 +11307,7 @@ var forces = [
                         { 
                             "name":"Transport", 
                             "choices":[ 
-                                {"id":1,"text":"DUKW","cost":0},
+                                {"id":1,"text":"DUKW","cost":0,"v":175},
                                 {"id":2,"text":"LCA","cost":0},
                                 {"id":3,"text":"LCA with rocket-prop. grapnels","cost":5} 
                             ] 
@@ -11477,7 +11559,7 @@ var forces = [
                         "name":"DUKW with ladder",
                         "cost":12,
                         "br":1,
-                        "v":0 //greg
+                        "v":175
                     }
                 ]
             },
@@ -11492,6 +11574,7 @@ var forces = [
                         "name":"Supply Column",
                         "cost":10,
                         "br":1,
+                        "v":175,
                         "options":[
                             {
                                 "name":"Composition",
@@ -17687,8 +17770,45 @@ function SortByName(a, b){
     return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
 }
 
+function test_forces() {
+    for (var i=0; i<forces.length; i++){
+        console.log(forces[i].name);
+        for (var j=0; j<forces[i].sections.length; j++) {
+            console.log(forces[i].sections[j].name);
+            for (var k=0; k<forces[i].sections[j].entries.length; k++) {
+                console.log(forces[i].sections[j].entries[k].name);
+                var entry = forces[i].sections[j].entries[k];
+                var print = false;
+                if ( entry.v === 0 ){
+                    console.log('Main vehicle==0');
+                    print = true;
+                }
+                if ( typeof entry.options != 'undefined' ) {
+                    for (var l=0; l<entry.options.length; l++) {
+                        for (var m=0; m<entry.options[l].choices.length; m++) {
+                            //console.log('entry choice is ' + JSON.stringify(entry.options[l].choices[m]));
+                            if (entry.options[l].choices[m].w === 0)
+                                print = true;
+                            if (entry.options[l].choices[m].v === 0)
+                                print = true;
+                        }
+                    }
+                }
+                if ( print === true )
+                    console.log("Error: " +forces[i].sections[j].entries[k].name);
+            }
+        }
+    }
+}
+
+var debug = true;
 $( document ).ready( function() {
     forces.sort(SortByName);
+    if ( debug ) {
+        test_forces();
+        return;
+    }
+        
     render();
     update_selectable();
     sub_button_bind();
