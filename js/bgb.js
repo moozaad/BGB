@@ -14119,7 +14119,7 @@ var forces = [
                         "name":"Supply Column",
                         "cost":8,
                         "br":1,
-                        "v":58,
+                        "v":91,
                         "unique":true,
                         "options":[
                             {
@@ -14181,7 +14181,7 @@ var forces = [
                             "name":"Composition",
                             "choices":[
                                 {"id":1,"text":"Jeep Ambulance","cost":0,"v":163},
-                                {"id":2,"text":"Ambulance medium truck","cost":2,"v":58},
+                                {"id":2,"text":"Ambulance medium truck","cost":2,"v":91},
                                 {"id":3,"text":"M5 Halftrack Ambulance","cost":6,"v":83}
                             ]
                             }
