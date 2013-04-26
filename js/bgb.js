@@ -13048,7 +13048,7 @@ var forces = [
     {
         "id":10,
         "group":"German",
-        "name":"(Coming Soon) Panzer 'Ersatz' Battlegroup",
+        "name":"Panzer 'Ersatz' Battlegroup",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
