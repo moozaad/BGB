@@ -12891,7 +12891,7 @@ var forces = [
                         "choices":[
                             {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
                             {"id":2,"text":"Ambulance medium truck","cost":2,"v":58},
-                            {"id":3,"text":"SdKfz 251/8 Ambulance","cost":6,"v:0}
+                            {"id":3,"text":"SdKfz 251/8 Ambulance","cost":6,"v":0}
                         ]
                         }
                     ]
@@ -13604,7 +13604,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 StuG III Fs, 1 StuH 42 F","cost":0","v":16} //greg also needs StuH 42 F vehicle code
+                                    {"id":1,"text":"2 StuG III Fs, 1 StuH 42 F","cost":0,"v":16} //greg also needs StuH 42 F vehicle code
                                 ]
                             }
                         ]
@@ -13694,7 +13694,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Kübelwagen","cost":0,"v":54}
+                                    {"id":1,"text":"Kübelwagen","cost":0,"v":54},
                                     {"id":2,"text":"leSPW U304(f) Funk","cost":7,"v":212},
                                     {"id":3,"text":"SdKfz 251/18","cost":8,"v":221}
                                 ]
@@ -14047,7 +14047,7 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"Heavy Truck & 6 men","cost":0,"v":59},
-                                    {"id":2,"text":"SdKfz 251/7 & 6 men","cost":8,"v":}
+                                    {"id":2,"text":"SdKfz 251/7 & 6 men","cost":8,"v":0}
                                 ]
                             }
                         ]
@@ -14361,34 +14361,22 @@ var forces = [
                 },
                 {
                     "id":4,
+                    "name":"Timed 80mm Mortar Barrage",
+                    "w":2,
+                    "cost":5,
+                    "br":0
+                },
+                {
+                    "id":5,
                     "name":"Timed 105mm Barrage",
                     "w":22,
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":5,
+                    "id":6,
                     "name":"Timed 150mm Barrage",
                     "cost":20,
-                    "br":0
-                },
-                {
-                    "id":6,
-                    "name":"Timed FW-190 Air Strike",
-                    "cost":5,
-                    "br":0
-                },
-                {
-                    "id":7,
-                    "name":"Timed Ju-87 Air Strike",
-                    "cost":15,
-                    "br":0
-                },
-                {
-                    "id":8,
-                    "name":"Timed He-111 Air Strike",
-                    "cost":25,
-                    "restricted":true,
                     "br":0
                 }
                 ]
