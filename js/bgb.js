@@ -4850,7 +4850,7 @@ var forces = [
     },
     {
         "id":2,
-        "name":"German Infantry Division (Kursk)",
+        "name":"Infantry Division (Kursk)",
         "group":"German",
         "infantry":[
             [[1,0],[0,1]],
@@ -6226,7 +6226,7 @@ var forces = [
     },
     {
         "id":3,
-        "name":"Russian Tank Corps",
+        "name":"Tank Corps",
         "group":"Russian",
         "infantry":[
             [[1,0],[0,2]],
@@ -7357,7 +7357,7 @@ var forces = [
     },
     {
         "id":4,
-        "name":"Russian Rifle Division",
+        "name":"Rifle Division",
         "group":"Russian",
         "infantry":[
             [[1,0],[0,2]],
@@ -9700,7 +9700,7 @@ var forces = [
     },
     {
         "id":6,
-        "name":"British Amphibious Assault Battlegroup",
+        "name":"Amphibious Assault Battlegroup",
         "group":"British",
         "infantry":[
             [[1,0],[0,1]],
@@ -10439,7 +10439,7 @@ var forces = [
     },
     {
         "id":7,
-        "name":"American Airborne Division",
+        "name":"Airborne Division",
         "group":"American",
         "infantry":[
             [[1,0],[0,1]],
@@ -11529,7 +11529,7 @@ var forces = [
     },
     {
         "id":8,
-        "name":"American Amphibious Assault Battlegroup",
+        "name":"Amphibious Assault Battlegroup",
         "group":"American",
         "infantry":[
             [[1,0],[0,1]],
@@ -14385,7 +14385,7 @@ var forces = [
     },
     {
         "id":11,
-        "name":"British Armoured Division",
+        "name":"Armoured Division",
         "group":"British",
         "infantry":[
             [[1,0],[0,1]],
@@ -15736,19 +15736,19 @@ var forces = [
     {
         "id":12,
         "group":"British",
-        "name":"(Coming Soon) British Infantry Division",
+        "name":"(Coming Soon) Infantry Division",
         "sections":[]
     },
     {
         "id":13,
         "group":"American",
-        "name":"(Coming Soon) American Armoured Division",
+        "name":"(Coming Soon) Armoured Division",
         "sections":[]
     },
     {
         "id":14,
         "group":"American",
-        "name":"(Coming Soon) American Infantry Division",
+        "name":"(Coming Soon) Infantry Division",
         "sections":[]
     },
     {
@@ -16977,7 +16977,7 @@ var forces = [
     },
     {
         "id":17,
-        "name":"German Infantry Division (Overlord)",
+        "name":"Infantry Division (Overlord)",
         "group":"German",
         "infantry":[
             [[1,0],[0,1]],
