@@ -1877,14 +1877,6 @@ var weapons = {
         ]
     },
     18:{
-        'name':'76.2mmL54',
-        'stats':[
-        {
-            'type':'HE [L]',
-            'effect':'',
-            'strength':['','','','','','']
-        }
-        ]
     },
     19:{
         'name':'88mmL56 (FlaK36)',
@@ -2870,19 +2862,6 @@ var weapons = {
         ]
     },
     102:{
-        'name':'100mmL52 (K18)',
-        'stats':[
-        {
-            'type':'HE [L]',
-            'effect':'',
-            'strength':['','','','','','']
-        },
-        {
-            'type':'AP',
-            'effect':'-',
-            'strength':['','','','','','']
-        }
-        ]
     },
     103:{
         'name':'105mmL63 (FlaK39)',
@@ -4593,7 +4572,7 @@ var forces = [
                             "name":"Armoured carriers",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Replace 1 truck","cost":6}
+                                {"id":2,"text":"Replace 1 truck","cost":6,"v":31}
                             ]
                         }
                     ]
@@ -4624,7 +4603,7 @@ var forces = [
                         "choices":[
                             {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
                             {"id":2,"text":"Ambulance medium truck","cost":2,"v":58},
-                            {"id":3,"text":"SdKfz 251/8 Ambulance","cost":6}
+                            {"id":3,"text":"SdKfz 251/8 Ambulance","cost":6,"v":0}
                         ]
                         }
                     ]
@@ -4663,7 +4642,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"88mm AA/AT with 4 crew","cost":0}
+                                {"id":1,"text":"PaK43/41 88mm AA/AT with 4 crew","cost":0}
                             ]
                         },
                         {
@@ -4918,7 +4897,7 @@ var forces = [
                                 {"id":1,"text":"Kübelwagen","cost":0,"v":54},
                                 {"id":2,"text":"Medium Truck","cost":2},
                                 {"id":3,"text":"SdKfz 250/3","cost":12},
-                                {"id":4,"text":"SdKfz 251/3","cost":12}
+                                {"id":4,"text":"SdKfz 251/3","cost":12,"v":39}
                             ]
                         }
                         ]
@@ -5454,7 +5433,7 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"Panzer III J","cost":0, "restricted":true},
-                                    {"id":2,"text":"Panzer III L","cost":8},
+                                    {"id":2,"text":"Panzer III L","cost":8,"v":2},
                                     {"id":3,"text":"Panzer III M","cost":10},
                                     {"id":4,"text":"Panzer III N","cost":8, "restricted":true}
                                 ]
@@ -5755,7 +5734,7 @@ var forces = [
                     },
                     {
                         "id":12,
-                        "name":"AT Gun Dug-out",
+                        "name":"AT Gun Dug-out", //greg confirm why this is here & at 9 above...
                         "cost":20,
                         "br":0,
                         "restricted":true
