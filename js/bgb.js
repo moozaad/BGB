@@ -529,7 +529,22 @@ var vehicles = [
     'hits':true,
     'special':'repair, recovery'
 },
-{},{},
+{
+    'id':68,
+    'name':'Panzer 35R 731(f)',
+    'armour':true,
+    'weapons':[114], //greg confirm
+    'ammo':true,
+    'mg':true // greg confirm
+},
+{
+    'id':69,
+    'name':'Panzer 35S 739(f)',
+    'armour':true,
+    'weapons':[113], //greg confirm
+    'ammo':true,
+    'mg':true // greg confirm
+},
 {
     'id':70,
     'name':'KV-1S',
@@ -717,7 +732,22 @@ var vehicles = [
     'name':'Komsomolyets tractor',
     'hits':true
 },
-{},{},{},{},
+{
+    'id':96,
+    'name':'Panzer IV D',
+    'armour':true,
+    'weapons':[11],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':97,
+    'name':'SdKfz 251/7',
+    'armour':true,
+    'open':true, //greg confirm stats
+    'mg':true
+},
+{},{},
 {
     'id':100,
     'name':'M4 Sherman (A1,A2,A3)',
@@ -1532,19 +1562,19 @@ var vehicles = [
 },
 {
     'id':211,
-    'name':'lsSPW U304(f)',
+    'name':'leSPW U304(f)',
     'armour':true,
     'mg':true
 },
 {
     'id':212,
-    'name':'lsSPW U304(f) Funk',
+    'name':'leSPW U304(f) Funk',
     'armour':true,
     'mg':true
 },
 {
     'id':213,
-    'name':'lsSPW U304(f) FlaK38',
+    'name':'leSPW U304(f) FlaK38',
     'armour':true,
     'weapons':[4],
     'ammo':true
@@ -1562,16 +1592,16 @@ var vehicles = [
 },
 {
     'id':216,
-    'name':'mSPW S307(f) greg confirm',
+    'name':'mSPW S307(f) 8cm Reihenwerfer',
     'armour':true,
-    'weapons':[16],
-    'ammo':true //greg confirm
+    'weapons':[16], //greg confirm
+    'ammo':true
 },
 {
     'id':217,
     'name':'mSPW S307(f) R. Vielfachwerfer',
     'armour':true,
-    'weapons':[110],
+    'weapons':[110], //greg confirm
     'ammo':true
 },
 {
@@ -1584,13 +1614,20 @@ var vehicles = [
 },
 {
     'id':219,
-    'name':'Panzer 39H Beobachtunswagen',
+    'name':'Panzer 39H Beobachtungswagen',
     'armour':true
 },
 {
     'id':220,
-    'name':'Lorraine Schlepper Beobachtunswagen',
+    'name':'Lorraine Schlepper Beobachtungswagen',
     'armour':true
+},
+{
+    'id':221,
+    'name':'SdKfz 251/18',
+    'armour':true,
+    'open':true,
+    'mg':true
 },
 
     // greg to-do, landing craft
@@ -1880,7 +1917,7 @@ var weapons = {
         ]
     },
     21:{
-        'name':'100mmK18',
+        'name':'100mmL52 (K18)',
         'stats':[
         {
             'type':'HE [M]',
@@ -2158,7 +2195,7 @@ var weapons = {
         ]
     },
     45:{
-        'name':'76.2mmL54 (Zis3)',
+        'name':'76.2mmL54',
         'stats':[
         {
             'type':'HE [L]',
@@ -4049,7 +4086,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 SdKfz 251 Wurfrahmen 40","cost":0}
+                                    {"id":1,"text":"2 SdKfz 251 Wurfrahmen 40","cost":0,"v":0}
                                 ]
                             }
                         ]
@@ -4447,7 +4484,7 @@ var forces = [
                             "name":"Composition",
                             "choices":[
                                 {"id":1,"text":"Heavy Truck & 6 men","cost":0,"v":61},
-                                {"id":2,"text":"SdKfz 251/7 & 6 men","cost":8}
+                                {"id":2,"text":"SdKfz 251/7 & 6 men","cost":8,"v":97}
                             ]
                         }
                     ]
