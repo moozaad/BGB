@@ -14047,46 +14047,104 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"Heavy Truck & 6 men","cost":0,"v":59},
-                                    {"id":2,"text":"SdKfz 251/7 & 6 men","cost":0,"v":}
+                                    {"id":2,"text":"SdKfz 251/7 & 6 men","cost":8,"v":}
                                 ]
                             }
                         ]
                     },
-                    {
-                        "id":2,
-                        "name":"Recovery Vehicle",
-                        "cost":18,
-                        "br":1,
-                        "v":67,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"id":1,"text":"SdKfz 9 'Famo'","cost":0}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id":3,
-                        "name":"Heavy Bridging Unit",
-                        "cost":36,
-                        "br":3,
-                        "v":61,
-                        "restricted":true,
-                        "unique":true,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
-                                    {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
-                                    {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
-                                    {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
-                                ]
-                            }
-                        ]
-                    }
+                {
+                    "id":2,
+                    "name":"Heavy Bridging Unit",
+                    "cost":36,
+                    "br":3,
+                    "restricted":true,
+                    "v":61,
+                    "unique":true,
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
+                                {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
+                                {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":3,
+                    "name":"Recovery Vehicle",
+                    "cost":18,
+                    "br":1,
+                    "options":[
+                        {
+                           "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"SdKfz 9 'Famo'","cost":0,"v":67}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":4,
+                    "name":"Bergepanzer III",
+                    "cost":32,
+                    "br":1,
+                    "unique":true,
+                    "restricted":true,
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"Bergepanzer III","cost":0,"restricted":true,"v":190}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":5,
+                    "name":"Assault Pioneer Squad",
+                    "cost":54,
+                    "br":3,
+                    "s":1,
+                    "restricted":true,
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"Panzerfaust, 2 demo charges","cost":0,"w":107}
+                            ]
+                        },
+                        {
+                            "name":"Transport",
+                            "choices":[
+                                {"id":1,"text":"mSPW S303(f)","cost":0,"v":214}
+                           ]
+                        },
+                        {
+                            "name":"Flame-thrower",
+                            "choices":[
+                                {"id":1,"text":"None","cost":0},
+                                {"id":2,"text":"Flame-thrower","cost":10}
+                            ]
+                        },
+                        {
+                            "name":"Mine sweeper",
+                            "choices":[
+                                {"id":1,"text":"None","cost":0},
+                                {"id":2,"text":"Mine sweeper","cost":5}
+                            ]
+                        },
+                        {
+                            "name":"MG",
+                            "choices":[
+                                {"id":1,"text":"Bipod MG34","cost":0},
+                                {"id":2,"text":"Bipod MG42","cost":4}
+                            ]
+                        }
+                    ]
+                }
                 ]
             },
             {
@@ -14114,7 +14172,7 @@ var forces = [
                                 "name":"Armoured carriers",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Replace 1 truck","cost":6}
+                                    {"id":2,"text":"Replace 1 truck","cost":6,"v":31}
                                 ]
                             }
                         ]
@@ -14160,7 +14218,7 @@ var forces = [
                             "name":"Composition",
                             "choices":[
                                 {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
-                                {"id":2,"text":"Ambulance medium truck","cost":2}
+                                {"id":2,"text":"SdKfz 251/8 Ambulance","cost":6,"v":0}
                             ]
                             }
                         ]
@@ -14173,133 +14231,99 @@ var forces = [
                 "allows":null,
                 "requires":true,
                 "entries":[
-                    {
-                        "id":1,
-                        "name":"Heavy Anti-Tank Gun",
-                        "cost":51,
-                        "br":3,
-                        "w":20,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"id":1,"text":"88mm AA/AT with 4 crew","cost":0}
-                                ]
-                            },
-                            {
-                                "name":"Loader team",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man loader team","cost":10}
-                                ]
-                            },
-                            {
-                                "name":"Tow",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"SdkFz 7","cost":8,"v":65}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id":2,
-                        "name":"Heavy Tank Hunter",
-                        "cost":136,
-                        "br":5,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"id":1,"text":"1 Ferdinand","cost":0, "restricted":true},
-                                    {"id":2,"text":"1 Hornisse","cost":-80, "restricted":true, "br":-2}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id":3,
-                        "name":"Assault Howitzer",
-                        "cost":44,
-                        "br":3,
-                        "restricted":true,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"id":1,"text":"StuH 42 F","cost":0},
-                                    {"id":2,"text":"StuH 42 G","cost":6},
-                                    {"id":3,"text":"Brummbär","cost":20, "br":1}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id":4,
-                        "name":"Anti-Aircraft Vehicle",
-                        "cost":16,
-                        "br":1,
-                        "restricted":true,
-                        "v":62,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":4},
-                                {"id":2,"text":"SdKfz with 37mm","cost":4,"w":5},
-                                {"id":3,"text":"SdKfz with 20mm Flakvierling","cost":20,"w":4}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id":5,
-                        "name":"Towed 20mm AA Gun",
-                        "cost":28,
-                        "br":1,
-                        "w":4,
-                        "options":[
-                            {
-                                "name":"Loader team",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man loader team","cost":10}
-                                    ]
-                            },
-                            {
-                                "name":"Tow",
-                                "choices":[
+                {
+                    "id":1,
+                    "name":"Heavy Anti-Tank Gun",
+                    "cost":51,
+                    "br":3,
+                    "w":20,
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"PaK43/41 88mm AA/AT with 4 crew","cost":0}
+                            ]
+                        },
+                        {
+                            "name":"Loader team",
+                            "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Medium Truck tow","cost":4,"v":91},
-                                {"id":3,"text":"SdKfz 10 halftrack", "cost":8,"v":62}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id":6,
-                        "name":"Towed 37mm AA Gun",
-                        "cost":36,
-                        "br":1,
-                        "options":[
-                            {
-                                "name":"Loader team",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man loader team","cost":10}
-                                    ]
-                            },
-                            {
-                                "name":"Tow",
-                                "choices":[
+                                {"id":2,"text":"3-man loader team","cost":10}
+                            ]
+                        },
+                        {
+                            "name":"Tow",
+                            "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Medium Truck tow","cost":4,"v":91},
-                                {"id":3,"text":"SdKfz halftrack", "cost":8}
-                                ]
-                            }
-                        ]
-                    }
-                ]
+                                {"id":2,"text":"Zugkraftwagen S307(f)","cost":8,"v":0}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":2,
+                    "name":"Self-Propelled Anti-Tank Gun",
+                    "cost":20,
+                    "br":1,
+                    "restricted":true,
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"Panzerjaeger 35R(f)","cost":0,"v":68},
+                                {"id":2,"text":"75mm PaK40 auf Lorraine","cost":10,"v":208}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":3,
+                    "name":"Heavy Anti-Aircraft Gun",
+                    "cost":51,
+                    "br":3,
+                    "restricted":true,
+                    "w":20,
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"88mm FlaK41 AA with 4 crew","cost":0}
+                            ]
+                        },
+                        {
+                            "name":"Loader team",
+                            "choices":[
+                                {"id":1,"text":"None","cost":0},
+                                {"id":2,"text":"3-man loader team","cost":10}
+                            ]
+                        },
+                        {
+                            "name":"Tow",
+                            "choices":[
+                                {"id":1,"text":"None","cost":0},
+                                {"id":2,"text":"Zugkraftwagen S307(f) tow","cost":8,"v":0}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":4,
+                    "name":"Anti-Aircraft Vehicle",
+                    "cost":16,
+                    "br":1,
+                    "restricted":true,
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":4,"v":62},
+                                {"id":2,"text":"leSPW U304(f) (2cm FlaK38)","cost":0,"v":213},
+                                {"id":3,"text":"SdKfz 7 with 20mm Flakvierling","cost":20,"w":4,"v":65}
+                            ]
+                        }
+                    ]
+                }
+            ]
             },
             {
                 "id":10, 
