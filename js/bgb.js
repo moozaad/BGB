@@ -533,17 +533,17 @@ var vehicles = [
     'id':68,
     'name':'Panzer 35R 731(f)',
     'armour':true,
-    'weapons':[114], //greg confirm
+    'weapons':[112],
     'ammo':true,
-    'mg':true // greg confirm
+    'mg':true
 },
 {
     'id':69,
     'name':'Panzer 35S 739(f)',
     'armour':true,
-    'weapons':[113], //greg confirm
+    'weapons':[113],
     'ammo':true,
-    'mg':true // greg confirm
+    'mg':true
 },
 {
     'id':70,
@@ -1629,7 +1629,49 @@ var vehicles = [
     'open':true,
     'mg':true
 },
-
+{
+    'id':222,
+    'name':'Panzer 35H 735(f)',
+    'armour':true,
+    'weapons':[112],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':223,
+    'name':'Panzer FT17/18(f)',
+    'armour':true,
+    'weapons':[112],
+    'ammo':true
+},
+{
+    'id':224,
+    'name':'105mm PzFH18 auf 39H(f)',
+    'armour':true,
+    'weapons':[22],
+    'ammo':true
+},
+{
+    'id':225,
+    'name':'75mm PaK40 auf 39H(f)',
+    'armour':true,
+    'weapons':[14],
+    'ammo':true
+},
+{
+    'id':226,
+    'name':'75mm PaK40  auf mSPW S307(f)',
+    'armour':true,
+    'weapons':[14],
+    'ammo':true
+},
+{
+    'id':227,
+    'name':'Panzerjaeger 35R',
+    'armour':true,
+    'weapons':[114]
+    'ammo':true
+},
     // greg to-do, landing craft
 {
 }
@@ -13584,7 +13626,7 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"3 Panzer 35R 731(f)","cost":0,"v":68},
-                                    {"id":2,"text":"3 Panzer 38H 735(f)","cost":0,"v":218},
+                                    {"id":2,"text":"3 Panzer 38H 735(f)","cost":0,"v":222},
                                     {"id":3,"text":"3 Panzer 35S 739(f)","cost":12,"v":69},
                                     {"id":4,"text":"1 Panzer III L, 2 Panzer 35R 731(f)","cost":15,"v":68} // greg also need panzer iii L stats here
 
@@ -13652,9 +13694,9 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Panzer FT17/18","cost":0,"restricted":true,"v":0},
+                                    {"id":1,"text":"Panzer FT17/18","cost":0,"restricted":true,"v":223},
                                     {"id":2,"text":"Panzer 35R 731(f)","cost":6,"br":1,"restricted":true,"v":68},
-                                    {"id":3,"text":"Panzer 38H 735(f)","cost":4,"br":1,"v":218},
+                                    {"id":3,"text":"Panzer 38H 735(f)","cost":4,"br":1,"v":222},
                                     {"id":4,"text":"Panzer III L","cost":23,"br":2,"v":2},
                                     {"id":5,"text":"Panzer III N","cost":22,"br":2,"restricted":true,"v":4}
                                 ]
