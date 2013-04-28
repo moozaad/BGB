@@ -1670,7 +1670,7 @@ var vehicles = [
     'id':227,
     'name':'Panzerjaeger 35R',
     'armour':true,
-    'weapons':[114]
+    'weapons':[114],
     'ammo':true
 },
     // greg to-do, landing craft
