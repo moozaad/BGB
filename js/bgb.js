@@ -1207,7 +1207,7 @@ var vehicles = [
     'name':'M12 Halftrack',
     'open':true,
     'armour':true,
-    'weapons':[1],
+    'weapons':[84],
     'ammo':true
 },
 {
@@ -17230,7 +17230,7 @@ var forces = [
                             },
                             {
                                 "id":9,
-                                "name":Self Propelled Howitzer,
+                                "name":"Self Propelled Howitzer",
                                 "cost":24,
                                 "br":2,
                                 "unique":true,
@@ -17345,7 +17345,7 @@ var forces = [
                                 ] 
                             } 
                         ] 
-                    } 
+                    },
                     {
                         "id":4, 
                         "name":"Additional Tank",
@@ -17543,14 +17543,13 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"2 105mmL22 howitzers","cost":0,"w":76},
-                                    {"id":2,"text":"2 155mmL45 howitzers","cost":50,"w":84},
+                                    {"id":2,"text":"2 155mmL45 howitzers","cost":50,"w":84}
                                 ]
                             }
                         ]
                     }
                 ]
-            }, //greg got to here
-            greg got to here, deliberate break
+            },
             {
                 "id":5,
                 "name":"Defences",
@@ -17589,72 +17588,34 @@ var forces = [
                     },
                     {
                         "id":6,
-                        "name":"Trenches",
-                        "cost":10,
-                        "br":0
-                    },
-                    {
-                        "id":7,
-                        "name":"Sniper Hideout",
-                        "cost":15,
-                        "br":0
-                    },
-                    {
-                        "id":8,
-                        "name":"AT Gun Dug-out",
-                        "cost":20,
-                        "br":0
-                    },
-                    {
-                        "id":9,
-                        "name":"Minefield",
-                        "cost":20,
-                        "br":0
-                    },
-                    {
-                        "id":10,
-                        "name":"Artillery Observation Post",
-                        "cost":26,
-                        "br":1,
-                        "unique":true
-                    },
-                    {
-                        "id":11,
-                        "name":"Booby Trapped Building",
-                        "cost":25,
-                        "br":0
-                    },
-                    {
-                        "id":12,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":13,
+                        "id":7,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":14,
+                        "id":8,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":15,
-                        "name":"Off-table 76mm AT shot",
-                        "cost":5,
+                        "id":9,
+                        "name":"Sniper Hideout",
+                        "cost":15,
                         "br":0
                     },
                     {
-                        "id":16,
-                        "name":"Curahee!",
-                        "cost":15,
-                        "br":0,
-                        "unique":true
+                        "id":10,
+                        "name":"Minefield",
+                        "cost":20,
+                        "br":0
                     }
                 ]
             },
@@ -17681,52 +17642,6 @@ var forces = [
                     },
                     {
                         "id":2,
-                        "name":"Jeep Reconnaissance Team",
-                        "cost":26,
-                        "v":163,
-                        "br":1
-                    },
-                    {
-                        "id":3,
-                        "name":"Recon Platoon Command",
-                        "cost":36,
-                        "br":2,
-                        "officer":true,
-                        "unique":true,
-                        "v":163,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"id":1,"text":"3 men, Jeep mounted .30 cal","cost":0}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id":4,
-                        "name":"Infantry Foot Patrol",
-                        "cost":51,
-                        "br":3,
-                        "options":[
-                            {
-                                "name":"AT grenades",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Anti-tank grenades","cost":5}
-                                ]
-                            },
-                            {
-                                "name":"Troop Quality",
-                                "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
-                                    {"id":2,"text":"Elite","cost":12, "br":1}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id":5,
                         "name":"Armoured Car",
                         "cost":26,
                         "br":1,
@@ -17736,12 +17651,85 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"M8 Greyhound","cost":0,"v":142},
                                     {"id":2,"text":"M20 Utility Car","cost":-8,"v":143}
+                                    {"id":3,"text":"M3 White Scout Car","cost":-8,"v":84}
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "id":3,
+                        "name":"Recon Platoon Command",
+                        "cost":28,
+                        "br":2,
+                        "officer":true,
+                        "unique":true,
+                        "v":163,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"3 men & Jeep","cost":0},
+                                    {"id":2,"text":"3 men & M20 Utility Car","cost":6,"v":143},
+                                    {"id":3,"text":"M8 Greyhound","cost":13,"v":142},
+                                    {"id":4,"text":"M5 Stuart","cost":22,"v":116}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":4, 
+                        "name":"Light Tank",
+                        "cost":40, 
+                        "br":2, 
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"M5 Stuart","cost":0,"v":89},
+                                    {"id":2,"text":"M5 Stuart 'recce'","cost":-22,"v":117}
+                                ] 
+                            } 
+                        ] 
+                    },
+                    {
+                        "id":5,
+                        "name":"Armoured Infantry Patrol",
+                        "cost":43,
+                        "br":3,
+                        "options":[
+                            {
+                                "name":"Bazooka",
+                                "choices":[
+                                    {"id":1,"text":"Bazooka","cost":0,"w":92}
+                                ]
+                            },
+                            {
+                                "name":"Transport",
+                                "choices":[
+                                    {"id":1,"text":"None","cost":0},
+                                    {"id":2,"text":"M3 Half-Track","cost":8,"br":1,"v":148}
+                                ]
+                            },
+                            {
+                                "name":"Troop Quality",
+                                "choices":[
+                                    {"id":1,"text":"Irregular","cost":0},
+                                    {"id":2,"text":"Regular","cost":13, "br":1}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":6,
+                        "name":"Jeep Reconnaissance Team",
+                        "cost":24,
+                        "v":163,
+                        "br":1
                     }
                 ]
             },
+            //greg got to here
+            break deliberately
             {
                 "id":7, 
                 "name":"Engineer Support Units",
