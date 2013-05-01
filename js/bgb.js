@@ -11539,7 +11539,7 @@ var forces = [
                 {
                     "id":5,
                     "name":"Timed 105mm Barrage",
-                    "w":0,
+                    "w":76,
                     "cost":10,
                     "br":0
                 },
@@ -11547,14 +11547,14 @@ var forces = [
                     "id":6,
                     "name":"Timed 155mm Barrage",
                     "cost":20,
-                    "w":0,
+                    "w":84,
                     "br":0
                 },
                 {
                     "id":7,
                     "name":"Timed 14\" Barrage",
                     "cost":50,
-                    "w":0,
+                    "w":90,
                     "br":0
                 },
                 {
@@ -12193,7 +12193,7 @@ var forces = [
                 {
                     "id":6,
                     "name":"Timed 14\" Barrage",
-                    "w":0,
+                    "w":90,
                     "cost":40,
                     "br":0
                 },
@@ -16949,7 +16949,7 @@ var forces = [
     {
         "id":13,
         "group":"American",
-        "name":"(Coming Soon) Armoured Division",
+        "name":"Armoured Division",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
@@ -17650,7 +17650,7 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"M8 Greyhound","cost":0,"v":142},
-                                    {"id":2,"text":"M20 Utility Car","cost":-8,"v":143}
+                                    {"id":2,"text":"M20 Utility Car","cost":-8,"v":143},
                                     {"id":3,"text":"M3 White Scout Car","cost":-8,"v":84}
                                 ]
                             }
@@ -17728,8 +17728,6 @@ var forces = [
                     }
                 ]
             },
-            //greg got to here
-            break deliberately
             {
                 "id":7, 
                 "name":"Engineer Support Units",
@@ -17746,31 +17744,35 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Heavy Truck & 6 men","cost":0},
-                                    {"id":2,"text":"2 Heavy Trucks & 12 men","cost":24}
+                                    {"id":1,"text":"Heavy Truck & 6 men","cost":0}
                                 ]
                             }
                         ]
                     },
                     {
                         "id":2,
-                        "name":"Recovery Vehicle",
-                        "cost":22,
-                        "br":1,
+                        "name":"Heavy Bridging Unit",
+                        "cost":36,
+                        "br":3,
+                        "restricted":true,
+                        "v":61,
+                        "unique":true,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Sherman ARV","cost":0,"v":109},
-                                    {"id":2,"text":"M1 Wrecker Heavy Truck","cost":-4,"v":172}
+                                    {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                    {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
+                                    {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
+                                    {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
                                 ]
                             }
                         ]
                     },
                     {
-                        "id":5,
-                        "name":"Airborne Combat Engineer Section",
-                        "cost":43,
+                        "id":3,
+                        "name":"Combat Engineer Section",
+                        "cost":33,
                         "br":3,
                         "restricted":true,
                         "s":1,
@@ -17778,7 +17780,15 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"BAR, AT grenades, 2 demo charges","cost":0}
+                                    {"id":1,"text":"BAR, Bazooka","cost":0}
+                                ]
+                            },
+                            {
+                                "name":"Transport",
+                                "choices":[
+                                    {"id":1,"text":"None","cost":0},
+                                    {"id":2,"text":"Medium truck","cost":4,"v":91},
+                                    {"id":3,"text":"M5 Halftrack","cost":8,"v":83}
                                 ]
                             },
                             {
@@ -17796,10 +17806,44 @@ var forces = [
                                 ]
                             },
                             {
-                                "name":"Bazooka",
+                                "name":"Demo Charges",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"1 Bazooka","cost":12}
+                                    {"id":2,"text":"1 Demo charge","cost":5},
+                                    {"id":3,"text":"2 Demo charges","cost":10},
+                                    {"id":4,"text":"3 Demo charges","cost":15}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":4,
+                        "name":"Recovery Vehicle",
+                        "cost":22,
+                        "br":1,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"M4 Sherman ARV","cost":0,"v":109},
+                                    {"id":2,"text":"M32 ARV","cost":-2,"v":161},
+                                    {"id":3,"text":"M1 Wrecker Heavy Truck","cost":-6,"v":172}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":5,
+                        "name":"Armoured Engineering Vehicle",
+                        "cost":54,
+                        "br":3,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"M4 Sherman Dozer","cost":0,"v":108},
+                                    {"id":2,"text":"M4 Sherman Mineroller","cost":0,"v":107},
+                                    {"id":3,"text":"Armoured Bulldozer","cost":-42,"br":-2,"v":160}
                                 ]
                             }
                         ]
@@ -17818,15 +17862,23 @@ var forces = [
                         "cost":8,
                         "br":1,
                         "unique":true,
-                        "v":163,
+                        "v":91,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Jeep with a trailer","cost":0},
-                                    {"id":2,"text":"2 Jeeps with trailers","cost":4},
-                                    {"id":3,"text":"3 Jeeps with trailers","cost":8},
-                                    {"id":4,"text":"4 Jeeps with trailers","cost":12}
+                                    {"id":1,"text":"1 Medium Truck","cost":0},
+                                    {"id":2,"text":"2 Medium Trucks","cost":4},
+                                    {"id":3,"text":"3 Medium Trucks","cost":8},
+                                    {"id":4,"text":"4 Medium Trucks","cost":12},
+                                    {"id":4,"text":"4 Medium Trucks","cost":16}
+                                ]
+                            },
+                            {
+                                "name":"M30 Cargo Carrier",
+                                "choices":[
+                                    {"id":1,"text":"None","cost":0},
+                                    {"id":2,"text":"Replace 1 truck with M30","cost":8,"v":162}
                                 ]
                             }
                         ]
@@ -17855,7 +17907,9 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":163}
+                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":163},
+                                {"id":2,"text":"Ambulance Medium Truck","cost":2,"v":91},
+                                {"id":3,"text":"M3 Halftrack Ambulance","cost":6,"v":83}
                             ]
                             }
                         ]
@@ -17887,23 +17941,32 @@ var forces = [
                 "entries":[
                     {
                         "id":1,
-                        "name":"Anti-Aircraft Machine Gun",
-                        "cost":22,
+                        "name":"Self Propelled Howitzer",
+                        "cost":44,
+                        "br":3,
+                        "restricted":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"1 M4 Sherman (105mm)","cost":0,"v":105},
+                                    {"id":2,"text":"1 M8 HMC","cost":-20,"br":-1,"v":156}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":2,
+                        "name":"Self-Propelled Anti-Aircraft Gun",
+                        "cost":28,
                         "br":1,
                         "restricted":true,
                         "options":[
                             {
-                                "name":"Loader team",
+                                "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man loader team","cost":10}
-                                    ]
-                            },
-                            {
-                                "name":"Mount",
-                                "choices":[
-                                {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Jeep","cost":2,"v":163}
+                                    {"id":1,"text":"M16 Half-Track","cost":0,"v":144},
+                                    {"id":2,"text":"M15 Half-Track","cost":-4,"v":145}
                                 ]
                             }
                         ]
@@ -17916,22 +17979,22 @@ var forces = [
                 "allows":null,
                 "requires":true,
                 "entries":[
-                    {
-                        "id":1,
-                        "name":"Off-Table Artillery Request",
-                        "cost":5,
-                        "br":0,
-                        "options":[
-                            {
-                                "name":"Target Priority",
-                                "choices":[
-                                    {"id":1,"text":"3rd (5+)","cost":0},
-                                    {"id":2,"text":"2nd (4+)","cost":5},
-                                    {"id":3,"text":"1st (2+)","cost":15}
-                                ]
-                            }
-                        ]
-                    },
+                {
+                    "id":1,
+                    "name":"Off-Table Artillery Request",
+                    "cost":5,
+                    "br":0,
+                    "options":[
+                        {
+                            "name":"Target Priority",
+                            "choices":[
+                                {"id":1,"text":"3rd (5+)","cost":0},
+                                {"id":2,"text":"2nd (4+)","cost":5},
+                                {"id":3,"text":"1st (2+)","cost":15}
+                            ]
+                        }
+                    ]
+                },
                 {
                     "id":2,
                     "name":"Pre-Registered Target Point",
@@ -17946,40 +18009,32 @@ var forces = [
                 },
                 {
                     "id":4,
-                    "name":"Timed 75mmL16 Howitzer Barrage",
-                    "w":65,
-                    "cost":5,
-                    "br":0
-                },
-                {
-                    "id":5,
                     "name":"Timed 105mm Barrage",
-                    "w":0,
+                    "w":76,
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":6,
+                    "id":5,
                     "name":"Timed 155mm Barrage",
                     "cost":20,
-                    "w":0,
+                    "w":84,
+                    "br":0
+                },
+                {
+                    "id":6,
+                    "name":"Time on Target Barrage",
+                    "cost":5, //greg this should not count as a additional fire support choice
                     "br":0
                 },
                 {
                     "id":7,
-                    "name":"Timed 14\" Barrage",
-                    "cost":50,
-                    "w":0,
-                    "br":0
-                },
-                {
-                    "id":8,
                     "name":"Timed P-51 Air Strike",
                     "cost":5,
                     "br":0
                 },
                 {
-                    "id":9,
+                    "id":8,
                     "name":"Timed P-47 Air Strike",
                     "cost":10,
                     "w":0,
@@ -21257,7 +21312,7 @@ function unselecting(event, ui){
         $(ui.unselecting).addClass('ui-selected');
 
 }
-function unselected(event, ui){
+function unselected(event){
     update_cost();
     allow_removed();
     allow_enables();
@@ -21275,7 +21330,7 @@ function duplicate_sub(dupe) {
     $('body').append($(sub));
     $(dupe).data('sub', $(sub).attr('id'));
     // check if any of the duplicated sub-entries also have sub-entries
-    $(sub).find('.entry').each( function( index ) {
+    $(sub).find('.entry').each( function() {
             if ($(this).data('sub'))
                 duplicate_sub(this);
     });
@@ -21336,7 +21391,7 @@ function update_entry_cost(entry) {
     update_cost();
 }
 
-function option_change(event) {
+function option_change() {
     update_entry_cost($(this).parents(".entry"));
 }
 
@@ -21460,7 +21515,7 @@ function loadDialog() {
     });
 }
 
-function save(event) {
+function save() {
     var text = [];
     text.push(encode($('#main').data('bg_id')));
     var sections = $('.section').not('.ui-state-disabled');
@@ -21472,7 +21527,7 @@ function save(event) {
     saveDialog(saveText);
 }
 
-function changeForce(event){
+function changeForce(){
     emptyPage();
     render_force(parseInt($(this).val(),10), true);
     $('.save_button, .load_button, .sub_button').button();
