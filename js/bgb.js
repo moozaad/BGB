@@ -22545,7 +22545,7 @@ function render_entries(entries, sub_entries, async) {
                         if (entries[i].options[j].choices[k].v)
                            text = text +"' data-v='"+entries[i].options[j].choices[k].v; 
                         if (entries[i].options[j].choices[k].vc)
-                           text = text +"' data-vc='"+entries[i].options[j].choices[k].v; 
+                           text = text +"' data-vc='"+entries[i].options[j].choices[k].vc; 
                         if (entries[i].options[j].choices[k].w)
                            text = text +"' data-w='"+entries[i].options[j].choices[k].w; 
                         if (entries[i].options[j].choices[k].restricted)
@@ -23071,14 +23071,14 @@ function print_entry(entry){
     // Find any vehicles used by these entries
     var v = $(entry).data('v');
     var vc = $(entry).data('vc');
-    if ( !v ) {
-        var selects = $(entry).find("select option").filter(':selected');
-        for (var i=0; i<selects.length; i++) {
-            if ( $(selects[i]).data('v') ) {
-                v = $(selects[i]).data('v');
-                if (!vc)
-                    vc = $(selects[i]).data('vc');
-            }
+    var selects = $(entry).find("select option").filter(':selected');
+    for (var i=0; i<selects.length; i++) {
+        if ( $(selects[i]).data('v') ) {
+            v = $(selects[i]).data('v');
+        }
+        if ( $(selects[i]).data('vc') ) {
+            vc = $(selects[i]).data('vc');
+            console.log('changing vc to ' + vc);
         }
     }
     if (v) {
