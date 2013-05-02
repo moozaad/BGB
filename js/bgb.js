@@ -1656,6 +1656,12 @@ var vehicles = [
     'weapons':[114],
     'ammo':true
 },
+{
+    'id':228,
+    'name':'SdKfz 251/8',
+    'armour':true,
+    'open':true
+},
     // greg to-do, landing craft
 {
 }
@@ -4091,7 +4097,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 SdKfz 251 Wurfrahmen 40","cost":0,"v":0}
+                                    {"id":1,"text":"2 SdKfz 251 Werfrahmen 40","cost":0,"v":203}
                                 ]
                             }
                         ]
@@ -4629,7 +4635,7 @@ var forces = [
                         "choices":[
                             {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
                             {"id":2,"text":"Ambulance medium truck","cost":2,"v":58},
-                            {"id":3,"text":"SdKfz 251/8 Ambulance","cost":6,"v":0}
+                            {"id":3,"text":"SdKfz 251/8 Ambulance","cost":6,"v":228}
                         ]
                         }
                     ]
@@ -12924,7 +12930,7 @@ var forces = [
                         "choices":[
                             {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
                             {"id":2,"text":"Ambulance medium truck","cost":2,"v":58},
-                            {"id":3,"text":"SdKfz 251/8 Ambulance","cost":6,"v":0}
+                            {"id":3,"text":"SdKfz 251/8 Ambulance","cost":6,"v":228}
                         ]
                         }
                     ]
@@ -14080,7 +14086,7 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"Heavy Truck & 6 men","cost":0,"v":59},
-                                    {"id":2,"text":"SdKfz 251/7 & 6 men","cost":8,"v":0}
+                                    {"id":2,"text":"SdKfz 251/7 & 6 men","cost":8,"v":97}
                                 ]
                             }
                         ]
@@ -14251,7 +14257,7 @@ var forces = [
                             "name":"Composition",
                             "choices":[
                                 {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
-                                {"id":2,"text":"SdKfz 251/8 Ambulance","cost":6,"v":0}
+                                {"id":2,"text":"SdKfz 251/8 Ambulance","cost":6,"v":228}
                             ]
                             }
                         ]
@@ -14288,7 +14294,7 @@ var forces = [
                             "name":"Tow",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Zugkraftwagen S307(f)","cost":8,"v":0}
+                                {"id":2,"text":"Zugkraftwagen S307(f)","cost":8,"v":215}
                             ]
                         }
                     ]
@@ -14334,7 +14340,7 @@ var forces = [
                             "name":"Tow",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Zugkraftwagen S307(f) tow","cost":8,"v":0}
+                                {"id":2,"text":"Zugkraftwagen S307(f) tow","cost":8,"v":215}
                             ]
                         }
                     ]
@@ -19287,7 +19293,7 @@ var forces = [
                         "choices":[
                             {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
                             {"id":2,"text":"Ambulance medium truck","cost":2,"v":58},
-                            {"id":3,"text":"SdKfz 251/8 Ambulance","cost":6,"v":0}
+                            {"id":3,"text":"SdKfz 251/8 Ambulance","cost":6,"v":228}
                         ]
                         }
                     ]
