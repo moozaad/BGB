@@ -22978,7 +22978,7 @@ function emptyPage() {
     $('.sub_div').remove();
 }
 function saveDialog(text){
-    $('#save_div').html("<p>"+text+"</p>");
+    $('#save_div').html("<div class='ui-widget-content ui-corner-all' style='margin-bottom:8px;'><p>"+text+"</p></div><div class='ui-widget-content ui-corner-all'><p><a href='http://www.battlegroupbuilder.com?load="+text+"&roster=1'>Web-Link to share this force.</a></p></div>");
     $('#save_div').dialog({title:'Save String', modal:true,
         buttons: {
             Close: function () {
