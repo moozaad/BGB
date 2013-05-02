@@ -753,7 +753,7 @@ var vehicles = [
     'id':100,
     'name':'M4 Sherman (A1,A2,A3)',
     'armour':true,
-    'weapons':[1],
+    'weapons':[68],
     'mg':true,
     'ammo':true
 },
@@ -761,7 +761,7 @@ var vehicles = [
     'id':101,
     'name':'M4A4 Sherman',
     'armour':true,
-    'weapons':[1],
+    'weapons':[68],
     'mg':true,
     'ammo':true
 },
@@ -769,7 +769,7 @@ var vehicles = [
     'id':102,
     'name':'M4A4 Sherman Firefly',
     'armour':true,
-    'weapons':[1],
+    'weapons':[70],
     'mg':true,
     'ammo':true
 },
@@ -777,7 +777,6 @@ var vehicles = [
     'id':103,
     'name':'M4A4 Sherman HQ',
     'armour':true,
-    'weapons':[1],
     'mg':true,
     'ammo':true
 },
@@ -785,7 +784,7 @@ var vehicles = [
     'id':104,
     'name':'M4 Sherman (76mm)',
     'armour':true,
-    'weapons':[1],
+    'weapons':[69],
     'mg':true,
     'ammo':true
 },
@@ -793,7 +792,7 @@ var vehicles = [
     'id':105,
     'name':'M4 Sherman (105mm)',
     'armour':true,
-    'weapons':[1],
+    'weapons':[76],
     'mg':true,
     'ammo':true
 },
@@ -801,7 +800,7 @@ var vehicles = [
     'id':106,
     'name':'M4 DD Sherman',
     'armour':true,
-    'weapons':[1],
+    'weapons':[68],
     'mg':true,
     'ammo':true
 },
@@ -809,7 +808,7 @@ var vehicles = [
     'id':107,
     'name':'M4 Sherman Crab',
     'armour':true,
-    'weapons':[1],
+    'weapons':[68], // greg confirm
     'mg':true,
     'ammo':true
 },
@@ -817,25 +816,21 @@ var vehicles = [
     'id':108,
     'name':'M4 Sherman Dozer',
     'armour':true,
-    'weapons':[1],
+    'weapons':[68], // greg confirm
     'mg':true,
     'ammo':true
 },
 {
     'id':109,
     'name':'M4 Sherman ARV',
-    'armour':true,
-    'weapons':[1],
-    'mg':true,
-    'ammo':true
+    'armour':true, //greg confirm no gun
+    'mg':true // greg confirm all stats
 },
 {
     'id':110,
     'name':'M4 Sherman BARV',
     'armour':true,
-    'weapons':[1],
-    'mg':true,
-    'ammo':true
+    'mg':true // greg confirm all stats
 },
 {
     'id':111,
@@ -848,24 +843,20 @@ var vehicles = [
 {
     'id':112,
     'name':'Cromwell IV or V HQ',
-    'armour':true,
-    'weapons':[1],
-    'mg':true,
-    'ammo':true
+    'armour':true, // greg confirm all stats
+    'mg':true
 },
 {
     'id':113,
     'name':'Cromwell ARV',
     'armour':true,
-    'weapons':[1],
-    'mg':true,
-    'ammo':true
+    'mg':true
 },
 {
     'id':114,
     'name':'Challenger',
     'armour':true,
-    'weapons':[1],
+    'weapons':[70],
     'mg':true,
     'ammo':true
 },
@@ -873,7 +864,7 @@ var vehicles = [
     'id':115,
     'name':'M3A3 \'Honey\'',
     'armour':true,
-    'weapons':[1],
+    'weapons':[56],
     'mg':true,
     'ammo':true
 },
@@ -881,7 +872,7 @@ var vehicles = [
     'id':116,
     'name':'M5 Stuart',
     'armour':true,
-    'weapons':[1],
+    'weapons':[56],
     'mg':true,
     'ammo':true
 },
@@ -889,15 +880,13 @@ var vehicles = [
     'id':117,
     'name':'M5 Stuart \'Recce\'',
     'armour':true,
-    'weapons':[1],
-    'mg':true,
-    'ammo':true
+    'mg':true
 },
 {
     'id':118,
     'name':'Tetrarch',
     'armour':true,
-    'weapons':[1],
+    'weapons':[71],
     'mg':true,
     'ammo':true
 },
@@ -905,7 +894,7 @@ var vehicles = [
     'id':119,
     'name':'Tetrarch CS',
     'armour':true,
-    'weapons':[1],
+    'weapons':[41], //greg need to confirm via guild forum
     'mg':true,
     'ammo':true
 },
@@ -929,7 +918,7 @@ var vehicles = [
     'id':122,
     'name':'Churchill VII',
     'armour':true,
-    'weapons':[1],
+    'weapons':[68],
     'mg':true,
     'ammo':true
 },
@@ -937,7 +926,7 @@ var vehicles = [
     'id':123,
     'name':'Churchill AVRE',
     'armour':true,
-    'weapons':[1],
+    'weapons':[89],
     'mg':true,
     'ammo':true
 },
@@ -945,25 +934,20 @@ var vehicles = [
     'id':124,
     'name':'Churchill Crocodile',
     'armour':true,
-    'weapons':[1],
+    'weapons':[68], // greg also needs flame-thrower
     'mg':true,
     'ammo':true
 },
 {
     'id':125,
     'name':'Churchill Ark',
-    'armour':true,
-    'weapons':[1],
-    'mg':true,
-    'ammo':true
+    'armour':true
 },
 {
     'id':126,
     'name':'Churchill ARV',
     'armour':true,
-    'weapons':[1],
-    'mg':true,
-    'ammo':true
+    'mg':true
 },
 {
     'id':127,
@@ -971,6 +955,7 @@ var vehicles = [
     'armour':true,
     'weapons':[72],
     'mg':true,
+    'special':'Unreliable',
     'ammo':true
 },
 {
@@ -978,7 +963,8 @@ var vehicles = [
     'name':'Centaur AA',
     'open':true,
     'armour':true,
-    'weapons':[1],
+    'weapons':[4],
+    'special':'Unreliable',
     'mg':true,
     'ammo':true
 },
@@ -987,7 +973,7 @@ var vehicles = [
     'name':'Crusader AA I',
     'armour':true,
     'open':true,
-    'weapons':[1],
+    'weapons':[63],
     'mg':true,
     'ammo':true
 },
@@ -995,24 +981,21 @@ var vehicles = [
     'id':130,
     'name':'Crusader AA II',
     'armour':true,
-    'weapons':[1],
+    'weapons':[4],
     'mg':true,
     'ammo':true
 },
 {
     'id':131,
     'name':'Valentine Bridge',
-    'armour':true,
-    'weapons':[1],
-    'mg':true,
-    'ammo':true
+    'armour':true
 },
 {
     'id':132,
     'name':'M10 Wolverine',
     'armour':true,
     'open':true,
-    'weapons':[1],
+    'weapons':[69],
     'mg':true,
     'ammo':true
 },
@@ -1021,7 +1004,7 @@ var vehicles = [
     'name':'M10 Achilles',
     'armour':true,
     'open':true,
-    'weapons':[1],
+    'weapons':[70],
     'mg':true,
     'ammo':true
 },
@@ -1035,7 +1018,7 @@ var vehicles = [
     'id':135,
     'name':'Humber IV',
     'armour':true,
-    'weapons':[1],
+    'weapons':[56],
     'mg':true,
     'ammo':true
 },
@@ -1050,7 +1033,7 @@ var vehicles = [
     'id':137,
     'name':'Daimler',
     'armour':true,
-    'weapons':[1],
+    'weapons':[58],
     'mg':true,
     'ammo':true
 },
@@ -1058,7 +1041,7 @@ var vehicles = [
     'id':138,
     'name':'Staghound',
     'armour':true,
-    'weapons':[1],
+    'weapons':[56],
     'mg':true,
     'ammo':true
 },
@@ -1072,7 +1055,7 @@ var vehicles = [
     'id':140,
     'name':'AEC III',
     'armour':true,
-    'weapons':[1],
+    'weapons':[68],
     'mg':true,
     'ammo':true
 },
@@ -1087,7 +1070,7 @@ var vehicles = [
     'name':'M8 Greyhound',
     'open':true,
     'armour':true,
-    'weapons':[1],
+    'weapons':[56],
     'mg':true,
     'ammo':true
 },
@@ -1096,27 +1079,22 @@ var vehicles = [
     'name':'M20 Utility Car',
     'open':true,
     'armour':true,
-    'weapons':[1],
-    'mg':true,
-    'ammo':true
+    'mg':true
 },
 {
     'id':144,
     'name':'M16',
     'open':true,
     'armour':true,
-    'weapons':[1],
-    'mg':true,
-    'ammo':true
+    'mg':true
 },
 {
     'id':145,
     'open':true,
     'name':'M15',
     'armour':true,
-    'weapons':[1],
-    'mg':true,
-    'ammo':true
+    'weapons':[56],
+    'mg':true
 },
 {
     'id':146,
@@ -1140,7 +1118,12 @@ var vehicles = [
     'mg':true
 },
 {
-    'id':149
+    'id':149,
+    'name':'Churchill VIII',
+    'armour':true,
+    'weapons':[72],
+    'mg':true,
+    'ammo':true
 },
 {
     'id':150,
@@ -1172,7 +1155,7 @@ var vehicles = [
     'id':154,
     'name':'Sexton',
     'armour':true,
-    'weapons':[1],
+    'weapons':[73],
     'ammo':true
 },
 {
@@ -1180,7 +1163,7 @@ var vehicles = [
     'name':'Priest',
     'open':true,
     'armour':true,
-    'weapons':[1],
+    'weapons':[76],
     'mg':true,
     'ammo':true
 },
@@ -1189,7 +1172,7 @@ var vehicles = [
     'name':'M8 HMC',
     'armour':true,
     'open':true,
-    'weapons':[1],
+    'weapons':[65],
     'mg':true,
     'ammo':true
 },
@@ -1198,7 +1181,7 @@ var vehicles = [
     'name':'M4 or M21 Halftrack',
     'open':true,
     'armour':true,
-    'weapons':[1],
+    'weapons':[61],
     'mg':true,
     'ammo':true
 },
@@ -2405,7 +2388,7 @@ var weapons = {
         ]
     },
     59:{
-        'name':'6 pdr',
+        'name':'6 pdr (57mmL46)',
         'stats':[
         {
             'type':'HE',
@@ -10638,7 +10621,7 @@ var forces = [
                                 "name":"Bazooka Team",
                                 "cost":0,
                                 "br":0,
-                                "w":0,
+                                "w":92,
                                 "mandatory":true
                             },
                             {
@@ -10676,6 +10659,7 @@ var forces = [
                                 "name":"Bazooka Team",
                                 "cost":18,
                                 "br":1,
+                                "w":92,
                                 "unique":true
                             },
                             {
@@ -10708,11 +10692,12 @@ var forces = [
                                 "cost":37,
                                 "br":2,
                                 "unique":true,
+                                "w":59,
                                 "options":[
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"57mmL46","cost":0,"w":0}
+                                            {"id":1,"text":"57mmL46","cost":0}
                                         ]
                                     },
                                     {
@@ -10840,7 +10825,7 @@ var forces = [
                                 "cost":16,
                                 "br":1,
                                 "unique":true,
-                                "w":0
+                                "w":92
                             },
                             {
                                 "id":5,
@@ -10893,7 +10878,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"57mmL46","cost":0,"w":0}
+                                            {"id":1,"text":"57mmL46","cost":0,"w":59}
                                         ]
                                     },
                                     {
@@ -11072,7 +11057,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 81mm mortars","cost":0,"w":2}
+                                    {"id":1,"text":"2 81mm mortars","cost":0,"w":60}
                                 ]
                             }
                         ]
@@ -11384,7 +11369,7 @@ var forces = [
                                 "name":"Bazooka",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"1 Bazooka","cost":12}
+                                    {"id":2,"text":"1 Bazooka","cost":12,"w":92}
                                 ]
                             }
                         ]
@@ -11765,6 +11750,7 @@ var forces = [
                             "id":4,
                             "name":"Bazooka Team",
                             "cost":0,
+                            "w":92,
                             "br":0,
                             "mandatory":true
                         }
@@ -16854,8 +16840,8 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"Ram Kangaroo","cost":0,"v":147},
                                     {"id":2,"text":"Churchill V","cost":29,"br":2,"restricted":true,"v":120},
-                                    {"id":3,"text":"Churchill VI","cost":55,"br":2,"restricted":true,"v":121},
-                                    {"id":4,"text":"Churchill VIII","cost":51,"br":2,"restricted":true,"v":122},
+                                    {"id":3,"text":"Churchill VI","cost":55,"br":2,"restricted":true,"v":121}, // greg confirm if VI or VII
+                                    {"id":4,"text":"Churchill VIII","cost":51,"br":2,"restricted":true,"v":122}, //greg confirm if VII or VIII
                                     {"id":5,"text":"Churchill AVRE","cost":39,"br":2,"restricted":true,"v":123},
                                     {"id":6,"text":"Churchill Crocodile","cost":65,"br":2,"restricted":true,"v":124},
                                     {"id":7,"text":"Centaur IV","cost":31,"br":2,"restricted":true,"v":127},
@@ -17078,6 +17064,7 @@ var forces = [
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
+                                "w":92,
                                 "options":[
                                     {
                                         "name":"Bazooka",
@@ -17098,7 +17085,7 @@ var forces = [
                                     {
                                         "name":"Bazooka",
                                         "choices":[
-                                            {"id":1,"text":"Bazooka","cost":0}
+                                            {"id":1,"text":"Bazooka","cost":0,"w":92}
                                         ]
                                     },
                                     {
@@ -17115,7 +17102,6 @@ var forces = [
                                 "name":"MMG Team",
                                 "cost":0,
                                 "br":0,
-                                "w":0,
                                 "mandatory":true,
                                 "count":2,
                                 "options":[
@@ -17140,7 +17126,7 @@ var forces = [
                                 "name":"Light Mortar Team",
                                 "cost":0,
                                 "br":0,
-                                "w":0,
+                                "w":60,
                                 "mandatory":true,
                                 "options":[
                                     {
@@ -17180,8 +17166,8 @@ var forces = [
                                 "name":"Medium Mortar Team",
                                 "cost":22,
                                 "br":1,
-                                "w":0,
-                               "unique":true,
+                                "w":61,
+                                "unique":true,
                                 "options":[
                                     {
                                         "name":"Loader Team",
@@ -17209,7 +17195,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"57mmL46","cost":0,"w":0}
+                                            {"id":1,"text":"57mmL46","cost":0,"w":59}
                                         ]
                                     },
                                     {
@@ -17255,7 +17241,7 @@ var forces = [
                             {
                                 "name":"Bazooka",
                                 "choices":[
-                                    {"id":1,"text":"Bazooka","cost":0}
+                                    {"id":1,"text":"Bazooka","cost":0,"w":92}
                                 ]
                             },
                             {
@@ -17527,7 +17513,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 81mm mortars","cost":0,"w":2},
+                                    {"id":1,"text":"2 81mm mortars","cost":0,"w":60},
                                     {"id":2,"text":"2 4.2\" mortars","cost":18,"w":62}
                                 ]
                             }
@@ -17780,7 +17766,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"BAR, Bazooka","cost":0}
+                                    {"id":1,"text":"BAR, Bazooka","cost":0,"w":92}
                                 ]
                             },
                             {
