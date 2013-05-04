@@ -808,7 +808,7 @@ var vehicles = [
     'id':107,
     'name':'M4 Sherman Crab',
     'armour':true,
-    'weapons':[68], // greg confirm
+    'weapons':[68],
     'mg':true,
     'ammo':true
 },
@@ -816,34 +816,36 @@ var vehicles = [
     'id':108,
     'name':'M4 Sherman Dozer',
     'armour':true,
-    'weapons':[68], // greg confirm
+    'weapons':[68],
     'mg':true,
     'ammo':true
 },
 {
     'id':109,
     'name':'M4 Sherman ARV',
-    'armour':true, //greg confirm no gun
-    'mg':true // greg confirm all stats
+    'armour':true,
+    'open':true,
+    'mg':true
 },
 {
     'id':110,
     'name':'M4 Sherman BARV',
     'armour':true,
-    'mg':true // greg confirm all stats
+    'open':true,
+    'mg':true
 },
 {
     'id':111,
     'name':'Cromwell IV or V',
     'armour':true,
-    'weapons':[59],
+    'weapons':[68],
     'mg':true,
     'ammo':true
 },
 {
     'id':112,
     'name':'Cromwell IV or V HQ',
-    'armour':true, // greg confirm all stats
+    'armour':true,
     'mg':true
 },
 {
@@ -894,7 +896,7 @@ var vehicles = [
     'id':119,
     'name':'Tetrarch CS',
     'armour':true,
-    'weapons':[41], //greg need to confirm via guild forum
+    'weapons':[41], // confirmed as identical stats via guild-forum, http://www.guildwargamers.com/phpBB3/viewtopic.php?f=309&t=28089
     'mg':true,
     'ammo':true
 },
@@ -902,7 +904,7 @@ var vehicles = [
     'id':120,
     'name':'Churchill V',
     'armour':true,
-    'weapons':[1],
+    'weapons':[72],
     'mg':true,
     'ammo':true
 },
@@ -910,7 +912,7 @@ var vehicles = [
     'id':121,
     'name':'Churchill VI',
     'armour':true,
-    'weapons':[1],
+    'weapons':[68],
     'mg':true,
     'ammo':true
 },
@@ -9301,6 +9303,8 @@ var forces = [
                         "name":"Recon Platoon Command",
                         "cost":29,
                         "br":2,
+                        "officer":true,
+                        "unique":true,
                         "v":163,
                         "options":[
                             {
@@ -14503,9 +14507,25 @@ var forces = [
                     "name":"Wire Team",
                     "br":0,
                     "cost":7
+                },
+                {
+                    "id":6,
+                    "name":"Forward Signals Unit",
+                    "br":1,
+                    "cost":18,
+                    "unique":true,
+                    "options":[
+                        {
+                            "name":"Transport",
+                            "choices":[
+                                {"id":1,"text":"Radio Medium Truck","cost":0,"v":91},
+                                {"id":2,"text":"Dorchester ACV","cost":2,"v":159},
+                                {"id":3,"text":"M5 Radio Half-Track","cost":4,"v":83}
+                            ]
+                        }
+                    ]
                 }
                 ]
-
             },
             {
                 "id":2, 
@@ -16846,8 +16866,8 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"Ram Kangaroo","cost":0,"v":147},
                                     {"id":2,"text":"Churchill V","cost":29,"br":2,"restricted":true,"v":120},
-                                    {"id":3,"text":"Churchill VI","cost":55,"br":2,"restricted":true,"v":121}, // greg confirm if VI or VII
-                                    {"id":4,"text":"Churchill VIII","cost":51,"br":2,"restricted":true,"v":122}, //greg confirm if VII or VIII
+                                    {"id":3,"text":"Churchill VII","cost":55,"br":2,"restricted":true,"v":122},
+                                    {"id":4,"text":"Churchill VIII","cost":51,"br":2,"restricted":true,"v":149},
                                     {"id":5,"text":"Churchill AVRE","cost":39,"br":2,"restricted":true,"v":123},
                                     {"id":6,"text":"Churchill Crocodile","cost":65,"br":2,"restricted":true,"v":124},
                                     {"id":7,"text":"Centaur IV","cost":31,"br":2,"restricted":true,"v":127},
