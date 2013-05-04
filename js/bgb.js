@@ -18060,7 +18060,7 @@ var forces = [
     {
         "id":14,
         "group":"American",
-        "name":"(Coming Soon) Infantry Division",
+        "name":"Infantry Division",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
