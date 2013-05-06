@@ -9009,9 +9009,8 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M4A4","cost":0}, 
-                                // greg need to allow 2 vehicle types for below firefly entry 
-                                    {"id":1,"text":"2 M4A4, 1 Firefly","cost":16} 
+                                    {"id":1,"text":"3 M4A4","cost":0,"vc":3},
+                                    {"id":2,"text":"2 M4A4, 1 Firefly","cost":16,"v":"[101,102]","vc":"[2,1]"} 
                                 ] 
                             }
                         ] 
@@ -10081,7 +10080,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"10 M4A4 Shermans, 3 Fireflies","cost":0,"v":102} //greg need multiple vehicles +v101
+                                    {"id":1,"text":"10 M4A4 Shermans, 3 Fireflies","cost":0,"v":"[101,102]","vc":"[10,3]"}
                                 ] 
                             } 
                         ] 
@@ -14967,16 +14966,14 @@ var forces = [
                         "cost":150, 
                         "multiplier":3, 
                         "br":9, 
-                        "v":100,
-                        "vc":3,
                         "officer":true,
                         "options":[ 
                             { 
                                 "name":"Composition", 
-                                "choices":[ // greg need to fix vehicles and vcs below
-                                    {"id":1,"text":"2 M4A4s, 1 Firefly","cost":0},
-                                    {"id":2,"text":"1M4, 1 M4A4, 1 Firefly","cost":2},
-                                    {"id":3,"text":"2 M4s, 1 Firefly","cost":4}
+                                "choices":[
+                                    {"id":1,"text":"2 M4A4s, 1 Firefly","cost":0,"v":"[101,102]","vc":"[2,1]"},
+                                    {"id":2,"text":"1 M4, 1 M4A4, 1 Firefly","cost":2,"v":"[100,101,102]","vc":"[1,1,1]"},
+                                    {"id":3,"text":"2 M4s, 1 Firefly","cost":4,"v":"[100,102]","vc":"[2,1]"}
                                 ] 
                             }
                         ] 
@@ -14988,16 +14985,15 @@ var forces = [
                         "br":6, 
                         "officer":true,
                         "multiplier":3,
-                        "v":115,
+                        "vc":3,
                         "options":[ 
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M3A3 'Honey's","cost":0}, 
-                                //greg need to fix vc and v below
-                                    {"id":2,"text":"1 M5 Stuart, 2 M3A3 'Honey's","cost":2,"v":89}, 
-                                    {"id":3,"text":"2 M5 Stuarts, 1 M3A3 'Honey'","cost":4,"v":89}, 
-                                    {"id":4,"text":"3 M5 Stuarts","cost":6,"v":89} 
+                                    {"id":1,"text":"3 M3A3 'Honey's","cost":0,"v":115}, 
+                                    {"id":2,"text":"1 M5 Stuart, 2 M3A3 'Honey's","cost":2,"v":"[116,115]","vc":"[1,2]"}, 
+                                    {"id":3,"text":"2 M5 Stuarts, 1 M3A3 'Honey'","cost":4,"v":"[116,115]","vc":"[2,1]"}, 
+                                    {"id":4,"text":"3 M5 Stuarts","cost":6,"v":116} 
                                 ] 
                             } 
                         ] 
@@ -15009,14 +15005,12 @@ var forces = [
                         "cost":156, 
                         "multiplier":3, 
                         "br":9, 
-                        "v":111,
-                        "vc":3,
                         "officer":true,
                         "options":[ 
                             { 
                                 "name":"Composition", 
-                                "choices":[ // greg need to fix vehicles and vcs below
-                                    {"id":1,"text":"2 Cromwell IVs, 1 Firefly","cost":0}
+                                "choices":[
+                                    {"id":1,"text":"2 Cromwell IVs, 1 Firefly","cost":0,"v":"[111,102]","vc":"[2,1]"}
                                 ] 
                             }
                         ] 
@@ -15027,14 +15021,14 @@ var forces = [
                         "cost":178, 
                         "multiplier":3, 
                         "br":9, 
-                        "v":111,
-                        "vc":3,
                         "unique":true,
                         "officer":true,
+                        "v":"[111,114]",
+                        "vc":"[2,1]",
                         "options":[ 
                             { 
                                 "name":"Composition", 
-                                "choices":[ // greg need to fix vehicles and vcs below
+                                "choices":[
                                     {"id":1,"text":"2 Cromwell IVs, 1 Challenger","cost":0}
                                 ] 
                             }
@@ -16146,16 +16140,14 @@ var forces = [
                         "cost":146, 
                         "multiplier":3, 
                         "br":9, 
-                        "v":100,
-                        "vc":3,
                         "officer":true,
                         "options":[ 
                             { 
                                 "name":"Composition", 
-                                "choices":[ // greg need to fix vehicles and vcs below
-                                    {"id":1,"text":"2 M4A4s, 1 Firefly","cost":0},
-                                    {"id":2,"text":"1M4, 1 M4A4, 1 Firefly","cost":2},
-                                    {"id":3,"text":"2 M4s, 1 Firefly","cost":4}
+                                "choices":[
+                                    {"id":1,"text":"2 M4A4s, 1 Firefly","cost":0,"v":"[101,102]","vc":"[2,1]"},
+                                    {"id":2,"text":"1 M4, 1 M4A4, 1 Firefly","cost":2,"v":"[100,101,102]","vc":"[1,1,1]"},
+                                    {"id":3,"text":"2 M4s, 1 Firefly","cost":4,"v":"[100,102]","vc":"[2,1]"}
                                 ] 
                             }
                         ] 
@@ -16166,16 +16158,15 @@ var forces = [
                         "cost":130, 
                         "multiplier":3, 
                         "br":9, 
-                        "v":121,
                         "vc":3,
                         "officer":true,
                         "options":[ 
                             { 
                                 "name":"Composition", 
-                                "choices":[ // greg need to fix vehicles and vcs below
-                                    {"id":1,"text":"3 Churchill VIs","cost":0},
-                                    {"id":2,"text":"2 Churchill VIs, 1 Churchill III/IV","cost":0},
-                                    {"id":3,"text":"1 Churchill VIs, 2 Churchill III/IVs","cost":0},
+                                "choices":[
+                                    {"id":1,"text":"3 Churchill VIs","cost":0,"v":121},
+                                    {"id":2,"text":"2 Churchill VIs, 1 Churchill III/IV","cost":0,"v":"[121,88]","vc":"[2,1]"},
+                                    {"id":3,"text":"1 Churchill VIs, 2 Churchill III/IVs","cost":0,"v":"[121,88]","vc":"[1,2]"},
                                     {"id":4,"text":"3 Churchill III/IVs","cost":0,"v":88}
                                 ] 
                             }
@@ -17302,27 +17293,27 @@ var forces = [
                         "cost":140, 
                         "multiplier":4, 
                         "br":9, 
-                        "v":100,
-                        "vc":3,
+                        "v":"[100,104]",
                         "officer":true,
                         "options":[ 
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M4s","cost":0},
-                                    {"id":2,"text":"4 M4s","cost":50,"br":3,"vc":4},
-                                    {"id":3,"text":"5 M4s","cost":100,"br":6,"vc":5} 
+                                    {"id":1,"text":"3 M4s","cost":0,"vc":"[3,0]"},
+                                    {"id":2,"text":"4 M4s","cost":50,"br":3,"vc":"[4,0]"},
+                                    {"id":3,"text":"5 M4s","cost":100,"br":6,"vc":"[5,0]"} 
                                 ] 
                             },
                             { 
                                 "name":"76mmL53 Guns", 
-                                "choices":[ // greg below need to also include M4 sherman type in correct ratio
-                                    {"id":1,"text":"1 76mmL53 Gun","cost":4,"v":104},
-                                    {"id":2,"text":"2 76mmL53 Guns","cost":8,"v":104},
-                                    {"id":3,"text":"3 76mmL53 Guns","cost":12,"v":104},
-                                    {"id":4,"text":"4 76mmL53 Guns","cost":16,"v":104},
-                                    {"id":5,"text":"5 76mmL53 Guns","cost":20,"v":104} 
-                                ] 
+                                "choices":[
+                                    {"id":1,"text":"No 76mmL53 Guns","cost":0,"np":true},
+                                    {"id":2,"text":"1 76mmL53 Gun","cost":4,"vcd":"[-1,1]"},
+                                    {"id":3,"text":"2 76mmL53 Guns","cost":8,"vcd":"[-2,2]"},
+                                    {"id":4,"text":"3 76mmL53 Guns","cost":12,"vcd":"[-3,3]"},
+                                    {"id":5,"text":"4 76mmL53 Guns","cost":16,"vcd":"[-4,4]"},
+                                    {"id":6,"text":"5 76mmL53 Guns","cost":20,"vcd":"[-5,5]"} 
+                                ]
                             }
                         ] 
                     }, 
@@ -17333,15 +17324,15 @@ var forces = [
                         "br":6, 
                         "v":89,
                         "multiplier":4,
-                        "vc":4,
+                        "vc":3,
                         "officer":true,
                         "options":[ 
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
                                     {"id":1,"text":"3 M5 Stuarts","cost":0}, 
-                                    {"id":2,"text":"4 M5 Stuarts","cost":30,"br":2}, 
-                                    {"id":3,"text":"5 M5 Stuarts","cost":60,"br":4}
+                                    {"id":2,"text":"4 M5 Stuarts","cost":30,"br":2,"vc":4}, 
+                                    {"id":3,"text":"5 M5 Stuarts","cost":60,"br":4,"vc":5}
                                 ] 
                             } 
                         ] 
@@ -23720,6 +23711,8 @@ function render_entries(entries, sub_entries, async) {
                            text = text +"' data-v='"+entries[i].options[j].choices[k].v; 
                         if (entries[i].options[j].choices[k].vc)
                            text = text +"' data-vc='"+entries[i].options[j].choices[k].vc; 
+                        if (entries[i].options[j].choices[k].vcd)
+                           text = text +"' data-vcd='"+entries[i].options[j].choices[k].vcd; 
                         if (entries[i].options[j].choices[k].w)
                            text = text +"' data-w='"+entries[i].options[j].choices[k].w; 
                         if (entries[i].options[j].choices[k].restricted)
@@ -24239,12 +24232,21 @@ function print_entry_options(entry){
     }
     return text + "</h5></div>";
 }
+function addV(which, count) {
+    if ( count < 1 )
+        return;
+    if ( listVehicles[which] )
+        listVehicles[which] = listVehicles[which] + count;
+    else
+        listVehicles[which] = count;
+}
 function print_entry(entry){
     var text = print_entry_name(entry);
 
     // Find any vehicles used by these entries
     var v = $(entry).data('v');
     var vc = $(entry).data('vc');
+    var vcd = null;
     var selects = $(entry).find("select option").filter(':selected');
     for (var i=0; i<selects.length; i++) {
         if ( $(selects[i]).data('v') ) {
@@ -24252,16 +24254,30 @@ function print_entry(entry){
         }
         if ( $(selects[i]).data('vc') ) {
             vc = $(selects[i]).data('vc');
-            console.log('changing vc to ' + vc);
+        }
+        if ( $(selects[i]).data('vcd') ) {
+            vcd = $(selects[i]).data('vcd');
         }
     }
     if (v) {
         if ( !vc )
             vc = 1;
-        if ( listVehicles[v] )
-            listVehicles[v] = listVehicles[v] + vc;
-        else
-            listVehicles[v] = vc;
+        if ( $.isArray(v) ){
+            if ( vcd !== null ) {
+                // Apply any vehicle count deltas. Used for some really awkward units.
+                // First duplicate V so we don't modify the original
+                vc = vc.slice(0);
+                for (var i=0; i<v.length; i++){
+                    vc[i]=vc[i]+vcd[i];
+                    if (vc[i] < 0)
+                        vc[i]=0;
+                }
+            }
+
+            for (var i=0; i<v.length; i++)
+                addV(v[i],vc[i]);
+        } else 
+            addV(v,vc);
     }
     var w = $(entry).data('w');
     if ( !w ) {
@@ -24483,17 +24499,14 @@ function test_forces() {
     for (var i=0; i<forces.length; i++){
         for (var j=0; j<forces[i].sections.length; j++) {
             for (var k=0; k<forces[i].sections[j].entries.length; k++) {
-                //console.log(forces[i].sections[j].entries[k].name);
                 var entry = forces[i].sections[j].entries[k];
                 var print = false;
                 if ( entry.v === 0 ){
-                    console.log('Main vehicle==0');
                     print = true;
                 }
                 if ( typeof entry.options != 'undefined' ) {
                     for (var l=0; l<entry.options.length; l++) {
                         for (var m=0; m<entry.options[l].choices.length; m++) {
-                            //console.log('entry choice is ' + JSON.stringify(entry.options[l].choices[m]));
                             if (entry.options[l].choices[m].w === 0)
                                 print = true;
                             if (entry.options[l].choices[m].v === 0)
