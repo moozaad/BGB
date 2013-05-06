@@ -1363,7 +1363,7 @@ var vehicles = [
     'id':186,
     'name':'Tiger II',
     'armour':true,
-    'weapons':[11],
+    'weapons':[20],
     'mg':true,
     'ammo':true
 },
@@ -20260,11 +20260,11 @@ var forces = [
                                 {"id":1,"text":"SdKfz 222","cost":0,"v":32},
                                 {"id":2,"text":"SdKfz 233","cost":14,"v":35},
                                 {"id":3,"text":"SdKfz 234/1","cost":2,"v":199},
-                                {"id":3,"text":"SdKfz 234/2 Puma","cost":8,"v":200},
-                                {"id":3,"text":"SdKfz 234/3","cost":14,"v":201},
-                                {"id":4,"text":"SdKfz 250/7","cost":8, restricted:"true","v":45},
-                                {"id":5,"text":"SdKfz 250/8","cost":12, restricted:"true","v":46},
-                                {"id":6,"text":"SdKfz 250/9","cost":6, restricted:"true","v":47}
+                                {"id":4,"text":"SdKfz 234/2 Puma","cost":8,"v":200},
+                                {"id":5,"text":"SdKfz 234/3","cost":14,"v":201},
+                                {"id":6,"text":"SdKfz 250/7","cost":8, restricted:"true","v":45},
+                                {"id":7,"text":"SdKfz 250/8","cost":12, restricted:"true","v":46},
+                                {"id":8,"text":"SdKfz 250/9","cost":6, restricted:"true","v":47}
                             ]
                         }
                     ]
