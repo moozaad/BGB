@@ -24267,14 +24267,14 @@ function print_entry(entry){
                 // Apply any vehicle count deltas. Used for some really awkward units.
                 // First duplicate V so we don't modify the original
                 vc = vc.slice(0);
-                for (var i=0; i<v.length; i++){
+                for (i=0; i<v.length; i++){
                     vc[i]=vc[i]+vcd[i];
                     if (vc[i] < 0)
                         vc[i]=0;
                 }
             }
 
-            for (var i=0; i<v.length; i++)
+            for (i=0; i<v.length; i++)
                 addV(v[i],vc[i]);
         } else 
             addV(v,vc);
