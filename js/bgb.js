@@ -24531,7 +24531,10 @@ $( document ).ready( function() {
         test_forces();
         return;
     }
-        
+    // Have to put the option_change handler here before render
+    // as render may trigger a load, which will depend on this
+    // option handler to correctly calculate values.
+    $('body').on('change', '.opt_select', option_change);
     render();
     update_selectable();
     sub_button_bind();
@@ -24543,7 +24546,6 @@ $( document ).ready( function() {
     $('body').on('click', '#load', loadDialog);
     $('body').on('click', '#print', print_render);
     $('body').on('change', '#forceChoice', changeForce);
-    $('body').on('change', '.opt_select', option_change);
     if ( typeof vehicles_private !== 'undefined' )
         merge_vehicles();
     if ( typeof weapons_private !== 'undefined' )
