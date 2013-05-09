@@ -20868,9 +20868,11 @@ var forces = [
                                     {
                                         "name":"MG",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"MG34","cost":10},
-                                            {"id":3,"text":"MG42","cost":14}
+                                            {"id":1,"text":"Bipod MG34","cost":0},
+                                            {"id":2,"text":"Bipod MG42","cost":4},
+                                            {"id":3,"text":"2 Bipod MG34s","cost":10},
+                                            {"id":4,"text":"Bipod MG34, Bipod MG42","cost":14},
+                                            {"id":5,"text":"2 Bipod MG42s","cost":18}
                                         ]
                                     }
                                 ]
