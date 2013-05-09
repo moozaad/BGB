@@ -8905,8 +8905,8 @@ var forces = [
                             {
                                 "id":7,
                                 "name":"PIAT Team",
-                                "cost":0,
-                                "br":0,
+                                "cost":18,
+                                "br":1,
                                 "w":91,
                                 "unique":true
                             },
@@ -17090,6 +17090,13 @@ var forces = [
                                         "choices":[
                                             {"id":1,"text":"Bazooka","cost":0}
                                         ]
+                                    },
+                                    {
+                                        "name":"Transport",
+                                        "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"M3 Half-Track","cost":8,"br":1,"v":148}
+                                        ]
                                     }
                                 ]
                             },
@@ -20776,6 +20783,12 @@ var forces = [
                     "br":0,
                     "v":50,
                     "cost":12
+                },
+                {
+                    "id":5,
+                    "name":"Wire Team",
+                    "br":0,
+                    "cost":8
                 }
                 ]
             },
@@ -21472,7 +21485,7 @@ var forces = [
                 {
                     "id":1,
                     "name":"Sniper",
-                    "cost":10,
+                    "cost":11,
                     "br":1,
                     "options":[
                         {
@@ -21546,6 +21559,13 @@ var forces = [
                             "choices":[
                                 {"id":1,"text":"Bipod MG34","cost":0},
                                 {"id":2,"text":"Bipod MG42","cost":4}
+                            ]
+                        },
+                        {
+                            "name":"Weapon",
+                            "choices":[
+                                {"id":1,"text":"Rifles","cost":0, "np":true},
+                                {"id":2,"text":"FG42 assault rifles","cost":10}
                             ]
                         }
                     ]
