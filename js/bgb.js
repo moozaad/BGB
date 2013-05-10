@@ -12428,8 +12428,8 @@ var forces = [
                     {
                         "id":2,
                         "name":"Conscript Labour Platoon",
-                        "cost":64,
-                        "br":5,
+                        "cost":33,
+                        "br":4,
                         'multiplier':2,
                         "restricted":2,
                         "p":1,
