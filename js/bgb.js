@@ -13641,29 +13641,28 @@ var forces = [
                         "name":"StuG Battery",
                         "cost":128,
                         "multiplier":3,
-                        "vc":3,
                         "br":9,
                         "officer":true,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 StuG III Fs, 1 StuH 42 F","cost":0,"v":16} //greg also needs StuH 42 F vehicle code
+                                    {"id":1,"text":"2 75mm PaK40 auf 39H(f)s, 1 105mm PzFH18 auf 39H(f)","cost":0,"v":["225,224"],"vc":"[2,1]"}
                                 ]
                             }
                         ]
                     },
                     {
                         "id":3,
-                        "name":"StuG III",
+                        "name":"StuG",
                         "cost":44,
                         "br":3,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"StuH F ","cost":0,"v":17},
-                                    {"id":2,"text":"StuG III F","cost":8,"v":16}
+                                    {"id":1,"text":"105mm PzFH18 auf 39H(f)","cost":0,"v":224},
+                                    {"id":2,"text":"75mm PaK40 auf 39H(f)","cost":8,"v":225}
                                 ]
                             }
                         ]
@@ -18409,26 +18408,26 @@ var forces = [
                         "cost":140, 
                         "multiplier":4, 
                         "br":9, 
-                        "v":100,
-                        "vc":3,
+                        "v":"[100,104]",
                         "officer":true,
                         "options":[ 
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M4s","cost":0},
-                                    {"id":2,"text":"4 M4s","cost":50,"br":3,"vc":4},
-                                    {"id":3,"text":"5 M4s","cost":100,"br":6,"vc":5} 
+                                    {"id":1,"text":"3 M4s","cost":0,"vc":"[3,0]"},
+                                    {"id":2,"text":"4 M4s","cost":50,"br":3,"vc":"[4,0]"},
+                                    {"id":3,"text":"5 M4s","cost":100,"br":6,"vc":"[5,0]"} 
                                 ] 
                             },
                             { 
                                 "name":"76mmL53 Guns", 
-                                "choices":[ // greg below need to also include M4 sherman type in correct ratio
-                                    {"id":1,"text":"1 76mmL53 Gun","cost":4,"v":104},
-                                    {"id":2,"text":"2 76mmL53 Guns","cost":8,"v":104},
-                                    {"id":3,"text":"3 76mmL53 Guns","cost":12,"v":104},
-                                    {"id":4,"text":"4 76mmL53 Guns","cost":16,"v":104},
-                                    {"id":5,"text":"5 76mmL53 Guns","cost":20,"v":104} 
+                                "choices":[
+                                    {"id":1,"text":"No 76mmL53 Guns","cost":0,"np":true},
+                                    {"id":2,"text":"1 76mmL53 Gun","cost":4,"vcd":"[-1,1]"},
+                                    {"id":3,"text":"2 76mmL53 Guns","cost":8,"vcd":"[-2,2]"},
+                                    {"id":4,"text":"3 76mmL53 Guns","cost":12,"vcd":"[-3,3]"},
+                                    {"id":5,"text":"4 76mmL53 Guns","cost":16,"vcd":"[-4,4]"},
+                                    {"id":6,"text":"5 76mmL53 Guns","cost":20,"vcd":"[-5,5]"} 
                                 ] 
                             }
                         ] 
@@ -18439,16 +18438,16 @@ var forces = [
                         "cost":90, 
                         "br":6, 
                         "v":89,
+                        "vc":3,
                         "multiplier":4,
-                        "vc":4,
                         "officer":true,
                         "options":[ 
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
                                     {"id":1,"text":"3 M5 Stuarts","cost":0}, 
-                                    {"id":2,"text":"4 M5 Stuarts","cost":30,"br":2}, 
-                                    {"id":3,"text":"5 M5 Stuarts","cost":60,"br":4}
+                                    {"id":2,"text":"4 M5 Stuarts","cost":30,"br":2,"vc":4}, 
+                                    {"id":3,"text":"5 M5 Stuarts","cost":60,"br":4,"vc":5}
                                 ] 
                             } 
                         ] 
@@ -24067,6 +24066,7 @@ function update_entry_cost(entry) {
     var selects = $(entry).find("select option").filter(':selected');
     var newCost = $(cost_field).data('initial-cost');
     var newBr = $(br_field).data('initial-br');
+    console.log('update_entry_cost');
 
     for (var i=0; i<selects.length; i++) {
         newCost = newCost + $(selects[i]).data('cost');
