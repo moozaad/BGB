@@ -15849,7 +15849,7 @@ var forces = [
                 },
                 {
                     "id":3,
-                    "name":"Forward Air Control Officer",
+                    "name":"Forward Signals Unit",
                     "cost":18,
                     "br":1,
                     "unique":true,
