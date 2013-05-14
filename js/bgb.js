@@ -23384,8 +23384,8 @@ var forces = [
 
 function render_sub_units_to(sub) {
     $(this).html(render_entries(sub, true, false));
-    update_selectable($(this));
     $('body').append($(this));
+    update_selectable($(this));
 }
 
 function perm(inArr, choose, callback, callback_arg) {
@@ -24035,7 +24035,7 @@ function duplicate_entry(entry) {
     //Clone any sub div
     if ($(dupe).data('sub')) {
         duplicate_sub(dupe);
-        update_selectable();
+        update_selectable(); // could limit this to current section
     }
 }
 
@@ -24067,7 +24067,6 @@ function update_entry_cost(entry) {
     var selects = $(entry).find("select option").filter(':selected');
     var newCost = $(cost_field).data('initial-cost');
     var newBr = $(br_field).data('initial-br');
-    console.log('update_entry_cost');
 
     for (var i=0; i<selects.length; i++) {
         newCost = newCost + $(selects[i]).data('cost');
@@ -24099,9 +24098,15 @@ function update_accordion(){
         }
     });
 }
-function update_selectable()
+
+function update_selectable(arg)
 {
-    $('.selectable').bind("mousedown", function(e) {
+    if ( arg === undefined )
+        var selectables = $('.selectable');
+    else
+        var selectables = $(arg);
+
+    selectables.bind("mousedown", function(e) {
             e.metaKey = true;
             }).selectable({ filter: '.entry', tolerance: "fit", unselecting:unselecting, unselected:unselected, selected:selected }, 'refresh');
 }
