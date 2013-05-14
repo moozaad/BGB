@@ -13647,7 +13647,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 75mm PaK40 auf 39H(f)s, 1 105mm PzFH18 auf 39H(f)","cost":0,"v":["225,224"],"vc":"[2,1]"}
+                                    {"id":1,"text":"2 75mm PaK40 auf 39H(f)s, 1 105mm PzFH18 auf 39H(f)","cost":0,"v":"[225,224]","vc":"[2,1]"}
                                 ]
                             }
                         ]
