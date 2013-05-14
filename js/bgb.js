@@ -13556,6 +13556,7 @@ var forces = [
                                 "name":"Towed Anti-Aircraft Gun",
                                 "cost":28,
                                 "br":2,
+                                "unique":true,
                                 "options":[
                                     {
                                         "name":"Gun",
