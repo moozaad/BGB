@@ -5118,8 +5118,8 @@ var forces = [
                                         "choices":[
                                             {"id":1,"text":"37mm PaK36","cost":0,"w":7},
                                             {"id":2,"text":"50mm PaK38","cost":8,"w":9},
-                                            {"id":3,"text":"75mm PaK97/38","cost":12},
-                                            {"id":4,"text":"76.2mm PaK36(r)","cost":14},
+                                            {"id":3,"text":"75mm PaK97/38","cost":12,"w":100},
+                                            {"id":4,"text":"76.2mm PaK36(r)","cost":14,"w":0},
                                             {"id":5,"text":"75mm PaK40","cost":22,"w":14}
                                         ]
                                     },
@@ -8857,7 +8857,7 @@ var forces = [
                                 "name":"Light Mortar Team",
                                 "cost":0,
                                 "br":0,
-                                "w":0,
+                                "w":60,
                                 "mandatory":true,
                                 "unique":true,
                                 "options":[
@@ -8938,7 +8938,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"6 pdr","cost":0,"w":0}
+                                            {"id":1,"text":"6 pdr","cost":0,"w":59}
                                         ]
                                     },
                                     {
@@ -9707,14 +9707,14 @@ var forces = [
                     "id":6,
                     "name":"Timed 5.5\" Barrage",
                     "cost":30,
-                    "w":0,
+                    "w":80,
                     "br":0
                 },
                 {
                     "id":7,
                     "name":"Timed 8\" Barrage",
                     "cost":40,
-                    "w":0,
+                    "w":86,
                     "br":0
                 },
                 {
@@ -9727,7 +9727,6 @@ var forces = [
                     "id":9,
                     "name":"Timed Typhoon Air Strike",
                     "cost":20,
-                    "w":0,
                     "br":0
                 }
                 ]
@@ -9873,7 +9872,7 @@ var forces = [
                             "name":"Light Mortar Team",
                             "cost":0,
                             "br":0,
-                            "w":0,
+                            "w":60,
                             "count":2,
                             "mandatory":true
                         },
@@ -9927,7 +9926,7 @@ var forces = [
                             "name":"Light Mortar Team",
                             "cost":0,
                             "br":0,
-                            "w":0,
+                            "w":60,
                             "count":1,
                             "mandatory":true
                         },
@@ -10452,14 +10451,14 @@ var forces = [
                 {
                     "id":4,
                     "name":"Timed 5\" Barrage",
-                    "w":0,
+                    "w":79,
                     "cost":15,
                     "br":0
                 },
                 {
                     "id":5,
                     "name":"Timed 8\" Barrage",
-                    "w":0,
+                    "w":86,
                     "cost":25,
                     "br":0
                 },
@@ -10467,7 +10466,6 @@ var forces = [
                     "id":6,
                     "name":"Timed Typhoon Air Strike",
                     "cost":20,
-                    "w":0,
                     "br":0
                 }
                 ]
@@ -10615,7 +10613,6 @@ var forces = [
                                 "name":"MMG Team",
                                 "cost":0,
                                 "br":0,
-                                "w":0,
                                 "mandatory":true,
                                 "count":2
                             },
@@ -10624,7 +10621,7 @@ var forces = [
                                 "name":"Light Mortar Team",
                                 "cost":0,
                                 "br":0,
-                                "w":0,
+                                "w":60,
                                 "mandatory":true
                             },
                             {
@@ -10795,7 +10792,6 @@ var forces = [
                                 "name":"BAR Team",
                                 "cost":0,
                                 "br":0,
-                                "w":0,
                                 "mandatory":true,
                                 "count":3
                             },
@@ -10811,7 +10807,6 @@ var forces = [
                                 "name":"MMG Team",
                                 "cost":18,
                                 "br":1,
-                                "w":0,
                                 "unique":true,
                                 "options":[
                                     {
@@ -10843,7 +10838,7 @@ var forces = [
                                 "name":"Light Mortar Team",
                                 "cost":14,
                                 "br":1,
-                                "w":0,
+                                "w":60,
                                 "unique":true,
                                 "options":[
                                     {
@@ -11563,7 +11558,6 @@ var forces = [
                     "id":9,
                     "name":"Timed P-47 Air Strike",
                     "cost":10,
-                    "w":0,
                     "br":0
                 }
                 ]
@@ -11868,7 +11862,7 @@ var forces = [
                         "id":3,
                         "name":"M2A1 105mm Howitzer",
                         "cost":50,
-                        "w":0,
+                        "w":76,
                         "br":2
                     },
                     {
@@ -12176,14 +12170,14 @@ var forces = [
                 {
                     "id":4,
                     "name":"Timed 6\" Barrage",
-                    "w":0,
+                    "w":81,
                     "cost":20,
                     "br":0
                 },
                 {
                     "id":5,
                     "name":"Timed 8\" Barrage",
-                    "w":0,
+                    "w":86,
                     "cost":30,
                     "br":0
                 },
@@ -12198,7 +12192,6 @@ var forces = [
                     "id":7,
                     "name":"Timed P-47 Air Strike",
                     "cost":10,
-                    "w":0,
                     "br":0
                 },
                 {
@@ -12206,7 +12199,6 @@ var forces = [
                     "name":"Timed B-26 Air Strike",
                     "cost":25,
                     "restricted":true,
-                    "w":0,
                     "br":0
                 }
                 ]
@@ -12402,7 +12394,7 @@ var forces = [
                                         "choices":[
                                             {"id":1,"text":"37mm PaK36","cost":0,"w":7},
                                             {"id":3,"text":"50mm PaK38","cost":2,"w":9},
-                                            {"id":4,"text":"75mm PaK97/38","cost":13,"w":0},
+                                            {"id":4,"text":"75mm PaK97/38","cost":13,"w":100},
                                             {"id":5,"text":"76.2mm PaK36(r)","cost":17,"w":0},
                                             {"id":5,"text":"75mm PaK40","cost":20,"w":14}
                                         ]
@@ -15781,7 +15773,6 @@ var forces = [
                     "id":7,
                     "name":"Timed Typhoon Air Strike",
                     "cost":20,
-                    "w":0,
                     "br":0
                 }
                 ]
@@ -16944,7 +16935,6 @@ var forces = [
                     "id":7,
                     "name":"Timed Typhoon Air Strike",
                     "cost":20,
-                    "w":0,
                     "br":0
                 }
                 ]
@@ -18048,7 +18038,6 @@ var forces = [
                     "id":8,
                     "name":"Timed P-47 Air Strike",
                     "cost":10,
-                    "w":0,
                     "br":0
                 }
                 ]
@@ -19210,7 +19199,6 @@ var forces = [
                     "id":8,
                     "name":"Timed P-47 Air Strike",
                     "cost":10,
-                    "w":0,
                     "br":0
                 }
                 ]
@@ -20969,7 +20957,7 @@ var forces = [
                                         "choices":[
                                             {"id":1,"text":"37mm PaK36","cost":0,"w":7},
                                             {"id":2,"text":"37mm PaK36(Stielgranate)","cost":5,"w":7},
-                                            {"id":3,"text":"42mm PaK41","cost":3,"w":0},
+                                            {"id":3,"text":"42mm PaK41","cost":3,"w":98},
                                             {"id":4,"text":"50mm PaK38","cost":3,"w":9},
                                             {"id":5,"text":"75mm PaK40","cost":20,"w":14}
                                         ]
@@ -22185,7 +22173,7 @@ var forces = [
                                             {"id":1,"text":"37mm PaK36","cost":0,"w":7},
                                             {"id":2,"text":"37mm PaK36(Stielgranate)","cost":5,"w":7},
                                             {"id":3,"text":"50mm PaK38","cost":4,"w":9},
-                                            {"id":4,"text":"75mm PaK97/38","cost":13,"w":0},
+                                            {"id":4,"text":"75mm PaK97/38","cost":13,"w":100},
                                             {"id":5,"text":"76.2mm PaK36(r)","cost":17,"w":0},
                                             {"id":5,"text":"75mm PaK40","cost":20,"w":14}
                                         ]
@@ -22361,7 +22349,7 @@ var forces = [
                                             {"id":1,"text":"37mm PaK36","cost":0,"w":7},
                                             {"id":2,"text":"37mm PaK36(Stielgranate)","cost":5,"w":7},
                                             {"id":3,"text":"50mm PaK38","cost":4,"w":9},
-                                            {"id":4,"text":"75mm PaK97/38","cost":13,"w":0},
+                                            {"id":4,"text":"75mm PaK97/38","cost":13,"w":100},
                                             {"id":5,"text":"76.2mm PaK36(r)","cost":17,"w":0},
                                             {"id":5,"text":"75mm PaK40","cost":20,"w":14}
                                         ]
@@ -22580,7 +22568,7 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
+                        "id":4,
                         "name":"150mmL30 Howitzer",
                         "w":26,
                         "cost":54,
@@ -22604,7 +22592,7 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
+                        "id":5,
                         "name":"100mmL52 Cannon",
                         "cost":58,
                         "br":2,
@@ -22629,7 +22617,7 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
+                        "id":6,
                         "name":"150mmL12 Infantry Gun",
                         "cost":54,
                         "br":2,
@@ -22653,7 +22641,7 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
+                        "id":7,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -22668,7 +22656,7 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
+                        "id":8,
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":1,
@@ -22698,7 +22686,7 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
+                        "id":9,
                         "name":"Off-Table Artillery Fire",
                         "cost":70,
                         "br":0,
@@ -24507,7 +24495,9 @@ function merge_vehicles(){
 }
 function merge_weapons(){
     for (var key in weapons) {
-        if (weapons_private[key].stats)
+        if ( weapons_private[key] === undefined )
+            console.log('No weapons_private entry for ' + key);
+        else if (weapons_private[key].stats)
             weapons[key].stats = weapons_private[key].stats;
     }
 }
