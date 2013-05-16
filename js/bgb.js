@@ -2812,7 +2812,7 @@ var weapons = {
         ]
     },
     96:{
-        'name':'26mmL73',
+        'name':'25mmL73',
         'stats':[
         {
             'type':'HE',
@@ -2862,11 +2862,6 @@ var weapons = {
         {
             'type':'HE [L]',
             'effect':'',
-            'strength':['','','','','']
-        },
-        {
-            'type':'AP',
-            'effect':'-',
             'strength':['','','','','']
         }
         ]
@@ -23879,6 +23874,7 @@ function load( string ) {
 function render() {
     var toLoad = getURLParameter('load');
     if (toLoad) {
+        merge(); // need data merged by this point to be able to use in load
         load(toLoad);
         if (getURLParameter('roster'))
             print_render();
@@ -24547,6 +24543,17 @@ function test_forces() {
     }
 }
 
+var merged = false;
+function merge() {
+    if (merged)
+        return;
+    if ( typeof vehicles_private !== 'undefined' )
+        merge_vehicles();
+    if ( typeof weapons_private !== 'undefined' )
+        merge_weapons();
+    merged = true;
+}
+
 var debug = false;
 $( document ).ready( function() {
     forces.sort(SortByName);
@@ -24569,8 +24576,5 @@ $( document ).ready( function() {
     $('body').on('click', '#load', loadDialog);
     $('body').on('click', '#print', print_render);
     $('body').on('change', '#forceChoice', changeForce);
-    if ( typeof vehicles_private !== 'undefined' )
-        merge_vehicles();
-    if ( typeof weapons_private !== 'undefined' )
-        merge_weapons();
+    merge();
 });
