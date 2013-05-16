@@ -852,6 +852,7 @@ var vehicles = [
     'id':113,
     'name':'Cromwell ARV',
     'armour':true,
+    'open':true,
     'mg':true
 },
 {
@@ -2521,7 +2522,7 @@ var weapons = {
         ]
     },
     69:{
-        'name':'76mmL53',
+        'name':'76mmL53 (3")',
         'stats':[
         {
             'type':'HE [L]',
@@ -2561,7 +2562,7 @@ var weapons = {
         {
             'type':'HE [M]',
             'effect':'',
-            'strength':['','','','','']
+            'strength':['','','','']
         }
         ]
     },
