@@ -24089,10 +24089,11 @@ function update_accordion(){
 
 function update_selectable(arg)
 {
+    var selectables = null;
     if ( arg === undefined )
-        var selectables = $('.selectable');
+        selectables = $('.selectable');
     else
-        var selectables = $(arg);
+        selectables = $(arg);
 
     selectables.bind("mousedown", function(e) {
             e.metaKey = true;
@@ -24214,6 +24215,7 @@ function changeForce(){
     render_force(parseInt($(this).val(),10), true);
     $('.save_button, .load_button, .sub_button').button();
     update_accordion();
+    update_selectable();
 }
 function print_header(force) {
     var text = "<div style='margin:0px auto; width:60%;'><h3 class='p_title p_h3' style='display:inline; padding:auto;'>"+ force.name + "</h3><h4 class='p_+h4' style='display:inline; float:right; margin:0px 10px;'>(Officers: "+$('#officer_count').text()+")  Army Size: "+army_size_string()+"</h4><h4 class='p_+h4' style='display:inline; float:right; margin:0px;'>"+$('#force_cost').text()+"</div>";
