@@ -5433,10 +5433,10 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Panzer IV E","cost":0, "restricted":true},
-                                    {"id":2,"text":"Panzer IV F1","cost":0, "restricted":true},
-                                    {"id":3,"text":"Panzer IV G","cost":6},
-                                    {"id":4,"text":"Panzer IV H","cost":12}
+                                    {"id":1,"text":"Panzer IV E","cost":0,"restricted":true,"v":7},
+                                    {"id":2,"text":"Panzer IV F1","cost":0,"restricted":true,"v":7},
+                                    {"id":3,"text":"Panzer IV G","cost":6,"v":8},
+                                    {"id":4,"text":"Panzer IV H","cost":12,"v":9}
                                 ]
                             }
                         ]
@@ -22423,6 +22423,7 @@ var forces = [
                         "cost":120,
                         "multiplier":3,
                         "vc":3,
+                        "v":18,
                         "br":9,
                         "officer":true,
                         "options":[
@@ -22443,8 +22444,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":3,"text":"Panzer IV G","cost":0},
-                                    {"id":4,"text":"Panzer IV H","cost":6}
+                                    {"id":3,"text":"Panzer IV G","cost":0,"v":8},
+                                    {"id":4,"text":"Panzer IV H","cost":6,"v":9}
                                 ]
                             }
                         ]
@@ -22470,6 +22471,7 @@ var forces = [
                         "name":"StuG III",
                         "cost":43,
                         "br":3,
+                        "v":18,
                         "options":[
                             {
                                 "name":"Composition",
