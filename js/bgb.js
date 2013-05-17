@@ -9352,6 +9352,7 @@ var forces = [
                         "name":"Armoured Recce Troop",
                         "cost":70,
                         "br":3,
+                        "vc":3,
                         "officer":true,
                         "unique":true,
                         "options":[
@@ -9359,7 +9360,7 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"3 Tetrarch (LJ adaptors)","cost":0,"v":118},
-                                    {"id":2,"text":"1 Tetrarch CS, 2 Tetrarch (LJ adaptors)","cost":0,"v":119}, //need 118 too greg
+                                    {"id":2,"text":"1 Tetrarch CS, 2 Tetrarch (LJ adaptors)","cost":0,"v":"[119,118]","vc":"[1,2]"},
                                     {"id":3,"text":"3 Cromwells", "cost":85,"v":111,"br":3}
                                 ]
                             }
@@ -10055,17 +10056,19 @@ var forces = [
                         "name":"Beach Assault Tank Troop",
                         "cost":180, 
                         "br":11, 
+                        "v":"[123,107]",
+                        "vc":"[2,1]",
                         "multiplier":3,
                         "officer":true, 
                         "options":[ 
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"2 Churchill AVRE, 1 Sherman Crab","cost":0,"v":123},  //greg need to support N vehicles, and below
-                                    {"id":2,"text":"1 Churchill AVRE, 1 Churchill Fascine, 1 Sherman Crab","cost":0,"v":123},  //greg need to support N vehicles, and below
-                                    {"id":3,"text":"1 Churchill AVRE, 1 Churchill Bridgelayer, 1 Sherman Crab","cost":0,"v":123},  //greg need to support N vehicles, and below
-                                    {"id":4,"text":"2 Churchill Bridgelayers, 1 Sherman Crab","cost":0,"v":123},  //greg need to support N vehicles, and below
-                                    {"id":5,"text":"2 Churchill Fascines, 1 Sherman Crab","cost":0,"v":123}  //greg need to support N vehicles, and below
+                                    {"id":1,"text":"2 Churchill AVRE, 1 Sherman Crab","cost":0},
+                                    {"id":2,"text":"1 Churchill AVRE, 1 Churchill Fascine, 1 Sherman Crab","cost":0},
+                                    {"id":3,"text":"1 Churchill AVRE, 1 Churchill Bridgelayer, 1 Sherman Crab","cost":0},
+                                    {"id":4,"text":"2 Churchill Bridgelayers, 1 Sherman Crab","cost":0},
+                                    {"id":5,"text":"2 Churchill Fascines, 1 Sherman Crab","cost":0}
                                 ] 
                             } 
                         ] 
