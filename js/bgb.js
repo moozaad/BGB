@@ -7865,6 +7865,7 @@ var forces = [
                         "cost":140,
                         "multiplier":2,
                         "br":6,
+                        "vc":3,
                         "options":[
                             {
                                 "name":"Composition",
@@ -7897,6 +7898,7 @@ var forces = [
                         "cost":84,
                         "br":6,
                         "multiplier":2,
+                        "vc":3,
                         "options":[
                             {
                                 "name":"Composition",
@@ -7913,6 +7915,7 @@ var forces = [
                         "cost":70,
                         "br":9,
                         "multiplier":2,
+                        "vc":3,
                         "options":[
                             {
                                 "name":"Composition",
@@ -10967,9 +10970,9 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M5 Stuarts","cost":0}, 
-                                    {"id":2,"text":"4 M5 Stuarts","cost":30,"br":2}, 
-                                    {"id":3,"text":"5 M5 Stuarts","cost":60,"br":4}
+                                    {"id":1,"text":"3 M5 Stuarts","cost":0,"vc":3}, 
+                                    {"id":2,"text":"4 M5 Stuarts","cost":30,"br":2,"vc":4}, 
+                                    {"id":3,"text":"5 M5 Stuarts","cost":60,"br":4,"vc":5}
                                 ] 
                             } 
                         ] 
@@ -11776,6 +11779,7 @@ var forces = [
                         "multiplier":3, 
                         "br":9,
                         "officer":true,
+                        "vc":3,
                         "v":106, 
                         "options":[ 
                             { 
@@ -11793,6 +11797,7 @@ var forces = [
                         "br":12, 
                         "officer":true, 
                         "v":100,
+                        "vc":3,
                         "multiplier":3,
                         "options":[ 
                             { 
@@ -13623,8 +13628,7 @@ var forces = [
                                     {"id":1,"text":"3 Panzer 35R 731(f)","cost":0,"v":68},
                                     {"id":2,"text":"3 Panzer 38H 735(f)","cost":0,"v":222},
                                     {"id":3,"text":"3 Panzer 35S 739(f)","cost":12,"v":69},
-                                    {"id":4,"text":"1 Panzer III L, 2 Panzer 35R 731(f)","cost":15,"v":68} // greg also need panzer iii L stats here
-
+                                    {"id":4,"text":"1 Panzer III L, 2 Panzer 35R 731(f)","cost":15,"v":"[2,68]","vc":"[1,2]"}
                                 ]
                             }
                         ]
