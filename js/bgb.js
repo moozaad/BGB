@@ -991,7 +991,8 @@ var vehicles = [
 {
     'id':131,
     'name':'Valentine Bridge',
-    'armour':true
+    'armour':true,
+    'special':'Bridging'
 },
 {
     'id':132,
@@ -6856,6 +6857,7 @@ var forces = [
                         "name":"Dug-in T-34 Platoon",
                         "cost":125,
                         "v":75,
+                        "vc":3,
                         "br":9
                     },
                     {
@@ -7840,6 +7842,7 @@ var forces = [
                         "multiplier":2,
                         "br":9,
                         "v":75,
+                        "vc":3,
                         "options":[
                             {
                                 "name":"Composition",
@@ -8251,6 +8254,7 @@ var forces = [
                         "name":"Dug-in T-34 Platoon",
                         "cost":125,
                         "v":75,
+                        "vc":3,
                         "br":9
                     },
                     {
