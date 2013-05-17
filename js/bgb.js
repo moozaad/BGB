@@ -23698,7 +23698,7 @@ function render_entries(entries, sub_entries, async) {
             if (sub_entries)
                 text = text + "' data-sub_entry='true";
             if (entries[i].officer)
-                text = text + "' data-officer='true";
+                text = text + "' data-officer='"+entries[i].officer;
             if (entries[i].restricted)
                 text = text + "' data-restricted='true";
             if (entries[i].unique)
@@ -23964,8 +23964,18 @@ function update_cost() {
             cost = cost + parseInt($(this).find('#cost').text(),10);
             br = br + parseInt($(this).find('#br').text(),10);});
     $('#force_cost').text(cost + ' / ' + br +'br');
-    var officers = entries.filter( function() { if ($(this).data('officer')) return true; return false; } );
-    $('#officer_count').text(officers.length);
+    var officer_count = 0;
+    var officers = entries.filter( function() {
+        if ($(this).data('officer')) {
+            if ($(this).data('officer') === true )
+                officer_count++;
+            else
+                officer_count = officer_count + $(this).data('officer');
+            return true;
+        }
+        else
+            return false; } );
+    $('#officer_count').text(officer_count);
     var restricted = entries.filter( 
         function() {
             if ($(this).data('restricted'))
