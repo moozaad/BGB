@@ -6345,6 +6345,7 @@ var forces = [
                     "id":7,
                     "name":"NKVD Officer",
                     "officer":true,
+                    "restricted":true,
                     "br":0,
                     "cost":26
                 }
@@ -7477,7 +7478,7 @@ var forces = [
                     "id":7,
                     "name":"NKVD Officer",
                     "br":0,
-                    "cost":26
+                    "cost":26 //greg should this guy be restricted?
                 }
                 ]
             },
@@ -23960,21 +23961,18 @@ function update_cost() {
     var cost = 0;
     var br=0;
     var entries = get_selected_entries();
-    $(entries).each(function() {
-            cost = cost + parseInt($(this).find('#cost').text(),10);
-            br = br + parseInt($(this).find('#br').text(),10);});
-    $('#force_cost').text(cost + ' / ' + br +'br');
     var officer_count = 0;
-    var officers = entries.filter( function() {
+    $(entries).each(function() {
+        cost = cost + parseInt($(this).find('#cost').text(),10);
+        br = br + parseInt($(this).find('#br').text(),10);
         if ($(this).data('officer')) {
             if ($(this).data('officer') === true )
                 officer_count++;
             else
                 officer_count = officer_count + $(this).data('officer');
-            return true;
         }
-        else
-            return false; } );
+    });
+    $('#force_cost').text(cost + ' / ' + br +'br');
     $('#officer_count').text(officer_count);
     var restricted = entries.filter( 
         function() {
@@ -24008,7 +24006,7 @@ function unselecting(event, ui){
         $(ui.unselecting).addClass('ui-selected');
 
 }
-function unselected(event){
+function unselected(){
     update_cost();
     allow_removed();
     allow_enables();
