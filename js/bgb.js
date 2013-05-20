@@ -7477,8 +7477,10 @@ var forces = [
                 {
                     "id":7,
                     "name":"NKVD Officer",
+                    "officer":true,
                     "br":0,
-                    "cost":26 //greg should this guy be restricted?
+                    "restricted":true,
+                    "cost":26
                 }
                 ]
             },
