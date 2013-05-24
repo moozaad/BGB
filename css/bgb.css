@@ -108,7 +108,7 @@ table {
     float:left;
     margin-right:25%;
 }
-button.save_button .ui-button-text {
+.save_button .ui-button-text {
     padding:0px 3px;
 }
 .selectable .ui-selecting {
