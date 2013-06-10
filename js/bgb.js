@@ -14280,7 +14280,7 @@ var forces = [
                 {
                     "id":1,
                     "name":"Heavy Anti-Tank Gun",
-                    "cost":51,
+                    "cost":71,
                     "br":3,
                     "w":20,
                     "options":[
