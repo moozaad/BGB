@@ -16167,7 +16167,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"3 Churchill VIs","cost":0,"v":121},
                                     {"id":2,"text":"2 Churchill VIs, 1 Churchill III/IV","cost":0,"v":"[121,88]","vc":"[2,1]"},
-                                    {"id":3,"text":"1 Churchill VIs, 2 Churchill III/IVs","cost":0,"v":"[121,88]","vc":"[1,2]"},
+                                    {"id":3,"text":"1 Churchill VI, 2 Churchill III/IVs","cost":0,"v":"[121,88]","vc":"[1,2]"},
                                     {"id":4,"text":"3 Churchill III/IVs","cost":0,"v":88}
                                 ] 
                             }
