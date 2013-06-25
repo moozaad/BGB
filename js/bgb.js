@@ -15374,9 +15374,9 @@ var forces = [
                                 "name":"Composition", 
                                 "choices":[ 
                                     {"id":1,"text":"Cromwell IV","cost":0,"v":111},
-                                    {"id":2,"text":"M3A3 'Honey'","cost":-24,"v":115},
-                                    {"id":3,"text":"M5 Stuart","cost":-22,"v":89},
-                                    {"id":4,"text":"M5 Stuart 'recce'","cost":-38,"v":117}
+                                    {"id":2,"text":"M3A3 'Honey'","cost":-24,"v":115,"br":-1},
+                                    {"id":3,"text":"M5 Stuart","cost":-22,"v":89,"br":-1},
+                                    {"id":4,"text":"M5 Stuart 'recce'","cost":-38,"v":117,"br":-2}
                                 ] 
                             } 
                         ] 
