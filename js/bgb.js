@@ -24045,6 +24045,8 @@ function duplicate_entry(entry) {
         duplicate_sub(dupe);
         update_selectable(); // could limit this to current section
     }
+    // Ensure the duplicate's points/BR reflect its currently selected options
+    update_entry_cost(dupe, true);
 }
 
 function enable_entry(entry) {
@@ -24069,7 +24071,7 @@ function selected(event, ui){
     }
 }
 
-function update_entry_cost(entry) {
+function update_entry_cost(entry, noUpdateGlobal) {
     var cost_field = $(entry).find('p').filter( function() { return $(this).attr('id')=='cost'; });
     var br_field = $(entry).find('p').filter( function() { return $(this).attr('id')=='br'; });
     var selects = $(entry).find("select option").filter(':selected');
@@ -24084,7 +24086,8 @@ function update_entry_cost(entry) {
     }
     $(cost_field).html(newCost);
     $(br_field).html(newBr+"<font size='1.2em'>BR</font>");
-    update_cost();
+    if ( noUpdateGlobal === undefined || noUpdateGlobal === false )
+        update_cost();
 }
 
 function option_change() {
