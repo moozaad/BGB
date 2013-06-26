@@ -6595,6 +6595,7 @@ var forces = [
                         "multiplier":6,
                         "br":30,
                         "v":75,
+                        "vc":10,
                         "officer":true,
                         "options":[
                             {
@@ -20195,6 +20196,12 @@ var forces = [
                                 {"id":1,"text":"None","cost":0},
                                 {"id":2,"text":"Panzerfaust","cost":5,"w":107}
                             ]
+                        },
+                        {
+                            "name":"Transport",
+                            "choices":[
+                                {"id":1,"text":"SdKfz 250/1","cost":0,"v":43}
+                            ]
                         }
                     ]
                 },
@@ -23435,7 +23442,7 @@ function render_name(force) {
             text = text + " selected";
         text=text+">"+forces[i].name+"</option>";
     }
-    text = text +"</select>Officers:<p id='officer_count' style='display:inline; margin-right:20px;'>0</p>Restricted:<p style='display:inline' id='restricted_count'>0</p></div><div style='display:inline; float:right'><div style=' margin-right:12px; display:inline; float=left'><button id='print' class='save_button'>Print</button><a class='save_button' style='float:left' href='help.html'>Help</a><button id='load' class='save_button'>Load</button><button id='save' class='save_button'>Save</button></div><span class='force_cost' id='force_cost'>0</span></div></div>";
+    text = text +"</select>Officers:<p id='officer_count' style='display:inline; margin-right:20px;'>0</p>Restricted:<p style='display:inline' id='restricted_count'>0</p></div><div style='display:inline; float:right'><div style=' margin-right:12px; display:inline; float=left'><button id='print' class='save_button'>Print</button><a class='save_button' style='float:left; margin-right:40px;' href='help.html'>Help</a><button id='load' class='save_button'>Load</button><button id='save' class='save_button'>Save</button></div><span class='force_cost' id='force_cost'>0</span></div></div>";
     return(text);
 }
 function render_sections(force, async) {
