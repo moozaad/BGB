@@ -6323,8 +6323,8 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Medium Radio Truck","v":91},
-                                {"id":2,"text":"Radio Van","v":92}
+                                {"id":1,"text":"Medium Radio Truck","cost":0,"v":91},
+                                {"id":2,"text":"Radio Van","cost":0,"v":92}
                             ]
                         }
                     ]
