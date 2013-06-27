@@ -6323,8 +6323,8 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Medium Radio Truck","cost":91},
-                                {"id":2,"text":"Radio Van","cost":92}
+                                {"id":1,"text":"Medium Radio Truck","v":91},
+                                {"id":2,"text":"Radio Van","v":92}
                             ]
                         }
                     ]
@@ -6412,7 +6412,7 @@ var forces = [
                                         "name":"Transport",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Medium truck","cost":4}
+                                            {"id":2,"text":"Medium truck","cost":4,"v":91}
                                         ]
                                     },
                                     {
