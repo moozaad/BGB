@@ -3858,6 +3858,7 @@ var forces = [
                         "name":"Panzer III Squadron",
                         "cost":85,
                         "multiplier":3,
+                        "vc":3,
                         "br":9,
                         "officer":true,
                         "options":[
@@ -3899,6 +3900,7 @@ var forces = [
                         "unique":true,
                         "officer":true,
                         "v":10,
+                        "vc":3,
                         "options":[
                             {
                                 "name":"Composition",
@@ -5415,8 +5417,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Stug III Fs","cost":0},
-                                    {"id":2,"text":"Upgrade to Ausf. Gs","cost":20}
+                                    {"id":1,"text":"3 StuG III Fs","cost":0,"v":16},
+                                    {"id":2,"text":"Upgrade to Ausf. Gs","cost":20,"v":18}
                                 ]
                             }
                         ]
@@ -5447,9 +5449,9 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"StuG III A-E","cost":0, "restricted":true},
-                                    {"id":2,"text":"StuG III F","cost":16},
-                                    {"id":3,"text":"StuG III G","cost":24}
+                                    {"id":1,"text":"StuG III A-E","cost":0, "restricted":true,"v":15},
+                                    {"id":2,"text":"StuG III F","cost":16,"v":16},
+                                    {"id":3,"text":"StuG III G","cost":24,"v":18}
                                 ]
                             }
                         ]
@@ -5463,10 +5465,10 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Panzer III J","cost":0, "restricted":true},
+                                    {"id":1,"text":"Panzer III J","cost":0, "restricted":true,"v":1},
                                     {"id":2,"text":"Panzer III L","cost":8,"v":2},
-                                    {"id":3,"text":"Panzer III M","cost":10},
-                                    {"id":4,"text":"Panzer III N","cost":8, "restricted":true}
+                                    {"id":3,"text":"Panzer III M","cost":10,"v":3},
+                                    {"id":4,"text":"Panzer III N","cost":8, "restricted":true,"v":4}
                                 ]
                             }
                         ]
