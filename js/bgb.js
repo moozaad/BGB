@@ -5002,7 +5002,8 @@ var forces = [
                                         "name":"Transport",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Medium truck or heavy car","cost":4}
+                                            {"id":2,"text":"Medium Truck","cost":4,"v":58},
+                                            {"id":3,"text":"Heavy Car","cost":4,"v":56}
                                         ]
                                     },
                                     {
@@ -5137,8 +5138,8 @@ var forces = [
                                         "name":"Tow",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Horse and limber","cost":2},
-                                            {"id":3,"text":"Medium truck","cost":4}
+                                            {"id":2,"text":"Horse and limber","cost":2,"v":93},
+                                            {"id":3,"text":"Medium truck","cost":4,"v":58}
                                         ]
                                     }
                                 ]
@@ -5161,8 +5162,8 @@ var forces = [
                                         "name":"Tow",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Horse and limber","cost":2},
-                                            {"id":3,"text":"Medium truck","cost":4}
+                                            {"id":2,"text":"Horse and limber","cost":2,"v":93},
+                                            {"id":3,"text":"Medium truck","cost":4,"v":58}
                                         ]
                                     }
                                 ]
@@ -5215,7 +5216,7 @@ var forces = [
                                         "name":"Transport",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0,'np':true},
-                                            {"id":2,"text":"Medium truck","cost":4}
+                                            {"id":2,"text":"Medium truck","cost":4,"v":58}
                                         ]
                                     },
                                     {
@@ -5314,9 +5315,9 @@ var forces = [
                                         "name":"Tow",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Horse and limber","cost":2},
-                                            {"id":3,"text":"Medium truck","cost":4},
-                                            {"id":4,"text":"SdKfz 6 halftrack","cost":8}
+                                            {"id":2,"text":"Horse and limber","cost":2,"v":93},
+                                            {"id":3,"text":"Medium truck","cost":4,"v":58},
+                                            {"id":4,"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                         ]
                                     }
                                 ]
@@ -5351,7 +5352,7 @@ var forces = [
                                 "name":"Transport",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium truck","cost":4}
+                                    {"id":2,"text":"Medium truck","cost":4,"v":58}
                                 ]
                             },
                             {
@@ -5375,7 +5376,7 @@ var forces = [
                                 "name":"Transport",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium truck","cost":4}
+                                    {"id":2,"text":"Medium truck","cost":4,"v":58}
                                 ]
                             },
                             {
@@ -5535,8 +5536,8 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium Truck","cost":4},
-                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8}
+                                    {"id":2,"text":"Medium Truck","cost":4,"v":58},
+                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                 ]
                             }
                         ]
@@ -5559,7 +5560,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
                                     {"id":2,"text":"Heavy Truck","cost":6,"v":61},
-                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8}
+                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                 ]
                             }
                         ]
@@ -5583,8 +5584,8 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium Truck","cost":6},
-                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8}
+                                    {"id":2,"text":"Medium Truck","cost":6,"v":58},
+                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                 ]
                             }
                         ]
@@ -5607,8 +5608,8 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium Truck","cost":6},
-                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8}
+                                    {"id":2,"text":"Medium Truck","cost":6,"v":58},
+                                    {"id":3,"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                 ]
                             }
                         ]
@@ -6052,7 +6053,7 @@ var forces = [
                         "name":"Composition",
                         "choices":[
                             {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
-                            {"id":2,"text":"Ambulance medium truck","cost":2}
+                            {"id":2,"text":"Ambulance medium truck","cost":2,"v":58}
                         ]
                         }
                     ]
@@ -6103,8 +6104,8 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 Ferdinand","cost":0, "restricted":true},
-                                {"id":2,"text":"1 Hornisse","cost":-80, "restricted":true, "br":-2}
+                                {"id":1,"text":"1 Ferdinand","cost":0, "restricted":true,"v":24},
+                                {"id":2,"text":"1 Hornisse","cost":-80, "restricted":true, "br":-2,"v":25}
                             ]
                         }
                     ]
@@ -6119,9 +6120,9 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"StuH 42 F","cost":0},
-                                {"id":2,"text":"StuH 42 G","cost":6},
-                                {"id":3,"text":"Brummbär","cost":20, "br":1}
+                                {"id":1,"text":"StuH 42 F","cost":0,"v":17},
+                                {"id":2,"text":"StuH 42 G","cost":6,"v":19},
+                                {"id":3,"text":"Brummbär","cost":20, "br":1,"v":26}
                             ]
                         }
                     ]
@@ -6186,7 +6187,7 @@ var forces = [
                             "choices":[
                             {"id":1,"text":"None","cost":0},
                             {"id":2,"text":"Medium Truck tow","cost":4,"v":91},
-                            {"id":3,"text":"SdKfz halftrack", "cost":8}
+                            {"id":3,"text":"SdKfz halftrack", "cost":8,"v":64}
                             ]
                         }
                     ]
@@ -6496,8 +6497,8 @@ var forces = [
                                         "name":"Tow",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Medium truck","cost":4},
-                                            {"id":3,"text":"Komsomolyets tractor","cost":8}
+                                            {"id":2,"text":"Medium truck","cost":4,"v":91},
+                                            {"id":3,"text":"Komsomolyets tractor","cost":8,"v":95}
                                         ]
                                     }
                                 ]
@@ -6526,8 +6527,8 @@ var forces = [
                                         "name":"Tow",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Horse and limber","cost":2},
-                                            {"id":3,"text":"Medium truck","cost":4}
+                                            {"id":2,"text":"Horse and limber","cost":2,"v":93},
+                                            {"id":3,"text":"Medium truck","cost":4,"v":91}
                                         ]
                                     }
                                 ]
@@ -6552,7 +6553,7 @@ var forces = [
                                 "name":"Transport",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium truck","cost":4}
+                                    {"id":2,"text":"Medium truck","cost":4,"v":91}
                                 ]
                             },
                             {
@@ -6740,7 +6741,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0}
+                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0,"w":51}
                                 ]
                             }
                         ]
@@ -6999,6 +7000,7 @@ var forces = [
                     "id":7,
                     "name":"Motorcycle Reconnaissance Patrol",
                     "cost":18,
+                    "v":51,
                     "br":1
                 },
                 {
@@ -7036,7 +7038,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Repair Truck","cost":0}
+                                {"id":1,"text":"Repair Truck","cost":0,"v":91}
                             ]
                         }
                     ]
@@ -7083,6 +7085,7 @@ var forces = [
                     "name":"Heavy Bridging Unit",
                     "cost":36,
                     "br":4,
+                    "v":61,
                     "restricted":true,
                     "unique":true,
                     "options":[
@@ -7101,6 +7104,7 @@ var forces = [
                     "id":4,
                     "name":"Light Bridging Unit",
                     "cost":18,
+                    "v":61,
                     "br":2,
                     "options":[
                         {
@@ -7133,11 +7137,11 @@ var forces = [
                     "unique":true,
                     "options":[
                         {
-                            "name":"Composition",
+                            "name":"Composition", //greg should fix this with new v and vc array options
                             "choices":[
-                                {"id":1,"text":"1 Horse drawn wagon","cost":0},
-                                {"id":2,"text":"2 Horse drawn wagons","cost":4},
-                                {"id":3,"text":"3 Horse drawn wagons","cost":8}
+                                {"id":1,"text":"1 Horse drawn wagon","cost":0,"v":94},
+                                {"id":2,"text":"2 Horse drawn wagons","cost":4,"v":94},
+                                {"id":3,"text":"3 Horse drawn wagons","cost":8,"v":94}
                             ]
                         },
                         {
@@ -7197,8 +7201,8 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"Jeep Ambulance","cost":163},
-                            {"id":2,"text":"Ambulance medium truck","cost":2},
+                            {"id":1,"text":"Jeep Ambulance","cost":163,"v":90},
+                            {"id":2,"text":"Ambulance medium truck","cost":2,"v":61},
                             {"id":3,"text":"M5 Halftrack Ambulance","cost":6,"v":83}
                         ]
                         }
@@ -7285,7 +7289,7 @@ var forces = [
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
                                 {"id":2,"text":"Medium truck","cost":4,"v":91},
-                                {"id":3,"text":"Komsomolyets tractor","cost":8}
+                                {"id":3,"text":"Komsomolyets tractor","cost":8,"v":95}
                             ]
                         }
                     ]
@@ -7313,7 +7317,7 @@ var forces = [
                             "name":"Tow",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Medium truck","cost":4}
+                                {"id":2,"text":"Medium truck","cost":4,"v":91}
                             ]
                         }
                     ]
@@ -7371,6 +7375,7 @@ var forces = [
             {
                 "id":6,
                 "name":"Timed Katyusha Barrage",
+                "w":51,
                 "cost":25,
                 "br":0
             },
@@ -8034,8 +8039,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0},
-                                    {"id":2,"text":"2 76.2mm Zis 3","cost":-55},
+                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0,"w":51},
+                                    {"id":2,"text":"2 76.2mm Zis 3","cost":-55,"w":45},
                                     {"id":3,"text":"2 122mm howitzers","cost":-9,'w':47},
                                     {"id":4,"text":"2 152mm howitzers","cost":0,"w":49}
                                 ]
@@ -8288,6 +8293,7 @@ var forces = [
                     {
                         "id":22,
                         "name":"Off-table Zis 3 AT shot",
+                        "w":45,
                         "cost":5,
                         "br":0
                     },
@@ -8567,7 +8573,7 @@ var forces = [
                             "name":"Composition",
                             "choices":[
                                 {"id":1,"text":"76.2mm L54 Zis 3","cost":0,"w":45},
-                                {"id":2,"text":"85mm L53 AA gun","cost":51, "br":1}
+                                {"id":2,"text":"85mm L53 AA gun","cost":51,"br":1} //greg what gun is this?
                             ]
                         },
                         {
@@ -8631,7 +8637,7 @@ var forces = [
                             "name":"Composition",
                             "choices":[
                                 {"id":1,"text":"DshK HMG","cost":0},
-                                {"id":2,"text":"37mm AA gun","cost":10}
+                                {"id":2,"text":"37mm AA gun","cost":10,"w":5}
                             ]
                         },
                         {
@@ -8703,6 +8709,7 @@ var forces = [
             {
                 "id":6,
                 "name":"Timed Katyusha Barrage",
+                "w":51,
                 "cost":25,
                 "br":0
             },
@@ -23237,7 +23244,7 @@ var forces = [
                             "name":"Composition",
                             "choices":[
                             {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":4,"v":62},
-                            {"id":2,"text":"SdKfz 6 with 37mm","cost":4,"w":5},
+                            {"id":2,"text":"SdKfz 6 with 37mm","cost":4,"w":5,"v":64},
                             {"id":3,"text":"SdKfz 7 with 20mm Flakvierling","cost":20,"w":4}
                             ]
                         }
