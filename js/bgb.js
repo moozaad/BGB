@@ -39,6 +39,7 @@ var vehicles = [
     'name':'Panzer III J',
     'armour':true,
     'weapons':[8],
+    'ammo':true,
     'mg':true
 },
 {
@@ -46,6 +47,7 @@ var vehicles = [
     'name':'Panzer III L',
     'armour':true,
     'weapons':[9],
+    'ammo':true,
     'mg':true
 },
 {
@@ -53,6 +55,7 @@ var vehicles = [
     'name':'Panzer III M',
     'armour':true,
     'weapons':[9],
+    'ammo':true,
     'mg':true
 },
 {
@@ -60,6 +63,7 @@ var vehicles = [
     'name':'Panzer III N',
     'armour':true,
     'weapons':[11],
+    'ammo':true,
     'mg':true
 },
 {
@@ -4605,7 +4609,7 @@ var forces = [
                             "name":"Armoured carriers",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Replace 1 truck","cost":6,"v":31}
+                                {"id":2,"text":"Replace 1 truck","cost":6,"v":"[58,31]","vc":"[1,1]"}
                             ]
                         }
                     ]
@@ -4928,8 +4932,8 @@ var forces = [
                             "name":"Transport",
                             "choices":[
                                 {"id":1,"text":"Kübelwagen","cost":0,"v":54},
-                                {"id":2,"text":"Medium Truck","cost":2},
-                                {"id":3,"text":"SdKfz 250/3","cost":12},
+                                {"id":2,"text":"Medium Truck","cost":2,"v":58},
+                                {"id":3,"text":"SdKfz 250/3","cost":12,"v":44},
                                 {"id":4,"text":"SdKfz 251/3","cost":12,"v":39}
                             ]
                         }
@@ -4944,8 +4948,8 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Medium Radio Truck","cost":91},
-                                {"id":2,"text":"Radio van","cost":0}
+                                {"id":1,"text":"Medium Radio Truck","cost":91,"v":58},
+                                {"id":2,"text":"Radio Van","cost":0,"v":92}
                             ]
                         }
                         ]
@@ -5987,6 +5991,7 @@ var forces = [
                     "name":"Supply Column",
                     "cost":8,
                     "br":1,
+                    "v":58,
                     "unique":true,
                     "options":[
                         {
@@ -6001,7 +6006,7 @@ var forces = [
                             "name":"Armoured carriers",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Replace 1 truck","cost":6}
+                                {"id":2,"text":"Replace 1 truck","cost":6,"v":"[58,31]","vc":"[1,1]"}
                             ]
                         }
                     ]
@@ -10086,7 +10091,7 @@ var forces = [
                         "br":44, 
                         "multiplier":10,
                         "restricted":true,
-                        "officer":4,  // greg 4 officers
+                        "officer":4,
                         "options":[ 
                             { 
                                 "name":"Composition", 
@@ -11832,7 +11837,7 @@ var forces = [
                         "restricted":true,
                         "v":100,
                         "multiplier":10,
-                        "officer":4,  // greg 4 officers! Need code to support this
+                        "officer":4,
                         "options":[ 
                             { 
                                 "name":"Composition", 
@@ -14207,6 +14212,7 @@ var forces = [
                         "name":"Supply Column",
                         "cost":8,
                         "br":1,
+                        "v":58,
                         "unique":true,
                         "options":[
                             {
@@ -14221,7 +14227,7 @@ var forces = [
                                 "name":"Armoured carriers",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Replace 1 truck","cost":6,"v":31}
+                                    {"id":2,"text":"Replace 1 truck","cost":6,"v":"[58,31]","vc":"[1,1]"}
                                 ]
                             }
                         ]
@@ -15570,7 +15576,7 @@ var forces = [
                                 "name":"Armoured carriers",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Replace 1 truck","cost":6}
+                                    {"id":2,"text":"Replace 1 truck","cost":6} // greg need armoured carrier code
                                 ]
                             }
                         ]
@@ -20444,7 +20450,7 @@ var forces = [
                             "name":"Armoured carriers",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Replace 1 truck with Carrier","cost":6,"v":31}
+                                {"id":2,"text":"Replace 1 truck","cost":6,"v":"[58,31]","vc":"[1,1]"}
                             ]
                         }
                     ]
@@ -20773,7 +20779,7 @@ var forces = [
                             "name":"Transport",
                             "choices":[
                                 {"id":1,"text":"Medium Radio Truck","cost":0},
-                                {"id":2,"text":"Radio van","cost":0}
+                                {"id":2,"text":"Radio Van","cost":0,"v":92}
                             ]
                         }
                         ]
@@ -21674,6 +21680,7 @@ var forces = [
                     "name":"Supply Column",
                     "cost":8,
                     "br":1,
+                    "v":58,
                     "unique":true,
                     "options":[
                         {
@@ -21688,7 +21695,7 @@ var forces = [
                             "name":"Armoured carriers",
                             "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Replace 1 truck","cost":6}
+                                {"id":2,"text":"Replace 1 truck","cost":6,"v":"[58,31]","vc":"[1,1]"}
                             ]
                         }
                     ]
@@ -21734,7 +21741,7 @@ var forces = [
                         "name":"Composition",
                         "choices":[
                             {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
-                            {"id":2,"text":"Ambulance medium truck","cost":2}
+                            {"id":2,"text":"Ambulance medium truck","cost":2,"v":58}
                         ]
                         }
                     ]
@@ -21843,8 +21850,8 @@ var forces = [
                             "name":"Tow",
                             "choices":[
                             {"id":1,"text":"None","cost":0},
-                            {"id":2,"text":"Kettenkrad","cost":2},
-                            {"id":3,"text":"Medium Truck tow","cost":4},
+                            {"id":2,"text":"Kettenkrad","cost":2,"v":52},
+                            {"id":3,"text":"Medium Truck tow","cost":4,"v":58},
                             {"id":4,"text":"SdKfz 10 halftrack", "cost":8,"v":62}
                             ]
                         }
@@ -21867,8 +21874,8 @@ var forces = [
                             "name":"Tow",
                             "choices":[
                             {"id":1,"text":"None","cost":0},
-                            {"id":2,"text":"Medium Truck tow","cost":4},
-                            {"id":3,"text":"SdKfz 11 halftrack tow", "cost":8}
+                            {"id":2,"text":"Medium Truck tow","cost":4,"v":58},
+                            {"id":3,"text":"SdKfz 11 halftrack tow", "cost":8,"v":63}
                             ]
                         }
                     ]
@@ -21891,8 +21898,8 @@ var forces = [
                             "name":"Tow",
                             "choices":[
                             {"id":1,"text":"None","cost":0},
-                            {"id":2,"text":"Medium Truck tow","cost":4},
-                            {"id":3,"text":"SdKfz 11 halftrack tow", "cost":8}
+                            {"id":2,"text":"Medium Truck tow","cost":4,"v":58},
+                            {"id":3,"text":"SdKfz 11 halftrack tow", "cost":8,"v":63}
                             ]
                         }
                     ]
@@ -22016,7 +22023,7 @@ var forces = [
                             "name":"Transport",
                             "choices":[
                                 {"id":1,"text":"Medium Radio Truck","cost":0},
-                                {"id":2,"text":"Radio van","cost":0}
+                                {"id":2,"text":"Radio Van","cost":0,"v":92}
                             ]
                         }
                         ]
@@ -23277,8 +23284,8 @@ var forces = [
                             "name":"Tow",
                             "choices":[
                             {"id":1,"text":"None","cost":0},
-                            {"id":2,"text":"Medium Truck tow","cost":4},
-                            {"id":3,"text":"SdKfz 11 halftrack tow", "cost":8}
+                            {"id":2,"text":"Medium Truck tow","cost":4,"v":58},
+                            {"id":3,"text":"SdKfz 11 halftrack tow", "cost":8,"v":63}
                             ]
                         }
                     ]
