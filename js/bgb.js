@@ -3789,6 +3789,12 @@ var forces = [
                         "s":1,
                         "options":[
                             {
+                                "name":"Transport",
+                                "choices":[
+                                    {"id":1,"text":"SdKfz 251/1","cost":0,"v":37}
+                                ]
+                            },
+                            {
                                 "name":"MG",
                                 "choices":[
                                     {"id":1,"text":"Bipod MG34","cost":0},
@@ -3813,12 +3819,18 @@ var forces = [
                     },
                     {
                         "id":6,
-                        "name":"Armoured Pioneer Squad",
+                        "name":"Assault Pioneer Squad",
                         "cost":54,
                         "br":3,
                         "restricted":true,
                         "s":1,
                         "options":[
+                            {
+                                "name":"Transport",
+                                "choices":[
+                                    {"id":1,"text":"SdKfz 251/1","cost":0,"v":37}
+                                ]
+                            },
                             {
                                 "name":"MG",
                                 "choices":[
