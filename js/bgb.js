@@ -7643,6 +7643,7 @@ var forces = [
                                 "name":"Infantry Gun",
                                 "cost":19,
                                 "br":1,
+                                "w":41,
                                 "unique":true,
                                 "options":[
                                     {
@@ -7826,6 +7827,7 @@ var forces = [
                                         "id":7,
                                         "name":"Infantry Gun",
                                         "cost":19,
+                                        "w":41,
                                         "br":1,
                                         "unique":true,
                                         "options":[
