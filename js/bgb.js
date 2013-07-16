@@ -2067,7 +2067,8 @@ var weapons = {
         'name':'Flamethrower',
         'stats':[
         {
-            'type':'Flame'
+            'type':'Flame',
+            'strength':['']
         }
         ]
     },
