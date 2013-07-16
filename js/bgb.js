@@ -4411,6 +4411,12 @@ var forces = [
                                 {"id":1,"text":"None","cost":0},
                                 {"id":2,"text":"Anti-tank grenades","cost":5}
                             ]
+                        },
+                        {
+                            "name":"Transport",
+                            "choices":[
+                                {"id":1,"text":"SdKfz 250/1","cost":0,"v":43}
+                            ]
                         }
                     ]
                 },
@@ -14024,6 +14030,12 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
                                     {"id":2,"text":"Panzerfaust","cost":5,"w":107}
+                                ]
+                            },
+                            {
+                                "name":"Transport",
+                                "choices":[
+                                    {"id":1,"text":"SdKfz 250/1","cost":0,"v":43}
                                 ]
                             }
                         ]
