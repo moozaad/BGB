@@ -18223,7 +18223,7 @@ var forces = [
                         "id":1,
                         "name":"Infantry Platoon",
                         "cost":80,
-                        "br":9,
+                        "br":7,
                         'multiplier':4,
                         "options":[
                             {
