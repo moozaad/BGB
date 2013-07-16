@@ -6374,7 +6374,15 @@ var forces = [
                     "officer":true,
                     "restricted":true,
                     "br":0,
-                    "cost":26
+                    "cost":26,
+                    "options":[
+                        {
+                            "name":"Transport",
+                            "choices":[
+                                {"id":1,"text":"Gaz Jeep","cost":0,"v":90}
+                            ]
+                        }
+                    ]
                 }
                 ]
             },
@@ -7513,7 +7521,15 @@ var forces = [
                     "officer":true,
                     "br":0,
                     "restricted":true,
-                    "cost":26
+                    "cost":26,
+                    "options":[
+                        {
+                            "name":"Transport",
+                            "choices":[
+                                {"id":1,"text":"Gaz Jeep","cost":0,"v":90}
+                            ]
+                        }
+                    ]
                 }
                 ]
             },
