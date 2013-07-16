@@ -18095,7 +18095,8 @@ var forces = [
                 {
                     "id":6,
                     "name":"Time on Target Barrage",
-                    "cost":5, //greg this should not count as a additional fire support choice
+                    "cost":5,
+                    "multiplier":0,
                     "br":0
                 },
                 {
@@ -19256,7 +19257,8 @@ var forces = [
                 {
                     "id":6,
                     "name":"Time on Target Barrage",
-                    "cost":5, //greg this should not count as a additional fire support choice
+                    "cost":5,
+                    "multiplier":0,
                     "br":0
                 },
                 {
