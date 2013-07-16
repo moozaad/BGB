@@ -21698,7 +21698,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Medium Truck, 1 Panzerfaust, 2 demo charges","cost":0,"v":58}
+                                {"id":1,"text":"1 Panzerfaust, 2 demo charges","cost":0}
                             ]
                         }
                     ]
