@@ -21662,9 +21662,9 @@ var forces = [
                     "s":1,
                     "options":[
                         {
-                            "name":"Transport",
+                            "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Medium Truck","cost":0,"v":58}
+                                {"id":1,"text":"Medium Truck, 1 Panzerfaust, 2 demo charges","cost":0,"v":58,"w":107}
                             ]
                         },
                         {
@@ -21693,12 +21693,6 @@ var forces = [
                             "choices":[
                                 {"id":1,"text":"Veteran","cost":0},
                                 {"id":2,"text":"Elite","cost":8, "br":1}
-                            ]
-                        },
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"1 Panzerfaust, 2 demo charges","cost":0}
                             ]
                         }
                     ]
