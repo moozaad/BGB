@@ -3370,6 +3370,12 @@ var forces = [
                                         "choices":[
                                             {"id":1,"text":"SdKfz 251/16","cost":0,"v":42}
                                         ]
+                                    },
+                                    {
+                                        "name":"AT grenades",
+                                        "choices":[
+                                            {"id":1,"text":"Anti-tank grenades","cost":0}
+                                        ]
                                     }
                                 ]
                             },
@@ -3406,6 +3412,12 @@ var forces = [
                                         "choices":[
                                             {"id":1,"text":"Bipod MG34","cost":0},
                                             {"id":2,"text":"Bipod MG42","cost":4}
+                                        ]
+                                    },
+                                    {
+                                        "name":"Composition",
+                                        "choices":[
+                                            {"id":1,"text":"AT grenades, 2 demo charges","cost":0}
                                         ]
                                     }
                                 ]
@@ -3858,6 +3870,12 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"Veteran","cost":0},
                                     {"id":2,"text":"Elite","cost":12, "br":1}
+                                ]
+                            },
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"AT grenades, 2 demo charges","cost":0}
                                 ]
                             }
                         ]
@@ -5258,6 +5276,12 @@ var forces = [
                                             {"id":1,"text":"Bipod MG34","cost":0},
                                             {"id":2,"text":"Bipod MG42","cost":4}
                                         ]
+                                    },
+                                    {
+                                        "name":"Composition",
+                                        "choices":[
+                                            {"id":1,"text":"AT grenades, 2 demo charges","cost":0}
+                                        ]
                                     }
                                 ]
                             },
@@ -5417,6 +5441,12 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"Bipod MG34","cost":0},
                                     {"id":2,"text":"Bipod MG42","cost":4}
+                                ]
+                            },
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"AT grenades, 2 demo charges","cost":0}
                                 ]
                             }
                         ]
@@ -21121,44 +21151,6 @@ var forces = [
                                 ]
                             }
                         ]
-                    },
-                    {
-                        "id":4,
-                        "name":"Assault Pioneer Squad",
-                        "cost":46,
-                        "br":3,
-                        "s":1,
-                        "restricted":true,
-                        "options":[
-                            {
-                                "name":"Transport",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium truck","cost":4}
-                                ]
-                            },
-                            {
-                                "name":"Flame-thrower",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Flame-thrower","cost":10}
-                                ]
-                            },
-                            {
-                                "name":"Mine sweeper",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Mine sweeper","cost":5}
-                                ]
-                            },
-                            {
-                                "name":"MG",
-                                "choices":[
-                                    {"id":1,"text":"Bipod MG34","cost":0},
-                                    {"id":2,"text":"Bipod MG42","cost":4}
-                                ]
-                            }
-                        ]
                     }
                 ]
             },
@@ -21701,6 +21693,12 @@ var forces = [
                             "choices":[
                                 {"id":1,"text":"Veteran","cost":0},
                                 {"id":2,"text":"Elite","cost":8, "br":1}
+                            ]
+                        },
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"Medium Truck, 1 Panzerfaust, 2 demo charges","cost":0,"v":58}
                             ]
                         }
                     ]
