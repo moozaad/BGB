@@ -4762,6 +4762,7 @@ var forces = [
                     "unique":true,
                     "officer":true,
                     "v":11,
+                    "vc":3,
                     "options":[
                         {
                         "name":"Composition",
