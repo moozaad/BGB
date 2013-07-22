@@ -24089,8 +24089,12 @@ function duplicate_sub(dupe) {
     $(dupe).data('sub', $(sub).attr('id'));
     // check if any of the duplicated sub-entries also have sub-entries
     $(sub).find('.entry').each( function() {
-            if ($(this).data('sub'))
+            if ($(this).data('sub')) {
+                // Give each entry that will become a parent a unique ID
+                $(this).attr('id', null);
+                $(this).uniqueId();
                 duplicate_sub(this);
+            }
     });
 }
 function duplicate_entry(entry) {
