@@ -291,7 +291,6 @@ var vehicles = [
     'id':33,
     'name':'SdKfz 223',
     'armour':true,
-    'weapons':[11],
     'mg':true
 },
 {
@@ -4098,6 +4097,7 @@ var forces = [
                         "cost":86,
                         "br":4,
                         "v":29,
+                        "vc":2,
                         "options":[
                             {
                                 "name":"Composition",
@@ -4113,6 +4113,7 @@ var forces = [
                         "cost":136,
                         "br":4,
                         "v":30,
+                        "vc":2,
                         "restricted":true,
                         "options":[
                             {
@@ -4128,6 +4129,7 @@ var forces = [
                         "name":"Nebelwerfer Artillery Battery",
                         "cost":86,
                         "br":2,
+                        "vc":2,
                         "restricted":true,
                         "options":[
                             {
@@ -6781,6 +6783,7 @@ var forces = [
                         "name":"Guards Mortar Battery",
                         "cost":100,
                         "br":2,
+                        "vc":2,
                         "options":[
                             {
                                 "name":"Composition",
@@ -8058,6 +8061,7 @@ var forces = [
                         "name":"Guards Mortar Battery",
                         "cost":100,
                         "br":2,
+                        "vc":2,
                         "options":[
                             {
                                 "name":"Composition",
@@ -13876,8 +13880,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"2 mSPW S307(f) (8cm Reihenwerfer)","cost":0,"v":216},
                                     {"id":2,"text":"2 mSPW S303/307(f) (R-Vielfachwerfer)","cost":8,"v":217},
-                                    {"id":2,"text":"3 Panzer 38H 735(f) auf 28cm Wurfrahmen","cost":72,"br":2,"v":218}
-
+                                    {"id":3,"text":"2 Panzer 38H 735(f) auf 28cm Wurfrahmen","cost":72,"br":2,"v":218}
                                 ]
                             }
                         ]
