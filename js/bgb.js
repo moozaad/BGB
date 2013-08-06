@@ -6717,6 +6717,7 @@ var forces = [
                         "br":6,
                         "restricted":true,
                         "v":76,
+                        "vc":3,
                         "options":[
                             {
                                 "name":"Composition",
