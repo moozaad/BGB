@@ -216,7 +216,7 @@ var vehicles = [
     'name':'Marder III (38t PaK 36r)',
     'armour':true,
     'open':true,
-    'weapons':[18],
+    'weapons':[45],
     'mg':true,
     'ammo':true
 },
