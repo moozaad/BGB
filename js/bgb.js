@@ -1669,6 +1669,30 @@ var vehicles = [
     'armour':true,
     'open':true
 },
+{
+    'id':229,
+    'name':'SU-85',
+    'armour':true,
+    'weapons':[46],
+    'special':'T-34 Mobility',
+    'ammo':true
+},
+{
+    'id':230,
+    'name':'KV-85',
+    'armour':true,
+    'weapons':[46],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':231,
+    'name':'T-80',
+    'armour':true,
+    'mg':true,
+    'weapons':[38],
+    'ammo':true
+},
     // greg to-do, landing craft
 {
 }
@@ -6704,7 +6728,8 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"3 T-60s","cost":0,"v":71},
-                                    {"id":2,"text":"3 T-70s","cost":15,"v":72}
+                                    {"id":2,"text":"3 T-70s","cost":15,"v":72},
+                                    {"id":3,"text":"3 T-80s (late 1943 only)","cost":20,"v":231}
                                 ]
                             }
                         ]
@@ -6744,7 +6769,8 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"T-60","cost":0,"v":71},
-                                    {"id":2,"text":"T-70","cost":5,"v":72}
+                                    {"id":2,"text":"T-70","cost":5,"v":72},
+                                    {"id":3,"text":"T-70 (Late 1943 only)","cost":6,"v":23,"restricted":true}
                                 ]
                             }
                         ]
@@ -6755,6 +6781,82 @@ var forces = [
                         "cost":30,
                         "v":76,
                         "br":2
+                    },
+                    {
+                        "id":8,
+                        "name":"T-70 Company",
+                        "cost":225,
+                        "multiplier":6,
+                        "br":20,
+                        "vc":10,
+                        "officer":true,
+                        "v":72,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"10 T-70s","cost":0}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":9,
+                        "name":"SU-85",
+                        "cost":48,
+                        "v":229,
+                        "br":3,
+                        "restricted":true,
+                        "warning":"Late 1943 only"
+                    },
+                    {
+                        "id":10,
+                        "name":"SU-85 Battery",
+                        "cost":120,
+                        "multiplier":2,
+                        "br":9,
+                        "restricted":true,
+                        "v":229,
+                        "vc":3,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"3 SU-85s","cost":0}
+                                ]
+                            }
+                        ],
+                        "warning":"Late 1943 only"
+                    },
+                    {
+                        "id":11,
+                        "name":"KV-85",
+                        "cost":71,
+                        "v":230,
+                        "br":3,
+                        "restricted":true,
+                        "unique":true,
+                        "warning":"Late 1943 only"
+                    },
+                    {
+                        "id":12,
+                        "name":"KV-85 Platoon",
+                        "cost":178,
+                        "multiplier":2,
+                        "unique":true,
+                        "br":9,
+                        "restricted":true,
+                        "v":230,
+                        "vc":3,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"3 KV-85s","cost":0}
+                                ]
+                            }
+                        ],
+                        "warning":"Late 1943 only"
                     }
                 ]
             },
@@ -23815,6 +23917,8 @@ function render_entries(entries, sub_entries, async) {
             }
             if ( entries[i]['sub_units'] )
                 text = text + "<button class='sub_button'>"+entries[i]['sub_text']+"</button>";
+            if ( entries[i]['warning'] )
+                text = text + "<div><span style='display:inline-block; width:100%; background-color:A80000;'>"+entries[i]['warning']+"</span></div>";
             text = text + "</div>";
         }
     }
