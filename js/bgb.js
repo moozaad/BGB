@@ -6770,7 +6770,7 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"T-60","cost":0,"v":71},
                                     {"id":2,"text":"T-70","cost":5,"v":72},
-                                    {"id":3,"text":"T-70 (Late 1943 only)","cost":6,"v":23,"restricted":true}
+                                    {"id":3,"text":"T-80 (Late 1943 only)","cost":6,"v":231,"restricted":true}
                                 ]
                             }
                         ]
