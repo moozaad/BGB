@@ -13825,7 +13825,9 @@ var forces = [
                                     {"id":1,"text":"3 Panzer 35R 731(f)","cost":0,"v":68},
                                     {"id":2,"text":"3 Panzer 38H 735(f)","cost":0,"v":222},
                                     {"id":3,"text":"3 Panzer 35S 739(f)","cost":12,"v":69},
-                                    {"id":4,"text":"1 Panzer III L, 2 Panzer 35R 731(f)","cost":15,"v":"[2,68]","vc":"[1,2]"}
+                                    {"id":4,"text":"1 Panzer III L, 2 Panzer 35R 731(f)","cost":15,"v":"[2,68]","vc":"[1,2]"},
+                                    {"id":5,"text":"1 Panzer III L, 2 Panzer 38H 735(f)","cost":15,"v":"[2,222]","vc":"[1,2]"},
+                                    {"id":6,"text":"1 Panzer III L, 2 Panzer 35S 739(f)","cost":27,"v":"[2,69]","vc":"[1,2]"}
                                 ]
                             }
                         ]
