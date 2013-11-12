@@ -13572,7 +13572,7 @@ var forces = [
                     },
                     {
                         "id":3,
-                        "name":"Armoured Panzer Grenadier Platoon",
+                        "name":"Armoured Pzr Grenadier Platoon",
                         "cost":162,
                         "br":15,
                         'multiplier':4,
