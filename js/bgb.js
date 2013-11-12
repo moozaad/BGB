@@ -13613,7 +13613,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"leSPW U304(f) (37mm PaK36)","cost":0,"w":7,"v":211}
+                                            {"id":1,"text":"leSPW U304(f)","cost":0,"v":211}
                                         ]
                                     },
                                     {
