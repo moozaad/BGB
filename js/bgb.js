@@ -25007,10 +25007,9 @@ var forces = [
                                     {"id":1,"text":"M4 Sherman Dozer","cost":0,"v":108},
                                     {"id":2,"text":"M4 Sherman Crab","cost":0,"v":107},
                                     {"id":3,"text":"Armoured Bulldozer","cost":-42,"br":-2,"v":160},
-                                    {"id":4,"text":"Churchill Ark","cost":-32,"v":125,"br":-1},
-                                    {"id":5,"text":"Churchill IV Fascine","cost":-4,"v":123},
-                                    {"id":6,"text":"Churchill AVRE Bridgelayer","cost":6,"v":123},
-                                    {"id":7,"text":"Valentine Bridgelayer","cost":-38,"br":-1,"v":131}
+                                    {"id":4,"text":"Churchill IV Fascine","cost":-4,"v":123},
+                                    {"id":5,"text":"Churchill AVRE Bridgelayer","cost":6,"v":123},
+                                    {"id":6,"text":"Valentine Bridgelayer","cost":-38,"br":-1,"v":131}
                                 ]
                             }
                         ]
@@ -25037,23 +25036,32 @@ var forces = [
                                     {"id":1,"text":"1 medium truck","cost":0},
                                     {"id":2,"text":"2 medium trucks","cost":4},
                                     {"id":3,"text":"3 medium trucks","cost":8},
-                                    {"id":4,"text":"4 medium trucks","cost":12}
+                                    {"id":4,"text":"4 medium trucks","cost":12},
+                                    {"id":5,"text":"1 DUKW", "cost":2,"v":175},
+                                    {"id":6,"text":"2 DUKWs", "cost":8,"v":175,"vc":2},
+                                    {"id":7,"text":"3 DUKWs", "cost":14,"v":175,"vc":3},
+                                    {"id":8,"text":"4 DUKWs", "cost":20,"v":175,"vc":4},
+                                    {"id":9,"text":"1 medium truck, 1 DUKW", "cost":6,"v":"[91,175]","vc":"[1,1]"},
+                                    {"id":10,"text":"2 medium trucks, 1 DUKW", "cost":10,"v":"[91,175]","vc":"[2,1]"},
+                                    {"id":11,"text":"1 medium truck, 2 DUKWs", "cost":12,"v":"[91,175]","vc":"[1,2]"},
+                                    {"id":12,"text":"2 medium trucks, 2 DUKWs", "cost":16,"v":"[91,175]","vc":"[2,2]"}
                                 ]
                             }
                         ]
                     },
                     {
                         "id":2,
-                        "name":"Forward Aid Post",
-                        "cost":20,
-                        "br":5,
+                        "name":"Ambulance",
+                        "cost":14,
+                        "br":2,
                         "restricted":true,
-                        "unique":true,
                         "options":[
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"4 men with a tent","cost":0}
+                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":163},
+                                {"id":2,"text":"Ambulance medium truck","cost":2,"v":91},
+                                {"id":3,"text":"M5 Halftrack Ambulance","cost":6,"v":83}
                             ]
                             }
                         ]
@@ -25074,17 +25082,16 @@ var forces = [
                     },
                     {
                         "id":4,
-                        "name":"Ambulance",
-                        "cost":14,
-                        "br":2,
+                        "name":"Forward Aid Post",
+                        "cost":20,
+                        "br":5,
                         "restricted":true,
+                        "unique":true,
                         "options":[
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":163},
-                                {"id":2,"text":"Ambulance medium truck","cost":2,"v":91},
-                                {"id":3,"text":"M5 Halftrack Ambulance","cost":6,"v":83}
+                                {"id":1,"text":"4 men with a tent","cost":0}
                             ]
                             }
                         ]
@@ -25097,6 +25104,7 @@ var forces = [
                 "allows":null,
                 "requires":true,
                 "entries":[
+                    /*greg
                     {
                         "id":1,
                         "name":"Heavy Anti-Tank Gun",
@@ -25223,6 +25231,7 @@ var forces = [
                             }
                         ]
                     }
+            */
                 ]
             },
             {
@@ -25230,7 +25239,7 @@ var forces = [
                 "name":"Additional Fire Support",
                 "allows":null,
                 "requires":true,
-                "entries":[
+                "entries":[/*greg
                 {
                     "id":1,
                     "name":"Off-Table Artillery Request",
@@ -25285,6 +25294,7 @@ var forces = [
                     "cost":20,
                     "br":0
                 }
+                */
                 ]
             }
         ]
