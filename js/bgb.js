@@ -20078,8 +20078,8 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"3 Panzer IV Hs","cost":0},
-                                    {"id":2,"text":"4 Panzer IV Gs","cost":56,"vc":4},
-                                    {"id":3,"text":"5 Panzer IV Gs","cost":112,"vc":5}
+                                    {"id":2,"text":"4 Panzer IV Hs","cost":56,"vc":4},
+                                    {"id":3,"text":"5 Panzer IV Hs","cost":112,"vc":5}
                                 ]
                             }
                         ]
