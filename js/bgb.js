@@ -1693,6 +1693,39 @@ var vehicles = [
     'weapons':[38],
     'ammo':true
 },
+{
+    'id':232,
+    'name':'M24 Chaffee',
+    'armour':true,
+    'mg':true,
+    'weapons':[68],
+    'ammo':true
+},
+{
+    'id':233,
+    'name':'Crusader AA \'Triple\'',
+    'armour':true,
+    'weapons':[4],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':234,
+    'name':'Archer',
+    'armour':true,
+    'open':true,
+    'weapons':[70],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':235,
+    'name':'Comet',
+    'armour':true,
+    'weapons':[102],
+    'mg':true,
+    'ammo':true
+},
     // greg to-do, landing craft
 {
 }
@@ -2921,6 +2954,19 @@ var weapons = {
         ]
     },
     102:{
+        'name':'77mmL50',
+        'stats':[
+        {
+            'type':'HE [L]',
+            'effect':'',
+            'strength':['','','','','','']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['','','','','','']
+        }
+        ]
     },
     103:{
         'name':'105mmL63 (FlaK39)',
@@ -23556,7 +23602,7 @@ var forces = [
     {
         "id":18,
         "group":"British",
-        "name":"FotR British Battlegroup (WIP)",
+        "name":"FotR British Battlegroup",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
@@ -24145,8 +24191,8 @@ var forces = [
                     {
                         "id":6,
                         "name":"Airborne Infantry Platoon",
-                        "cost":115, // greg confirm,
-                        "br":11, // greg confirm,
+                        "cost":147,
+                        "br":15,
                         "p":1,
                         'multiplier':4,
                         "sub_text":"Platoon Components",
@@ -24154,9 +24200,8 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Regular","cost":0},
-                                //greg should below be WW and check costs
-                                    {"id":2,"text":"Veteran","cost":37, "br":4}
+                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":2,"text":"Elite","cost":40, "br":4}
                                 ]
                             }
                         ],
@@ -24173,7 +24218,7 @@ var forces = [
                                         "name":"AT grenades",
                                         "choices":[
                                             {"id":1,"text":"None","cost":0},
-                                            {"id":2,"text":"Anti-tank grenades","cost":3}// greg check cost
+                                            {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
                                 ]
@@ -24234,7 +24279,7 @@ var forces = [
                             {
                                 "id":5,
                                 "name":"Heavy Machine Gun team",
-                                "cost":22, // greg? confirm
+                                "cost":25,
                                 "br":1,
                                 "unique":true,
                                 "options":[
@@ -24387,7 +24432,7 @@ var forces = [
                         "multiplier":3,
                         "restricted":true,
                         "br":12,
-                        "v":0, //greg add comet
+                        "v":235,
                         "officer":true,
                         "options":[ 
                             { 
@@ -24409,7 +24454,7 @@ var forces = [
                                 "name":"Composition", 
                                 "choices":[ 
                                     {"id":1,"text":"M10 Achilles","cost":0,"v":133},
-                                    {"id":2,"text":"Archer","cost":-12,"restricted":true} //greg vehicle code?
+                                    {"id":2,"text":"Archer","cost":-12,"restricted":true,"v":234}
                                 ] 
                             } 
                         ] 
@@ -24488,7 +24533,7 @@ var forces = [
                                     {"id":4,"text":"Churchill III/IV","cost":0,"v":88},
                                     {"id":5,"text":"Churchill VI","cost":0,"v":121},
                                     {"id":6,"text":"Churchill VII","cost":22,"v":122},
-                                    {"id":7,"text":"Comet","cost":46,"v":0} //greg add comet
+                                    {"id":7,"text":"Comet","cost":46,"v":235}
                                 ] 
                             } 
                         ] 
@@ -24515,7 +24560,6 @@ var forces = [
                     }
                 ] 
             }, 
-            //greg got as far as here
             {
                 "id":4, 
                 "name":"Artillery Units",
@@ -24781,7 +24825,8 @@ var forces = [
                                 "choices":[
                                     {"id":1,"text":"3 men & Jeep","cost":0,"v":163},
                                     {"id":2,"text":"Dingo","cost":4,"v":136},
-                                    {"id":3,"text":"Staghound","cost":14,"v":138} // greg confirm cost
+                                    {"id":3,"text":"Humber Scout Car","cost":4,"v":134},
+                                    {"id":4,"text":"Staghound","cost":16,"v":138}
                                 ]
                             }
                         ]
@@ -24796,11 +24841,11 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"id":1,"text":"Humber Scout Car","cost":0,"v":134},
-                                    {"id":2,"text":"Humber IV Armoured Car","cost":22,"v":135}, //greg confirm cost
-                                    {"id":3,"text":"Daimler","cost":27,"v":137}, //greg confirm cost
+                                    {"id":2,"text":"Humber IV Armoured Car","cost":22,"v":135},
+                                    {"id":3,"text":"Daimler","cost":20,"v":137},
                                     {"id":4,"text":"Dingo","cost":0,"v":136},
-                                    {"id":5,"text":"Staghound","cost":24,"v":138}, //greg confirm cost
-                                    {"id":6,"text":"AEC III","cost":32, restricted:"true","v":140} //greg confirm cost
+                                    {"id":5,"text":"Staghound","cost":24,"v":138},
+                                    {"id":6,"text":"AEC III","cost":28, restricted:"true","v":140}
                                 ]
                             }
                         ]
@@ -24814,23 +24859,30 @@ var forces = [
                             {
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"Cromwell IV","cost":0,"v":111}/* greg check this whole unit},
-                                    {"id":2,"text":"M3A3 'Honey'","cost":-24,"v":115,"br":-1},
-                                    {"id":3,"text":"M5 Stuart","cost":-22,"v":89,"br":-1},
-                                    {"id":4,"text":"M5 Stuart 'recce'","cost":-38,"v":117,"br":-2} */
+                                    {"id":1,"text":"Cromwell IV","cost":0,"v":111},
+                                    {"id":2,"text":"M5 Stuart","cost":-22,"v":116,"br":-1},
+                                    {"id":3,"text":"M5 Stuart 'recce'","cost":-38,"v":117,"br":-2}
                                 ] 
                             }
                         ] 
                     },
                     {
                         "id":5,
+                        "name":"Chaffee Recon Tank",
+                        "v":232,
+                        "unique":true,
+                        "cost":48,
+                        "br":2
+                    },
+                    {
+                        "id":6,
                         "name":"Infantry Foot Patrol",
                         "cost":31,
                         "br":2,
                         "s":1
                     },
                     {
-                        "id":6,
+                        "id":7,
                         "name":"Motorised Infantry Patrol",
                         "cost":35,
                         "br":3,
@@ -24847,7 +24899,7 @@ var forces = [
 
                     },
                     {
-                        "id":7,
+                        "id":8,
                         "name":"SAS Jeep Patrol",
                         "cost":66,
                         "br":4,
@@ -24864,7 +24916,7 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
+                        "id":9,
                         "name":"Carrier Team",
                         "cost":24,
                         "br":1,
@@ -24879,7 +24931,7 @@ var forces = [
                         ]
                     },
                     {
-                        "id":9,
+                        "id":10,
                         "name":"Armoured Infantry Patrol",
                         "cost":46,
                         "br":3,
@@ -25204,7 +25256,7 @@ var forces = [
                         "cost":38,
                         "br":3,
                         "unique":true,
-                        "v":0 // greg add vehicle
+                        "v":233
                     },
                     {
                         "id":6,
@@ -25352,7 +25404,7 @@ var forces = [
                     "name":"Timed Land Mattress Barrage",
                     "cost":30,
                     "unique":true,
-                    "w":0, //greg add weapon
+                    "w":0,
                     "br":0
                 },
                 {
