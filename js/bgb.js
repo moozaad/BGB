@@ -25670,9 +25670,9 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"45mmL66","cost":0,"w":39}
-                                            {"id":2,"text":"57mm L73 Zis 2","cost":17,"w":40}
-                                            {"id":3,"text":"76.2mm L54 Zis 3","cost":17,"w":45},
+                                            {"id":1,"text":"45mmL66","cost":0,"w":39},
+                                            {"id":2,"text":"57mm L73 Zis 2","cost":17,"w":40},
+                                            {"id":3,"text":"76.2mm L54 Zis 3","cost":17,"w":45}
                                         ]
                                     },
                                     {
@@ -25802,7 +25802,7 @@ var forces = [
                                 ]
                             }
                         ]
-                    }
+                    },
                     {
                         "id":4,
                         "name":"Rifle Platoon",
@@ -26152,7 +26152,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0}
+                                            {"id":1,"text":"None","cost":0},
                                             {"id":2,"text":"Gaz Jeep","cost":2,"v":90}
                                         ]
                                     },
