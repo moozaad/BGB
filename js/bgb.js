@@ -23556,7 +23556,7 @@ var forces = [
     {
         "id":18,
         "group":"British",
-        "name":"FotR British Battlegroup",
+        "name":"FotR British Battlegroup (WIP)",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
@@ -25104,7 +25104,6 @@ var forces = [
                 "allows":null,
                 "requires":true,
                 "entries":[
-                    /*greg
                     {
                         "id":1,
                         "name":"Heavy Anti-Tank Gun",
@@ -25130,15 +25129,31 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Medium Truck tow","cost":4,"v":91},
-                                    {"id":3,"text":"M5 Halftrack tow","cost":8,"v":83},
-                                    {"id":4,"text":"Crusader Tractor tow","cost":10,"v":152}
+                                    {"id":2,"text":"M5 Halftrack tow","cost":8,"v":83},
+                                    {"id":3,"text":"Crusader Tractor tow","cost":10,"v":152}
                                 ]
                             }
                         ]
                     },
                     {
                         "id":2,
+                        "name":"Specialist Armoured Vehicle",
+                        "cost":54,
+                        "br":3,
+                        "restricted":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"Churchill AVRE","cost":0,"v":123},
+                                    {"id":2,"text":"Churchill Crocodile","cost":26,"v":124},
+                                    {"id":3,"text":"Wasp","cost":-38,"br":-2,"v":151}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":3,
                         "name":"Towed Bofors AA Gun",
                         "cost":36,
                         "br":1,
@@ -25167,57 +25182,7 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
-                        "name":"Towed Polsten AA Gun",
-                        "cost":28,
-                        "br":1,
-                        "w":4,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"id":1,"text":"20mm Polsten AA with 3 crew","cost":0}
-                                ]
-                            },
-                            {
-                                "name":"Loader team",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"3-man loader team","cost":10}
-                                ]
-                            },
-                            {
-                                "name":"Tow",
-                                "choices":[
-                                    {"id":1,"text":"None","cost":0},
-                                    {"id":2,"text":"Jeep tow","cost":2,"v":163}
-                                ]
-                            }
-                        ]
-                    },
-                    {
                         "id":4,
-                        "name":"Specialist Armoured Vehicle",
-                        "cost":15,
-                        "br":1,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"id":1,"text":"Ram Kangaroo","cost":0,"v":147},
-                                    {"id":2,"text":"Churchill V","cost":29,"br":2,"restricted":true,"v":120},
-                                    {"id":3,"text":"Churchill VII","cost":55,"br":2,"restricted":true,"v":122},
-                                    {"id":4,"text":"Churchill VIII","cost":51,"br":2,"restricted":true,"v":149},
-                                    {"id":5,"text":"Churchill AVRE","cost":39,"br":2,"restricted":true,"v":123},
-                                    {"id":6,"text":"Churchill Crocodile","cost":65,"br":2,"restricted":true,"v":124},
-                                    {"id":7,"text":"Centaur IV","cost":31,"br":2,"restricted":true,"v":127},
-                                    {"id":8,"text":"Wasp","cost":1,"restricted":true,"v":151}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id":5,
                         "name":"Anti-Aircraft Vehicle",
                         "cost":20,
                         "br":1,
@@ -25226,12 +25191,112 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                {"id":1,"text":"Medium Truck with 40mm Bofors","v":91,"w":63} //greg wtf
+                                {"id":1,"text":"Medium Truck with 40mm Bofors","v":91,"w":63},
+                                {"id":2,"text":"Crusader AA Mk I","cost":10,"br":2,"v":129},
+                                {"id":3,"text":"Crusader AA Mk II","cost":18,"br":2,"v":130}
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "id":5,
+                        "name":"Crusader AA 'Triple'",
+                        "cost":38,
+                        "br":3,
+                        "unique":true,
+                        "v":0 // greg add vehicle
+                    },
+                    {
+                        "id":6,
+                        "name":"Commando Assault Section",
+                        "cost":104,
+                        "br":9,
+                        "unique":true,
+                        "s":1,
+                        // greg does this allow support choices? It's an exception if it does
+                        "sub_text":"Section Components",
+                        "options":[
+                            {
+                                "name":"Troop Quality",
+                                "choices":[
+                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":2,"text":"Elite","cost":27, "br":4}
+                                ]
+                            },
+                            {
+                                "name":"Transport",
+                                "choices":[
+                                    {"id":1,"text":"None","cost":0},
+                                    {"id":2,"text":"2 Medium Trucks","cost":8,"v":91,"vc":2},
+                                    {"id":3,"text":"LVT IV Buffalo","cost":18, "br":1},
+                                    {"id":4,"text":"LVT IV Buffalos (with 20mm)","cost":28,"br":1,"w":4}
+                                ]
+                            }
+                        ],
+                        "sub_units":[
+                            {
+                                "id":1,
+                                "name":"Section HQ",
+                                "cost":0,
+                                "br":0,
+                                "mandatory":true,
+                                "officer":true
+                            },
+                            {
+                                "id":2,
+                                "name":"Rifle Group",
+                                "cost":0,
+                                "count":2,
+                                "br":0,
+                                "mandatory":true,
+                                "options":[
+                                    {
+                                        "name":"PIAT",
+                                        "choices":[
+                                            {"id":1,"text":"None","cost":0},
+                                            {"id":2,"text":"PIAT","cost":5,"w":91}
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":3,
+                                "name":"Bren Group",
+                                "cost":0,
+                                "count":2,
+                                "br":0,
+                                "mandatory":true,
+                                "options":[
+                                    {
+                                        "name":"Bren Guns",
+                                        "choices":[
+                                            {"id":1,"text":"1 Bren Gun","cost":0},
+                                            {"id":2,"text":"1 K Gun","cost":2},
+                                            {"id":3,"text":"2 Bren Guns","cost":2},
+                                            {"id":4,"text":"1 Bren Gun, 1 K Gun","cost":4}
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id":4,
+                                "name":"Light Mortar Team",
+                                "cost":0,
+                                "br":0,
+                                "w":60,
+                                "mandatory":true,
+                                "unique":true
+                            },
+                            {
+                                "id":5,
+                                "name":"Sniper Team",
+                                "cost":0,
+                                "br":0,
+                                "mandatory":true,
+                                "unique":true
+                            }
+                        ]
                     }
-            */
                 ]
             },
             {
@@ -25239,7 +25304,7 @@ var forces = [
                 "name":"Additional Fire Support",
                 "allows":null,
                 "requires":true,
-                "entries":[/*greg
+                "entries":[
                 {
                     "id":1,
                     "name":"Off-Table Artillery Request",
@@ -25284,17 +25349,24 @@ var forces = [
                 },
                 {
                     "id":6,
-                    "name":"Timed Spitfire Air Strike",
-                    "cost":10,
+                    "name":"Timed Land Mattress Barrage",
+                    "cost":30,
+                    "unique":true,
+                    "w":0, //greg add weapon
                     "br":0
                 },
                 {
                     "id":7,
+                    "name":"Timed Tempest Air Strike",
+                    "cost":10,
+                    "br":0
+                },
+                {
+                    "id":8,
                     "name":"Timed Typhoon Air Strike",
                     "cost":20,
                     "br":0
                 }
-                */
                 ]
             }
         ]
