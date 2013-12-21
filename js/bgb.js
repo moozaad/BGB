@@ -751,7 +751,15 @@ var vehicles = [
     'mg':true,
     'special':'Bridging'
 },
-{},
+{
+    'id':98,
+    'name':'SU-100',
+    'armour':true,
+    'weapons':[116],
+    'mg':true,
+    'ammo':true,
+    'special':'T-34 Mobility'
+},
 {
     'id':99,
     'name':'Sherman \'Emcha\'',
@@ -1742,6 +1750,65 @@ var vehicles = [
     'mg':true,
     'special':'T-34 Mobility',
     'ammo':true
+},
+{
+    'id':237,
+    'name':IS-II',
+    'armour':true,
+    'weapons':[115],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':238,
+    'name':ISU-122',
+    'armour':true,
+    'weapons':[115],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':239,
+    'name':ISU-152',
+    'armour':true,
+    'weapons':[50],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':240,
+    'name':'Komintern tractor',
+    'hits':true
+},
+{
+    'id':241,
+    'name':'Voroshilovets tractor',
+    'hits':true
+},
+{
+    'id':242,
+    'name':'T-34 ARV',
+    'armour':true,
+    'special':'T-34 Mobility',
+    "open":true
+},
+{
+    'id':243,
+    'name':'PT-34',
+    'armour':true,
+    'weapons':[44],
+    'mg':true,
+    'special':'T-34 Mobility, Mineroller',
+    'ammo':true
+},
+{
+    'id':244,
+    'name':'OT-34',
+    'armour':true,
+    'weapons':[44],
+    'mg':true,
+    'special':'T-34 Mobility',
+    'ammo':true //greg also has flamethrower
 },
     // greg to-do, landing craft
 {
@@ -3127,6 +3194,36 @@ var weapons = {
             'type':'AP',
             'effect':'-',
             'strength':['','','','','']
+        }
+        ]
+    },
+    115:{
+        'name':'122mmL43',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['','','','','']
+        }
+        ]
+    },
+    116:{
+        'name':'100mmL54',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','','']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['','','','','','']
         }
         ]
     }
@@ -8355,7 +8452,7 @@ var forces = [
                         "id":8,
                         "name":"Heavy Artillery Battery",
                         "cost":86,
-                        "br":0,
+                        "br":0, //greg confirm this
                         "options":[
                             {
                                 "name":"Composition",
@@ -26307,7 +26404,6 @@ var forces = [
                     }
                 ]
             },
-            greg got as far as here
             {
                 "id":3, 
                 "name":"Tank Units",
@@ -26316,114 +26412,143 @@ var forces = [
                 "entries":[
                     {
                         "id":1,
-                        "name":"T-34 Platoon",
-                        "cost":100,
-                        "multiplier":2,
-                        "br":9,
+                        "name":"T-34 Company",
+                        "cost":350,
+                        "multiplier":9,
+                        "br":30,
                         "v":75,
-                        "vc":3,
+                        "vc":10,
+                        "officer":4,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 T-34/43s","cost":0}
+                                    {"id":1,"text":"10 T-34/76s","cost":0},
+                                    {"id":2,"text":"10 T-34/85s","cost":125,"v":236}
                                 ]
                             }
                         ]
                     },
                     {
                         "id":2,
-                        "name":"T-34",
-                        "cost":40,
+                        "name":"T-34 Platoon",
+                        "cost":100,
+                        "multiplier":3,
+                        "br":9,
+                        "officer":true,
                         "v":75,
-                        "br":3
+                        "vc":3,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"id":1,"text":"3 T-34/76s"},
+                                    {"id":2,"text":"3 T-34/85s","cost":38,"v":236}
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id":3,
-                        "name":"KV-1 Platoon",
-                        "cost":140,
-                        "multiplier":2,
-                        "br":6,
-                        "vc":3,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"id":1,"text":"3 KV-1Ss","cost":0,"v":70},
-                                    {"id":2,"text":"3 KV-1Es","cost":9,"v":73}
-                                ]
-                            }
-                        ]
+                        "name":"IS-II Platoon",
+                        "cost":362,
+                        "multiplier":5,
+                        "br":15,
+                        "officer":true,
+                        "vc":5,
+                        "v":237
                     },
                     {
-                        "id":4,
-                        "name":"KV-1 Tank",
-                        "cost":56,
-                        "br":3,
-                        "restricted":true,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"id":1,"text":"KV-1S","cost":0,"v":70},
-                                    {"id":2,"text":"KV-1E","cost":3,"v":73}
-                                ]
-                            }
-                        ]
+                        "id":4, 
+                        "name":"Additional Tank",
+                        "cost":40, 
+                        "br":3, 
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"id":1,"text":"T-34/76","v":75}, 
+                                    {"id":2,"text":"T-34/76 (Bed Spring)","v":75,"cost":3}, 
+                                    {"id":3,"text":"T-34/85","cost":15,"v":236},
+                                    {"id":4,"text":"T-34/85 (Bed Spring)","cost":18,"v":236},
+                                    {"id":5,"text":"Sherman \'Emcha\'","cost":14,"v":99},
+                                    {"id":6,"text":"Sherman \'Emcha\' (Bed Spring)","cost":17,"v":99},
+                                    {"id":7,"text":"IS-II","cost":48,"v":237},
+                                    {"id":8,"text":"IS-II (Bed Spring)","cost":51,"v":237}
+                                ] 
+                            } 
+                        ] 
                     },
                     {
                         "id":5,
-                        "name":"Lend-Lease Light Tank Platoon",
-                        "cost":84,
-                        "br":6,
-                        "multiplier":2,
-                        "vc":3,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"id":1,"text":"3 Valentine IIIs","cost":0,"v":87},
-                                    {"id":2,"text":"3 M3 Stuarts","cost":6,"v":89}
-                                ]
-                            }
-                        ]
+                        "name":"Sherman \'Emcha\' Company",
+                        "cost":440,
+                        "multiplier":9,
+                        "br":30,
+                        "v":99,
+                        "vc":10,
+                        "officer":4
                     },
                     {
                         "id":6,
-                        "name":"Lend-Lease Medium Tank Platoon",
-                        "cost":70,
+                        "name":"Sherman \'Emcha\' Platoon",
+                        "cost":145,
+                        "multiplier":3,
                         "br":9,
-                        "multiplier":2,
+                        "v":99,
                         "vc":3,
+                        "officer":true
+                    },
+                    {
+                        "id":7,
+                        "name":"SU-76M Battery",
+                        "cost":75,
+                        "multiplier":3,
+                        "br":6,
+                        "officer":true,
+                        "v":76,
+                        "vc":3
+                    },
+                    {
+                        "id":8,
+                        "name":"SU Battery",
+                        "cost":100,
+                        "multiplier":2,
+                        "br":6,
+                        "officer":true,
+                        "v":76,
+                        "vc":2,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Matilda IIs","cost":0,"v":86},
-                                    {"id":2,"text":"3 M3 Grants","cost":40,"v":85},
-                                    {"id":3,"text":"3 Churchill III or IVs","cost":56,"v":88}
+                                    {"id":1,"text":"2 SU-85s"},
+                                    {"id":2,"text":"2 SU-100s","cost":56,"v":98}
                                 ]
                             }
                         ]
                     },
                     {
-                        "id":7,
-                        "name":"Lend-Lease Tank",
-                        "cost":48,
-                        "br":3,
+                        "id":9,
+                        "name":"ISU Battery",
+                        "cost":145,
+                        "multiplier":2,
+                        "br":6,
+                        "restricted":true,
+                        "unique":true,
+                        "officer":true,
+                        "v":239,
+                        "vc":2,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Churchill III or IV","cost":0,"v":88},
-                                    {"id":2,"text":"M3 Grant","cost":-4,"v":85},
-                                    {"id":3,"text":"Matilda II","cost":-20,"v":86},
-                                    {"id":4,"text":"Valentine III","cost":-14,"br":-1,"v":87},
-                                    {"id":5,"text":"M3 Stuart","cost":-10,"br":-1,"v":89}
+                                    {"id":1,"text":"2 ISU-152s"},
+                                    {"id":2,"text":"2 ISU-122s","cost":24,"v":238}
                                 ]
                             }
                         ]
-                    }
+                    },
                 ]
             },
             {
@@ -26437,11 +26562,12 @@ var forces = [
                         "name":"Forward Observer Team",
                         "cost":16,
                         "br":1,
+                        "unique":true,
                         "options":[
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Gaz Jeep","cost":0,"v":90},
+                                    {"id":1,"text":"Gaz Jeep","v":90},
                                     {"id":2,"text":"Bren Carrier","cost":2,"v":82}
                                 ]
                             }
@@ -26457,8 +26583,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0,"w":51},
-                                    {"id":2,"text":"2 BM-8-13 Katyusha","cost":20,"v":79}
+                                    {"id":1,"text":"2 BM-13 Katyusha","w":51}
                                 ]
                             }
                         ]
@@ -26480,8 +26605,8 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"id":1,"text":"No tow","cost":0},
-                                    {"id":2,"text":"1 horse & limber tow","cost":2,"v":93},
-                                    {"id":3,"text":"2 horse & limber tows","cost":4,"v":93}
+                                    {"id":2,"text":"Medium truck tow","cost":4,"v":91},
+                                    {"id":3,"text":"Medium truck tows","cost":8,"v":91}
                                 ]
                             },
                             {
@@ -26506,7 +26631,8 @@ var forces = [
                                     {"id":1,"text":"2 BM-13 Katyusha","cost":0,"w":51},
                                     {"id":2,"text":"2 76.2mm Zis 3","cost":-55,"w":45},
                                     {"id":3,"text":"2 122mm howitzers","cost":-9,'w':47},
-                                    {"id":4,"text":"2 152mm howitzers","cost":0,"w":49}
+                                    {"id":4,"text":"2 152mm howitzers","w":49},
+                                    {"id":5,"text":"2 203mm howitzers","cost":45,"w":52}
                                 ]
                             }
                         ]
@@ -26521,7 +26647,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 82mm mortars","cost":0},
+                                    {"id":1,"text":"2 82mm mortars"},
                                     {"id":2,"text":"3 82mm mortars","cost":22, "br":1}
                                 ]
                             },
@@ -26564,14 +26690,14 @@ var forces = [
                     {
                         "id":7,
                         "name":"Off-Table Mortar Fire",
-                        "cost":80,
+                        "cost":54,
                         "br":0,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 82mm mortars","cost":0,"w":34},
-                                    {"id":2,"text":"3 120mm mortars","cost":28,"w":3}
+                                    {"id":1,"text":"2 82mm mortars","cost":0,"w":34},
+                                    {"id":2,"text":"2 120mm mortars","cost":18,"w":3}
                                 ]
                             }
                         ]
@@ -26580,7 +26706,7 @@ var forces = [
                         "id":8,
                         "name":"Heavy Artillery Battery",
                         "cost":86,
-                        "br":0,
+                        "br":4,
                         "options":[
                             {
                                 "name":"Composition",
@@ -26602,8 +26728,32 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"id":1,"text":"No tow","cost":0},
-                                    {"id":2,"text":"1 horse & limber tow","cost":2,"v":93},
-                                    {"id":3,"text":"2 horse & limber tows","cost":4,"v":93}
+                                    {"id":2,"text":"1 Medium truck tow","cost":4,"v":91},
+                                    {"id":3,"text":"2 Medium truck tows","cost":8,"v":91}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id":9,
+                        "name":"Very Heavy Howitzer",
+                        "cost":62,
+                        "br":2,
+                        "unique":true,
+                        "w":52,
+                        "options":[
+                            {
+                                "name":"Loader team",
+                                "choices":[
+                                    {"id":1,"text":"None","cost":0},
+                                    {"id":2,"text":"3-man loader team","cost":10}
+                                ]
+                            },
+                            {
+                                "name":"Tow",
+                                "choices":[
+                                    {"id":1,"text":"None","cost":0},
+                                    {"id":2,"text":"Voroshilovets Tractor tow","cost":8,"v":241}
                                 ]
                             }
                         ]
@@ -26625,155 +26775,57 @@ var forces = [
                     {
                         "id":2,
                         "name":"Machine Gun Dug-out",
-                        "cost":32,
+                        "cost":34,
                         "br":1
                     },
                     {
                         "id":3,
-                        "name":"Machine Gun Pillbox",
-                        "cost":54,
-                        "br":1,
-                        "restricted":true
-                    },
-                    {
-                        "id":4,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":5,
+                        "id":4,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":6,
+                        "id":5,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":7,
-                        "name":"Trenches",
-                        "cost":10,
-                        "br":0
-                    },
-                    {
-                        "id":8,
-                        "name":"Sniper Hideout",
-                        "cost":15,
-                        "br":0
-                    },
-                    {
-                        "id":9,
-                        "name":"AT Rifle-Team Hide",
-                        "cost":20,
-                        "br":1
-                    },
-                    {
-                        "id":10,
+                        "id":6,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":11,
-                        "name":"AT Gun Dug-out",
-                        "cost":20,
-                        "br":0,
-                        "restricted":true
-                    },
-                    {
-                        "id":12,
-                        "name":"AT Gun Bunker",
-                        "cost":30,
-                        "br":0,
-                        "restricted":true
-                    },
-                    {
-                        "id":13,
-                        "name":"Artillery Observation Point",
-                        "cost":26,
-                        "unique":true,
-                        "br":1
-                    },
-                    {
-                        "id":14,
-                        "name":"Command Bunker",
-                        "cost":30,
-                        "br":3,
-                        "restricted":true,
-                        "officer":true,
-                        "unique":true
-                    },
-                    {
-                        "id":15,
-                        "name":"Booby Trapped Building",
-                        "cost":25,
-                        "br":0
-                    },
-                    {
-                        "id":16,
-                        "name":"Minefield",
-                        "cost":15,
-                        "br":0
-                    },
-                    {
-                        "id":17,
+                        "id":7,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":18,
-                        "name":"Dug-in T-34",
-                        "cost":50,
-                        "v":75,
-                        "br":3
-                    },
-                    {
-                        "id":19,
-                        "name":"Dug-in T-34 Platoon",
-                        "cost":125,
-                        "v":75,
-                        "vc":3,
-                        "br":9
-                    },
-                    {
-                        "id":20,
-                        "name":"Dug-in KV-1E",
-                        "cost":69,
-                        "v":73,
-                        "br":3
-                    },
-                    {
-                        "id":21,
-                        "name":"Counter Bombardment",
-                        "cost":20,
-                        "br":0,
-                        "unique":true
-                    },
-                    {
-                        "id":22,
-                        "name":"Off-table Zis 3 AT shot",
-                        "w":45,
-                        "cost":5,
-                        "br":0
-                    },
-                    {
-                        "id":23,
+                        "id":8,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "br":0,
                         "restricted":true
+                    }
+                    {
+                        "id":9,
+                        "name":"Sniper Hideout",
+                        "cost":15,
+                        "br":0
                     },
                     {
-                        "id":24,
-                        "name":"For the Motherland!",
-                        "cost":15,
-                        "br":0,
-                        "unique":true
+                        "id":10,
+                        "name":"Minefield",
+                        "cost":20,
+                        "br":0
                     }
                 ]
             },
@@ -26800,29 +26852,61 @@ var forces = [
                 },
                 {
                     "id":2,
-                    "name":"Armoured Car",
-                    "cost":26,
-                    "br":1,
-                    "restricted":true,
+                    "name":"Mechanised Infantry Patrol",
+                    "cost":28,
+                    "br":3,
                     "options":[
                         {
-                            "name":"Composition",
+                            "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"BA-10","cost":0,"v":80}
+                                {"id":1,"text":"White Scout Car","v":84},
+                                {"id":2,"text":"M3 Halftrack","cost":4,"v":148}
+                            ]
+                        }
+                        {
+                            "name":"AT grenades",
+                            "choices":[
+                                {"id":1,"text":"None","cost":0},
+                                {"id":2,"text":"Anti-tank grenades","cost":5}
                             ]
                         }
                     ]
                 },
                 {
                     "id":3,
-                    "name":"Cavalry Squadron",
-                    "cost":30,
-                    "br":2
+                    "name":"Jeep Reconnaissance Team",
+                    "cost":18,
+                    "v":163,
+                    "br":1
                 },
                 {
                     "id":4,
+                    "name":"Scout Tank",
+                    "cost":35,
+                    "br":2,
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"T-70","v":72,"restricted":true},
+                                {"id":2,"text":"Valentine III","cost":13,"v":87},
+                                {"id":3,"text":"T-34/76","cost":15,"v":75,"br":1}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":5,
+                    "name":"Scout T-80",
+                    "cost":35,
+                    "br":2,
+                    "unique":true,
+                    "v":231
+                },
+                {
+                    "id":6,
                     "name":"Infantry Foot Patrol",
-                    "cost":22,
+                    "cost":28,
                     "br":2,
                     "options":[
                         {
@@ -26835,11 +26919,43 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
+                    "id":7,
+                    "name":"\'Razvedka\' Long Range Patrol",
+                    "cost":56,
+                    "br":4,
+                    "v":90,
+                    "unique":true,
+                    "options":[
+                        {
+                            "name":"AT grenades",
+                            "choices":[
+                                {"id":1,"text":"None","cost":0},
+                                {"id":2,"text":"Anti-tank grenades","cost":5}
+                            ]
+                        },
+                        {
+                            "name":"Panzerfaust",
+                            "choices":[
+                                {"id":1,"text":"None","cost":0},
+                                {"id":2,"text":"Panzerfaust in 1 team","cost":5,"w":107}
+                            ]
+                        }
+
+                    ]
+                },
+                {
+                    "id":8,
                     "name":"Motorcycle Reconnaissance Patrol",
                     "cost":18,
-                    "v":50,
+                    "v":51,
                     "br":1
+                },
+                {
+                    "id":9,
+                    "name":"BA-64 Armoured Car",
+                    "cost":20,
+                    "br":1,
+                    "v":81
                 }
             ]
         },
@@ -26854,13 +26970,22 @@ var forces = [
                     "name":"Repair Vehicle",
                     "cost":12,
                     "br":2,
+                    "v":91,
                     "restricted":true
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"1 Medium Trucks"},
+                                {"id":2,"text":"T-34 ARV","cost":8,"v":242}
+                        }
+                    ]
                 },
                 {
                     "id":2,
-                    "name":"Sapper Squad",
-                    "cost":21,
-                    "br":2,
+                    "name":"Assault Pioneer Squad",
+                    "cost":45,
+                    "br":3,
                     "s":1,
                     "options":[
                         {
@@ -26873,8 +26998,8 @@ var forces = [
                         {
                             "name":"Flame-thrower",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Flame-thrower","cost":10}
+                                {"id":1,"text":"Flame-thrower"}
+                                {"id":2,"text":"2 Flame-throwers","cost":10}
                             ]
                         },
                         {
@@ -26887,17 +27012,31 @@ var forces = [
                         {
                             "name":"Demo charge",
                             "choices":[
+                                {"id":1,"text":"Demo charge"},
+                                {"id":2,"text":"2 Demo charges","cost":5}
+                            ]
+                        },
+                        {
+                            "name":"Panzerfaust",
+                            "choices":[
                                 {"id":1,"text":"None","cost":0},
-                                {"id":2,"text":"Demo charge","cost":5}
+                                {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                             ]
                         }
                     ]
                 },
                 {
                     "id":3,
+                    "name":"Light Bridging Unit",
+                    "v":61,
+                    "cost":18,
+                    "br":2
+                },
+                {
+                    "id":4,
                     "name":"Heavy Bridging Unit",
                     "cost":36,
-                    "br":3,
+                    "br":4,
                     "restricted":true,
                     "unique":true,
                     "v":61,
@@ -26914,17 +27053,20 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
-                    "name":"Light Bridging Unit",
-                    "v":61,
-                    "cost":18,
-                    "br":2
+                    "id":5,
+                    "name":"PT-34 Engineering Vehicle",
+                    "cost":45,
+                    "restricted":true,
+                    "br":3,
+                    "v":243
                 },
                 {
-                    "id":5,
-                    "name":"Anti-Tank Mine Dog",
-                    "cost":10,
-                    "br":0
+                    "id":6,
+                    "name":"OT-34 Flamethrower Tank",
+                    "cost":52,
+                    "restricted":true,
+                    "br":3,
+                    "v":244
                 }
             ]
         },
@@ -26937,16 +27079,18 @@ var forces = [
                 {
                     "id":1,
                     "name":"Supply Column",
-                    "cost":4,
+                    "v":91,
+                    "cost":8,
                     "br":1,
                     "unique":true,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 Horse drawn wagon","cost":0,"v":94},
-                                {"id":2,"text":"2 Horse drawn wagons","cost":4,"v":94},
-                                {"id":3,"text":"3 Horse drawn wagons","cost":8,"v":94}
+                                {"id":1,"text":"1 medium truck"},
+                                {"id":2,"text":"2 medium trucks","cost":4},
+                                {"id":3,"text":"3 medium trucks","cost":8},
+                                {"id":4,"text":"4 medium trucks","cost":12}
                             ]
                         }
                     ]
@@ -26982,7 +27126,8 @@ var forces = [
                         "name":"Composition",
                         "choices":[
                             {"id":1,"text":"Jeep Ambulance","cost":0,"v":90},
-                            {"id":2,"text":"Ambulance medium truck","cost":2,"v":91}
+                            {"id":2,"text":"Ambulance medium truck","cost":2,"v":91},
+                            {"id":3,"text":"M5 Halftrack Ambulance","cost":6,"v":83}
                         ]
                         }
                     ]
@@ -27005,6 +27150,7 @@ var forces = [
                 }
             ]
         },
+        greg got to here
         {
             "id":9, 
             "name":"Specialist Support Units",
@@ -27544,7 +27690,8 @@ function render_entries(entries, sub_entries, async) {
                 for(var j = 0; j < entries[i]['options'].length; j++) {
                     text = text + '<div class="choice ui-helper-clearfix"><p class="opt_text">'+entries[i]['options'][j]['name']+'</p><select class="opt_select" name="' + entries[i]['options'][j]['name']+ '" data-bg_id="' + (j+1) +  '">';
                     for (var k=0; k<entries[i].options[j].choices.length; k++) {
-                        text = text + "<option data-cost='"+entries[i].options[j].choices[k].cost;
+                        text = text + "<option data-cost='"+ (entries[i].options[j].choices[k].cost!== undefined) ?
+                            entries[i].options[j].choices[k].cost : 0;
                         if (entries[i].options[j].choices[k].np)
                            text = text +"' data-np='"+entries[i].options[j].choices[k].br; 
                         if (entries[i].options[j].choices[k].br)
