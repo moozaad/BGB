@@ -3260,9 +3260,9 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"SdKfz 251/3","cost":0,"v":39},
-                                {"id":2,"text":"SdKfz 251/6","cost":0,"v":39},
-                                {"id":3,"text":"Panzer II/F","cost":0,"v":13},
+                                {"id":1,"text":"SdKfz 251/3","v":39},
+                                {"id":2,"text":"SdKfz 251/6","v":39},
+                                {"id":3,"text":"Panzer II/F","v":13},
                                 {"id":4,"text":"Panzer III/J","cost":6,"v":1},
                                 {"id":5,"text":"Panzer IV/G","cost":26,"v":8},
                                 {"id":6,"text":"Panzer IV/H","cost":32,"v":9},
@@ -3282,7 +3282,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Kübelwagen","cost":0,"v":54},
+                                {"id":1,"text":"Kübelwagen","v":54},
                                 {"id":2,"text":"Medium Truck","cost":2,"v":91},
                                 {"id":3,"text":"SdKfz 250/3","cost":12,"v":44},
                                 {"id":4,"text":"SdKfz 251/3","cost":12,"v":39}
@@ -3299,7 +3299,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Medium Radio Truck","cost":0,"v":91},
+                                {"id":1,"text":"Medium Radio Truck","v":91},
                                 {"id":2,"text":"SdKfz 251/3 Radio H.T.","cost":6,"v":39},
                                 {"id":3,"text":"SdKfz 250/3 Radio H.T.","cost":6,"v":44},
                                 {"id":4,"text":"SdKfz 236","cost":6,"v":36},
@@ -3319,7 +3319,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Kübelwagen","cost":0,"v":54},
+                                {"id":1,"text":"Kübelwagen","v":54},
                                 {"id":2,"text":"Medium Truck","cost":2,"v":91},
                                 {"id":3,"text":"SdKfz 250/3","cost":12,"v":44},
                                 {"id":4,"text":"SdKfz 251/3","cost":12,"v":39}
@@ -3362,7 +3362,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -3370,14 +3370,14 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0, "np":true},
+                                            {"id":1,"text":"None", "np":true},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91}
                                         ]
                                     },
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -3386,7 +3386,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Panzer Grenadier Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -3394,21 +3394,21 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91}
                                         ]
                                     },
                                     {
                                         "name":"MG",
                                         "choices":[
-                                            {"id":1,"text":"Bipod MG34","cost":0},
+                                            {"id":1,"text":"Bipod MG34"},
                                             {"id":2,"text":"Bipod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -3433,7 +3433,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -3449,14 +3449,14 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Tripod MG34","cost":0},
+                                            {"id":1,"text":"Tripod MG34"},
                                             {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -3480,7 +3480,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -3496,21 +3496,21 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"50mm PaK38","cost":0,"w":9},
+                                            {"id":1,"text":"50mm PaK38","w":9},
                                             {"id":2,"text":"75mm PaK40","cost":14,"w":14}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91},
                                             {"id":3,"text":"Opel Maultier","cost":8,"v":59},
                                             {"id":4,"text":"SdKfz 6 half track","cost":8,"v":64},
@@ -3533,7 +3533,7 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":1,"text":"Veteran"},
                                     {"id":2,"text":"Elite","cost":55, "br":7}
                                 ]
                             }
@@ -3543,7 +3543,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -3551,13 +3551,13 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"SdKfz 251/16","cost":0,"v":42}
+                                            {"id":1,"text":"SdKfz 251/16","v":42}
                                         ]
                                     },
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"Anti-tank grenades","cost":0}
+                                            {"id":1,"text":"Anti-tank grenades"}
                                         ]
                                     }
                                 ]
@@ -3565,7 +3565,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Assault Pioneer Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -3573,34 +3573,34 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"SdKfz 251/1","cost":0,"v":37}
+                                            {"id":1,"text":"SdKfz 251/1","v":37}
                                         ]
                                     },
                                     {
                                         "name":"Flame-thrower",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Flame-thrower","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mine sweeper",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Mine sweeper","cost":5}
                                         ]
                                     },
                                     {
                                         "name":"MG",
                                         "choices":[
-                                            {"id":1,"text":"Bipod MG34","cost":0},
+                                            {"id":1,"text":"Bipod MG34"},
                                             {"id":2,"text":"Bipod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Composition",
                                         "choices":[
-                                            {"id":1,"text":"AT grenades, 2 demo charges","cost":0}
+                                            {"id":1,"text":"AT grenades, 2 demo charges"}
                                         ]
                                     }
                                 ]
@@ -3622,14 +3622,14 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Tripod MG34","cost":0},
+                                            {"id":1,"text":"Tripod MG34"},
                                             {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -3652,21 +3652,21 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"50mm PaK38","cost":0,"w":9},
+                                            {"id":1,"text":"50mm PaK38","w":9},
                                             {"id":2,"text":"75mm PaK40","cost":14,"w":14}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91},
                                             {"id":3,"text":"Opel Maultier","cost":8,"v":59},
                                             {"id":4,"text":"SdKfz 6 half track","cost":8,"v":64},
@@ -3685,7 +3685,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"SdkFz 251/9 Halftrack","cost":0,"v":40},
+                                            {"id":1,"text":"SdkFz 251/9 Halftrack","v":40},
                                             {"id":2,"text":"Grille H","cost":16, "br":1,"v":27},
                                             {"id":3,"text":"Grille K","cost":16, "br":1,"v":28}
                                         ]
@@ -3703,14 +3703,14 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"20mm FlaK","cost":0},
+                                            {"id":1,"text":"20mm FlaK"},
                                             {"id":2,"text":"20mm FlaK vierling","cost":12}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                        {"id":1,"text":"None","cost":0},
+                                        {"id":1,"text":"None"},
                                         {"id":2,"text":"Medium Truck","cost":4,"v":91},
                                         {"id":3,"text":"SdKfz 10 half track", "cost":8,"v":62},
                                         {"id":4,"text":"SdKfz 11 half track", "cost":8,"v":63}
@@ -3731,7 +3731,7 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":1,"text":"Veteran"},
                                     {"id":2,"text":"Elite","cost":55, "br":7}
                                 ]
                             }
@@ -3741,7 +3741,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -3749,13 +3749,13 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"SdKfz 251/10","cost":0,"v":41}
+                                            {"id":1,"text":"SdKfz 251/10","v":41}
                                         ]
                                     },
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -3764,7 +3764,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Panzer Grenadier Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -3772,20 +3772,20 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"SdKfz 251/1","cost":0,"v":37}
+                                            {"id":1,"text":"SdKfz 251/1","v":37}
                                         ]
                                     },
                                     {
                                         "name":"MG",
                                         "choices":[
-                                            {"id":1,"text":"Bipod MG34","cost":0},
+                                            {"id":1,"text":"Bipod MG34"},
                                             {"id":2,"text":"Bipod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -3809,7 +3809,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -3825,14 +3825,14 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Tripod MG34","cost":0},
+                                            {"id":1,"text":"Tripod MG34"},
                                             {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -3856,14 +3856,14 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"80mm mortar","cost":0,"w":2},
+                                            {"id":1,"text":"80mm mortar","w":2},
                                             {"id":2,"text":"SdKfz 251/2 (80mm mortar)","cost":6,"v":38}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -3879,21 +3879,21 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"50mm PaK38","cost":0,"w":9},
+                                            {"id":1,"text":"50mm PaK38","w":9},
                                             {"id":2,"text":"75mm PaK40","cost":14,"w":14}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91},
                                             {"id":3,"text":"Opel Maultier","cost":8,"v":59},
                                             {"id":4,"text":"SdKfz 6 half track","cost":8,"v":64},
@@ -3912,7 +3912,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"SdkFz 251/9 Halftrack","cost":0,"v":40},
+                                            {"id":1,"text":"SdkFz 251/9 Halftrack","v":40},
                                             {"id":2,"text":"Grille H","cost":16, "br":1,"v":27},
                                             {"id":3,"text":"Grille K","cost":16, "br":1,"v":28}
                                         ]
@@ -3930,14 +3930,14 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"20mm FlaK","cost":0},
+                                            {"id":1,"text":"20mm FlaK"},
                                             {"id":2,"text":"20mm FlaK vierling","cost":12}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                        {"id":1,"text":"None","cost":0},
+                                        {"id":1,"text":"None"},
                                         {"id":2,"text":"Medium Truck","cost":4,"v":91},
                                         {"id":3,"text":"SdKfz 10 half track", "cost":8,"v":62},
                                         {"id":4,"text":"SdKfz 11 half track", "cost":8,"v":63}
@@ -3957,21 +3957,21 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91}
                                 ]
                             },
                             {
                                 "name":"MG",
                                 "choices":[
-                                    {"id":1,"text":"Bipod MG34","cost":0},
+                                    {"id":1,"text":"Bipod MG34"},
                                     {"id":2,"text":"Bipod MG42","cost":4}
                                 ]
                             },
                             {
                                 "name":"AT grenades",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
                             }
@@ -3987,27 +3987,27 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"SdKfz 251/1","cost":0,"v":37}
+                                    {"id":1,"text":"SdKfz 251/1","v":37}
                                 ]
                             },
                             {
                                 "name":"MG",
                                 "choices":[
-                                    {"id":1,"text":"Bipod MG34","cost":0},
+                                    {"id":1,"text":"Bipod MG34"},
                                     {"id":2,"text":"Bipod MG42","cost":4}
                                 ]
                             },
                             {
                                 "name":"AT grenades",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
                             },
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":1,"text":"Veteran"},
                                     {"id":2,"text":"Elite","cost":12, "br":1}
                                 ]
                             }
@@ -4024,41 +4024,41 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"SdKfz 251/1","cost":0,"v":37}
+                                    {"id":1,"text":"SdKfz 251/1","v":37}
                                 ]
                             },
                             {
                                 "name":"MG",
                                 "choices":[
-                                    {"id":1,"text":"Bipod MG34","cost":0},
+                                    {"id":1,"text":"Bipod MG34"},
                                     {"id":2,"text":"Bipod MG42","cost":4}
                                 ]
                             },
                             {
                                 "name":"Flame-thrower",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Flame-thrower","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mine sweeper",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Mine sweeper","cost":5}
                                 ]
                             },
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":1,"text":"Veteran"},
                                     {"id":2,"text":"Elite","cost":12, "br":1}
                                 ]
                             },
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"AT grenades, 2 demo charges","cost":0}
+                                    {"id":1,"text":"AT grenades, 2 demo charges"}
                                 ]
                             }
                         ]
@@ -4083,7 +4083,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Panzer III Js","cost":0,"v":1},
+                                    {"id":1,"text":"3 Panzer III Js","v":1},
                                     {"id":2,"text":"Upgrade to Ausf. Ls","cost":20,"v":2},
                                     {"id":3,"text":"Upgrade to Ausf. Ms","cost":25,"v":3}
                                 ]
@@ -4102,7 +4102,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Panzer IV Gs","cost":0,"v":8},
+                                    {"id":1,"text":"3 Panzer IV Gs","v":8},
                                     {"id":2,"text":"Upgrade to Ausf. Hs","cost":15, "restricted":true,"v":9}
                                 ]
                             }
@@ -4123,7 +4123,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Panther Ds","cost":0}
+                                    {"id":1,"text":"3 Panther Ds"}
                                 ]
                             }
                         ]
@@ -4140,7 +4140,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Stug III Fs","cost":0,"v":16},
+                                    {"id":1,"text":"3 Stug III Fs","v":16},
                                     {"id":2,"text":"Upgrade to Ausf. Gs","cost":20,"v":18}
                                 ]
                             }
@@ -4163,7 +4163,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Panzer III J","cost":0, "restricted":true,"v":1},
+                                    {"id":1,"text":"Panzer III J", "restricted":true,"v":1},
                                     {"id":2,"text":"Panzer III L","cost":9,"v":2},
                                     {"id":3,"text":"Panzer III M","cost":10,"v":3},
                                     {"id":4,"text":"Panzer III N","cost":8, "restricted":true,"v":4}
@@ -4180,8 +4180,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Panzer IV E","cost":0, "restricted":true,"v":7},
-                                    {"id":2,"text":"Panzer IV F1","cost":0, "restricted":true,"v":7},
+                                    {"id":1,"text":"Panzer IV E", "restricted":true,"v":7},
+                                    {"id":2,"text":"Panzer IV F1", "restricted":true,"v":7},
                                     {"id":3,"text":"Panzer IV G","cost":6,"v":8},
                                     {"id":4,"text":"Panzer IV H","cost":12, "restricted":true,"v":9}
                                 ]
@@ -4199,7 +4199,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Panther D","cost":0}
+                                    {"id":1,"text":"1 Panther D"}
                                 ]
                             }
                         ]
@@ -4213,7 +4213,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"StuG III A-E","cost":0, "restricted":true,"v":15},
+                                    {"id":1,"text":"StuG III A-E", "restricted":true,"v":15},
                                     {"id":2,"text":"StuG III F","cost":16,"v":16},
                                     {"id":3,"text":"StuG III G","cost":24,"v":18}
                                 ]
@@ -4231,7 +4231,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Panzer II F","cost":0}
+                                    {"id":1,"text":"1 Panzer II F"}
                                 ]
                             }
                         ]
@@ -4253,7 +4253,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Kübelwagen","cost":0,"v":54},
+                                    {"id":1,"text":"Kübelwagen","v":54},
                                     {"id":2,"text":"SdKfz 250/12 (as SdKfz 250/3)","cost":16,"v":44},
                                     {"id":3,"text":"SdKfz 251/18 (as SdKfz 251/3)","cost":16,"v":39}
                                 ]
@@ -4270,7 +4270,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Fieseler Storch","cost":0}
+                                    {"id":1,"text":"1 Fieseler Storch"}
                                 ]
                             }
                         ]
@@ -4286,7 +4286,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 Wespe","cost":0}
+                                    {"id":1,"text":"2 Wespe"}
                                 ]
                             }
                         ]
@@ -4303,7 +4303,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 Hummel","cost":0}
+                                    {"id":1,"text":"2 Hummel"}
                                 ]
                             }
                         ]
@@ -4319,7 +4319,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 SdKfz 251 Werfrahmen 40","cost":0,"v":203}
+                                    {"id":1,"text":"2 SdKfz 251 Werfrahmen 40","v":203}
                                 ]
                             }
                         ]
@@ -4333,9 +4333,9 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Wespe","cost":0,"v":29},
+                                    {"id":1,"text":"Wespe","v":29},
                                     {"id":2,"text":"Hummel","cost":25, "restricted":true,"v":30},
-                                    {"id":3,"text":"SdKfz Wurfrahmen","cost":0, "restricted":true}
+                                    {"id":3,"text":"SdKfz Wurfrahmen", "restricted":true}
                                 ]
                             }
                         ]
@@ -4349,7 +4349,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 105mm howitzer","cost":0,'w':22},
+                                    {"id":1,"text":"2 105mm howitzer",'w':22},
                                     {"id":2,"text":"2 150mm howitzer","cost":45},
                                     {"id":3,"text":"2 100mm cannon","cost":36,'w':21},
                                     {"id":4,"text":"2 170mm cannon","cost":108,'w':28},
@@ -4369,8 +4369,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Panzer II F","cost":0,"v":13},
-                                    {"id":2,"text":"1 Panzer III H","cost":0,"v":6}
+                                    {"id":1,"text":"1 Panzer II F","v":13},
+                                    {"id":2,"text":"1 Panzer III H","v":6}
                                 ]
                             }
                         ]
@@ -4385,20 +4385,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"120mm mortar & 3 crew","cost":0}
+                                    {"id":1,"text":"120mm mortar & 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mount",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck","cost":4,"v":91},
                                     {"id":3,"text":"Heavy Car","cost":4,"v":56}
                                 ]
@@ -4415,14 +4415,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck","cost":4,"v":91},
                                     {"id":3,"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                 ]
@@ -4438,14 +4438,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Heavy Truck","cost":6,"v":61},
                                     {"id":3,"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                 ]
@@ -4463,14 +4463,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck","cost":6,"v":91},
                                     {"id":3,"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                 ]
@@ -4487,14 +4487,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck","cost":6,"v":91},
                                     {"id":3,"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                 ]
@@ -4510,7 +4510,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 80mm mortars","cost":0,"w":2},
+                                    {"id":1,"text":"2 80mm mortars","w":2},
                                     {"id":2,"text":"2 120mm mortars","cost":20,"w":3}
                                 ]
                             }
@@ -4597,7 +4597,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 sniper","cost":0},
+                                {"id":1,"text":"1 sniper"},
                                 {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                             ]
                         }
@@ -4612,14 +4612,14 @@ var forces = [
                         {
                             "name":"AT grenades",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Anti-tank grenades","cost":5}
                             ]
                         },
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"SdKfz 250/1","cost":0,"v":43}
+                                {"id":1,"text":"SdKfz 250/1","v":43}
                             ]
                         }
                     ]
@@ -4641,8 +4641,8 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"SdKfz 250/10","cost":0,"v":48},
-                                {"id":2,"text":"SdKfz 250/11","cost":0,"v":49}
+                                {"id":1,"text":"SdKfz 250/10","v":48},
+                                {"id":2,"text":"SdKfz 250/11","v":49}
                             ]
                         }
                     ]
@@ -4657,14 +4657,14 @@ var forces = [
                         {
                             "name":"MG",
                             "choices":[
-                                {"id":1,"text":"Bipod MG34","cost":0},
+                                {"id":1,"text":"Bipod MG34"},
                                 {"id":2,"text":"Bipod MG42","cost":4}
                             ]
                         },
                         {
                             "name":"AT grenades",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Anti-tank grenades","cost":5}
                             ]
                         }
@@ -4679,7 +4679,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"SdKfz 222","cost":0,"v":32},
+                                {"id":1,"text":"SdKfz 222","v":32},
                                 {"id":2,"text":"SdKfz 231 or 232","cost":4,"v":34},
                                 {"id":3,"text":"SdKfz 233","cost":14,"v":35},
                                 {"id":4,"text":"SdKfz 250/7","cost":10, restricted:"true","v":45},
@@ -4699,7 +4699,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Hs-126","cost":0},
+                                {"id":1,"text":"Hs-126"},
                                 {"id":2,"text":"Fw-189A 'UHU'","cost":20, br:"1"}
                             ]
                         }
@@ -4722,7 +4722,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Heavy Truck & 6 men","cost":0,"v":61},
+                                {"id":1,"text":"Heavy Truck & 6 men","v":61},
                                 {"id":2,"text":"SdKfz 251/7 & 6 men","cost":8,"v":97}
                             ]
                         }
@@ -4740,7 +4740,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                {"id":1,"text":"2 Heavy Trucks & 12 men"},
                                 {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
                                 {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
                                 {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
@@ -4758,7 +4758,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 Flammpanzer III Ausf. M","cost":0,"v":5}
+                                {"id":1,"text":"1 Flammpanzer III Ausf. M","v":5}
                             ]
                         }
                     ]
@@ -4772,7 +4772,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"SdKfz 9 'Famo'","cost":0,"v":67},
+                                {"id":1,"text":"SdKfz 9 'Famo'","v":67},
                                 {"id":2,"text":"Bergepanther","cost":20, "br":1, "restricted":true,"v":188}
                             ]
                         }
@@ -4788,14 +4788,14 @@ var forces = [
                         {
                             "name":"Command",
                             "choices":[
-                                {"id":1,"text":"StuG III Ausf. F","cost":0,"v":16},
-                                {"id":2,"text":"Panzer III Ausf. L","cost":0,"v":2}
+                                {"id":1,"text":"StuG III Ausf. F","v":16},
+                                {"id":2,"text":"Panzer III Ausf. L","v":2}
                                 ]
                         },
                         {
                             "name":"Borgwards",
                             "choices":[
-                                {"id":1,"text":"1 Borgward B-IV","cost":0,"v":14},
+                                {"id":1,"text":"1 Borgward B-IV","v":14},
                                 {"id":2,"text":"2 Borgward B-IV","cost":10, "br":1,"v":14},
                                 {"id":3,"text":"3 Borgward B-IV","cost":20, "br":2,"v":14},
                                 {"id":4,"text":"4 Borgward B-IV","cost":30, "br":3,"v":14}
@@ -4822,7 +4822,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 medium truck","cost":0},
+                                {"id":1,"text":"1 medium truck"},
                                 {"id":2,"text":"2 medium trucks","cost":4},
                                 {"id":3,"text":"3 medium trucks","cost":8},
                                 {"id":4,"text":"4 medium trucks","cost":12}
@@ -4831,7 +4831,7 @@ var forces = [
                         {
                             "name":"Armoured carriers",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Replace 1 truck","cost":6,"v":"[91,31]","vc":"[1,1]"}
                             ]
                         }
@@ -4846,7 +4846,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"2 men","cost":0}
+                            {"id":1,"text":"2 men"}
                         ]
                         }
                     ]
@@ -4861,7 +4861,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
+                            {"id":1,"text":"Kübelwagen Ambulance","v":54},
                             {"id":2,"text":"Ambulance medium truck","cost":2,"v":91},
                             {"id":3,"text":"SdKfz 251/8 Ambulance","cost":6,"v":228}
                         ]
@@ -4879,7 +4879,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"4 men with a tent","cost":0}
+                            {"id":1,"text":"4 men with a tent"}
                         ]
                         }
                     ]
@@ -4902,20 +4902,20 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"PaK43/41 88mm AA/AT with 4 crew","cost":0}
+                                {"id":1,"text":"PaK43/41 88mm AA/AT with 4 crew"}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"SdkFz 7","cost":8,"v":65}
                             ]
                         }
@@ -4931,7 +4931,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Marder II","cost":0,"v":20},
+                                {"id":1,"text":"Marder II","v":20},
                                 {"id":2,"text":"Marder III H","cost":4,"v":21},
                                 {"id":3,"text":"Marder III M","cost":-2,"v":22},
                                 {"id":4,"text":"Marder 38t (36r)","cost":4,"v":23}
@@ -4953,7 +4953,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"3 Tigers Is","cost":0, "restricted":true}
+                            {"id":1,"text":"3 Tigers Is", "restricted":true}
                         ]
                         }
                     ]
@@ -4967,7 +4967,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 Ferdinand","cost":0, "restricted":true,"v":24},
+                                {"id":1,"text":"1 Ferdinand", "restricted":true,"v":24},
                                 {"id":2,"text":"1 Hornisse","cost":-80, "restricted":true,"br":-2,"v":25}
                             ]
                         }
@@ -4982,7 +4982,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 Panzer T-34r","cost":0,"v":12}
+                                {"id":1,"text":"1 Panzer T-34r","v":12}
                             ]
                         }
                     ]
@@ -4998,7 +4998,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":4},
+                            {"id":1,"text":"SdKfz 10 with 20mm","w":4},
                             {"id":2,"text":"SdKfz with 37mm","cost":4,"w":5},
                             {"id":3,"text":"SdKfz with 20mm Flakvierling","cost":20,"w":4}
                             ]
@@ -5014,7 +5014,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"StuH 42 F","cost":0, "restricted":true,"v":17},
+                                {"id":1,"text":"StuH 42 F", "restricted":true,"v":17},
                                 {"id":2,"text":"StuH 42 G","cost":6, "restricted":true,"v":19},
                                 {"id":3,"text":"Brummbär","cost":20, "restricted":true, "br":1,"v":26}
                             ]
@@ -5032,7 +5032,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 Panzer VI Tiger","cost":0}
+                                {"id":1,"text":"1 Panzer VI Tiger"}
                             ]
                         }
                     ]
@@ -5054,7 +5054,7 @@ var forces = [
                         {
                             "name":"Target Priority",
                             "choices":[
-                                {"id":1,"text":"3rd (5+)","cost":0},
+                                {"id":1,"text":"3rd (5+)"},
                                 {"id":2,"text":"2nd (4+)","cost":5},
                                 {"id":3,"text":"1st (2+)","cost":15}
                             ]
@@ -5137,8 +5137,8 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Kübelwagen","cost":0,"v":54},
-                                {"id":2,"text":"Heavy Car","cost":0,"v":56},
+                                {"id":1,"text":"Kübelwagen","v":54},
+                                {"id":2,"text":"Heavy Car","v":56},
                                 {"id":3,"text":"Schwimmwagen","cost":2,"v":55}
                             ]
                         }
@@ -5155,7 +5155,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Kübelwagen","cost":0,"v":54},
+                                {"id":1,"text":"Kübelwagen","v":54},
                                 {"id":2,"text":"Medium Truck","cost":2,"v":91},
                                 {"id":3,"text":"SdKfz 250/3","cost":12,"v":44},
                                 {"id":4,"text":"SdKfz 251/3","cost":12,"v":39}
@@ -5173,7 +5173,7 @@ var forces = [
                             "name":"Transport",
                             "choices":[
                                 {"id":1,"text":"Medium Radio Truck","cost":91,"v":91},
-                                {"id":2,"text":"Radio Van","cost":0,"v":92}
+                                {"id":2,"text":"Radio Van","v":92}
                             ]
                         }
                         ]
@@ -5217,7 +5217,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -5225,7 +5225,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium Truck","cost":4,"v":91},
                                             {"id":3,"text":"Heavy Car","cost":4,"v":56}
                                         ]
@@ -5233,7 +5233,7 @@ var forces = [
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -5242,7 +5242,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Grenadier Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -5250,14 +5250,14 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -5273,14 +5273,14 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Tripod MG34","cost":0},
+                                            {"id":1,"text":"Tripod MG34"},
                                             {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -5304,7 +5304,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -5328,7 +5328,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -5344,7 +5344,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"37mm PaK36","cost":0,"w":7},
+                                            {"id":1,"text":"37mm PaK36","w":7},
                                             {"id":2,"text":"50mm PaK38","cost":8,"w":9},
                                             {"id":3,"text":"75mm PaK97/38","cost":12,"w":100},
                                             {"id":4,"text":"76.2mm PaK36(r)","cost":14,"w":0},
@@ -5354,14 +5354,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Horse and limber","cost":2,"v":93},
                                             {"id":3,"text":"Medium truck","cost":4,"v":91}
                                         ]
@@ -5378,14 +5378,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Horse and limber","cost":2,"v":93},
                                             {"id":3,"text":"Medium truck","cost":4,"v":91}
                                         ]
@@ -5407,7 +5407,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -5415,14 +5415,14 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Heavy car","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -5431,7 +5431,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Assault Pioneer Squad",
-                                "cost":0,
+                                
                                 "count":2,
                                 "br":0,
                                 "mandatory":true,
@@ -5439,35 +5439,35 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0,'np':true},
+                                            {"id":1,"text":"None",'np':true},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91}
                                         ]
                                     },
                                     {
                                         "name":"Flame-thrower",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0,'np':true},
+                                            {"id":1,"text":"None",'np':true},
                                             {"id":2,"text":"Flame-thrower","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mine sweeper",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0,'np':true},
+                                            {"id":1,"text":"None",'np':true},
                                             {"id":2,"text":"Mine sweeper","cost":5}
                                         ]
                                     },
                                     {
                                         "name":"MG",
                                         "choices":[
-                                            {"id":1,"text":"Bipod MG34","cost":0},
+                                            {"id":1,"text":"Bipod MG34"},
                                             {"id":2,"text":"Bipod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Composition",
                                         "choices":[
-                                            {"id":1,"text":"AT grenades, 2 demo charges","cost":0}
+                                            {"id":1,"text":"AT grenades, 2 demo charges"}
                                         ]
                                     }
                                 ]
@@ -5490,7 +5490,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -5506,14 +5506,14 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Tripod MG34","cost":0},
+                                            {"id":1,"text":"Tripod MG34"},
                                             {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -5529,7 +5529,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"37mm PaK36","cost":0,"w":7},
+                                            {"id":1,"text":"37mm PaK36","w":7},
                                             {"id":2,"text":"50mm PaK38","cost":8},
                                             {"id":3,"text":"75mm PaK40","cost":22}
                                         ]
@@ -5537,14 +5537,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Horse and limber","cost":2,"v":93},
                                             {"id":3,"text":"Medium truck","cost":4,"v":91},
                                             {"id":4,"text":"SdKfz 6 halftrack","cost":8,"v":64}
@@ -5563,7 +5563,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -5581,14 +5581,14 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91}
                                 ]
                             },
                             {
                                 "name":"AT grenades",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
                             }
@@ -5605,35 +5605,35 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91}
                                 ]
                             },
                             {
                                 "name":"Flame-thrower",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Flame-thrower","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mine sweeper",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Mine sweeper","cost":5}
                                 ]
                             },
                             {
                                 "name":"MG",
                                 "choices":[
-                                    {"id":1,"text":"Bipod MG34","cost":0},
+                                    {"id":1,"text":"Bipod MG34"},
                                     {"id":2,"text":"Bipod MG42","cost":4}
                                 ]
                             },
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"AT grenades, 2 demo charges","cost":0}
+                                    {"id":1,"text":"AT grenades, 2 demo charges"}
                                 ]
                             }
                         ]
@@ -5658,7 +5658,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 StuG III Fs","cost":0,"v":16},
+                                    {"id":1,"text":"3 StuG III Fs","v":16},
                                     {"id":2,"text":"Upgrade to Ausf. Gs","cost":20,"v":18}
                                 ]
                             }
@@ -5673,8 +5673,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Panzer IV E","cost":0,"restricted":true,"v":7},
-                                    {"id":2,"text":"Panzer IV F1","cost":0,"restricted":true,"v":7},
+                                    {"id":1,"text":"Panzer IV E","restricted":true,"v":7},
+                                    {"id":2,"text":"Panzer IV F1","restricted":true,"v":7},
                                     {"id":3,"text":"Panzer IV G","cost":6,"v":8},
                                     {"id":4,"text":"Panzer IV H","cost":12,"v":9}
                                 ]
@@ -5690,7 +5690,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"StuG III A-E","cost":0, "restricted":true,"v":15},
+                                    {"id":1,"text":"StuG III A-E", "restricted":true,"v":15},
                                     {"id":2,"text":"StuG III F","cost":16,"v":16},
                                     {"id":3,"text":"StuG III G","cost":24,"v":18}
                                 ]
@@ -5706,7 +5706,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Panzer III J","cost":0, "restricted":true,"v":1},
+                                    {"id":1,"text":"Panzer III J", "restricted":true,"v":1},
                                     {"id":2,"text":"Panzer III L","cost":8,"v":2},
                                     {"id":3,"text":"Panzer III M","cost":10,"v":3},
                                     {"id":4,"text":"Panzer III N","cost":8, "restricted":true,"v":4}
@@ -5724,7 +5724,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Marder II","cost":0,"v":20},
+                                    {"id":1,"text":"Marder II","v":20},
                                     {"id":2,"text":"Marder III H","cost":4,"v":21},
                                     {"id":3,"text":"Marder III M","cost":-2,"v":22},
                                     {"id":4,"text":"Marder 38t (36r)","cost":4,"v":23}
@@ -5749,7 +5749,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Kübelwagen","cost":0,"v":54}
+                                    {"id":1,"text":"Kübelwagen","v":54}
                                 ]
                             }
                         ]
@@ -5764,14 +5764,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck","cost":4,"v":91},
                                     {"id":3,"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                 ]
@@ -5787,14 +5787,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Heavy Truck","cost":6,"v":61},
                                     {"id":3,"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                 ]
@@ -5812,14 +5812,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck","cost":6,"v":91},
                                     {"id":3,"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                 ]
@@ -5836,14 +5836,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck","cost":6,"v":91},
                                     {"id":3,"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                 ]
@@ -5860,7 +5860,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Fieseler Storch","cost":0}
+                                    {"id":1,"text":"1 Fieseler Storch"}
                                 ]
                             }
                         ]
@@ -5875,20 +5875,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"120mm mortar & 3 crew","cost":0}
+                                    {"id":1,"text":"120mm mortar & 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mount",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck","cost":4,"v":91},
                                     {"id":3,"text":"Heavy Car","cost":4,"v":56}
                                 ]
@@ -5904,7 +5904,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 105mm howitzer","cost":0,'w':22},
+                                    {"id":1,"text":"2 105mm howitzer",'w':22},
                                     {"id":2,"text":"2 150mm howitzer","cost":45},
                                     {"id":3,"text":"2 100mm cannon","cost":36,'w':21},
                                     {"id":4,"text":"2 170mm cannon","cost":108,'w':28},
@@ -5924,7 +5924,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 80mm mortars","cost":0,"w":2},
+                                    {"id":1,"text":"2 80mm mortars","w":2},
                                     {"id":2,"text":"2 120mm mortars","cost":18,"w":3}
                                 ]
                             }
@@ -6076,7 +6076,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 sniper","cost":0},
+                                {"id":1,"text":"1 sniper"},
                                 {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                             ]
                         }
@@ -6098,7 +6098,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Hs-126","cost":0}
+                                {"id":1,"text":"Hs-126"}
                             ]
                         }
                     ]
@@ -6113,7 +6113,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"SdKfz 222","cost":0}
+                                {"id":1,"text":"SdKfz 222"}
                             ]
                         }
                     ]
@@ -6127,14 +6127,14 @@ var forces = [
                         {
                             "name":"MG",
                             "choices":[
-                                {"id":1,"text":"Bipod MG34","cost":0},
+                                {"id":1,"text":"Bipod MG34"},
                                 {"id":2,"text":"Bipod MG42","cost":4}
                             ]
                         },
                         {
                             "name":"AT grenades",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Anti-tank grenades","cost":5}
                             ]
                         }
@@ -6152,7 +6152,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"SdKfz 222","cost":0}
+                                {"id":1,"text":"SdKfz 222"}
                             ]
                         }
                     ]
@@ -6175,7 +6175,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"SdKfz 9 'Famo'","cost":0}
+                                {"id":1,"text":"SdKfz 9 'Famo'"}
                             ]
                         }
                     ]
@@ -6190,7 +6190,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Heavy Truck & 6 men","cost":0}
+                                {"id":1,"text":"Heavy Truck & 6 men"}
                             ]
                         }
                     ]
@@ -6207,7 +6207,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                {"id":1,"text":"2 Heavy Trucks & 12 men"},
                                 {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
                                 {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
                                 {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
@@ -6234,7 +6234,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 medium truck","cost":0},
+                                {"id":1,"text":"1 medium truck"},
                                 {"id":2,"text":"2 medium trucks","cost":4},
                                 {"id":3,"text":"3 medium trucks","cost":8}
                             ]
@@ -6242,7 +6242,7 @@ var forces = [
                         {
                             "name":"Armoured carriers",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Replace 1 truck","cost":6,"v":"[91,31]","vc":"[1,1]"}
                             ]
                         }
@@ -6259,7 +6259,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"4 men with a tent","cost":0}
+                            {"id":1,"text":"4 men with a tent"}
                         ]
                         }
                     ]
@@ -6273,7 +6273,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"2 men","cost":0}
+                            {"id":1,"text":"2 men"}
                         ]
                         }
                     ]
@@ -6288,7 +6288,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
+                            {"id":1,"text":"Kübelwagen Ambulance","v":54},
                             {"id":2,"text":"Ambulance medium truck","cost":2,"v":91}
                         ]
                         }
@@ -6312,20 +6312,20 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"88mm AA/AT with 4 crew","cost":0}
+                                {"id":1,"text":"88mm AA/AT with 4 crew"}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"SdkFz 7","cost":8,"v":65}
                             ]
                         }
@@ -6340,7 +6340,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 Ferdinand","cost":0, "restricted":true,"v":24},
+                                {"id":1,"text":"1 Ferdinand", "restricted":true,"v":24},
                                 {"id":2,"text":"1 Hornisse","cost":-80, "restricted":true, "br":-2,"v":25}
                             ]
                         }
@@ -6356,7 +6356,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"StuH 42 F","cost":0,"v":17},
+                                {"id":1,"text":"StuH 42 F","v":17},
                                 {"id":2,"text":"StuH 42 G","cost":6,"v":19},
                                 {"id":3,"text":"Brummbär","cost":20, "br":1,"v":26}
                             ]
@@ -6374,7 +6374,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":4},
+                            {"id":1,"text":"SdKfz 10 with 20mm","w":4},
                             {"id":2,"text":"SdKfz with 37mm","cost":4,"w":5},
                             {"id":3,"text":"SdKfz with 20mm Flakvierling","cost":20,"w":4}
                             ]
@@ -6391,14 +6391,14 @@ var forces = [
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                            {"id":1,"text":"None","cost":0},
+                            {"id":1,"text":"None"},
                             {"id":2,"text":"Medium Truck tow","cost":4,"v":91},
                             {"id":3,"text":"SdKfz 10 halftrack", "cost":8,"v":62}
                             ]
@@ -6414,14 +6414,14 @@ var forces = [
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                            {"id":1,"text":"None","cost":0},
+                            {"id":1,"text":"None"},
                             {"id":2,"text":"Medium Truck tow","cost":4,"v":91},
                             {"id":3,"text":"SdKfz halftrack", "cost":8,"v":64}
                             ]
@@ -6445,7 +6445,7 @@ var forces = [
                         {
                             "name":"Target Priority",
                             "choices":[
-                                {"id":1,"text":"3rd (5+)","cost":0},
+                                {"id":1,"text":"3rd (5+)"},
                                 {"id":2,"text":"2nd (4+)","cost":5},
                                 {"id":3,"text":"1st (2+)","cost":15}
                             ]
@@ -6528,7 +6528,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Gaz Jeep","cost":0,"v":90},
+                                {"id":1,"text":"Gaz Jeep","v":90},
                                 {"id":2,"text":"White Scout car","cost":18,"v":84},
                                 {"id":3,"text":"T-34/43","cost":27,"v":75}
                             ]
@@ -6546,7 +6546,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Gaz Jeep","cost":0,"v":90},
+                                {"id":1,"text":"Gaz Jeep","v":90},
                                 {"id":2,"text":"Medium Truck","cost":2,"v":91}
                             ]
                         }
@@ -6567,8 +6567,8 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Medium Radio Truck","cost":0,"v":91},
-                                {"id":2,"text":"Radio Van","cost":0,"v":92}
+                                {"id":1,"text":"Medium Radio Truck","v":91},
+                                {"id":2,"text":"Radio Van","v":92}
                             ]
                         }
                     ]
@@ -6596,7 +6596,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Gaz Jeep","cost":0,"v":90}
+                                {"id":1,"text":"Gaz Jeep","v":90}
                             ]
                         }
                     ]
@@ -6622,8 +6622,8 @@ var forces = [
                             {
                                 "name":"Weapon",
                                 "choices":[
-                                    {"id":1,"text":"Rifles","cost":0, "np":true},
-                                    {"id":2,"text":"Replace rifles with SMGs","cost":0}
+                                    {"id":1,"text":"Rifles", "np":true},
+                                    {"id":2,"text":"Replace rifles with SMGs"}
                                 ]
                             }
                         ],
@@ -6631,7 +6631,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -6639,14 +6639,14 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Gaz Jeep","cost":2,"v":90}
                                         ]
                                     },
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -6655,7 +6655,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Squad",
-                                "cost":0,
+                                
                                 "count":4,
                                 "br":0,
                                 "mandatory":true,
@@ -6663,14 +6663,14 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91}
                                         ]
                                     },
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -6686,7 +6686,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -6703,7 +6703,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -6726,21 +6726,21 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"45mmL46","cost":0,"w":38},
+                                            {"id":1,"text":"45mmL46","w":38},
                                             {"id":2,"text":"45mmL66","cost":8,"w":39}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91},
                                             {"id":3,"text":"Komsomolyets tractor","cost":8,"v":95}
                                         ]
@@ -6758,20 +6758,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"76.2mm infantry gun","cost":0}
+                                            {"id":1,"text":"76.2mm infantry gun"}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Horse and limber","cost":2,"v":93},
                                             {"id":3,"text":"Medium truck","cost":4,"v":91}
                                         ]
@@ -6797,21 +6797,21 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91}
                                 ]
                             },
                             {
                                 "name":"Weapon",
                                 "choices":[
-                                    {"id":1,"text":"Rifles","cost":0, "np":true},
-                                    {"id":2,"text":"Replace rifles with SMGs","cost":0}
+                                    {"id":1,"text":"Rifles", "np":true},
+                                    {"id":2,"text":"Replace rifles with SMGs"}
                                 ]
                             },
                             {
                                 "name":"AT grenades",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
                             }
@@ -6827,7 +6827,7 @@ var forces = [
                             {
                                 "name":"AT grenades",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
                             }
@@ -6854,7 +6854,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"10 T-34/43s","cost":0}
+                                    {"id":1,"text":"10 T-34/43s"}
                                 ]
                             }
                         ]
@@ -6871,7 +6871,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 T-34/43s","cost":0}
+                                    {"id":1,"text":"3 T-34/43s"}
                                 ]
                             }
                         ]
@@ -6887,7 +6887,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 T-60s","cost":0,"v":71},
+                                    {"id":1,"text":"3 T-60s","v":71},
                                     {"id":2,"text":"3 T-70s","cost":15,"v":72},
                                     {"id":3,"text":"3 T-80s (late 1943 only)","cost":20,"v":231}
                                 ]
@@ -6907,7 +6907,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 SU-76s","cost":0}
+                                    {"id":1,"text":"3 SU-76s"}
                                 ]
                             }
                         ]
@@ -6928,7 +6928,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"T-60","cost":0,"v":71},
+                                    {"id":1,"text":"T-60","v":71},
                                     {"id":2,"text":"T-70","cost":5,"v":72},
                                     {"id":3,"text":"T-80 (Late 1943 only)","cost":6,"v":231,"restricted":true}
                                 ]
@@ -6955,7 +6955,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"10 T-70s","cost":0}
+                                    {"id":1,"text":"10 T-70s"}
                                 ]
                             }
                         ]
@@ -6982,7 +6982,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 SU-85s","cost":0}
+                                    {"id":1,"text":"3 SU-85s"}
                                 ]
                             }
                         ],
@@ -7012,7 +7012,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 KV-85s","cost":0}
+                                    {"id":1,"text":"3 KV-85s"}
                                 ]
                             }
                         ],
@@ -7035,7 +7035,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Gaz Jeep","cost":0,"v":90},
+                                    {"id":1,"text":"Gaz Jeep","v":90},
                                     {"id":2,"text":"Bren Carrier","cost":2,"v":82}
                                 ]
                             }
@@ -7051,7 +7051,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0,"w":51,"v":91},
+                                    {"id":1,"text":"2 BM-13 Katyusha","w":51,"v":91},
                                     {"id":2,"text":"2 BM-8-13 Katyusha","cost":20,"v":79}
                                 ]
                             }
@@ -7066,7 +7066,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0,"w":51}
+                                    {"id":1,"text":"2 BM-13 Katyusha","w":51}
                                 ]
                             }
                         ]
@@ -7081,14 +7081,14 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 82mm mortars","cost":0},
+                                    {"id":1,"text":"2 82mm mortars"},
                                     {"id":2,"text":"3 82mm mortars","cost":22, "br":1}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Loader team","cost":10},
                                     {"id":3,"text":"2 Loader teams","cost":20},
                                     {"id":4,"text":"3 Loader teams","cost":30}
@@ -7106,14 +7106,14 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 120mm mortars","cost":0},
+                                    {"id":1,"text":"2 120mm mortars"},
                                     {"id":2,"text":"3 120mm mortars","cost":29, "br":1}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"2 Loader teams","cost":20},
                                     {"id":3,"text":"3 Loader teams","cost":30}
                                 ]
@@ -7129,7 +7129,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 82mm mortars","cost":0,"w":34},
+                                    {"id":1,"text":"2 82mm mortars","w":34},
                                     {"id":2,"text":"2 120mm mortars","cost":18,"w":3}
                                 ]
                             }
@@ -7239,7 +7239,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 sniper","cost":0},
+                                {"id":1,"text":"1 sniper"},
                                 {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                             ]
                         }
@@ -7254,14 +7254,14 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"White Scout Car","cost":0,"v":84},
+                                {"id":1,"text":"White Scout Car","v":84},
                                 {"id":2,"text":"M5 Halftrack","cost":4,"v":83}
                             ]
                         },
                         {
                             "name":"AT grenades",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Anti-tank grenades","cost":5}
                             ]
                         }
@@ -7284,7 +7284,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"T-60","cost":0,"v":71},
+                                {"id":1,"text":"T-60","v":71},
                                 {"id":2,"text":"T-70","cost":5,"v":72},
                                 {"id":3,"text":"Valentine III","cost":14,"v":87}
                             ]
@@ -7301,7 +7301,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"PO-2","cost":0}
+                                {"id":1,"text":"PO-2"}
                             ]
                         }
                     ]
@@ -7315,7 +7315,7 @@ var forces = [
                         {
                             "name":"AT grenades",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Anti-tank grenades","cost":5}
                             ]
                         }
@@ -7338,7 +7338,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"BA-10","cost":0,"v":80},
+                                {"id":1,"text":"BA-10","v":80},
                                 {"id":2,"text":"BA-64","cost":-6,"v":81},
                                 {"id":3,"text":"M3A1 White Scout Car","cost":-6,"v":84}
                             ]
@@ -7363,7 +7363,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Repair Truck","cost":0,"v":91}
+                                {"id":1,"text":"Repair Truck","v":91}
                             ]
                         }
                     ]
@@ -7378,28 +7378,28 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Medium Truck","cost":4,"v":91}
                             ]
                         },
                         {
                             "name":"Flame-thrower",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Flame-thrower","cost":10}
                             ]
                         },
                         {
                             "name":"Mine sweeper",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Mine sweeper","cost":5}
                             ]
                         },
                         {
                             "name":"Demo charge",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Demo charge","cost":5}
                             ]
                         }
@@ -7417,7 +7417,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                {"id":1,"text":"2 Heavy Trucks & 12 men"},
                                 {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
                                 {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
                                 {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
@@ -7435,7 +7435,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Heavy Truck & 6 men","cost":0}
+                                {"id":1,"text":"Heavy Truck & 6 men"}
                             ]
                         }
                     ]
@@ -7464,7 +7464,7 @@ var forces = [
                         {
                             "name":"Composition", //greg should fix this with new v and vc array options
                             "choices":[
-                                {"id":1,"text":"1 Horse drawn wagon","cost":0,"v":94},
+                                {"id":1,"text":"1 Horse drawn wagon","v":94},
                                 {"id":2,"text":"2 Horse drawn wagons","cost":4,"v":94},
                                 {"id":3,"text":"3 Horse drawn wagons","cost":8,"v":94}
                             ]
@@ -7472,7 +7472,7 @@ var forces = [
                         {
                             "name":"Medium trucks",
                             "choices":[
-                                {"id":1,"text":"---","cost":0},
+                                {"id":1,"text":"---"},
                                 {"id":2,"text":"Replace 1 wagon with truck","cost":4,"v":91},
                                 {"id":3,"text":"Replace 2 wagons with trucks","cost":8,"v":91},
                                 {"id":4,"text":"Replace 3 wagons with trucks","cost":12,"v":91}
@@ -7491,7 +7491,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"4 men with a tent","cost":0}
+                            {"id":1,"text":"4 men with a tent"}
                         ]
                         }
                     ]
@@ -7511,7 +7511,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"2 men","cost":0}
+                            {"id":1,"text":"2 men"}
                         ]
                         }
                     ]
@@ -7550,7 +7550,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Churchill III or IV","cost":0,"v":88},
+                                {"id":1,"text":"Churchill III or IV","v":88},
                                 {"id":2,"text":"M3 Grant","cost":-4,"v":85},
                                 {"id":3,"text":"Matilda II","cost":-20,"v":86},
                                 {"id":4,"text":"Valentine III","cost":-14, "br":-1,"v":87},
@@ -7568,7 +7568,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 SU-122","cost":0,"v":77},
+                                {"id":1,"text":"1 SU-122","v":77},
                                 {"id":2,"text":"1 SU-152","cost":4,"v":78}
                             ]
                         }
@@ -7584,7 +7584,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Gaz truck with quad Maxim MGs","cost":0,"v":91}
+                                {"id":1,"text":"Gaz truck with quad Maxim MGs","v":91}
                             ]
                         }
                     ]
@@ -7598,21 +7598,21 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"76.2mm L54 Zis 3","cost":0,"w":45},
+                                {"id":1,"text":"76.2mm L54 Zis 3","w":45},
                                 {"id":2,"text":"57mm L73 Zis 2","cost":10,"w":40}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Medium truck","cost":4,"v":91},
                                 {"id":3,"text":"Komsomolyets tractor","cost":8,"v":95}
                             ]
@@ -7628,20 +7628,20 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"37mm AA gun","cost":0}
+                                {"id":1,"text":"37mm AA gun"}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Medium truck","cost":4,"v":91}
                             ]
                         }
@@ -7664,7 +7664,7 @@ var forces = [
                         {
                             "name":"Target Priority",
                             "choices":[
-                                {"id":1,"text":"3rd (5+)","cost":0},
+                                {"id":1,"text":"3rd (5+)"},
                                 {"id":2,"text":"2nd (4+)","cost":5},
                                 {"id":3,"text":"1st (2+)","cost":15}
                             ]
@@ -7755,7 +7755,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Gaz Jeep","cost":0,"v":90},
+                                {"id":1,"text":"Gaz Jeep","v":90},
                                 {"id":2,"text":"White Scout car","cost":18,"v":84}
                             ]
                         }
@@ -7772,7 +7772,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Gaz Jeep","cost":0,"v":90},
+                                {"id":1,"text":"Gaz Jeep","v":90},
                                 {"id":2,"text":"Medium Truck","cost":2,"v":91}
                             ]
                         }
@@ -7794,8 +7794,8 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Medium Radio Truck","cost":0,"v":91},
-                                {"id":2,"text":"Radio Van","cost":0,"v":92}
+                                {"id":1,"text":"Medium Radio Truck","v":91},
+                                {"id":2,"text":"Radio Van","v":92}
                             ]
                         }
                     ]
@@ -7823,7 +7823,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Gaz Jeep","cost":0,"v":90}
+                                {"id":1,"text":"Gaz Jeep","v":90}
                             ]
                         }
                     ]
@@ -7849,8 +7849,8 @@ var forces = [
                             {
                                 "name":"Weapon",
                                 "choices":[
-                                    {"id":1,"text":"Rifles","cost":0, "np":true},
-                                    {"id":2,"text":"Replace rifles with SMGs","cost":0}
+                                    {"id":1,"text":"Rifles", "np":true},
+                                    {"id":2,"text":"Replace rifles with SMGs"}
                                 ]
                             }
                         ],
@@ -7858,7 +7858,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -7866,7 +7866,7 @@ var forces = [
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -7875,7 +7875,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Squad",
-                                "cost":0,
+                                
                                 "count":4,
                                 "br":0,
                                 "mandatory":true,
@@ -7883,7 +7883,7 @@ var forces = [
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -7899,7 +7899,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -7916,7 +7916,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -7939,21 +7939,21 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"45mmL46","cost":0,"w":38},
+                                            {"id":1,"text":"45mmL46","w":38},
                                             {"id":2,"text":"45mmL66","cost":8,"w":39}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91}
                                         ]
                                     }
@@ -7970,20 +7970,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"76.2mm infantry gun","cost":0}
+                                            {"id":1,"text":"76.2mm infantry gun"}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Horse and limber","cost":2,"v":93}
                                         ]
                                     }
@@ -8001,15 +8001,15 @@ var forces = [
                             {
                                 "name":"AT grenades",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
                             },
                             {
                                 "name":"Weapon",
                                 "choices":[
-                                    {"id":1,"text":"Rifles","cost":0, "np":true},
-                                    {"id":2,"text":"Replace rifles with SMGs","cost":0}
+                                    {"id":1,"text":"Rifles", "np":true},
+                                    {"id":2,"text":"Replace rifles with SMGs"}
                                 ]
                             }
                         ]
@@ -8025,7 +8025,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Company Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "officer":true,
                                 "mandatory":true
@@ -8033,7 +8033,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Platoon",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "p":1,
@@ -8043,7 +8043,7 @@ var forces = [
                                     {
                                         "id":1,
                                         "name":"Command Squad",
-                                        "cost":0,
+                                        
                                         "br":0,
                                         "mandatory":true,
                                         "officer":true,
@@ -8051,7 +8051,7 @@ var forces = [
                                             {
                                                 "name":"AT grenades",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                                 ]
                                             }
@@ -8060,7 +8060,7 @@ var forces = [
                                     {
                                         "id":2,
                                         "name":"Rifle Squad",
-                                        "cost":0,
+                                        
                                         "count":4,
                                         "br":0,
                                         "mandatory":true,
@@ -8068,7 +8068,7 @@ var forces = [
                                             {
                                                 "name":"AT grenades",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                                 ]
                                             }
@@ -8084,7 +8084,7 @@ var forces = [
                                             {
                                                 "name":"Loader team",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"3-man loader team","cost":10}
                                                 ]
                                             }
@@ -8101,7 +8101,7 @@ var forces = [
                                             {
                                                 "name":"Loader team",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"3-man loader team","cost":10}
                                                 ]
                                             }
@@ -8124,21 +8124,21 @@ var forces = [
                                             {
                                                 "name":"Gun type",
                                                 "choices":[
-                                                    {"id":1,"text":"45mm L46","cost":0},
+                                                    {"id":1,"text":"45mm L46"},
                                                     {"id":2,"text":"45mm L66","cost":8}
                                                 ]
                                             },
                                             {
                                                 "name":"Loader team",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"3-man loader team","cost":10}
                                                 ]
                                             },
                                             {
                                                 "name":"Tow",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"Medium truck","cost":4,"v":91}
                                                 ]
                                             }
@@ -8155,20 +8155,20 @@ var forces = [
                                             {
                                                 "name":"Gun type",
                                                 "choices":[
-                                                    {"id":1,"text":"76.2mm infantry gun","cost":0}
+                                                    {"id":1,"text":"76.2mm infantry gun"}
                                                 ]
                                             },
                                             {
                                                 "name":"Loader team",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"3-man loader team","cost":10}
                                                 ]
                                             },
                                             {
                                                 "name":"Tow",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"Horse and limber","cost":2,"v":93}
                                                 ]
                                             }
@@ -8198,7 +8198,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 T-34/43s","cost":0}
+                                    {"id":1,"text":"3 T-34/43s"}
                                 ]
                             }
                         ]
@@ -8221,7 +8221,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 KV-1Ss","cost":0,"v":70},
+                                    {"id":1,"text":"3 KV-1Ss","v":70},
                                     {"id":2,"text":"3 KV-1Es","cost":9,"v":73}
                                 ]
                             }
@@ -8237,7 +8237,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"KV-1S","cost":0,"v":70},
+                                    {"id":1,"text":"KV-1S","v":70},
                                     {"id":2,"text":"KV-1E","cost":3,"v":73}
                                 ]
                             }
@@ -8254,7 +8254,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Valentine IIIs","cost":0,"v":87},
+                                    {"id":1,"text":"3 Valentine IIIs","v":87},
                                     {"id":2,"text":"3 M3 Stuarts","cost":6,"v":89}
                                 ]
                             }
@@ -8271,7 +8271,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Matilda IIs","cost":0,"v":86},
+                                    {"id":1,"text":"3 Matilda IIs","v":86},
                                     {"id":2,"text":"3 M3 Grants","cost":40,"v":85},
                                     {"id":3,"text":"3 Churchill III or IVs","cost":56,"v":88}
                                 ]
@@ -8287,7 +8287,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Churchill III or IV","cost":0,"v":88},
+                                    {"id":1,"text":"Churchill III or IV","v":88},
                                     {"id":2,"text":"M3 Grant","cost":-4,"v":85},
                                     {"id":3,"text":"Matilda II","cost":-20,"v":86},
                                     {"id":4,"text":"Valentine III","cost":-14,"br":-1,"v":87},
@@ -8313,7 +8313,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Gaz Jeep","cost":0,"v":90},
+                                    {"id":1,"text":"Gaz Jeep","v":90},
                                     {"id":2,"text":"Bren Carrier","cost":2,"v":82}
                                 ]
                             }
@@ -8329,7 +8329,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0,"w":51},
+                                    {"id":1,"text":"2 BM-13 Katyusha","w":51},
                                     {"id":2,"text":"2 BM-8-13 Katyusha","cost":20,"v":79}
                                 ]
                             }
@@ -8345,13 +8345,13 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Two 76.2mm L54 Zis 3s","cost":0}
+                                    {"id":1,"text":"Two 76.2mm L54 Zis 3s"}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"No tow","cost":0},
+                                    {"id":1,"text":"No tow"},
                                     {"id":2,"text":"1 horse & limber tow","cost":2,"v":93},
                                     {"id":3,"text":"2 horse & limber tows","cost":4,"v":93}
                                 ]
@@ -8359,7 +8359,7 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Loader team","cost":10},
                                     {"id":3,"text":"2 Loader teams","cost":20}
                                 ]
@@ -8375,10 +8375,10 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0,"w":51},
+                                    {"id":1,"text":"2 BM-13 Katyusha","w":51},
                                     {"id":2,"text":"2 76.2mm Zis 3","cost":-55,"w":45},
                                     {"id":3,"text":"2 122mm howitzers","cost":-9,'w':47},
-                                    {"id":4,"text":"2 152mm howitzers","cost":0,"w":49}
+                                    {"id":4,"text":"2 152mm howitzers","w":49}
                                 ]
                             }
                         ]
@@ -8393,14 +8393,14 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 82mm mortars","cost":0},
+                                    {"id":1,"text":"2 82mm mortars"},
                                     {"id":2,"text":"3 82mm mortars","cost":22, "br":1}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Loader team","cost":10},
                                     {"id":3,"text":"2 Loader teams","cost":20},
                                     {"id":4,"text":"3 Loader teams","cost":30}
@@ -8418,14 +8418,14 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 120mm mortars","cost":0},
+                                    {"id":1,"text":"2 120mm mortars"},
                                     {"id":2,"text":"3 120mm mortars","cost":29, "br":1}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Loader team","cost":10},
                                     {"id":3,"text":"2 Loader teams","cost":20},
                                     {"id":4,"text":"3 Loader teams","cost":30}
@@ -8442,7 +8442,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 82mm mortars","cost":0,"w":34},
+                                    {"id":1,"text":"3 82mm mortars","w":34},
                                     {"id":2,"text":"3 120mm mortars","cost":28,"w":3}
                                 ]
                             }
@@ -8457,7 +8457,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 122mmL23 howitzers","cost":0,"w":47},
+                                    {"id":1,"text":"2 122mmL23 howitzers","w":47},
                                     {"id":2,"text":"2 152mmL24 howitzers","cost":8,"w":49},
                                     {"id":3,"text":"2 122mmL46 cannons","cost":36,"w":48}
                                 ]
@@ -8465,7 +8465,7 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Loader team","cost":10},
                                     {"id":3,"text":"2 Loader teams","cost":20}
                                 ]
@@ -8473,7 +8473,7 @@ var forces = [
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"No tow","cost":0},
+                                    {"id":1,"text":"No tow"},
                                     {"id":2,"text":"1 horse & limber tow","cost":2,"v":93},
                                     {"id":3,"text":"2 horse & limber tows","cost":4,"v":93}
                                 ]
@@ -8664,7 +8664,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 sniper","cost":0},
+                                {"id":1,"text":"1 sniper"},
                                 {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                             ]
                         }
@@ -8680,7 +8680,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"BA-10","cost":0,"v":80}
+                                {"id":1,"text":"BA-10","v":80}
                             ]
                         }
                     ]
@@ -8700,7 +8700,7 @@ var forces = [
                         {
                             "name":"AT grenades",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Anti-tank grenades","cost":5}
                             ]
                         }
@@ -8738,28 +8738,28 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Medium Truck","cost":4,"v":91}
                             ]
                         },
                         {
                             "name":"Flame-thrower",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Flame-thrower","cost":10}
                             ]
                         },
                         {
                             "name":"Mine sweeper",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Mine sweeper","cost":5}
                             ]
                         },
                         {
                             "name":"Demo charge",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Demo charge","cost":5}
                             ]
                         }
@@ -8777,7 +8777,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                {"id":1,"text":"2 Heavy Trucks & 12 men"},
                                 {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
                                 {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
                                 {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
@@ -8816,7 +8816,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 Horse drawn wagon","cost":0,"v":94},
+                                {"id":1,"text":"1 Horse drawn wagon","v":94},
                                 {"id":2,"text":"2 Horse drawn wagons","cost":4,"v":94},
                                 {"id":3,"text":"3 Horse drawn wagons","cost":8,"v":94}
                             ]
@@ -8838,7 +8838,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"2 men","cost":0}
+                            {"id":1,"text":"2 men"}
                         ]
                         }
                     ]
@@ -8853,7 +8853,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"Jeep Ambulance","cost":0,"v":90},
+                            {"id":1,"text":"Jeep Ambulance","v":90},
                             {"id":2,"text":"Ambulance medium truck","cost":2,"v":91}
                         ]
                         }
@@ -8870,7 +8870,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"4 men with a tent","cost":0}
+                            {"id":1,"text":"4 men with a tent"}
                         ]
                         }
                     ]
@@ -8894,7 +8894,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"KV-2","cost":0}
+                                {"id":1,"text":"KV-2"}
                             ]
                         }
                     ]
@@ -8908,21 +8908,21 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"76.2mm L54 Zis 3","cost":0,"w":45},
+                                {"id":1,"text":"76.2mm L54 Zis 3","w":45},
                                 {"id":2,"text":"85mm L53 AA gun","cost":51,"br":1} //greg what gun is this?
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Horse & limber","cost":2,"v":93},
                                 {"id":3,"text":"Medium truck","cost":4,"v":91},
                                 {"id":4,"text":"Komsomolyets tractor","cost":8,"v":95}
@@ -8940,14 +8940,14 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"3 45mmL46 guns","cost":0,"w":38},
+                                {"id":1,"text":"3 45mmL46 guns","w":38},
                                 {"id":2,"text":"3 45mmL66 guns","cost":20,"w":39}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"1 Loader team","cost":10},
                                 {"id":3,"text":"2 Loader teams","cost":20},
                                 {"id":4,"text":"3 Loader teams","cost":30}
@@ -8956,7 +8956,7 @@ var forces = [
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Horse & limber","cost":2,"v":93},
                                 {"id":3,"text":"Medium truck","cost":4,"v":91}
                             ]
@@ -8972,21 +8972,21 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"DshK HMG","cost":0},
+                                {"id":1,"text":"DshK HMG"},
                                 {"id":2,"text":"37mm AA gun","cost":10,"w":5}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Medium truck","cost":4,"v":91}
                             ]
                         }
@@ -9009,7 +9009,7 @@ var forces = [
                         {
                             "name":"Target Priority",
                             "choices":[
-                                {"id":1,"text":"3rd (5+)","cost":0},
+                                {"id":1,"text":"3rd (5+)"},
                                 {"id":2,"text":"2nd (4+)","cost":5},
                                 {"id":3,"text":"1st (2+)","cost":15}
                             ]
@@ -9100,7 +9100,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Jeep","cost":0,"v":163},
+                                {"id":1,"text":"Jeep","v":163},
                                 {"id":2,"text":"White Scout car","cost":6,"v":84},
                                 {"id":3,"text":"Tetrarch Tank with Littlejohn Adaptor","cost":16,"v":118}
                             ]
@@ -9122,7 +9122,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Jeep","cost":0,"v":163},
+                                {"id":1,"text":"Jeep","v":163},
                                 {"id":2,"text":"White Scout Car","cost":6,"v":84}
                             ]
                         }
@@ -9155,7 +9155,7 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":1,"text":"Veteran"},
                                     {"id":2,"text":"Elite","cost":40, "br":4}
                                 ]
                             }
@@ -9164,7 +9164,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Section",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -9172,7 +9172,7 @@ var forces = [
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -9181,7 +9181,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Sections",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -9189,22 +9189,22 @@ var forces = [
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     },
                                     {
                                         "name":"Bren Guns",
                                         "choices":[
-                                            {"id":1,"text":"1 Bren Gun","cost":0},
+                                            {"id":1,"text":"1 Bren Gun"},
                                             {"id":2,"text":"2 Bren Guns","cost":2}
                                         ]
                                     },
                                     {
                                         "name":"Weapon",
                                         "choices":[
-                                            {"id":1,"text":"Rifles","cost":0, "np":true},
-                                            {"id":2,"text":"Replace rifles with SMGs","cost":0}
+                                            {"id":1,"text":"Rifles", "np":true},
+                                            {"id":2,"text":"Replace rifles with SMGs"}
                                         ]
                                     }
                                 ]
@@ -9212,7 +9212,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"Light Mortar Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":60,
                                 "mandatory":true,
@@ -9221,7 +9221,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -9230,7 +9230,7 @@ var forces = [
                             {
                                 "id":4,
                                 "name":"PIAT Team",
-                                "cost":0,
+                                
                                 "w":91,
                                 "br":0,
                                 "mandatory":true,
@@ -9252,7 +9252,7 @@ var forces = [
                                     {
                                         "name":"Loaders/Jeep",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10},
                                             {"id":3,"text":"Mount in a Jeep","cost":2,"v":163}
                                         ]
@@ -9278,7 +9278,7 @@ var forces = [
                                     {
                                         "name":"Loaders/Jeep",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10},
                                             {"id":3,"text":"Mount in a Jeep","cost":2,"v":163}
                                         ]
@@ -9295,20 +9295,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"6 pdr","cost":0,"w":59}
+                                            {"id":1,"text":"6 pdr","w":59}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Jeep","cost":2,"v":163}
                                         ]
                                     }
@@ -9326,21 +9326,21 @@ var forces = [
                             {
                                 "name":"AT grenades",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
                             },
                             {
                                 "name":"Weapon",
                                 "choices":[
-                                    {"id":1,"text":"Rifles","cost":0, "np":true},
-                                    {"id":2,"text":"Replace rifles with SMGs","cost":0}
+                                    {"id":1,"text":"Rifles", "np":true},
+                                    {"id":2,"text":"Replace rifles with SMGs"}
                                 ]
                             },
                             {
                                 "name":"Bren Guns",
                                 "choices":[
-                                    {"id":1,"text":"1 Bren Gun","cost":0},
+                                    {"id":1,"text":"1 Bren Gun"},
                                     {"id":2,"text":"2 Bren Guns","cost":2}
                                 ]
                             }
@@ -9366,7 +9366,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M4A4","cost":0,"vc":3},
+                                    {"id":1,"text":"3 M4A4","vc":3},
                                     {"id":2,"text":"2 M4A4, 1 Firefly","cost":16,"v":"[101,102]","vc":"[2,1]"} 
                                 ] 
                             }
@@ -9382,7 +9382,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M10 Wolverine","cost":0,"v":132}, 
+                                    {"id":1,"text":"M10 Wolverine","v":132}, 
                                     {"id":2,"text":"M10 Achilles","cost":20,"v":133} 
                                 ] 
                             } 
@@ -9405,7 +9405,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":163}
+                                    {"id":1,"text":"Jeep","v":163}
                                 ]
                             }
                         ]
@@ -9419,13 +9419,13 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 75mmL16 howitzers","cost":0,"w":65}
+                                    {"id":1,"text":"2 75mmL16 howitzers","w":65}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"2 Jeep tows","cost":4,"v":163}
                                 ]
                             }
@@ -9440,7 +9440,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 75mmL16 howitzers","cost":0,"w":65},
+                                    {"id":1,"text":"2 75mmL16 howitzers","w":65},
                                     {"id":2,"text":"2 25 pdrs","cost":20,"w":73}
                                 ]
                             }
@@ -9455,7 +9455,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 3\" mortars","cost":0,"w":61}
+                                    {"id":1,"text":"3 3\" mortars","w":61}
                                 ]
                             }
                         ]
@@ -9470,7 +9470,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Auster III","cost":0}
+                                    {"id":1,"text":"1 Auster III"}
                                 ]
                             }
                         ]
@@ -9484,20 +9484,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"75mmL16 howitzer","cost":0,"w":65}
+                                    {"id":1,"text":"75mmL16 howitzer","w":65}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"No tow","cost":0},
+                                    {"id":1,"text":"No tow"},
                                     {"id":2,"text":"Jeep tow","cost":4,"v":163}
                                 ]
                             }
@@ -9627,7 +9627,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 sniper","cost":0},
+                                    {"id":1,"text":"1 sniper"},
                                     {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                                 ]
                             }
@@ -9642,14 +9642,14 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":163},
+                                    {"id":1,"text":"Jeep","v":163},
                                     {"id":2,"text":"Bren Carrier","cost":4,"v":82}
                                 ]
                             },
                             {
                                 "name":"AT grenades",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
                             }
@@ -9667,7 +9667,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"4 men and a Jeep","cost":0}
+                                    {"id":1,"text":"4 men and a Jeep"}
                                 ]
                             }
                         ]
@@ -9681,22 +9681,22 @@ var forces = [
                             {
                                 "name":"AT grenades",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
                             },
                             {
                                 "name":"Bren Guns",
                                 "choices":[
-                                    {"id":1,"text":"1 Bren Gun","cost":0},
+                                    {"id":1,"text":"1 Bren Gun"},
                                     {"id":2,"text":"2 Bren Guns","cost":2}
                                 ]
                             },
                             {
                                 "name":"Weapon",
                                 "choices":[
-                                    {"id":1,"text":"Rifles","cost":0, "np":true},
-                                    {"id":2,"text":"Replace rifles with SMGs","cost":0}
+                                    {"id":1,"text":"Rifles", "np":true},
+                                    {"id":2,"text":"Replace rifles with SMGs"}
                                 ]
                             }
                         ]
@@ -9713,8 +9713,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Tetrarch (LJ adaptors)","cost":0,"v":118},
-                                    {"id":2,"text":"1 Tetrarch CS, 2 Tetrarch (LJ adaptors)","cost":0,"v":"[119,118]","vc":"[1,2]"},
+                                    {"id":1,"text":"3 Tetrarch (LJ adaptors)","v":118},
+                                    {"id":2,"text":"1 Tetrarch CS, 2 Tetrarch (LJ adaptors)","v":"[119,118]","vc":"[1,2]"},
                                     {"id":3,"text":"3 Cromwells", "cost":85,"v":111,"br":3}
                                 ]
                             }
@@ -9729,8 +9729,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Tetrarch (LJ adaptor)","cost":0,"v":118},
-                                    {"id":2,"text":"Tetrarch CS","cost":0,"v":119},
+                                    {"id":1,"text":"Tetrarch (LJ adaptor)","v":118},
+                                    {"id":2,"text":"Tetrarch CS","v":119},
                                     {"id":3,"text":"Cromwells", "cost":28,"v":111,"br":2}
                                 ]
                             }
@@ -9746,7 +9746,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Tetrarch (LJ adaptor)","cost":0,"v":118}
+                                    {"id":1,"text":"Tetrarch (LJ adaptor)","v":118}
                                 ]
                             }
                         ]
@@ -9769,7 +9769,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Heavy Truck & 6 men","cost":0},
+                                    {"id":1,"text":"Heavy Truck & 6 men"},
                                     {"id":2,"text":"2 Heavy Trucks & 12 men","cost":24}
                                 ]
                             }
@@ -9785,7 +9785,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Medium Truck & 6 men","cost":0},
+                                    {"id":1,"text":"Medium Truck & 6 men"},
                                     {"id":2,"text":"2 Medium Trucks & 12 men","cost":14}
                                 ]
                             }
@@ -9809,7 +9809,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Scammel Recovery Truck","cost":0,"v":183},
+                                    {"id":1,"text":"Scammel Recovery Truck","v":183},
                                     {"id":2,"text":"Sherman ARV","cost":6,"v":109}
                                 ]
                             }
@@ -9826,21 +9826,21 @@ var forces = [
                             {
                                 "name":"Flame-thrower",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Flame-thrower","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mine sweeper",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Mine sweeper","cost":5}
                                 ]
                             },
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":1,"text":"Veteran"},
                                     {"id":2,"text":"Elite","cost":10, "br":1}
                                 ]
                             }
@@ -9873,7 +9873,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Jeep with a trailer","cost":0},
+                                    {"id":1,"text":"1 Jeep with a trailer"},
                                     {"id":2,"text":"2 Jeeps with trailers","cost":4},
                                     {"id":3,"text":"3 Jeeps with trailers","cost":8}
                                 ]
@@ -9889,7 +9889,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men","cost":0}
+                                {"id":1,"text":"2 men"}
                             ]
                             }
                         ]
@@ -9904,7 +9904,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":163},
+                                {"id":1,"text":"Jeep Ambulance","v":163},
                                 {"id":2,"text":"Ambulance Carrier","cost":2}
                             ]
                             }
@@ -9921,7 +9921,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"4 men with a tent","cost":0}
+                                {"id":1,"text":"4 men with a tent"}
                             ]
                             }
                         ]
@@ -9945,20 +9945,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"17 pdr AT gun with 4 crew","cost":0,"w":70}
+                                    {"id":1,"text":"17 pdr AT gun with 4 crew","w":70}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck tow","cost":4,"v":91}
                                 ]
                             }
@@ -9975,14 +9975,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                     ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Jeep","cost":2,"v":163}
                                 ]
                             }
@@ -9998,14 +9998,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                     ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Medium Truck tow","cost":4,"v":91}
                                 ]
                             }
@@ -10028,7 +10028,7 @@ var forces = [
                             {
                                 "name":"Target Priority",
                                 "choices":[
-                                    {"id":1,"text":"3rd (5+)","cost":0},
+                                    {"id":1,"text":"3rd (5+)"},
                                     {"id":2,"text":"2nd (4+)","cost":5},
                                     {"id":3,"text":"1st (2+)","cost":15}
                                 ]
@@ -10120,7 +10120,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"1 LCS","cost":0}
+                                {"id":1,"text":"1 LCS"}
                             ]
                         }
                     ]
@@ -10137,7 +10137,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Jeep","cost":0}
+                                {"id":1,"text":"Jeep"}
                             ]
                         }
                     ]
@@ -10159,7 +10159,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Jeep","cost":0}
+                                {"id":1,"text":"Jeep"}
                             ]
                         }
                     ]
@@ -10183,7 +10183,7 @@ var forces = [
                         {
                             "name":"Troop Quality",
                             "choices":[
-                                {"id":1,"text":"Veteran","cost":0},
+                                {"id":1,"text":"Veteran"},
                                 {"id":2,"text":"Elite","cost":32, "br":4}
                             ]
                         }
@@ -10193,7 +10193,7 @@ var forces = [
                         {
                             "id":1,
                             "name":"Troop HQ",
-                            "cost":0,
+                            
                             "br":0,
                             "mandatory":true,
                             "officer":true
@@ -10201,7 +10201,7 @@ var forces = [
                         {
                             "id":2,
                             "name":"Rifle Group",
-                            "cost":0,
+                            
                             "br":0,
                             "mandatory":true,
                             "count":2
@@ -10209,7 +10209,7 @@ var forces = [
                         {
                             "id":3,
                             "name":"Bren Team",
-                            "cost":0,
+                            
                             "count":2,
                             "br":0,
                             "mandatory":true,
@@ -10217,7 +10217,7 @@ var forces = [
                                 {
                                     "name":"MG",
                                     "choices":[
-                                        {"id":1,"text":"Bren Gun","cost":0},
+                                        {"id":1,"text":"Bren Gun"},
                                         {"id":2,"text":"2 Bren Guns","cost":2},
                                         {"id":2,"text":"K-Gun","cost":2},
                                         {"id":2,"text":"1 Bren Gun, 1 K-Gun","cost":4}
@@ -10228,7 +10228,7 @@ var forces = [
                         {
                             "id":4,
                             "name":"Light Mortar Team",
-                            "cost":0,
+                            
                             "br":0,
                             "w":60,
                             "count":2,
@@ -10237,7 +10237,7 @@ var forces = [
                         {
                             "id":5,
                             "name":"Sniper Team",
-                            "cost":0,
+                            
                             "br":0,
                             "w":1,
                             "count":2,
@@ -10256,7 +10256,7 @@ var forces = [
                         {
                             "name":"Troop Quality",
                             "choices":[
-                                {"id":1,"text":"Regular","cost":0},
+                                {"id":1,"text":"Regular"},
                                 {"id":2,"text":"Veteran","cost":26, "br":4}
                             ]
                         }
@@ -10266,7 +10266,7 @@ var forces = [
                         {
                             "id":1,
                             "name":"Assault Platoon HQ",
-                            "cost":0,
+                            
                             "br":0,
                             "mandatory":true,
                             "officer":true
@@ -10274,7 +10274,7 @@ var forces = [
                         {
                             "id":2,
                             "name":"Rifle Section",
-                            "cost":0,
+                            
                             "br":0,
                             "mandatory":true,
                             "count":2
@@ -10282,7 +10282,7 @@ var forces = [
                         {
                             "id":3,
                             "name":"Light Mortar Team",
-                            "cost":0,
+                            
                             "br":0,
                             "w":60,
                             "count":1,
@@ -10291,7 +10291,7 @@ var forces = [
                         {
                             "id":4,
                             "name":"Sniper Team",
-                            "cost":0,
+                            
                             "br":0,
                             "count":1,
                             "mandatory":true
@@ -10299,7 +10299,7 @@ var forces = [
                         {
                             "id":5,
                             "name":"Combat Medic",
-                            "cost":0,
+                            
                             "br":0,
                             "count":1,
                             "mandatory":true
@@ -10326,7 +10326,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 DD Shermans","cost":0} 
+                                    {"id":1,"text":"3 DD Shermans"} 
                                 ] 
                             } 
                         ] 
@@ -10342,7 +10342,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 Sherman Crabs","cost":0,"v":107} 
+                                    {"id":1,"text":"3 Sherman Crabs","v":107} 
                                 ] 
                             } 
                         ] 
@@ -10360,7 +10360,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 Centaur IV","cost":0} 
+                                    {"id":1,"text":"3 Centaur IV"} 
                                 ] 
                             } 
                         ] 
@@ -10384,7 +10384,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 Churchill AVREs","cost":0} 
+                                    {"id":1,"text":"3 Churchill AVREs"} 
                                 ] 
                             } 
                         ] 
@@ -10400,7 +10400,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"1 Fascine, 1 Ark, 1 AVRE","cost":0,"v":107} 
+                                    {"id":1,"text":"1 Fascine, 1 Ark, 1 AVRE","v":107} 
                                 ] 
                             } 
                         ] 
@@ -10418,11 +10418,11 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"2 Churchill AVRE, 1 Sherman Crab","cost":0},
-                                    {"id":2,"text":"1 Churchill AVRE, 1 Churchill Fascine, 1 Sherman Crab","cost":0},
-                                    {"id":3,"text":"1 Churchill AVRE, 1 Churchill Bridgelayer, 1 Sherman Crab","cost":0},
-                                    {"id":4,"text":"2 Churchill Bridgelayers, 1 Sherman Crab","cost":0},
-                                    {"id":5,"text":"2 Churchill Fascines, 1 Sherman Crab","cost":0}
+                                    {"id":1,"text":"2 Churchill AVRE, 1 Sherman Crab"},
+                                    {"id":2,"text":"1 Churchill AVRE, 1 Churchill Fascine, 1 Sherman Crab"},
+                                    {"id":3,"text":"1 Churchill AVRE, 1 Churchill Bridgelayer, 1 Sherman Crab"},
+                                    {"id":4,"text":"2 Churchill Bridgelayers, 1 Sherman Crab"},
+                                    {"id":5,"text":"2 Churchill Fascines, 1 Sherman Crab"}
                                 ] 
                             } 
                         ] 
@@ -10439,7 +10439,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"10 M4A4 Shermans, 3 Fireflies","cost":0,"v":"[101,102]","vc":"[10,3]"}
+                                    {"id":1,"text":"10 M4A4 Shermans, 3 Fireflies","v":"[101,102]","vc":"[10,3]"}
                                 ] 
                             } 
                         ] 
@@ -10461,7 +10461,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":163}
+                                    {"id":1,"text":"Jeep","v":163}
                                 ]
                             }
                         ]
@@ -10483,7 +10483,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Westland Lysander","cost":0}
+                                    {"id":1,"text":"1 Westland Lysander"}
                                 ]
                             }
                         ]
@@ -10500,7 +10500,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 M7 Priests in a LCT","cost":0}
+                                    {"id":1,"text":"3 M7 Priests in a LCT"}
                                 ]
                             }
                         ]
@@ -10514,7 +10514,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 3.5\" guns","cost":0},
+                                    {"id":1,"text":"2 3.5\" guns"},
                                     {"id":2,"text":"2 4.7\" guns","cost":28},
                                     {"id":3,"text":"2 5\" guns","cost":46}
                                 ]
@@ -10541,7 +10541,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Demo Party Leader",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true
@@ -10549,7 +10549,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Demo Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "count":3
@@ -10557,7 +10557,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"Combat Medic",
-                                "cost":0,
+                                
                                 "br":0,
                                 "count":1,
                                 "mandatory":true
@@ -10596,7 +10596,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 DUKW","cost":0},
+                                    {"id":1,"text":"1 DUKW"},
                                     {"id":2,"text":"2 DUKWs","cost":10,"br":1},
                                     {"id":3,"text":"3 DUKWs","cost":20,"br":2},
                                     {"id":4,"text":"4 DUKWs","cost":30,"br":3}
@@ -10613,7 +10613,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men","cost":0}
+                                {"id":1,"text":"2 men"}
                             ]
                             }
                         ]
@@ -10643,7 +10643,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Team Leader",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true
@@ -10651,7 +10651,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Medium Mortar Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":61,
                                 "count":1,
@@ -10660,7 +10660,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"3-man loader team","cost":0}
+                                            {"id":1,"text":"3-man loader team"}
                                         ]
                                     }
                                 ]
@@ -10668,7 +10668,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"Vickers MG Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "count":2,
                                 "mandatory":true,
@@ -10676,7 +10676,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"3-man loader team","cost":0}
+                                            {"id":1,"text":"3-man loader team"}
                                         ]
                                     }
                                 ]
@@ -10684,7 +10684,7 @@ var forces = [
                             {
                                 "id":4,
                                 "name":"Demo Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "count":1
@@ -10700,7 +10700,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"LCA","cost":0},
+                                    {"id":1,"text":"LCA"},
                                     {"id":2,"text":"LCM","cost":4},
                                     {"id":3,"text":"LCT","cost":20,"br":1},
                                     {"id":4,"text":"LCI","cost":70,"br":2}
@@ -10742,7 +10742,7 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":1,"text":"Veteran"},
                                     {"id":2,"text":"Elite","cost":9, "br":1}
                                 ]
                             }
@@ -10752,7 +10752,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Team Leader",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true
@@ -10760,7 +10760,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"K-gun Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true
                             },
@@ -10791,7 +10791,7 @@ var forces = [
                             {
                                 "name":"Target Priority",
                                 "choices":[
-                                    {"id":1,"text":"1st (2+)","cost":0}
+                                    {"id":1,"text":"1st (2+)"}
                                 ]
                             }
                         ]
@@ -10860,14 +10860,14 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Jeep","cost":2,"v":163}
                             ]
                         },
                         {
                             "name":"Radio",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Radio Comms Network","cost":20}
                             ]
                         }
@@ -10883,7 +10883,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Radio Jeep","cost":0,"v":163}
+                                {"id":1,"text":"Radio Jeep","v":163}
                             ]
                         }
                     ]
@@ -10919,7 +10919,7 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":1,"text":"Veteran"},
                                     {"id":2,"text":"Elite","cost":35, "br":5}
                                 ]
                             }
@@ -10930,7 +10930,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -10938,7 +10938,7 @@ var forces = [
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -10947,7 +10947,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Infantry Squad",
-                                "cost":0,
+                                
                                 "count":2,
                                 "br":0,
                                 "mandatory":true,
@@ -10955,14 +10955,14 @@ var forces = [
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     },
                                     {
                                         "name":"BAR",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 BAR","cost":2}
                                         ]
                                     }
@@ -10971,7 +10971,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"MMG Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "count":2
@@ -10979,7 +10979,7 @@ var forces = [
                             {
                                 "id":4,
                                 "name":"Light Mortar Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":60,
                                 "mandatory":true
@@ -10987,7 +10987,7 @@ var forces = [
                             {
                                 "id":5,
                                 "name":"Bazooka Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":92,
                                 "mandatory":true
@@ -11009,14 +11009,14 @@ var forces = [
                                     {
                                         "name":"Loader Team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Jeep","cost":2,"v":163}
                                         ]
                                     }
@@ -11041,14 +11041,14 @@ var forces = [
                                     {
                                         "name":"Loader Team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Jeep mount","cost":2,"v":163}
                                         ]
                                     }
@@ -11065,20 +11065,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"57mmL46","cost":0}
+                                            {"id":1,"text":"57mmL46"}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Jeep tow","cost":2,"v":163}
                                         ]
                                     }
@@ -11096,27 +11096,27 @@ var forces = [
                             {
                                 "name":"AT grenades",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
                             },
                             {
                                 "name":"BAR",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 BAR","cost":2}
                                 ]
                             },
                             {
                                 "name":"MMG",
                                 "choices":[
-                                    {"id":1,"text":".30 cal","cost":0}
+                                    {"id":1,"text":".30 cal"}
                                 ]
                             },
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":1,"text":"Veteran"},
                                     {"id":2,"text":"Elite","cost":10, "br":1}
                                 ]
                             }
@@ -11134,7 +11134,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true
@@ -11142,7 +11142,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Glider Infantry Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true
@@ -11150,7 +11150,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"BAR Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "count":3
@@ -11172,14 +11172,14 @@ var forces = [
                                     {
                                         "name":"Loader Team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Jeep mount","cost":2,"v":163}
                                         ]
                                     }
@@ -11204,7 +11204,7 @@ var forces = [
                                     {
                                         "name":"Loader Team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -11221,14 +11221,14 @@ var forces = [
                                     {
                                         "name":"Loader Team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Jeep mount","cost":2,"v":163}
                                         ]
                                     }
@@ -11244,20 +11244,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"57mmL46","cost":0,"w":59}
+                                            {"id":1,"text":"57mmL46","w":59}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Jeep tow","cost":2,"v":163}
                                         ]
                                     }
@@ -11293,7 +11293,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M4s","cost":0},
+                                    {"id":1,"text":"3 M4s"},
                                     {"id":2,"text":"4 M4s","cost":50,"br":3,"vc":4},
                                     {"id":3,"text":"5 M4s","cost":100,"br":6,"vc":5} 
                                 ] 
@@ -11309,7 +11309,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M4 Sherman","cost":0,"v":100}, 
+                                    {"id":1,"text":"M4 Sherman","v":100}, 
                                     {"id":2,"text":"M5 Stuart","cost":-20,"v":89} 
                                 ] 
                             } 
@@ -11327,7 +11327,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M5 Stuarts","cost":0,"vc":3}, 
+                                    {"id":1,"text":"3 M5 Stuarts","vc":3}, 
                                     {"id":2,"text":"4 M5 Stuarts","cost":30,"br":2,"vc":4}, 
                                     {"id":3,"text":"5 M5 Stuarts","cost":60,"br":4,"vc":5}
                                 ] 
@@ -11343,7 +11343,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M10 Wolverine","cost":0,"v":132}
+                                    {"id":1,"text":"M10 Wolverine","v":132}
                                 ] 
                             } 
                         ] 
@@ -11366,7 +11366,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":163}
+                                    {"id":1,"text":"Jeep","v":163}
                                 ]
                             }
                         ]
@@ -11380,20 +11380,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 75mmL16 howitzers","cost":0,"w":65}
+                                    {"id":1,"text":"2 75mmL16 howitzers","w":65}
                                 ]
                             },
                             {
                                 "name":"Loader teams",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"2 Loader teams","cost":20}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"2 Jeep tows","cost":4,"v":163}
                                 ]
                             }
@@ -11408,7 +11408,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 75mmL16 howtizers","cost":0,"w":65},
+                                    {"id":1,"text":"2 75mmL16 howtizers","w":65},
                                     {"id":2,"text":"2 105mmL16 howitzers","cost":20,"w":75}
                                 ]
                             }
@@ -11423,7 +11423,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 81mm mortars","cost":0,"w":61}
+                                    {"id":1,"text":"2 81mm mortars","w":61}
                                 ]
                             }
                         ]
@@ -11439,7 +11439,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 L4 Piper Cub","cost":0}
+                                    {"id":1,"text":"1 L4 Piper Cub"}
                                 ]
                             }
                         ]
@@ -11453,21 +11453,21 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"75mmL16 howitzer","cost":0,"w":65},
+                                    {"id":1,"text":"75mmL16 howitzer","w":65},
                                     {"id":2,"text":"105mmL16 howitzer","cost":4,"w":75}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"No tow","cost":0},
+                                    {"id":1,"text":"No tow"},
                                     {"id":2,"text":"Jeep tow","cost":4,"v":163}
                                 ]
                             }
@@ -11597,7 +11597,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 sniper","cost":0},
+                                    {"id":1,"text":"1 sniper"},
                                     {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                                 ]
                             }
@@ -11622,7 +11622,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 men, Jeep mounted .30 cal","cost":0}
+                                    {"id":1,"text":"3 men, Jeep mounted .30 cal"}
                                 ]
                             }
                         ]
@@ -11636,14 +11636,14 @@ var forces = [
                             {
                                 "name":"AT grenades",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
                             },
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":1,"text":"Veteran"},
                                     {"id":2,"text":"Elite","cost":12, "br":1}
                                 ]
                             }
@@ -11658,7 +11658,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M8 Greyhound","cost":0,"v":142},
+                                    {"id":1,"text":"M8 Greyhound","v":142},
                                     {"id":2,"text":"M20 Utility Car","cost":-8,"v":143}
                                 ]
                             }
@@ -11682,7 +11682,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Heavy Truck & 6 men","cost":0},
+                                    {"id":1,"text":"Heavy Truck & 6 men"},
                                     {"id":2,"text":"2 Heavy Trucks & 12 men","cost":24}
                                 ]
                             }
@@ -11697,7 +11697,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Sherman ARV","cost":0,"v":109},
+                                    {"id":1,"text":"Sherman ARV","v":109},
                                     {"id":2,"text":"M1 Wrecker Heavy Truck","cost":-4,"v":172}
                                 ]
                             }
@@ -11714,27 +11714,27 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"BAR, AT grenades, 2 demo charges","cost":0}
+                                    {"id":1,"text":"BAR, AT grenades, 2 demo charges"}
                                 ]
                             },
                             {
                                 "name":"Flame-thrower",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Flame-thrower","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mine sweeper",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Mine sweeper","cost":5}
                                 ]
                             },
                             {
                                 "name":"Bazooka",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Bazooka","cost":12,"w":92}
                                 ]
                             }
@@ -11759,7 +11759,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Jeep with a trailer","cost":0},
+                                    {"id":1,"text":"1 Jeep with a trailer"},
                                     {"id":2,"text":"2 Jeeps with trailers","cost":4},
                                     {"id":3,"text":"3 Jeeps with trailers","cost":8},
                                     {"id":4,"text":"4 Jeeps with trailers","cost":12}
@@ -11776,7 +11776,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men","cost":0}
+                                {"id":1,"text":"2 men"}
                             ]
                             }
                         ]
@@ -11791,7 +11791,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":163}
+                                {"id":1,"text":"Jeep Ambulance","v":163}
                             ]
                             }
                         ]
@@ -11807,7 +11807,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"4 men with a tent","cost":0}
+                                {"id":1,"text":"4 men with a tent"}
                             ]
                             }
                         ]
@@ -11831,14 +11831,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                     ]
                             },
                             {
                                 "name":"Mount",
                                 "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Jeep","cost":2,"v":163}
                                 ]
                             }
@@ -11861,7 +11861,7 @@ var forces = [
                             {
                                 "name":"Target Priority",
                                 "choices":[
-                                    {"id":1,"text":"3rd (5+)","cost":0},
+                                    {"id":1,"text":"3rd (5+)"},
                                     {"id":2,"text":"2nd (4+)","cost":5},
                                     {"id":3,"text":"1st (2+)","cost":15}
                                 ]
@@ -11953,7 +11953,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"1 LCS","cost":0}
+                                {"id":1,"text":"1 LCS"}
                             ]
                         }
                     ]
@@ -11970,7 +11970,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Jeep","cost":0}
+                                {"id":1,"text":"Jeep"}
                             ]
                         }
                     ]
@@ -11986,7 +11986,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Jeep","cost":0}
+                                {"id":1,"text":"Jeep"}
                             ]
                         }
                     ]
@@ -12025,7 +12025,7 @@ var forces = [
                         {
                             "id":1,
                             "name":"Boat Team Leader",
-                            "cost":0,
+                            
                             "br":0,
                             "mandatory":true,
                             "officer":true
@@ -12033,7 +12033,7 @@ var forces = [
                         {
                             "id":2,
                             "name":"Rifle Squad",
-                            "cost":0,
+                            
                             "br":0,
                             "mandatory":true,
                             "count":2
@@ -12041,7 +12041,7 @@ var forces = [
                         {
                             "id":3,
                             "name":"Light Mortar Team",
-                            "cost":0,
+                            
                             "br":0,
                             "w":60,
                             "mandatory":true
@@ -12049,21 +12049,21 @@ var forces = [
                         {
                             "id":4,
                             "name":"Flamethrower Team",
-                            "cost":0,
+                            
                             "br":0,
                             "mandatory":true
                         },
                         {
                             "id":5,
                             "name":"Demolitions Team",
-                            "cost":0,
+                            
                             "br":0,
                             "mandatory":true
                         },
                         {
                             "id":6,
                             "name":"Combat Medic",
-                            "cost":0,
+                            
                             "br":0,
                             "mandatory":true
                         }
@@ -12080,8 +12080,8 @@ var forces = [
                         { 
                             "name":"Transport", 
                             "choices":[ 
-                                {"id":1,"text":"DUKW","cost":0,"v":175},
-                                {"id":2,"text":"LCA","cost":0},
+                                {"id":1,"text":"DUKW","v":175},
+                                {"id":2,"text":"LCA"},
                                 {"id":3,"text":"LCA with rocket-prop. grapnels","cost":5} 
                             ] 
                         } 
@@ -12091,7 +12091,7 @@ var forces = [
                         {
                             "id":1,
                             "name":"Boat Team Leader",
-                            "cost":0,
+                            
                             "br":0,
                             "mandatory":true,
                             "officer":true
@@ -12099,14 +12099,14 @@ var forces = [
                         {
                             "id":2,
                             "name":"Rifle Squad",
-                            "cost":0,
+                            
                             "br":0,
                             "mandatory":true
                         },
                         {
                             "id":3,
                             "name":"Light Mortar Team",
-                            "cost":0,
+                            
                             "br":0,
                             "w":60,
                             "mandatory":true
@@ -12114,7 +12114,7 @@ var forces = [
                         {
                             "id":4,
                             "name":"Bazooka Team",
-                            "cost":0,
+                            
                             "w":92,
                             "br":0,
                             "mandatory":true
@@ -12142,7 +12142,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 DD Shermans","cost":0} 
+                                    {"id":1,"text":"3 DD Shermans"} 
                                 ] 
                             } 
                         ] 
@@ -12160,7 +12160,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"2 Shermans, 1 Sherman Dozer","cost":0} 
+                                    {"id":1,"text":"2 Shermans, 1 Sherman Dozer"} 
                                 ] 
                             } 
                         ] 
@@ -12185,7 +12185,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"13 M4 Sherman Tanks","cost":0} 
+                                    {"id":1,"text":"13 M4 Sherman Tanks"} 
                                 ] 
                             } 
                         ] 
@@ -12208,7 +12208,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0}
+                                    {"id":1,"text":"Jeep"}
                                 ]
                             }
                         ]
@@ -12237,7 +12237,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 L4 Piper Cub","cost":0}
+                                    {"id":1,"text":"1 L4 Piper Cub"}
                                 ]
                             }
                         ]
@@ -12254,7 +12254,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 M7 Priests in a LCT","cost":0}
+                                    {"id":1,"text":"3 M7 Priests in a LCT"}
                                 ]
                             }
                         ]
@@ -12268,7 +12268,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 3.5\" guns","cost":0},
+                                    {"id":1,"text":"2 3.5\" guns"},
                                     {"id":2,"text":"2 4.7\" guns","cost":28},
                                     {"id":3,"text":"2 5\" guns","cost":46},
                                     {"id":4,"text":"2 6\" guns","cost":55}
@@ -12295,7 +12295,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Gap Team Leader",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true
@@ -12303,7 +12303,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Demo Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "count":4
@@ -12311,7 +12311,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"Combat Medic",
-                                "cost":0,
+                                
                                 "br":0,
                                 "count":1,
                                 "mandatory":true
@@ -12319,7 +12319,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"Sherman Bulldozer",
-                                "cost":0,
+                                
                                 "br":0,
                                 "count":1,
                                 "v":108,
@@ -12359,7 +12359,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 DUKW","cost":0},
+                                    {"id":1,"text":"1 DUKW"},
                                     {"id":2,"text":"2 DUKWs","cost":10,"br":1},
                                     {"id":3,"text":"3 DUKWs","cost":20,"br":2},
                                     {"id":4,"text":"4 DUKWs","cost":30,"br":3}
@@ -12376,7 +12376,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men","cost":0}
+                                {"id":1,"text":"2 men"}
                             ]
                             }
                         ]
@@ -12406,7 +12406,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Team Leader",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true
@@ -12414,7 +12414,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "count":1,
                                 "mandatory":true
@@ -12422,7 +12422,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"Medium Mortar Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "count":1,
                                 "w":61,
@@ -12431,7 +12431,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"3-man loader team","cost":0}
+                                            {"id":1,"text":"3-man loader team"}
                                         ]
                                     }
                                 ]
@@ -12439,7 +12439,7 @@ var forces = [
                             {
                                 "id":4,
                                 "name":"MG Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "count":2,
                                 "mandatory":true
@@ -12447,7 +12447,7 @@ var forces = [
                             {
                                 "id":5,
                                 "name":"Demo Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "count":1
@@ -12463,7 +12463,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"LCA","cost":0},
+                                    {"id":1,"text":"LCA"},
                                     {"id":2,"text":"LCM","cost":4},
                                     {"id":3,"text":"LCT","cost":20,"br":1},
                                     {"id":4,"text":"LCVP","cost":8}
@@ -12512,7 +12512,7 @@ var forces = [
                             {
                                 "name":"Target Priority",
                                 "choices":[
-                                    {"id":1,"text":"1st (2+)","cost":0}
+                                    {"id":1,"text":"1st (2+)"}
                                 ]
                             }
                         ]
@@ -12609,7 +12609,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Radio Van","cost":0}
+                                {"id":1,"text":"Radio Van"}
                             ]
                         }
                     ]
@@ -12641,7 +12641,7 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Irregular","cost":0},
+                                    {"id":1,"text":"Irregular"},
                                     {"id":2,"text":"Regular","cost":16, "br":4}
                                 ]
                             }
@@ -12651,7 +12651,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true
@@ -12659,7 +12659,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true
@@ -12667,7 +12667,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"MMG Team",
-                                "cost":0,
+                                
                                 "count":1,
                                 "br":0,
                                 "mandatory":true,
@@ -12675,7 +12675,7 @@ var forces = [
                                     {
                                         "name":"MMG",
                                         "choices":[
-                                            {"id":1,"text":"Bipod MG34","cost":0}
+                                            {"id":1,"text":"Bipod MG34"}
                                         ]
                                     }
                                 ]
@@ -12698,7 +12698,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -12714,14 +12714,14 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Tripod MG34","cost":0},
+                                            {"id":1,"text":"Tripod MG34"},
                                             {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -12738,7 +12738,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -12754,7 +12754,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"37mm PaK36","cost":0,"w":7},
+                                            {"id":1,"text":"37mm PaK36","w":7},
                                             {"id":3,"text":"50mm PaK38","cost":2,"w":9},
                                             {"id":4,"text":"75mm PaK97/38","cost":13,"w":100},
                                             {"id":5,"text":"76.2mm PaK36(r)","cost":17,"w":0},
@@ -12764,14 +12764,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Horse and limber tow","cost":2}
                                         ]
                                     }
@@ -12792,7 +12792,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true
@@ -12800,7 +12800,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true
@@ -12826,7 +12826,7 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Irregular","cost":0},
+                                    {"id":1,"text":"Irregular"},
                                     {"id":2,"text":"Regular","cost":15, "br":4}
                                 ]
                             }
@@ -12836,7 +12836,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true
@@ -12844,7 +12844,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true
@@ -12867,7 +12867,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -12883,14 +12883,14 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Tripod MG34","cost":0},
+                                            {"id":1,"text":"Tripod MG34"},
                                             {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -12921,7 +12921,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 80mm mortars","cost":0,"w":2},
+                                    {"id":1,"text":"2 80mm mortars","w":2},
                                     {"id":2,"text":"2 120mm mortars","cost":18,"w":3}
                                 ]
                             }
@@ -12936,7 +12936,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 105mmL28 howitzer","cost":0,'w':22},
+                                    {"id":1,"text":"2 105mmL28 howitzer",'w':22},
                                     {"id":2,"text":"2 100mmL52 cannon","cost":36,'w':21},
                                     {"id":3,"text":"2 122mmL23 howitzer","cost":26,'w':24},
                                     {"id":4,"text":"2 150mmL30 howitzer","cost":45,'w':26}
@@ -12954,8 +12954,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"75mmL11 Infantry Gun","cost":0,'w':99},
-                                    {"id":2,"text":"76.2mmL16 Infantry Gun","cost":0,'w':41},
+                                    {"id":1,"text":"75mmL11 Infantry Gun",'w':99},
+                                    {"id":2,"text":"76.2mmL16 Infantry Gun",'w':41},
                                     {"id":3,"text":"100mmL19 Infantry Gun","cost":25,'w':101},
                                     {"id":4,"text":"150mmL12 Infantry Gun","cost":35,'br':1,'w':25}
                                 ]
@@ -12963,7 +12963,7 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             }
@@ -13201,7 +13201,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 sniper","cost":0},
+                                    {"id":1,"text":"1 sniper"},
                                     {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                                 ]
                             }
@@ -13225,7 +13225,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 Goliath","cost":0},
+                                {"id":1,"text":"1 Goliath"},
                                 {"id":2,"text":"2 Goliaths","cost":10}
                             ]
                         }
@@ -13255,7 +13255,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 horse drawn wagon","cost":0},
+                                {"id":1,"text":"1 horse drawn wagon"},
                                 {"id":2,"text":"1 medium truck","cost":2,"v":91},
                                 {"id":3,"text":"1 horse drawn wagon, 1 medium truck","cost":8,"v":91},
                                 {"id":4,"text":"2 medium trucks","cost":10,"v":91}
@@ -13272,7 +13272,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"2 men","cost":0}
+                            {"id":1,"text":"2 men"}
                         ]
                         }
                     ]
@@ -13287,7 +13287,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
+                            {"id":1,"text":"Kübelwagen Ambulance","v":54},
                             {"id":2,"text":"Ambulance medium truck","cost":2,"v":91},
                             {"id":3,"text":"SdKfz 251/8 Ambulance","cost":6,"v":228}
                         ]
@@ -13312,7 +13312,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"122mmL46","cost":0,"w":48},
+                                {"id":1,"text":"122mmL46","w":48},
                                 {"id":2,"text":"152mmL29","cost":4,"w":50},
                                 {"id":3,"text":"170mmL50","cost":16,"w":28},
                                 {"id":4,"text":"240mmL35","cost":26,"br":1,"w":104},
@@ -13323,7 +13323,7 @@ var forces = [
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         }
@@ -13340,7 +13340,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"R-35 with MG42","cost":0},
+                                {"id":1,"text":"R-35 with MG42"},
                                 {"id":2,"text":"R-35 with 37mmL21","cost":-3,"w":112},
                                 {"id":3,"text":"H-38 with 37mmL21","cost":-3,"w":112},
                                 {"id":4,"text":"Pz III with 75mmL24","cost":7,"w":11}
@@ -13358,7 +13358,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"20mm FlaK gun","cost":0,"w":4},
+                                {"id":1,"text":"20mm FlaK gun","w":4},
                                 {"id":2,"text":"20mm FlaK Vierling","cost":20,"w":4},
                                 {"id":3,"text":"37mm AA gun","cost":8,"w":5}
                             ]
@@ -13366,7 +13366,7 @@ var forces = [
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         }
@@ -13383,13 +13383,13 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"88mmL71 PaK43 with 4 crew","cost":0}
+                                {"id":1,"text":"88mmL71 PaK43 with 4 crew"}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         }
@@ -13412,7 +13412,7 @@ var forces = [
                         {
                             "name":"Target Priority",
                             "choices":[
-                                {"id":1,"text":"3rd (5+)","cost":0},
+                                {"id":1,"text":"3rd (5+)"},
                                 {"id":2,"text":"2nd (4+)","cost":5},
                                 {"id":3,"text":"1st (2+)","cost":15}
                             ]
@@ -13471,9 +13471,9 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"SdKfz 251/3","cost":0,"v":39},
-                                {"id":2,"text":"leSPW U304(f) Funk","cost":0,"v":212},
-                                {"id":3,"text":"Panzer 35-S 739(f)","cost":0,"v":68},
+                                {"id":1,"text":"SdKfz 251/3","v":39},
+                                {"id":2,"text":"leSPW U304(f) Funk","v":212},
+                                {"id":3,"text":"Panzer 35-S 739(f)","v":68},
                                 {"id":4,"text":"Panzer III L","cost":11,"v":2},
                                 {"id":5,"text":"Panzer IV G","cost":22,"v":8},
                                 {"id":6,"text":"Panzer IV H","cost":28,"v":9}
@@ -13540,7 +13540,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -13548,14 +13548,14 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck or heavy car","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Panzerfaust",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                         ]
                                     }
@@ -13564,7 +13564,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Grenadier Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -13572,21 +13572,21 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Panzerfaust",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                         ]
                                     },
                                     {
                                         "name":"MG",
                                         "choices":[
-                                            {"id":1,"text":"Bipod MG34","cost":0},
+                                            {"id":1,"text":"Bipod MG34"},
                                             {"id":2,"text":"Bipod MG42","cost":4}
                                         ]
                                     }
@@ -13610,7 +13610,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -13626,14 +13626,14 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Tripod MG34","cost":0},
+                                            {"id":1,"text":"Tripod MG34"},
                                             {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -13658,7 +13658,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -13674,21 +13674,21 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"50mm PaK38","cost":0,"w":9},
+                                            {"id":1,"text":"50mm PaK38","w":9},
                                             {"id":2,"text":"75mm PaK40","cost":16,"w":14}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91},
                                             {"id":3,"text":"Opel Maultier","cost":8,"v":59},
                                             {"id":4,"text":"SdKfz 6 Half-track","cost":8,"v":64},
@@ -13710,21 +13710,21 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4}
                                 ]
                             },
                             {
                                 "name":"Panzerfaust",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                 ]
                             },
                             {
                                 "name":"MG",
                                 "choices":[
-                                    {"id":1,"text":"Bipod MG34","cost":0},
+                                    {"id":1,"text":"Bipod MG34"},
                                     {"id":2,"text":"Bipod MG42","cost":4}
                                 ]
                             }
@@ -13742,7 +13742,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -13750,13 +13750,13 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"leSPW U304(f) (37mm PaK36)","cost":0,"w":7,"v":211}
+                                            {"id":1,"text":"leSPW U304(f) (37mm PaK36)","w":7,"v":211}
                                         ]
                                     },
                                     {
                                         "name":"Panzerfaust",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                         ]
                                     }
@@ -13765,7 +13765,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Grenadier Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -13773,20 +13773,20 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"leSPW U304(f)","cost":0,"v":211}
+                                            {"id":1,"text":"leSPW U304(f)","v":211}
                                         ]
                                     },
                                     {
                                         "name":"Panzerfaust",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                         ]
                                     },
                                     {
                                         "name":"MG",
                                         "choices":[
-                                            {"id":1,"text":"Bipod MG34","cost":0},
+                                            {"id":1,"text":"Bipod MG34"},
                                             {"id":2,"text":"Bipod MG42","cost":4}
                                         ]
                                     }
@@ -13810,7 +13810,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -13826,14 +13826,14 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Tripod MG34","cost":0},
+                                            {"id":1,"text":"Tripod MG34"},
                                             {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -13864,7 +13864,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -13880,7 +13880,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"50mm PaK38","cost":0,"w":9},
+                                            {"id":1,"text":"50mm PaK38","w":9},
                                             {"id":2,"text":"76.2mmL54","cost":13,'w':45},
                                             {"id":3,"text":"75mm PaK40","cost":16,"w":14},
                                             {"id":4,"text":"mSPW S307(f)","cost":18,"v":216}
@@ -13889,14 +13889,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91},
                                             {"id":3,"text":"SdKfz 6 Half-track","cost":8,"v":64},
                                             {"id":5,"text":"Unic P107","cost":8,"v":0},
@@ -13915,14 +13915,14 @@ var forces = [
                                     {
                                         "name":"Gun",
                                         "choices":[
-                                            {"id":1,"text":"20mm FlaK","cost":0,"w":4},
+                                            {"id":1,"text":"20mm FlaK","w":4},
                                             {"id":2,"text":"20mm FlaK Vierling","cost":12,"w":4}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4},
                                             {"id":3,"text":"SdKfz 10 halftrack", "cost":8,"v":62},
                                             {"id":4,"text":"Unic P107","cost":8,"v":0},
@@ -13943,20 +13943,20 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"leSPW U304(f)","cost":0,"v":211}
+                                    {"id":1,"text":"leSPW U304(f)","v":211}
                                 ]
                             },
                             {
                                 "name":"Panzerfaust",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                 ]
                             },
                             {
                                 "name":"MG",
                                 "choices":[
-                                    {"id":1,"text":"Bipod MG34","cost":0},
+                                    {"id":1,"text":"Bipod MG34"},
                                     {"id":2,"text":"Bipod MG42","cost":4}
                                 ]
                             }
@@ -13982,8 +13982,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Panzer 35R 731(f)","cost":0,"v":68},
-                                    {"id":2,"text":"3 Panzer 38H 735(f)","cost":0,"v":222},
+                                    {"id":1,"text":"3 Panzer 35R 731(f)","v":68},
+                                    {"id":2,"text":"3 Panzer 38H 735(f)","v":222},
                                     {"id":3,"text":"3 Panzer 35S 739(f)","cost":12,"v":69},
                                     {"id":4,"text":"1 Panzer III L, 2 Panzer 35R 731(f)","cost":15,"v":"[2,68]","vc":"[1,2]"},
                                     {"id":5,"text":"1 Panzer III L, 2 Panzer 38H 735(f)","cost":15,"v":"[2,222]","vc":"[1,2]"},
@@ -14003,7 +14003,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 75mm PaK40 auf 39H(f)s, 1 105mm PzFH18 auf 39H(f)","cost":0,"v":"[225,224]","vc":"[2,1]"}
+                                    {"id":1,"text":"2 75mm PaK40 auf 39H(f)s, 1 105mm PzFH18 auf 39H(f)","v":"[225,224]","vc":"[2,1]"}
                                 ]
                             }
                         ]
@@ -14017,7 +14017,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"105mm PzFH18 auf 39H(f)","cost":0,"v":224},
+                                    {"id":1,"text":"105mm PzFH18 auf 39H(f)","v":224},
                                     {"id":2,"text":"75mm PaK40 auf 39H(f)","cost":8,"v":225}
                                 ]
                             }
@@ -14035,7 +14035,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Panzer IV Gs","cost":0,"v":8},
+                                    {"id":1,"text":"3 Panzer IV Gs","v":8},
                                     {"id":2,"text":"3 Panzer IV Hs","cost":30,"v":9},
                                     {"id":3,"text":"3 Panzer IV Ds","cost":-15,"v":96}
                                 ]
@@ -14051,7 +14051,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Panzer FT17/18","cost":0,"restricted":true,"v":223},
+                                    {"id":1,"text":"Panzer FT17/18","restricted":true,"v":223},
                                     {"id":2,"text":"Panzer 35R 731(f)","cost":6,"br":1,"restricted":true,"v":68},
                                     {"id":3,"text":"Panzer 38H 735(f)","cost":4,"br":1,"v":222},
                                     {"id":4,"text":"Panzer III L","cost":23,"br":2,"v":2},
@@ -14069,7 +14069,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Panzer IV D","cost":0,"restricted":true,"v":96},
+                                    {"id":1,"text":"Panzer IV D","restricted":true,"v":96},
                                     {"id":2,"text":"Panzer IV G","cost":6,"v":8},
                                     {"id":3,"text":"Panzer IV H","cost":12,"v":9}
                                 ]
@@ -14093,7 +14093,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Kübelwagen","cost":0,"v":54},
+                                    {"id":1,"text":"Kübelwagen","v":54},
                                     {"id":2,"text":"leSPW U304(f) Funk","cost":7,"v":212},
                                     {"id":3,"text":"SdKfz 251/18","cost":8,"v":221}
                                 ]
@@ -14110,7 +14110,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 105mm leFH18 auf Lorraine","cost":0,"v":209}
+                                    {"id":1,"text":"2 105mm leFH18 auf Lorraine","v":209}
                                 ]
                             }
                         ]
@@ -14126,7 +14126,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 150mm sFH13 auf Lorraine","cost":0,"v":210}
+                                    {"id":1,"text":"2 150mm sFH13 auf Lorraine","v":210}
                                 ]
                             }
                         ]
@@ -14143,7 +14143,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 mSPW S307(f) (8cm Reihenwerfer)","cost":0,"v":216},
+                                    {"id":1,"text":"2 mSPW S307(f) (8cm Reihenwerfer)","v":216},
                                     {"id":2,"text":"2 mSPW S303/307(f) (R-Vielfachwerfer)","cost":8,"v":217},
                                     {"id":3,"text":"2 Panzer 38H 735(f) auf 28cm Wurfrahmen","cost":72,"br":2,"v":218}
                                 ]
@@ -14159,7 +14159,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"105mm leFH auf Lorraine","cost":0,"v":209},
+                                    {"id":1,"text":"105mm leFH auf Lorraine","v":209},
                                     {"id":2,"text":"150mm sFH13 auf Lorraine","cost":33,"restricted":true,"v":210},
                                     {"id":3,"text":"mSPW S307(f) (8cm Reihenwerfer)","cost":-23,"br":-1,"v":216},
                                     {"id":4,"text":"mSPW S303/307(f) (R-Vielfachwerfer)","cost":-19,"v":217}
@@ -14176,8 +14176,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Panzer 39H Beobachtungswagen","cost":0,"v":219},
-                                    {"id":2,"text":"Lorraine Schlepper Beobachtungswagen","cost":0,"v":220}
+                                    {"id":1,"text":"Panzer 39H Beobachtungswagen","v":219},
+                                    {"id":2,"text":"Lorraine Schlepper Beobachtungswagen","v":220}
                                 ]
                             }
                         ]
@@ -14192,20 +14192,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"120mm mortar & 3 crew","cost":0}
+                                    {"id":1,"text":"120mm mortar & 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mount",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck","cost":4,"v":91},
                                     {"id":3,"text":"Heavy Car","cost":4,"v":56}
                                 ]
@@ -14221,7 +14221,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 80mm mortars","cost":0,"w":2},
+                                    {"id":1,"text":"2 80mm mortars","w":2},
                                     {"id":2,"text":"2 120mm mortars","cost":18,"w":3}
                                 ]
                             }
@@ -14236,7 +14236,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 105mmL28 howitzer","cost":0,'w':22},
+                                    {"id":1,"text":"2 105mmL28 howitzer",'w':22},
                                     {"id":2,"text":"2 150mmL30 howitzer","cost":45,'w':26},
                                     {"id":3,"text":"2 100mmL52 cannon","cost":36,'w':21},
                                     {"id":4,"text":"2 170mmL50 cannon","cost":108,'w':28},
@@ -14328,7 +14328,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 sniper","cost":0},
+                                    {"id":1,"text":"1 sniper"},
                                     {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                                 ]
                             }
@@ -14343,14 +14343,14 @@ var forces = [
                             {
                                 "name":"Panzerfaust",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Panzerfaust","cost":5,"w":107}
                                 ]
                             },
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"SdKfz 250/1","cost":0,"v":43}
+                                    {"id":1,"text":"SdKfz 250/1","v":43}
                                 ]
                             }
                         ]
@@ -14364,13 +14364,13 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 men","cost":0}
+                                    {"id":1,"text":"3 men"}
                                 ]
                             },
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Motorcyle & sidecar","cost":0,"v":51}
+                                    {"id":1,"text":"Motorcyle & sidecar","v":51}
                                 ]
                             }
                         ]
@@ -14386,8 +14386,8 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"SdKfz 250/10","cost":0,"v":48},
-                                    {"id":2,"text":"Panzer 39H Beobachtungswagen","cost":0,"v":219}
+                                    {"id":1,"text":"SdKfz 250/10","v":48},
+                                    {"id":2,"text":"Panzer 39H Beobachtungswagen","v":219}
                                 ]
                             }
                         ]
@@ -14401,7 +14401,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"SdKfz 222","cost":0,"v":32},
+                                    {"id":1,"text":"SdKfz 222","v":32},
                                     {"id":2,"text":"SdKfz 233","cost":14,"v":35},
                                     {"id":3,"text":"SdKfz 250/2","cost":6, restricted:"true","v":46}, //greg confirm
                                     {"id":4,"text":"SdKfz 250/9","cost":4, restricted:"true","v":47}
@@ -14419,14 +14419,14 @@ var forces = [
                             {
                                 "name":"MG",
                                 "choices":[
-                                    {"id":1,"text":"Bipod MG34","cost":0},
+                                    {"id":1,"text":"Bipod MG34"},
                                     {"id":2,"text":"Bipod MG42","cost":4}
                                 ]
                             },
                             {
                                 "name":"Panzerfaust",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Panzerfaust","cost":5,"w":107}
                                 ]
                             }
@@ -14450,7 +14450,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Heavy Truck & 6 men","cost":0,"v":59},
+                                    {"id":1,"text":"Heavy Truck & 6 men","v":59},
                                     {"id":2,"text":"SdKfz 251/7 & 6 men","cost":8,"v":97}
                                 ]
                             }
@@ -14468,7 +14468,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                {"id":1,"text":"2 Heavy Trucks & 12 men"},
                                 {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
                                 {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
                                 {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
@@ -14485,7 +14485,7 @@ var forces = [
                         {
                            "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"SdKfz 9 'Famo'","cost":0,"v":67}
+                                {"id":1,"text":"SdKfz 9 'Famo'","v":67}
                             ]
                         }
                     ]
@@ -14501,7 +14501,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Bergepanzer III","cost":0,"restricted":true,"v":190}
+                                {"id":1,"text":"Bergepanzer III","restricted":true,"v":190}
                             ]
                         }
                     ]
@@ -14517,33 +14517,33 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Panzerfaust, 2 demo charges","cost":0,"w":107}
+                                {"id":1,"text":"Panzerfaust, 2 demo charges","w":107}
                             ]
                         },
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"mSPW S303(f)","cost":0,"v":214}
+                                {"id":1,"text":"mSPW S303(f)","v":214}
                            ]
                         },
                         {
                             "name":"Flame-thrower",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Flame-thrower","cost":10}
                             ]
                         },
                         {
                             "name":"Mine sweeper",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Mine sweeper","cost":5}
                             ]
                         },
                         {
                             "name":"MG",
                             "choices":[
-                                {"id":1,"text":"Bipod MG34","cost":0},
+                                {"id":1,"text":"Bipod MG34"},
                                 {"id":2,"text":"Bipod MG42","cost":4}
                             ]
                         }
@@ -14568,7 +14568,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 medium truck","cost":0},
+                                    {"id":1,"text":"1 medium truck"},
                                     {"id":2,"text":"2 medium trucks","cost":4},
                                     {"id":3,"text":"3 medium trucks","cost":8}
                                 ]
@@ -14576,7 +14576,7 @@ var forces = [
                             {
                                 "name":"Armoured carriers",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Replace 1 truck","cost":6,"v":"[91,31]","vc":"[1,1]"}
                                 ]
                             }
@@ -14593,7 +14593,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"4 men with a tent","cost":0}
+                                {"id":1,"text":"4 men with a tent"}
                             ]
                             }
                         ]
@@ -14607,7 +14607,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men","cost":0}
+                                {"id":1,"text":"2 men"}
                             ]
                             }
                         ]
@@ -14622,7 +14622,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
+                                {"id":1,"text":"Kübelwagen Ambulance","v":54},
                                 {"id":2,"text":"SdKfz 251/8 Ambulance","cost":6,"v":228}
                             ]
                             }
@@ -14646,20 +14646,20 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"PaK43/41 88mm AA/AT with 4 crew","cost":0}
+                                {"id":1,"text":"PaK43/41 88mm AA/AT with 4 crew"}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Zugkraftwagen S307(f)","cost":8,"v":215}
                             ]
                         }
@@ -14675,7 +14675,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Panzerjaeger 35R(f)","cost":0,"v":68},
+                                {"id":1,"text":"Panzerjaeger 35R(f)","v":68},
                                 {"id":2,"text":"75mm PaK40 auf Lorraine","cost":10,"v":208}
                             ]
                         }
@@ -14692,20 +14692,20 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"88mm FlaK41 AA with 4 crew","cost":0}
+                                {"id":1,"text":"88mm FlaK41 AA with 4 crew"}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Zugkraftwagen S307(f) tow","cost":8,"v":215}
                             ]
                         }
@@ -14721,8 +14721,8 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":4,"v":62},
-                                {"id":2,"text":"leSPW U304(f) (2cm FlaK38)","cost":0,"v":213},
+                                {"id":1,"text":"SdKfz 10 with 20mm","w":4,"v":62},
+                                {"id":2,"text":"leSPW U304(f) (2cm FlaK38)","v":213},
                                 {"id":3,"text":"SdKfz 7 with 20mm Flakvierling","cost":20,"w":4,"v":65}
                             ]
                         }
@@ -14745,7 +14745,7 @@ var forces = [
                             {
                                 "name":"Target Priority",
                                 "choices":[
-                                    {"id":1,"text":"3rd (5+)","cost":0},
+                                    {"id":1,"text":"3rd (5+)"},
                                     {"id":2,"text":"2nd (4+)","cost":5},
                                     {"id":3,"text":"1st (2+)","cost":15}
                                 ]
@@ -14816,12 +14816,12 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"3 men","cost":0},
+                                {"id":1,"text":"3 men"},
                                 {"id":2,"text":"3 men & Jeep","cost":2,"v":163},
                                 {"id":3,"text":"3 men & M5 Halftrack","cost":8,"v":83},
                                 {"id":4,"text":"3 men & White Scout Car","cost":10,"v":84},
-                                {"id":5,"text":"Dingo Scout car","cost":0,"v":136},
-                                {"id":6,"text":"Humber Scout car","cost":0,"v":134},
+                                {"id":5,"text":"Dingo Scout car","v":136},
+                                {"id":6,"text":"Humber Scout car","v":134},
                                 {"id":7,"text":"M4A4 Sherman","cost":44,"v":101},
                                 {"id":8,"text":"M4A4 Sherman HQ","cost":34,"v":103},
                                 {"id":9,"text":"Cromwell IV","cost":46,"v":111},
@@ -14841,12 +14841,12 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men & Jeep","cost":0,"v":163},
+                                {"id":1,"text":"2 men & Jeep","v":163},
                                 {"id":2,"text":"2 men & Radio Medium Truck","cost":2,"v":91},
                                 {"id":3,"text":"2 men & M5 Radio Halftrack","cost":8,"v":83},
                                 {"id":4,"text":"2 men & Bren Carrier","cost":4,"v":82},
-                                {"id":5,"text":"Dingo Scout car","cost":0,"v":136},
-                                {"id":6,"text":"Humber LRC I","cost":0,"v":141}
+                                {"id":5,"text":"Dingo Scout car","v":136},
+                                {"id":6,"text":"Humber LRC I","v":141}
                             ]
                         }
                     ]
@@ -14880,7 +14880,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Radio Medium Truck","cost":0,"v":91},
+                                {"id":1,"text":"Radio Medium Truck","v":91},
                                 {"id":2,"text":"Dorchester ACV","cost":2,"v":159},
                                 {"id":3,"text":"M5 Radio Half-Track","cost":4,"v":83}
                             ]
@@ -14908,7 +14908,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -14916,7 +14916,7 @@ var forces = [
                                     {
                                         "name":"PIAT",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"PIAT","cost":5,"w":91}
                                         ]
                                     }
@@ -14925,7 +14925,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -14933,7 +14933,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91}
                                         ]
                                     }
@@ -14942,7 +14942,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"Light Mortar Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":60,
                                 "mandatory":true
@@ -14964,20 +14964,20 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Vickers HMG","cost":0}
+                                            {"id":1,"text":"Vickers HMG"}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
@@ -14994,7 +14994,7 @@ var forces = [
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
@@ -15011,14 +15011,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
@@ -15034,20 +15034,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"6 pdr","cost":0,"w":59}
+                                            {"id":1,"text":"6 pdr","w":59}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Loyd Carrier tow","cost":5,"v":0}
                                         ]
                                     }
@@ -15065,7 +15065,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91}
                                 ]
                             }
@@ -15083,7 +15083,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -15092,14 +15092,14 @@ var forces = [
                                     {
                                         "name":"Composition",
                                         "choices":[
-                                            {"id":1,"text":"4 men with 2\" mortar","cost":0}
+                                            {"id":1,"text":"4 men with 2\" mortar"}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"M5 Halftrack","cost":0,"v":83},
-                                            {"id":2,"text":"M9 Halftrack","cost":0,"v":146}
+                                            {"id":1,"text":"M5 Halftrack","v":83},
+                                            {"id":2,"text":"M9 Halftrack","v":146}
                                         ]
                                     }
                                 ]
@@ -15107,7 +15107,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Section",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -15115,8 +15115,8 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"M5 Halftrack","cost":0,"v":83},
-                                            {"id":2,"text":"M9 Halftrack","cost":0,"v":146}
+                                            {"id":1,"text":"M5 Halftrack","v":83},
+                                            {"id":2,"text":"M9 Halftrack","v":146}
                                         ]
                                     }
                                 ]
@@ -15124,7 +15124,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"PIAT Team",
-                                "cost":0,
+                                
                                 "w":91,
                                 "br":0,
                                 "mandatory":true
@@ -15146,20 +15146,20 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Vickers HMG","cost":0}
+                                            {"id":1,"text":"Vickers HMG"}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
@@ -15176,7 +15176,7 @@ var forces = [
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
@@ -15193,14 +15193,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
@@ -15216,20 +15216,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"6 pdr","cost":0,"w":59}
+                                            {"id":1,"text":"6 pdr","w":59}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Loyd Carrier tow","cost":5,"v":0}
                                         ]
                                     }
@@ -15247,8 +15247,8 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"M5 Halftrack","cost":0,"v":83},
-                                    {"id":2,"text":"M9 Halftrack","cost":0,"v":146}
+                                    {"id":1,"text":"M5 Halftrack","v":83},
+                                    {"id":2,"text":"M9 Halftrack","v":146}
                                 ]
                             }
                         ]
@@ -15266,14 +15266,14 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Rifle Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "options":[
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"Bren Carrier","cost":0,"v":82}
+                                            {"id":1,"text":"Bren Carrier","v":82}
                                         ]
                                     }
                                 ]
@@ -15281,7 +15281,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Carrier Light Mortar Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":60,
                                 "mandatory":true,
@@ -15289,7 +15289,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"Bren Carrier","cost":0,"v":82}
+                                            {"id":1,"text":"Bren Carrier","v":82}
                                         ]
                                     }
                                 ]
@@ -15297,7 +15297,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"Carrier PIAT Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":91,
                                 "mandatory":true,
@@ -15305,7 +15305,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"Bren Carrier","cost":0,"v":82}
+                                            {"id":1,"text":"Bren Carrier","v":82}
                                         ]
                                     }
                                 ]
@@ -15332,7 +15332,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[
-                                    {"id":1,"text":"2 M4A4s, 1 Firefly","cost":0,"v":"[101,102]","vc":"[2,1]"},
+                                    {"id":1,"text":"2 M4A4s, 1 Firefly","v":"[101,102]","vc":"[2,1]"},
                                     {"id":2,"text":"1 M4, 1 M4A4, 1 Firefly","cost":2,"v":"[100,101,102]","vc":"[1,1,1]"},
                                     {"id":3,"text":"2 M4s, 1 Firefly","cost":4,"v":"[100,102]","vc":"[2,1]"}
                                 ] 
@@ -15351,7 +15351,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M3A3 'Honey's","cost":0,"v":115}, 
+                                    {"id":1,"text":"3 M3A3 'Honey's","v":115}, 
                                     {"id":2,"text":"1 M5 Stuart, 2 M3A3 'Honey's","cost":2,"v":"[116,115]","vc":"[1,2]"}, 
                                     {"id":3,"text":"2 M5 Stuarts, 1 M3A3 'Honey'","cost":4,"v":"[116,115]","vc":"[2,1]"}, 
                                     {"id":4,"text":"3 M5 Stuarts","cost":6,"v":116} 
@@ -15371,7 +15371,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[
-                                    {"id":1,"text":"2 Cromwell IVs, 1 Firefly","cost":0,"v":"[111,102]","vc":"[2,1]"}
+                                    {"id":1,"text":"2 Cromwell IVs, 1 Firefly","v":"[111,102]","vc":"[2,1]"}
                                 ] 
                             }
                         ] 
@@ -15390,7 +15390,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[
-                                    {"id":1,"text":"2 Cromwell IVs, 1 Challenger","cost":0}
+                                    {"id":1,"text":"2 Cromwell IVs, 1 Challenger"}
                                 ] 
                             }
                         ] 
@@ -15404,7 +15404,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M4A4 Sherman","cost":0,"v":101}, 
+                                    {"id":1,"text":"M4A4 Sherman","v":101}, 
                                     {"id":2,"text":"M4 Sherman","cost":2,"v":100}, 
                                     {"id":3,"text":"Cromwell IV","cost":4,"v":111},
                                     {"id":4,"text":"M3A3 'Honey'","cost":-20,"v":115},
@@ -15422,7 +15422,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M10 Wolverine","cost":0,"v":132},
+                                    {"id":1,"text":"M10 Wolverine","v":132},
                                     {"id":2,"text":"M10 Achilles","cost":20,"v":133}
                                 ] 
                             } 
@@ -15445,7 +15445,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":163},
+                                    {"id":1,"text":"Jeep","v":163},
                                     {"id":2,"text":"Bren Carrier","cost":4,"v":82},
                                     {"id":3,"text":"Dingo Scout Car","cost":4,"v":136}
                                 ]
@@ -15461,7 +15461,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M4 Sherman HQ","cost":0,"v":103},
+                                    {"id":1,"text":"M4 Sherman HQ","v":103},
                                     {"id":2,"text":"Cromwell IV HQ","cost":2,"v":112}
                                 ]
                             }
@@ -15477,13 +15477,13 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Two 25 pdr guns","cost":0}
+                                    {"id":1,"text":"Two 25 pdr guns"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"One 3-man loader team","cost":10},
                                     {"id":2,"text":"Two 3-man loader teams","cost":20}
                                 ]
@@ -15491,7 +15491,7 @@ var forces = [
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Morris Quad","cost":4,"v":182},
                                     {"id":3,"text":"2 Morris Quads","cost":8,"v":182}
                                 ]
@@ -15508,7 +15508,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Auster III","cost":0}
+                                    {"id":1,"text":"1 Auster III"}
                                 ]
                             }
                         ]
@@ -15524,7 +15524,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 Sextons","cost":0},
+                                    {"id":1,"text":"2 Sextons"},
                                     {"id":1,"text":"2 M7 Priests","cost":8,"v":155}
                                 ]
                             }
@@ -15540,20 +15540,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"4.2\" mortar & 3 crew","cost":0}
+                                    {"id":1,"text":"4.2\" mortar & 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mount",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                 ]
                             }
@@ -15568,7 +15568,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 3\" mortars","cost":0,"w":61},
+                                    {"id":1,"text":"2 3\" mortars","w":61},
                                     {"id":2,"text":"2 4.2\" mortars","cost":18,"w":62}
                                 ]
                             }
@@ -15583,7 +15583,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 25 pdr","cost":0,'w':73},
+                                    {"id":1,"text":"2 25 pdr",'w':73},
                                     {"id":2,"text":"2 4.5\"","cost":20,'w':77},
                                     {"id":3,"text":"2 5.5\"","cost":40,'w':80},
                                     {"id":4,"text":"2 155mmL45","cost":50,'w':84}
@@ -15677,7 +15677,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 sniper","cost":0},
+                                    {"id":1,"text":"1 sniper"},
                                     {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                                 ]
                             }
@@ -15694,7 +15694,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 men & Jeep","cost":0,"v":163},
+                                    {"id":1,"text":"3 men & Jeep","v":163},
                                     {"id":2,"text":"Dingo","cost":4,"v":136},
                                     {"id":3,"text":"Humber Scout Car","cost":4,"v":134},
                                     {"id":4,"text":"M3 White Scout Car","cost":10,"v":84}
@@ -15711,7 +15711,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M3 White Scout Car","cost":0,"v":84},
+                                    {"id":1,"text":"M3 White Scout Car","v":84},
                                     {"id":2,"text":"Humber Scout Car","cost":-12,"v":134},
                                     {"id":3,"text":"Humber IV Armoured Car","cost":10,"v":135},
                                     {"id":4,"text":"Daimler","cost":8,"v":137},
@@ -15732,7 +15732,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"Cromwell IV","cost":0,"v":111},
+                                    {"id":1,"text":"Cromwell IV","v":111},
                                     {"id":2,"text":"M3A3 'Honey'","cost":-24,"v":115,"br":-1},
                                     {"id":3,"text":"M5 Stuart","cost":-22,"v":89,"br":-1},
                                     {"id":4,"text":"M5 Stuart 'recce'","cost":-38,"v":117,"br":-2}
@@ -15757,8 +15757,8 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"M5 Halftrack","cost":0,"v":83},
-                                    {"id":2,"text":"M9 Halftrack","cost":0,"v":146}
+                                    {"id":1,"text":"M5 Halftrack","v":83},
+                                    {"id":2,"text":"M9 Halftrack","v":146}
                                 ]
                             }
                         ]
@@ -15773,7 +15773,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Bren Carrier","cost":0,"v":82}
+                                    {"id":1,"text":"Bren Carrier","v":82}
                                 ]
                             }
                         ]
@@ -15795,7 +15795,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Heavy Truck & 6 men","cost":0,"v":61}
+                                    {"id":1,"text":"Heavy Truck & 6 men","v":61}
                                 ]
                             }
                         ]
@@ -15812,7 +15812,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                    {"id":1,"text":"2 Heavy Trucks & 12 men"},
                                     {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
                                     {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
                                     {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
@@ -15830,7 +15830,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91},
                                     {"id":3,"text":"M5 Halftrack","cost":8,"v":83}
                                 ]
@@ -15838,21 +15838,21 @@ var forces = [
                             {
                                 "name":"Flame-thrower",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Flame-thrower","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mine sweeper",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Mine sweeper","cost":5}
                                 ]
                             },
                             {
                                 "name":"Demo Charges",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Demo charge","cost":5},
                                     {"id":3,"text":"2 Demo charges","cost":10},
                                     {"id":4,"text":"3 Demo charges","cost":15}
@@ -15869,7 +15869,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M4 Sherman ARV","cost":0,"v":109},
+                                    {"id":1,"text":"M4 Sherman ARV","v":109},
                                     {"id":2,"text":"Cromwell ARV","cost":2,"v":113},
                                     {"id":3,"text":"Scammel Pioneer","cost":-6,"v":183},
                                     {"id":4,"text":"M1 Wrecker Heavy Truck","cost":-6,"v":172}
@@ -15886,8 +15886,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M4 Sherman Dozer","cost":0,"v":108},
-                                    {"id":2,"text":"M4 Sherman Crab","cost":0,"v":107},
+                                    {"id":1,"text":"M4 Sherman Dozer","v":108},
+                                    {"id":2,"text":"M4 Sherman Crab","v":107},
                                     {"id":3,"text":"Armoured Bulldozer","cost":-42,"br":-2,"v":160},
                                     {"id":4,"text":"Churchill Ark","cost":-32,"v":125,"br":-1},
                                     {"id":5,"text":"Churchill IV Fascine","cost":-4,"v":123},
@@ -15916,7 +15916,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 medium truck","cost":0},
+                                    {"id":1,"text":"1 medium truck"},
                                     {"id":2,"text":"2 medium trucks","cost":4},
                                     {"id":3,"text":"3 medium trucks","cost":8},
                                     {"id":4,"text":"4 medium trucks","cost":12}
@@ -15925,7 +15925,7 @@ var forces = [
                             {
                                 "name":"Armoured carriers",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Replace 1 truck","cost":6} // greg need armoured carrier code
                                 ]
                             }
@@ -15942,7 +15942,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"4 men with a tent","cost":0}
+                                {"id":1,"text":"4 men with a tent"}
                             ]
                             }
                         ]
@@ -15956,7 +15956,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men","cost":0}
+                                {"id":1,"text":"2 men"}
                             ]
                             }
                         ]
@@ -15971,7 +15971,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":163},
+                                {"id":1,"text":"Jeep Ambulance","v":163},
                                 {"id":2,"text":"Ambulance medium truck","cost":2,"v":91},
                                 {"id":3,"text":"M5 Halftrack Ambulance","cost":6,"v":83}
                             ]
@@ -15997,20 +15997,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"17 pdr AT with 3 crew","cost":0}
+                                    {"id":1,"text":"17 pdr AT with 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"M5 Halftrack tow","cost":8,"v":83},
                                     {"id":3,"text":"Crusader Tractor tow","cost":10,"v":152}
                                 ]
@@ -16026,7 +16026,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Ram Kangaroo","cost":0,"v":147},
+                                    {"id":1,"text":"Ram Kangaroo","v":147},
                                     {"id":2,"text":"Churchill AVRE","cost":39,"br":2,"restricted":true,"v":123},
                                     {"id":3,"text":"Churchill Crocodile","cost":65,"br":2,"restricted":true,"v":124},
                                     {"id":4,"text":"Centaur IV","cost":31,"br":2,"restricted":true,"v":127},
@@ -16045,20 +16045,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"40mm Bofors AA with 3 crew","cost":0}
+                                    {"id":1,"text":"40mm Bofors AA with 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck tow","cost":4,"v":91}
                                 ]
                             }
@@ -16099,7 +16099,7 @@ var forces = [
                             {
                                 "name":"Target Priority",
                                 "choices":[
-                                    {"id":1,"text":"3rd (5+)","cost":0},
+                                    {"id":1,"text":"3rd (5+)"},
                                     {"id":2,"text":"2nd (4+)","cost":5},
                                     {"id":3,"text":"1st (2+)","cost":15}
                                 ]
@@ -16176,11 +16176,11 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"3 men","cost":0},
+                                {"id":1,"text":"3 men"},
                                 {"id":2,"text":"3 men & Jeep","cost":2,"v":163},
                                 {"id":4,"text":"3 men & White Scout Car","cost":10,"v":84},
-                                {"id":5,"text":"Dingo Scout car","cost":0,"v":136},
-                                {"id":6,"text":"Humber Scout car","cost":0,"v":134},
+                                {"id":5,"text":"Dingo Scout car","v":136},
+                                {"id":6,"text":"Humber Scout car","v":134},
                                 {"id":7,"text":"M4A4 Sherman","cost":44,"v":101},
                                 {"id":9,"text":"Churchill VI","cost":44,"v":121}
                             ]
@@ -16198,11 +16198,11 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men & Jeep","cost":0,"v":163},
+                                {"id":1,"text":"2 men & Jeep","v":163},
                                 {"id":2,"text":"2 men & Radio Medium Truck","cost":2,"v":91},
                                 {"id":3,"text":"2 men & M5 Radio Halftrack","cost":8,"v":83},
                                 {"id":4,"text":"2 men & Bren Carrier","cost":4,"v":82},
-                                {"id":5,"text":"Dingo Scout car","cost":0,"v":136}
+                                {"id":5,"text":"Dingo Scout car","v":136}
                             ]
                         }
                     ]
@@ -16217,7 +16217,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"3 men & Radio Medium Truck","cost":0,"v":91},
+                                {"id":1,"text":"3 men & Radio Medium Truck","v":91},
                                 {"id":2,"text":"3 men & M5 Radio Halftrack","cost":2,"v":83}
                             ]
                         }
@@ -16264,7 +16264,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -16272,7 +16272,7 @@ var forces = [
                                     {
                                         "name":"PIAT",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"PIAT","cost":5,"w":91}
                                         ]
                                     }
@@ -16281,7 +16281,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Section",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -16289,7 +16289,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91}
                                         ]
                                     }
@@ -16298,7 +16298,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"Light Mortar Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":60,
                                 "mandatory":true
@@ -16320,20 +16320,20 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Vickers HMG","cost":0}
+                                            {"id":1,"text":"Vickers HMG"}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
@@ -16350,7 +16350,7 @@ var forces = [
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
@@ -16367,14 +16367,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
@@ -16390,20 +16390,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"6 pdr","cost":0,"w":59}
+                                            {"id":1,"text":"6 pdr","w":59}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Loyd Carrier tow","cost":5,"v":0}
                                         ]
                                     }
@@ -16421,7 +16421,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91}
                                 ]
                             }
@@ -16439,14 +16439,14 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Rifle Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "options":[
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"Bren Carrier","cost":0,"v":82}
+                                            {"id":1,"text":"Bren Carrier","v":82}
                                         ]
                                     }
                                 ]
@@ -16454,7 +16454,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Carrier Light Mortar Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":60,
                                 "mandatory":true,
@@ -16462,7 +16462,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"Bren Carrier","cost":0,"v":82}
+                                            {"id":1,"text":"Bren Carrier","v":82}
                                         ]
                                     }
                                 ]
@@ -16470,7 +16470,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"Carrier PIAT Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":91,
                                 "mandatory":true,
@@ -16478,7 +16478,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"Bren Carrier","cost":0,"v":82}
+                                            {"id":1,"text":"Bren Carrier","v":82}
                                         ]
                                     }
                                 ]
@@ -16505,7 +16505,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[
-                                    {"id":1,"text":"2 M4A4s, 1 Firefly","cost":0,"v":"[101,102]","vc":"[2,1]"},
+                                    {"id":1,"text":"2 M4A4s, 1 Firefly","v":"[101,102]","vc":"[2,1]"},
                                     {"id":2,"text":"1 M4, 1 M4A4, 1 Firefly","cost":2,"v":"[100,101,102]","vc":"[1,1,1]"},
                                     {"id":3,"text":"2 M4s, 1 Firefly","cost":4,"v":"[100,102]","vc":"[2,1]"}
                                 ] 
@@ -16524,10 +16524,10 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[
-                                    {"id":1,"text":"3 Churchill VIs","cost":0,"v":121},
-                                    {"id":2,"text":"2 Churchill VIs, 1 Churchill III/IV","cost":0,"v":"[121,88]","vc":"[2,1]"},
-                                    {"id":3,"text":"1 Churchill VI, 2 Churchill III/IVs","cost":0,"v":"[121,88]","vc":"[1,2]"},
-                                    {"id":4,"text":"3 Churchill III/IVs","cost":0,"v":88}
+                                    {"id":1,"text":"3 Churchill VIs","v":121},
+                                    {"id":2,"text":"2 Churchill VIs, 1 Churchill III/IV","v":"[121,88]","vc":"[2,1]"},
+                                    {"id":3,"text":"1 Churchill VI, 2 Churchill III/IVs","v":"[121,88]","vc":"[1,2]"},
+                                    {"id":4,"text":"3 Churchill III/IVs","v":88}
                                 ] 
                             }
                         ] 
@@ -16541,7 +16541,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M10 Wolverine","cost":0,"v":132},
+                                    {"id":1,"text":"M10 Wolverine","v":132},
                                     {"id":2,"text":"M10 Achilles","cost":20,"v":133}
                                 ] 
                             } 
@@ -16556,10 +16556,10 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M4A4 Sherman","cost":0,"v":101}, 
+                                    {"id":1,"text":"M4A4 Sherman","v":101}, 
                                     {"id":2,"text":"M4 Sherman","cost":2,"v":100}, 
-                                    {"id":3,"text":"Churchill III/IV","cost":0,"v":88},
-                                    {"id":4,"text":"Churchill V","cost":0,"v":120}
+                                    {"id":3,"text":"Churchill III/IV","v":88},
+                                    {"id":4,"text":"Churchill V","v":120}
                                 ] 
                             } 
                         ] 
@@ -16581,7 +16581,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":163}
+                                    {"id":1,"text":"Jeep","v":163}
                                 ]
                             }
                         ]
@@ -16596,13 +16596,13 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Two 25 pdr guns","cost":0}
+                                    {"id":1,"text":"Two 25 pdr guns"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"One 3-man loader team","cost":10},
                                     {"id":2,"text":"Two 3-man loader teams","cost":20}
                                 ]
@@ -16610,7 +16610,7 @@ var forces = [
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Morris Quad","cost":4,"v":182},
                                     {"id":3,"text":"2 Morris Quads","cost":8,"v":182}
                                 ]
@@ -16627,13 +16627,13 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Two 4.5\" guns","cost":0}
+                                    {"id":1,"text":"Two 4.5\" guns"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"One 3-man loader team","cost":10},
                                     {"id":2,"text":"Two 3-man loader teams","cost":20}
                                 ]
@@ -16641,7 +16641,7 @@ var forces = [
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Matador Heavy Truck","cost":6,"v":181},
                                     {"id":3,"text":"2 Matador Heavy Trucks","cost":12,"v":181}
                                 ]
@@ -16658,7 +16658,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Auster III","cost":0}
+                                    {"id":1,"text":"1 Auster III"}
                                 ]
                             }
                         ]
@@ -16673,20 +16673,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"4.2\" mortar & 3 crew","cost":0}
+                                    {"id":1,"text":"4.2\" mortar & 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mount",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                 ]
                             }
@@ -16701,7 +16701,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 3\" mortars","cost":0,"w":61},
+                                    {"id":1,"text":"2 3\" mortars","w":61},
                                     {"id":2,"text":"2 4.2\" mortars","cost":18,"w":62}
                                 ]
                             }
@@ -16716,7 +16716,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 25 pdr","cost":0,'w':73},
+                                    {"id":1,"text":"2 25 pdr",'w':73},
                                     {"id":2,"text":"2 4.5\"","cost":20,'w':77},
                                     {"id":3,"text":"2 5.5\"","cost":40,'w':80},
                                     {"id":4,"text":"2 155mmL45","cost":50,'w':84}
@@ -16849,7 +16849,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 sniper","cost":0},
+                                    {"id":1,"text":"1 sniper"},
                                     {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                                 ]
                             }
@@ -16864,7 +16864,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M3 White Scout Car","cost":0,"v":84},
+                                    {"id":1,"text":"M3 White Scout Car","v":84},
                                     {"id":2,"text":"Humber Scout Car","cost":-12,"v":134},
                                     {"id":3,"text":"Humber IV Armoured Car","cost":10,"v":135},
                                     {"id":4,"text":"Daimler","cost":8,"v":137},
@@ -16893,7 +16893,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Bren Carrier","cost":0,"v":82}
+                                    {"id":1,"text":"Bren Carrier","v":82}
                                 ]
                             }
                         ]
@@ -16909,7 +16909,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 men & Jeep","cost":0,"v":163},
+                                    {"id":1,"text":"3 men & Jeep","v":163},
                                     {"id":2,"text":"Dingo","cost":4,"v":136},
                                     {"id":3,"text":"Humber Scout Car","cost":4,"v":134},
                                     {"id":4,"text":"M3 White Scout Car","cost":10,"v":84}
@@ -16934,7 +16934,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Heavy Truck & 6 men","cost":0,"v":61}
+                                    {"id":1,"text":"Heavy Truck & 6 men","v":61}
                                 ]
                             }
                         ]
@@ -16951,7 +16951,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                    {"id":1,"text":"2 Heavy Trucks & 12 men"},
                                     {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
                                     {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
                                     {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
@@ -16969,7 +16969,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91},
                                     {"id":3,"text":"M5 Halftrack","cost":8,"v":83}
                                 ]
@@ -16977,21 +16977,21 @@ var forces = [
                             {
                                 "name":"Flame-thrower",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Flame-thrower","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mine sweeper",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Mine sweeper","cost":5}
                                 ]
                             },
                             {
                                 "name":"Demo Charges",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Demo charge","cost":5},
                                     {"id":3,"text":"2 Demo charges","cost":10},
                                     {"id":4,"text":"3 Demo charges","cost":15}
@@ -17008,7 +17008,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M4 Sherman ARV","cost":0,"v":109},
+                                    {"id":1,"text":"M4 Sherman ARV","v":109},
                                     {"id":2,"text":"Churchill ARV","cost":2,"v":126}, //greg check cost
                                     {"id":3,"text":"Scammel Pioneer","cost":-6,"v":183},
                                     {"id":4,"text":"M1 Wrecker Heavy Truck","cost":-6,"v":172}
@@ -17025,8 +17025,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M4 Sherman Dozer","cost":0,"v":108},
-                                    {"id":2,"text":"M4 Sherman Crab","cost":0,"v":107},
+                                    {"id":1,"text":"M4 Sherman Dozer","v":108},
+                                    {"id":2,"text":"M4 Sherman Crab","v":107},
                                     {"id":3,"text":"Armoured Bulldozer","cost":-42,"br":-2,"v":160},
                                     {"id":4,"text":"Churchill Ark","cost":-32,"v":125,"br":-1},
                                     {"id":5,"text":"Churchill IV Fascine","cost":-4,"v":123},
@@ -17055,7 +17055,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 medium truck","cost":0},
+                                    {"id":1,"text":"1 medium truck"},
                                     {"id":2,"text":"2 medium trucks","cost":4},
                                     {"id":3,"text":"3 medium trucks","cost":8},
                                     {"id":4,"text":"4 medium trucks","cost":12}
@@ -17074,7 +17074,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"4 men with a tent","cost":0}
+                                {"id":1,"text":"4 men with a tent"}
                             ]
                             }
                         ]
@@ -17088,7 +17088,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men","cost":0}
+                                {"id":1,"text":"2 men"}
                             ]
                             }
                         ]
@@ -17103,7 +17103,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":163},
+                                {"id":1,"text":"Jeep Ambulance","v":163},
                                 {"id":2,"text":"Ambulance medium truck","cost":2,"v":91},
                                 {"id":3,"text":"M5 Halftrack Ambulance","cost":6,"v":83}
                             ]
@@ -17129,20 +17129,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"17 pdr AT with 3 crew","cost":0}
+                                    {"id":1,"text":"17 pdr AT with 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck tow","cost":4,"v":91},
                                     {"id":3,"text":"M5 Halftrack tow","cost":8,"v":83},
                                     {"id":4,"text":"Crusader Tractor tow","cost":10,"v":152}
@@ -17160,20 +17160,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"40mm Bofors AA with 3 crew","cost":0}
+                                    {"id":1,"text":"40mm Bofors AA with 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck tow","cost":4,"v":91}
                                 ]
                             }
@@ -17189,20 +17189,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"20mm Polsten AA with 3 crew","cost":0}
+                                    {"id":1,"text":"20mm Polsten AA with 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Jeep tow","cost":2,"v":163}
                                 ]
                             }
@@ -17217,7 +17217,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Ram Kangaroo","cost":0,"v":147},
+                                    {"id":1,"text":"Ram Kangaroo","v":147},
                                     {"id":2,"text":"Churchill V","cost":29,"br":2,"restricted":true,"v":120},
                                     {"id":3,"text":"Churchill VII","cost":55,"br":2,"restricted":true,"v":122},
                                     {"id":4,"text":"Churchill VIII","cost":51,"br":2,"restricted":true,"v":149},
@@ -17261,7 +17261,7 @@ var forces = [
                         {
                             "name":"Target Priority",
                             "choices":[
-                                {"id":1,"text":"3rd (5+)","cost":0},
+                                {"id":1,"text":"3rd (5+)"},
                                 {"id":2,"text":"2nd (4+)","cost":5},
                                 {"id":3,"text":"1st (2+)","cost":15}
                             ]
@@ -17338,7 +17338,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"3 men","cost":0},
+                                {"id":1,"text":"3 men"},
                                 {"id":2,"text":"3 men & Jeep","cost":2,"v":163},
                                 {"id":3,"text":"White Scout car","cost":10,"v":84},
                                 {"id":4,"text":"3 men & M20 Utility Car","cost":10,"v":143},
@@ -17349,7 +17349,7 @@ var forces = [
                         {
                             "name":"Radio",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Radio Comms Network","cost":20}
                             ]
                         }
@@ -17366,7 +17366,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men & Jeep","cost":0,"v":163},
+                                {"id":1,"text":"2 men & Jeep","v":163},
                                 {"id":2,"text":"2 men & Radio Medium Truck","cost":2,"v":91},
                                 {"id":3,"text":"2 men & M3 Radio Halftrack","cost":8,"v":148},
                                 {"id":4,"text":"M4 Sherman","cost":44,"v":100}
@@ -17384,7 +17384,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Radio Medium Truck","cost":0,"v":91},
+                                {"id":1,"text":"Radio Medium Truck","v":91},
                                 {"id":2,"text":"M3 Radio Half-Track","cost":6,"v":148}
                             ]
                         }
@@ -17427,7 +17427,7 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Irregular","cost":0},
+                                    {"id":1,"text":"Irregular"},
                                     {"id":2,"text":"Regular","cost":39, "br":6}
                                 ]
                             }
@@ -17438,7 +17438,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -17447,13 +17447,13 @@ var forces = [
                                     {
                                         "name":"Bazooka",
                                         "choices":[
-                                            {"id":1,"text":"Bazooka","cost":0}
+                                            {"id":1,"text":"Bazooka"}
                                         ]
                                     },
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"M3 Half-Track","cost":8,"br":1,"v":148}
                                         ]
                                     }
@@ -17462,7 +17462,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Squad",
-                                "cost":0,
+                                
                                 "count":2,
                                 "br":0,
                                 "mandatory":true,
@@ -17470,13 +17470,13 @@ var forces = [
                                     {
                                         "name":"Bazooka",
                                         "choices":[
-                                            {"id":1,"text":"Bazooka","cost":0,"w":92}
+                                            {"id":1,"text":"Bazooka","w":92}
                                         ]
                                     },
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"M3 Half-Track","cost":8,"br":1,"v":148}
                                         ]
                                     }
@@ -17485,7 +17485,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"MMG Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "count":2,
@@ -17493,14 +17493,14 @@ var forces = [
                                     {
                                         "name":"Loader Team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"M3 Half-Track","cost":8,"br":1,"v":148}
                                         ]
                                     }
@@ -17509,7 +17509,7 @@ var forces = [
                             {
                                 "id":4,
                                 "name":"Light Mortar Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":60,
                                 "mandatory":true,
@@ -17517,7 +17517,7 @@ var forces = [
                                     {
                                         "name":"Loader Team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -17540,7 +17540,7 @@ var forces = [
                                     {
                                         "name":"Loader Team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -17557,14 +17557,14 @@ var forces = [
                                     {
                                         "name":"Loader Team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"M3 Half-Track mount","cost":8,"v":148}
                                         ]
                                     }
@@ -17580,20 +17580,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"57mmL46","cost":0,"w":59}
+                                            {"id":1,"text":"57mmL46","w":59}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"M3 Half-Track tow","cost":8,"v":148}
                                         ]
                                     }
@@ -17609,7 +17609,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"1 M8 HMC","cost":0,"v":156}
+                                            {"id":1,"text":"1 M8 HMC","v":156}
                                         ]
                                     }
                                 ]
@@ -17626,20 +17626,20 @@ var forces = [
                             {
                                 "name":"Bazooka",
                                 "choices":[
-                                    {"id":1,"text":"Bazooka","cost":0,"w":92}
+                                    {"id":1,"text":"Bazooka","w":92}
                                 ]
                             },
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"M3 Half-Track","cost":8,"br":1,"v":148}
                                 ]
                             },
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Irregular","cost":0},
+                                    {"id":1,"text":"Irregular"},
                                     {"id":2,"text":"Regular","cost":13, "br":1}
                                 ]
                             }
@@ -17665,7 +17665,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M4s","cost":0,"vc":"[3,0]"},
+                                    {"id":1,"text":"3 M4s","vc":"[3,0]"},
                                     {"id":2,"text":"4 M4s","cost":50,"br":3,"vc":"[4,0]"},
                                     {"id":3,"text":"5 M4s","cost":100,"br":6,"vc":"[5,0]"} 
                                 ] 
@@ -17673,7 +17673,7 @@ var forces = [
                             { 
                                 "name":"76mmL53 Guns", 
                                 "choices":[
-                                    {"id":1,"text":"No 76mmL53 Guns","cost":0,"np":true},
+                                    {"id":1,"text":"No 76mmL53 Guns","np":true},
                                     {"id":2,"text":"1 76mmL53 Gun","cost":4,"vcd":"[-1,1]"},
                                     {"id":3,"text":"2 76mmL53 Guns","cost":8,"vcd":"[-2,2]"},
                                     {"id":4,"text":"3 76mmL53 Guns","cost":12,"vcd":"[-3,3]"},
@@ -17696,7 +17696,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M5 Stuarts","cost":0}, 
+                                    {"id":1,"text":"3 M5 Stuarts"}, 
                                     {"id":2,"text":"4 M5 Stuarts","cost":30,"br":2,"vc":4}, 
                                     {"id":3,"text":"5 M5 Stuarts","cost":60,"br":4,"vc":5}
                                 ] 
@@ -17712,7 +17712,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M10 Wolverine","cost":0,"v":132}
+                                    {"id":1,"text":"M10 Wolverine","v":132}
                                 ] 
                             } 
                         ] 
@@ -17726,7 +17726,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M4 Sherman","cost":0,"v":100}, 
+                                    {"id":1,"text":"M4 Sherman","v":100}, 
                                     {"id":2,"text":"M4 Sherman (76mmL53)","cost":4,"v":104}, 
                                     {"id":3,"text":"M5 Stuart","cost":-20,"v":89} 
                                 ] 
@@ -17744,7 +17744,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M10 Wolverines","cost":0,"v":132},
+                                    {"id":1,"text":"3 M10 Wolverines","v":132},
                                     {"id":2,"text":"4 M10 Wolverines","cost":34,"br":2,"v":132}
                                 ] 
                             } 
@@ -17768,7 +17768,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":163}
+                                    {"id":1,"text":"Jeep","v":163}
                                 ]
                             }
                         ]
@@ -17782,7 +17782,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M4 Sherman","cost":0,"v":100}
+                                    {"id":1,"text":"M4 Sherman","v":100}
                                 ]
                             }
                         ]
@@ -17798,7 +17798,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 M7 Priests","cost":0}
+                                    {"id":1,"text":"3 M7 Priests"}
                                 ]
                             }
                         ]
@@ -17814,7 +17814,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 M4 (or M21) half-track mortar carriers","cost":0}
+                                    {"id":1,"text":"3 M4 (or M21) half-track mortar carriers"}
                                 ]
                             }
                         ]
@@ -17828,7 +17828,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M7 Priest","cost":0, "v":155}
+                                    {"id":1,"text":"M7 Priest", "v":155}
                                 ]
                             }
                         ]
@@ -17843,7 +17843,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M12","cost":0,"v":158}
+                                    {"id":1,"text":"M12","v":158}
                                 ]
                             }
                         ]
@@ -17859,7 +17859,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 L4 Piper Cub","cost":0}
+                                    {"id":1,"text":"1 L4 Piper Cub"}
                                 ]
                             }
                         ]
@@ -17874,14 +17874,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mount",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Beep","cost":4,"v":164},
                                     {"id":3,"text":"Medium Truck","cost":4,"v":91}
                                 ]
@@ -17897,7 +17897,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 81mm mortars","cost":0,"w":61},
+                                    {"id":1,"text":"2 81mm mortars","w":61},
                                     {"id":2,"text":"2 4.2\" mortars","cost":18,"w":62}
                                 ]
                             }
@@ -17912,7 +17912,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 105mmL22 howitzers","cost":0,"w":76},
+                                    {"id":1,"text":"2 105mmL22 howitzers","w":76},
                                     {"id":2,"text":"2 155mmL45 howitzers","cost":50,"w":84}
                                 ]
                             }
@@ -18004,7 +18004,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 sniper","cost":0},
+                                    {"id":1,"text":"1 sniper"},
                                     {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                                 ]
                             }
@@ -18019,7 +18019,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M8 Greyhound","cost":0,"v":142},
+                                    {"id":1,"text":"M8 Greyhound","v":142},
                                     {"id":2,"text":"M20 Utility Car","cost":-8,"v":143},
                                     {"id":3,"text":"M3 White Scout Car","cost":-8,"v":84}
                                 ]
@@ -18038,7 +18038,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 men & Jeep","cost":0},
+                                    {"id":1,"text":"3 men & Jeep"},
                                     {"id":2,"text":"3 men & M20 Utility Car","cost":6,"v":143},
                                     {"id":3,"text":"M8 Greyhound","cost":13,"v":142},
                                     {"id":4,"text":"M5 Stuart","cost":22,"v":116}
@@ -18055,7 +18055,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M5 Stuart","cost":0,"v":89},
+                                    {"id":1,"text":"M5 Stuart","v":89},
                                     {"id":2,"text":"M5 Stuart 'recce'","cost":-22,"v":117}
                                 ] 
                             } 
@@ -18070,20 +18070,20 @@ var forces = [
                             {
                                 "name":"Bazooka",
                                 "choices":[
-                                    {"id":1,"text":"Bazooka","cost":0,"w":92}
+                                    {"id":1,"text":"Bazooka","w":92}
                                 ]
                             },
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"M3 Half-Track","cost":8,"br":1,"v":148}
                                 ]
                             },
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Irregular","cost":0},
+                                    {"id":1,"text":"Irregular"},
                                     {"id":2,"text":"Regular","cost":13, "br":1}
                                 ]
                             }
@@ -18114,7 +18114,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Heavy Truck & 6 men","cost":0}
+                                    {"id":1,"text":"Heavy Truck & 6 men"}
                                 ]
                             }
                         ]
@@ -18131,7 +18131,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                    {"id":1,"text":"2 Heavy Trucks & 12 men"},
                                     {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
                                     {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
                                     {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
@@ -18150,13 +18150,13 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"BAR, Bazooka","cost":0,"w":92}
+                                    {"id":1,"text":"BAR, Bazooka","w":92}
                                 ]
                             },
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91},
                                     {"id":3,"text":"M5 Halftrack","cost":8,"v":83}
                                 ]
@@ -18164,21 +18164,21 @@ var forces = [
                             {
                                 "name":"Flame-thrower",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Flame-thrower","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mine sweeper",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Mine sweeper","cost":5}
                                 ]
                             },
                             {
                                 "name":"Demo Charges",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Demo charge","cost":5},
                                     {"id":3,"text":"2 Demo charges","cost":10},
                                     {"id":4,"text":"3 Demo charges","cost":15}
@@ -18195,7 +18195,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M4 Sherman ARV","cost":0,"v":109},
+                                    {"id":1,"text":"M4 Sherman ARV","v":109},
                                     {"id":2,"text":"M32 ARV","cost":-2,"v":161},
                                     {"id":3,"text":"M1 Wrecker Heavy Truck","cost":-6,"v":172}
                                 ]
@@ -18211,8 +18211,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M4 Sherman Dozer","cost":0,"v":108},
-                                    {"id":2,"text":"M4 Sherman Mineroller","cost":0,"v":107},
+                                    {"id":1,"text":"M4 Sherman Dozer","v":108},
+                                    {"id":2,"text":"M4 Sherman Mineroller","v":107},
                                     {"id":3,"text":"Armoured Bulldozer","cost":-42,"br":-2,"v":160}
                                 ]
                             }
@@ -18237,7 +18237,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Medium Truck","cost":0},
+                                    {"id":1,"text":"1 Medium Truck"},
                                     {"id":2,"text":"2 Medium Trucks","cost":4},
                                     {"id":3,"text":"3 Medium Trucks","cost":8},
                                     {"id":4,"text":"4 Medium Trucks","cost":12},
@@ -18247,7 +18247,7 @@ var forces = [
                             {
                                 "name":"M30 Cargo Carrier",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Replace 1 truck with M30","cost":8,"v":162}
                                 ]
                             }
@@ -18262,7 +18262,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men","cost":0}
+                                {"id":1,"text":"2 men"}
                             ]
                             }
                         ]
@@ -18277,7 +18277,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":163},
+                                {"id":1,"text":"Jeep Ambulance","v":163},
                                 {"id":2,"text":"Ambulance Medium Truck","cost":2,"v":91},
                                 {"id":3,"text":"M3 Halftrack Ambulance","cost":6,"v":83}
                             ]
@@ -18295,7 +18295,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"4 men with a tent","cost":0}
+                                {"id":1,"text":"4 men with a tent"}
                             ]
                             }
                         ]
@@ -18319,7 +18319,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 M4 Sherman (105mm)","cost":0,"v":105},
+                                    {"id":1,"text":"1 M4 Sherman (105mm)","v":105},
                                     {"id":2,"text":"1 M8 HMC","cost":-20,"br":-1,"v":156}
                                 ]
                             }
@@ -18335,7 +18335,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M16 Half-Track","cost":0,"v":144},
+                                    {"id":1,"text":"M16 Half-Track","v":144},
                                     {"id":2,"text":"M15 Half-Track","cost":-4,"v":145}
                                 ]
                             }
@@ -18358,7 +18358,7 @@ var forces = [
                         {
                             "name":"Target Priority",
                             "choices":[
-                                {"id":1,"text":"3rd (5+)","cost":0},
+                                {"id":1,"text":"3rd (5+)"},
                                 {"id":2,"text":"2nd (4+)","cost":5},
                                 {"id":3,"text":"1st (2+)","cost":15}
                             ]
@@ -18442,7 +18442,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"3 men","cost":0},
+                                {"id":1,"text":"3 men"},
                                 {"id":2,"text":"3 men & Jeep","cost":2,"v":163},
                                 {"id":3,"text":"White Scout car","cost":10,"v":84},
                                 {"id":4,"text":"3 men & M20 Utility Car","cost":10,"v":143}
@@ -18451,7 +18451,7 @@ var forces = [
                         {
                             "name":"Radio",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Radio Comms Network","cost":20}
                             ]
                         }
@@ -18474,7 +18474,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men & Jeep","cost":0,"v":163},
+                                {"id":1,"text":"2 men & Jeep","v":163},
                                 {"id":2,"text":"2 men & Radio Medium Truck","cost":2,"v":91},
                                 {"id":3,"text":"2 men & M3 Radio Halftrack","cost":8,"v":148}
                             ]
@@ -18491,7 +18491,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Radio Jeep","cost":0,"v":163},
+                                {"id":1,"text":"Radio Jeep","v":163},
                                 {"id":2,"text":"Radio Medium Truck","cost":2,"v":91}
                             ]
                         }
@@ -18529,7 +18529,7 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Irregular","cost":0},
+                                    {"id":1,"text":"Irregular"},
                                     {"id":2,"text":"Regular","cost":21, "br":6}
                                 ]
                             }
@@ -18540,7 +18540,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -18548,7 +18548,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Jeep","cost":2,"v":163}
                                         ]
                                     }
@@ -18557,7 +18557,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -18565,7 +18565,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium Truck","cost":4,"v":91}
                                         ]
                                     }
@@ -18574,7 +18574,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"BAR Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "count":3
@@ -18596,14 +18596,14 @@ var forces = [
                                     {
                                         "name":"Loader Team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Mount in a Jeep","cost":2,"v":163}
                                         ]
                                     }
@@ -18619,14 +18619,14 @@ var forces = [
                                     {
                                         "name":"Loader Team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Mount in a Jeep","cost":2,"v":163}
                                         ]
                                     }
@@ -18651,7 +18651,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -18668,14 +18668,14 @@ var forces = [
                                     {
                                         "name":"Loader Team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"M3 Half-Track mount","cost":8,"v":148}
                                         ]
                                     }
@@ -18691,20 +18691,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"57mmL46","cost":0,"w":59}
+                                            {"id":1,"text":"57mmL46","w":59}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Jeep tow","cost":2,"v":163},
                                             {"id":3,"text":"Beep tow","cost":4,"v":164}
                                         ]
@@ -18721,14 +18721,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Beep tow","cost":4,"v":164},
                                             {"id":3,"text":"Medium Truck tow","cost":4,"v":91},
                                             {"id":4,"text":"M3 Halftrack tow","cost":8,"v":148}
@@ -18748,7 +18748,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck","cost":4,"v":91}
                                 ]
                             }
@@ -18774,7 +18774,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M4s","cost":0,"vc":"[3,0]"},
+                                    {"id":1,"text":"3 M4s","vc":"[3,0]"},
                                     {"id":2,"text":"4 M4s","cost":50,"br":3,"vc":"[4,0]"},
                                     {"id":3,"text":"5 M4s","cost":100,"br":6,"vc":"[5,0]"} 
                                 ] 
@@ -18782,7 +18782,7 @@ var forces = [
                             { 
                                 "name":"76mmL53 Guns", 
                                 "choices":[
-                                    {"id":1,"text":"No 76mmL53 Guns","cost":0,"np":true},
+                                    {"id":1,"text":"No 76mmL53 Guns","np":true},
                                     {"id":2,"text":"1 76mmL53 Gun","cost":4,"vcd":"[-1,1]"},
                                     {"id":3,"text":"2 76mmL53 Guns","cost":8,"vcd":"[-2,2]"},
                                     {"id":4,"text":"3 76mmL53 Guns","cost":12,"vcd":"[-3,3]"},
@@ -18805,7 +18805,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M5 Stuarts","cost":0}, 
+                                    {"id":1,"text":"3 M5 Stuarts"}, 
                                     {"id":2,"text":"4 M5 Stuarts","cost":30,"br":2,"vc":4}, 
                                     {"id":3,"text":"5 M5 Stuarts","cost":60,"br":4,"vc":5}
                                 ] 
@@ -18821,7 +18821,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M10 Wolverine","cost":0,"v":132}
+                                    {"id":1,"text":"M10 Wolverine","v":132}
                                 ] 
                             } 
                         ] 
@@ -18835,7 +18835,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M4 Sherman","cost":0,"v":100}, 
+                                    {"id":1,"text":"M4 Sherman","v":100}, 
                                     {"id":2,"text":"M4 Sherman (76mmL53)","cost":4,"v":104}, 
                                     {"id":3,"text":"M5 Stuart","cost":-20,"v":89} 
                                 ] 
@@ -18853,7 +18853,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M10 Wolverines","cost":0,"v":132},
+                                    {"id":1,"text":"3 M10 Wolverines","v":132},
                                     {"id":2,"text":"4 M10 Wolverines","cost":34,"br":2,"v":132}
                                 ] 
                             } 
@@ -18877,7 +18877,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":163}
+                                    {"id":1,"text":"Jeep","v":163}
                                 ]
                             }
                         ]
@@ -18892,14 +18892,14 @@ var forces = [
                             {
                                 "name":"Loader Team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91},
                                     {"id":3,"text":"M4 HS Tractor tow","cost":10,"v":170}
                                 ]
@@ -18916,14 +18916,14 @@ var forces = [
                             {
                                 "name":"Loader Team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Heavy truck","cost":6,"v":61},
                                     {"id":3,"text":"M35 tow","cost":8,"v":153},
                                     {"id":4,"text":"M5 HS Tractor tow","cost":12,"v":171}
@@ -18940,7 +18940,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 105mmL22 howitzers","cost":0,"w":76},
+                                    {"id":1,"text":"2 105mmL22 howitzers","w":76},
                                     {"id":2,"text":"2 155mmL45 howitzers","cost":50,"w":84}
                                 ]
                             }
@@ -18957,7 +18957,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 L4 Piper Cub","cost":0}
+                                    {"id":1,"text":"1 L4 Piper Cub"}
                                 ]
                             }
                         ]
@@ -18972,14 +18972,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mount",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Beep","cost":4,"v":164},
                                     {"id":3,"text":"Medium Truck","cost":4,"v":91}
                                 ]
@@ -18995,7 +18995,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 81mm mortars","cost":0,"w":61},
+                                    {"id":1,"text":"2 81mm mortars","w":61},
                                     {"id":2,"text":"2 4.2\" mortars","cost":18,"w":62}
                                 ]
                             }
@@ -19011,20 +19011,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 M2 105mmL22 guns","cost":0}
+                                    {"id":1,"text":"2 M2 105mmL22 guns"}
                                 ]
                             },
                             {
                                 "name":"Loader Team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91},
                                     {"id":3,"text":"M4 HS Tractor tow","cost":10,"v":170}
                                 ]
@@ -19159,7 +19159,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 sniper","cost":0},
+                                    {"id":1,"text":"1 sniper"},
                                     {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                                 ]
                             }
@@ -19184,7 +19184,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 men & Jeep","cost":0},
+                                    {"id":1,"text":"3 men & Jeep"},
                                     {"id":2,"text":"3 men & M20 Utility Car","cost":6,"v":143},
                                     {"id":3,"text":"M8 Greyhound","cost":14,"v":142}
                                 ]
@@ -19206,7 +19206,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M8 Greyhound","cost":0,"v":142},
+                                    {"id":1,"text":"M8 Greyhound","v":142},
                                     {"id":2,"text":"M20 Utility Car","cost":-8,"v":143},
                                     {"id":3,"text":"M3 White Scout Car","cost":-8,"v":84}
                                 ]
@@ -19231,7 +19231,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Heavy Truck & 6 men","cost":0}
+                                    {"id":1,"text":"Heavy Truck & 6 men"}
                                 ]
                             }
                         ]
@@ -19248,7 +19248,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                    {"id":1,"text":"2 Heavy Trucks & 12 men"},
                                     {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
                                     {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
                                     {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
@@ -19266,13 +19266,13 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"BAR, Bazooka","cost":0,"w":92}
+                                    {"id":1,"text":"BAR, Bazooka","w":92}
                                 ]
                             },
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91},
                                     {"id":3,"text":"M3 Halftrack","cost":8,"v":83}
                                 ]
@@ -19280,21 +19280,21 @@ var forces = [
                             {
                                 "name":"Flame-thrower",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Flame-thrower","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mine sweeper",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Mine sweeper","cost":5}
                                 ]
                             },
                             {
                                 "name":"Demo Charges",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Demo charge","cost":5},
                                     {"id":3,"text":"2 Demo charges","cost":10},
                                     {"id":4,"text":"3 Demo charges","cost":15}
@@ -19311,7 +19311,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M4 Sherman ARV","cost":0,"v":109},
+                                    {"id":1,"text":"M4 Sherman ARV","v":109},
                                     {"id":2,"text":"M32 ARV","cost":-2,"v":161},
                                     {"id":3,"text":"M1 Wrecker Heavy Truck","cost":-6,"v":172}
                                 ]
@@ -19327,8 +19327,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M4 Sherman Dozer","cost":0,"v":108},
-                                    {"id":2,"text":"M4 Sherman Mineroller","cost":0,"v":107},
+                                    {"id":1,"text":"M4 Sherman Dozer","v":108},
+                                    {"id":2,"text":"M4 Sherman Mineroller","v":107},
                                     {"id":3,"text":"Armoured Bulldozer","cost":-42,"br":-2,"v":160}
                                 ]
                             }
@@ -19353,7 +19353,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Medium Truck","cost":0},
+                                    {"id":1,"text":"1 Medium Truck"},
                                     {"id":2,"text":"2 Medium Trucks","cost":4},
                                     {"id":3,"text":"3 Medium Trucks","cost":8},
                                     {"id":4,"text":"4 Medium Trucks","cost":12},
@@ -19371,7 +19371,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men","cost":0}
+                                {"id":1,"text":"2 men"}
                             ]
                             }
                         ]
@@ -19386,7 +19386,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":163},
+                                {"id":1,"text":"Jeep Ambulance","v":163},
                                 {"id":2,"text":"Ambulance Medium Truck","cost":2,"v":91},
                                 {"id":3,"text":"M3 Halftrack Ambulance","cost":6,"v":83}
                             ]
@@ -19404,7 +19404,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"4 men with a tent","cost":0}
+                                {"id":1,"text":"4 men with a tent"}
                             ]
                             }
                         ]
@@ -19427,20 +19427,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3\" (76mmL53) AT gun","cost":0,"w":69}
+                                    {"id":1,"text":"3\" (76mmL53) AT gun","w":69}
                                 ]
                             },
                             {
                                 "name":"Loader Team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"M3 Half-Track tow","cost":8,"v":148}
                                 ]
                             }
@@ -19455,20 +19455,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"40mm Bofors AA gun","cost":0,"w":63}
+                                    {"id":1,"text":"40mm Bofors AA gun","w":63}
                                 ]
                             },
                             {
                                 "name":"Loader Team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91}
                                 ]
                             }
@@ -19484,20 +19484,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"90mm AA gun","cost":0,"w":0} //greg this needs sorting via guild forum
+                                    {"id":1,"text":"90mm AA gun","w":0} //greg this needs sorting via guild forum
                                 ]
                             },
                             {
                                 "name":"Loader Team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"M4 HS Tractor tow","cost":10,"v":170}
                                 ]
                             }
@@ -19520,7 +19520,7 @@ var forces = [
                         {
                             "name":"Target Priority",
                             "choices":[
-                                {"id":1,"text":"3rd (5+)","cost":0},
+                                {"id":1,"text":"3rd (5+)"},
                                 {"id":2,"text":"2nd (4+)","cost":5},
                                 {"id":3,"text":"1st (2+)","cost":15}
                             ]
@@ -19604,7 +19604,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"3 men & SdKfz 251/3","cost":0,"v":39},
+                                {"id":1,"text":"3 men & SdKfz 251/3","v":39},
                                 {"id":2,"text":"Panzer IV/H","cost":28,"v":9},
                                 {"id":3,"text":"Panther A or G","cost":62,"v":187}
                             ]
@@ -19633,10 +19633,10 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Medium Radio Truck","cost":0,"v":91},
+                                {"id":1,"text":"Medium Radio Truck","v":91},
                                 {"id":2,"text":"SdKfz 251/3 Radio H.T.","cost":6,"v":39},
                                 {"id":3,"text":"SdKfz 250/3 Radio H.T.","cost":6,"v":44},
-                                {"id":4,"text":"SdKfz 263","cost":0,"v":198},
+                                {"id":4,"text":"SdKfz 263","v":198},
                                 {"id":5,"text":"SdKfz 223","cost":6,"v":33},
                                 {"id":6,"text":"Panzer IV H","cost":50, "br":2,"v":9},
                                 {"id":7,"text":"Panther A or G","cost":77, "br":2,"v":187}
@@ -19671,7 +19671,7 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Regular","cost":0},
+                                    {"id":1,"text":"Regular"},
                                     {"id":2,"text":"Veteran","cost":30, "br":4}
                                 ]
                             }
@@ -19681,7 +19681,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -19689,7 +19689,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0, "np":true},
+                                            {"id":1,"text":"None", "np":true},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91},
                                             {"id":3,"text":"Heavy Car","cost":4,"v":56}
                                         ]
@@ -19697,7 +19697,7 @@ var forces = [
                                     {
                                         "name":"Panzerfausts",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107},
                                             {"id":3,"text":"2 Panzerfausts","cost":10,"w":107}
                                         ]
@@ -19707,7 +19707,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Panzer Grenadier Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -19715,14 +19715,14 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91}
                                         ]
                                     },
                                     {
                                         "name":"MG",
                                         "choices":[
-                                            {"id":1,"text":"Bipod MG34","cost":0},
+                                            {"id":1,"text":"Bipod MG34"},
                                             {"id":2,"text":"Bipod MG42","cost":4},
                                             {"id":3,"text":"2 Bipod MG34s","cost":10},
                                             {"id":4,"text":"Bipod MG34, Bipod MG42","cost":14},
@@ -19732,7 +19732,7 @@ var forces = [
                                     {
                                         "name":"Panzerfausts",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107},
                                             {"id":3,"text":"2 Panzerfausts","cost":10,"w":107}
                                         ]
@@ -19758,7 +19758,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -19774,14 +19774,14 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Tripod MG34","cost":0},
+                                            {"id":1,"text":"Tripod MG34"},
                                             {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -19797,7 +19797,7 @@ var forces = [
                                     {
                                         "name":"Weapon",
                                         "choices":[
-                                            {"id":1,"text":"Panzerschreck","cost":0,"w":108}
+                                            {"id":1,"text":"Panzerschreck","w":108}
                                         ]
                                     }
                                 ]
@@ -19813,7 +19813,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -19829,21 +19829,21 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"50mm PaK38","cost":0,"w":9},
+                                            {"id":1,"text":"50mm PaK38","w":9},
                                             {"id":2,"text":"75mm PaK40","cost":14,"w":14}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91},
                                             {"id":3,"text":"Opel Maultier","cost":8,"v":59},
                                             {"id":4,"text":"SdKfz 6 half track","cost":8,"v":64}
@@ -19863,14 +19863,14 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91}
                                 ]
                             },
                             {
                                 "name":"MG",
                                 "choices":[
-                                    {"id":1,"text":"Bipod MG34","cost":0},
+                                    {"id":1,"text":"Bipod MG34"},
                                     {"id":2,"text":"Bipod MG42","cost":4},
                                     {"id":3,"text":"2 Bipod MG34s","cost":10},
                                     {"id":4,"text":"Bipod MG34, Bipod MG42","cost":14},
@@ -19880,7 +19880,7 @@ var forces = [
                             {
                                 "name":"Panzerfausts",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Panzerfaust","cost":5,"w":107},
                                     {"id":3,"text":"2 Panzerfausts","cost":10,"w":107}
                                 ]
@@ -19899,7 +19899,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -19907,13 +19907,13 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"SdKfz 251/10","cost":0,"v":41}
+                                            {"id":1,"text":"SdKfz 251/10","v":41}
                                         ]
                                     },
                                     {
                                         "name":"Panzerfausts",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107},
                                             {"id":3,"text":"2 Panzerfausts","cost":10,"w":107}
                                         ]
@@ -19923,7 +19923,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Panzer Grenadier Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -19931,13 +19931,13 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"SdKfz 251/1","cost":0,"v":37}
+                                            {"id":1,"text":"SdKfz 251/1","v":37}
                                         ]
                                     },
                                     {
                                         "name":"MG",
                                         "choices":[
-                                            {"id":1,"text":"Bipod MG34","cost":0},
+                                            {"id":1,"text":"Bipod MG34"},
                                             {"id":2,"text":"Bipod MG42","cost":4},
                                             {"id":3,"text":"2 Bipod MG34s","cost":10},
                                             {"id":4,"text":"Bipod MG34, Bipod MG42","cost":14},
@@ -19947,7 +19947,7 @@ var forces = [
                                     {
                                         "name":"Panzerfausts",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107},
                                             {"id":3,"text":"2 Panzerfausts","cost":10,"w":107}
                                         ]
@@ -19972,7 +19972,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -19988,14 +19988,14 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Tripod MG34","cost":0},
+                                            {"id":1,"text":"Tripod MG34"},
                                             {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -20011,7 +20011,7 @@ var forces = [
                                     {
                                         "name":"Weapon",
                                         "choices":[
-                                            {"id":1,"text":"Panzerschreck","cost":0,"w":108}
+                                            {"id":1,"text":"Panzerschreck","w":108}
                                         ]
                                     }
                                 ]
@@ -20027,14 +20027,14 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"80mm mortar","cost":0,"w":2},
+                                            {"id":1,"text":"80mm mortar","w":2},
                                             {"id":2,"text":"SdKfz 251/2 (80mm mortar)","cost":6,"v":38}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -20050,21 +20050,21 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"50mm PaK38","cost":0,"w":9},
+                                            {"id":1,"text":"50mm PaK38","w":9},
                                             {"id":2,"text":"75mm PaK40","cost":16,"w":14}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91},
                                             {"id":3,"text":"SdKfz 6 half track","cost":8,"v":64},
                                             {"id":4,"text":"SdKfz 251/1","cost":16,"v":37}
@@ -20082,7 +20082,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"SdkFz 251/9 Halftrack","cost":0,"v":40}
+                                            {"id":1,"text":"SdkFz 251/9 Halftrack","v":40}
                                         ]
                                     }
                                 ]
@@ -20098,14 +20098,14 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"20mm FlaK","cost":0},
+                                            {"id":1,"text":"20mm FlaK"},
                                             {"id":2,"text":"20mm FlaK vierling","cost":14}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                        {"id":1,"text":"None","cost":0},
+                                        {"id":1,"text":"None"},
                                         {"id":2,"text":"Medium Truck","cost":4,"v":91},
                                         {"id":3,"text":"SdKfz 10 half track", "cost":8,"v":62},
                                         {"id":4,"text":"SdKfz 11 half track", "cost":8,"v":63}
@@ -20125,13 +20125,13 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"SdKfz 251/1","cost":0,"v":37}
+                                    {"id":1,"text":"SdKfz 251/1","v":37}
                                 ]
                             },
                             {
                                 "name":"MG",
                                 "choices":[
-                                    {"id":1,"text":"Bipod MG34","cost":0},
+                                    {"id":1,"text":"Bipod MG34"},
                                     {"id":2,"text":"Bipod MG42","cost":4},
                                     {"id":3,"text":"2 Bipod MG34s","cost":10},
                                     {"id":4,"text":"Bipod MG34, Bipod MG42","cost":14},
@@ -20141,7 +20141,7 @@ var forces = [
                             {
                                 "name":"Panzerfausts",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Panzerfaust","cost":5,"w":107},
                                     {"id":3,"text":"2 Panzerfausts","cost":10,"w":107}
                                 ]
@@ -20169,7 +20169,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Panther Gs (or As)","cost":0},
+                                    {"id":1,"text":"3 Panther Gs (or As)"},
                                     {"id":2,"text":"4 Panther Gs (or As)","cost":90,"vc":4},
                                     {"id":3,"text":"5 Panther Gs (or As)","cost":180,"vc":5}
                                 ]
@@ -20189,7 +20189,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Stug III Gs","cost":0}
+                                    {"id":1,"text":"3 Stug III Gs"}
                                 ]
                             }
                         ]
@@ -20204,7 +20204,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Panther A or G","cost":0}
+                                    {"id":1,"text":"1 Panther A or G"}
                                 ]
                             }
                         ]
@@ -20218,7 +20218,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"StuG III G","cost":0,"v":18},
+                                    {"id":1,"text":"StuG III G","v":18},
                                     {"id":2,"text":"StuG IV","cost":7,"v":189}
                                 ]
                             }
@@ -20237,7 +20237,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 Panzer IV Hs","cost":0},
+                                    {"id":1,"text":"3 Panzer IV Hs"},
                                     {"id":2,"text":"4 Panzer IV Hs","cost":56,"vc":4},
                                     {"id":3,"text":"5 Panzer IV Hs","cost":112,"vc":5}
                                 ]
@@ -20253,7 +20253,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Panzer IV G","cost":0,"v":8},
+                                    {"id":1,"text":"Panzer IV G","v":8},
                                     {"id":2,"text":"Panzer IV H","cost":6,"v":9}
                                 ]
                             }
@@ -20284,7 +20284,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Kübelwagen","cost":0,"v":54},
+                                    {"id":1,"text":"Kübelwagen","v":54},
                                     {"id":2,"text":"SdKfz 251/18 (as SdKfz 251/3)","cost":8,"v":39}
                                 ]
                             }
@@ -20301,7 +20301,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 Wespe","cost":0}
+                                    {"id":1,"text":"2 Wespe"}
                                 ]
                             }
                         ]
@@ -20318,7 +20318,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 Hummel","cost":0}
+                                    {"id":1,"text":"2 Hummel"}
                                 ]
                             }
                         ]
@@ -20334,8 +20334,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 Grille H","cost":0,"v":27},
-                                    {"id":2,"text":"2 Grille K","cost":0,"v":28}
+                                    {"id":1,"text":"2 Grille H","v":27},
+                                    {"id":2,"text":"2 Grille K","v":28}
                                 ]
                             }
                         ]
@@ -20352,7 +20352,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 Panzerwerfer","cost":0}
+                                    {"id":1,"text":"2 Panzerwerfer"}
                                 ]
                             }
                         ]
@@ -20366,11 +20366,11 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Wespe","cost":0,"v":29},
+                                    {"id":1,"text":"Wespe","v":29},
                                     {"id":2,"text":"Hummel","cost":12,"br":1,"restricted":true,"v":30},
                                     {"id":3,"text":"Grille H","cost":10,"v":27},
                                     {"id":4,"text":"Grille K","cost":10,"v":28},
-                                    {"id":5,"text":"Panzerwerfer","cost":0,"v":193},
+                                    {"id":5,"text":"Panzerwerfer","v":193},
                                     {"id":6,"text":"SdKfz 251 Werfrahmen 40","cost":30,"v":203}
                                 ]
                             }
@@ -20387,7 +20387,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Panzer III H","cost":0,"v":6}
+                                    {"id":1,"text":"1 Panzer III H","v":6}
                                 ]
                             }
                         ]
@@ -20402,20 +20402,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"120mm mortar & 3 crew","cost":0}
+                                    {"id":1,"text":"120mm mortar & 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mount",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck","cost":4,"v":91},
                                     {"id":3,"text":"Heavy Car","cost":4,"v":56}
                                 ]
@@ -20431,7 +20431,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 80mm mortars","cost":0,"w":2},
+                                    {"id":1,"text":"2 80mm mortars","w":2},
                                     {"id":2,"text":"2 120mm mortars","cost":18,"w":3}
                                 ]
                             }
@@ -20446,7 +20446,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 105mmL28 howitzer","cost":0,'w':22},
+                                    {"id":1,"text":"2 105mmL28 howitzer",'w':22},
                                     {"id":2,"text":"2 150mmL30 howitzer","cost":45,'w':26},
                                     {"id":3,"text":"2 100mmL52 cannon","cost":36,'w':21},
                                     {"id":4,"text":"2 170mmL50 cannon","cost":108,'w':28},
@@ -20538,7 +20538,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 sniper","cost":0},
+                                {"id":1,"text":"1 sniper"},
                                 {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                             ]
                         }
@@ -20553,14 +20553,14 @@ var forces = [
                         {
                             "name":"Panzerfaust",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Panzerfaust","cost":5,"w":107}
                             ]
                         },
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"SdKfz 250/1","cost":0,"v":43}
+                                {"id":1,"text":"SdKfz 250/1","v":43}
                             ]
                         }
                     ]
@@ -20574,7 +20574,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Schwimmwagen","cost":0,"v":55}
+                                {"id":1,"text":"Schwimmwagen","v":55}
                             ]
                         }
                     ]
@@ -20590,8 +20590,8 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"SdKfz 250/10","cost":0,"v":48},
-                                {"id":2,"text":"SdKfz 250/11","cost":0,"v":49}
+                                {"id":1,"text":"SdKfz 250/10","v":48},
+                                {"id":2,"text":"SdKfz 250/11","v":49}
                             ]
                         }
                     ]
@@ -20606,14 +20606,14 @@ var forces = [
                         {
                             "name":"MG",
                             "choices":[
-                                {"id":1,"text":"Bipod MG34","cost":0},
+                                {"id":1,"text":"Bipod MG34"},
                                 {"id":2,"text":"Bipod MG42","cost":4}
                             ]
                         },
                         {
                             "name":"Panzerfausts",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"1 Panzerfaust","cost":5,"w":107},
                                 {"id":3,"text":"2 Panzerfausts","cost":10,"w":107}
                             ]
@@ -20629,7 +20629,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"SdKfz 222","cost":0,"v":32},
+                                {"id":1,"text":"SdKfz 222","v":32},
                                 {"id":2,"text":"SdKfz 233","cost":14,"v":35},
                                 {"id":3,"text":"SdKfz 234/1","cost":2,"v":199},
                                 {"id":4,"text":"SdKfz 234/2 Puma","cost":8,"v":200},
@@ -20658,7 +20658,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Heavy Truck & 6 men","cost":0,"v":61},
+                                {"id":1,"text":"Heavy Truck & 6 men","v":61},
                                 {"id":2,"text":"SdKfz 251/7 & 6 men","cost":8,"v":97}
                             ]
                         }
@@ -20676,7 +20676,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                {"id":1,"text":"2 Heavy Trucks & 12 men"},
                                 {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
                                 {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
                                 {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
@@ -20694,7 +20694,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"SdKfz 251/16","cost":0,"v":42}
+                                {"id":1,"text":"SdKfz 251/16","v":42}
                             ]
                         }
                     ]
@@ -20708,7 +20708,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"SdKfz 9 'Famo'","cost":0,"v":67}
+                                {"id":1,"text":"SdKfz 9 'Famo'","v":67}
                             ]
                         }
                     ]
@@ -20724,7 +20724,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Bergepanther","cost":0,"v":188},
+                                {"id":1,"text":"Bergepanther","v":188},
                                 {"id":2,"text":"Bergepanzer III","cost":-8,"restricted":true,"v":190}
                             ]
                         }
@@ -20741,34 +20741,34 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Panzerfaust, 2 demo charges","cost":0,"w":107}
+                                {"id":1,"text":"Panzerfaust, 2 demo charges","w":107}
                             ]
                         },
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Medium Truck","cost":0,"v":91},
+                                {"id":1,"text":"Medium Truck","v":91},
                                 {"id":2,"text":"SfKfz 251/1","cost":8,"v":37}
                            ]
                         },
                         {
                             "name":"Flame-thrower",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Flame-thrower","cost":10}
                             ]
                         },
                         {
                             "name":"Mine sweeper",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Mine sweeper","cost":5}
                             ]
                         },
                         {
                             "name":"MG",
                             "choices":[
-                                {"id":1,"text":"Bipod MG34","cost":0},
+                                {"id":1,"text":"Bipod MG34"},
                                 {"id":2,"text":"Bipod MG42","cost":4}
                             ]
                         }
@@ -20793,7 +20793,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 medium truck","cost":0},
+                                {"id":1,"text":"1 medium truck"},
                                 {"id":2,"text":"2 medium trucks","cost":4},
                                 {"id":3,"text":"3 medium trucks","cost":8}
                             ]
@@ -20801,7 +20801,7 @@ var forces = [
                         {
                             "name":"Armoured carriers",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Replace 1 truck","cost":6,"v":"[91,31]","vc":"[1,1]"}
                             ]
                         }
@@ -20816,7 +20816,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"2 men","cost":0}
+                            {"id":1,"text":"2 men"}
                         ]
                         }
                     ]
@@ -20831,7 +20831,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
+                            {"id":1,"text":"Kübelwagen Ambulance","v":54},
                             {"id":2,"text":"Ambulance medium truck","cost":2,"v":91},
                             {"id":3,"text":"SdKfz 251/8 Ambulance","cost":6,"v":228}
                         ]
@@ -20849,7 +20849,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"4 men with a tent","cost":0}
+                            {"id":1,"text":"4 men with a tent"}
                         ]
                         }
                     ]
@@ -20873,20 +20873,20 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"PaK43/41 88mm AA/AT with 4 crew","cost":0}
+                                {"id":1,"text":"PaK43/41 88mm AA/AT with 4 crew"}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"SdkFz 7","cost":8,"v":65}
                             ]
                         }
@@ -20902,7 +20902,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Marder II","cost":0,"v":20},
+                                {"id":1,"text":"Marder II","v":20},
                                 {"id":2,"text":"Marder III H","cost":4,"v":21},
                                 {"id":3,"text":"Marder III M","cost":-2,"v":22},
                                 {"id":4,"text":"Marder 38t (36r)","cost":4,"v":23},
@@ -20946,20 +20946,20 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"88mm FlaK36 AA/AT with 4 crew","cost":0}
+                                {"id":1,"text":"88mm FlaK36 AA/AT with 4 crew"}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"SdkFz 7","cost":8}
                             ]
                         }
@@ -20975,7 +20975,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":4,"v":62},
+                            {"id":1,"text":"SdKfz 10 with 20mm","w":4,"v":62},
                             {"id":2,"text":"SdKfz 6 with 37mm","cost":4,"w":5,"v":64},
                             {"id":3,"text":"SdKfz 7 with 20mm Vierling","cost":20,"w":4,"v":65},
                             {"id":4,"text":"Armoured SdKfz 7/1 with 37mm","cost":12,"w":5,"v":197},
@@ -21036,7 +21036,7 @@ var forces = [
                     {
                         "name":"Target Priority",
                         "choices":[
-                            {"id":1,"text":"3rd (5+)","cost":0},
+                            {"id":1,"text":"3rd (5+)"},
                             {"id":2,"text":"2nd (4+)","cost":5},
                             {"id":3,"text":"1st (2+)","cost":15}
                         ]
@@ -21114,8 +21114,8 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Kübelwagen","cost":0,"v":54},
-                                {"id":2,"text":"Heavy Car","cost":0,"v":56}
+                                {"id":1,"text":"Kübelwagen","v":54},
+                                {"id":2,"text":"Heavy Car","v":56}
                             ]
                         }
                         ]
@@ -21130,8 +21130,8 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Medium Radio Truck","cost":0,"v":91},
-                                {"id":2,"text":"Radio Van","cost":0,"v":92}
+                                {"id":1,"text":"Medium Radio Truck","v":91},
+                                {"id":2,"text":"Radio Van","v":92}
                             ]
                         }
                         ]
@@ -21175,7 +21175,7 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":1,"text":"Veteran"},
                                     {"id":2,"text":"Elite","cost":30, "br":4}
                                 ]
                             }
@@ -21185,7 +21185,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -21193,7 +21193,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium Truck","cost":4,'v':91},
                                             {"id":3,"text":"Heavy Car","cost":4,'v':56}
                                         ]
@@ -21201,7 +21201,7 @@ var forces = [
                                     {
                                         "name":"Panzerfausts",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107},
                                             {"id":3,"text":"2 Panzerfausts","cost":10,"w":107}
                                         ]
@@ -21211,7 +21211,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Grenadier Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -21219,14 +21219,14 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91}
                                         ]
                                     },
                                     {
                                         "name":"Panzerfausts",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107},
                                             {"id":3,"text":"2 Panzerfausts","cost":10,"w":107}
                                         ]
@@ -21234,7 +21234,7 @@ var forces = [
                                     {
                                         "name":"MG",
                                         "choices":[
-                                            {"id":1,"text":"Bipod MG34","cost":0},
+                                            {"id":1,"text":"Bipod MG34"},
                                             {"id":2,"text":"Bipod MG42","cost":4},
                                             {"id":3,"text":"2 Bipod MG34s","cost":10},
                                             {"id":4,"text":"Bipod MG34, Bipod MG42","cost":14},
@@ -21260,14 +21260,14 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Tripod MG34","cost":0},
+                                            {"id":1,"text":"Tripod MG34"},
                                             {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -21284,7 +21284,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -21300,8 +21300,8 @@ var forces = [
                                     {
                                         "name":"Weapon",
                                         "choices":[
-                                            {"id":1,"text":"1 Panzerschreck","cost":0,"w":108},
-                                            {"id":2,"text":"1 Püppchen","cost":0,"w":109}
+                                            {"id":1,"text":"1 Panzerschreck","w":108},
+                                            {"id":2,"text":"1 Püppchen","w":109}
                                         ]
                                     }
                                 ]
@@ -21317,7 +21317,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -21333,7 +21333,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"37mm PaK36","cost":0,"w":7},
+                                            {"id":1,"text":"37mm PaK36","w":7},
                                             {"id":2,"text":"37mm PaK36(Stielgranate)","cost":5,"w":7},
                                             {"id":3,"text":"42mm PaK41","cost":3,"w":98},
                                             {"id":4,"text":"50mm PaK38","cost":3,"w":9},
@@ -21343,14 +21343,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91},
                                             {"id":3,"text":"RSO tow","cost":5,"v":60}
                                         ]
@@ -21367,14 +21367,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4},
                                             {"id":3,"text":"Kettenkrad tow","cost":4}
                                         ]
@@ -21393,21 +21393,21 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":1,"text":"Veteran"},
                                     {"id":2,"text":"Elite","cost":8, "br":1}
                                 ]
                             },
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91}
                                 ]
                             },
                             {
                                 "name":"Panzerfausts",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Panzerfaust","cost":5,"w":107},
                                     {"id":3,"text":"2 Panzerfausts","cost":10,"w":107}
                                 ]
@@ -21415,7 +21415,7 @@ var forces = [
                             {
                                 "name":"MG",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"MG34","cost":10},
                                     {"id":3,"text":"MG42","cost":14}
                                 ]
@@ -21442,7 +21442,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 StuG III F/8s","cost":0,"v":16},
+                                    {"id":1,"text":"3 StuG III F/8s","v":16},
                                     {"id":2,"text":"Upgrade to Ausf. Gs","cost":10,"v":18}
                                 ]
                             }
@@ -21457,7 +21457,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":3,"text":"Panzer IV G","cost":0,"v":8},
+                                    {"id":3,"text":"Panzer IV G","v":8},
                                     {"id":4,"text":"Panzer IV H","cost":6,"v":9}
                                 ]
                             }
@@ -21472,7 +21472,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":2,"text":"StuG III F/8","cost":0, "v":16},
+                                    {"id":2,"text":"StuG III F/8", "v":16},
                                     {"id":3,"text":"StuG III G","cost":3,"v":18}
                                 ]
                             }
@@ -21488,7 +21488,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Marder II","cost":0,"v":20},
+                                    {"id":1,"text":"Marder II","v":20},
                                     {"id":2,"text":"Marder III H","cost":4,"v":21},
                                     {"id":3,"text":"Marder III M","cost":-2,"v":22},
                                     {"id":4,"text":"Marder 38t (36r)","cost":4,"v":23}
@@ -21513,7 +21513,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Kübelwagen","cost":0,"v":54}
+                                    {"id":1,"text":"Kübelwagen","v":54}
                                 ]
                             }
                         ]
@@ -21528,14 +21528,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Horse drawn limber","cost":2},
                                     {"id":3,"text":"Medium Truck","cost":4,"v":91}
                                 ]
@@ -21551,14 +21551,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Horse drawn limber","cost":2},
                                     {"id":3,"text":"Heavy Truck","cost":6,"v":61}
                                 ]
@@ -21575,14 +21575,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Horse drawn limber","cost":2},
                                     {"id":3,"text":"Medium Truck","cost":6,"v":91}
                                 ]
@@ -21598,7 +21598,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 80mm mortars","cost":0,"w":2},
+                                    {"id":1,"text":"2 80mm mortars","w":2},
                                     {"id":2,"text":"2 120mm mortars","cost":18,"w":3}
                                 ]
                             }
@@ -21614,13 +21614,13 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"120mm mortar & 3 crew","cost":0}
+                                    {"id":1,"text":"120mm mortar & 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team or Kettenkrad",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10},
                                     {"id":3,"text":"kettenkrad tow","cost":2}
                                 ]
@@ -21628,7 +21628,7 @@ var forces = [
                             {
                                 "name":"Mount",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck","cost":4,'v':91},
                                     {"id":3,"text":"Heavy Car","cost":4,'v':56}
                                 ]
@@ -21644,7 +21644,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 105mm howitzer","cost":0,'w':22},
+                                    {"id":1,"text":"2 105mm howitzer",'w':22},
                                     {"id":2,"text":"2 150mm howitzer","cost":45,'w':26},
                                     {"id":3,"text":"2 150mm Nebelwerfer","cost":45,'w':27},
                                     {"id":4,"text":"2 210mm Nebelwerfer","cost":118,'w':30},
@@ -21663,20 +21663,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 150mm Nebelwerfer","cost":0,'w':27}
+                                    {"id":1,"text":"1 150mm Nebelwerfer",'w':27}
                                 ]
                             },
                             {
                                 "name":"Loader team ",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck","cost":6,"v":91}
                                 ]
                             }
@@ -21821,7 +21821,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 sniper","cost":0},
+                                {"id":1,"text":"1 sniper"},
                                 {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                             ]
                         }
@@ -21837,13 +21837,13 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"3 men with 2 Panzerfausts","cost":0}
+                                {"id":1,"text":"3 men with 2 Panzerfausts"}
                             ]
                         },
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Kübelwagen","cost":0,"v":54}
+                                {"id":1,"text":"Kübelwagen","v":54}
                             ]
                         }
                     ]
@@ -21857,7 +21857,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"SdKfz 222","cost":0,"v":32},
+                                {"id":1,"text":"SdKfz 222","v":32},
                                 {"id":2,"text":"Panhard 178","cost":4,"v":202}
                             ]
                         }
@@ -21872,14 +21872,14 @@ var forces = [
                         {
                             "name":"Troop Quality",
                             "choices":[
-                                {"id":1,"text":"Veteran","cost":0},
+                                {"id":1,"text":"Veteran"},
                                 {"id":2,"text":"Elite","cost":8, "br":1}
                             ]
                         },
                         {
                             "name":"Panzerfausts",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"1 Panzerfaust","cost":5,"w":107},
                                 {"id":3,"text":"2 Panzerfausts","cost":10,"w":107}
                             ]
@@ -21887,14 +21887,14 @@ var forces = [
                         {
                             "name":"MG",
                             "choices":[
-                                {"id":1,"text":"Bipod MG34","cost":0},
+                                {"id":1,"text":"Bipod MG34"},
                                 {"id":2,"text":"Bipod MG42","cost":4}
                             ]
                         },
                         {
                             "name":"Weapon",
                             "choices":[
-                                {"id":1,"text":"Rifles","cost":0, "np":true},
+                                {"id":1,"text":"Rifles", "np":true},
                                 {"id":2,"text":"FG42 assault rifles","cost":10}
                             ]
                         }
@@ -21910,7 +21910,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Kübelwagen","cost":0,"v":54}
+                                {"id":1,"text":"Kübelwagen","v":54}
                             ]
                         }
                     ]
@@ -21934,34 +21934,34 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Medium Truck, 1 Panzerfaust, 2 demo charges","cost":0,"v":91,"w":107}
+                                {"id":1,"text":"Medium Truck, 1 Panzerfaust, 2 demo charges","v":91,"w":107}
                             ]
                         },
                         {
                             "name":"MG",
                             "choices":[
-                                {"id":1,"text":"Bipod MG34","cost":0},
+                                {"id":1,"text":"Bipod MG34"},
                                 {"id":2,"text":"Bipod MG42","cost":4}
                             ]
                         },
                         {
                             "name":"Flame-thrower",
                             "choices":[
-                                {"id":1,"text":"None","cost":0,"np":true},
+                                {"id":1,"text":"None","np":true},
                                 {"id":2,"text":"Flame-thrower","cost":10}
                             ]
                         },
                         {
                             "name":"Mine sweeper",
                             "choices":[
-                                {"id":1,"text":"None","cost":0,"np":true},
+                                {"id":1,"text":"None","np":true},
                                 {"id":2,"text":"Mine sweeper","cost":5}
                             ]
                         },
                         {
                             "name":"Troop Quality",
                             "choices":[
-                                {"id":1,"text":"Veteran","cost":0},
+                                {"id":1,"text":"Veteran"},
                                 {"id":2,"text":"Elite","cost":8, "br":1}
                             ]
                         }
@@ -21977,7 +21977,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Heavy Truck & 6 men","cost":0}
+                                {"id":1,"text":"Heavy Truck & 6 men"}
                             ]
                         }
                     ]
@@ -22001,7 +22001,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 medium truck","cost":0},
+                                {"id":1,"text":"1 medium truck"},
                                 {"id":2,"text":"2 medium trucks","cost":4},
                                 {"id":3,"text":"3 medium trucks","cost":8}
                             ]
@@ -22009,7 +22009,7 @@ var forces = [
                         {
                             "name":"Armoured carriers",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Replace 1 truck","cost":6,"v":"[91,31]","vc":"[1,1]"}
                             ]
                         }
@@ -22026,7 +22026,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"4 men with a tent","cost":0}
+                            {"id":1,"text":"4 men with a tent"}
                         ]
                         }
                     ]
@@ -22040,7 +22040,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"2 men","cost":0}
+                            {"id":1,"text":"2 men"}
                         ]
                         }
                     ]
@@ -22055,7 +22055,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
+                            {"id":1,"text":"Kübelwagen Ambulance","v":54},
                             {"id":2,"text":"Ambulance medium truck","cost":2,"v":91}
                         ]
                         }
@@ -22079,21 +22079,21 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"88mm FlaK36 AA/AT with 4 crew","cost":0,"w":19},
+                                {"id":1,"text":"88mm FlaK36 AA/AT with 4 crew","w":19},
                                 {"id":2,"text":"88mmL71 PaK43  with 4 crew","cost":23,"w":20}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"SdkFz 7","cost":8}
                             ]
                         }
@@ -22109,7 +22109,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                            {"id":1,"text":"Medium Truck with 20mm","cost":0,"w":4,"v":91},
+                            {"id":1,"text":"Medium Truck with 20mm","w":4,"v":91},
                             {"id":2,"text":"SdKfz 10 with 20mm","cost":2,"w":4,"v":62},
                             {"id":3,"text":"SdKfz with 37mm","cost":6,"w":5,"v":62},
                             {"id":4,"text":"SdKfz with 20mm Flakvierling","cost":22,"w":4,"v":62}
@@ -22127,7 +22127,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men with a Panzerschreck","cost":0}
+                                {"id":1,"text":"2 men with a Panzerschreck"}
                             ]
                         }
                     ]
@@ -22143,7 +22143,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":2,"text":"StuH 42 G","cost":0}
+                                {"id":2,"text":"StuH 42 G"}
                             ]
                         }
                     ]
@@ -22158,14 +22158,14 @@ var forces = [
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                            {"id":1,"text":"None","cost":0},
+                            {"id":1,"text":"None"},
                             {"id":2,"text":"Kettenkrad","cost":2,"v":52},
                             {"id":3,"text":"Medium Truck tow","cost":4,"v":91},
                             {"id":4,"text":"SdKfz 10 halftrack", "cost":8,"v":62}
@@ -22182,14 +22182,14 @@ var forces = [
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                            {"id":1,"text":"None","cost":0},
+                            {"id":1,"text":"None"},
                             {"id":2,"text":"Medium Truck tow","cost":4,"v":91},
                             {"id":3,"text":"SdKfz 11 halftrack tow", "cost":8,"v":63}
                             ]
@@ -22206,14 +22206,14 @@ var forces = [
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                            {"id":1,"text":"None","cost":0},
+                            {"id":1,"text":"None"},
                             {"id":2,"text":"Medium Truck tow","cost":4,"v":91},
                             {"id":3,"text":"SdKfz 11 halftrack tow", "cost":8,"v":63}
                             ]
@@ -22237,7 +22237,7 @@ var forces = [
                         {
                             "name":"Target Priority",
                             "choices":[
-                                {"id":1,"text":"3rd (5+)","cost":0},
+                                {"id":1,"text":"3rd (5+)"},
                                 {"id":2,"text":"2nd (4+)","cost":5},
                                 {"id":3,"text":"1st (2+)","cost":15}
                             ]
@@ -22315,7 +22315,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Kübelwagen","cost":0,"v":54},
+                                {"id":1,"text":"Kübelwagen","v":54},
                                 {"id":2,"text":"Heavy Car","cost":2,"v":56},
                                 {"id":3,"text":"Schwimmwagen","cost":2,"v":55}
                             ]
@@ -22338,8 +22338,8 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Medium Radio Truck","cost":0,"v":91},
-                                {"id":2,"text":"Radio Van","cost":0,"v":92}
+                                {"id":1,"text":"Medium Radio Truck","v":91},
+                                {"id":2,"text":"Radio Van","v":92}
                             ]
                         }
                         ]
@@ -22378,7 +22378,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -22386,14 +22386,14 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck or heavy car","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Panzerfaust",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                         ]
                                     }
@@ -22402,7 +22402,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Grenadier Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -22410,21 +22410,21 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Panzerfaust",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                         ]
                                     },
                                     {
                                         "name":"MG",
                                         "choices":[
-                                            {"id":1,"text":"Bipod MG34","cost":0},
+                                            {"id":1,"text":"Bipod MG34"},
                                             {"id":2,"text":"Bipod MG42","cost":4}
                                         ]
                                     }
@@ -22440,14 +22440,14 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Tripod MG34","cost":0},
+                                            {"id":1,"text":"Tripod MG34"},
                                             {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -22471,7 +22471,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -22496,7 +22496,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -22512,7 +22512,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"37mm PaK36","cost":0,"w":7},
+                                            {"id":1,"text":"37mm PaK36","w":7},
                                             {"id":2,"text":"37mm PaK36(Stielgranate)","cost":5,"w":7},
                                             {"id":3,"text":"50mm PaK38","cost":4,"w":9},
                                             {"id":4,"text":"75mm PaK97/38","cost":13,"w":100},
@@ -22523,14 +22523,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Horse and limber tow","cost":2},
                                             {"id":3,"text":"Medium truck","cost":4}
                                         ]
@@ -22547,14 +22547,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Horse and limber tow","cost":2},
                                             {"id":3,"text":"Medium truck","cost":4}
                                         ]
@@ -22575,7 +22575,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true
@@ -22583,7 +22583,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -22591,7 +22591,7 @@ var forces = [
                                     {
                                         "name":"Panzerfaust",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                         ]
                                     }
@@ -22600,7 +22600,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"MMG Team",
-                                "cost":0,
+                                
                                 "count":1,
                                 "br":0,
                                 "mandatory":true,
@@ -22608,7 +22608,7 @@ var forces = [
                                     {
                                         "name":"MMG",
                                         "choices":[
-                                            {"id":1,"text":"Bipod MG34","cost":0},
+                                            {"id":1,"text":"Bipod MG34"},
                                             {"id":2,"text":"Bipod MG42","cost":4}
                                         ]
                                     }
@@ -22632,7 +22632,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -22648,14 +22648,14 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Tripod MG34","cost":0},
+                                            {"id":1,"text":"Tripod MG34"},
                                             {"id":2,"text":"Tripod MG42","cost":4}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -22672,7 +22672,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -22688,7 +22688,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"37mm PaK36","cost":0,"w":7},
+                                            {"id":1,"text":"37mm PaK36","w":7},
                                             {"id":2,"text":"37mm PaK36(Stielgranate)","cost":5,"w":7},
                                             {"id":3,"text":"50mm PaK38","cost":4,"w":9},
                                             {"id":4,"text":"75mm PaK97/38","cost":13,"w":100},
@@ -22699,14 +22699,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Horse and limber tow","cost":2}
                                         ]
                                     }
@@ -22724,21 +22724,21 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4}
                                 ]
                             },
                             {
                                 "name":"Panzerfaust",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                 ]
                             },
                             {
                                 "name":"MG",
                                 "choices":[
-                                    {"id":1,"text":"Bipod MG34","cost":0},
+                                    {"id":1,"text":"Bipod MG34"},
                                     {"id":2,"text":"Bipod MG42","cost":4}
                                 ]
                             }
@@ -22772,7 +22772,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":2,"text":"3 StuG III Gs","cost":0}
+                                    {"id":2,"text":"3 StuG III Gs"}
                                 ]
                             }
                         ]
@@ -22786,7 +22786,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":3,"text":"Panzer IV G","cost":0,"v":8},
+                                    {"id":3,"text":"Panzer IV G","v":8},
                                     {"id":4,"text":"Panzer IV H","cost":6,"v":9}
                                 ]
                             }
@@ -22803,7 +22803,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":3,"text":"Panther A or G","cost":0}
+                                    {"id":3,"text":"Panther A or G"}
                                 ]
                             }
                         ]
@@ -22818,7 +22818,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":3,"text":"StuG III G","cost":0}
+                                    {"id":3,"text":"StuG III G"}
                                 ]
                             }
                         ]
@@ -22833,7 +22833,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Marder II","cost":0,"v":20},
+                                    {"id":1,"text":"Marder II","v":20},
                                     {"id":2,"text":"Marder III H","cost":4,"v":21},
                                     {"id":3,"text":"Marder III M","cost":-2,"v":22},
                                     {"id":4,"text":"Marder 38t (36r)","cost":4,"v":23}
@@ -22858,7 +22858,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Kübelwagen","cost":0,"v":54}
+                                    {"id":1,"text":"Kübelwagen","v":54}
                                 ]
                             }
                         ]
@@ -22873,14 +22873,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Horse drawn limber","cost":2},
                                     {"id":3,"text":"Medium Truck","cost":4}
                                 ]
@@ -22897,14 +22897,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Horse drawn limber","cost":2},
                                     {"id":3,"text":"Medium Truck","cost":4}
                                 ]
@@ -22921,14 +22921,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Horse drawn limber","cost":2},
                                     {"id":3,"text":"heavy Truck","cost":6}
                                 ]
@@ -22946,14 +22946,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Horse drawn limber","cost":2},
                                     {"id":3,"text":"heavy Truck","cost":6}
                                 ]
@@ -22970,14 +22970,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Horse drawn limber","cost":2},
                                     {"id":3,"text":"Medium Truck","cost":6}
                                 ]
@@ -22993,7 +22993,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 80mm mortars","cost":0,"w":2},
+                                    {"id":1,"text":"2 80mm mortars","w":2},
                                     {"id":2,"text":"2 120mm mortars","cost":18,"w":3}
                                 ]
                             }
@@ -23009,20 +23009,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"120mm mortar & 3 crew","cost":0}
+                                    {"id":1,"text":"120mm mortar & 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mount",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck","cost":4,"v":91},
                                     {"id":2,"text":"Heavy Car","cost":4,"v":56}
                                 ]
@@ -23038,7 +23038,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 76.2mmL54 field guns","cost":0,'w':45},
+                                    {"id":1,"text":"2 76.2mmL54 field guns",'w':45},
                                     {"id":2,"text":"2 105mmL28 howitzer","cost":20,'w':22},
                                     {"id":3,"text":"2 122mmL23 howitzer","cost":46,'w':24},
                                     {"id":4,"text":"2 150mmL30 howitzer","cost":65,"w":26},
@@ -23183,7 +23183,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 sniper","cost":0},
+                                {"id":1,"text":"1 sniper"},
                                 {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                             ]
                         }
@@ -23199,13 +23199,13 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"3 men with 2 Panzerfausts","cost":0}
+                                {"id":1,"text":"3 men with 2 Panzerfausts"}
                             ]
                         },
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Kübelwagen","cost":0,"v":54}
+                                {"id":1,"text":"Kübelwagen","v":54}
                             ]
                         }
                     ]
@@ -23219,7 +23219,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"SdKfz 222","cost":0,"v":32},
+                                {"id":1,"text":"SdKfz 222","v":32},
                                 {"id":2,"text":"Panhard 178","cost":4,"v":202}
                             ]
                         }
@@ -23236,7 +23236,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"SdKfz 222","cost":0,"v":32}
+                                {"id":1,"text":"SdKfz 222","v":32}
                             ]
                         }
                     ]
@@ -23250,14 +23250,14 @@ var forces = [
                         {
                             "name":"Panzerfaust",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                             ]
                         },
                         {
                             "name":"MG",
                             "choices":[
-                                {"id":1,"text":"Bipod MG34","cost":0},
+                                {"id":1,"text":"Bipod MG34"},
                                 {"id":2,"text":"Bipod MG42","cost":4}
                             ]
                         }
@@ -23280,7 +23280,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"SdKfz 9 'Famo'","cost":0,"v":67}
+                                {"id":1,"text":"SdKfz 9 'Famo'","v":67}
                             ]
                         }
                     ]
@@ -23295,7 +23295,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Heavy Truck & 6 men","cost":0}
+                                {"id":1,"text":"Heavy Truck & 6 men"}
                             ]
                         }
                     ]
@@ -23312,7 +23312,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                {"id":1,"text":"2 Heavy Trucks & 12 men"},
                                 {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
                                 {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
                                 {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
@@ -23332,27 +23332,27 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Medium Truck, 1 Panzerfaust, 2 demo charges","cost":0,"v":91}
+                                {"id":1,"text":"Medium Truck, 1 Panzerfaust, 2 demo charges","v":91}
                             ]
                         },
                         {
                             "name":"MG",
                             "choices":[
-                                {"id":1,"text":"Bipod MG34","cost":0},
+                                {"id":1,"text":"Bipod MG34"},
                                 {"id":2,"text":"Bipod MG42","cost":4}
                             ]
                         },
                         {
                             "name":"Flame-thrower",
                             "choices":[
-                                {"id":1,"text":"None","cost":0,"np":true},
+                                {"id":1,"text":"None","np":true},
                                 {"id":2,"text":"Flame-thrower","cost":10}
                             ]
                         },
                         {
                             "name":"Mine sweeper",
                             "choices":[
-                                {"id":1,"text":"None","cost":0,"np":true},
+                                {"id":1,"text":"None","np":true},
                                 {"id":2,"text":"Mine sweeper","cost":5}
                             ]
                         }
@@ -23376,7 +23376,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 Horse drawn wagon","cost":0},
+                                {"id":1,"text":"1 Horse drawn wagon"},
                                 {"id":2,"text":"2 Horse drawn wagons","cost":3},
                                 {"id":3,"text":"3 Horse drawn wagons","cost":6}
                             ]
@@ -23394,7 +23394,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"4 men with a tent","cost":0}
+                            {"id":1,"text":"4 men with a tent"}
                         ]
                         }
                     ]
@@ -23408,7 +23408,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"2 men","cost":0}
+                            {"id":1,"text":"2 men"}
                         ]
                         }
                     ]
@@ -23423,7 +23423,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"Kübelwagen Ambulance","cost":0,"v":54},
+                            {"id":1,"text":"Kübelwagen Ambulance","v":54},
                             {"id":2,"text":"Ambulance medium truck","cost":2}
                         ]
                         }
@@ -23448,20 +23448,20 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"88mm FlaK36 AA/AT with 4 crew","cost":0}
+                                {"id":1,"text":"88mm FlaK36 AA/AT with 4 crew"}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"SdkFz 7","cost":8}
                             ]
                         }
@@ -23479,20 +23479,20 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"105mmL63 FlaK39 AA/AT with 4 crew","cost":0}
+                                {"id":1,"text":"105mmL63 FlaK39 AA/AT with 4 crew"}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"SdkFz 7","cost":8}
                             ]
                         }
@@ -23514,14 +23514,14 @@ var forces = [
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"SdkFz 7","cost":8}
                             ]
                         }
@@ -23538,7 +23538,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":2,"text":"StuH 42 G","cost":0}
+                                {"id":2,"text":"StuH 42 G"}
                             ]
                         }
                     ]
@@ -23553,7 +23553,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                            {"id":1,"text":"SdKfz 10 with 20mm","cost":0,"w":4,"v":62},
+                            {"id":1,"text":"SdKfz 10 with 20mm","w":4,"v":62},
                             {"id":2,"text":"SdKfz 6 with 37mm","cost":4,"w":5,"v":64},
                             {"id":3,"text":"SdKfz 7 with 20mm Flakvierling","cost":20,"w":4}
                             ]
@@ -23570,14 +23570,14 @@ var forces = [
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                            {"id":1,"text":"None","cost":0},
+                            {"id":1,"text":"None"},
                             {"id":3,"text":"Medium Truck tow","cost":4},
                             {"id":4,"text":"SdKfz 10 halftrack", "cost":8}
                             ]
@@ -23593,14 +23593,14 @@ var forces = [
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                            {"id":1,"text":"None","cost":0},
+                            {"id":1,"text":"None"},
                             {"id":2,"text":"Medium Truck tow","cost":4,"v":91},
                             {"id":3,"text":"SdKfz 11 halftrack tow", "cost":8,"v":63}
                             ]
@@ -23617,14 +23617,14 @@ var forces = [
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                            {"id":1,"text":"None","cost":0},
+                            {"id":1,"text":"None"},
                             {"id":2,"text":"Medium Truck tow","cost":4},
                             {"id":3,"text":"SdKfz 10 halftrack tow", "cost":8}
                             ]
@@ -23641,7 +23641,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men with a Panzerschreck","cost":0}
+                                {"id":1,"text":"2 men with a Panzerschreck"}
                             ]
                         }
                     ]
@@ -23663,7 +23663,7 @@ var forces = [
                         {
                             "name":"Target Priority",
                             "choices":[
-                                {"id":1,"text":"3rd (5+)","cost":0},
+                                {"id":1,"text":"3rd (5+)"},
                                 {"id":2,"text":"2nd (4+)","cost":5},
                                 {"id":3,"text":"1st (2+)","cost":15}
                             ]
@@ -23741,11 +23741,11 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"3 men","cost":0},
+                                {"id":1,"text":"3 men"},
                                 {"id":2,"text":"3 men & Jeep","cost":2,"v":163},
                                 {"id":4,"text":"3 men & White Scout Car","cost":10,"v":84},
-                                {"id":5,"text":"Dingo Scout car","cost":0,"v":136},
-                                {"id":6,"text":"Humber Scout car","cost":0,"v":134},
+                                {"id":5,"text":"Dingo Scout car","v":136},
+                                {"id":6,"text":"Humber Scout car","v":134},
                                 {"id":7,"text":"M4A4 Sherman","cost":42,"v":101},
                                 {"id":8,"text":"M4A4 Sherman HQ","cost":32,"v":103},
                                 {"id":9,"text":"Cromwell IV","cost":46,"v":111},
@@ -23765,11 +23765,11 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men & Jeep","cost":0,"v":163},
+                                {"id":1,"text":"2 men & Jeep","v":163},
                                 {"id":2,"text":"2 men & Radio Medium Truck","cost":2,"v":91},
                                 {"id":3,"text":"2 men & M5 Radio Halftrack","cost":8,"v":83},
                                 {"id":4,"text":"2 men & Bren Carrier","cost":4,"v":82},
-                                {"id":5,"text":"Dingo Scout car","cost":0,"v":136},
+                                {"id":5,"text":"Dingo Scout car","v":136},
                                 {"id":6,"text":"M4A4 Sherman","cost":44,"v":101}
                             ]
                         }
@@ -23791,7 +23791,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"3 men & Radio Medium Truck","cost":0,"v":91},
+                                {"id":1,"text":"3 men & Radio Medium Truck","v":91},
                                 {"id":2,"text":"3 men & M5 Radio Halftrack","cost":2,"v":83}
                             ]
                         }
@@ -23837,14 +23837,14 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Regular","cost":0},
+                                    {"id":1,"text":"Regular"},
                                     {"id":2,"text":"Veteran (War Weary)","cost":37, "br":4}
                                 ]
                             },
                             {
                                 "name":"LVT IV Buffalos",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"2 LVT IV Buffalos","cost":36, "br":2},
                                     {"id":3,"text":"2 LVT IV Buffalos (1 with 20mm)","cost":46,"br":2,"w":4},
                                     {"id":4,"text":"2 LVT IV Buffalos (both with 20mm)","cost":56,"br":2,"w":4}
@@ -23855,7 +23855,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -23863,14 +23863,14 @@ var forces = [
                                     {
                                         "name":"PIAT",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"PIAT","cost":5,"w":91}
                                         ]
                                     },
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Kangaroo","cost":15,"v":147}
                                         ]
                                     }
@@ -23879,7 +23879,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Section",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -23887,7 +23887,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91},
                                             {"id":3,"text":"Kangaroo","cost":15,"v":147}
                                         ]
@@ -23897,7 +23897,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"Light Mortar Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":60,
                                 "mandatory":true
@@ -23919,20 +23919,20 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Vickers HMG","cost":0}
+                                            {"id":1,"text":"Vickers HMG"}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
@@ -23949,7 +23949,7 @@ var forces = [
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
@@ -23966,14 +23966,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
@@ -23989,20 +23989,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"6 pdr","cost":0,"w":59}
+                                            {"id":1,"text":"6 pdr","w":59}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Loyd Carrier tow","cost":5,"v":0},
                                             {"id":3,"text":"Medium Truck tow","cost":4,"v":91}
                                         ]
@@ -24021,14 +24021,14 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Regular","cost":0},
+                                    {"id":1,"text":"Regular"},
                                     {"id":2,"text":"Veteran (War Weary)","cost":10, "br":1}
                                 ]
                             },
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91},
                                     {"id":3,"text":"Kangaroo","cost":15,"v":147}
                                 ]
@@ -24047,7 +24047,7 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Regular","cost":0},
+                                    {"id":1,"text":"Regular"},
                                     {"id":2,"text":"Veteran (War Weary)","cost":30, "br":4}
                                 ]
                             }
@@ -24056,7 +24056,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -24065,14 +24065,14 @@ var forces = [
                                     {
                                         "name":"Composition",
                                         "choices":[
-                                            {"id":1,"text":"4 men with 2\" mortar","cost":0}
+                                            {"id":1,"text":"4 men with 2\" mortar"}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"M5 Halftrack","cost":0,"v":83},
-                                            {"id":2,"text":"M9 Halftrack","cost":0,"v":146}
+                                            {"id":1,"text":"M5 Halftrack","v":83},
+                                            {"id":2,"text":"M9 Halftrack","v":146}
                                         ]
                                     }
                                 ]
@@ -24080,7 +24080,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Section",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -24088,8 +24088,8 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"M5 Halftrack","cost":0,"v":83},
-                                            {"id":2,"text":"M9 Halftrack","cost":0,"v":146}
+                                            {"id":1,"text":"M5 Halftrack","v":83},
+                                            {"id":2,"text":"M9 Halftrack","v":146}
                                         ]
                                     }
                                 ]
@@ -24097,7 +24097,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"PIAT Team",
-                                "cost":0,
+                                
                                 "w":91,
                                 "br":0,
                                 "mandatory":true
@@ -24119,20 +24119,20 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Vickers HMG","cost":0}
+                                            {"id":1,"text":"Vickers HMG"}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
@@ -24149,7 +24149,7 @@ var forces = [
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
@@ -24166,14 +24166,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mount",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                         ]
                                     }
@@ -24189,20 +24189,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"6 pdr","cost":0,"w":59}
+                                            {"id":1,"text":"6 pdr","w":59}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Loyd Carrier tow","cost":5,"v":0}
                                         ]
                                     }
@@ -24220,15 +24220,15 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Regular","cost":0},
+                                    {"id":1,"text":"Regular"},
                                     {"id":2,"text":"Veteran (War Weary)","cost":10, "br":1}
                                 ]
                             },
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"M5 Halftrack","cost":0,"v":83},
-                                    {"id":2,"text":"M9 Halftrack","cost":0,"v":146}
+                                    {"id":1,"text":"M5 Halftrack","v":83},
+                                    {"id":2,"text":"M9 Halftrack","v":146}
                                 ]
                             }
                         ]
@@ -24245,7 +24245,7 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Regular","cost":0},
+                                    {"id":1,"text":"Regular"},
                                     {"id":2,"text":"Veteran (War Weary)","cost":10, "br":1}
                                 ]
                             }
@@ -24255,14 +24255,14 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Rifle Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "options":[
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"Bren Carrier","cost":0,"v":82}
+                                            {"id":1,"text":"Bren Carrier","v":82}
                                         ]
                                     }
                                 ]
@@ -24270,7 +24270,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Carrier Light Mortar Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":60,
                                 "mandatory":true,
@@ -24278,7 +24278,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"Bren Carrier","cost":0,"v":82}
+                                            {"id":1,"text":"Bren Carrier","v":82}
                                         ]
                                     }
                                 ]
@@ -24286,7 +24286,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"Carrier PIAT Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":91,
                                 "mandatory":true,
@@ -24294,7 +24294,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"Bren Carrier","cost":0,"v":82}
+                                            {"id":1,"text":"Bren Carrier","v":82}
                                         ]
                                     }
                                 ]
@@ -24314,7 +24314,7 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":1,"text":"Veteran"},
                                     {"id":2,"text":"Elite","cost":40, "br":4}
                                 ]
                             }
@@ -24323,7 +24323,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -24331,7 +24331,7 @@ var forces = [
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -24340,7 +24340,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Section",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -24348,29 +24348,29 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91}
                                         ]
                                     },
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     },
                                     {
                                         "name":"Bren Guns",
                                         "choices":[
-                                            {"id":1,"text":"1 Bren Gun","cost":0},
+                                            {"id":1,"text":"1 Bren Gun"},
                                             {"id":2,"text":"2 Bren Guns","cost":2}
                                         ]
                                     },
                                     {
                                         "name":"Weapon",
                                         "choices":[
-                                            {"id":1,"text":"Rifles","cost":0, "np":true},
-                                            {"id":2,"text":"Replace rifles with SMGs","cost":0}
+                                            {"id":1,"text":"Rifles", "np":true},
+                                            {"id":2,"text":"Replace rifles with SMGs"}
                                         ]
                                     }
                                 ]
@@ -24378,7 +24378,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"Light Mortar Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":60,
                                 "mandatory":true
@@ -24400,13 +24400,13 @@ var forces = [
                                     {
                                         "name":"Machine Gun",
                                         "choices":[
-                                            {"id":1,"text":"Vickers HMG","cost":0}
+                                            {"id":1,"text":"Vickers HMG"}
                                         ]
                                     },
                                     {
                                         "name":"Extras",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":2},
                                             {"id":3,"text":"Jeep Mount","cost":10,"v":163,"unique":true} //greg how to do unique???
                                         ]
@@ -24432,7 +24432,7 @@ var forces = [
                                     {
                                         "name":"Extras",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10},
                                             {"id":3,"text":"Jeep Mount","cost":10,"v":163,"unique":true} //greg how to do unique???
                                         ]
@@ -24449,20 +24449,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"6 pdr","cost":0,"w":59}
+                                            {"id":1,"text":"6 pdr","w":59}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Jeep tow","cost":2,"v":163}
                                         ]
                                     }
@@ -24480,34 +24480,34 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0}
+                                    {"id":1,"text":"Veteran"}
                                 ]
                             },
                             {
                                 "name":"Bren Guns",
                                 "choices":[
-                                    {"id":1,"text":"1 Bren Gun","cost":0},
+                                    {"id":1,"text":"1 Bren Gun"},
                                     {"id":2,"text":"2 Bren Guns","cost":2}
                                 ]
                             },
                             {
                                 "name":"AT grenades",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
                             },
                             {
                                 "name":"Weapon",
                                 "choices":[
-                                    {"id":1,"text":"Rifles","cost":0, "np":true},
-                                    {"id":2,"text":"SMGs","cost":0}
+                                    {"id":1,"text":"Rifles", "np":true},
+                                    {"id":2,"text":"SMGs"}
                                 ]
                             },
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91}
                                 ]
                             }
@@ -24532,7 +24532,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[
-                                    {"id":1,"text":"2 M4A4s, 2 Fireflies","cost":0,"v":"[101,102]","vc":"[2,2]"},
+                                    {"id":1,"text":"2 M4A4s, 2 Fireflies","v":"[101,102]","vc":"[2,2]"},
                                     {"id":2,"text":"1 M4, 1 M4A4, 2 Fireflies","cost":2,"v":"[100,101,102]","vc":"[1,1,2]"},
                                     {"id":3,"text":"2 M4s, 2 Fireflies","cost":4,"v":"[100,102]","vc":"[2,2]"}
                                 ] 
@@ -24552,7 +24552,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[
-                                    {"id":1,"text":"3 Comets","cost":0,"vc":3},
+                                    {"id":1,"text":"3 Comets","vc":3},
                                     {"id":2,"text":"4 Comets","cost":94,"br":4,"vc":4}
                                 ] 
                             }
@@ -24567,7 +24567,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M10 Achilles","cost":0,"v":133},
+                                    {"id":1,"text":"M10 Achilles","v":133},
                                     {"id":2,"text":"Archer","cost":-12,"restricted":true,"v":234}
                                 ] 
                             } 
@@ -24584,7 +24584,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[
-                                    {"id":1,"text":"3 Cromwell IVs, 1 Challenger","cost":0,"v":"[114,102]","vc":"[3,1]"}
+                                    {"id":1,"text":"3 Cromwell IVs, 1 Challenger","v":"[114,102]","vc":"[3,1]"}
                                 ] 
                             }
                         ] 
@@ -24601,15 +24601,15 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[
-                                    {"id":1,"text":"3 Churchill VIs","cost":0,"v":121},
-                                    {"id":2,"text":"2 Churchill VIs, 1 Churchill III/IV","cost":0,"v":"[121,88]","vc":"[2,1]"},
+                                    {"id":1,"text":"3 Churchill VIs","v":121},
+                                    {"id":2,"text":"2 Churchill VIs, 1 Churchill III/IV","v":"[121,88]","vc":"[2,1]"},
                                     {"id":3,"text":"2 Churchill VIs, 1 Churchill VII","cost":22,"v":"[121,122]","vc":"[2,1]"},
-                                    {"id":4,"text":"1 Churchill VI, 2 Churchill III/IVs","cost":0,"v":"[121,88]","vc":"[1,2]"},
+                                    {"id":4,"text":"1 Churchill VI, 2 Churchill III/IVs","v":"[121,88]","vc":"[1,2]"},
                                     {"id":5,"text":"1 Churchill VI, 2 Churchill VIIs","cost":44,"v":"[121,122]","vc":"[1,2]"},
                                     {"id":6,"text":"1 Churchill VI, 1 Churchill III/IV, 1 Churchill VII","cost":22,"v":"[121,88,122]","vc":"[1,1,1]"},
                                     {"id":7,"text":"2 Churchill VIIs, 1 Churchill III/IV","cost":44,"v":"[122,88]","vc":"[2,1]"},
                                     {"id":8,"text":"1 Churchill VII, 2 Churchill III/IVs","cost":22,"v":"[122,88]","vc":"[1,2]"},
-                                    {"id":9,"text":"3 Churchill III/IVs","cost":0,"v":88},
+                                    {"id":9,"text":"3 Churchill III/IVs","v":88},
                                     {"id":10,"text":"3 Churchill VIIs","cost":66,"v":122},
                                     // 4 vehicles
 
@@ -24641,11 +24641,11 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"M4A4 Sherman","cost":0,"v":101}, 
+                                    {"id":1,"text":"M4A4 Sherman","v":101}, 
                                     {"id":2,"text":"M4 Sherman","cost":2,"v":100}, 
                                     {"id":3,"text":"Cromwell IV","cost":4,"v":111},
-                                    {"id":4,"text":"Churchill III/IV","cost":0,"v":88},
-                                    {"id":5,"text":"Churchill VI","cost":0,"v":121},
+                                    {"id":4,"text":"Churchill III/IV","v":88},
+                                    {"id":5,"text":"Churchill VI","v":121},
                                     {"id":6,"text":"Churchill VII","cost":22,"v":122},
                                     {"id":7,"text":"Comet","cost":46,"v":235}
                                 ] 
@@ -24664,7 +24664,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"3 M3A3 'Honey's","cost":0,"v":115}, 
+                                    {"id":1,"text":"3 M3A3 'Honey's","v":115}, 
                                     {"id":2,"text":"1 M5 Stuart, 2 M3A3 'Honey's","cost":2,"v":"[116,115]","vc":"[1,2]"}, 
                                     {"id":3,"text":"2 M5 Stuarts, 1 M3A3 'Honey'","cost":4,"v":"[116,115]","vc":"[2,1]"}, 
                                     {"id":4,"text":"3 M5 Stuarts","cost":6,"v":116} 
@@ -24689,7 +24689,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Jeep","cost":0,"v":163},
+                                    {"id":1,"text":"Jeep","v":163},
                                     {"id":2,"text":"Bren Carrier","cost":4,"v":82},
                                     {"id":3,"text":"Dingo","cost":4,"v":136}
                                 ]
@@ -24705,7 +24705,7 @@ var forces = [
                             {
                                 "name":"Componsition",
                                 "choices":[
-                                    {"id":1,"text":"M4 HQ","cost":0,"v":103},
+                                    {"id":1,"text":"M4 HQ","v":103},
                                     {"id":2,"text":"Cromwell IV HQ","cost":2,"v":112}
                                 ]
                             }
@@ -24721,13 +24721,13 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Two 25 pdr guns","cost":0}
+                                    {"id":1,"text":"Two 25 pdr guns"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"One 3-man loader team","cost":10},
                                     {"id":2,"text":"Two 3-man loader teams","cost":20}
                                 ]
@@ -24735,7 +24735,7 @@ var forces = [
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Morris Quad","cost":4,"v":182},
                                     {"id":3,"text":"2 Morris Quads","cost":8,"v":182}
                                 ]
@@ -24752,7 +24752,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 Auster III","cost":0}
+                                    {"id":1,"text":"1 Auster III"}
                                 ]
                             }
                         ]
@@ -24768,7 +24768,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 Sextons","cost":0}
+                                    {"id":1,"text":"2 Sextons"}
                                 ]
                             }
                         ]
@@ -24783,20 +24783,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"4.2\" mortar & 3 crew","cost":0}
+                                    {"id":1,"text":"4.2\" mortar & 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mount",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Bren Carrier","cost":6,"v":82}
                                 ]
                             }
@@ -24811,7 +24811,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 3\" mortars","cost":0,"w":61},
+                                    {"id":1,"text":"2 3\" mortars","w":61},
                                     {"id":2,"text":"2 4.2\" mortars","cost":18,"w":62}
                                 ]
                             }
@@ -24826,7 +24826,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 25 pdr","cost":0,'w':73},
+                                    {"id":1,"text":"2 25 pdr",'w':73},
                                     {"id":2,"text":"2 4.5\"","cost":20,'w':77},
                                     {"id":3,"text":"2 5.5\"","cost":40,'w':80},
                                     {"id":4,"text":"2 155mmL45","cost":50,'w':84}
@@ -24920,7 +24920,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 sniper","cost":0},
+                                    {"id":1,"text":"1 sniper"},
                                     {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                                 ]
                             }
@@ -24937,7 +24937,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"3 men & Jeep","cost":0,"v":163},
+                                    {"id":1,"text":"3 men & Jeep","v":163},
                                     {"id":2,"text":"Dingo","cost":4,"v":136},
                                     {"id":3,"text":"Humber Scout Car","cost":4,"v":134},
                                     {"id":4,"text":"Staghound","cost":16,"v":138}
@@ -24954,10 +24954,10 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Humber Scout Car","cost":0,"v":134},
+                                    {"id":1,"text":"Humber Scout Car","v":134},
                                     {"id":2,"text":"Humber IV Armoured Car","cost":22,"v":135},
                                     {"id":3,"text":"Daimler","cost":20,"v":137},
-                                    {"id":4,"text":"Dingo","cost":0,"v":136},
+                                    {"id":4,"text":"Dingo","v":136},
                                     {"id":5,"text":"Staghound","cost":24,"v":138},
                                     {"id":6,"text":"AEC III","cost":28, restricted:"true","v":140}
                                 ]
@@ -24973,7 +24973,7 @@ var forces = [
                             {
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"id":1,"text":"Cromwell IV","cost":0,"v":111},
+                                    {"id":1,"text":"Cromwell IV","v":111},
                                     {"id":2,"text":"M5 Stuart","cost":-22,"v":116,"br":-1},
                                     {"id":3,"text":"M5 Stuart 'recce'","cost":-38,"v":117,"br":-2}
                                 ] 
@@ -25005,8 +25005,8 @@ var forces = [
                             {
                                 "name":"Mount",
                                 "choices":[
-                                    {"id":1,"text":"M5 Halftrack","cost":0,"v":83},
-                                    {"id":2,"text":"M9 Halftrack","cost":0,"v":146}
+                                    {"id":1,"text":"M5 Halftrack","v":83},
+                                    {"id":2,"text":"M9 Halftrack","v":146}
                                 ]
                             }
                         ]
@@ -25024,7 +25024,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"2 Jeeps","cost":0}
+                                    {"id":1,"text":"2 Jeeps"}
                                 ]
                             }
                         ]
@@ -25039,7 +25039,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"Bren Carrier","cost":0,"v":82}
+                                    {"id":1,"text":"Bren Carrier","v":82}
                                 ]
                             }
                         ]
@@ -25054,7 +25054,7 @@ var forces = [
                             {
                                 "name":"Mount",
                                 "choices":[
-                                    {"id":1,"text":"Ram Kangaroo","cost":0,"v":147}
+                                    {"id":1,"text":"Ram Kangaroo","v":147}
                                 ]
                             }
                         ]
@@ -25077,7 +25077,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Heavy Truck & 6 men","cost":0,"v":61}
+                                    {"id":1,"text":"Heavy Truck & 6 men","v":61}
                                 ]
                             }
                         ]
@@ -25094,7 +25094,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                    {"id":1,"text":"2 Heavy Trucks & 12 men"},
                                     {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
                                     {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
                                     {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
@@ -25111,7 +25111,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M4 Sherman ARV","cost":0,"v":109},
+                                    {"id":1,"text":"M4 Sherman ARV","v":109},
                                     {"id":2,"text":"Cromwell ARV","cost":2,"v":113},
                                     {"id":3,"text":"Churchill ARV","cost":-2,"v":126},
                                     {"id":3,"text":"Scammel Pioneer","cost":-6,"v":183},
@@ -25130,7 +25130,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91},
                                     {"id":3,"text":"M5 Halftrack","cost":8,"v":83},
                                     {"id":4,"text":"Kangaroo","cost":15,"v":147}
@@ -25139,21 +25139,21 @@ var forces = [
                             {
                                 "name":"Flame-thrower",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Flame-thrower","cost":10}
                                 ]
                             },
                             {
                                 "name":"Mine sweeper",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0,"np":true},
+                                    {"id":1,"text":"None","np":true},
                                     {"id":2,"text":"Mine sweeper","cost":5}
                                 ]
                             },
                             {
                                 "name":"Demo Charges",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Demo charge","cost":5},
                                     {"id":3,"text":"2 Demo charges","cost":10},
                                     {"id":4,"text":"3 Demo charges","cost":15}
@@ -25170,8 +25170,8 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"M4 Sherman Dozer","cost":0,"v":108},
-                                    {"id":2,"text":"M4 Sherman Crab","cost":0,"v":107},
+                                    {"id":1,"text":"M4 Sherman Dozer","v":108},
+                                    {"id":2,"text":"M4 Sherman Crab","v":107},
                                     {"id":3,"text":"Armoured Bulldozer","cost":-42,"br":-2,"v":160},
                                     {"id":4,"text":"Churchill IV Fascine","cost":-4,"v":123},
                                     {"id":5,"text":"Churchill AVRE Bridgelayer","cost":6,"v":123},
@@ -25199,7 +25199,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"1 medium truck","cost":0},
+                                    {"id":1,"text":"1 medium truck"},
                                     {"id":2,"text":"2 medium trucks","cost":4},
                                     {"id":3,"text":"3 medium trucks","cost":8},
                                     {"id":4,"text":"4 medium trucks","cost":12},
@@ -25225,7 +25225,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"Jeep Ambulance","cost":0,"v":163},
+                                {"id":1,"text":"Jeep Ambulance","v":163},
                                 {"id":2,"text":"Ambulance medium truck","cost":2,"v":91},
                                 {"id":3,"text":"M5 Halftrack Ambulance","cost":6,"v":83}
                             ]
@@ -25241,7 +25241,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 men","cost":0}
+                                {"id":1,"text":"2 men"}
                             ]
                             }
                         ]
@@ -25257,7 +25257,7 @@ var forces = [
                             {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"4 men with a tent","cost":0}
+                                {"id":1,"text":"4 men with a tent"}
                             ]
                             }
                         ]
@@ -25281,20 +25281,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"17 pdr AT with 3 crew","cost":0}
+                                    {"id":1,"text":"17 pdr AT with 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"M5 Halftrack tow","cost":8,"v":83},
                                     {"id":3,"text":"Crusader Tractor tow","cost":10,"v":152}
                                 ]
@@ -25311,7 +25311,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Churchill AVRE","cost":0,"v":123},
+                                    {"id":1,"text":"Churchill AVRE","v":123},
                                     {"id":2,"text":"Churchill Crocodile","cost":26,"v":124},
                                     {"id":3,"text":"Wasp","cost":-38,"br":-2,"v":151}
                                 ]
@@ -25328,20 +25328,20 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"40mm Bofors AA with 3 crew","cost":0}
+                                    {"id":1,"text":"40mm Bofors AA with 3 crew"}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium Truck tow","cost":4,"v":91}
                                 ]
                             }
@@ -25385,14 +25385,14 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"id":1,"text":"Veteran","cost":0},
+                                    {"id":1,"text":"Veteran"},
                                     {"id":2,"text":"Elite","cost":27, "br":4}
                                 ]
                             },
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"2 Medium Trucks","cost":8,"v":91,"vc":2},
                                     {"id":3,"text":"LVT IV Buffalo","cost":18, "br":1},
                                     {"id":4,"text":"LVT IV Buffalos (with 20mm)","cost":28,"br":1,"w":4}
@@ -25403,7 +25403,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Section HQ",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true
@@ -25411,7 +25411,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Group",
-                                "cost":0,
+                                
                                 "count":2,
                                 "br":0,
                                 "mandatory":true,
@@ -25419,7 +25419,7 @@ var forces = [
                                     {
                                         "name":"PIAT",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"PIAT","cost":5,"w":91}
                                         ]
                                     }
@@ -25428,7 +25428,7 @@ var forces = [
                             {
                                 "id":3,
                                 "name":"Bren Group",
-                                "cost":0,
+                                
                                 "count":2,
                                 "br":0,
                                 "mandatory":true,
@@ -25436,7 +25436,7 @@ var forces = [
                                     {
                                         "name":"Bren Guns",
                                         "choices":[
-                                            {"id":1,"text":"1 Bren Gun","cost":0},
+                                            {"id":1,"text":"1 Bren Gun"},
                                             {"id":2,"text":"1 K Gun","cost":2},
                                             {"id":3,"text":"2 Bren Guns","cost":2},
                                             {"id":4,"text":"1 Bren Gun, 1 K Gun","cost":4}
@@ -25447,7 +25447,7 @@ var forces = [
                             {
                                 "id":4,
                                 "name":"Light Mortar Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "w":60,
                                 "mandatory":true,
@@ -25456,7 +25456,7 @@ var forces = [
                             {
                                 "id":5,
                                 "name":"Sniper Team",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "unique":true
@@ -25480,7 +25480,7 @@ var forces = [
                         {
                             "name":"Target Priority",
                             "choices":[
-                                {"id":1,"text":"3rd (5+)","cost":0},
+                                {"id":1,"text":"3rd (5+)"},
                                 {"id":2,"text":"2nd (4+)","cost":5},
                                 {"id":3,"text":"1st (2+)","cost":15}
                             ]
@@ -25565,7 +25565,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Gaz Jeep","cost":0,"v":90},
+                                {"id":1,"text":"Gaz Jeep","v":90},
                                 {"id":2,"text":"White Scout car","cost":10,"v":84},
                                 {"id":3,"text":"T-34/76","cost":27,"v":75},
                                 {"id":4,"text":"T-34/85","cost":42,"v":236},
@@ -25585,7 +25585,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Gaz Jeep","cost":0,"v":90},
+                                {"id":1,"text":"Gaz Jeep","v":90},
                                 {"id":2,"text":"Medium Truck","cost":2,"v":91},
                                 {"id":3,"text":"White Scout car","cost":10,"v":84}
                             ]
@@ -25601,8 +25601,8 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"Medium Radio Truck","cost":0,"v":91},
-                                {"id":2,"text":"Radio Van","cost":0,"v":92}
+                                {"id":1,"text":"Medium Radio Truck","v":91},
+                                {"id":2,"text":"Radio Van","v":92}
                             ]
                         }
                     ]
@@ -25647,8 +25647,8 @@ var forces = [
                             {
                                 "name":"Weapon",
                                 "choices":[
-                                    {"id":1,"text":"Rifles","cost":0, "np":true},
-                                    {"id":2,"text":"Replace rifles with SMGs","cost":0}
+                                    {"id":1,"text":"Rifles", "np":true},
+                                    {"id":2,"text":"Replace rifles with SMGs"}
                                 ]
                             }
                         ],
@@ -25656,7 +25656,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -25664,7 +25664,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Gaz Jeep","cost":2,"v":90},
                                             {"id":3,"text":"M5 Halftrack","cost":10,"v":83}
                                         ]
@@ -25672,14 +25672,14 @@ var forces = [
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     },
                                     {
                                         "name":"Panzerfaust",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                         ]
                                     }
@@ -25688,7 +25688,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Squad",
-                                "cost":0,
+                                
                                 "count":4,
                                 "br":0,
                                 "mandatory":true,
@@ -25696,7 +25696,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91},
                                             {"id":3,"text":"M5 Halftrack","cost":8,"v":83}
                                         ]
@@ -25704,14 +25704,14 @@ var forces = [
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     },
                                     {
                                         "name":"Panzerfaust",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                         ]
                                     }
@@ -25727,7 +25727,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -25744,7 +25744,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -25767,7 +25767,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"45mmL66","cost":0,"w":39},
+                                            {"id":1,"text":"45mmL66","w":39},
                                             {"id":2,"text":"57mm L73 Zis 2","cost":17,"w":40},
                                             {"id":3,"text":"76.2mm L54 Zis 3","cost":17,"w":45}
                                         ]
@@ -25775,14 +25775,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91},
                                             {"id":3,"text":"Komsomolyets tractor","cost":8,"v":95},
                                             {"id":4,"text":"M5 Halftrack tow","cost":12,"v":83}
@@ -25801,20 +25801,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"76.2mm infantry gun","cost":0}
+                                            {"id":1,"text":"76.2mm infantry gun"}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Horse and limber","cost":2,"v":93},
                                             {"id":3,"text":"Medium truck","cost":4,"v":91}
                                         ]
@@ -25831,7 +25831,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -25849,7 +25849,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Medium truck","cost":4,"v":91},
                                     {"id":3,"text":"M5 Halftrack tow","cost":12,"v":83}
                                 ]
@@ -25857,21 +25857,21 @@ var forces = [
                             {
                                 "name":"Weapon",
                                 "choices":[
-                                    {"id":1,"text":"Rifles","cost":0, "np":true},
-                                    {"id":2,"text":"Replace rifles with SMGs","cost":0}
+                                    {"id":1,"text":"Rifles", "np":true},
+                                    {"id":2,"text":"Replace rifles with SMGs"}
                                 ]
                             },
                             {
                                 "name":"AT grenades",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
                             },
                             {
                                 "name":"Panzerfaust",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                 ]
                             }
@@ -25887,14 +25887,14 @@ var forces = [
                             {
                                 "name":"AT grenades",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
                             },
                             {
                                 "name":"Panzerfaust",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                 ]
                             }
@@ -25912,7 +25912,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -25920,7 +25920,7 @@ var forces = [
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -25929,7 +25929,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Squad",
-                                "cost":0,
+                                
                                 "count":4,
                                 "br":0,
                                 "mandatory":true,
@@ -25937,7 +25937,7 @@ var forces = [
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -25953,7 +25953,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -25970,7 +25970,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -25993,7 +25993,7 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"45mmL46","cost":0,"w":38},
+                                            {"id":1,"text":"45mmL46","w":38},
                                             {"id":2,"text":"45mmL66","cost":8,"w":39},
                                             {"id":3,"text":"76.2mm L54 Zis 3","cost":25,"w":45}
                                         ]
@@ -26001,14 +26001,14 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Horse and limber","cost":2,"v":93},
                                             {"id":3,"text":"Medium truck","cost":4,"v":91}
                                         ]
@@ -26026,20 +26026,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"76.2mm infantry gun","cost":0}
+                                            {"id":1,"text":"76.2mm infantry gun"}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Horse and limber","cost":2,"v":93}
                                         ]
                                     }
@@ -26057,7 +26057,7 @@ var forces = [
                             {
                                 "name":"AT grenades",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                 ]
                             }
@@ -26074,7 +26074,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Company Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "officer":true,
                                 "mandatory":true
@@ -26082,7 +26082,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Rifle Platoon",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "p":1,
@@ -26092,7 +26092,7 @@ var forces = [
                                     {
                                         "id":1,
                                         "name":"Command Squad",
-                                        "cost":0,
+                                        
                                         "br":0,
                                         "mandatory":true,
                                         "officer":true,
@@ -26100,7 +26100,7 @@ var forces = [
                                             {
                                                 "name":"AT grenades",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                                 ]
                                             }
@@ -26109,7 +26109,7 @@ var forces = [
                                     {
                                         "id":2,
                                         "name":"Rifle Squad",
-                                        "cost":0,
+                                        
                                         "count":4,
                                         "br":0,
                                         "mandatory":true,
@@ -26117,7 +26117,7 @@ var forces = [
                                             {
                                                 "name":"AT grenades",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"Anti-tank grenades","cost":5}
                                                 ]
                                             }
@@ -26133,7 +26133,7 @@ var forces = [
                                             {
                                                 "name":"Loader team",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"3-man loader team","cost":10}
                                                 ]
                                             }
@@ -26150,7 +26150,7 @@ var forces = [
                                             {
                                                 "name":"Loader team",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"3-man loader team","cost":10}
                                                 ]
                                             }
@@ -26173,7 +26173,7 @@ var forces = [
                                             {
                                                 "name":"Gun type",
                                                 "choices":[
-                                                    {"id":1,"text":"45mm L46","cost":0},
+                                                    {"id":1,"text":"45mm L46"},
                                                     {"id":2,"text":"45mm L66","cost":8},
                                                     {"id":3,"text":"76.2mm L54 Zis 3","cost":25,"w":45}
                                                 ]
@@ -26181,14 +26181,14 @@ var forces = [
                                             {
                                                 "name":"Loader team",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"3-man loader team","cost":10}
                                                 ]
                                             },
                                             {
                                                 "name":"Tow",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"Horse and limber","cost":2,"v":93},
                                                     {"id":3,"text":"Medium truck","cost":4,"v":91}
                                                 ]
@@ -26206,20 +26206,20 @@ var forces = [
                                             {
                                                 "name":"Gun type",
                                                 "choices":[
-                                                    {"id":1,"text":"76.2mm infantry gun","cost":0}
+                                                    {"id":1,"text":"76.2mm infantry gun"}
                                                 ]
                                             },
                                             {
                                                 "name":"Loader team",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"3-man loader team","cost":10}
                                                 ]
                                             },
                                             {
                                                 "name":"Tow",
                                                 "choices":[
-                                                    {"id":1,"text":"None","cost":0},
+                                                    {"id":1,"text":"None"},
                                                     {"id":2,"text":"Horse and limber","cost":2,"v":93}
                                                 ]
                                             }
@@ -26241,7 +26241,7 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                "cost":0,
+                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
@@ -26249,14 +26249,14 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Gaz Jeep","cost":2,"v":90}
                                         ]
                                     },
                                     {
                                         "name":"AT grenades",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Anti-tank grenades","cost":5}
                                         ]
                                     }
@@ -26265,7 +26265,7 @@ var forces = [
                             {
                                 "id":2,
                                 "name":"Pioneer Squad",
-                                "cost":0,
+                                
                                 "count":3,
                                 "br":0,
                                 "mandatory":true,
@@ -26273,35 +26273,35 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91}
                                         ]
                                     },
                                     {
                                         "name":"Flame-thrower",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0,"np":true},
+                                            {"id":1,"text":"None","np":true},
                                             {"id":2,"text":"Flame-thrower","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Mine sweeper",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0,"np":true},
+                                            {"id":1,"text":"None","np":true},
                                             {"id":2,"text":"Mine sweeper","cost":5}
                                         ]
                                     },
                                     {
                                         "name":"Demo Charges",
                                         "choices":[
-                                            {"id":1,"text":"1 Demo charge","cost":0},
+                                            {"id":1,"text":"1 Demo charge"},
                                             {"id":2,"text":"2 Demo charges","cost":5}
                                         ]
                                     },
                                     {
                                         "name":"Panzerfaust",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                                         ]
                                     }
@@ -26317,7 +26317,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -26334,7 +26334,7 @@ var forces = [
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     }
@@ -26350,21 +26350,21 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"45mmL66","cost":0,"w":39},
+                                            {"id":1,"text":"45mmL66","w":39},
                                             {"id":2,"text":"76.2mm L54 Zis 3","cost":17,"w":45}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91}
                                         ]
                                     }
@@ -26381,20 +26381,20 @@ var forces = [
                                     {
                                         "name":"Gun type",
                                         "choices":[
-                                            {"id":1,"text":"76.2mm infantry gun","cost":0}
+                                            {"id":1,"text":"76.2mm infantry gun"}
                                         ]
                                     },
                                     {
                                         "name":"Loader team",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"3-man loader team","cost":10}
                                         ]
                                     },
                                     {
                                         "name":"Tow",
                                         "choices":[
-                                            {"id":1,"text":"None","cost":0},
+                                            {"id":1,"text":"None"},
                                             {"id":2,"text":"Medium truck","cost":4,"v":91}
                                         ]
                                     }
@@ -26423,7 +26423,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"10 T-34/76s","cost":0},
+                                    {"id":1,"text":"10 T-34/76s"},
                                     {"id":2,"text":"10 T-34/85s","cost":125,"v":236}
                                 ]
                             }
@@ -26598,13 +26598,13 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"Two 76.2mm L54 Zis 3s","cost":0}
+                                    {"id":1,"text":"Two 76.2mm L54 Zis 3s"}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"No tow","cost":0},
+                                    {"id":1,"text":"No tow"},
                                     {"id":2,"text":"Medium truck tow","cost":4,"v":91},
                                     {"id":3,"text":"Medium truck tows","cost":8,"v":91}
                                 ]
@@ -26612,7 +26612,7 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Loader team","cost":10},
                                     {"id":3,"text":"2 Loader teams","cost":20}
                                 ]
@@ -26628,7 +26628,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 BM-13 Katyusha","cost":0,"w":51},
+                                    {"id":1,"text":"2 BM-13 Katyusha","w":51},
                                     {"id":2,"text":"2 76.2mm Zis 3","cost":-55,"w":45},
                                     {"id":3,"text":"2 122mm howitzers","cost":-9,'w':47},
                                     {"id":4,"text":"2 152mm howitzers","w":49},
@@ -26654,7 +26654,7 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Loader team","cost":10},
                                     {"id":3,"text":"2 Loader teams","cost":20},
                                     {"id":4,"text":"3 Loader teams","cost":30}
@@ -26672,14 +26672,14 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 120mm mortars","cost":0},
+                                    {"id":1,"text":"2 120mm mortars"},
                                     {"id":2,"text":"3 120mm mortars","cost":29, "br":1}
                                 ]
                             },
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Loader team","cost":10},
                                     {"id":3,"text":"2 Loader teams","cost":20},
                                     {"id":4,"text":"3 Loader teams","cost":30}
@@ -26696,7 +26696,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 82mm mortars","cost":0,"w":34},
+                                    {"id":1,"text":"2 82mm mortars","w":34},
                                     {"id":2,"text":"2 120mm mortars","cost":18,"w":3}
                                 ]
                             }
@@ -26711,7 +26711,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"id":1,"text":"2 122mmL23 howitzers","cost":0,"w":47},
+                                    {"id":1,"text":"2 122mmL23 howitzers","w":47},
                                     {"id":2,"text":"2 152mmL24 howitzers","cost":8,"w":49},
                                     {"id":3,"text":"2 122mmL46 cannons","cost":36,"w":48}
                                 ]
@@ -26719,7 +26719,7 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"1 Loader team","cost":10},
                                     {"id":3,"text":"2 Loader teams","cost":20}
                                 ]
@@ -26727,7 +26727,7 @@ var forces = [
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"No tow","cost":0},
+                                    {"id":1,"text":"No tow"},
                                     {"id":2,"text":"1 Medium truck tow","cost":4,"v":91},
                                     {"id":3,"text":"2 Medium truck tows","cost":8,"v":91}
                                 ]
@@ -26745,14 +26745,14 @@ var forces = [
                             {
                                 "name":"Loader team",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"3-man loader team","cost":10}
                                 ]
                             },
                             {
                                 "name":"Tow",
                                 "choices":[
-                                    {"id":1,"text":"None","cost":0},
+                                    {"id":1,"text":"None"},
                                     {"id":2,"text":"Voroshilovets Tractor tow","cost":8,"v":241}
                                 ]
                             }
@@ -26844,7 +26844,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"1 sniper","cost":0},
+                                {"id":1,"text":"1 sniper"},
                                 {"id":2,"text":"1 sniper + 1 spotter","cost":5}
                             ]
                         }
@@ -26866,7 +26866,7 @@ var forces = [
                         {
                             "name":"AT grenades",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Anti-tank grenades","cost":5}
                             ]
                         }
@@ -26912,7 +26912,7 @@ var forces = [
                         {
                             "name":"AT grenades",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Anti-tank grenades","cost":5}
                             ]
                         }
@@ -26929,14 +26929,14 @@ var forces = [
                         {
                             "name":"AT grenades",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Anti-tank grenades","cost":5}
                             ]
                         },
                         {
                             "name":"Panzerfaust",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Panzerfaust in 1 team","cost":5,"w":107}
                             ]
                         }
@@ -26992,7 +26992,7 @@ var forces = [
                         {
                             "name":"Transport",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Medium Truck","cost":4,"v":91}
                             ]
                         },
@@ -27006,7 +27006,7 @@ var forces = [
                         {
                             "name":"Mine sweeper",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Mine sweeper","cost":5}
                             ]
                         },
@@ -27020,7 +27020,7 @@ var forces = [
                         {
                             "name":"Panzerfaust",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"1 Panzerfaust","cost":5,"w":107}
                             ]
                         }
@@ -27045,7 +27045,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"2 Heavy Trucks & 12 men","cost":0},
+                                {"id":1,"text":"2 Heavy Trucks & 12 men"},
                                 {"id":2,"text":"3 Heavy Trucks & 18 men","cost":24},
                                 {"id":3,"text":"4 Heavy Trucks & 24 men","cost":48},
                                 {"id":4,"text":"5 Heavy Trucks & 30 men","cost":72}
@@ -27111,7 +27111,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"2 men","cost":0}
+                            {"id":1,"text":"2 men"}
                         ]
                         }
                     ]
@@ -27126,7 +27126,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"Jeep Ambulance","cost":0,"v":90},
+                            {"id":1,"text":"Jeep Ambulance","v":90},
                             {"id":2,"text":"Ambulance medium truck","cost":2,"v":91},
                             {"id":3,"text":"M5 Halftrack Ambulance","cost":6,"v":83}
                         ]
@@ -27144,7 +27144,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"id":1,"text":"4 men with a tent","cost":0}
+                            {"id":1,"text":"4 men with a tent"}
                         ]
                         }
                     ]
@@ -27169,7 +27169,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"KV-2","cost":0}
+                                {"id":1,"text":"KV-2"}
                             ]
                         }
                     ]
@@ -27183,21 +27183,21 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"76.2mm L54 Zis 3","cost":0,"w":45},
+                                {"id":1,"text":"76.2mm L54 Zis 3","w":45},
                                 {"id":2,"text":"85mm L53 AA gun","cost":51,"br":1} //greg what gun is this?
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Horse & limber","cost":2,"v":93},
                                 {"id":3,"text":"Medium truck","cost":4,"v":91},
                                 {"id":4,"text":"Komsomolyets tractor","cost":8,"v":95}
@@ -27215,14 +27215,14 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"3 45mmL46 guns","cost":0,"w":38},
+                                {"id":1,"text":"3 45mmL46 guns","w":38},
                                 {"id":2,"text":"3 45mmL66 guns","cost":20,"w":39}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"1 Loader team","cost":10},
                                 {"id":3,"text":"2 Loader teams","cost":20},
                                 {"id":4,"text":"3 Loader teams","cost":30}
@@ -27231,7 +27231,7 @@ var forces = [
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Horse & limber","cost":2,"v":93},
                                 {"id":3,"text":"Medium truck","cost":4,"v":91}
                             ]
@@ -27247,21 +27247,21 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"DshK HMG","cost":0},
+                                {"id":1,"text":"DshK HMG"},
                                 {"id":2,"text":"37mm AA gun","cost":10,"w":5}
                             ]
                         },
                         {
                             "name":"Loader team",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"3-man loader team","cost":10}
                             ]
                         },
                         {
                             "name":"Tow",
                             "choices":[
-                                {"id":1,"text":"None","cost":0},
+                                {"id":1,"text":"None"},
                                 {"id":2,"text":"Medium truck","cost":4,"v":91}
                             ]
                         }
@@ -27284,7 +27284,7 @@ var forces = [
                         {
                             "name":"Target Priority",
                             "choices":[
-                                {"id":1,"text":"3rd (5+)","cost":0},
+                                {"id":1,"text":"3rd (5+)"},
                                 {"id":2,"text":"2nd (4+)","cost":5},
                                 {"id":3,"text":"1st (2+)","cost":15}
                             ]
