@@ -1753,7 +1753,7 @@ var vehicles = [
 },
 {
     'id':237,
-    'name':IS-II',
+    'name':'IS-II',
     'armour':true,
     'weapons':[115],
     'mg':true,
@@ -1761,7 +1761,7 @@ var vehicles = [
 },
 {
     'id':238,
-    'name':ISU-122',
+    'name':'ISU-122',
     'armour':true,
     'weapons':[115],
     'mg':true,
@@ -1769,7 +1769,7 @@ var vehicles = [
 },
 {
     'id':239,
-    'name':ISU-152',
+    'name':'ISU-152',
     'armour':true,
     'weapons':[50],
     'mg':true,
@@ -26548,7 +26548,7 @@ var forces = [
                                 ]
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -26814,7 +26814,7 @@ var forces = [
                         "cost":20,
                         "br":0,
                         "restricted":true
-                    }
+                    },
                     {
                         "id":9,
                         "name":"Sniper Hideout",
@@ -26862,7 +26862,7 @@ var forces = [
                                 {"id":1,"text":"White Scout Car","v":84},
                                 {"id":2,"text":"M3 Halftrack","cost":4,"v":148}
                             ]
-                        }
+                        },
                         {
                             "name":"AT grenades",
                             "choices":[
@@ -26971,13 +26971,14 @@ var forces = [
                     "cost":12,
                     "br":2,
                     "v":91,
-                    "restricted":true
+                    "restricted":true,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
                                 {"id":1,"text":"1 Medium Trucks"},
                                 {"id":2,"text":"T-34 ARV","cost":8,"v":242}
+                            ]
                         }
                     ]
                 },
@@ -26998,7 +26999,7 @@ var forces = [
                         {
                             "name":"Flame-thrower",
                             "choices":[
-                                {"id":1,"text":"Flame-thrower"}
+                                {"id":1,"text":"Flame-thrower"},
                                 {"id":2,"text":"2 Flame-throwers","cost":10}
                             ]
                         },
