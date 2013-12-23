@@ -26119,7 +26119,6 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Company Command Squad",
-                                
                                 "br":0,
                                 "officer":true,
                                 "mandatory":true
@@ -27660,6 +27659,7 @@ function allow_enables() {
 
 function render_entries(entries, sub_entries, async) {
     var text="";
+    var unit_cost;
     for(var i = 0; i < entries.length; i++) {
         var count = 1;
         if (entries[i].count) {
@@ -27711,7 +27711,11 @@ function render_entries(entries, sub_entries, async) {
             text = text + "' class='entry ui-widget-content";
             if ( entries[i]['mandatory'] )
                 text = text + ' ui-selected mandatory';
-            text = text + "'><div><p class='entry_name'>"+entries[i].name+"</p><p id='cost' data-initial-cost='"+entries[i].cost+"' class='entry_cost'>"+entries[i].cost+"</p><p class='entry_cost' id='br' data-initial-br='"+entries[i].br+"'>"+entries[i].br+"<font size='1.2em'>BR</font></p></div>";
+            if ( entries[i].cost == undefined )
+                unit_cost = 0;
+            else
+                unit_cost = entries[i].cost;
+            text = text + "'><div><p class='entry_name'>"+entries[i].name+"</p><p id='cost' data-initial-cost='"+unit_cost+"' class='entry_cost'>"+unit_cost+"</p><p class='entry_cost' id='br' data-initial-br='"+entries[i].br+"'>"+entries[i].br+"<font size='1.2em'>BR</font></p></div>";
             if ( entries[i]['options'] ) {
                 for(var j = 0; j < entries[i]['options'].length; j++) {
                     text = text + '<div class="choice ui-helper-clearfix"><p class="opt_text">'+entries[i]['options'][j]['name']+'</p><select class="opt_select" name="' + entries[i]['options'][j]['name']+ '" data-bg_id="' + (j+1) +  '">';
