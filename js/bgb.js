@@ -24422,13 +24422,21 @@ var forces = [
                             },
                             {
                                 "id":4,
+                                "name":"PIAT Team",
+                                "cost":0,
+                                "br":0,
+                                "w":91,
+                                "mandatory":true
+                            },
+                            {
+                                "id":5,
                                 "name":"Combat Medic",
-                                "cost":8,
+                                "cost":9,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":5,
+                                "id":6,
                                 "name":"Heavy Machine Gun team",
                                 "cost":25,
                                 "br":1,
@@ -24451,7 +24459,7 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
+                                "id":7,
                                 "name":"PIAT Team",
                                 "cost":18,
                                 "br":1,
@@ -24459,7 +24467,7 @@ var forces = [
                                 "unique":true
                             },
                             {
-                                "id":7,
+                                "id":8,
                                 "name":"Medium Mortar Team",
                                 "cost":27,
                                 "br":1,
@@ -24477,7 +24485,7 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
+                                "id":9,
                                 "name":"Anti-tank Gun",
                                 "cost":37,
                                 "br":2,
