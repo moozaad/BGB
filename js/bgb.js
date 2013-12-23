@@ -27708,8 +27708,10 @@ function render_entries(entries, sub_entries, async) {
                 for(var j = 0; j < entries[i]['options'].length; j++) {
                     text = text + '<div class="choice ui-helper-clearfix"><p class="opt_text">'+entries[i]['options'][j]['name']+'</p><select class="opt_select" name="' + entries[i]['options'][j]['name']+ '" data-bg_id="' + (j+1) +  '">';
                     for (var k=0; k<entries[i].options[j].choices.length; k++) {
-                        text = text + "<option data-cost='"+ (entries[i].options[j].choices[k].cost!== undefined) ?
-                            entries[i].options[j].choices[k].cost : 0;
+                        if ( entries[i].options[j].choices[k].cost!== undefined )
+                            text = text + "<option data-cost='" + entries[i].options[j].choices[k].cost;
+                        else
+                            text = text + "<option data-cost='0";
                         if (entries[i].options[j].choices[k].np)
                            text = text +"' data-np='"+entries[i].options[j].choices[k].br; 
                         if (entries[i].options[j].choices[k].br)
