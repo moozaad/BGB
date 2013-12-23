@@ -4934,12 +4934,12 @@ var forces = [
                     "name":"Heavy Anti-Tank Gun",
                     "cost":51,
                     "br":3,
-                    "w":20,
+                    "w":19,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"PaK43/41 88mm AA/AT with 4 crew"}
+                                {"id":1,"text":"88mm AA/AT with 4 crew"}
                             ]
                         },
                         {
@@ -6344,7 +6344,7 @@ var forces = [
                     "name":"Heavy Anti-Tank Gun",
                     "cost":51,
                     "br":3,
-                    "w":20,
+                    "w":19,
                     "options":[
                         {
                             "name":"Composition",
