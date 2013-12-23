@@ -127,7 +127,6 @@ var vehicles = [
     'weapons':[44],
     'mg':true,
     'special':'T-34 Mobility',
-    'weapons':[17],
     'ammo':true
 },
 {
@@ -1790,7 +1789,7 @@ var vehicles = [
     'name':'T-34 ARV',
     'armour':true,
     'special':'T-34 Mobility',
-    "open":true
+    'open':true
 },
 {
     'id':243,
@@ -1809,6 +1808,29 @@ var vehicles = [
     'mg':true,
     'special':'T-34 Mobility',
     'ammo':true //greg also has flamethrower
+},
+{
+    'id':245,
+    'name':'M17 MGMC',
+    'armour':true,
+    'mg':true,
+    'open':true
+},
+{
+    'id':246,
+    'name':'ZSU-37',
+    'armour':true,
+    'weapons':36,
+    'open':true,
+    'ammo':true
+},
+{
+    'id':247,
+    'name':'SU-57',
+    'armour':true,
+    'weapons':59,
+    'open':true,
+    'ammo':true
 },
     // greg to-do, landing craft
 {
@@ -3214,6 +3236,21 @@ var weapons = {
     },
     116:{
         'name':'100mmL54',
+        'stats':[
+        {
+            'type':'HE [M]',
+            'effect':'',
+            'strength':['','','','','','']
+        },
+        {
+            'type':'AP',
+            'effect':'-',
+            'strength':['','','','','','']
+        }
+        ]
+    },
+    117:{
+        'name':'100mmL60',
         'stats':[
         {
             'type':'HE [M]',
@@ -13692,7 +13729,7 @@ var forces = [
                                             {"id":2,"text":"Medium truck","cost":4,"v":91},
                                             {"id":3,"text":"Opel Maultier","cost":8,"v":59},
                                             {"id":4,"text":"SdKfz 6 Half-track","cost":8,"v":64},
-                                            {"id":5,"text":"Unic P107","cost":4,"cost":8,"v":0},
+                                            {"id":5,"text":"Unic P107","cost":4,"v":0},// greg confirm cost and vehicle
                                             {"id":6,"text":"SdKfz 251/1","cost":16, "v":37}
                                         ]
                                     }
@@ -27151,7 +27188,6 @@ var forces = [
                 }
             ]
         },
-        greg got to here
         {
             "id":9, 
             "name":"Specialist Support Units",
@@ -27160,95 +27196,37 @@ var forces = [
             "entries":[
                 {
                     "id":1,
-                    "name":"Heavy Infantry Support Tank",
-                    "cost":60,
-                    "unique":true,
-                    "br":3,
-                    "v":74,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"KV-2"}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":2,
-                    "name":"Heavy Anti-Tank Gun",
-                    "cost":33,
-                    "br":2,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"76.2mm L54 Zis 3","w":45},
-                                {"id":2,"text":"85mm L53 AA gun","cost":51,"br":1} //greg what gun is this?
-                            ]
-                        },
-                        {
-                            "name":"Loader team",
-                            "choices":[
-                                {"id":1,"text":"None"},
-                                {"id":2,"text":"3-man loader team","cost":10}
-                            ]
-                        },
-                        {
-                            "name":"Tow",
-                            "choices":[
-                                {"id":1,"text":"None"},
-                                {"id":2,"text":"Horse & limber","cost":2,"v":93},
-                                {"id":3,"text":"Medium truck","cost":4,"v":91},
-                                {"id":4,"text":"Komsomolyets tractor","cost":8,"v":95}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":3,
-                    "name":"45mm AT Gun Battery",
-                    "cost":48,
-                    "br":3,
-                    "unique":true,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"id":1,"text":"3 45mmL46 guns","w":38},
-                                {"id":2,"text":"3 45mmL66 guns","cost":20,"w":39}
-                            ]
-                        },
-                        {
-                            "name":"Loader team",
-                            "choices":[
-                                {"id":1,"text":"None"},
-                                {"id":2,"text":"1 Loader team","cost":10},
-                                {"id":3,"text":"2 Loader teams","cost":20},
-                                {"id":4,"text":"3 Loader teams","cost":30}
-                            ]
-                        },
-                        {
-                            "name":"Tow",
-                            "choices":[
-                                {"id":1,"text":"None"},
-                                {"id":2,"text":"Horse & limber","cost":2,"v":93},
-                                {"id":3,"text":"Medium truck","cost":4,"v":91}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id":4,
-                    "name":"Towed Anti-Aircraft Gun",
+                    "name":"Anti-Aircraft Vehicle",
                     "cost":24,
                     "br":1,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
-                                {"id":1,"text":"DshK HMG"},
-                                {"id":2,"text":"37mm AA gun","cost":10,"w":5}
+                            {"id":1,"text":"Gaz truck with quad Maxim MGs","v":91},
+                            {"id":2,"text":"M17 MGMC","cost":4,'v':245}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":2,
+                    "name":"ZSU-37 AA Vehicle",
+                    "cost":20,
+                    "unique":true,
+                    "v":246,
+                    "br":2
+                },
+                {
+                    "id":3,
+                    "name":"Towed Anti-Aircraft Gun",
+                    "cost":36,
+                    "br":1,
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"37mm AA gun","w":5}
                             ]
                         },
                         {
@@ -27266,7 +27244,45 @@ var forces = [
                             ]
                         }
                     ]
+                },
+                {
+                    "id":4,
+                    "name":"Heavy Anti-Tank Gun",
+                    "cost":72,
+                    "unique":true,
+                    "br":2,
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"id":1,"text":"100mmL60 BS-3","w":117}
+                            ]
+                        },
+                        {
+                            "name":"Loader team",
+                            "choices":[
+                                {"id":1,"text":"None"},
+                                {"id":2,"text":"3-man loader team","cost":10}
+                            ]
+                        },
+                        {
+                            "name":"Tow",
+                            "choices":[
+                                {"id":1,"text":"None"},
+                                {"id":2,"text":"Medium truck","cost":4,"v":91},
+                                {"id":4,"text":"M3 Halftrack tow","cost":12,"v":148}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":5,
+                    "name":"SU-57",
+                    "cost":22,
+                    "v":247,
+                    "br":1
                 }
+            // greg atypical tank needs to be added here
             ]
         },
         {
@@ -27346,7 +27362,7 @@ var forces = [
             ]
         }
         ]
-    },
+    }
 ];
 
 function render_sub_units_to(sub) {
@@ -27365,8 +27381,9 @@ function perm(inArr, choose, callback, callback_arg) {
             found = callback(c, callback_arg);
         } else {
             for (var i = 0; i < tmpArray.length; ++i) {
+                var newArray;
                 c.push(tmpArray[i]);
-                var newArray = tmpArray.slice(0);
+                newArray = tmpArray.slice(0);
                 newArray.splice(i, 1);
                 inner(newArray, choose_ - 1);
                 c.pop();
