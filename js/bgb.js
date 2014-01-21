@@ -3399,7 +3399,6 @@ var forces = [
                             {
                                 "id":1,
                                 "name":"Command Squad",
-                                
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true,
