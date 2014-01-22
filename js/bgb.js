@@ -6626,7 +6626,7 @@ var forces = [
                     "name":"NKVD Officer",
                     "officer":true,
                     "restricted":true,
-                    "br":0,
+                    "br":'D6',
                     "cost":26,
                     "options":[
                         {
@@ -7255,7 +7255,7 @@ var forces = [
                         "id":12,
                         "name":"For the Motherland!",
                         "cost":15,
-                        "br":0,
+                        "br":'D6',
                         "unique":true
                     }
                 ]
@@ -7852,7 +7852,7 @@ var forces = [
                     "id":7,
                     "name":"NKVD Officer",
                     "officer":true,
-                    "br":0,
+                    "br":'D6',
                     "restricted":true,
                     "cost":26,
                     "options":[
@@ -8680,7 +8680,7 @@ var forces = [
                         "id":24,
                         "name":"For the Motherland!",
                         "cost":15,
-                        "br":0,
+                        "br":'D6',
                         "unique":true
                     }
                 ]
@@ -27424,7 +27424,7 @@ var forces = [
                 {
                     "id":4,
                     "name":"Feldgendarme Team",
-                    "br":"D6",  greg make this work
+                    "br":"D6",
                     "cost":20,
                     "unique":true,
                     "options":[
@@ -27435,6 +27435,7 @@ var forces = [
                                 {"id":2,"text":"Motorcyle & sidecar","v":51}
                             ]
                         }
+                    ]
                 },
                 {
                     "id":5,
@@ -27450,8 +27451,8 @@ var forces = [
                                 {"id":2,"text":"3 men & SdKfz 250/3 Radio H.T.","cost":6,"v":44},
                                 {"id":3,"text":"3 men & SdKfz 251/3 Radio H.T.","cost":6,"v":39},
                                 {"id":4,"text":"SdKfz 223","cost":6,"v":33},
-                                {"id":5,"text":"Panzer IV H","cost":50, "br":2,"v":9}
-                                {"id":6,"text":"Panther A or G","cost":77,"v":187 ,"br":2},
+                                {"id":5,"text":"Panzer IV H","cost":50, "br":2,"v":9},
+                                {"id":6,"text":"Panther A or G","cost":77,"v":187 ,"br":2}
                             ]
                         }
                         ]
@@ -27465,18 +27466,18 @@ var forces = [
                 {
                     "id":7,
                     "name":"To the Last Bullet",
-                    "br":"D6", greg
+                    "br":"D6",
                     "cost":15
                 },
                 {
                     "id":8,
                     "name":"Backs to Berlin",
-                    "br":"D6", greg
+                    "br":"D6",
                     "cost":15
                 }
                 ]
             },
-        greg got to here
+        //greg got to here
             {
                 "id":2, 
                 "name":"Infantry Units",
@@ -28830,7 +28831,7 @@ var forces = [
             ]
         }
         ]
-    },
+    }
 ];
 
 function render_sub_units_to(sub) {
@@ -29424,11 +29425,16 @@ function squads_check(cost, entries) {
 function update_cost() {
     var cost = 0;
     var br=0;
+    var d6s=0;
     var entries = get_selected_entries();
     var officer_count = 0;
     $(entries).each(function() {
         cost = cost + parseInt($(this).find('#cost').text(),10);
-        br = br + parseInt($(this).find('#br').text(),10);
+        var brEntry = $(this).find('#br').text();
+        if ( brEntry == 'D6BR' )
+            d6s++;
+        else
+            br = br + parseInt(brEntry,10);
         if ($(this).data('officer')) {
             if ($(this).data('officer') === true )
                 officer_count++;
@@ -29436,7 +29442,10 @@ function update_cost() {
                 officer_count = officer_count + $(this).data('officer');
         }
     });
-    $('#force_cost').text(cost + ' / ' + br +'br');
+    if ( d6s == 0 )
+        $('#force_cost').text(cost + ' / ' + br +'br');
+    else
+        $('#force_cost').text(cost + ' / ' + br + '+'+d6s+'D6 br');
     $('#officer_count').text(officer_count);
     var restricted = entries.filter( 
         function() {
