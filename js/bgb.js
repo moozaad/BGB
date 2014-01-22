@@ -26496,7 +26496,6 @@ var forces = [
                     }
                 ]
             },
-            //greg got to here
             {
                 "name":"Tank Units",
                 "allows":'[6,7,8,9]',
@@ -27006,6 +27005,33 @@ var forces = [
                     {
                         "name":"Off-table 88 Anti-Tank shot",
                         "cost":5,
+                        "br":0
+                    },
+                    {
+                        "name":"Timed Demolition",
+                        "cost":20,
+                        "br":0
+                    },
+                    {
+                        "name":"Bridge Demolitions",
+                        "cost":10,
+                        "br":0
+                    },
+                    {
+                        "name":"Pantherturm",
+                        "cost":35,
+                        "restricted":true,
+                        "br":0
+                    },
+                    {
+                        "name":"Tunnels",
+                        "cost":30,
+                        "unique":true,
+                        "br":0
+                    },
+                    {
+                        "name":"Cellar Shelter",
+                        "cost":10,
                         "br":0
                     }
                 ]
