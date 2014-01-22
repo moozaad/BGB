@@ -7218,7 +7218,6 @@ var forces = [
                     "name":"Light Tank",
                     "cost":30,
                     "br":2,
-                    "unique":true,
                     "options":[
                         {
                             "name":"Composition",
