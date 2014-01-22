@@ -3281,7 +3281,6 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1,
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
@@ -3375,14 +3374,12 @@ var forces = [
 
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Panzer Grenadier Platoon",
                         "cost":100,
                         "br":11,
@@ -3391,7 +3388,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 "br":0,
                                 "mandatory":true,
@@ -3414,7 +3410,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Panzer Grenadier Squad",
                                 "count":3,
                                 "br":0,
@@ -3445,14 +3440,12 @@ var forces = [
 
                             },
                             {
-                                "id":3,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
@@ -3469,7 +3462,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Heavy Machine Gun team",
                                 "cost":18,
                                 "br":1,
@@ -3492,14 +3484,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Anti-tank Rifle Team",
                                 "cost":14,
                                 "br":1,
                                 "unique":true
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -3516,7 +3506,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":27,
                                 "br":2,
@@ -3551,7 +3540,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Armoured Pioneer Platoon",
                         "cost":199,
                         "br":19,
@@ -3570,7 +3558,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 "br":0,
                                 "mandatory":true,
@@ -3591,7 +3578,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Assault Pioneer Squad",
                                 
                                 "count":3,
@@ -3634,14 +3620,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Combat Medic",
                                 "cost":9,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":4,
                                 "name":"Heavy Machine Gun team",
                                 "cost":21,
                                 "br":1,
@@ -3664,14 +3648,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Anti-tank Rifle Team",
                                 "cost":16,
                                 "br":1,
                                 "unique":true
                             },
                             {
-                                "id":6,
                                 "name":"Anti-tank Gun",
                                 "cost":30,
                                 "br":2,
@@ -3704,7 +3686,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Self Propelled Infantry Gun",
                                 "cost":26,
                                 "br":1,
@@ -3721,7 +3702,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Towed AA Gun",
                                 "cost":31,
                                 "br":2,
@@ -3749,7 +3729,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Armoured Pzr Gren Platoon",
                         "cost":162,
                         "br":15,
@@ -3767,7 +3746,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -3790,7 +3768,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Panzer Grenadier Squad",
                                 
                                 "count":3,
@@ -3820,14 +3797,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 "cost":14,
                                 "br":1,
@@ -3844,7 +3819,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Heavy Machine Gun team",
                                 "cost":21,
                                 "br":1,
@@ -3867,14 +3841,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Anti-tank Rifle Team",
                                 "cost":16,
                                 "br":1,
                                 "unique":true
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -3898,7 +3870,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":27,
                                 "br":2,
@@ -3931,7 +3902,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":9,
                                 "name":"Self Propelled Infantry Gun",
                                 "cost":26,
                                 "br":1,
@@ -3948,7 +3918,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":10,
                                 "name":"Towed AA Gun",
                                 "cost":28,
                                 "br":2,
@@ -3976,7 +3945,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Panzer Grenadier Squad",
                         "cost":26,
                         "br":2,
@@ -4006,7 +3974,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Armoured Pzr Gren Squad",
                         "cost":42,
                         "br":3,
@@ -4042,7 +4009,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Assault Pioneer Squad",
                         "cost":54,
                         "br":3,
@@ -4094,13 +4060,11 @@ var forces = [
                 ]
             },
             {
-                "id":3, 
                 "name":"Tank Units",
                 "allows":'[6,7,8,9]',
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Panzer III Squadron",
                         "cost":85,
                         "multiplier":3,
@@ -4119,7 +4083,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Panzer IV Squadron",
                         "cost":135,
                         "multiplier":3,
@@ -4137,7 +4100,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Panzer V Squadron",
                         "cost":220,
                         "multiplier":3,
@@ -4157,7 +4119,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"StuG III Squadron",
                         "cost":110,
                         "multiplier":3,
@@ -4175,7 +4136,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Panzer Ace",
                         "multiplier":0,
                         "cost":20,
@@ -4183,7 +4143,6 @@ var forces = [
                         "unique":true
                     },
                     {
-                        "id":6,
                         "name":"Panzer III",
                         "cost":30,
                         "br":3,
@@ -4200,7 +4159,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Panzer IV",
                         "cost":44,
                         "br":3,
@@ -4217,7 +4175,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
                         "name":"Panzer V Panther",
                         "cost":85,
                         "restricted":true,
@@ -4233,7 +4190,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":9,
                         "name":"StuG III",
                         "cost":24,
                         "br":3,
@@ -4249,7 +4205,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":10,
                         "name":"Panzer II",
                         "cost":24,
                         "restricted":true,
@@ -4267,13 +4222,11 @@ var forces = [
                 ]
             },
             {
-                "id":4, 
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":16,
                         "br":1,
@@ -4289,7 +4242,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Aerial Artillery Observer",
                         "cost":66,
                         "br":3,
@@ -4304,7 +4256,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Light Panzer Artillery Battery",
                         "cost":86,
                         "br":4,
@@ -4320,7 +4271,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Medium Panzer Artillery Battery",
                         "cost":136,
                         "br":4,
@@ -4337,7 +4287,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Nebelwerfer Artillery Battery",
                         "cost":86,
                         "br":2,
@@ -4353,7 +4302,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Self-Propelled Artillery",
                         "cost":43,
                         "br":2,
@@ -4369,7 +4317,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Off-Table Artillery Fire",
                         "cost":90,
                         "br":0,
@@ -4389,7 +4336,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
                         "name":"Armoured Forward Observer",
                         "cost":29,
                         "br":2,
@@ -4404,7 +4350,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":9,
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":1,
@@ -4434,7 +4379,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":10,
                         "name":"105mm Howitzer",
                         "cost":36,
                         "br":2,
@@ -4458,7 +4402,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":11,
                         "name":"150mm Howitzer",
                         "cost":54,
                         "br":2,
@@ -4481,7 +4424,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":12,
                         "name":"100mm Cannon",
                         "cost":50,
                         "br":2,
@@ -4506,7 +4448,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":13,
                         "name":"150mm Infantry Gun",
                         "cost":54,
                         "br":2,
@@ -4530,7 +4471,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":14,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -4547,63 +4487,53 @@ var forces = [
                 ]
             },
             {
-                "id":5, 
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":4,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":5,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":7,
                         "name":"AT Gun Dug-out",
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":8,
                         "name":"Booby Trapped Building",
                         "cost":25,
                         "br":0
                     },
                     {
-                        "id":9,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
@@ -4611,13 +4541,11 @@ var forces = [
                 ]
             },
         {
-            "id":6, 
             "name":"Reconnaissance Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Sniper",
                     "cost":10,
                     "br":1,
@@ -4632,7 +4560,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Mounted Panzer Grenadier Patrol",
                     "cost":28,
                     "br":3,
@@ -4653,13 +4580,11 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Motorcycle Reconnaissance Patrol",
                     "cost":18,
                     "br":1
                 },
                 {
-                    "id":4,
                     "name":"Recon Platoon Command",
                     "cost":44,
                     "br":2,
@@ -4676,7 +4601,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Panzer Grenadier Foot Patrol",
                     "cost":36,
                     "br":3,
@@ -4699,7 +4623,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":6,
                     "name":"Armoured Car",
                     "cost":20,
                     "br":1,
@@ -4718,7 +4641,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":7,
                     "name":"Aerial Reconnaissance",
                     "cost":50,
                     "br":2,
@@ -4736,13 +4658,11 @@ var forces = [
             ]
         },
         {
-            "id":7, 
             "name":"Engineer Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Light Bridging Unit",
                     "cost":18,
                     "br":2,
@@ -4757,7 +4677,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Heavy Bridging Unit",
                     "cost":36,
                     "br":3,
@@ -4777,7 +4696,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Flammpanzer III",
                     "cost":50,
                     "br":3,
@@ -4792,7 +4710,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Recovery Vehicle",
                     "cost":18,
                     "br":1,
@@ -4807,7 +4724,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Borgward Demolition Squadron",
                     "cost":74,
                     "br":5,
@@ -4834,13 +4750,11 @@ var forces = [
             ]
         },
         {
-            "id":8, 
             "name":"Logistics Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Supply Column",
                     "cost":8,
                     "br":1,
@@ -4866,7 +4780,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Stretcher Party",
                     "cost":10,
                     "br":1,
@@ -4880,7 +4793,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Ambulance",
                     "cost":14,
                     "br":2,
@@ -4897,7 +4809,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Forward Aid Post",
                     "cost":20,
                     "br":5,
@@ -4915,13 +4826,11 @@ var forces = [
             ]
         },
         {
-            "id":9, 
             "name":"Specialist Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Heavy Anti-Tank Gun",
                     "cost":51,
                     "br":3,
@@ -4950,7 +4859,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Self-Propelled Anti-Tank Gun",
                     "cost":30,
                     "br":1,
@@ -4968,7 +4876,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Panzer VI Squadron",
                     "cost":223,
                     "br":12,
@@ -4987,7 +4894,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Heavy Tank Hunter",
                     "cost":136,
                     "br":5,
@@ -5002,7 +4908,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Captured Tank",
                     "cost":42,
                     "br":3,
@@ -5016,7 +4921,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":6,
                     "name":"Anti-Aircraft Vehicle",
                     "cost":16,
                     "br":1,
@@ -5034,7 +4938,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":7,
                     "name":"Assault Howitzer",
                     "cost":44,
                     "br":3,
@@ -5050,7 +4953,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":8,
                     "name":"Panzer VI",
                     "cost":85,
                     "br":4,
@@ -5068,13 +4970,11 @@ var forces = [
             ]
         },
         {
-            "id":10, 
             "name":"Additional Fire Support",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Off-Table Artillery Request",
                     "cost":5,
                     "br":0,
@@ -5090,44 +4990,37 @@ var forces = [
                     ]
                 },
             {
-                "id":2,
                 "name":"Pre-Registered Target Point",
                 "cost":15,
                 "br":0
             },
             {
-                "id":3,
                 "name":"Counter-Battery Fire Mission",
                 "cost":10,
                 "br":0
             },
             {
-                "id":4,
                 "name":"Timed 105mm Barrage",
                 "w":22,
                 "cost":10,
                 "br":0
             },
             {
-                "id":5,
                 "name":"Timed 150mm Barrage",
                 "cost":20,
                 "br":0
             },
             {
-                "id":6,
                 "name":"Timed FW-190 Air Strike",
                 "cost":5,
                 "br":0
             },
             {
-                "id":7,
                 "name":"Timed Ju-87 Air Strike",
                 "cost":15,
                 "br":0
             },
             {
-                "id":8,
                 "name":"Timed He-111 Air Strike",
                 "cost":25,
                 "restricted":true,
@@ -5149,13 +5042,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1, 
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":24,
                     "br":3,
@@ -5173,7 +5064,6 @@ var forces = [
                         ]
                 },
                 {
-                    "id":2,
                     "name":"Luftwaffe Air Control Officer",
                     "cost":26,
                     "br":1,
@@ -5192,7 +5082,6 @@ var forces = [
                         ]
                 },
                 {
-                    "id":3,
                     "name":"Forward Signals Unit",
                     "br":1,
                     "cost":18,
@@ -5207,19 +5096,16 @@ var forces = [
                         ]
                 },
                 {
-                    "id":4,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":14
                 },
                 {
-                    "id":5,
                     "name":"Wire Team",
                     "br":0,
                     "cost":7
                 },
                 {
-                    "id":6,
                     "name":"Motorcycle Dispatch Rider",
                     "br":0,
                     "cost":12
@@ -5227,14 +5113,12 @@ var forces = [
                 ]
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Grenadier Platoon",
                         "cost":100,
                         "br":11,
@@ -5243,7 +5127,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -5268,7 +5151,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Grenadier Squad",
                                 
                                 "count":3,
@@ -5292,7 +5174,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Heavy Machine Gun team",
                                 "cost":18,
                                 "br":1,
@@ -5315,14 +5196,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":4,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":5,
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
@@ -5339,14 +5218,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Anti-tank Rifle Team",
                                 "cost":14,
                                 "br":1,
                                 "unique":true
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -5363,7 +5240,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":19,
                                 "br":2,
@@ -5397,7 +5273,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":9,
                                 "name":"75mm Infantry Gun",
                                 "cost":19,
                                 "br":1,
@@ -5423,7 +5298,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Assault Pioneer Platoon",
                         "cost":122,
                         "br":8,
@@ -5433,7 +5307,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -5457,7 +5330,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Assault Pioneer Squad",
                                 
                                 "count":2,
@@ -5501,14 +5373,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Combat Medic",
                                 "cost":9,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":4,
                                 "name":"Light (50mm) Mortar Team",
                                 "cost":12,
                                 "br":1,
@@ -5525,7 +5395,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Heavy Machine Gun team",
                                 "cost":18,
                                 "br":1,
@@ -5548,7 +5417,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Anti-tank Gun",
                                 "cost":19,
                                 "br":2,
@@ -5581,7 +5449,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Medium (80mm) Mortar Team",
                                 "cost":12,
                                 "br":1,
@@ -5600,7 +5467,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Grenadier Squad",
                         "cost":26,
                         "br":3,
@@ -5623,7 +5489,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Assault Pioneer Squad",
                         "cost":46,
                         "br":3,
@@ -5669,13 +5534,11 @@ var forces = [
                 ]
             },
             {
-                "id":3, 
                 "name":"Tank Units",
                 "allows":'[6,7,8,9]',
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"StuG III Squadron",
                         "cost":110,
                         "multiplier":3,
@@ -5693,7 +5556,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Panzer IV",
                         "cost":44,
                         "br":3,
@@ -5710,7 +5572,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"StuG III",
                         "cost":24,
                         "br":3,
@@ -5726,7 +5587,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Panzer III",
                         "cost":30,
                         "br":3,
@@ -5743,7 +5603,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Self-Propelled Anti-Tank Gun",
                         "cost":30,
                         "br":1,
@@ -5763,13 +5622,11 @@ var forces = [
                 ]
             },
             {
-                "id":4, 
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":16,
                         "br":1,
@@ -5783,7 +5640,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"105mm Howitzer",
                         "cost":36,
                         "br":2,
@@ -5807,7 +5663,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"150mm Howitzer",
                         "cost":54,
                         "br":2,
@@ -5830,7 +5685,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"100mm Cannon",
                         "cost":50,
                         "br":2,
@@ -5855,7 +5709,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"150mm Infantry Gun",
                         "cost":54,
                         "br":2,
@@ -5879,7 +5732,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Aerial Artillery Observer",
                         "cost":66,
                         "br":3,
@@ -5894,7 +5746,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":1,
@@ -5924,7 +5775,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
                         "name":"Off-Table Artillery Fire",
                         "cost":90,
                         "br":0,
@@ -5944,7 +5794,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":9,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -5961,88 +5810,74 @@ var forces = [
                 ]
             },
             {
-                "id":5, 
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Machine Gun Pillbox",
                         "cost":54,
                         "br":1,
                         "restricted":true
                     },
                     {
-                        "id":4,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":5,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":7,
                         "name":"Trenches",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":8,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":9,
                         "name":"AT Gun Dug-out",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":10,
                         "name":"AT Gun Bunker",
                         "cost":30,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":11,
                         "name":"Minefield",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":12,
                         "name":"AT Gun Dug-out", //greg confirm why this is here & at 9 above...
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":13,
                         "name":"Command Bunker",
                         "cost":25,
                         "officer":true,
@@ -6051,38 +5886,32 @@ var forces = [
                         "unique":true
                     },
                     {
-                        "id":14,
                         "name":"Artillery Observation Point",
                         "cost":26,
                         "br":1
                     },
                     {
-                        "id":15,
                         "name":"Booby Trapped Building",
                         "cost":25,
                         "br":0
                     },
                     {
-                        "id":16,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":17,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":18,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":19,
                         "name":"Off-table 88 Anti-Tank shot",
                         "cost":5,
                         "br":0
@@ -6090,13 +5919,11 @@ var forces = [
                 ]
             },
         {
-            "id":6, 
             "name":"Reconnaissance Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Sniper",
                     "cost":10,
                     "br":1,
@@ -6111,13 +5938,11 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Motorcycle Reconnaissance Patrol",
                     "cost":18,
                     "br":1
                 },
                 {
-                    "id":3,
                     "name":"Aerial Reconnaissance",
                     "cost":50,
                     "br":2,
@@ -6132,7 +5957,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Armoured Car",
                     "cost":20,
                     "br":1,
@@ -6147,7 +5971,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Fusilier Foot Patrol",
                     "cost":36,
                     "br":3,
@@ -6169,7 +5992,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":6,
                     "name":"Recon Platoon Command",
                     "cost":35,
                     "br":2,
@@ -6188,13 +6010,11 @@ var forces = [
             ]
         },
         {
-            "id":7, 
             "name":"Engineer Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Recovery Vehicle",
                     "cost":18,
                     "br":1,
@@ -6209,7 +6029,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Light Bridging Unit",
                     "cost":18,
                     "br":2,
@@ -6224,7 +6043,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Heavy Bridging Unit",
                     "cost":36,
                     "br":3,
@@ -6246,13 +6064,11 @@ var forces = [
             ]
         },
         {
-            "id":8, 
             "name":"Logistics Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Supply Column",
                     "cost":8,
                     "br":1,
@@ -6277,7 +6093,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Forward Aid Post",
                     "cost":20,
                     "br":5,
@@ -6293,7 +6108,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Stretcher Party",
                     "cost":10,
                     "br":1,
@@ -6307,7 +6121,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Ambulance",
                     "cost":14,
                     "br":2,
@@ -6325,13 +6138,11 @@ var forces = [
             ]
         },
         {
-            "id":9, 
             "name":"Specialist Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Heavy Anti-Tank Gun",
                     "cost":51,
                     "br":3,
@@ -6360,7 +6171,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Heavy Tank Hunter",
                     "cost":136,
                     "br":5,
@@ -6375,7 +6185,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Assault Howitzer",
                     "cost":44,
                     "br":3,
@@ -6392,7 +6201,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Anti-Aircraft Vehicle",
                     "cost":16,
                     "br":1,
@@ -6410,7 +6218,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Towed 20mm AA Gun",
                     "cost":28,
                     "br":1,
@@ -6434,7 +6241,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":6,
                     "name":"Towed 37mm AA Gun",
                     "cost":36,
                     "br":1,
@@ -6459,13 +6265,11 @@ var forces = [
             ]
         },
         {
-            "id":10, 
             "name":"Additional Fire Support",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Off-Table Artillery Request",
                     "cost":5,
                     "br":0,
@@ -6481,44 +6285,37 @@ var forces = [
                     ]
                 },
             {
-                "id":2,
                 "name":"Pre-Registered Target Point",
                 "cost":15,
                 "br":0
             },
             {
-                "id":3,
                 "name":"Counter-Battery Fire Mission",
                 "cost":10,
                 "br":0
             },
             {
-                "id":4,
                 "name":"Timed 105mm Barrage",
                 "w":22,
                 "cost":10,
                 "br":0
             },
             {
-                "id":5,
                 "name":"Timed 150mm Barrage",
                 "cost":20,
                 "br":0
             },
             {
-                "id":6,
                 "name":"Timed FW-190 Air Strike",
                 "cost":5,
                 "br":0
             },
             {
-                "id":7,
                 "name":"Timed Ju-87 Air Strike",
                 "cost":15,
                 "br":0
             },
             {
-                "id":8,
                 "name":"Timed He-111 Air Strike",
                 "cost":25,
                 "restricted":true,
@@ -6540,13 +6337,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1, 
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":22,
                     "br":3,
@@ -6564,7 +6359,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"VVS Air Control Officer",
                     "cost":26,
                     "br":1,
@@ -6581,13 +6375,11 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Motorcycle Dispatch Rider",
                     "br":0,
                     "cost":12
                 },
                 {
-                    "id":4,
                     "name":"Forward Signals Unit",
                     "br":1,
                     "cost":18,
@@ -6602,19 +6394,16 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":14
                 },
                 {
-                    "id":6,
                     "name":"Wire Team",
                     "br":0,
                     "cost":7
                 },
                 {
-                    "id":7,
                     "name":"NKVD Officer",
                     "officer":true,
                     "restricted":true,
@@ -6632,14 +6421,12 @@ var forces = [
                 ]
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Motorised Rifle Platoon",
                         "cost":58,
                         "br":5,
@@ -6657,7 +6444,6 @@ var forces = [
                         ],
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -6681,7 +6467,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Squad",
                                 
                                 "count":4,
@@ -6705,7 +6490,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Maxim Machine Gun team",
                                 "cost":18,
                                 "br":1,
@@ -6721,7 +6505,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
@@ -6738,14 +6521,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Anti-tank Rifle Team",
                                 "cost":14,
                                 "br":1,
                                 "unique":true
                             },
                             {
-                                "id":6,
                                 "name":"Anti-tank Gun",
                                 "cost":18,
                                 "br":1,
@@ -6776,7 +6557,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Infantry Gun",
                                 "cost":19,
                                 "br":1,
@@ -6807,7 +6587,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-Aircraft DshK MG",
                                 "cost":24,
                                 "br":1,
@@ -6816,7 +6595,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Motorised Rifle Squad",
                         "cost":14,
                         "br":1,
@@ -6846,7 +6624,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Tank Rider Squad",
                         "cost":12,
                         "br":1,
@@ -6864,13 +6641,11 @@ var forces = [
                 ]
             },
             {
-                "id":3, 
                 "name":"Tank Units",
                 "allows":'[6,7,8,9]',
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"T-34 Company",
                         "cost":350,
                         "multiplier":6,
@@ -6888,7 +6663,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"T-34 Platoon",
                         "cost":100,
                         "multiplier":2,
@@ -6905,7 +6679,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Light Tank Platoon",
                         "cost":50,
                         "multiplier":2,
@@ -6923,7 +6696,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"SU-76 Battery",
                         "cost":75,
                         "multiplier":2,
@@ -6941,14 +6713,12 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"T-34",
                         "cost":40,
                         "br":3,
                         "v":75
                     },
                     {
-                        "id":6,
                         "name":"Light Tank",
                         "cost":20,
                         "br":2,
@@ -6964,14 +6734,12 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"SU-76",
                         "cost":30,
                         "v":76,
                         "br":2
                     },
                     {
-                        "id":8,
                         "name":"T-70 Company",
                         "cost":225,
                         "multiplier":6,
@@ -6989,7 +6757,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":9,
                         "name":"SU-85",
                         "cost":48,
                         "v":229,
@@ -6998,7 +6765,6 @@ var forces = [
                         "warning":"Late 1943 only"
                     },
                     {
-                        "id":10,
                         "name":"SU-85 Battery",
                         "cost":120,
                         "multiplier":2,
@@ -7017,7 +6783,6 @@ var forces = [
                         "warning":"Late 1943 only"
                     },
                     {
-                        "id":11,
                         "name":"KV-85",
                         "cost":71,
                         "v":230,
@@ -7027,7 +6792,6 @@ var forces = [
                         "warning":"Late 1943 only"
                     },
                     {
-                        "id":12,
                         "name":"KV-85 Platoon",
                         "cost":178,
                         "multiplier":2,
@@ -7049,13 +6813,11 @@ var forces = [
                 ]
             },
             {
-                "id":4, 
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":16,
                         "br":1,
@@ -7070,7 +6832,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Guards Mortar Battery",
                         "cost":100,
                         "br":2,
@@ -7086,7 +6847,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Off-Table Artillery Fire",
                         "cost":125,
                         "br":0,
@@ -7100,7 +6860,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Mortar Battery",
                         "cost":44,
                         "br":2,
@@ -7125,7 +6884,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Heavy Mortar Battery",
                         "cost":58,
                         "br":1,
@@ -7149,7 +6907,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -7166,57 +6923,48 @@ var forces = [
                 ]
             },
             {
-                "id":5, 
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":4,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":5,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":6,
                         "name":"AT Rifle-Team Hide",
                         "cost":20,
                         "br":1
                     },
                     {
-                        "id":7,
                         "name":"Dug-in T-34",
                         "cost":50,
                         "br":3,
                         "v":75
                     },
                     {
-                        "id":8,
                         "name":"Dug-in T-34 Platoon",
                         "cost":125,
                         "v":75,
@@ -7224,27 +6972,23 @@ var forces = [
                         "br":9
                     },
                     {
-                        "id":9,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":10,
                         "name":"Anti-Tank Ditch",
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":11,
                         "name":"Counter Bombardment",
                         "cost":20,
                         "br":0,
                         "unique":true
                     },
                     {
-                        "id":12,
                         "name":"For the Motherland!",
                         "cost":15,
                         "br":'D6',
@@ -7253,13 +6997,11 @@ var forces = [
                 ]
             },
         {
-            "id":6, 
             "name":"Reconnaissance Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Sniper",
                     "cost":10,
                     "br":1,
@@ -7274,7 +7016,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Mechanised Infantry Patrol",
                     "cost":28,
                     "br":3,
@@ -7296,14 +7037,12 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Jeep Reconnaissance Team",
                     "cost":18,
                     "v":163,
                     "br":2
                 },
                 {
-                    "id":4,
                     "name":"Light Tank",
                     "cost":30,
                     "br":2,
@@ -7320,7 +7059,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Aerial Reconnaissance",
                     "cost":50,
                     "br":2,
@@ -7335,7 +7073,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":6,
                     "name":"Infantry Foot Patrol",
                     "cost":22,
                     "br":2,
@@ -7350,14 +7087,12 @@ var forces = [
                     ]
                 },
                 {
-                    "id":7,
                     "name":"Motorcycle Reconnaissance Patrol",
                     "cost":18,
                     "v":51,
                     "br":1
                 },
                 {
-                    "id":8,
                     "name":"Armoured Car",
                     "cost":26,
                     "br":1,
@@ -7376,13 +7111,11 @@ var forces = [
             ]
         },
         {
-            "id":7, 
             "name":"Engineer Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Repair Vehicle",
                     "cost":12,
                     "br":2,
@@ -7397,7 +7130,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Sapper Squad",
                     "cost":21,
                     "br":2,
@@ -7434,7 +7166,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Heavy Bridging Unit",
                     "cost":36,
                     "br":4,
@@ -7454,7 +7185,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Light Bridging Unit",
                     "cost":18,
                     "v":61,
@@ -7469,7 +7199,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Anti-Tank Mine Dog",
                     "cost":10,
                     "br":0
@@ -7477,13 +7206,11 @@ var forces = [
             ]
         },
         {
-            "id":8, 
             "name":"Logistics Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Supply Column",
                     "cost":4,
                     "br":1,
@@ -7509,7 +7236,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Forward Aid Post",
                     "cost":20,
                     "br":5,
@@ -7525,13 +7251,11 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Combat Medic",
                     "cost":8,
                     "br":0
                 },
                 {
-                    "id":4,
                     "name":"Stretcher Party",
                     "cost":10,
                     "br":1,
@@ -7545,7 +7269,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Ambulance",
                     "cost":14,
                     "br":2,
@@ -7564,13 +7287,11 @@ var forces = [
             ]
         },
         {
-            "id":9, 
             "name":"Specialist Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Lend-Lease Tank",
                     "cost":48,
                     "br":3,
@@ -7588,7 +7309,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Heavy Assault Gun",
                     "cost":48,
                     "br":3,
@@ -7603,7 +7323,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Anti-Aircraft Vehicle",
                     "cost":28,
                     "br":1,
@@ -7618,7 +7337,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Heavy Anti-Tank Gun",
                     "cost":43,
                     "br":2,
@@ -7648,7 +7366,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Towed Anti-Aircraft Gun",
                     "cost":36,
                     "br":1,
@@ -7678,13 +7395,11 @@ var forces = [
             ]
         },
         {
-            "id":10, 
             "name":"Additional Fire Support",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Off-Table Artillery Request",
                     "cost":5,
                     "br":0,
@@ -7700,52 +7415,44 @@ var forces = [
                     ]
                 },
             {
-                "id":2,
                 "name":"Pre-Registered Target Point",
                 "cost":10,
                 "br":0
             },
             {
-                "id":3,
                 "name":"Counter-Battery Fire Mission",
                 "cost":10,
                 "br":0
             },
             {
-                "id":4,
                 "name":"Timed 122mm Barrage",
                 "w":47,
                 "cost":20,
                 "br":0
             },
             {
-                "id":5,
                 "name":"Timed 152mm Barrage",
                 "w":49,
                 "cost":30,
                 "br":0
             },
             {
-                "id":6,
                 "name":"Timed Katyusha Barrage",
                 "w":51,
                 "cost":25,
                 "br":0
             },
             {
-                "id":7,
                 "name":"Timed IL-2 Air Strike",
                 "cost":10,
                 "br":0
             },
             {
-                "id":8,
                 "name":"Timed PE-2 Air Strike",
                 "cost":20,
                 "br":0
             },
             {
-                "id":9,
                 "name":"Timed IL-4 Air Strike",
                 "cost":25,
                 "restricted":true,
@@ -7767,13 +7474,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1, 
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":22,
                     "br":3,
@@ -7790,7 +7495,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"VVS Air Control Officer",
                     "cost":26,
                     "br":1,
@@ -7807,14 +7511,12 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Motorcycle Dispatch Rider",
                     "br":0,
                     "cost":12,
                     "v":50
                 },
                 {
-                    "id":4,
                     "name":"Forward Signals Unit",
                     "br":1,
                     "cost":18,
@@ -7829,19 +7531,16 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":14
                 },
                 {
-                    "id":6,
                     "name":"Wire Team",
                     "br":0,
                     "cost":7
                 },
                 {
-                    "id":7,
                     "name":"NKVD Officer",
                     "officer":true,
                     "br":'D6',
@@ -7859,14 +7558,12 @@ var forces = [
                 ]
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Rifle Platoon",
                         "cost":58,
                         "br":5,
@@ -7884,7 +7581,6 @@ var forces = [
                         ],
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -7901,7 +7597,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Squad",
                                 
                                 "count":4,
@@ -7918,7 +7613,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Maxim Machine Gun team",
                                 "cost":18,
                                 "br":1,
@@ -7934,7 +7628,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
@@ -7951,14 +7644,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Anti-tank Rifle Team",
                                 "cost":14,
                                 "br":1,
                                 "unique":true
                             },
                             {
-                                "id":6,
                                 "name":"Anti-tank Gun",
                                 "cost":18,
                                 "br":1,
@@ -7988,7 +7679,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Infantry Gun",
                                 "cost":19,
                                 "br":1,
@@ -8020,7 +7710,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Rifle Squad",
                         "cost":14,
                         "br":1,
@@ -8043,7 +7732,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Rifle Company",
                         "cost":188,
                         "br":16,
@@ -8051,7 +7739,6 @@ var forces = [
                         "sub_text":"Company Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Company Command Squad",
                                 
                                 "br":0,
@@ -8059,7 +7746,6 @@ var forces = [
                                 "mandatory":true
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Platoon",
                                 
                                 "count":3,
@@ -8069,7 +7755,6 @@ var forces = [
                                 "sub_text":"Platoon Components",
                                 "sub_units":[
                                     {
-                                        "id":1,
                                         "name":"Command Squad",
                                         
                                         "br":0,
@@ -8086,7 +7771,6 @@ var forces = [
                                         ]
                                     },
                                     {
-                                        "id":2,
                                         "name":"Rifle Squad",
                                         
                                         "count":4,
@@ -8103,7 +7787,6 @@ var forces = [
                                         ]
                                     },
                                     {
-                                        "id":3,
                                         "name":"Maxim Machine Gun team",
                                         "cost":18,
                                         "br":1,
@@ -8119,7 +7802,6 @@ var forces = [
                                         ]
                                     },
                                     {
-                                        "id":4,
                                         "name":"Light Mortar Team",
                                         "cost":12,
                                         "br":1,
@@ -8136,14 +7818,12 @@ var forces = [
                                         ]
                                     },
                                     {
-                                        "id":5,
                                         "name":"Anti-tank Rifle Team",
                                         "cost":14,
                                         "br":1,
                                         "unique":true
                                     },
                                     {
-                                        "id":6,
                                         "name":"Anti-tank Gun",
                                         "cost":18,
                                         "br":1,
@@ -8173,7 +7853,6 @@ var forces = [
                                         ]
                                     },
                                     {
-                                        "id":7,
                                         "name":"Infantry Gun",
                                         "cost":19,
                                         "w":41,
@@ -8209,13 +7888,11 @@ var forces = [
                 ]
             },
             {
-                "id":3, 
                 "name":"Tank Units",
                 "allows":'[6,7,8,9]',
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"T-34 Platoon",
                         "cost":100,
                         "multiplier":2,
@@ -8232,14 +7909,12 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"T-34",
                         "cost":40,
                         "v":75,
                         "br":3
                     },
                     {
-                        "id":3,
                         "name":"KV-1 Platoon",
                         "cost":140,
                         "multiplier":2,
@@ -8256,7 +7931,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"KV-1 Tank",
                         "cost":56,
                         "br":3,
@@ -8272,7 +7946,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Lend-Lease Light Tank Platoon",
                         "cost":84,
                         "br":6,
@@ -8289,7 +7962,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Lend-Lease Medium Tank Platoon",
                         "cost":70,
                         "br":9,
@@ -8307,7 +7979,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Lend-Lease Tank",
                         "cost":48,
                         "br":3,
@@ -8327,13 +7998,11 @@ var forces = [
                 ]
             },
             {
-                "id":4, 
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":16,
                         "br":1,
@@ -8348,7 +8017,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Guards Mortar Battery",
                         "cost":100,
                         "br":2,
@@ -8364,7 +8032,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Field Artillery Battery",
                         "cost":55,
                         "br":4,
@@ -8395,7 +8062,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Off-Table Artillery Fire",
                         "cost":125,
                         "br":0,
@@ -8412,7 +8078,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Mortar Battery",
                         "cost":44,
                         "br":2,
@@ -8437,7 +8102,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Heavy Mortar Battery",
                         "cost":58,
                         "br":1,
@@ -8462,7 +8126,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Off-Table Mortar Fire",
                         "cost":80,
                         "br":0,
@@ -8477,7 +8140,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
                         "name":"Heavy Artillery Battery",
                         "cost":86,
                         "br":0, //greg confirm this
@@ -8511,95 +8173,80 @@ var forces = [
                 ]
             },
             {
-                "id":5, 
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Machine Gun Pillbox",
                         "cost":54,
                         "br":1,
                         "restricted":true
                     },
                     {
-                        "id":4,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":5,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":7,
                         "name":"Trenches",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":8,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":9,
                         "name":"AT Rifle-Team Hide",
                         "cost":20,
                         "br":1
                     },
                     {
-                        "id":10,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":11,
                         "name":"AT Gun Dug-out",
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":12,
                         "name":"AT Gun Bunker",
                         "cost":30,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":13,
                         "name":"Artillery Observation Point",
                         "cost":26,
                         "unique":true,
                         "br":1
                     },
                     {
-                        "id":14,
                         "name":"Command Bunker",
                         "cost":30,
                         "br":3,
@@ -8608,32 +8255,27 @@ var forces = [
                         "unique":true
                     },
                     {
-                        "id":15,
                         "name":"Booby Trapped Building",
                         "cost":25,
                         "br":0
                     },
                     {
-                        "id":16,
                         "name":"Minefield",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":17,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":18,
                         "name":"Dug-in T-34",
                         "cost":50,
                         "v":75,
                         "br":3
                     },
                     {
-                        "id":19,
                         "name":"Dug-in T-34 Platoon",
                         "cost":125,
                         "v":75,
@@ -8641,35 +8283,30 @@ var forces = [
                         "br":9
                     },
                     {
-                        "id":20,
                         "name":"Dug-in KV-1E",
                         "cost":69,
                         "v":73,
                         "br":3
                     },
                     {
-                        "id":21,
                         "name":"Counter Bombardment",
                         "cost":20,
                         "br":0,
                         "unique":true
                     },
                     {
-                        "id":22,
                         "name":"Off-table Zis 3 AT shot",
                         "w":45,
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":23,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":24,
                         "name":"For the Motherland!",
                         "cost":15,
                         "br":'D6',
@@ -8678,13 +8315,11 @@ var forces = [
                 ]
             },
         {
-            "id":6, 
             "name":"Reconnaissance Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Sniper",
                     "cost":10,
                     "br":1,
@@ -8699,7 +8334,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Armoured Car",
                     "cost":26,
                     "br":1,
@@ -8714,13 +8348,11 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Cavalry Squadron",
                     "cost":30,
                     "br":2
                 },
                 {
-                    "id":4,
                     "name":"Infantry Foot Patrol",
                     "cost":22,
                     "br":2,
@@ -8735,7 +8367,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Motorcycle Reconnaissance Patrol",
                     "cost":18,
                     "v":50,
@@ -8744,20 +8375,17 @@ var forces = [
             ]
         },
         {
-            "id":7, 
             "name":"Engineer Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Repair Vehicle",
                     "cost":12,
                     "br":2,
                     "restricted":true
                 },
                 {
-                    "id":2,
                     "name":"Sapper Squad",
                     "cost":21,
                     "br":2,
@@ -8794,7 +8422,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Heavy Bridging Unit",
                     "cost":36,
                     "br":3,
@@ -8814,14 +8441,12 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Light Bridging Unit",
                     "v":61,
                     "cost":18,
                     "br":2
                 },
                 {
-                    "id":5,
                     "name":"Anti-Tank Mine Dog",
                     "cost":10,
                     "br":0
@@ -8829,13 +8454,11 @@ var forces = [
             ]
         },
         {
-            "id":8, 
             "name":"Logistics Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Supply Column",
                     "cost":4,
                     "br":1,
@@ -8852,13 +8475,11 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Combat Medic",
                     "cost":8,
                     "br":0
                 },
                 {
-                    "id":3,
                     "name":"Stretcher Party",
                     "cost":10,
                     "br":1,
@@ -8872,7 +8493,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Ambulance",
                     "cost":14,
                     "br":2,
@@ -8888,7 +8508,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Forward Aid Post",
                     "cost":20,
                     "br":5,
@@ -8906,13 +8525,11 @@ var forces = [
             ]
         },
         {
-            "id":9, 
             "name":"Specialist Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Heavy Infantry Support Tank",
                     "cost":60,
                     "unique":true,
@@ -8928,7 +8545,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Heavy Anti-Tank Gun",
                     "cost":33,
                     "br":2,
@@ -8959,7 +8575,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"45mm AT Gun Battery",
                     "cost":48,
                     "br":3,
@@ -8992,7 +8607,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Towed Anti-Aircraft Gun",
                     "cost":24,
                     "br":1,
@@ -9023,13 +8637,11 @@ var forces = [
             ]
         },
         {
-            "id":10, 
             "name":"Additional Fire Support",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Off-Table Artillery Request",
                     "cost":5,
                     "br":0,
@@ -9045,52 +8657,44 @@ var forces = [
                     ]
                 },
             {
-                "id":2,
                 "name":"Pre-Registered Target Point",
                 "cost":10,
                 "br":0
             },
             {
-                "id":3,
                 "name":"Counter-Battery Fire Mission",
                 "cost":10,
                 "br":0
             },
             {
-                "id":4,
                 "name":"Timed 122mm Barrage",
                 "w":47,
                 "cost":20,
                 "br":0
             },
             {
-                "id":5,
                 "name":"Timed 152mm Barrage",
                 "w":49,
                 "cost":30,
                 "br":0
             },
             {
-                "id":6,
                 "name":"Timed Katyusha Barrage",
                 "w":51,
                 "cost":25,
                 "br":0
             },
             {
-                "id":7,
                 "name":"Timed IL-2 Air Strike",
                 "cost":10,
                 "br":0
             },
             {
-                "id":8,
                 "name":"Timed PE-2 Air Strike",
                 "cost":20,
                 "br":0
             },
             {
-                "id":9,
                 "name":"Timed IL-4 Air Strike",
                 "cost":25,
                 "restricted":true,
@@ -9112,13 +8716,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1,
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":24,
                     "br":3,
@@ -9136,13 +8738,11 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Wire Team",
                     "br":0,
                     "cost":8
                 },
                 {
-                    "id":3,
                     "name":"Forward Signals Unit",
                     "br":1,
                     "cost":16,
@@ -9157,7 +8757,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":14
@@ -9165,14 +8764,12 @@ var forces = [
                 ]
             },
             {
-                "id":2,
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Airborne Infantry Platoon",
                         "cost":147,
                         "br":15,
@@ -9190,7 +8787,6 @@ var forces = [
                         ],
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Section",
                                 
                                 "br":0,
@@ -9207,7 +8803,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Sections",
                                 
                                 "count":3,
@@ -9238,7 +8833,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Light Mortar Team",
                                 
                                 "br":0,
@@ -9256,7 +8850,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":4,
                                 "name":"PIAT Team",
                                 
                                 "w":91,
@@ -9265,13 +8858,11 @@ var forces = [
                                 "unique":true
                             },
                             {
-                                "id":5,
                                 "name":"Combat Medic",
                                 "cost":9,
                                 "br":0
                             },
                             {
-                                "id":6,
                                 "name":"Heavy Machine Gun team",
                                 "cost":25,
                                 "br":1,
@@ -9288,7 +8879,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"PIAT Team",
                                 "cost":18,
                                 "br":1,
@@ -9296,7 +8886,6 @@ var forces = [
                                 "unique":true
                             },
                             {
-                                "id":8,
                                 "name":"Medium Mortar Team",
                                 "cost":27,
                                 "br":1,
@@ -9314,7 +8903,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":9,
                                 "name":"Anti-tank Gun",
                                 "cost":37,
                                 "br":2,
@@ -9345,7 +8933,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Airborne Infantry Section",
                         "cost":31,
                         "br":3,
@@ -9377,13 +8964,11 @@ var forces = [
                 ]
             },
             { 
-                "id":3,  
                 "name":"Tank Units", 
                 "allows":'[6,7,8,9]', 
                 "requires":false, 
                 "entries":[ 
                     { 
-                        "id":1, 
                         "name":"Sherman Troop", 
                         "cost":130, 
                         "multiplier":3, 
@@ -9401,7 +8986,6 @@ var forces = [
                         ] 
                     }, 
                     { 
-                        "id":2, 
                         "name":"Self-Propelled Anti-Tank Gun", 
                         "cost":34, 
                         "br":3, 
@@ -9419,13 +9003,11 @@ var forces = [
                 ] 
             }, 
             {
-                "id":4,
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":16,
                         "br":1,
@@ -9439,7 +9021,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Airborne Artillery Battery",
                         "cost":56,
                         "br":4,
@@ -9460,7 +9041,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Off-Table Artillery Fire",
                         "cost":70,
                         "br":0,
@@ -9475,7 +9055,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Off-Table Mortar Fire",
                         "cost":81,
                         "br":0,
@@ -9489,7 +9068,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Aerial Artillery Observer",
                         "cost":66,
                         "br":3,
@@ -9504,7 +9082,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Towed Airborne Artillery Gun",
                         "cost":28,
                         "br":2,
@@ -9534,105 +9111,88 @@ var forces = [
                 ]
             },
             {
-                "id":5,
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":4,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":5,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Trenches",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":7,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":8,
                         "name":"AT Gun Dug-out",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":9,
                         "name":"Minefield",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":10,
                         "name":"Artillery Observation Post",
                         "cost":26,
                         "br":1,
                         "unique":true
                     },
                     {
-                        "id":11,
                         "name":"Booby Trapped Building",
                         "cost":25,
                         "br":0
                     },
                     {
-                        "id":12,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":13,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":14,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":15,
                         "name":"Off-table 17 pdr AT shot",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":16,
                         "name":"Go To It!",
                         "cost":15,
                         "br":0,
@@ -9641,13 +9201,11 @@ var forces = [
                 ]
             },
             {
-                "id":6, 
                 "name":"Reconnaissance Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Sniper",
                         "cost":10,
                         "br":1,
@@ -9662,7 +9220,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Mounted Infantry Patrol",
                         "cost":24,
                         "br":3,
@@ -9684,7 +9241,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Recon Platoon Command",
                         "cost":29,
                         "br":2,
@@ -9701,7 +9257,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Infantry Foot Patrol",
                         "cost":41,
                         "br":3,
@@ -9730,7 +9285,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Armoured Recce Troop",
                         "cost":70,
                         "br":3,
@@ -9749,7 +9303,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Armoured Recce Tank",
                         "cost":35,
                         "br":1,
@@ -9765,7 +9318,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Armoured Recce HQ",
                         "cost":45,
                         "br":2,
@@ -9782,13 +9334,11 @@ var forces = [
                 ]
             },
             {
-                "id":7, 
                 "name":"Engineer Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Light Bridging Unit",
                         "cost":18,
                         "br":2,
@@ -9804,7 +9354,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Pontoon Bridging Unit",
                         "cost":14,
                         "br":1,
@@ -9820,7 +9369,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Armoured Bulldozer",
                         "cost":12,
                         "br":1,
@@ -9828,7 +9376,6 @@ var forces = [
                         "unique":true
                     },
                     {
-                        "id":4,
                         "name":"Recovery Vehicle",
                         "cost":16,
                         "br":1,
@@ -9844,7 +9391,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Airborne Engineer Section",
                         "cost":41,
                         "br":3,
@@ -9875,7 +9421,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Centaur",
                         "cost":46,
                         "br":3,
@@ -9885,13 +9430,11 @@ var forces = [
                 ]
             },
             {
-                "id":8, 
                 "name":"Logistics Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Supply Column",
                         "cost":8,
                         "br":1,
@@ -9909,7 +9452,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Stretcher Party",
                         "cost":10,
                         "br":1,
@@ -9923,7 +9465,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Ambulance",
                         "cost":14,
                         "br":2,
@@ -9939,7 +9480,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Forward Aid Post",
                         "cost":20,
                         "br":5,
@@ -9957,14 +9497,12 @@ var forces = [
                 ]
             },
             {
-                "id":9, 
                 "name":"Specialist Support Units",
                 "allows":null,
                 "requires":true,
                 "restricted":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Heavy Anti-Tank Gun",
                         "cost":53,
                         "br":3,
@@ -9993,7 +9531,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Towed 20mm Polsten AA Gun",
                         "cost":36,
                         "br":1,
@@ -10017,7 +9554,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Towed 40mm Bofurs AA Gun",
                         "cost":28,
                         "br":1,
@@ -10042,13 +9578,11 @@ var forces = [
                 ]
             },
             {
-                "id":10, 
                 "name":"Additional Fire Support",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Off-Table Artillery Request",
                         "cost":5,
                         "br":0,
@@ -10064,53 +9598,45 @@ var forces = [
                         ]
                     },
                 {
-                    "id":2,
                     "name":"Pre-Registered Target Point",
                     "cost":15,
                     "br":0
                 },
                 {
-                    "id":3,
                     "name":"Counter-Battery Fire Mission",
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":4,
                     "name":"Timed 75mmL16 Howitzer Barrage",
                     "w":65,
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":5,
                     "name":"Timed 25 pdr Barrage",
                     "w":73,
                     "cost":20,
                     "br":0
                 },
                 {
-                    "id":6,
                     "name":"Timed 5.5\" Barrage",
                     "cost":30,
                     "w":80,
                     "br":0
                 },
                 {
-                    "id":7,
                     "name":"Timed 8\" Barrage",
                     "cost":40,
                     "w":86,
                     "br":0
                 },
                 {
-                    "id":8,
                     "name":"Timed Spitfire Air Strike",
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":9,
                     "name":"Timed Typhoon Air Strike",
                     "cost":20,
                     "br":0
@@ -10131,13 +9657,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1, 
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Landing Craft Support",
                     "cost":30,
                     "br":3,
@@ -10154,7 +9678,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Beach Landing Party HQ",
                     "cost":26,
                     "br":3,
@@ -10171,13 +9694,11 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Shore & Beach Party Communications Team",
                     "br":1,
                     "cost":12
                 },
                 {
-                    "id":4,
                     "name":"Air Liaison Shore Party",
                     "cost":16,
                     "br":1,
@@ -10195,13 +9716,11 @@ var forces = [
                 ]
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Commando A. Boat Troop",
                     "cost":148,
                     "br":15,
@@ -10219,7 +9738,6 @@ var forces = [
                     "sub_text":"Troop Components",
                     "sub_units":[
                         {
-                            "id":1,
                             "name":"Troop HQ",
                             
                             "br":0,
@@ -10227,7 +9745,6 @@ var forces = [
                             "officer":true
                         },
                         {
-                            "id":2,
                             "name":"Rifle Group",
                             
                             "br":0,
@@ -10235,7 +9752,6 @@ var forces = [
                             "count":2
                         },
                         {
-                            "id":3,
                             "name":"Bren Team",
                             
                             "count":2,
@@ -10254,7 +9770,6 @@ var forces = [
                             ]
                         },
                         {
-                            "id":4,
                             "name":"Light Mortar Team",
                             
                             "br":0,
@@ -10263,7 +9778,6 @@ var forces = [
                             "mandatory":true
                         },
                         {
-                            "id":5,
                             "name":"Sniper Team",
                             
                             "br":0,
@@ -10274,7 +9788,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Assault Platoon",
                     "cost":90,
                     "br":9,
@@ -10292,7 +9805,6 @@ var forces = [
                     "sub_text":"Platoon Components",
                     "sub_units":[
                         {
-                            "id":1,
                             "name":"Assault Platoon HQ",
                             
                             "br":0,
@@ -10300,7 +9812,6 @@ var forces = [
                             "officer":true
                         },
                         {
-                            "id":2,
                             "name":"Rifle Section",
                             
                             "br":0,
@@ -10308,7 +9819,6 @@ var forces = [
                             "count":2
                         },
                         {
-                            "id":3,
                             "name":"Light Mortar Team",
                             
                             "br":0,
@@ -10317,7 +9827,6 @@ var forces = [
                             "mandatory":true
                         },
                         {
-                            "id":4,
                             "name":"Sniper Team",
                             
                             "br":0,
@@ -10325,7 +9834,6 @@ var forces = [
                             "mandatory":true
                         },
                         {
-                            "id":5,
                             "name":"Combat Medic",
                             
                             "br":0,
@@ -10337,13 +9845,11 @@ var forces = [
                 ]
             },
             { 
-                "id":3,  
                 "name":"Tank Units", 
                 "allows":'[6,7,8,9]', 
                 "requires":false, 
                 "entries":[ 
                     { 
-                        "id":1, 
                         "name":"DD Sherman Troop", 
                         "cost":135, 
                         "multiplier":3, 
@@ -10360,7 +9866,6 @@ var forces = [
                         ] 
                     }, 
                     { 
-                        "id":2, 
                         "name":"Sherman Crab Troop",
                         "cost":165, 
                         "br":11, 
@@ -10376,7 +9881,6 @@ var forces = [
                         ] 
                     },
                     { 
-                        "id":3, 
                         "name":"Centaur IV Troop",
                         "cost":170, 
                         "br":11, 
@@ -10394,13 +9898,11 @@ var forces = [
                         ] 
                     },
                     { 
-                        "id":4, 
                         "name":"DD Sherman",
                         "cost":52, 
                         "br":3
                     },
                     { 
-                        "id":5, 
                         "name":"AVRE Squadron",
                         "cost":220, 
                         "br":11,
@@ -10418,7 +9920,6 @@ var forces = [
                         ] 
                     },
                     { 
-                        "id":6, 
                         "name":"Engineer Churchill Troop",
                         "cost":147, 
                         "br":11, 
@@ -10434,7 +9935,6 @@ var forces = [
                         ] 
                     },
                     { 
-                        "id":7, 
                         "name":"Beach Assault Tank Troop",
                         "cost":180, 
                         "br":11, 
@@ -10456,7 +9956,6 @@ var forces = [
                         ] 
                     },
                     { 
-                        "id":8, 
                         "name":"Sherman Tank Squadron",
                         "cost":785, 
                         "br":44, 
@@ -10475,13 +9974,11 @@ var forces = [
                 ] 
             }, 
             {
-                "id":4,
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Shore Fire Control Party",
                         "cost":20,
                         "br":1,
@@ -10495,14 +9992,12 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Priest",
                         "cost":60,
                         "v":155,
                         "br":3
                     },
                     {
-                        "id":3,
                         "name":"Aerial Artillery Observer",
                         "cost":66,
                         "br":3,
@@ -10517,7 +10012,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Priest Battery",
                         "multiplier":3,
                         "cost":144,
@@ -10534,7 +10028,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Off-Table Naval Gun Fire",
                         "cost":80,
                         "br":0,
@@ -10552,13 +10045,11 @@ var forces = [
                 ]
             },
             {
-                "id":7, 
                 "name":"Engineer Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Beach Obstacle Demo Party",
                         "cost":85,
                         "br":8,
@@ -10567,7 +10058,6 @@ var forces = [
                         "sub_text":"Party Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Demo Party Leader",
                                 
                                 "br":0,
@@ -10575,7 +10065,6 @@ var forces = [
                                 "officer":true
                             },
                             {
-                                "id":2,
                                 "name":"Demo Squad",
                                 
                                 "br":0,
@@ -10583,7 +10072,6 @@ var forces = [
                                 "count":3
                             },
                             {
-                                "id":3,
                                 "name":"Combat Medic",
                                 
                                 "br":0,
@@ -10593,14 +10081,12 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Armoured Bulldozer",
                         "cost":12,
                         "br":1,
                         "v":160
                     },
                     {
-                        "id":3,
                         "name":"Sherman Beach ARV",
                         "cost":22,
                         "br":2,
@@ -10609,13 +10095,11 @@ var forces = [
                 ]
             },
             {
-                "id":8, 
                 "name":"Logistics Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Supply Column",
                         "cost":10,
                         "br":1,
@@ -10633,7 +10117,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Stretcher Party",
                         "cost":10,
                         "br":1,
@@ -10647,7 +10130,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Combat Medic",
                         "cost":8,
                         "br":0
@@ -10655,13 +10137,11 @@ var forces = [
                 ]
             },
             {
-                "id":9, 
                 "name":"Specialist Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Support Boat Team",
                         "cost":131,
                         "br":7,
@@ -10669,7 +10149,6 @@ var forces = [
                         "sub_text":"Team Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Team Leader",
                                 
                                 "br":0,
@@ -10677,7 +10156,6 @@ var forces = [
                                 "officer":true
                             },
                             {
-                                "id":2,
                                 "name":"Medium Mortar Team",
                                 
                                 "br":0,
@@ -10694,7 +10172,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Vickers MG Team",
                                 
                                 "br":0,
@@ -10710,7 +10187,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":4,
                                 "name":"Demo Team",
                                 
                                 "br":0,
@@ -10720,7 +10196,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Additional Landing Craft",
                         "cost":10,
                         "br":1,
@@ -10737,7 +10212,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Landing Craft Gun",
                         "cost":112,
                         "br":4,
@@ -10745,7 +10219,6 @@ var forces = [
                         "unique":true
                     },
                     {
-                        "id":4,
                         "name":"Landing Craft Flak",
                         "cost":142,
                         "br":4,
@@ -10753,7 +10226,6 @@ var forces = [
                         "unique":true
                     },
                     {
-                        "id":5,
                         "name":"Landing Craft Rocket",
                         "cost":108,
                         "br":4,
@@ -10761,7 +10233,6 @@ var forces = [
                         "unique":true
                     },
                     {
-                        "id":6,
                         "name":"Commando Support Team",
                         "cost":32,
                         "br":2,
@@ -10778,7 +10249,6 @@ var forces = [
                         "sub_text":"Team Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Team Leader",
                                 
                                 "br":0,
@@ -10786,14 +10256,12 @@ var forces = [
                                 "officer":true
                             },
                             {
-                                "id":2,
                                 "name":"K-gun Team",
                                 
                                 "br":0,
                                 "mandatory":true
                             },
                             {
-                                "id":3,
                                 "name":"K-gun Team",
                                 "cost":15,
                                 "br":1,
@@ -10805,13 +10273,11 @@ var forces = [
                 ]
             },
             {
-                "id":10, 
                 "name":"Additional Fire Support",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Off-Table Artillery Request",
                         "cost":20,
                         "br":0,
@@ -10825,33 +10291,28 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Pre-Registered Target Point",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":3,
                         "name":"Counter-Battery Fire Mission",
                         "cost":10,
                         "br":0
                     },
                 {
-                    "id":4,
                     "name":"Timed 5\" Barrage",
                     "w":79,
                     "cost":15,
                     "br":0
                 },
                 {
-                    "id":5,
                     "name":"Timed 8\" Barrage",
                     "w":86,
                     "cost":25,
                     "br":0
                 },
                 {
-                    "id":6,
                     "name":"Timed Typhoon Air Strike",
                     "cost":20,
                     "br":0
@@ -10872,13 +10333,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1,
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":24,
                     "br":3,
@@ -10902,7 +10361,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Forward Signals Unit",
                     "br":1,
                     "cost":16,
@@ -10917,13 +10375,11 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":14
                 },
                 {
-                    "id":4,
                     "name":"Dispatch Rider",
                     "br":0,
                     "cost":12
@@ -10931,14 +10387,12 @@ var forces = [
                 ]
             },
             {
-                "id":2,
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Airborne Infantry Platoon",
                         "cost":137,
                         "br":13,
@@ -10956,7 +10410,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -10973,7 +10426,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Infantry Squad",
                                 
                                 "count":2,
@@ -10997,7 +10449,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"MMG Team",
                                 
                                 "br":0,
@@ -11005,7 +10456,6 @@ var forces = [
                                 "count":2
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 
                                 "br":0,
@@ -11013,7 +10463,6 @@ var forces = [
                                 "mandatory":true
                             },
                             {
-                                "id":5,
                                 "name":"Bazooka Team",
                                 
                                 "br":0,
@@ -11021,14 +10470,12 @@ var forces = [
                                 "mandatory":true
                             },
                             {
-                                "id":6,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":7,
                                 "name":"Medium Machine Gun team",
                                 "cost":18,
                                 "br":1,
@@ -11051,7 +10498,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Bazooka Team",
                                 "cost":18,
                                 "br":1,
@@ -11059,7 +10505,6 @@ var forces = [
                                 "unique":true
                             },
                             {
-                                "id":9,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -11083,7 +10528,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":10,
                                 "name":"Anti-tank Gun",
                                 "cost":37,
                                 "br":2,
@@ -11115,7 +10559,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Airborne Infantry Squad",
                         "cost":41,
                         "br":4,
@@ -11151,7 +10594,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Glider Infantry Platoon",
                         "cost":81,
                         "br":8,
@@ -11160,35 +10602,30 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 "br":0,
                                 "mandatory":true,
                                 "officer":true
                             },
                             {
-                                "id":2,
                                 "name":"Glider Infantry Squad",
                                 "count":3,
                                 "br":0,
                                 "mandatory":true
                             },
                             {
-                                "id":3,
                                 "name":"BAR Team",
                                 "br":0,
                                 "mandatory":true,
                                 "count":3
                             },
                             {
-                                "id":4,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":5,
                                 "name":"MMG Team",
                                 "cost":18,
                                 "br":1,
@@ -11211,7 +10648,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Bazooka Team",
                                 "cost":16,
                                 "br":1,
@@ -11219,7 +10655,6 @@ var forces = [
                                 "w":92
                             },
                             {
-                                "id":7,
                                 "name":"Light Mortar Team",
                                 "cost":14,
                                 "br":1,
@@ -11236,7 +10671,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -11260,7 +10694,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Anti-tank Gun",
                                 "cost":34,
                                 "br":2,
@@ -11291,7 +10724,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Glider Infantry Squad",
                         "cost":21,
                         "br":2,
@@ -11300,13 +10732,11 @@ var forces = [
                 ]
             },
             { 
-                "id":3,  
                 "name":"Tank Units", 
                 "allows":'[6,7,8,9]', 
                 "requires":false, 
                 "entries":[ 
                     { 
-                        "id":1, 
                         "name":"Sherman Tank Platoon", 
                         "cost":140, 
                         "multiplier":4, 
@@ -11326,7 +10756,6 @@ var forces = [
                         ] 
                     }, 
                     {
-                        "id":2, 
                         "name":"Additional Tank",
                         "cost":50, 
                         "br":3, 
@@ -11341,7 +10770,6 @@ var forces = [
                         ] 
                     },
                     {
-                        "id":3, 
                         "name":"Light Tank Platoon",
                         "cost":90, 
                         "br":6, 
@@ -11360,7 +10788,6 @@ var forces = [
                         ] 
                     },
                     { 
-                        "id":4, 
                         "name":"Self-Propelled Tank Destroyer", 
                         "cost":34, 
                         "br":2, 
@@ -11376,13 +10803,11 @@ var forces = [
                 ] 
             }, 
             {
-                "id":4,
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":23,
                         "br":1,
@@ -11397,7 +10822,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Airborne Artillery Battery",
                         "cost":56,
                         "br":4,
@@ -11425,7 +10849,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Off-Table Artillery Fire",
                         "cost":70,
                         "br":0,
@@ -11440,7 +10863,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -11454,7 +10876,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Aerial Artillery Observer",
                         "cost":71,
                         "br":3,
@@ -11470,7 +10891,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Towed Artillery Gun",
                         "cost":28,
                         "br":2,
@@ -11501,105 +10921,88 @@ var forces = [
                 ]
             },
             {
-                "id":5,
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":4,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":5,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Trenches",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":7,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":8,
                         "name":"AT Gun Dug-out",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":9,
                         "name":"Minefield",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":10,
                         "name":"Artillery Observation Post",
                         "cost":26,
                         "br":1,
                         "unique":true
                     },
                     {
-                        "id":11,
                         "name":"Booby Trapped Building",
                         "cost":25,
                         "br":0
                     },
                     {
-                        "id":12,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":13,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":14,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":15,
                         "name":"Off-table 76mm AT shot",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":16,
                         "name":"Curahee!",
                         "cost":15,
                         "br":0,
@@ -11608,13 +11011,11 @@ var forces = [
                 ]
             },
             {
-                "id":6, 
                 "name":"Reconnaissance Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Sniper",
                         "cost":10,
                         "br":1,
@@ -11629,14 +11030,12 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Jeep Reconnaissance Team",
                         "cost":26,
                         "v":163,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Recon Platoon Command",
                         "cost":36,
                         "br":2,
@@ -11653,7 +11052,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Infantry Foot Patrol",
                         "cost":51,
                         "br":3,
@@ -11675,7 +11073,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Armoured Car",
                         "cost":26,
                         "br":1,
@@ -11692,13 +11089,11 @@ var forces = [
                 ]
             },
             {
-                "id":7, 
                 "name":"Engineer Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Light Bridging Unit",
                         "cost":18,
                         "br":2,
@@ -11714,7 +11109,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Recovery Vehicle",
                         "cost":22,
                         "br":1,
@@ -11729,7 +11123,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Airborne Combat Engineer Section",
                         "cost":43,
                         "br":3,
@@ -11768,13 +11161,11 @@ var forces = [
                 ]
             },
             {
-                "id":8, 
                 "name":"Logistics Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Supply Column",
                         "cost":8,
                         "br":1,
@@ -11793,7 +11184,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Stretcher Party",
                         "cost":10,
                         "br":1,
@@ -11807,7 +11197,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Ambulance",
                         "cost":14,
                         "br":2,
@@ -11822,7 +11211,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Forward Aid Post",
                         "cost":20,
                         "br":5,
@@ -11840,14 +11228,12 @@ var forces = [
                 ]
             },
             {
-                "id":9, 
                 "name":"Specialist Support Units",
                 "allows":null,
                 "requires":true,
                 "restricted":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Anti-Aircraft Machine Gun",
                         "cost":22,
                         "br":1,
@@ -11872,13 +11258,11 @@ var forces = [
                 ]
             },
             {
-                "id":10, 
                 "name":"Additional Fire Support",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Off-Table Artillery Request",
                         "cost":5,
                         "br":0,
@@ -11894,53 +11278,45 @@ var forces = [
                         ]
                     },
                 {
-                    "id":2,
                     "name":"Pre-Registered Target Point",
                     "cost":15,
                     "br":0
                 },
                 {
-                    "id":3,
                     "name":"Counter-Battery Fire Mission",
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":4,
                     "name":"Timed 75mmL16 Howitzer Barrage",
                     "w":65,
                     "cost":5,
                     "br":0
                 },
                 {
-                    "id":5,
                     "name":"Timed 105mm Barrage",
                     "w":76,
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":6,
                     "name":"Timed 155mm Barrage",
                     "cost":20,
                     "w":84,
                     "br":0
                 },
                 {
-                    "id":7,
                     "name":"Timed 14\" Barrage",
                     "cost":50,
                     "w":90,
                     "br":0
                 },
                 {
-                    "id":8,
                     "name":"Timed P-51 Air Strike",
                     "cost":5,
                     "br":0
                 },
                 {
-                    "id":9,
                     "name":"Timed P-47 Air Strike",
                     "cost":10,
                     "br":0
@@ -11961,13 +11337,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1, 
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Landing Craft Support",
                     "cost":30,
                     "br":3,
@@ -11984,7 +11358,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Beach Landing Party HQ",
                     "cost":23,
                     "br":3,
@@ -12001,7 +11374,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Air Liaison Shore Party",
                     "cost":18,
                     "br":1,
@@ -12017,7 +11389,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Landing Craft Control",
                     "br":1,
                     "cost":45,
@@ -12025,7 +11396,6 @@ var forces = [
                     "officer":true
                 },
                 {
-                    "id":5,
                     "name":"Shore & Beach Party Communications Team",
                     "br":1,
                     "cost":12
@@ -12033,13 +11403,11 @@ var forces = [
                 ]
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Assault Boat Team",
                     "cost":140,
                     "br":10,
@@ -12048,7 +11416,6 @@ var forces = [
                     "sub_text":"Team Components",
                     "sub_units":[
                         {
-                            "id":1,
                             "name":"Boat Team Leader",
                             
                             "br":0,
@@ -12056,7 +11423,6 @@ var forces = [
                             "officer":true
                         },
                         {
-                            "id":2,
                             "name":"Rifle Squad",
                             
                             "br":0,
@@ -12064,7 +11430,6 @@ var forces = [
                             "count":2
                         },
                         {
-                            "id":3,
                             "name":"Light Mortar Team",
                             
                             "br":0,
@@ -12072,21 +11437,18 @@ var forces = [
                             "mandatory":true
                         },
                         {
-                            "id":4,
                             "name":"Flamethrower Team",
                             
                             "br":0,
                             "mandatory":true
                         },
                         {
-                            "id":5,
                             "name":"Demolitions Team",
                             
                             "br":0,
                             "mandatory":true
                         },
                         {
-                            "id":6,
                             "name":"Combat Medic",
                             
                             "br":0,
@@ -12095,7 +11457,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Ranger Assault Boat Team",
                     "cost":85,
                     "br":7,
@@ -12114,7 +11475,6 @@ var forces = [
                     "sub_text":"Team Components",
                     "sub_units":[
                         {
-                            "id":1,
                             "name":"Boat Team Leader",
                             
                             "br":0,
@@ -12122,14 +11482,12 @@ var forces = [
                             "officer":true
                         },
                         {
-                            "id":2,
                             "name":"Rifle Squad",
                             
                             "br":0,
                             "mandatory":true
                         },
                         {
-                            "id":3,
                             "name":"Light Mortar Team",
                             
                             "br":0,
@@ -12137,7 +11495,6 @@ var forces = [
                             "mandatory":true
                         },
                         {
-                            "id":4,
                             "name":"Bazooka Team",
                             
                             "w":92,
@@ -12149,13 +11506,11 @@ var forces = [
                 ]
             },
             { 
-                "id":3,  
                 "name":"Tank Units", 
                 "allows":'[6,7,8,9]', 
                 "requires":false, 
                 "entries":[ 
                     { 
-                        "id":1, 
                         "name":"DD Sherman Platoon", 
                         "cost":135, 
                         "multiplier":3, 
@@ -12173,7 +11528,6 @@ var forces = [
                         ] 
                     }, 
                     { 
-                        "id":2, 
                         "name":"Sherman Platoon",
                         "cost":160, 
                         "br":12, 
@@ -12191,14 +11545,12 @@ var forces = [
                         ] 
                     },
                     { 
-                        "id":3, 
                         "name":"DD Sherman",
                         "cost":52, 
                         "v":106, 
                         "br":3
                     },
                     { 
-                        "id":4, 
                         "name":"Sherman Tank Company",
                         "cost":675, 
                         "br":44,
@@ -12218,14 +11570,12 @@ var forces = [
                 ] 
             }, 
             {
-                "id":4,
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "v":163,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Shore Fire Control Party",
                         "cost":20,
                         "br":1,
@@ -12239,21 +11589,18 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"M7 Priest",
                         "cost":58,
                         "v":155,
                         "br":3
                     },
                     {
-                        "id":3,
                         "name":"M2A1 105mm Howitzer",
                         "cost":50,
                         "w":76,
                         "br":2
                     },
                     {
-                        "id":4,
                         "name":"Aerial Artillery Observer",
                         "cost":66,
                         "br":3,
@@ -12268,7 +11615,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Priest Battery",
                         "cost":170,
                         "br":8,
@@ -12285,7 +11631,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Off-Table Naval Gun Fire",
                         "cost":80,
                         "br":0,
@@ -12304,13 +11649,11 @@ var forces = [
                 ]
             },
             {
-                "id":7, 
                 "name":"Engineer Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Gap Team",
                         "cost":158,
                         "br":14,
@@ -12318,7 +11661,6 @@ var forces = [
                         "sub_text":"Party Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Gap Team Leader",
                                 
                                 "br":0,
@@ -12326,7 +11668,6 @@ var forces = [
                                 "officer":true
                             },
                             {
-                                "id":2,
                                 "name":"Demo Squad",
                                 
                                 "br":0,
@@ -12334,7 +11675,6 @@ var forces = [
                                 "count":4
                             },
                             {
-                                "id":3,
                                 "name":"Combat Medic",
                                 
                                 "br":0,
@@ -12342,7 +11682,6 @@ var forces = [
                                 "mandatory":true
                             },
                             {
-                                "id":3,
                                 "name":"Sherman Bulldozer",
                                 
                                 "br":0,
@@ -12353,14 +11692,12 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Armoured Bulldozer",
                         "cost":12,
                         "br":1,
                         "v":160
                     },
                     {
-                        "id":3,
                         "name":"DUKW with ladder",
                         "cost":12,
                         "br":1,
@@ -12369,13 +11706,11 @@ var forces = [
                 ]
             },
             {
-                "id":8, 
                 "name":"Logistics Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Supply Column",
                         "cost":10,
                         "br":1,
@@ -12393,7 +11728,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Stretcher Party",
                         "cost":10,
                         "br":1,
@@ -12407,7 +11741,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Combat Medic",
                         "cost":8,
                         "br":0
@@ -12415,13 +11748,11 @@ var forces = [
                 ]
             },
             {
-                "id":9, 
                 "name":"Specialist Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Support Boat Team",
                         "cost":120,
                         "br":10,
@@ -12429,7 +11760,6 @@ var forces = [
                         "sub_text":"Team Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Team Leader",
                                 
                                 "br":0,
@@ -12437,7 +11767,6 @@ var forces = [
                                 "officer":true
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Squad",
                                 
                                 "br":0,
@@ -12445,7 +11774,6 @@ var forces = [
                                 "mandatory":true
                             },
                             {
-                                "id":3,
                                 "name":"Medium Mortar Team",
                                 
                                 "br":0,
@@ -12462,7 +11790,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":4,
                                 "name":"MG Team",
                                 
                                 "br":0,
@@ -12470,7 +11797,6 @@ var forces = [
                                 "mandatory":true
                             },
                             {
-                                "id":5,
                                 "name":"Demo Team",
                                 
                                 "br":0,
@@ -12480,7 +11806,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Additional Landing Craft",
                         "cost":10,
                         "br":1,
@@ -12497,7 +11822,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Landing Craft Gun",
                         "cost":112,
                         "br":4,
@@ -12505,7 +11829,6 @@ var forces = [
                         "unique":true
                     },
                     {
-                        "id":4,
                         "name":"Landing Craft Rocket",
                         "cost":108,
                         "br":4,
@@ -12513,7 +11836,6 @@ var forces = [
                         "unique":true
                     },
                     {
-                        "id":5,
                         "name":"Landing Craft Flak",
                         "cost":142,
                         "br":4,
@@ -12523,13 +11845,11 @@ var forces = [
                 ]
             },
             {
-                "id":10, 
                 "name":"Additional Fire Support",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Off-Table Artillery Request",
                         "cost":20,
                         "br":0,
@@ -12543,46 +11863,39 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Pre-Registered Target Point",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":3,
                         "name":"Counter-Battery Fire Mission",
                         "cost":10,
                         "br":0
                     },
                 {
-                    "id":4,
                     "name":"Timed 6\" Barrage",
                     "w":81,
                     "cost":20,
                     "br":0
                 },
                 {
-                    "id":5,
                     "name":"Timed 8\" Barrage",
                     "w":86,
                     "cost":30,
                     "br":0
                 },
                 {
-                    "id":6,
                     "name":"Timed 14\" Barrage",
                     "w":90,
                     "cost":40,
                     "br":0
                 },
                 {
-                    "id":7,
                     "name":"Timed P-47 Air Strike",
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":8,
                     "name":"Timed B-26 Air Strike",
                     "cost":25,
                     "restricted":true,
@@ -12604,13 +11917,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1, 
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":21,
                     "br":3,
@@ -12618,13 +11929,11 @@ var forces = [
                     "officer":true
                 },
                 {
-                    "id":2,
                     "name":"Wire Team",
                     "br":0,
                     "cost":7
                 },
                 {
-                    "id":3,
                     "name":"Forward Signals Unit",
                     "br":1,
                     "cost":18,
@@ -12640,7 +11949,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Motorcycle Dispatch Rider",
                     "br":0,
                     "v":50,
@@ -12649,14 +11957,12 @@ var forces = [
                 ]
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Ost Infantry Platoon",
                         "cost":64,
                         "br":5,
@@ -12674,7 +11980,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -12682,7 +11987,6 @@ var forces = [
                                 "officer":true
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Squad",
                                 
                                 "count":3,
@@ -12690,7 +11994,6 @@ var forces = [
                                 "mandatory":true
                             },
                             {
-                                "id":3,
                                 "name":"MMG Team",
                                 
                                 "count":1,
@@ -12706,14 +12009,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":4,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":5,
                                 "name":"Light Mortar Team",
                                 "cost":11,
                                 "br":1,
@@ -12730,7 +12031,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Heavy Machine Gun team",
                                 "cost":16,
                                 "br":1,
@@ -12753,7 +12053,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":22,
                                 "br":1,
@@ -12770,7 +12069,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":20,
                                 "br":2,
@@ -12805,7 +12103,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Conscript Labour Platoon",
                         "cost":33,
                         "br":4,
@@ -12815,7 +12112,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -12823,7 +12119,6 @@ var forces = [
                                 "officer":true
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Squad",
                                 
                                 "count":3,
@@ -12833,14 +12128,12 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Ost Infantry Squad",
                         "cost":12,
                         "br":1,
                         "s":1
                     },
                     {
-                        "id":4,
                         "name":"Kriegsmarine Garrison Platoon",
                         "cost":44,
                         "br":4,
@@ -12859,7 +12152,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -12867,7 +12159,6 @@ var forces = [
                                 "officer":true
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Squad",
                                 
                                 "count":3,
@@ -12875,14 +12166,12 @@ var forces = [
                                 "mandatory":true
                             },
                             {
-                                "id":3,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 "cost":11,
                                 "br":1,
@@ -12899,7 +12188,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Heavy Machine Gun team",
                                 "cost":16,
                                 "br":1,
@@ -12926,19 +12214,16 @@ var forces = [
                 ]
             },
             {
-                "id":4, 
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":13,
                         "br":1
                     },
                     {
-                        "id":2,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -12953,7 +12238,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Off-Table Artillery Fire",
                         "cost":90,
                         "br":0,
@@ -12970,7 +12254,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Infantry Gun Casement",
                         "cost":19,
                         "restricted":true,
@@ -12997,173 +12280,146 @@ var forces = [
                 ]
             },
             {
-                "id":5, 
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Off Shore Mines",
                         "unique":true,
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Sea Rocks",
                         "cost":5,
                         "restricted":true,
                         "br":0
                     },
                     {
-                        "id":3,
                         "name":"Mined Sea Obstacles",
                         "cost":20,
                         "unique":true,
                         "br":0
                     },
                     {
-                        "id":4,
                         "name":"Beach Obstacles",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":5,
                         "name":"Soft Sand",
                         "cost":10,
                         "restricted":true,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Mined Beach",
                         "cost":10,
                         "br":0,
                         "unique":true
                     },
                     {
-                        "id":7,
                         "name":"Mined Barbed Wire",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":8,
                         "name":"Sea Cliffs",
                         "cost":30,
                         "unique":true,
                         "br":0
                     },
                     {
-                        "id":9,
                         "name":"Left Flank Enfilade Fire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":10,
                         "name":"Right Flank Enfilade Fire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":11,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":12,
                         "name":"Booby-Trapped Building",
                         "cost":25,
                         "br":0
                     },
                     {
-                        "id":13,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":14,
                         "name":"Inland Minefield",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":15,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":16,
                         "name":"Dragon's Teeth",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":17,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "restricted":true,
                         "br":0
                     },
                     {
-                        "id":18,
                         "name":"Flooded Field",
                         "cost":10,
                         "unique":true,
                         "br":0
                     },
                     {
-                        "id":19,
                         "name":"MG Tobruk Pit",
                         "cost":40,
                         "br":2
                     },
                     {
-                        "id":20,
                         "name":"MG Pillbox",
                         "cost":50,
                         "br":2
                     },
                     {
-                        "id":21,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":22,
                         "name":"Heavily Fortified Building",
                         "cost":40,
                         "unique":true,
                         "br":0
                     },
                     {
-                        "id":23,
                         "name":"Reinforced Trenches",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":24,
                         "name":"AT Gun Bunker",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":25,
                         "name":"Artillery Observation Bunker",
                         "cost":26,
                         "unique":true,
                         "br":1
                     },
                     {
-                        "id":26,
                         "name":"Command Bunker",
                         "cost":30,
                         "unique":true,
@@ -13172,39 +12428,33 @@ var forces = [
                         "br":3
                     },
                     {
-                        "id":27,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":28,
                         "name":"Automated 50mm Mortar Pit",
                         "cost":36,
                         "br":1
                     },
                     {
-                        "id":29,
                         "name":"50mm Pedestal Gun",
                         "cost":42,
                         "br":2
                     },
                     {
-                        "id":30,
                         "name":"Underground Personnel Shelter",
                         "cost":30,
                         "unique":true,
                         "br":0
                     },
                     {
-                        "id":31,
                         "name":"Dummy Bunker",
                         "cost":5,
                         "unique":true,
                         "br":0
                     },
                     {
-                        "id":32,
                         "name":"Deserters will be Shot!",
                         "cost":15,
                         "br":0
@@ -13212,13 +12462,11 @@ var forces = [
                 ]
             },
             {
-                "id":6, 
                 "name":"Reconnaissance Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Sniper",
                         "cost":10,
                         "br":1,
@@ -13235,13 +12483,11 @@ var forces = [
                 ]
             },
         {
-            "id":7, 
             "name":"Engineer Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Goliath Demo Squadron",
                     "cost":14,
                     "br":2,
@@ -13257,7 +12503,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Conscript Labour Squad",
                     "cost":10,
                     "br":1
@@ -13265,13 +12510,11 @@ var forces = [
             ]
         },
         {
-            "id":8, 
             "name":"Logistics Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Supply Column",
                     "cost":6,
                     "br":1,
@@ -13289,7 +12532,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Stretcher Party",
                     "cost":10,
                     "br":1,
@@ -13303,7 +12545,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Ambulance",
                     "cost":14,
                     "br":2,
@@ -13322,13 +12563,11 @@ var forces = [
             ]
         },
         {
-            "id":9, 
             "name":"Specialist Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Coastal Artillery Casemate",
                     "cost":82,
                     "br":3,
@@ -13355,7 +12594,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Panzerturm",
                     "cost":18,
                     "unique":true,
@@ -13374,7 +12612,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Anti-Aircraft Gun Emplacement",
                     "cost":43,
                     "br":1,
@@ -13398,7 +12635,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Heavy Anti-Tank Gun",
                     "cost":69,
                     "br":3,
@@ -13423,13 +12659,11 @@ var forces = [
             ]
         },
         {
-            "id":10, 
             "name":"Additional Fire Support",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Off-Table Artillery Request",
                     "cost":5,
                     "br":0,
@@ -13445,20 +12679,17 @@ var forces = [
                     ]
                 },
             {
-                "id":2,
                 "name":"Pre-Registered Target Point",
                 "cost":15,
                 "br":0
             },
             {
-                "id":3,
                 "name":"Timed 80mm Mortar Barrage",
                 "w":2,
                 "cost":5,
                 "br":0
             },
             {
-                "id":4,
                 "name":"Timed 105mm Barrage",
                 "w":22,
                 "cost":10,
@@ -13480,13 +12711,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1, 
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":28,
                     "br":3,
@@ -13507,19 +12736,16 @@ var forces = [
                         ]
                 },
                 {
-                    "id":2,
                     "name":"Wire Team",
                     "br":0,
                     "cost":8
                 },
                 {
-                    "id":3,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":14
                 },
                 {
-                    "id":4,
                     "name":"Forward Signals Unit",
                     "br":1,
                     "cost":18,
@@ -13539,7 +12765,6 @@ var forces = [
                         ]
                 },
                 {
-                    "id":5,
                     "name":"Motorcycle Dispatch Rider",
                     "br":0,
                     "cost":12
@@ -13547,14 +12772,12 @@ var forces = [
                 ]
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Panzer Grenadier Platoon",
                         "cost":100,
                         "br":11,
@@ -13563,7 +12786,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -13587,7 +12809,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Grenadier Squad",
                                 
                                 "count":3,
@@ -13618,14 +12839,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
@@ -13642,7 +12861,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Heavy Machine Gun team",
                                 "cost":18,
                                 "br":1,
@@ -13665,7 +12883,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Panzerschreck Team",
                                 "cost":14,
                                 "br":1,
@@ -13673,7 +12890,6 @@ var forces = [
                                 "w":108
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -13690,7 +12906,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":26,
                                 "br":2,
@@ -13726,7 +12941,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Grenadier Squad",
                         "cost":26,
                         "br":2,
@@ -13756,7 +12970,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Armoured Pzr Grenadier Platoon",
                         "cost":162,
                         "br":15,
@@ -13765,7 +12978,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -13788,7 +13000,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Grenadier Squad",
                                 
                                 "count":3,
@@ -13818,14 +13029,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 "cost":14,
                                 "br":1,
@@ -13842,7 +13051,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Heavy Machine Gun team",
                                 "cost":21,
                                 "br":1,
@@ -13865,7 +13073,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Panzerschreck Team",
                                 "cost":16,
                                 "br":1,
@@ -13873,7 +13080,6 @@ var forces = [
                                 "w":108
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -13896,7 +13102,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":26,
                                 "br":2,
@@ -13931,7 +13136,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":9,
                                 "name":"Towed Anti-Aircraft Gun",
                                 "cost":28,
                                 "br":2,
@@ -13959,7 +13163,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Armoured Panzer Grenadier Squad",
                         "cost":42,
                         "br":3,
@@ -13990,13 +13193,11 @@ var forces = [
                 ]
             },
             {
-                "id":3, 
                 "name":"Tank Units",
                 "allows":'[6,7,8,9]',
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Panzer Platoon",
                         "cost":65,
                         "multiplier":3,
@@ -14018,7 +13219,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"StuG Battery",
                         "cost":128,
                         "multiplier":3,
@@ -14034,7 +13234,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"StuG",
                         "cost":44,
                         "br":3,
@@ -14049,7 +13248,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Panzer IV Platoon",
                         "cost":135,
                         "multiplier":3,
@@ -14068,7 +13266,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Panzer",
                         "cost":16,
                         "br":1,
@@ -14086,7 +13283,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Panzer IV ",
                         "cost":44,
                         "br":3,
@@ -14104,13 +13300,11 @@ var forces = [
                 ]
             },
             {
-                "id":4, 
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":16,
                         "br":1,
@@ -14126,7 +13320,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Panzer Artillery Battery",
                         "cost":94,
                         "br":4,
@@ -14141,7 +13334,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Medium Panzer Artillery Battery",
                         "cost":140,
                         "br":4,
@@ -14157,7 +13349,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Nebelwerfer Artillery Battery",
                         "cost":48,
                         "br":2,
@@ -14176,7 +13367,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Self-Propelled Artillery",
                         "cost":47,
                         "br":2,
@@ -14193,7 +13383,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Armoured Forward Observer",
                         "cost":30,
                         "br":2,
@@ -14208,7 +13397,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":1,
@@ -14238,7 +13426,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -14253,7 +13440,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":9,
                         "name":"Off-Table Artillery Fire",
                         "cost":90,
                         "br":0,
@@ -14275,63 +13461,53 @@ var forces = [
                 ]
             },
             {
-                "id":5, 
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":4,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":5,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Sniper Hideout",
                         "restricted":true,
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":7,
                         "name":"AT Gun Dug-out",
                         "restricted":true,
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":8,
                         "name":"Booby Trapped Building",
                         "cost":25,
                         "br":0
                     },
                     {
-                        "id":9,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
@@ -14339,13 +13515,11 @@ var forces = [
                 ]
             },
             {
-                "id":6, 
                 "name":"Reconnaissance Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Sniper",
                         "cost":10,
                         "br":1,
@@ -14360,7 +13534,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Mounted Panzer Grenadier Patrol",
                         "cost":28,
                         "br":3,
@@ -14381,7 +13554,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Motorcycle Reconnaissance Patrol",
                         "cost":18,
                         "br":1,
@@ -14401,7 +13573,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Recon Platoon Command",
                         "cost":44,
                         "br":2,
@@ -14418,7 +13589,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Armoured Car",
                         "cost":20,
                         "br":1,
@@ -14435,7 +13605,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Panzer Grenadier Foot Patrol",
                         "cost":36,
                         "br":3,
@@ -14460,13 +13629,11 @@ var forces = [
                 ]
             },
             {
-                "id":7, 
                 "name":"Engineer Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Light Bridging Unit",
                         "cost":18,
                         "br":2,
@@ -14482,7 +13649,6 @@ var forces = [
                         ]
                     },
                 {
-                    "id":2,
                     "name":"Heavy Bridging Unit",
                     "cost":36,
                     "br":3,
@@ -14502,7 +13668,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Recovery Vehicle",
                     "cost":18,
                     "br":1,
@@ -14516,7 +13681,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Bergepanzer III",
                     "cost":32,
                     "br":1,
@@ -14532,7 +13696,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Assault Pioneer Squad",
                     "cost":54,
                     "br":3,
@@ -14577,13 +13740,11 @@ var forces = [
                 ]
             },
             {
-                "id":8, 
                 "name":"Logistics Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Supply Column",
                         "cost":8,
                         "br":1,
@@ -14608,7 +13769,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Forward Aid Post",
                         "cost":20,
                         "br":5,
@@ -14624,7 +13784,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Stretcher Party",
                         "cost":10,
                         "br":1,
@@ -14638,7 +13797,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Ambulance",
                         "cost":14,
                         "br":2,
@@ -14656,13 +13814,11 @@ var forces = [
                 ]
             },
             {
-                "id":9, 
                 "name":"Specialist Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Heavy Anti-Tank Gun",
                     "cost":71,
                     "br":3,
@@ -14691,7 +13847,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Self-Propelled Anti-Tank Gun",
                     "cost":20,
                     "br":1,
@@ -14707,7 +13862,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Heavy Anti-Aircraft Gun",
                     "cost":51,
                     "br":3,
@@ -14737,7 +13891,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Anti-Aircraft Vehicle",
                     "cost":16,
                     "br":1,
@@ -14756,13 +13909,11 @@ var forces = [
             ]
             },
             {
-                "id":10, 
                 "name":"Additional Fire Support",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Off-Table Artillery Request",
                         "cost":5,
                         "br":0,
@@ -14778,33 +13929,28 @@ var forces = [
                         ]
                     },
                 {
-                    "id":2,
                     "name":"Pre-Registered Target Point",
                     "cost":15,
                     "br":0
                 },
                 {
-                    "id":3,
                     "name":"Counter-Battery Fire Mission",
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":4,
                     "name":"Timed 80mm Mortar Barrage",
                     "w":2,
                     "cost":5,
                     "br":0
                 },
                 {
-                    "id":5,
                     "name":"Timed 105mm Barrage",
                     "w":22,
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":6,
                     "name":"Timed 150mm Barrage",
                     "cost":20,
                     "br":0
@@ -14825,13 +13971,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1, 
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":21,
                     "br":3,
@@ -14856,7 +14000,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Forward Air Control Officer",
                     "cost":26,
                     "br":1,
@@ -14877,26 +14020,22 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":14
                 },
                 {
-                    "id":4,
                     "name":"Motorcycle Dispatch Rider",
                     "br":0,
                     "v":50,
                     "cost":12
                 },
                 {
-                    "id":5,
                     "name":"Wire Team",
                     "br":0,
                     "cost":7
                 },
                 {
-                    "id":6,
                     "name":"Forward Signals Unit",
                     "br":1,
                     "cost":18,
@@ -14915,14 +14054,12 @@ var forces = [
                 ]
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Infantry Platoon",
                         "cost":94,
                         "br":11,
@@ -14931,7 +14068,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -14948,7 +14084,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Squad",
                                 
                                 "count":3,
@@ -14965,7 +14100,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Light Mortar Team",
                                 
                                 "br":0,
@@ -14973,14 +14107,12 @@ var forces = [
                                 "mandatory":true
                             },
                             {
-                                "id":4,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":5,
                                 "name":"Heavy Machine Gun team",
                                 "cost":22,
                                 "br":1,
@@ -15009,7 +14141,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"PIAT Team",
                                 "cost":14,
                                 "br":1,
@@ -15026,7 +14157,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -15050,7 +14180,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":34,
                                 "br":2,
@@ -15081,7 +14210,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Rifle Section",
                         "cost":21,
                         "br":2,
@@ -15097,7 +14225,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Motor Infantry Platoon",
                         "cost":122,
                         "br":15,
@@ -15106,7 +14233,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -15130,7 +14256,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Section",
                                 
                                 "count":3,
@@ -15147,7 +14272,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"PIAT Team",
                                 
                                 "w":91,
@@ -15155,14 +14279,12 @@ var forces = [
                                 "mandatory":true
                             },
                             {
-                                "id":4,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":5,
                                 "name":"Heavy Machine Gun team",
                                 "cost":22,
                                 "br":1,
@@ -15191,7 +14313,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"PIAT Team",
                                 "cost":14,
                                 "br":1,
@@ -15208,7 +14329,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -15232,7 +14352,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":34,
                                 "br":2,
@@ -15263,7 +14382,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Motor Rifle Section",
                         "cost":25,
                         "br":3,
@@ -15279,7 +14397,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Carrier Section",
                         "cost":54,
                         "br":6,
@@ -15289,7 +14406,6 @@ var forces = [
                         "sub_text":"Section Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Rifle Team",
                                 
                                 "br":0,
@@ -15304,7 +14420,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Carrier Light Mortar Team",
                                 
                                 "br":0,
@@ -15320,7 +14435,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Carrier PIAT Team",
                                 
                                 "br":0,
@@ -15341,13 +14455,11 @@ var forces = [
                 ]
             },
             { 
-                "id":3,  
                 "name":"Tank Units", 
                 "allows":'[6,7,8,9]', 
                 "requires":false, 
                 "entries":[ 
                     { 
-                        "id":1, 
                         "name":"Sherman Tank Troop", 
                         "cost":150, 
                         "multiplier":3, 
@@ -15365,7 +14477,6 @@ var forces = [
                         ] 
                     }, 
                     {
-                        "id":2, 
                         "name":"Light Tank Platoon",
                         "cost":80, 
                         "br":6, 
@@ -15386,7 +14497,6 @@ var forces = [
                     },
                     // greg need to add exclude option for sherman and cromwell troops. Not allowed both.
                     { 
-                        "id":3, 
                         "name":"Cromwell Tank Troop", 
                         "cost":156, 
                         "multiplier":3, 
@@ -15402,7 +14512,6 @@ var forces = [
                         ] 
                     }, 
                     { 
-                        "id":4, 
                         "name":"Cromwell Tank Troop (Challenger)", 
                         "cost":178, 
                         "multiplier":3, 
@@ -15421,7 +14530,6 @@ var forces = [
                         ] 
                     }, 
                     {
-                        "id":5, 
                         "name":"Additional Tank",
                         "cost":48, 
                         "br":3, 
@@ -15439,7 +14547,6 @@ var forces = [
                         ] 
                     },
                     { 
-                        "id":6, 
                         "name":"Self-Propelled Tank Destroyer", 
                         "cost":34, 
                         "br":2, 
@@ -15456,13 +14563,11 @@ var forces = [
                 ] 
             }, 
             {
-                "id":4, 
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":16,
                         "br":1,
@@ -15478,7 +14583,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Armoured Forward Observer",
                         "cost":50,
                         "br":2,
@@ -15493,7 +14597,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Towed Field Gun Battery",
                         "cost":72,
                         "br":4,
@@ -15524,7 +14627,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Aerial Artillery Observer",
                         "cost":66,
                         "br":3,
@@ -15539,7 +14641,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Self-Propelled Artillery Battery",
                         "cost":80,
                         "br":4,
@@ -15556,7 +14657,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":1,
@@ -15585,7 +14685,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -15600,7 +14699,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
                         "name":"Off-Table Artillery Fire",
                         "cost":90,
                         "br":0,
@@ -15619,68 +14717,57 @@ var forces = [
                 ]
             },
             {
-                "id":5, 
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":34,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":4,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":5,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":7,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":8,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "restricted":true,
                         "br":0
                     },
                     {
-                        "id":9,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":10,
                         "name":"Minefield",
                         "cost":20,
                         "br":0
@@ -15688,13 +14775,11 @@ var forces = [
                 ]
             },
             {
-                "id":6, 
                 "name":"Reconnaissance Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Sniper",
                         "cost":10,
                         "br":1,
@@ -15709,7 +14794,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Recon Platoon Command",
                         "cost":28,
                         "br":2,
@@ -15728,7 +14812,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Armoured Car",
                         "cost":18,
                         "br":1,
@@ -15749,7 +14832,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4, 
                         "name":"Reconnaissance Tank",
                         "cost":62, 
                         "br":3, 
@@ -15766,14 +14848,12 @@ var forces = [
                         ] 
                     },
                     {
-                        "id":5,
                         "name":"Infantry Foot Patrol",
                         "cost":31,
                         "br":2,
                         "s":1
                     },
                     {
-                        "id":6,
                         "name":"Motorised Infantry Patrol",
                         "cost":35,
                         "br":3,
@@ -15789,7 +14869,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Carrier Team",
                         "cost":24,
                         "br":1,
@@ -15806,13 +14885,11 @@ var forces = [
                 ]
             },
             {
-                "id":7, 
                 "name":"Engineer Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Light Bridging Unit",
                         "cost":18,
                         "br":2,
@@ -15826,7 +14903,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Heavy Bridging Unit",
                         "cost":36,
                         "br":3,
@@ -15846,7 +14922,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Combat Engineer Section",
                         "cost":26,
                         "br":3,
@@ -15886,7 +14961,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Recovery Vehicle",
                         "cost":22,
                         "br":1,
@@ -15903,7 +14977,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Armoured Engineering Vehicle",
                         "cost":54,
                         "br":3,
@@ -15925,13 +14998,11 @@ var forces = [
                 ]
             },
             {
-                "id":8, 
                 "name":"Logistics Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Supply Column",
                         "cost":8,
                         "br":1,
@@ -15957,7 +15028,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Forward Aid Post",
                         "cost":20,
                         "br":5,
@@ -15973,7 +15043,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Stretcher Party",
                         "cost":10,
                         "br":1,
@@ -15987,7 +15056,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Ambulance",
                         "cost":14,
                         "br":2,
@@ -16006,13 +15074,11 @@ var forces = [
                 ]
             },
             {
-                "id":9, 
                 "name":"Specialist Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Heavy Anti-Tank Gun",
                         "cost":50,
                         "br":3,
@@ -16043,7 +15109,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Specialist Armoured Vehicle",
                         "cost":15,
                         "br":1,
@@ -16061,7 +15126,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Towed Anti-Aircraft Gun",
                         "cost":36,
                         "br":1,
@@ -16090,7 +15154,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Anti-Aircraft Vehicle",
                         "cost":20,
                         "br":1,
@@ -16110,13 +15173,11 @@ var forces = [
                 ]
             },
             {
-                "id":10, 
                 "name":"Additional Fire Support",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Off-Table Artillery Request",
                         "cost":5,
                         "br":0,
@@ -16132,39 +15193,33 @@ var forces = [
                         ]
                     },
                 {
-                    "id":2,
                     "name":"Pre-Registered Target Point",
                     "cost":15,
                     "br":0
                 },
                 {
-                    "id":3,
                     "name":"Counter-Battery Fire Mission",
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":4,
                     "name":"Timed 25 pdr Barrage",
                     "w":73,
                     "cost":20,
                     "br":0
                 },
                 {
-                    "id":5,
                     "name":"Timed 5.5\" Barrage",
                     "cost":30,
                     "w":80,
                     "br":0
                 },
                 {
-                    "id":6,
                     "name":"Timed Spitfire Air Strike",
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":7,
                     "name":"Timed Typhoon Air Strike",
                     "cost":20,
                     "br":0
@@ -16185,13 +15240,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1, 
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":21,
                     "br":3,
@@ -16213,7 +15266,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Forward Air Control Officer",
                     "cost":26,
                     "br":1,
@@ -16233,7 +15285,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Forward Signals Unit",
                     "cost":18,
                     "br":1,
@@ -16249,20 +15300,17 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":14
                 },
                 {
-                    "id":5,
                     "name":"Motorcycle Dispatch Rider",
                     "br":0,
                     "v":50,
                     "cost":12
                 },
                 {
-                    "id":6,
                     "name":"Wire Team",
                     "br":0,
                     "cost":7
@@ -16271,14 +15319,12 @@ var forces = [
 
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Infantry Platoon",
                         "cost":94,
                         "br":11,
@@ -16287,7 +15333,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -16304,7 +15349,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Section",
                                 
                                 "count":3,
@@ -16321,7 +15365,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Light Mortar Team",
                                 
                                 "br":0,
@@ -16329,14 +15372,12 @@ var forces = [
                                 "mandatory":true
                             },
                             {
-                                "id":4,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":5,
                                 "name":"Heavy Machine Gun team",
                                 "cost":22,
                                 "br":1,
@@ -16365,7 +15406,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"PIAT Team",
                                 "cost":14,
                                 "br":1,
@@ -16382,7 +15422,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -16406,7 +15445,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":34,
                                 "br":2,
@@ -16437,7 +15475,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Rifle Section",
                         "cost":21,
                         "br":2,
@@ -16453,7 +15490,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Carrier Section",
                         "cost":54,
                         "br":6,
@@ -16462,7 +15498,6 @@ var forces = [
                         "sub_text":"Section Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Rifle Team",
                                 
                                 "br":0,
@@ -16477,7 +15512,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Carrier Light Mortar Team",
                                 
                                 "br":0,
@@ -16493,7 +15527,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Carrier PIAT Team",
                                 
                                 "br":0,
@@ -16514,13 +15547,11 @@ var forces = [
                 ]
             },
             { 
-                "id":3,  
                 "name":"Tank Units", 
                 "allows":'[6,7,8,9]', 
                 "requires":false, 
                 "entries":[ 
                     { 
-                        "id":1, 
                         "name":"Sherman Tank Troop", 
                         "cost":146, 
                         "multiplier":3, 
@@ -16538,7 +15569,6 @@ var forces = [
                         ] 
                     }, 
                     { 
-                        "id":2, 
                         "name":"Churchill Tank Troop", 
                         "cost":130, 
                         "multiplier":3, 
@@ -16558,7 +15588,6 @@ var forces = [
                         ] 
                     }, 
                     { 
-                        "id":3, 
                         "name":"Self-Propelled Anti-Tank Gun", 
                         "cost":34, 
                         "br":2, 
@@ -16573,7 +15602,6 @@ var forces = [
                         ] 
                     },
                     {
-                        "id":4, 
                         "name":"Additional Tank",
                         "cost":48, 
                         "br":3, 
@@ -16592,13 +15620,11 @@ var forces = [
                 ] 
             }, 
             {
-                "id":4, 
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":16,
                         "br":1,
@@ -16612,7 +15638,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Towed 25 pdr Battery",
                         "cost":72,
                         "br":4,
@@ -16643,7 +15668,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Towed 4.5\" Battery",
                         "cost":100,
                         "br":4,
@@ -16674,7 +15698,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Aerial Artillery Observer",
                         "cost":66,
                         "br":3,
@@ -16689,7 +15712,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":1,
@@ -16718,7 +15740,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -16733,7 +15754,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Off-Table Artillery Fire",
                         "cost":90,
                         "br":0,
@@ -16752,67 +15772,56 @@ var forces = [
                 ]
             },
             {
-                "id":5, 
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":34,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":4,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":5,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Trenches",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":7,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":8,
                         "name":"AT Gun Dug-out",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":9,
                         "name":"Minefield",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":10,
                         "name":"Command Bunker",
                         "cost":30,
                         "officer":true,
@@ -16820,39 +15829,33 @@ var forces = [
                         "br":0
                     },
                     {
-                        "id":11,
                         "name":"Artillery Observation Post",
                         "cost":25,
                         "br":1,
                         "unique":true
                     },
                     {
-                        "id":12,
                         "name":"Booby-Trapped Building",
                         "cost":25,
                         "br":0
                     },
                     {
-                        "id":13,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":14,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":15,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "restricted":true,
                         "br":0
                     },
                     {
-                        "id":16,
                         "name":"Off-tble 17 pdr AT Shot",
                         "cost":5,
                         "br":0
@@ -16860,13 +15863,11 @@ var forces = [
                 ]
             },
             {
-                "id":6, 
                 "name":"Reconnaissance Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Sniper",
                         "cost":10,
                         "br":1,
@@ -16881,7 +15882,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Armoured Car",
                         "cost":18,
                         "br":1,
@@ -16902,14 +15902,12 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Infantry Foot Patrol",
                         "cost":31,
                         "br":2,
                         "s":1
                     },
                     {
-                        "id":4,
                         "name":"Carrier Team",
                         "cost":24,
                         "br":1,
@@ -16924,7 +15922,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Recon Platoon Command",
                         "cost":28,
                         "br":2,
@@ -16945,13 +15942,11 @@ var forces = [
                 ]
             },
             {
-                "id":7, 
                 "name":"Engineer Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Light Bridging Unit",
                         "cost":18,
                         "br":2,
@@ -16965,7 +15960,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Heavy Bridging Unit",
                         "cost":36,
                         "br":3,
@@ -16985,7 +15979,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Combat Engineer Section",
                         "cost":26,
                         "br":3,
@@ -17025,7 +16018,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Recovery Vehicle",
                         "cost":22,
                         "br":1,
@@ -17042,7 +16034,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Armoured Engineering Vehicle",
                         "cost":54,
                         "br":3,
@@ -17064,13 +16055,11 @@ var forces = [
                 ]
             },
             {
-                "id":8, 
                 "name":"Logistics Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Supply Column",
                         "cost":8,
                         "br":1,
@@ -17089,7 +16078,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Forward Aid Post",
                         "cost":20,
                         "br":5,
@@ -17105,7 +16093,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Stretcher Party",
                         "cost":10,
                         "br":1,
@@ -17119,7 +16106,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Ambulance",
                         "cost":14,
                         "br":2,
@@ -17138,13 +16124,11 @@ var forces = [
                 ]
             },
             {
-                "id":9, 
                 "name":"Specialist Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Heavy Anti-Tank Gun",
                         "cost":50,
                         "br":3,
@@ -17176,7 +16160,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Towed Bofors AA Gun",
                         "cost":36,
                         "br":1,
@@ -17205,7 +16188,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Towed Polsten AA Gun",
                         "cost":28,
                         "br":1,
@@ -17234,7 +16216,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Specialist Armoured Vehicle",
                         "cost":15,
                         "br":1,
@@ -17255,7 +16236,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Anti-Aircraft Vehicle",
                         "cost":20,
                         "br":1,
@@ -17272,13 +16252,11 @@ var forces = [
                 ]
             },
             {
-                "id":10, 
                 "name":"Additional Fire Support",
                 "allows":null,
                 "requires":true,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Off-Table Artillery Request",
                     "cost":5,
                     "br":0,
@@ -17294,39 +16272,33 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Pre-Registered Target Point",
                     "cost":15,
                     "br":0
                 },
                 {
-                    "id":3,
                     "name":"Counter-Battery Fire Mission",
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":4,
                     "name":"Timed 25 pdr Barrage",
                     "w":73,
                     "cost":20,
                     "br":0
                 },
                 {
-                    "id":5,
                     "name":"Timed 5.5\" Barrage",
                     "cost":30,
                     "w":80,
                     "br":0
                 },
                 {
-                    "id":6,
                     "name":"Timed Spitfire Air Strike",
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":7,
                     "name":"Timed Typhoon Air Strike",
                     "cost":20,
                     "br":0
@@ -17347,13 +16319,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1,
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":21,
                     "br":3,
@@ -17381,7 +16351,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Forward Air Control Officer",
                     "cost":26,
                     "br":1,
@@ -17400,7 +16369,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Forward Signals Unit",
                     "br":1,
                     "cost":18,
@@ -17416,19 +16384,16 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":14
                 },
                 {
-                    "id":5,
                     "name":"Dispatch Rider",
                     "br":0,
                     "cost":12
                 },
                 {
-                    "id":6,
                     "name":"Wire Team",
                     "br":0,
                     "cost":7
@@ -17436,14 +16401,12 @@ var forces = [
                 ]
             },
             {
-                "id":2,
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Armoured Infantry Platoon",
                         "cost":116,
                         "br":9,
@@ -17461,7 +16424,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -17485,7 +16447,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Squad",
                                 
                                 "count":2,
@@ -17508,7 +16469,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"MMG Team",
                                 
                                 "br":0,
@@ -17532,7 +16492,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 
                                 "br":0,
@@ -17549,14 +16508,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":6,
                                 "name":"Heavy Machine Gun team",
                                 "cost":20,
                                 "br":1,
@@ -17572,7 +16529,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":22,
                                 "br":1,
@@ -17596,7 +16552,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":32,
                                 "br":2,
@@ -17625,7 +16580,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":9,
                                 "name":"Self Propelled Howitzer",
                                 "cost":24,
                                 "br":2,
@@ -17642,7 +16596,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Armoured Infantry Squad",
                         "cost":38,
                         "br":3,
@@ -17673,13 +16626,11 @@ var forces = [
                 ]
             },
             { 
-                "id":3,  
                 "name":"Tank Units", 
                 "allows":'[6,7,8,9]', 
                 "requires":false, 
                 "entries":[ 
                     { 
-                        "id":1, 
                         "name":"Medium Tank Platoon", 
                         "cost":140, 
                         "multiplier":4, 
@@ -17709,7 +16660,6 @@ var forces = [
                         ] 
                     }, 
                     {
-                        "id":2, 
                         "name":"Light Tank Platoon",
                         "cost":90, 
                         "br":6, 
@@ -17729,7 +16679,6 @@ var forces = [
                         ] 
                     },
                     { 
-                        "id":3, 
                         "name":"Self-Propelled Tank Destroyer", 
                         "cost":34, 
                         "br":2, 
@@ -17743,7 +16692,6 @@ var forces = [
                         ] 
                     },
                     {
-                        "id":4, 
                         "name":"Additional Tank",
                         "cost":50, 
                         "br":3, 
@@ -17759,7 +16707,6 @@ var forces = [
                         ] 
                     },
                     { 
-                        "id":5, 
                         "name":"Self-Propelled Tank Destroyer Battery", 
                         "cost":100,
                         "multiplier":4,
@@ -17778,13 +16725,11 @@ var forces = [
                 ] 
             }, 
             {
-                "id":4,
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":21,
                         "br":1,
@@ -17799,7 +16744,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Armoured Forward Observer",
                         "cost":60,
                         "br":3,
@@ -17813,7 +16757,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Armoured Artillery Battery",
                         "cost":110,
                         "br":6,
@@ -17829,7 +16772,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Self Propelled Mortar Battery",
                         "cost":66,
                         "br":3,
@@ -17845,7 +16787,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"M7 Priest Artillery Gun",
                         "cost":44,
                         "br":2,
@@ -17859,7 +16800,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"M12 Artillery Gun",
                         "cost":52,
                         "br":2,
@@ -17874,7 +16814,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Aerial Artillery Observer",
                         "cost":71,
                         "br":3,
@@ -17890,7 +16829,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":0,
@@ -17914,7 +16852,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":9,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -17929,7 +16866,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":10,
                         "name":"Off-Table Artillery Fire",
                         "cost":90,
                         "br":0,
@@ -17946,68 +16882,57 @@ var forces = [
                 ]
             },
             {
-                "id":5,
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":4,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":5,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":7,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":8,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":9,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":10,
                         "name":"Minefield",
                         "cost":20,
                         "br":0
@@ -18015,13 +16940,11 @@ var forces = [
                 ]
             },
             {
-                "id":6, 
                 "name":"Reconnaissance Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Sniper",
                         "cost":10,
                         "br":1,
@@ -18036,7 +16959,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Armoured Car",
                         "cost":26,
                         "br":1,
@@ -18052,7 +16974,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Recon Platoon Command",
                         "cost":28,
                         "br":2,
@@ -18072,7 +16993,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4, 
                         "name":"Light Tank",
                         "cost":40, 
                         "br":2, 
@@ -18087,7 +17007,6 @@ var forces = [
                         ] 
                     },
                     {
-                        "id":5,
                         "name":"Armoured Infantry Patrol",
                         "cost":43,
                         "br":3,
@@ -18115,7 +17034,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Jeep Reconnaissance Team",
                         "cost":24,
                         "v":163,
@@ -18124,13 +17042,11 @@ var forces = [
                 ]
             },
             {
-                "id":7, 
                 "name":"Engineer Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Light Bridging Unit",
                         "cost":18,
                         "br":2,
@@ -18145,7 +17061,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Heavy Bridging Unit",
                         "cost":36,
                         "br":3,
@@ -18165,7 +17080,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Combat Engineer Section",
                         "cost":33,
                         "br":3,
@@ -18212,7 +17126,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Recovery Vehicle",
                         "cost":22,
                         "br":1,
@@ -18228,7 +17141,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Armoured Engineering Vehicle",
                         "cost":54,
                         "br":3,
@@ -18246,13 +17158,11 @@ var forces = [
                 ]
             },
             {
-                "id":8, 
                 "name":"Logistics Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Supply Column",
                         "cost":8,
                         "br":1,
@@ -18279,7 +17189,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Stretcher Party",
                         "cost":10,
                         "br":1,
@@ -18293,7 +17202,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Ambulance",
                         "cost":14,
                         "br":2,
@@ -18310,7 +17218,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Forward Aid Post",
                         "cost":20,
                         "br":5,
@@ -18328,14 +17235,12 @@ var forces = [
                 ]
             },
             {
-                "id":9, 
                 "name":"Specialist Support Units",
                 "allows":null,
                 "requires":true,
                 "restricted":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Self Propelled Howitzer",
                         "cost":44,
                         "br":3,
@@ -18351,7 +17256,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Self-Propelled Anti-Aircraft Gun",
                         "cost":28,
                         "br":1,
@@ -18369,13 +17273,11 @@ var forces = [
                 ]
             },
             {
-                "id":10, 
                 "name":"Additional Fire Support",
                 "allows":null,
                 "requires":true,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Off-Table Artillery Request",
                     "cost":5,
                     "br":0,
@@ -18391,46 +17293,39 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Pre-Registered Target Point",
                     "cost":15,
                     "br":0
                 },
                 {
-                    "id":3,
                     "name":"Counter-Battery Fire Mission",
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":4,
                     "name":"Timed 105mm Barrage",
                     "w":76,
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":5,
                     "name":"Timed 155mm Barrage",
                     "cost":20,
                     "w":84,
                     "br":0
                 },
                 {
-                    "id":6,
                     "name":"Time on Target Barrage",
                     "cost":5,
                     "multiplier":0,
                     "br":0
                 },
                 {
-                    "id":7,
                     "name":"Timed P-51 Air Strike",
                     "cost":5,
                     "br":0
                 },
                 {
-                    "id":8,
                     "name":"Timed P-47 Air Strike",
                     "cost":10,
                     "br":0
@@ -18451,13 +17346,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1,
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":21,
                     "br":3,
@@ -18483,13 +17376,11 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Wire Team",
                     "br":0,
                     "cost":7
                 },
                 {
-                    "id":3,
                     "name":"Forward Air Control Officer",
                     "cost":26,
                     "br":1,
@@ -18507,7 +17398,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Forward Signals Unit",
                     "br":1,
                     "cost":16,
@@ -18523,13 +17413,11 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":14
                 },
                 {
-                    "id":6,
                     "name":"Dispatch Rider",
                     "br":0,
                     "v":50,
@@ -18538,14 +17426,12 @@ var forces = [
                 ]
             },
             {
-                "id":2,
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Infantry Platoon",
                         "cost":80,
                         "br":7,
@@ -18563,7 +17449,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -18580,7 +17465,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Squad",
                                 
                                 "count":3,
@@ -18597,7 +17481,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"BAR Squad",
                                 
                                 "br":0,
@@ -18605,14 +17488,12 @@ var forces = [
                                 "count":3
                             },
                             {
-                                "id":4,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":5,
                                 "name":"Medium Machine Gun team",
                                 "cost":16,
                                 "br":1,
@@ -18635,7 +17516,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Heavy Machine Gun team",
                                 "cost":20,
                                 "br":1,
@@ -18658,7 +17538,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Bazooka Team",
                                 "cost":15,
                                 "br":1,
@@ -18666,7 +17545,6 @@ var forces = [
                                 "unique":true
                             },
                             {
-                                "id":8,
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
@@ -18683,7 +17561,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":9,
                                 "name":"Medium Mortar Team",
                                 "cost":22,
                                 "br":1,
@@ -18707,7 +17584,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":10,
                                 "name":"Anti-tank Gun",
                                 "cost":32,
                                 "br":2,
@@ -18737,7 +17613,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":11,
                                 "name":"Infantry Gun",
                                 "cost":27,
                                 "br":2,
@@ -18764,7 +17639,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Rifle Squad",
                         "cost":19,
                         "br":1,
@@ -18782,13 +17656,11 @@ var forces = [
                 ]
             },
             { 
-                "id":3,  
                 "name":"Tank Units", 
                 "allows":'[6,7,8,9]', 
                 "requires":false, 
                 "entries":[ 
                     { 
-                        "id":1, 
                         "name":"Medium Tank Platoon", 
                         "cost":140, 
                         "multiplier":4, 
@@ -18818,7 +17690,6 @@ var forces = [
                         ] 
                     }, 
                     {
-                        "id":2, 
                         "name":"Light Tank Platoon",
                         "cost":90, 
                         "br":6, 
@@ -18838,7 +17709,6 @@ var forces = [
                         ] 
                     },
                     { 
-                        "id":3, 
                         "name":"Self-Propelled Tank Destroyer", 
                         "cost":34, 
                         "br":2, 
@@ -18852,7 +17722,6 @@ var forces = [
                         ] 
                     },
                     {
-                        "id":4, 
                         "name":"Additional Tank",
                         "cost":50, 
                         "br":3, 
@@ -18868,7 +17737,6 @@ var forces = [
                         ] 
                     },
                     { 
-                        "id":5, 
                         "name":"Self-Propelled Tank Destroyer Battery", 
                         "cost":100,
                         "multiplier":4,
@@ -18887,13 +17755,11 @@ var forces = [
                 ] 
             }, 
             {
-                "id":4,
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":21,
                         "br":1,
@@ -18908,7 +17774,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"105mmL22 howitzer",
                         "cost":36,
                         "br":2,
@@ -18932,7 +17797,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"155mmL45 howitzer",
                         "cost":58,
                         "br":2,
@@ -18957,7 +17821,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Off-Table Artillery Fire",
                         "cost":90,
                         "br":0,
@@ -18972,7 +17835,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Aerial Artillery Observer",
                         "cost":71,
                         "br":3,
@@ -18988,7 +17850,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":0,
@@ -19012,7 +17873,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -19027,7 +17887,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
                         "name":"Towed Artillery Battery",
                         "cost":72,
                         "br":4,
@@ -19059,68 +17918,57 @@ var forces = [
                 ]
             },
             {
-                "id":5,
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":4,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":5,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Trenches",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":7,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":8,
                         "name":"AT Gun Dug-out",
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":9,
                         "name":"Minefield",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":10,
                         "name":"Command Bunker",
                         "cost":30,
                         "officer":true,
@@ -19129,7 +17977,6 @@ var forces = [
                         "br":0
                     },
                     {
-                        "id":11,
                         "name":"Artillery Observation Post",
                         "cost":26,
                         "br":1,
@@ -19137,32 +17984,27 @@ var forces = [
                         "unique":true
                     },
                     {
-                        "id":12,
                         "name":"Booby-Trapped Building",
                         "cost":25,
                         "br":0
                     },
                     {
-                        "id":13,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":14,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":15,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "restricted":true,
                         "br":0
                     },
                     {
-                        "id":16,
                         "name":"Off-tble 76mm AT Shot",
                         "cost":5,
                         "br":0
@@ -19170,13 +18012,11 @@ var forces = [
                 ]
             },
             {
-                "id":6, 
                 "name":"Reconnaissance Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Sniper",
                         "cost":10,
                         "br":1,
@@ -19191,14 +18031,12 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Jeep Reconnaissance Team",
                         "cost":24,
                         "v":163,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Recon Platoon Command",
                         "cost":28,
                         "br":2,
@@ -19217,13 +18055,11 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Infantry Patrol",
                         "cost":34,
                         "br":2
                     },
                     {
-                        "id":5,
                         "name":"Armoured Car",
                         "cost":26,
                         "br":1,
@@ -19241,13 +18077,11 @@ var forces = [
                 ]
             },
             {
-                "id":7, 
                 "name":"Engineer Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Light Bridging Unit",
                         "cost":18,
                         "br":2,
@@ -19262,7 +18096,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Heavy Bridging Unit",
                         "cost":36,
                         "br":3,
@@ -19282,7 +18115,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Combat Engineer Section",
                         "cost":33,
                         "br":3,
@@ -19328,7 +18160,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Recovery Vehicle",
                         "cost":22,
                         "br":1,
@@ -19344,7 +18175,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Armoured Engineering Vehicle",
                         "cost":54,
                         "br":3,
@@ -19362,13 +18192,11 @@ var forces = [
                 ]
             },
             {
-                "id":8, 
                 "name":"Logistics Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Supply Column",
                         "cost":8,
                         "br":1,
@@ -19388,7 +18216,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Stretcher Party",
                         "cost":10,
                         "br":1,
@@ -19402,7 +18229,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Ambulance",
                         "cost":14,
                         "br":2,
@@ -19419,7 +18245,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Forward Aid Post",
                         "cost":20,
                         "br":5,
@@ -19437,14 +18262,12 @@ var forces = [
                 ]
             },
             {
-                "id":9, 
                 "name":"Specialist Support Units",
                 "allows":null,
                 "requires":true,
                 "restricted":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Heavy Anti-Tank Gun",
                         "cost":37,
                         "br":2,
@@ -19472,7 +18295,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Towed Bofors AA",
                         "cost":34,
                         "br":1,
@@ -19500,7 +18322,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Towed 90mm AA",
                         "cost":49,
                         "br":2,
@@ -19531,13 +18352,11 @@ var forces = [
                 ]
             },
             {
-                "id":10, 
                 "name":"Additional Fire Support",
                 "allows":null,
                 "requires":true,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Off-Table Artillery Request",
                     "cost":5,
                     "br":0,
@@ -19553,46 +18372,39 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Pre-Registered Target Point",
                     "cost":15,
                     "br":0
                 },
                 {
-                    "id":3,
                     "name":"Counter-Battery Fire Mission",
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":4,
                     "name":"Timed 105mm Barrage",
                     "w":76,
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":5,
                     "name":"Timed 155mm Barrage",
                     "cost":20,
                     "w":84,
                     "br":0
                 },
                 {
-                    "id":6,
                     "name":"Time on Target Barrage",
                     "cost":5,
                     "multiplier":0,
                     "br":0
                 },
                 {
-                    "id":7,
                     "name":"Timed P-51 Air Strike",
                     "cost":5,
                     "br":0
                 },
                 {
-                    "id":8,
                     "name":"Timed P-47 Air Strike",
                     "cost":10,
                     "br":0
@@ -19613,13 +18425,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1, 
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":28,
                     "br":3,
@@ -19637,19 +18447,16 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":14
                 },
                 {
-                    "id":3,
                     "name":"Wire Team",
                     "br":0,
                     "cost":8
                 },
                 {
-                    "id":4,
                     "name":"Forward Signals Unit",
                     "br":1,
                     "cost":18,
@@ -19670,7 +18477,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Motorcycle Dispatch Rider",
                     "br":0,
                     "v":50,
@@ -19679,14 +18485,12 @@ var forces = [
                 ]
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Panzer Grenadier Platoon",
                         "cost":100,
                         "br":11,
@@ -19704,7 +18508,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -19730,7 +18533,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Panzer Grenadier Squad",
                                 
                                 "count":3,
@@ -19766,14 +18568,12 @@ var forces = [
 
                             },
                             {
-                                "id":3,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
@@ -19790,7 +18590,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Heavy Machine Gun team",
                                 "cost":18,
                                 "br":1,
@@ -19813,7 +18612,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Panzerschreck Team",
                                 "cost":22,
                                 "br":1,
@@ -19828,7 +18626,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -19845,7 +18642,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":26,
                                 "br":2,
@@ -19879,7 +18675,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Panzer Grenadier Squad",
                         "cost":26,
                         "br":3,
@@ -19913,7 +18708,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Armoured Pzr Gren Platoon",
                         "cost":162,
                         "br":15,
@@ -19922,7 +18716,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -19946,7 +18739,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Panzer Grenadier Squad",
                                 
                                 "count":3,
@@ -19980,14 +18772,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 "cost":14,
                                 "br":1,
@@ -20004,7 +18794,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Heavy Machine Gun team",
                                 "cost":21,
                                 "br":1,
@@ -20027,7 +18816,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Panzerschreck Team",
                                 "cost":24,
                                 "br":1,
@@ -20042,7 +18830,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -20066,7 +18853,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":26,
                                 "br":2,
@@ -20098,7 +18884,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":9,
                                 "name":"Self Propelled Infantry Gun",
                                 "cost":32,
                                 "br":1,
@@ -20113,7 +18898,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":10,
                                 "name":"Towed AA Gun",
                                 "cost":28,
                                 "br":2,
@@ -20141,7 +18925,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Armoured Pzr Gren Squad",
                         "cost":42,
                         "br":3,
@@ -20176,13 +18959,11 @@ var forces = [
                 ]
             },
             {
-                "id":3, 
                 "name":"Tank Units",
                 "allows":'[6,7,8,9]',
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Panther Platoon",
                         "cost":235,
                         "multiplier":3,
@@ -20202,7 +18983,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"StuG III Battery",
                         "cost":120,
                         "multiplier":3,
@@ -20220,7 +19000,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Panzer V Panther",
                         "cost":90,
                         "br":3,
@@ -20235,7 +19014,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"StuG III",
                         "cost":43,
                         "br":3,
@@ -20250,7 +19028,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Panzer IV Platoon",
                         "cost":150,
                         "multiplier":3,
@@ -20270,7 +19047,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Panzer IV",
                         "cost":50,
                         "br":3,
@@ -20285,7 +19061,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Panzer Ace",
                         "multiplier":0,
                         "cost":20,
@@ -20295,13 +19070,11 @@ var forces = [
                 ]
             },
             {
-                "id":4, 
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":16,
                         "br":1,
@@ -20316,7 +19089,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Light Panzer Artillery Battery",
                         "cost":64,
                         "br":4,
@@ -20332,7 +19104,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Medium Panzer Artillery Battery",
                         "cost":88,
                         "br":4,
@@ -20349,7 +19120,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Heavy Infantry Gun Battery",
                         "cost":84,
                         "br":4,
@@ -20366,7 +19136,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Panzerwerfer Battery",
                         "cost":116,
                         "br":2,
@@ -20383,7 +19152,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Self-Propelled Artillery",
                         "cost":32,
                         "br":2,
@@ -20402,7 +19170,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Armoured Forward Observer",
                         "cost":29,
                         "br":2,
@@ -20418,7 +19185,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":1,
@@ -20448,7 +19214,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":9,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -20463,7 +19228,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":10,
                         "name":"Off-Table Artillery Fire",
                         "cost":90,
                         "br":0,
@@ -20485,63 +19249,53 @@ var forces = [
                 ]
             },
             {
-                "id":5, 
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":4,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":5,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":7,
                         "name":"AT Gun Dug-out",
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":8,
                         "name":"Booby Trapped Building",
                         "cost":25,
                         "br":0
                     },
                     {
-                        "id":9,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
@@ -20549,13 +19303,11 @@ var forces = [
                 ]
             },
         {
-            "id":6, 
             "name":"Reconnaissance Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Sniper",
                     "cost":10,
                     "br":1,
@@ -20570,7 +19322,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Mounted Panzer Grenadier Patrol",
                     "cost":28,
                     "br":3,
@@ -20591,7 +19342,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Motorised Reconnaissance Patrol",
                     "cost":18,
                     "br":1,
@@ -20605,7 +19355,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Recon Platoon Command",
                     "cost":36,
                     "br":2,
@@ -20622,7 +19371,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Panzer Grenadier Foot Patrol",
                     "cost":36,
                     "br":3,
@@ -20646,7 +19394,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":6,
                     "name":"Armoured Car",
                     "cost":20,
                     "br":1,
@@ -20669,13 +19416,11 @@ var forces = [
             ]
         },
         {
-            "id":7, 
             "name":"Engineer Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Light Bridging Unit",
                     "cost":18,
                     "br":2,
@@ -20690,7 +19435,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Heavy Bridging Unit",
                     "cost":36,
                     "br":3,
@@ -20710,7 +19454,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Flamethrower",
                     "cost":28,
                     "br":2,
@@ -20725,7 +19468,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"'Famo' Recovery Vehicle",
                     "cost":18,
                     "br":1,
@@ -20739,7 +19481,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Panzer Recovery Vehicle",
                     "cost":40,
                     "br":2,
@@ -20756,7 +19497,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":6,
                     "name":"Assault Pioneer Squad",
                     "cost":42,
                     "br":3,
@@ -20802,13 +19542,11 @@ var forces = [
             ]
         },
         {
-            "id":8, 
             "name":"Logistics Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Supply Column",
                     "cost":8,
                     "br":1,
@@ -20833,7 +19571,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Stretcher Party",
                     "cost":10,
                     "br":1,
@@ -20847,7 +19584,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Ambulance",
                     "cost":14,
                     "br":2,
@@ -20864,7 +19600,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Forward Aid Post",
                     "cost":20,
                     "br":5,
@@ -20882,13 +19617,11 @@ var forces = [
             ]
         },
         {
-            "id":9, 
             "name":"Specialist Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Heavy Anti-Tank Gun",
                     "cost":71,
                     "br":3,
@@ -20918,7 +19651,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Self-Propelled Anti-Tank Gun",
                     "cost":30,
                     "br":1,
@@ -20937,7 +19669,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Jagdpanther",
                     "cost":90,
                     "br":4,
@@ -20945,7 +19676,6 @@ var forces = [
                     "v":192
                 },
                 {
-                    "id":4,
                     "name":"StuH 42 G",
                     "cost":45,
                     "br":3,
@@ -20953,7 +19683,6 @@ var forces = [
                     "v":19
                 },
                 {
-                    "id":5,
                     "name":"Brummbär",
                     "cost":64,
                     "br":4,
@@ -20961,7 +19690,6 @@ var forces = [
                     "v":26
                 },
                 {
-                    "id":6,
                     "name":"Heavy AA Gun",
                     "cost":48,
                     "br":3,
@@ -20991,7 +19719,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":7,
                     "name":"Anti-Aircraft Vehicle",
                     "cost":16,
                     "br":1,
@@ -21010,7 +19737,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":8,
                     "name":"Möbelwagen",
                     "cost":38,
                     "br":2,
@@ -21019,7 +19745,6 @@ var forces = [
                     "restricted":true
                 },
                 {
-                    "id":9,
                     "name":"Wirbelwind",
                     "cost":48,
                     "br":2,
@@ -21028,7 +19753,6 @@ var forces = [
                     "restricted":true
                 },
                 {
-                    "id":10,
                     "name":"Tiger I",
                     "cost":85,
                     "br":4,
@@ -21036,7 +19760,6 @@ var forces = [
                     "v":11
                 },
                 {
-                    "id":11,
                     "name":"Tiger II",
                     "cost":119,
                     "br":5,
@@ -21047,13 +19770,11 @@ var forces = [
             ]
         },
         {
-            "id":10, 
             "name":"Additional Fire Support",
             "allows":null,
             "requires":true,
             "entries":[
             {
-                "id":1,
                 "name":"Off-Table Artillery Request",
                 "cost":5,
                 "br":0,
@@ -21069,39 +19790,33 @@ var forces = [
                 ]
             },
             {
-                "id":2,
                 "name":"Pre-Registered Target Point",
                 "cost":15,
                 "br":0
             },
             {
-                "id":3,
                 "name":"Counter-Battery Fire Mission",
                 "cost":10,
                 "br":0
             },
             {
-                "id":4,
                 "name":"Timed 80mm Mortar Barrage",
                 "w":2,
                 "cost":5,
                 "br":0
             },
             {
-                "id":5,
                 "name":"Timed 105mm Barrage",
                 "w":22,
                 "cost":10,
                 "br":0
             },
             {
-                "id":6,
                 "name":"Timed 150mm Barrage",
                 "cost":20,
                 "br":0
             },
             {
-                "id":7,
                 "name":"Timed 150mm Nebelwefer Barrage",
                 "cost":30,
                 "w":27,
@@ -21123,13 +19838,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1, 
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":24,
                     "br":3,
@@ -21146,7 +19859,6 @@ var forces = [
                         ]
                 },
                 {
-                    "id":2,
                     "name":"Forward Signals Unit",
                     "br":1,
                     "cost":18,
@@ -21162,20 +19874,17 @@ var forces = [
                         ]
                 },
                 {
-                    "id":3,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":14
                 },
                 {
-                    "id":4,
                     "name":"Motorcycle Dispatch Rider",
                     "br":0,
                     "v":50,
                     "cost":12
                 },
                 {
-                    "id":5,
                     "name":"Wire Team",
                     "br":0,
                     "cost":8
@@ -21183,14 +19892,12 @@ var forces = [
                 ]
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Fallschirmjaeger Platoon",
                         "cost":115,
                         "br":14,
@@ -21208,7 +19915,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -21234,7 +19940,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Grenadier Squad",
                                 
                                 "count":3,
@@ -21269,14 +19974,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Combat Medic",
                                 "cost":9,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":4,
                                 "name":"Heavy Machine Gun team",
                                 "cost":20,
                                 "br":1,
@@ -21299,7 +20002,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Light Mortar Team",
                                 "cost":13,
                                 "br":1,
@@ -21316,7 +20018,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Panzerschreck Team",
                                 "cost":23,
                                 "br":1,
@@ -21332,7 +20033,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":26,
                                 "br":1,
@@ -21349,7 +20049,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":25,
                                 "br":2,
@@ -21383,7 +20082,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":9,
                                 "name":"75mm Infantry Gun",
                                 "cost":21,
                                 "br":1,
@@ -21409,7 +20107,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Fallschirmjaeger Squad",
                         "cost":34,
                         "br":3,
@@ -21450,13 +20147,11 @@ var forces = [
                 ]
             },
             {
-                "id":3, 
                 "name":"Tank Units",
                 "allows":'[6,7,8,9]',
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"StuG III Battery",
                         "cost":110,
                         "multiplier":3,
@@ -21474,7 +20169,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Panzer IV",
                         "cost":50,
                         "br":3,
@@ -21489,7 +20183,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"StuG III",
                         "cost":40,
                         "br":3,
@@ -21504,7 +20197,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Self-Propelled Anti-Tank Gun",
                         "cost":30,
                         "br":1,
@@ -21524,13 +20216,11 @@ var forces = [
                 ]
             },
             {
-                "id":4, 
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":17,
                         "br":1,
@@ -21544,7 +20234,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"105mm Howitzer",
                         "cost":36,
                         "br":2,
@@ -21568,7 +20257,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"150mm Howitzer",
                         "cost":54,
                         "br":2,
@@ -21591,7 +20279,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"150mm Infantry Gun",
                         "cost":54,
                         "br":2,
@@ -21615,7 +20302,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -21630,7 +20316,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":1,
@@ -21661,7 +20346,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Off-Table Artillery Fire",
                         "cost":90,
                         "br":0,
@@ -21679,7 +20363,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
                         "name":"Nebelwerfer Team",
                         "cost":52,
                         "br":2,
@@ -21710,74 +20393,62 @@ var forces = [
                 ]
             },
             {
-                "id":5, 
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Machine Gun Pillbox",
                         "cost":54,
                         "br":1,
                         "restricted":true
                     },
                     {
-                        "id":4,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":5,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":7,
                         "name":"Trenches",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":8,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":9,
                         "name":"AT Gun Dug-out",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":10,
                         "name":"Minefield",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":11,
                         "name":"Command Bunker",
                         "cost":30,
                         "br":3,
@@ -21786,45 +20457,38 @@ var forces = [
                         "unique":true
                     },
                     {
-                        "id":12,
                         "name":"Artillery Observation Point",
                         "cost":26,
                         "unique":true,
                         "br":1
                     },
                     {
-                        "id":13,
                         "name":"Booby Trapped Building",
                         "cost":25,
                         "br":0
                     },
                     {
-                        "id":14,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":15,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":16,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":17,
                         "name":"Off-table 88 Anti-Tank shot",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":18,
                         "name":"Fortified Bocage",
                         "cost":10,
                         "br":0
@@ -21832,13 +20496,11 @@ var forces = [
                 ]
             },
         {
-            "id":6, 
             "name":"Reconnaissance Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Sniper",
                     "cost":11,
                     "br":1,
@@ -21853,7 +20515,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Motorised Reconnaissance Patrol",
                     "cost":32,
                     "br":1,
@@ -21874,7 +20535,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Armoured Car",
                     "cost":20,
                     "br":1,
@@ -21889,7 +20549,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Fallschirmjaeger Foot Patrol",
                     "cost":36,
                     "br":3,
@@ -21926,7 +20585,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Reconnaissance Command",
                     "cost":37,
                     "br":1,
@@ -21943,13 +20601,11 @@ var forces = [
             ]
         },
         {
-            "id":7, 
             "name":"Engineer Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Fallschirmjaeger Pioneer Squad",
                     "cost":40,
                     "br":3,
@@ -21993,7 +20649,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Light Bridging Unit",
                     "cost":18,
                     "br":2,
@@ -22010,13 +20665,11 @@ var forces = [
             ]
         },
         {
-            "id":8, 
             "name":"Logistics Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Supply Column",
                     "cost":8,
                     "br":1,
@@ -22041,7 +20694,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Forward Aid Post",
                     "cost":20,
                     "br":5,
@@ -22057,7 +20709,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Stretcher Party",
                     "cost":10,
                     "br":1,
@@ -22071,7 +20722,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Ambulance",
                     "cost":14,
                     "br":2,
@@ -22089,13 +20739,11 @@ var forces = [
             ]
         },
         {
-            "id":9, 
             "name":"Specialist Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Heavy Anti-Tank Gun",
                     "cost":48,
                     "br":3,
@@ -22125,7 +20773,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Anti-Aircraft Vehicle",
                     "cost":14,
                     "br":1,
@@ -22143,7 +20790,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Panzerjaeger Team",
                     "cost":24,
                     "br":1,
@@ -22158,7 +20804,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Assault Howitzer",
                     "cost":45,
                     "br":3,
@@ -22174,7 +20819,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Towed 20mm AA Gun",
                     "cost":28,
                     "br":1,
@@ -22199,7 +20843,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":6,
                     "name":"Towed 37mm AA Gun",
                     "cost":36,
                     "br":1,
@@ -22222,7 +20865,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":7,
                     "name":"Towed 20mm FlaK Vierling",
                     "cost":42,
                     "br":1,
@@ -22248,13 +20890,11 @@ var forces = [
             ]
         },
         {
-            "id":10, 
             "name":"Additional Fire Support",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Off-Table Artillery Request",
                     "cost":5,
                     "br":0,
@@ -22270,39 +20910,33 @@ var forces = [
                     ]
                 },
             {
-                "id":2,
                 "name":"Pre-Registered Target Point",
                 "cost":15,
                 "br":0
             },
             {
-                "id":3,
                 "name":"Counter-Battery Fire Mission",
                 "cost":10,
                 "br":0
             },
             {
-                "id":4,
                 "name":"Timed 80mm Mortar Barrage",
                 "w":2,
                 "cost":5,
                 "br":0
             },
             {
-                "id":5,
                 "name":"Timed 105mm Barrage",
                 "w":22,
                 "cost":10,
                 "br":0
             },
             {
-                "id":6,
                 "name":"Timed 150mm Barrage",
                 "cost":20,
                 "br":0
             },
             {
-                "id":7,
                 "name":"Timed 150mm Nebelwefer Barrage",
                 "cost":30,
                 "w":27,
@@ -22324,13 +20958,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1, 
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":21,
                     "br":3,
@@ -22348,13 +20980,11 @@ var forces = [
                         ]
                 },
                 {
-                    "id":2,
                     "name":"Wire Team",
                     "br":0,
                     "cost":7
                 },
                 {
-                    "id":3,
                     "name":"Forward Signals Unit",
                     "br":1,
                     "cost":18,
@@ -22370,13 +21000,11 @@ var forces = [
                         ]
                 },
                 {
-                    "id":3,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":14
                 },
                 {
-                    "id":4,
                     "name":"Motorcycle Dispatch Rider",
                     "br":0,
                     "v":50,
@@ -22385,14 +21013,12 @@ var forces = [
                 ]
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Grenadier Platoon",
                         "cost":100,
                         "br":11,
@@ -22401,7 +21027,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -22425,7 +21050,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Grenadier Squad",
                                 
                                 "count":3,
@@ -22456,7 +21080,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Heavy Machine Gun team",
                                 "cost":18,
                                 "br":1,
@@ -22479,14 +21102,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":4,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":5,
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
@@ -22503,7 +21124,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Panzerschreck Team",
                                 "w":108,
                                 "cost":22,
@@ -22511,7 +21131,6 @@ var forces = [
                                 "unique":true
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -22528,7 +21147,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":22,
                                 "br":2,
@@ -22563,7 +21181,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":9,
                                 "name":"75mm Infantry Gun",
                                 "cost":19,
                                 "br":1,
@@ -22589,7 +21206,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Ost Infantry Platoon",
                         "cost":63,
                         "br":5,
@@ -22598,7 +21214,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -22606,7 +21221,6 @@ var forces = [
                                 "officer":true
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Squad",
                                 
                                 "count":3,
@@ -22623,7 +21237,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"MMG Team",
                                 
                                 "count":1,
@@ -22640,14 +21253,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":4,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":5,
                                 "name":"Light Mortar Team",
                                 "cost":11,
                                 "br":1,
@@ -22664,7 +21275,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Heavy Machine Gun team",
                                 "cost":16,
                                 "br":1,
@@ -22687,7 +21297,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":22,
                                 "br":1,
@@ -22704,7 +21313,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":20,
                                 "br":2,
@@ -22740,7 +21348,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Grenadier Squad",
                         "cost":26,
                         "br":3,
@@ -22770,7 +21377,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Ost Infantry Squad",
                         "cost":12,
                         "br":1,
@@ -22779,13 +21385,11 @@ var forces = [
                 ]
             },
             {
-                "id":3, 
                 "name":"Tank Units",
                 "allows":'[6,7,8,9]',
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"StuG III Battery",
                         "cost":120,
                         "multiplier":3,
@@ -22803,7 +21407,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Panzer IV",
                         "cost":50,
                         "br":3,
@@ -22818,7 +21421,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Panther",
                         "cost":90,
                         "br":3,
@@ -22834,7 +21436,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"StuG III",
                         "cost":43,
                         "br":3,
@@ -22849,7 +21450,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Self-Propelled Anti-Tank Gun",
                         "cost":30,
                         "br":1,
@@ -22869,13 +21469,11 @@ var forces = [
                 ]
             },
             {
-                "id":4, 
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":16,
                         "br":1,
@@ -22889,7 +21487,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"76.2mmL54 Field Gun",
                         "cost":28,
                         "br":2,
@@ -22913,7 +21510,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"105mmL28 Howitzer",
                         "cost":36,
                         "br":2,
@@ -22937,7 +21533,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"150mmL30 Howitzer",
                         "w":26,
                         "cost":54,
@@ -22961,7 +21556,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"100mmL52 Cannon",
                         "cost":58,
                         "br":2,
@@ -22986,7 +21580,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"150mmL12 Infantry Gun",
                         "cost":54,
                         "br":2,
@@ -23010,7 +21603,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -23025,7 +21617,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":1,
@@ -23055,7 +21646,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":9,
                         "name":"Off-Table Artillery Fire",
                         "cost":70,
                         "br":0,
@@ -23079,74 +21669,62 @@ var forces = [
                 ]
             },
             {
-                "id":5, 
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Machine Gun Pillbox",
                         "cost":54,
                         "br":1,
                         "restricted":true
                     },
                     {
-                        "id":4,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":5,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":7,
                         "name":"Trenches",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":8,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":9,
                         "name":"AT Gun Dug-out",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":10,
                         "name":"Minefield",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":11,
                         "name":"Command Bunker",
                         "cost":30,
                         "br":3,
@@ -23155,38 +21733,32 @@ var forces = [
                         "unique":true
                     },
                     {
-                        "id":12,
                         "name":"Artillery Observation Point",
                         "cost":26,
                         "br":1
                     },
                     {
-                        "id":13,
                         "name":"Booby Trapped Building",
                         "cost":25,
                         "br":0
                     },
                     {
-                        "id":14,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":15,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":16,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":17,
                         "name":"Off-table 88 Anti-Tank shot",
                         "cost":5,
                         "br":0
@@ -23194,13 +21766,11 @@ var forces = [
                 ]
             },
         {
-            "id":6, 
             "name":"Reconnaissance Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Sniper",
                     "cost":10,
                     "br":1,
@@ -23215,7 +21785,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Motorised Reconnaissance Patrol",
                     "cost":25,
                     "br":1,
@@ -23236,7 +21805,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Armoured Car",
                     "cost":20,
                     "br":1,
@@ -23251,7 +21819,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Reconnaissance Command",
                     "cost":35,
                     "br":2,
@@ -23267,7 +21834,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Fusilier Foot Patrol",
                     "cost":36,
                     "br":3,
@@ -23291,13 +21857,11 @@ var forces = [
             ]
         },
         {
-            "id":7, 
             "name":"Engineer Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Recovery Vehicle",
                     "cost":18,
                     "br":1,
@@ -23311,7 +21875,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Light Bridging Unit",
                     "cost":18,
                     "br":2,
@@ -23326,7 +21889,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Heavy Bridging Unit",
                     "cost":36,
                     "br":3,
@@ -23346,7 +21908,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Assault Pioneer Squad",
                     "cost":48,
                     "br":3,
@@ -23386,13 +21947,11 @@ var forces = [
             ]
         },
         {
-            "id":8, 
             "name":"Logistics Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Supply Column",
                     "cost":6,
                     "br":1,
@@ -23409,7 +21968,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Forward Aid Post",
                     "cost":20,
                     "br":5,
@@ -23425,7 +21983,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Stretcher Party",
                     "cost":10,
                     "br":1,
@@ -23439,7 +21996,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Ambulance",
                     "cost":14,
                     "br":2,
@@ -23457,13 +22013,11 @@ var forces = [
             ]
         },
         {
-            "id":9, 
             "name":"Specialist Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Heavy Anti-Aircraft Gun",
                     "cost":48,
                     "br":3,
@@ -23493,7 +22047,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Heavy Anti-Aircraft Gun(Flak39)",
                     "cost":54,
                     "br":3,
@@ -23524,7 +22077,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Heavy Anti-Tank Gun",
                     "cost":71,
                     "br":3,
@@ -23553,7 +22105,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Assault Howitzer",
                     "cost":45,
                     "br":3,
@@ -23569,7 +22120,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Anti-Aircraft Vehicle",
                     "cost":16,
                     "br":1,
@@ -23586,7 +22136,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":6,
                     "name":"Towed 20mm AA Gun",
                     "cost":28,
                     "br":1,
@@ -23610,7 +22159,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":7,
                     "name":"Towed 37mm AA Gun",
                     "cost":36,
                     "br":1,
@@ -23633,7 +22181,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":8,
                     "name":"Towed 20mm FlaK Vierling",
                     "cost":42,
                     "br":1,
@@ -23657,7 +22204,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":9,
                     "name":"Panzerjaeger Team",
                     "cost":22,
                     "br":1,
@@ -23674,13 +22220,11 @@ var forces = [
             ]
         },
         {
-            "id":10, 
             "name":"Additional Fire Support",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Off-Table Artillery Request",
                     "cost":5,
                     "br":0,
@@ -23696,39 +22240,33 @@ var forces = [
                     ]
                 },
             {
-                "id":2,
                 "name":"Pre-Registered Target Point",
                 "cost":15,
                 "br":0
             },
             {
-                "id":3,
                 "name":"Counter-Battery Fire Mission",
                 "cost":10,
                 "br":0
             },
             {
-                "id":4,
                 "name":"Timed 80mm Mortar Barrage",
                 "w":2,
                 "cost":5,
                 "br":0
             },
             {
-                "id":5,
                 "name":"Timed 105mm Barrage",
                 "w":22,
                 "cost":10,
                 "br":0
             },
             {
-                "id":6,
                 "name":"Timed 150mm Barrage",
                 "cost":20,
                 "br":0
             },
             {
-                "id":7,
                 "name":"Timed 150mm Nebelwefer Barrage",
                 "cost":30,
                 "w":27,
@@ -23750,13 +22288,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1, 
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":21,
                     "br":3,
@@ -23780,7 +22316,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Forward Air Control Officer",
                     "cost":26,
                     "br":1,
@@ -23801,13 +22336,11 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Dispirited Enemy",
                     "br":0,
                     "cost":15
                 },
                 {
-                    "id":4,
                     "name":"Forward Signals Unit",
                     "cost":18,
                     "br":1,
@@ -23823,20 +22356,17 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":14
                 },
                 {
-                    "id":6,
                     "name":"Motorcycle Dispatch Rider",
                     "br":0,
                     "v":50,
                     "cost":12
                 },
                 {
-                    "id":7,
                     "name":"Wire Team",
                     "br":0,
                     "cost":7
@@ -23844,14 +22374,12 @@ var forces = [
                 ]
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Infantry Platoon",
                         "cost":94,
                         "br":11,
@@ -23878,7 +22406,6 @@ var forces = [
                         ],
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -23902,7 +22429,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Section",
                                 
                                 "count":3,
@@ -23920,7 +22446,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Light Mortar Team",
                                 
                                 "br":0,
@@ -23928,14 +22453,12 @@ var forces = [
                                 "mandatory":true
                             },
                             {
-                                "id":4,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":5,
                                 "name":"Heavy Machine Gun team",
                                 "cost":22,
                                 "br":1,
@@ -23964,7 +22487,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"PIAT Team",
                                 "cost":14,
                                 "br":1,
@@ -23981,7 +22503,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -24005,7 +22526,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":34,
                                 "br":2,
@@ -24037,7 +22557,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Rifle Section",
                         "cost":21,
                         "br":2,
@@ -24061,7 +22580,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Motor Infantry Platoon",
                         "cost":122,
                         "br":15,
@@ -24079,7 +22597,6 @@ var forces = [
                         ],
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -24103,7 +22620,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Section",
                                 
                                 "count":3,
@@ -24120,7 +22636,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"PIAT Team",
                                 
                                 "w":91,
@@ -24128,14 +22643,12 @@ var forces = [
                                 "mandatory":true
                             },
                             {
-                                "id":4,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":5,
                                 "name":"Heavy Machine Gun team",
                                 "cost":22,
                                 "br":1,
@@ -24164,7 +22677,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"PIAT Team",
                                 "cost":14,
                                 "br":1,
@@ -24181,7 +22693,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -24205,7 +22716,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":34,
                                 "br":2,
@@ -24236,7 +22746,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Motor Rifle Section",
                         "cost":25,
                         "br":3,
@@ -24259,7 +22768,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Carrier Section",
                         "cost":54,
                         "br":6,
@@ -24278,7 +22786,6 @@ var forces = [
                         "sub_text":"Section Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Rifle Team",
                                 
                                 "br":0,
@@ -24293,7 +22800,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Carrier Light Mortar Team",
                                 
                                 "br":0,
@@ -24309,7 +22815,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Carrier PIAT Team",
                                 
                                 "br":0,
@@ -24328,7 +22833,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Airborne Infantry Platoon",
                         "cost":147,
                         "br":15,
@@ -24346,7 +22850,6 @@ var forces = [
                         ],
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -24363,7 +22866,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Section",
                                 
                                 "count":3,
@@ -24401,7 +22903,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Light Mortar Team",
                                 
                                 "br":0,
@@ -24409,7 +22910,6 @@ var forces = [
                                 "mandatory":true
                             },
                             {
-                                "id":4,
                                 "name":"PIAT Team",
                                 "cost":0,
                                 "br":0,
@@ -24417,14 +22917,12 @@ var forces = [
                                 "mandatory":true
                             },
                             {
-                                "id":5,
                                 "name":"Combat Medic",
                                 "cost":9,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":6,
                                 "name":"Heavy Machine Gun team",
                                 "cost":25,
                                 "br":1,
@@ -24447,7 +22945,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"PIAT Team",
                                 "cost":18,
                                 "br":1,
@@ -24455,7 +22952,6 @@ var forces = [
                                 "unique":true
                             },
                             {
-                                "id":8,
                                 "name":"Medium Mortar Team",
                                 "cost":27,
                                 "br":1,
@@ -24473,7 +22969,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":9,
                                 "name":"Anti-tank Gun",
                                 "cost":37,
                                 "br":2,
@@ -24504,7 +22999,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Airborne Infantry Section",
                         "cost":31,
                         "br":3,
@@ -24549,13 +23043,11 @@ var forces = [
                 ]
             },
             { 
-                "id":3,  
                 "name":"Tank Units", 
                 "allows":'[6,7,8,9]', 
                 "requires":false, 
                 "entries":[ 
                     { 
-                        "id":1, 
                         "name":"Sherman Tank Troop", 
                         "cost":208, 
                         "multiplier":4, 
@@ -24573,7 +23065,6 @@ var forces = [
                         ] 
                     }, 
                     { 
-                        "id":2, 
                         "name":"Comet Tank Troop", 
                         "cost":245, 
                         "multiplier":3,
@@ -24592,7 +23083,6 @@ var forces = [
                         ] 
                     }, 
                     { 
-                        "id":3, 
                         "name":"Self-Propelled Anti-Tank Gun", 
                         "cost":54, 
                         "br":2, 
@@ -24607,7 +23097,6 @@ var forces = [
                         ] 
                     },
                     { 
-                        "id":4, 
                         "name":"Cromwell Tank Troop", 
                         "cost":230, 
                         "multiplier":4, 
@@ -24623,7 +23112,6 @@ var forces = [
                         ] 
                     }, 
                     { 
-                        "id":5, 
                         "name":"Churchill Tank Troop", 
                         "cost":130, 
                         "multiplier":3, 
@@ -24666,7 +23154,6 @@ var forces = [
                         ] 
                     }, 
                     {
-                        "id":6, 
                         "name":"Additional Tank",
                         "cost":48, 
                         "br":3, 
@@ -24686,7 +23173,6 @@ var forces = [
                         ] 
                     },
                     {
-                        "id":7, 
                         "name":"Light Tank Troop",
                         "cost":80, 
                         "br":6, 
@@ -24708,13 +23194,11 @@ var forces = [
                 ] 
             }, 
             {
-                "id":4, 
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":16,
                         "br":1,
@@ -24730,7 +23214,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Forward Observer Team",
                         "cost":50,
                         "br":2,
@@ -24745,7 +23228,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Towed 25 pdr Battery",
                         "cost":72,
                         "br":4,
@@ -24776,7 +23258,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Aerial Artillery Observer",
                         "cost":66,
                         "br":3,
@@ -24791,7 +23272,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Self-Propelled Artillery Battery",
                         "cost":80,
                         "br":4,
@@ -24807,7 +23287,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":1,
@@ -24836,7 +23315,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -24851,7 +23329,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
                         "name":"Off-Table Artillery Fire",
                         "cost":90,
                         "br":0,
@@ -24870,68 +23347,57 @@ var forces = [
                 ]
             },
             {
-                "id":5, 
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":34,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":4,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":5,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":7,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":8,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "restricted":true,
                         "br":0
                     },
                     {
-                        "id":9,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":10,
                         "name":"Minefield",
                         "cost":20,
                         "br":0
@@ -24939,13 +23405,11 @@ var forces = [
                 ]
             },
             {
-                "id":6, 
                 "name":"Reconnaissance Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Sniper",
                         "cost":10,
                         "br":1,
@@ -24960,7 +23424,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Recon Platoon Command",
                         "cost":28,
                         "br":2,
@@ -24979,7 +23442,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Armoured Car",
                         "cost":6,
                         "br":1,
@@ -24998,7 +23460,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4, 
                         "name":"Reconnaissance Tank",
                         "cost":62, 
                         "br":3, 
@@ -25014,7 +23475,6 @@ var forces = [
                         ] 
                     },
                     {
-                        "id":5,
                         "name":"Chaffee Recon Tank",
                         "v":232,
                         "unique":true,
@@ -25022,14 +23482,12 @@ var forces = [
                         "br":2
                     },
                     {
-                        "id":6,
                         "name":"Infantry Foot Patrol",
                         "cost":31,
                         "br":2,
                         "s":1
                     },
                     {
-                        "id":7,
                         "name":"Motorised Infantry Patrol",
                         "cost":35,
                         "br":3,
@@ -25046,7 +23504,6 @@ var forces = [
 
                     },
                     {
-                        "id":8,
                         "name":"SAS Jeep Patrol",
                         "cost":66,
                         "br":4,
@@ -25063,7 +23520,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":9,
                         "name":"Carrier Team",
                         "cost":24,
                         "br":1,
@@ -25078,7 +23534,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":10,
                         "name":"Armoured Infantry Patrol",
                         "cost":46,
                         "br":3,
@@ -25096,13 +23551,11 @@ var forces = [
                 ]
             },
             {
-                "id":7, 
                 "name":"Engineer Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Light Bridging Unit",
                         "cost":18,
                         "br":2,
@@ -25116,7 +23569,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Heavy Bridging Unit",
                         "cost":36,
                         "br":3,
@@ -25136,7 +23588,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Recovery Vehicle",
                         "cost":22,
                         "br":1,
@@ -25154,7 +23605,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Combat Engineer Section",
                         "cost":26,
                         "br":3,
@@ -25195,7 +23645,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Armoured Engineering Vehicle",
                         "cost":54,
                         "br":3,
@@ -25216,13 +23665,11 @@ var forces = [
                 ]
             },
             {
-                "id":8, 
                 "name":"Logistics Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Supply Column",
                         "cost":8,
                         "br":1,
@@ -25249,7 +23696,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Ambulance",
                         "cost":14,
                         "br":2,
@@ -25266,7 +23712,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Stretcher Party",
                         "cost":10,
                         "br":1,
@@ -25280,7 +23725,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Forward Aid Post",
                         "cost":20,
                         "br":5,
@@ -25298,13 +23742,11 @@ var forces = [
                 ]
             },
             {
-                "id":9, 
                 "name":"Specialist Support Units",
                 "allows":null,
                 "requires":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Heavy Anti-Tank Gun",
                         "cost":50,
                         "br":3,
@@ -25335,7 +23777,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Specialist Armoured Vehicle",
                         "cost":54,
                         "br":3,
@@ -25352,7 +23793,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Towed Bofors AA Gun",
                         "cost":36,
                         "br":1,
@@ -25381,7 +23821,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Anti-Aircraft Vehicle",
                         "cost":20,
                         "br":1,
@@ -25398,7 +23837,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Crusader AA 'Triple'",
                         "cost":38,
                         "br":3,
@@ -25406,7 +23844,6 @@ var forces = [
                         "v":233
                     },
                     {
-                        "id":6,
                         "name":"Commando Assault Section",
                         "cost":104,
                         "br":9,
@@ -25434,7 +23871,6 @@ var forces = [
                         ],
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Section HQ",
                                 
                                 "br":0,
@@ -25442,7 +23878,6 @@ var forces = [
                                 "officer":true
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Group",
                                 
                                 "count":2,
@@ -25459,7 +23894,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Bren Group",
                                 
                                 "count":2,
@@ -25478,7 +23912,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 
                                 "br":0,
@@ -25487,7 +23920,6 @@ var forces = [
                                 "unique":true
                             },
                             {
-                                "id":5,
                                 "name":"Sniper Team",
                                 
                                 "br":0,
@@ -25499,13 +23931,11 @@ var forces = [
                 ]
             },
             {
-                "id":10, 
                 "name":"Additional Fire Support",
                 "allows":null,
                 "requires":true,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Off-Table Artillery Request",
                     "cost":5,
                     "br":0,
@@ -25521,33 +23951,28 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Pre-Registered Target Point",
                     "cost":15,
                     "br":0
                 },
                 {
-                    "id":3,
                     "name":"Counter-Battery Fire Mission",
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":4,
                     "name":"Timed 25 pdr Barrage",
                     "w":73,
                     "cost":20,
                     "br":0
                 },
                 {
-                    "id":5,
                     "name":"Timed 5.5\" Barrage",
                     "cost":30,
                     "w":80,
                     "br":0
                 },
                 {
-                    "id":6,
                     "name":"Timed Land Mattress Barrage",
                     "cost":30,
                     "unique":true,
@@ -25555,13 +23980,11 @@ var forces = [
                     "br":0
                 },
                 {
-                    "id":7,
                     "name":"Timed Tempest Air Strike",
                     "cost":10,
                     "br":0
                 },
                 {
-                    "id":8,
                     "name":"Timed Typhoon Air Strike",
                     "cost":20,
                     "br":0
@@ -25582,13 +24005,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1, 
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":23,
                     "br":3,
@@ -25608,7 +24029,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"VVS Air Control Officer",
                     "cost":26,
                     "br":1,
@@ -25626,7 +24046,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Forward Signals Unit",
                     "br":1,
                     "cost":18,
@@ -25641,19 +24060,16 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":13
                 },
                 {
-                    "id":5,
                     "name":"Wire Team",
                     "br":0,
                     "cost":7
                 },
                 {
-                    "id":6,
                     "name":"Motorcycle Dispatch Rider",
                     "br":0,
                     "cost":12,
@@ -25662,14 +24078,12 @@ var forces = [
                 ]
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Motorised Rifle Platoon",
                         "cost":88,
                         "br":9,
@@ -25687,7 +24101,6 @@ var forces = [
                         ],
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -25719,7 +24132,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Squad",
                                 
                                 "count":4,
@@ -25751,7 +24163,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Maxim Machine Gun team",
                                 "cost":18,
                                 "br":1,
@@ -25767,7 +24178,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
@@ -25784,14 +24194,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Anti-tank Rifle Team",
                                 "cost":14,
                                 "br":1,
                                 "unique":true
                             },
                             {
-                                "id":6,
                                 "name":"Anti-tank Gun",
                                 "cost":26,
                                 "br":1,
@@ -25824,7 +24232,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Infantry Gun",
                                 "cost":19,
                                 "br":1,
@@ -25855,7 +24262,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-Aircraft DshK MG",
                                 "cost":24,
                                 "br":1,
@@ -25873,7 +24279,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Motorised Rifle Squad",
                         "cost":18,
                         "br":2,
@@ -25911,7 +24316,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Tank Rider Squad",
                         "cost":16,
                         "br":2,
@@ -25934,7 +24338,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Rifle Platoon",
                         "cost":58,
                         "br":5,
@@ -25943,7 +24346,6 @@ var forces = [
                         "p":1,
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -25960,7 +24362,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Squad",
                                 
                                 "count":4,
@@ -25977,7 +24378,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Maxim Machine Gun team",
                                 "cost":18,
                                 "br":1,
@@ -25993,7 +24393,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
@@ -26010,14 +24409,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Anti-tank Rifle Team",
                                 "cost":14,
                                 "br":1,
                                 "unique":true
                             },
                             {
-                                "id":6,
                                 "name":"Anti-tank Gun",
                                 "cost":18,
                                 "br":1,
@@ -26049,7 +24446,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":7,
                                 "name":"Infantry Gun",
                                 "cost":19,
                                 "br":1,
@@ -26081,7 +24477,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Rifle Squad",
                         "cost":14,
                         "br":1,
@@ -26097,7 +24492,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Rifle Company",
                         "cost":188,
                         "br":16,
@@ -26105,14 +24499,12 @@ var forces = [
                         "sub_text":"Company Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Company Command Squad",
                                 "br":0,
                                 "officer":true,
                                 "mandatory":true
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Platoon",
                                 
                                 "count":3,
@@ -26122,7 +24514,6 @@ var forces = [
                                 "sub_text":"Platoon Components",
                                 "sub_units":[
                                     {
-                                        "id":1,
                                         "name":"Command Squad",
                                         
                                         "br":0,
@@ -26139,7 +24530,6 @@ var forces = [
                                         ]
                                     },
                                     {
-                                        "id":2,
                                         "name":"Rifle Squad",
                                         
                                         "count":4,
@@ -26156,7 +24546,6 @@ var forces = [
                                         ]
                                     },
                                     {
-                                        "id":3,
                                         "name":"Maxim Machine Gun team",
                                         "cost":18,
                                         "br":1,
@@ -26172,7 +24561,6 @@ var forces = [
                                         ]
                                     },
                                     {
-                                        "id":4,
                                         "name":"Light Mortar Team",
                                         "cost":12,
                                         "br":1,
@@ -26189,14 +24577,12 @@ var forces = [
                                         ]
                                     },
                                     {
-                                        "id":5,
                                         "name":"Anti-tank Rifle Team",
                                         "cost":14,
                                         "br":1,
                                         "unique":true
                                     },
                                     {
-                                        "id":6,
                                         "name":"Anti-tank Gun",
                                         "cost":18,
                                         "br":1,
@@ -26228,7 +24614,6 @@ var forces = [
                                         ]
                                     },
                                     {
-                                        "id":7,
                                         "name":"Infantry Gun",
                                         "cost":19,
                                         "w":41,
@@ -26262,7 +24647,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Pioneer Assault Platoon",
                         "cost":178,
                         "br":10,
@@ -26271,7 +24655,6 @@ var forces = [
                         "p":1,
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 
                                 "br":0,
@@ -26295,7 +24678,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Pioneer Squad",
                                 
                                 "count":3,
@@ -26340,7 +24722,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Maxim Machine Gun team",
                                 "cost":19,
                                 "br":1,
@@ -26356,7 +24737,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 "cost":13,
                                 "br":1,
@@ -26373,7 +24753,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Anti-tank Gun",
                                 "cost":27,
                                 "br":1,
@@ -26403,7 +24782,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Infantry Gun",
                                 "cost":20,
                                 "br":1,
@@ -26437,13 +24815,11 @@ var forces = [
                 ]
             },
             {
-                "id":3, 
                 "name":"Tank Units",
                 "allows":'[6,7,8,9]',
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"T-34 Company",
                         "cost":350,
                         "multiplier":9,
@@ -26462,7 +24838,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"T-34 Platoon",
                         "cost":100,
                         "multiplier":3,
@@ -26481,7 +24856,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"IS-II Platoon",
                         "cost":362,
                         "multiplier":5,
@@ -26491,7 +24865,6 @@ var forces = [
                         "v":237
                     },
                     {
-                        "id":4, 
                         "name":"Additional Tank",
                         "cost":40, 
                         "br":3, 
@@ -26512,7 +24885,6 @@ var forces = [
                         ] 
                     },
                     {
-                        "id":5,
                         "name":"Sherman \'Emcha\' Company",
                         "cost":440,
                         "multiplier":9,
@@ -26522,7 +24894,6 @@ var forces = [
                         "officer":4
                     },
                     {
-                        "id":6,
                         "name":"Sherman \'Emcha\' Platoon",
                         "cost":145,
                         "multiplier":3,
@@ -26532,7 +24903,6 @@ var forces = [
                         "officer":true
                     },
                     {
-                        "id":7,
                         "name":"SU-76M Battery",
                         "cost":75,
                         "multiplier":3,
@@ -26542,7 +24912,6 @@ var forces = [
                         "vc":3
                     },
                     {
-                        "id":8,
                         "name":"SU Battery",
                         "cost":100,
                         "multiplier":2,
@@ -26561,7 +24930,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":9,
                         "name":"ISU Battery",
                         "cost":145,
                         "multiplier":2,
@@ -26584,13 +24952,11 @@ var forces = [
                 ]
             },
             {
-                "id":4, 
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":16,
                         "br":1,
@@ -26606,7 +24972,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Guards Mortar Battery",
                         "cost":100,
                         "br":2,
@@ -26621,7 +24986,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Field Artillery Battery",
                         "cost":55,
                         "br":4,
@@ -26652,7 +25016,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Off-Table Artillery Fire",
                         "cost":125,
                         "br":0,
@@ -26670,7 +25033,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Mortar Battery",
                         "cost":44,
                         "br":2,
@@ -26695,7 +25057,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Heavy Mortar Battery",
                         "cost":58,
                         "br":1,
@@ -26720,7 +25081,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -26735,7 +25095,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
                         "name":"Heavy Artillery Battery",
                         "cost":86,
                         "br":4,
@@ -26767,7 +25126,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":9,
                         "name":"Very Heavy Howitzer",
                         "cost":62,
                         "br":2,
@@ -26793,68 +25151,57 @@ var forces = [
                 ]
             },
             {
-                "id":5, 
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":34,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":4,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":5,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":7,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":8,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":9,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":10,
                         "name":"Minefield",
                         "cost":20,
                         "br":0
@@ -26862,13 +25209,11 @@ var forces = [
                 ]
             },
         {
-            "id":6, 
             "name":"Reconnaissance Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Sniper",
                     "cost":10,
                     "br":1,
@@ -26883,7 +25228,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Mechanised Infantry Patrol",
                     "cost":28,
                     "br":3,
@@ -26905,14 +25249,12 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Jeep Reconnaissance Team",
                     "cost":18,
                     "v":163,
                     "br":1
                 },
                 {
-                    "id":4,
                     "name":"Scout Tank",
                     "cost":35,
                     "br":2,
@@ -26928,7 +25270,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Scout T-80",
                     "cost":35,
                     "br":2,
@@ -26936,7 +25277,6 @@ var forces = [
                     "v":231
                 },
                 {
-                    "id":6,
                     "name":"Infantry Foot Patrol",
                     "cost":28,
                     "br":2,
@@ -26951,7 +25291,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":7,
                     "name":"\'Razvedka\' Long Range Patrol",
                     "cost":56,
                     "br":4,
@@ -26976,14 +25315,12 @@ var forces = [
                     ]
                 },
                 {
-                    "id":8,
                     "name":"Motorcycle Reconnaissance Patrol",
                     "cost":18,
                     "v":51,
                     "br":1
                 },
                 {
-                    "id":9,
                     "name":"BA-64 Armoured Car",
                     "cost":20,
                     "br":1,
@@ -26992,13 +25329,11 @@ var forces = [
             ]
         },
         {
-            "id":7, 
             "name":"Engineer Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Repair Vehicle",
                     "cost":12,
                     "br":2,
@@ -27015,7 +25350,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Assault Pioneer Squad",
                     "cost":45,
                     "br":3,
@@ -27059,14 +25393,12 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Light Bridging Unit",
                     "v":61,
                     "cost":18,
                     "br":2
                 },
                 {
-                    "id":4,
                     "name":"Heavy Bridging Unit",
                     "cost":36,
                     "br":4,
@@ -27086,7 +25418,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"PT-34 Engineering Vehicle",
                     "cost":45,
                     "restricted":true,
@@ -27094,7 +25425,6 @@ var forces = [
                     "v":243
                 },
                 {
-                    "id":6,
                     "name":"OT-34 Flamethrower Tank",
                     "cost":52,
                     "restricted":true,
@@ -27104,13 +25434,11 @@ var forces = [
             ]
         },
         {
-            "id":8, 
             "name":"Logistics Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Supply Column",
                     "v":91,
                     "cost":8,
@@ -27129,13 +25457,11 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Combat Medic",
                     "cost":8,
                     "br":0
                 },
                 {
-                    "id":3,
                     "name":"Stretcher Party",
                     "cost":10,
                     "br":1,
@@ -27149,7 +25475,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Ambulance",
                     "cost":14,
                     "br":2,
@@ -27166,7 +25491,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Forward Aid Post",
                     "cost":20,
                     "br":5,
@@ -27184,13 +25508,11 @@ var forces = [
             ]
         },
         {
-            "id":9, 
             "name":"Specialist Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Anti-Aircraft Vehicle",
                     "cost":24,
                     "br":1,
@@ -27205,7 +25527,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"ZSU-37 AA Vehicle",
                     "cost":20,
                     "unique":true,
@@ -27213,7 +25534,6 @@ var forces = [
                     "br":2
                 },
                 {
-                    "id":3,
                     "name":"Towed Anti-Aircraft Gun",
                     "cost":36,
                     "br":1,
@@ -27241,7 +25561,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Heavy Anti-Tank Gun",
                     "cost":72,
                     "unique":true,
@@ -27271,7 +25590,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"SU-57",
                     "cost":22,
                     "v":247,
@@ -27281,13 +25599,11 @@ var forces = [
             ]
         },
         {
-            "id":10, 
             "name":"Additional Fire Support",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Off-Table Artillery Request",
                     "cost":5,
                     "br":0,
@@ -27303,52 +25619,44 @@ var forces = [
                     ]
                 },
             {
-                "id":2,
                 "name":"Pre-Registered Target Point",
                 "cost":10,
                 "br":0
             },
             {
-                "id":3,
                 "name":"Counter-Battery Fire Mission",
                 "cost":10,
                 "br":0
             },
             {
-                "id":4,
                 "name":"Timed 122mm Barrage",
                 "w":47,
                 "cost":20,
                 "br":0
             },
             {
-                "id":5,
                 "name":"Timed 152mm Barrage",
                 "w":49,
                 "cost":30,
                 "br":0
             },
             {
-                "id":6,
                 "name":"Timed Katyusha Barrage",
                 "w":51,
                 "cost":25,
                 "br":0
             },
             {
-                "id":7,
                 "name":"Timed IL-2 Air Strike",
                 "cost":10,
                 "br":0
             },
             {
-                "id":8,
                 "name":"Timed PE-2 Air Strike",
                 "cost":20,
                 "br":0
             },
             {
-                "id":9,
                 "name":"Timed IL-4 Air Strike",
                 "cost":25,
                 "restricted":true,
@@ -27370,13 +25678,11 @@ var forces = [
         ],
         "sections":[
             {
-                "id":1, 
                 "name":"Forward Headquarters Units",
                 "allows":'[8,10]',
                 "requires":false,
                 "entries":[
                 {
-                    "id":1,
                     "name":"Forward Headquarters",
                     "cost":23,
                     "br":3,
@@ -27398,20 +25704,17 @@ var forces = [
                         ]
                 },
                 {
-                    "id":2,
                     "name":"Comms Relay Team",
                     "br":0,
                     "cost":13
                 },
                 {
-                    "id":3,
                     "name":"Motorcycle Dispatch Rider",
                     "br":0,
                     "v":50,
                     "cost":12
                 },
                 {
-                    "id":4,
                     "name":"Feldgendarme Team",
                     "br":"D6",
                     "cost":20,
@@ -27427,7 +25730,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Forward Signals Unit",
                     "br":1,
                     "cost":18,
@@ -27447,19 +25749,16 @@ var forces = [
                         ]
                 },
                 {
-                    "id":6,
                     "name":"Wire Team",
                     "br":0,
                     "cost":6
                 },
                 {
-                    "id":7,
                     "name":"To the Last Bullet",
                     "br":"D6",
                     "cost":15
                 },
                 {
-                    "id":8,
                     "name":"Backs to Berlin",
                     "br":"D6",
                     "cost":15
@@ -27467,14 +25766,12 @@ var forces = [
                 ]
             },
             {
-                "id":2, 
                 "name":"Infantry Units",
                 "allows":'[6,7,9]',
                 "requires":false,
                 "unique":true,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Volksgrenadier Platoon",
                         "cost":80, //greg confirm
                         "br":7, // greg confirm
@@ -27498,7 +25795,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 "br":0,
                                 "mandatory":true,
@@ -27522,7 +25818,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Volksgrenadier Squad",
                                 "count":3,
                                 "br":0,
@@ -27561,14 +25856,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
@@ -27585,7 +25878,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Heavy Machine Gun team",
                                 "cost":18, // greg confirm
                                 "br":1,
@@ -27608,7 +25900,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Panzerschreck Team",
                                 "w":108,
                                 "cost":22,
@@ -27616,7 +25907,6 @@ var forces = [
                                 "unique":true
                             },
                             {
-                                "id":7,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -27633,7 +25923,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Anti-tank Gun",
                                 "cost":27,
                                 "br":2,
@@ -27668,7 +25957,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":9,
                                 "name":"75mm Infantry Gun",
                                 "cost":19,
                                 "br":1,
@@ -27694,7 +25982,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Volksgrenadier Squad",
                         "cost":20,
                         "br":1,
@@ -27732,7 +26019,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Volkssturm Platoon",
                         "cost":71,
                         "br":5,
@@ -27750,7 +26036,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 "br":0,
                                 "mandatory":true,
@@ -27773,7 +26058,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Rifle Squad",
                                 "count":3,
                                 "br":0,
@@ -27818,7 +26102,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"MG Team",
                                 "count":3,
                                 "br":0,
@@ -27841,14 +26124,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":4,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":5,
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
@@ -27865,7 +26146,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":6,
                                 "name":"Panzerschreck Team",
                                 "cost":22,
                                 "br":1,
@@ -27873,7 +26153,6 @@ var forces = [
                                 "w":108
                             },
                             {
-                                "id":7,
                                 "cost":14,
                                 "name":"HMG Team",
                                 "br":1,
@@ -27897,7 +26176,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":8,
                                 "name":"Medium Mortar Team",
                                 "cost":24,
                                 "br":1,
@@ -27914,7 +26192,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":9,
                                 "name":"Infantry Gun",
                                 "cost":19,
                                 "br":1,
@@ -27938,7 +26215,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":10,
                                 "name":"Anti-tank Gun",
                                 "cost":20,
                                 "br":2,
@@ -27971,7 +26247,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"Volkssturm Squad",
                         "cost":12,
                         "br":1,
@@ -28016,7 +26291,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Auxiliary Platoon",
                         "cost":33,
                         "br":4,
@@ -28034,7 +26308,6 @@ var forces = [
                         "sub_text":"Platoon Components",
                         "sub_units":[
                             {
-                                "id":1,
                                 "name":"Command Squad",
                                 "br":0,
                                 "mandatory":true,
@@ -28050,7 +26323,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":2,
                                 "name":"Auxiliary Squad",
                                 "count":3,
                                 "br":0,
@@ -28081,14 +26353,12 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":3,
                                 "name":"Combat Medic",
                                 "cost":8,
                                 "br":0,
                                 "unique":true
                             },
                             {
-                                "id":4,
                                 "name":"Light Mortar Team",
                                 "cost":12,
                                 "br":1,
@@ -28105,7 +26375,6 @@ var forces = [
                                 ]
                             },
                             {
-                                "id":5,
                                 "name":"Panzerschreck Team",
                                 "cost":22,
                                 "br":1,
@@ -28113,7 +26382,6 @@ var forces = [
                                 "w":108
                             },
                             {
-                                "id":6,
                                 "cost":14,
                                 "name":"HMG Team",
                                 "br":1,
@@ -28138,7 +26406,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"Auxiliary Squad",
                         "cost":8,
                         "br":1,
@@ -28169,7 +26436,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Dismounted Panzer Crew",
                         "cost":15,
                         "br":3,
@@ -28194,7 +26460,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
                         "name":"Hitler Youth Tank Hunter Squad",
                         "cost":52,
                         "br":4,
@@ -28224,7 +26489,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":9, //greg implement this
                         "name":"Atypical Infantry",
                         "cost":0,
                         "br":0,
@@ -28234,13 +26498,11 @@ var forces = [
             },
             //greg got to here
             {
-                "id":3, 
                 "name":"Tank Units",
                 "allows":'[6,7,8,9]',
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"StuG III Battery",
                         "cost":120,
                         "multiplier":3,
@@ -28258,7 +26520,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"Panzer IV",
                         "cost":50,
                         "br":3,
@@ -28273,7 +26534,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"Panther",
                         "cost":90,
                         "br":3,
@@ -28289,7 +26549,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"StuG III",
                         "cost":43,
                         "br":3,
@@ -28304,7 +26563,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"Self-Propelled Anti-Tank Gun",
                         "cost":30,
                         "br":1,
@@ -28324,13 +26582,11 @@ var forces = [
                 ]
             },
             {
-                "id":4, 
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Forward Observer Team",
                         "cost":16,
                         "br":1,
@@ -28344,7 +26600,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":2,
                         "name":"76.2mmL54 Field Gun",
                         "cost":28,
                         "br":2,
@@ -28368,7 +26623,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":3,
                         "name":"105mmL28 Howitzer",
                         "cost":36,
                         "br":2,
@@ -28392,7 +26646,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":4,
                         "name":"150mmL30 Howitzer",
                         "w":26,
                         "cost":54,
@@ -28416,7 +26669,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":5,
                         "name":"100mmL52 Cannon",
                         "cost":58,
                         "br":2,
@@ -28441,7 +26693,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":6,
                         "name":"150mmL12 Infantry Gun",
                         "cost":54,
                         "br":2,
@@ -28465,7 +26716,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":7,
                         "name":"Off-Table Mortar Fire",
                         "cost":54,
                         "br":0,
@@ -28480,7 +26730,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":8,
                         "name":"Heavy Mortar Team",
                         "cost":29,
                         "br":1,
@@ -28510,7 +26759,6 @@ var forces = [
                         ]
                     },
                     {
-                        "id":9,
                         "name":"Off-Table Artillery Fire",
                         "cost":70,
                         "br":0,
@@ -28534,74 +26782,62 @@ var forces = [
                 ]
             },
             {
-                "id":5, 
                 "name":"Defences",
                 "allows":null,
                 "requires":false,
                 "entries":[
                     {
-                        "id":1,
                         "name":"Improvised Barricades",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":2,
                         "name":"Machine Gun Dug-out",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":3,
                         "name":"Machine Gun Pillbox",
                         "cost":54,
                         "br":1,
                         "restricted":true
                     },
                     {
-                        "id":4,
                         "name":"Mortar Pit",
                         "cost":32,
                         "br":1
                     },
                     {
-                        "id":5,
                         "name":"Fortified Building",
                         "cost":30,
                         "br":0
                     },
                     {
-                        "id":6,
                         "name":"Foxholes",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":7,
                         "name":"Trenches",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":8,
                         "name":"Sniper Hideout",
                         "cost":15,
                         "br":0
                     },
                     {
-                        "id":9,
                         "name":"AT Gun Dug-out",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":10,
                         "name":"Minefield",
                         "cost":20,
                         "br":0
                     },
                     {
-                        "id":11,
                         "name":"Command Bunker",
                         "cost":30,
                         "br":3,
@@ -28610,38 +26846,32 @@ var forces = [
                         "unique":true
                     },
                     {
-                        "id":12,
                         "name":"Artillery Observation Point",
                         "cost":26,
                         "br":1
                     },
                     {
-                        "id":13,
                         "name":"Booby Trapped Building",
                         "cost":25,
                         "br":0
                     },
                     {
-                        "id":14,
                         "name":"Barbed Wire",
                         "cost":10,
                         "br":0
                     },
                     {
-                        "id":15,
                         "name":"Improvised Road Block",
                         "cost":5,
                         "br":0
                     },
                     {
-                        "id":16,
                         "name":"Anti-Tank Ditch/Embankment",
                         "cost":20,
                         "br":0,
                         "restricted":true
                     },
                     {
-                        "id":17,
                         "name":"Off-table 88 Anti-Tank shot",
                         "cost":5,
                         "br":0
@@ -28649,13 +26879,11 @@ var forces = [
                 ]
             },
         {
-            "id":6, 
             "name":"Reconnaissance Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Sniper",
                     "cost":10,
                     "br":1,
@@ -28670,7 +26898,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Motorised Reconnaissance Patrol",
                     "cost":25,
                     "br":1,
@@ -28691,7 +26918,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Armoured Car",
                     "cost":20,
                     "br":1,
@@ -28706,7 +26932,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Reconnaissance Command",
                     "cost":35,
                     "br":2,
@@ -28722,7 +26947,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Fusilier Foot Patrol",
                     "cost":36,
                     "br":3,
@@ -28746,13 +26970,11 @@ var forces = [
             ]
         },
         {
-            "id":7, 
             "name":"Engineer Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Recovery Vehicle",
                     "cost":18,
                     "br":1,
@@ -28766,7 +26988,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Light Bridging Unit",
                     "cost":18,
                     "br":2,
@@ -28781,7 +27002,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Heavy Bridging Unit",
                     "cost":36,
                     "br":3,
@@ -28801,7 +27021,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Assault Pioneer Squad",
                     "cost":48,
                     "br":3,
@@ -28841,13 +27060,11 @@ var forces = [
             ]
         },
         {
-            "id":8, 
             "name":"Logistics Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Supply Column",
                     "cost":6,
                     "br":1,
@@ -28864,7 +27081,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Forward Aid Post",
                     "cost":20,
                     "br":5,
@@ -28880,7 +27096,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Stretcher Party",
                     "cost":10,
                     "br":1,
@@ -28894,7 +27109,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Ambulance",
                     "cost":14,
                     "br":2,
@@ -28912,13 +27126,11 @@ var forces = [
             ]
         },
         {
-            "id":9, 
             "name":"Specialist Support Units",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Heavy Anti-Aircraft Gun",
                     "cost":48,
                     "br":3,
@@ -28948,7 +27160,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":2,
                     "name":"Heavy Anti-Aircraft Gun(Flak39)",
                     "cost":54,
                     "br":3,
@@ -28979,7 +27190,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":3,
                     "name":"Heavy Anti-Tank Gun",
                     "cost":71,
                     "br":3,
@@ -29008,7 +27218,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":4,
                     "name":"Assault Howitzer",
                     "cost":45,
                     "br":3,
@@ -29024,7 +27233,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":5,
                     "name":"Anti-Aircraft Vehicle",
                     "cost":16,
                     "br":1,
@@ -29041,7 +27249,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":6,
                     "name":"Towed 20mm AA Gun",
                     "cost":28,
                     "br":1,
@@ -29065,7 +27272,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":7,
                     "name":"Towed 37mm AA Gun",
                     "cost":36,
                     "br":1,
@@ -29088,7 +27294,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":8,
                     "name":"Towed 20mm FlaK Vierling",
                     "cost":42,
                     "br":1,
@@ -29112,7 +27317,6 @@ var forces = [
                     ]
                 },
                 {
-                    "id":9,
                     "name":"Panzerjaeger Team",
                     "cost":22,
                     "br":1,
@@ -29129,13 +27333,11 @@ var forces = [
             ]
         },
         {
-            "id":10, 
             "name":"Additional Fire Support",
             "allows":null,
             "requires":true,
             "entries":[
                 {
-                    "id":1,
                     "name":"Off-Table Artillery Request",
                     "cost":5,
                     "br":0,
@@ -29151,39 +27353,33 @@ var forces = [
                     ]
                 },
             {
-                "id":2,
                 "name":"Pre-Registered Target Point",
                 "cost":15,
                 "br":0
             },
             {
-                "id":3,
                 "name":"Counter-Battery Fire Mission",
                 "cost":10,
                 "br":0
             },
             {
-                "id":4,
                 "name":"Timed 80mm Mortar Barrage",
                 "w":2,
                 "cost":5,
                 "br":0
             },
             {
-                "id":5,
                 "name":"Timed 105mm Barrage",
                 "w":22,
                 "cost":10,
                 "br":0
             },
             {
-                "id":6,
                 "name":"Timed 150mm Barrage",
                 "cost":20,
                 "br":0
             },
             {
-                "id":7,
                 "name":"Timed 150mm Nebelwefer Barrage",
                 "cost":30,
                 "w":27,
@@ -29261,7 +27457,7 @@ function render_sections(force, async) {
             text = text + "ui-state-disabled' data-requires='true'";
         else
             text = text + "selectable ' data-requires='false'";
-        text = text + " id=section_" + force['sections'][i].id + " data-section-no="+ force['sections'][i].id + ">";
+        text = text + " id=section_" + (i+1) + " data-section-no="+ (i+1) + ">";
         text = text+render_entries(force['sections'][i]['entries'], false, async);
         text = text + "</div></div>";
     }
