@@ -26503,6 +26503,46 @@ var forces = [
                 "requires":false,
                 "entries":[
                     {
+                        "name":"Panzer IV Platoon",
+                        "cost":160,
+                        "multiplier":3,
+                        "vc":3,
+                        "v":9,
+                        "restricted":true, // west
+                        "br":9,
+                        "officer":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"text":"3 Panzer IV H/Js"},
+                                    {"text":"4 Panzer IV H/Js","cost":58,"vc":4},
+                                    {"text":"5 Panzer IV H/Js","cost":116,"vc":5}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Panther Platoon",
+                        "cost":245,
+                        "multiplier":3,
+                        "br":9,
+                        "officer":true,
+                        "restricted":true, // west
+                        "v":187,
+                        "vc":3,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"text":"3 Panther Gs (or As)"},
+                                    {"text":"4 Panther Gs (or As)","cost":92,"vc":4},
+                                    {"text":"5 Panther Gs (or As)","cost":184,"vc":5}
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "name":"StuG III Battery",
                         "cost":120,
                         "multiplier":3,
@@ -26520,8 +26560,51 @@ var forces = [
                         ]
                     },
                     {
+                        "name":"Hetzer Battery",
+                        "cost":140,
+                        "multiplier":3,
+                        "vc":3,
+                        "v":0, //greg add this in
+                        "br":9,
+                        "restricted":true, // west
+                        "officer":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"text":"3 Hetzers"}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Nachtjaeger Platoon",
+                        "cost":250,
+                        "multiplier":3,
+                        "br":9,
+                        "officer":true,
+                        "restricted":true, // west
+                        "unique":true,
+                        "v":187,
+                        "vc":3,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"text":"3 Panther A/Gs"},
+                                    {"text":"4 Panther A/Gs","cost":92,"vc":4},
+                                    {"text":"5 Panther A/Gs)","cost":184,"vc":5},
+                                    {"text":"1 SdKfz 251/20 Uhu, 3 Panther A/Gs","v":"[57,187]","vc":"[1,3]"}, //greg add real uhu vehicle code
+                                    {"text":"1 SdKfz 251/20 Uhu, 4 Panther A/Gs","cost":104,"v":"[57,187]","vc":"[1,4]"}, //greg add real uhu vehicle code
+                                    {"text":"1 SdKfz 251/20 Uhu, 5 Panther A/Gs)","cost":196,"v":"[57,187]","vc":"[1,5]"} //greg add real uhu vehicle code
+
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "name":"Panzer IV",
-                        "cost":50,
+                        "cost":54,
                         "br":3,
                         "options":[
                             {
@@ -26535,9 +26618,8 @@ var forces = [
                     },
                     {
                         "name":"Panther",
-                        "cost":90,
+                        "cost":94,
                         "br":3,
-                        "restricted":true,
                         "v":187,
                         "options":[
                             {
@@ -26550,35 +26632,38 @@ var forces = [
                     },
                     {
                         "name":"StuG III",
-                        "cost":43,
+                        "cost":45,
                         "br":3,
-                        "v":18,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"text":"StuG III G"}
+                                    {"text":"StuG III G","v":18},
+                                    {"text":"StuG IV","cost":5,"v":189}
                                 ]
                             }
                         ]
                     },
                     {
-                        "name":"Self-Propelled Anti-Tank Gun",
-                        "cost":30,
-                        "br":1,
-                        "restricted":true,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"text":"Marder II","v":20},
-                                    {"text":"Marder III H","cost":4,"v":21},
-                                    {"text":"Marder III M","cost":-2,"v":22},
-                                    {"text":"Marder 38t (36r)","cost":4,"v":23}
-                                ]
-                            }
-                        ]
-                    }
+                        "name":"Hetzer",
+                        "cost":52,
+                        "br":3,
+                        "v":0 //greg add this in
+                    },
+                    {
+                        "name":"Panzer Ace",
+                        "multiplier":0,
+                        "cost":20,
+                        "br":0
+                    },
+                    {
+                        "name":"Atypical Tank",
+                        "multiplier":0,
+                        "cost":0,
+                        "unique":true,
+                        "br":0
+                    } //greg make this work
+
                 ]
             },
             {
@@ -26594,7 +26679,73 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"text":"Kübelwagen","v":54}
+                                    {"text":"Kübelwagen","v":54},
+                                    {"text":"SdKfz 251/18 (as SdKfz 251/3)","cost":16,"v":39}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Heavy Mortar Team",
+                        "cost":29,
+                        "br":1,
+                        "w":3,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"text":"120mm mortar & 3 crew"}
+                                ]
+                            },
+                            {
+                                "name":"Loader team",
+                                "choices":[
+                                    {"text":"None"},
+                                    {"text":"3-man loader team","cost":10}
+                                ]
+                            },
+                            {
+                                "name":"Mount",
+                                "choices":[
+                                    {"text":"None"},
+                                    {"text":"Medium Truck","cost":4,"v":91},
+                                    {"text":"Heavy Car","cost":4,"v":56}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Off-Table Mortar Fire",
+                        "cost":54,
+                        "br":0,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"text":"2 80mm mortars","w":2},
+                                    {"text":"2 120mm mortars","cost":18,"w":3}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Off-Table Artillery Fire",
+                        "cost":70,
+                        "br":0,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"text":"2 76.2mmL54 field guns",'w':45},
+                                    {"text":"2 88mmL56 gun","cost":10,'w':19},
+                                    {"text":"2 105mmL28 howitzer","cost":20,'w':22},
+                                    {"text":"2 122mmL23 howitzer","cost":46,'w':24},
+                                    {"text":"2 150mmL30 howitzer","cost":65,"w":26},
+                                    {"text":"2 100mmL52 cannon","cost":56,'w':21},
+                                    {"text":"2 170mmL50 cannon","cost":128,'w':28},
+                                    {"text":"2 150mm Nebelwerfer","cost":65,'w':27},
+                                    {"text":"2 210mm Nebelwerfer","cost":138,'w':30},
+                                    {"text":"2 280mm Nebelwerfer","cost":182,'w':31}
                                 ]
                             }
                         ]
@@ -26623,6 +26774,28 @@ var forces = [
                         ]
                     },
                     {
+                        "name":"88mmL56 AA Gun",
+                        "cost":51,
+                        "br":3,
+                        "w":19,
+                        "options":[
+                            {
+                                "name":"Loader team",
+                                "choices":[
+                                    {"text":"None"},
+                                    {"text":"3-man loader team","cost":10}
+                                ]
+                            },
+                            {
+                                "name":"Tow",
+                                "choices":[
+                                    {"text":"None"},
+                                    {"text":"SdkFz 7","cost":8}
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "name":"105mmL28 Howitzer",
                         "cost":36,
                         "br":2,
@@ -26641,6 +26814,29 @@ var forces = [
                                     {"text":"None"},
                                     {"text":"Horse drawn limber","cost":2},
                                     {"text":"Medium Truck","cost":4}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name":"122mmL23 Howitzer",
+                        "w":24,
+                        "cost":43,
+                        "br":2,
+                        "options":[
+                            {
+                                "name":"Loader team",
+                                "choices":[
+                                    {"text":"None"},
+                                    {"text":"3-man loader team","cost":10}
+                                ]
+                            },
+                            {
+                                "name":"Tow",
+                                "choices":[
+                                    {"text":"None"},
+                                    {"text":"Horse drawn limber","cost":2},
+                                    {"text":"heavy Truck","cost":6}
                                 ]
                             }
                         ]
@@ -26714,70 +26910,6 @@ var forces = [
                                 ]
                             }
                         ]
-                    },
-                    {
-                        "name":"Off-Table Mortar Fire",
-                        "cost":54,
-                        "br":0,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"text":"2 80mm mortars","w":2},
-                                    {"text":"2 120mm mortars","cost":18,"w":3}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name":"Heavy Mortar Team",
-                        "cost":29,
-                        "br":1,
-                        "w":3,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"text":"120mm mortar & 3 crew"}
-                                ]
-                            },
-                            {
-                                "name":"Loader team",
-                                "choices":[
-                                    {"text":"None"},
-                                    {"text":"3-man loader team","cost":10}
-                                ]
-                            },
-                            {
-                                "name":"Mount",
-                                "choices":[
-                                    {"text":"None"},
-                                    {"text":"Medium Truck","cost":4,"v":91},
-                                    {"text":"Heavy Car","cost":4,"v":56}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name":"Off-Table Artillery Fire",
-                        "cost":70,
-                        "br":0,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"text":"2 76.2mmL54 field guns",'w':45},
-                                    {"text":"2 105mmL28 howitzer","cost":20,'w':22},
-                                    {"text":"2 122mmL23 howitzer","cost":46,'w':24},
-                                    {"text":"2 150mmL30 howitzer","cost":65,"w":26},
-                                    {"text":"2 100mmL52 cannon","cost":56,'w':21},
-                                    {"text":"2 170mmL50 cannon","cost":128,'w':28},
-                                    {"text":"2 150mm Nebelwerfer","cost":65,'w':27},
-                                    {"text":"2 210mm Nebelwerfer","cost":138,'w':30},
-                                    {"text":"2 280mm Nebelwerfer","cost":182,'w':31}
-                                ]
-                            }
-                        ]
                     }
                 ]
             },
@@ -26809,7 +26941,7 @@ var forces = [
                     },
                     {
                         "name":"Fortified Building",
-                        "cost":30,
+                        "cost":20,
                         "br":0
                     },
                     {
@@ -26878,6 +27010,7 @@ var forces = [
                     }
                 ]
             },
+            //greg got to here
         {
             "name":"Reconnaissance Support Units",
             "allows":null,
