@@ -26839,9 +26839,20 @@ var forces = [
                         "multiplier":0,
                         "cost":0,
                         "unique":true,
-                        "br":0
-                    } //greg make this work
-
+                        "br":0,
+                        "sub_text":"Select",
+                        "sub_heading":"You may only choose one.",
+                        "sub_units":{
+                            "refer": [
+                                // Kursk Pzr (only duplicates in Kursk ID)
+                                [1,3,[6,7,8,9,10]],
+                                [1,9,[2,4,5,7]],
+                                // Overlord Ersatz
+                                [10,3,[3,5]],
+                                [10,9,[2]]
+                            ]
+                        }
+                    }
                 ]
             },
             {
@@ -27914,7 +27925,29 @@ var forces = [
 ];
 
 function render_sub_units_to(sub) {
-    $(this).html(render_entries(sub, true, false));
+    // Check if it's a dynamically created sub-entry such as an atypical tank
+    if ( sub.refer != undefined ) {
+        var dynamic = new Array();
+        var forceID, sectionID, unitID;
+        var force;
+        for ( var i=0; i<sub.refer.length; i++ ) {
+            force = force_by_id(sub.refer[i][0]);
+            console.log('searching for ' + sub.refer[i][0]);
+            console.log('forceID is ' + force.id + ' name is ' + force.name);
+            sectionID = sub.refer[i][1];
+            entryArray = sub.refer[i][2];
+            for ( var j=0; j<entryArray.length; j++ ) {
+                //greg
+                console.log('adding ' + force.sections[sectionID-1].entries[entryArray[j]-1].name);
+                dynamic.push(force.sections[sectionID-1].entries[entryArray[j]-1]);
+                dynamic[dynamic.length-1].unique='true';
+            }
+        }
+        $(this).html(render_entries(dynamic, true, false));
+        // create the entries item and pass to render_entries
+    } else {
+        $(this).html(render_entries(sub, true, false));
+    }
     $('body').append($(this));
     update_selectable($(this));
 }
@@ -28284,8 +28317,12 @@ function render_entries(entries, sub_entries, async) {
                     text = text + "</select></div>";
                 }
             }
-            if ( entries[i]['sub_units'] )
-                text = text + "<button class='sub_button'>"+entries[i]['sub_text']+"</button>";
+            if ( entries[i]['sub_units'] ) {
+                text = text + "<button class='sub_button'";
+                if ( entries[i]['sub_heading'] )
+                    text = text + " data-sub_heading='" + entries[i]['sub_heading'] + "'";
+                text = text + ">"+entries[i]['sub_text']+"</button>";
+            }
             if ( entries[i]['warning'] )
                 text = text + "<div><span style='display:inline-block; width:100%; background-color:A80000;'>"+entries[i]['warning']+"</span></div>";
             text = text + "</div>";
@@ -28683,7 +28720,10 @@ function sub_button_bind() {
         event.preventDefault();
         var parent = $(this).parent();
         var sub = $('#'+parent.data('sub'));
-        sub.dialog({title:$(this).html(), modal:true, width:'950'});
+        var title = $(this).html();
+        if ($(this).data('sub_heading'))
+            title = $(this).data('sub_heading');
+        sub.dialog({title:title, modal:true, width:'950'});
     });
 
 }
