@@ -26671,7 +26671,20 @@ var forces = [
                         "name":"Atypical Infantry",
                         "cost":0,
                         "br":0,
-                        "unique":true
+                        "unique":true,
+                        "sub_text":"Select",
+                        "sub_heading":"You may only choose one.",
+                        "sub_units":{
+                            "refer": [
+                                [1,2,[1,2,3,4,5,6]],
+                                [2,2,[1,2,3,4]],
+                                [9,2,[1,2,3,4]],
+                                [10,2,[1,2,3,4]],
+                                [15,2,[1,2,3,4]],
+                                [16,2,[1,2]],
+                                [17,2,[1,2,3,4]]
+                            ]
+                        }
                     }
                 ]
             },
@@ -27932,13 +27945,9 @@ function render_sub_units_to(sub) {
         var force;
         for ( var i=0; i<sub.refer.length; i++ ) {
             force = force_by_id(sub.refer[i][0]);
-            console.log('searching for ' + sub.refer[i][0]);
-            console.log('forceID is ' + force.id + ' name is ' + force.name);
             sectionID = sub.refer[i][1];
             entryArray = sub.refer[i][2];
             for ( var j=0; j<entryArray.length; j++ ) {
-                //greg
-                console.log('adding ' + force.sections[sectionID-1].entries[entryArray[j]-1].name);
                 dynamic.push(force.sections[sectionID-1].entries[entryArray[j]-1]);
                 dynamic[dynamic.length-1].unique='true';
             }
