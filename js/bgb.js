@@ -28525,46 +28525,55 @@ var forces = [
                         "officer":true,
                         "options":[ 
                             { 
-                                greg these are missing br entries, fix them
-                                    maybe order them by total cost as well...
                                 "name":"Composition", 
                                 "choices":[ 
                                     {"text":"3 M4s","vc":"[3,0]"},
-                                    {"text":"4 M4s","cost":50,"br":3,"vc":"[4,0]"},
-                                    {"text":"5 M4s","cost":100,"br":6,"vc":"[5,0]"} ,
-                                    {"text":"3 M4 Shermans (76mm)","cost":12,"vc":"[0,3]"},
-                                    {"text":"4 M4 Shermans (76mm)","cost":66,"br":3,"vc":"[0,4]"},
-                                    {"text":"5 M4 Shermans (76mm)","cost":120,"br":6,"vc":"[0,5]"},
-                                    {"text":"3 M4A3E8s","cost":18,"vc":3,"v":267},
-                                    {"text":"4 M4A3E8s","cost":74,"br":3,"vc":4,"v":267},
-                                    {"text":"5 M4A3E8s","cost":130,"br":6,"vc":5,"v":267},
+                                    {"text":"2 M4, 1 M4 Sherman (76mm)","vc":"[2,1]","cost":4},
+                                    {"text":"2 M4, 1 M4A3E8","vc":"[2,1]","v":"[100,267]","cost":6},
                                     {"text":"1 M4, 2 M4 Shermans (76mm)","vc":"[1,2]","cost":8},
                                     {"text":"1 M4, 1 M4 Shermans (76mm), 1 M4A3E8","vc":"[1,1,1]","v":"[100,104,267]","cost":10},
                                     {"text":"1 M4, 2 M4A3E8","vc":"[1,2]","v":"[100,267]","cost":12},
-                                    {"text":"1 M4, 3 M4 Shermans (76mm)","vc":"[1,3]","cost":62},
-                                    {"text":"1 M4, 2 M4 Shermans (76mm), 1 M4A3E8","vc":"[1,2,1]","v":"[100,104,267]","cost":64},
-                                    {"text":"1 M4, 1 M4 Shermans (76mm), 2 M4A3E8","vc":"[1,1,2]","v":"[100,104,267]","cost":66},
-                                    {"text":"1 M4, 3 M4A3E8","vc":"[1,3]","v":"[100,267]","cost":68},
-                                    {"text":"1 M4, 4 M4 Shermans (76mm)","vc":"[1,4]","cost":116},
-                                    {"text":"1 M4, 4 M4A3E8","vc":"[1,4]","v":"[100,267]","cost":124},
-                                    {"text":"1 M4, 2 M4 Shermans (76mm), 2 M4A3E8","vc":"[1,2,2]","v":"[100,104,267]","cost":120},
-                                    {"text":"2 M4, 1 M4 Sherman (76mm)","vc":"[2,1]","cost":4},
-                                    {"text":"2 M4, 1 M4A3E8","vc":"[2,1]","v":"[100,267]","cost":6},
-                                    {"text":"2 M4, 2 M4 Shermans (76mm)","vc":"[2,2]","cost":58},
-                                    {"text":"2 M4, 2 M4A3E8","vc":"[2,2]","v":"[100,267]","cost":62},
-                                    {"text":"2 M4, 3 M4 Shermans (76mm)","vc":"[2,3]","cost":112},
-                                    {"text":"2 M4, 3 M4A3E8","vc":"[2,3]","v":"[100,267]","cost":118},
-                                    {"text":"3 M4, 1 M4 Sherman (76mm)","vc":"[3,1]","cost":54},
-                                    {"text":"3 M4, 1 M4A3E8","vc":"[3,1]","v":"[100,267]","cost":56},
-                                    {"text":"3 M4, 2 M4 Shermans (76mm)","vc":"[3,2]","cost":108},
-                                    {"text":"3 M4, 2 M4A3E8","vc":"[3,2]","v":"[100,267]","cost":112},
-                                    {"text":"4 M4, 1 M4 Sherman (76mm)","vc":"[4,1]","cost":104},
-                                    {"text":"4 M4, 1 M4A3E8","vc":"[4,1]","v":"[100,267]","cost":106},
-                                    //greg and all the combinations
+                                    {"text":"3 M4 Shermans (76mm)","cost":12,"vc":"[0,3]"},
+                                    {"text":"2 M4 Shermans (76mm), 1 M4A3E8","vc":"[2,1]","v":"[104,267]","cost":14},
+                                    {"text":"1 M4 Shermans (76mm), 2 M4A3E8","vc":"[1,2]","v":"[104,267]","cost":16},
+                                    {"text":"3 M4A3E8s","cost":18,"vc":3,"v":267},
+                                    {"text":"4 M4s","cost":50,"br":3,"vc":"[4,0]"},
+                                    {"text":"3 M4, 1 M4 Sherman (76mm)","br":3,"vc":"[3,1]","cost":54},
+                                    {"text":"3 M4, 1 M4A3E8","br":3,"vc":"[3,1]","v":"[100,267]","cost":56},
+                                    {"text":"2 M4, 2 M4 Shermans (76mm)","br":3,"vc":"[2,2]","cost":58},
+                                    {"text":"2 M4, 2 M4A3E8","vc":"[2,2]","br":3,"v":"[100,267]","cost":62},
+                                    {"text":"1 M4, 3 M4 Shermans (76mm)","br":3,"vc":"[1,3]","cost":62},
+                                    {"text":"1 M4, 2 M4 Shermans (76mm), 1 M4A3E8","br":3,"vc":"[1,2,1]","v":"[100,104,267]","cost":64},
+                                    {"text":"4 M4 Shermans (76mm)","cost":66,"br":3,"vc":"[0,4]"},
+                                    {"text":"1 M4, 1 M4 Shermans (76mm), 2 M4A3E8","br":3,"vc":"[1,1,2]","v":"[100,104,267]","cost":66},
+                                    {"text":"3 M4 Shermans (76mm), 1 M4A3E8","br":3,"vc":"[3,1]","v":"[104,267]","cost":68},
+                                    {"text":"1 M4, 3 M4A3E8","br":3,"vc":"[1,3]","v":"[100,267]","cost":68},
+                                    {"text":"2 M4 Shermans (76mm), 2 M4A3E8","br":3,"vc":"[2,2]","v":"[104,267]","cost":70},
+                                    {"text":"4 M4A3E8s","cost":74,"br":3,"vc":4,"v":267},
+                                    {"text":"5 M4s","cost":100,"br":6,"vc":"[5,0]"} ,
+                                    {"text":"4 M4, 1 M4 Sherman (76mm)","br":6,"vc":"[4,1]","cost":104},
+                                    {"text":"4 M4, 1 M4A3E8","br":6,"vc":"[4,1]","v":"[100,267]","cost":106},
+                                    {"text":"3 M4, 2 M4 Shermans (76mm)","br":6,"vc":"[3,2]","cost":108},
+                                    {"text":"3 M4, 1 M4 Shermans (76mm), 1 M4A3E8","br":6,"vc":"[3,1,1]","v":"[100,104,267]","cost":110},
+                                    {"text":"3 M4, 2 M4A3E8","vc":"[3,2]","br":6,"v":"[100,267]","cost":112},
+                                    {"text":"2 M4, 3 M4 Shermans (76mm)","br":6,"vc":"[2,3]","cost":112},
+                                    {"text":"2 M4, 2 M4 Shermans (76mm), 1 M4A3E8","br":6,"vc":"[2,2,1]","v":"[100,104,267]","cost":114},
+                                    {"text":"1 M4, 4 M4 Shermans (76mm)","br":6,"vc":"[1,4]","cost":116},
+                                    {"text":"2 M4, 1 M4 Shermans (76mm), 2 M4A3E8","br":6,"vc":"[2,1,2]","v":"[100,104,267]","cost":116},
+                                    {"text":"1 M4, 3 M4 Shermans (76mm), 1 M4A3E8","br":6,"vc":"[1,3,1]","v":"[100,104,267]","cost":118},
+                                    {"text":"2 M4, 3 M4A3E8","vc":"[2,3]","br":6,"v":"[100,267]","cost":118},
+                                    {"text":"1 M4, 2 M4 Shermans (76mm), 2 M4A3E8","br":6,"vc":"[1,2,2]","v":"[100,104,267]","cost":120},
+                                    {"text":"5 M4 Shermans (76mm)","cost":120,"br":6,"vc":"[0,5]"},
+                                    {"text":"1 M4, 1 M4 Shermans (76mm), 3 M4A3E8","br":6,"vc":"[1,1,3]","v":"[100,104,267]","cost":122},
+                                    {"text":"1 M4, 4 M4A3E8","br":6,"vc":"[1,4]","v":"[100,267]","cost":124},
+                                    {"text":"3 M4 Shermans (76mm), 2 M4A3E8","br":6,"vc":"[3,2]","v":"[104,267]","cost":124},
+                                    {"text":"2 M4 Shermans (76mm), 3 M4A3E8","br":6,"vc":"[2,3]","v":"[104,267]","cost":126},
+                                    {"text":"5 M4A3E8s","cost":130,"br":6,"vc":5,"v":267}
                                 ] 
                             }
                         ] 
                     }, 
+                //greg got to here
                     {
                         "name":"Light Tank Platoon",
                         "cost":90, 
@@ -29239,7 +29248,7 @@ var forces = [
                 ]
             }
         ]
-    },
+    }
 ];
 
 function render_sub_units_to(sub) {
