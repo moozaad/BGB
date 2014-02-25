@@ -1986,6 +1986,87 @@ var vehicles = [
     'mg':true,
     'ammo':true
 },
+{
+    'id':268,
+    'name':'M36 Jackson',
+    'armour':true,
+    'open':true,
+    'weapons':[121],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':269,
+    'name':'M18 Hellcat',
+    'armour':true,
+    'weapons':[69],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':270,
+    'name':'M4 Sherman Calliope',
+    'armour':true,
+    'weapons':[68], //greg also carries 4.5" rocket launcher
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':271,
+    'name':'M40 GMC',
+    'open':true,
+    'armour':true,
+    'weapons':[83],
+    'ammo':true
+},
+{
+    'id':272,
+    'name':'M43 GMC',
+    'open':true,
+    'armour':true,
+    'weapons':[86],
+    'ammo':true
+},
+{
+    'id':273,
+    'name':'Armoured Jeep',
+    'armour':true,
+    'open':true,
+    'mg':true,
+    'capacity':3
+},
+{
+    'id':274,
+    'name':'M4 Sherman Crocodile',
+    'armour':true,
+    'weapons':[68], //greg also carries flame-thrower
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':275,
+    'name':'M19 GMC',
+    'armour':true,
+    'open':true,
+    'weapons':[63],
+    'ammo':true
+},
+{
+    'id':276,
+    'name':'M4A3E2 Sherman Jumbo',
+    'armour':true,
+    'weapons':[68],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':277,
+    'name':'M4A3E2 Sherman Jumbo(76)',
+    'armour':true,
+    'weapons':[69],
+    'ammo':true,
+    'mg':true
+},
     // greg to-do, landing craft
 {
 }
@@ -28573,7 +28654,6 @@ var forces = [
                             }
                         ] 
                     }, 
-                //greg got to here
                     {
                         "name":"Light Tank Platoon",
                         "cost":90, 
@@ -28588,20 +28668,30 @@ var forces = [
                                 "choices":[ 
                                     {"text":"3 M5 Stuarts"}, 
                                     {"text":"4 M5 Stuarts","cost":30,"br":2,"vc":4}, 
-                                    {"text":"5 M5 Stuarts","cost":60,"br":4,"vc":5}
+                                    {"text":"5 M5 Stuarts","cost":60,"br":4,"vc":5},
+                                    {"text":"3 M24 Chaffees","v":232,"cost":24}, 
+                                    {"text":"4 M24 Chaffees","cost":62,"br":2,"vc":4,"v":232},
+                                    {"text":"5 M24 Chaffees","cost":100,"br":4,"vc":5,"v":232}
                                 ] 
                             } 
                         ] 
                     },
-                    { 
-                        "name":"Self-Propelled Tank Destroyer", 
-                        "cost":34, 
-                        "br":2, 
+                    {
+                        "name":"Heavy Tank Platoon",
+                        "cost":195, 
+                        "br":12, 
+                        "v":266,
+                        "restricted":true,
+                        "multiplier":4,
+                        "vc":3,
+                        "officer":true,
                         "options":[ 
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"text":"M10 Wolverine","v":132}
+                                    {"text":"3 M26 Pershings"}, 
+                                    {"text":"4 M26 Pershings","cost":72,"br":4,"vc":4}, 
+                                    {"text":"5 M26 Pershings","cost":144,"br":8,"vc":5}
                                 ] 
                             } 
                         ] 
@@ -28615,8 +28705,11 @@ var forces = [
                                 "name":"Composition", 
                                 "choices":[ 
                                     {"text":"M4 Sherman","v":100}, 
-                                    {"text":"M4 Sherman (76mmL53)","cost":4,"v":104}, 
-                                    {"text":"M5 Stuart","cost":-20,"v":89} 
+                                    {"text":"M4 Sherman (76mmL53)","cost":4,"v":104},
+                                    {"text":"M4A3E8 (HVVS)","cost":6,"v":267},
+                                    {"text":"M5 Stuart","cost":-20,"v":89,"br":-1},
+                                    {"text":"M24 Chaffee","cost":-12,"br":-1,"v":232},
+                                    {"text":"M26 Pershing","cost":22,"br":1,"v":266}
                                 ] 
                             } 
                         ] 
@@ -28632,11 +28725,34 @@ var forces = [
                                 "name":"Composition", 
                                 "choices":[ 
                                     {"text":"3 M10 Wolverines","v":132},
-                                    {"text":"4 M10 Wolverines","cost":34,"br":2,"v":132}
+                                    {"text":"4 M10 Wolverines","cost":34,"br":2,"v":132},
+                                    {"text":"3 M18 Hellcats","cost":12,"v":269},
+                                    {"text":"4 M18 Hellcats","cost":50,"br":2,"v":269},
+                                    {"text":"3 M36 Jacksons","cost":12,"v":268},
+                                    {"text":"4 M36 Jacksons","cost":82,"br":2,"v":268}
                                 ] 
                             } 
                         ] 
-                    } 
+                    }, 
+                    { 
+                        "name":"Self-Propelled Tank Destroyer", 
+                        "cost":34, 
+                        "br":2, 
+                        "options":[ 
+                            { 
+                                "name":"Composition", 
+                                "choices":[ 
+                                    {"text":"M10 Wolverine","v":132},
+                                    {"text":"M18 Hellcat","cost":4,"v":269},
+                                    {"text":"M36 Jackson","cost":12,"v":268}
+                                ] 
+                            } 
+                        ] 
+                    },
+                    { 
+                        "name":"Additional Armour",
+                        "cost":5
+                    }
                 ] 
             }, 
             {
@@ -28709,13 +28825,14 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"text":"M7 Priest", "v":155}
+                                    {"text":"M7 Priest", "v":155},
+                                    {"text":"M4 Sherman Calliope", "v":270,"restricted":true}
                                 ]
                             }
                         ]
                     },
                     {
-                        "name":"M12 Artillery Gun",
+                        "name":"M12",
                         "cost":52,
                         "br":2,
                         "unique":true,
@@ -28724,6 +28841,34 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"text":"M12","v":158}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name":"M40",
+                        "cost":52,
+                        "br":2,
+                        "unique":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"text":"M40","v":271}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name":"M43",
+                        "cost":70,
+                        "br":2,
+                        "unique":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"text":"M43","v":272}
                                 ]
                             }
                         ]
@@ -28746,7 +28891,7 @@ var forces = [
                     {
                         "name":"Heavy Mortar Team",
                         "cost":29,
-                        "br":0,
+                        "br":1,
                         "w":62,
                         "options":[
                             {
@@ -28793,6 +28938,14 @@ var forces = [
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "name":"Sherman Calliope Battery",
+                        "cost":172,
+                        "br":6,
+                        "v":270,
+                        "vc":2,
+                        "restricted":true
                     }
                 ]
             },
@@ -28900,9 +29053,11 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"text":"3 men & Jeep"},
+                                    {"text":"3 men & Armoured Jeep","cost":4,"v":273},
                                     {"text":"3 men & M20 Utility Car","cost":6,"v":143},
                                     {"text":"M8 Greyhound","cost":13,"v":142},
-                                    {"text":"M5 Stuart","cost":22,"v":116}
+                                    {"text":"M5 Stuart","cost":22,"v":116},
+                                    {"text":"M24 Chaffee","cost":30,"v":232}
                                 ]
                             }
                         ]
@@ -28916,14 +29071,15 @@ var forces = [
                                 "name":"Composition", 
                                 "choices":[ 
                                     {"text":"M5 Stuart","v":89},
-                                    {"text":"M5 Stuart 'recce'","cost":-22,"v":117}
+                                    {"text":"M5 Stuart 'recce'","cost":-22,"br":-1,"v":117},
+                                    {"text":"M24 Chaffee","cost":8,"v":232}
                                 ] 
                             } 
                         ] 
                     },
                     {
                         "name":"Armoured Infantry Patrol",
-                        "cost":43,
+                        "cost":56,
                         "br":3,
                         "options":[
                             {
@@ -28942,8 +29098,8 @@ var forces = [
                             {
                                 "name":"Troop Quality",
                                 "choices":[
-                                    {"text":"Irregular"},
-                                    {"text":"Regular","cost":13, "br":1}
+                                    {"text":"Regular"},
+                                    {"text":"Veteran (War Weary)","cost":13, "br":1}
                                 ]
                             }
                         ]
@@ -28951,8 +29107,16 @@ var forces = [
                     {
                         "name":"Jeep Reconnaissance Team",
                         "cost":24,
-                        "v":163,
-                        "br":1
+                        "br":1,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"text":"3 men & Jeep"},
+                                    {"text":"3 men & Armoured Jeep","cost":4,"v":273}
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
@@ -29056,6 +29220,21 @@ var forces = [
                         ]
                     },
                     {
+                        "name":"Flamethrower Tank",
+                        "cost":62,
+                        "br":3,
+                        "restricted":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"text":"M4 Sherman Crocodile","v":274},
+                                    {"text":"Churchill Crocodile","cost":18,"v":124}
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "name":"Armoured Engineering Vehicle",
                         "cost":54,
                         "br":3,
@@ -29065,7 +29244,9 @@ var forces = [
                                 "choices":[
                                     {"text":"M4 Sherman Dozer","v":108},
                                     {"text":"M4 Sherman Mineroller","v":107},
-                                    {"text":"Armoured Bulldozer","cost":-42,"br":-2,"v":160}
+                                    {"text":"M4 Sherman Crab","v":107},
+                                    {"text":"Armoured Bulldozer","cost":-42,"br":-2,"v":160},
+                                    {"text":"Churchill AVRE","cost":1,"v":123}
                                 ]
                             }
                         ]
@@ -29083,6 +29264,8 @@ var forces = [
                         "br":1,
                         "unique":true,
                         "v":91,
+                        //greg this needs more work to add M3 Halftrack and DUKW support
+                        // todo TODO
                         "options":[
                             {
                                 "name":"Composition",
@@ -29104,19 +29287,6 @@ var forces = [
                         ]
                     },
                     {
-                        "name":"Stretcher Party",
-                        "cost":10,
-                        "br":1,
-                        "options":[
-                            {
-                            "name":"Composition",
-                            "choices":[
-                                {"text":"2 men"}
-                            ]
-                            }
-                        ]
-                    },
-                    {
                         "name":"Ambulance",
                         "cost":14,
                         "br":2,
@@ -29128,6 +29298,19 @@ var forces = [
                                 {"text":"Jeep Ambulance","v":163},
                                 {"text":"Ambulance Medium Truck","cost":2,"v":91},
                                 {"text":"M3 Halftrack Ambulance","cost":6,"v":83}
+                            ]
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Stretcher Party",
+                        "cost":10,
+                        "br":1,
+                        "options":[
+                            {
+                            "name":"Composition",
+                            "choices":[
+                                {"text":"2 men"}
                             ]
                             }
                         ]
@@ -29164,8 +29347,91 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"text":"1 M4 Sherman (105mm)","v":105},
-                                    {"text":"1 M8 HMC","cost":-20,"br":-1,"v":156}
+                                    {"text":"1 M4 Sherman (105mm)","v":105}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Towed 40mm Bofors AA",
+                        "cost":34,
+                        "br":1,
+                        "w":63,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"text":"40mm Bofors AA with 3 crew"}
+                                ]
+                            },
+                            {
+                                "name":"Loader team",
+                                "choices":[
+                                    {"text":"None"},
+                                    {"text":"3-man loader team","cost":10}
+                                ]
+                            },
+                            {
+                                "name":"Tow",
+                                "choices":[
+                                    {"text":"None"},
+                                    {"text":"Medium Truck tow","cost":4,"v":91}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Towed M45 quad trailer AA",
+                        "cost":24,
+                        "br":1,
+                        "restricted":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"text":"M45 quad trailer AA with 3 crew"}
+                                ]
+                            },
+                            {
+                                "name":"Loader team",
+                                "choices":[
+                                    {"text":"None"},
+                                    {"text":"3-man loader team","cost":10}
+                                ]
+                            },
+                            {
+                                "name":"Tow",
+                                "choices":[
+                                    {"text":"None"},
+                                    {"text":"Jeep","cost":2,"v":163}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Towed 90mm AA",
+                        "cost":49,
+                        "br":2,
+                        "unique":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"text":"90mm AA with 4 crew"}
+                                ]
+                            },
+                            {
+                                "name":"Loader team",
+                                "choices":[
+                                    {"text":"None"},
+                                    {"text":"3-man loader team","cost":10}
+                                ]
+                            },
+                            {
+                                "name":"Tow",
+                                "choices":[
+                                    {"text":"None"},
+                                    {"text":"M4 HS Prime Mover","cost":10,"v":170}
                                 ]
                             }
                         ]
@@ -29181,6 +29447,28 @@ var forces = [
                                 "choices":[
                                     {"text":"M16 Half-Track","v":144},
                                     {"text":"M15 Half-Track","cost":-4,"v":145}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name":"M19 GMC",
+                        "cost":36,
+                        "br":2,
+                        "unique":true,
+                        "v":275
+                    },
+                    {
+                        "name":"Heavy Tank",
+                        "cost":66,
+                        "br":3,
+                        "restricted":true,
+                        "options":[
+                            {
+                                "name":"Composition",
+                                "choices":[
+                                    {"text":"M4A3E2 Jumbo","v":276},
+                                    {"text":"M4A3E2(76) Jumbo","cost":2,"v":277}
                                 ]
                             }
                         ]
@@ -29230,14 +29518,27 @@ var forces = [
                     "br":0
                 },
                 {
+                    "name":"Timed 8\" Barrage",
+                    "cost":30,
+                    "w":86,
+                    "br":0
+                },
+                {
+                    "name":"Timed Calliope Barrage",
+                    "cost":30,
+                    "unique":true,
+                    "w":77,
+                    "br":0
+                },
+                {
                     "name":"Time on Target Barrage",
                     "cost":5,
                     "multiplier":0,
                     "br":0
                 },
                 {
-                    "name":"Timed P-51 Air Strike",
-                    "cost":5,
+                    "name":"Timed P-38 Air Strike",
+                    "cost":10,
                     "br":0
                 },
                 {
