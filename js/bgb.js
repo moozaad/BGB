@@ -29271,17 +29271,30 @@ var forces = [
                                 "name":"Composition",
                                 "choices":[
                                     {"text":"1 Medium Truck"},
+                                    {"text":"1 DUKW","cost":2,"v":175},
                                     {"text":"2 Medium Trucks","cost":4},
+                                    {"text":"1 M3 Halftrack","cost":6,"v":148},
+                                    {"text":"1 Medium Truck, 1 DUKW","cost":6,"vc":"[1,1]","v":"[9,175]"},
+                                    {"text":"1 M30 Cargo Carrier","cost":8,"v":162},
+                                    {"text":"2 DUKWs","cost":8,"v":175,"vc":2},
                                     {"text":"3 Medium Trucks","cost":8},
+                                    {"text":"1 Medium Truck, 1 M3 Halftrack","cost":10,"vc":"[1,1]","v":"[9,148]"},
+                                    {"text":"2 Medium Trucks, 1 DUKW","cost":10,"vc":"[2,1]","v":"[9,175]"},
+                                    {"text":"1 Medium Truck, 2 DUKWs","cost":12,"vc":"[1,2]","v":"[9,175]"},
+                                    {"text":"1 Medium Truck, 1 M30 Cargo Carrier","cost":12,"vc":"[1,1]","v":"[9,162]"},
                                     {"text":"4 Medium Trucks","cost":12},
-                                    {"text":"5 Medium Trucks","cost":16}
-                                ]
-                            },
-                            {
-                                "name":"M30 Cargo Carrier",
-                                "choices":[
-                                    {"text":"None"},
-                                    {"text":"Replace 1 truck with M30","cost":8,"v":162}
+                                    {"text":"2 Medium Trucks, 1 M3 Halftrack","cost":14,"vc":"[2,1]","v":"[9,148]"},
+                                    {"text":"3 DUKWs","cost":14,"v":175,"vc":3},
+                                    {"text":"2 M3 Halftracks","cost":16,"v":148,"vc":2},
+                                    {"text":"2 Medium Trucks, 1 M30 Cargo Carrier","cost":16,"vc":"[2,1]","v":"[9,162]"},
+                                    {"text":"1 Medium Truck, 1 DUKW, 1 M3 Halftrack","cost":16,"vc":"[1,1,1]","v":"[9,175,148]"},
+                                    {"text":"5 Medium Trucks","cost":16},
+                                    {"text":"1 Medium Truck, 2 M3 Halftracks","cost":20,"vc":"[1,2]","v":"[9,148]"},
+                                    {"text":"4 DUKWs","cost":20,"v":175,"vc":4},
+                                    {"text":"5 DUKWs","cost":26,"v":175,"vc":5},
+                                    {"text":"3 M3 Halftracks","cost":26,"v":148,"vc":3},
+                                    {"text":"4 M3 Halftracks","cost":36,"v":148,"vc":4},
+                                    {"text":"5 M3 Halftracks","cost":46,"v":148,"vc":5}
                                 ]
                             }
                         ]
