@@ -23389,7 +23389,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[
-                                    {"text":"3 Cromwell IVs, 1 Challenger","v":"[114,102]","vc":"[3,1]"}
+                                    {"text":"3 Cromwell IVs, 1 Challenger","v":"[111,114]","vc":"[3,1]"}
                                 ] 
                             }
                         ] 
@@ -25951,7 +25951,7 @@ var forces = [
     },
     {
         "id":20,
-        "name":"Defence of the Reich Battlegrooup",
+        "name":"Defence of the Reich Battlegroup",
         "group":"German",
         "infantry":[
             [[1,0],[0,1]],
@@ -26063,8 +26063,8 @@ var forces = [
                         {
                             "name":"Troop Quality",
                             "choices":[
-                                {"text":"Regular"},
-                                {"text":"Veteran","cost":30, "br":4}
+                                {"text":"Irregular"},
+                                {"text":"Regular","cost":30, "br":4}
                             ]
                         },
                         {
