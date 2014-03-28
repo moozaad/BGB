@@ -18934,7 +18934,7 @@ var forces = [
                                         "name":"Gun type",
                                         "choices":[
                                             {"text":"50mm PaK38","w":9},
-                                            {"text":"75mm PaK40","cost":14,"w":14}
+                                            {"text":"75mm PaK40","cost":16,"w":14}
                                         ]
                                     },
                                     {
