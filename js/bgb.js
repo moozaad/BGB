@@ -8428,7 +8428,7 @@ var forces = [
                     {
                         "name":"Heavy Artillery Battery",
                         "cost":86,
-                        "br":0, //greg confirm this
+                        "br":4,
                         "options":[
                             {
                                 "name":"Composition",
@@ -14492,7 +14492,7 @@ var forces = [
                                         "name":"Tow",
                                         "choices":[
                                             {"text":"None"},
-                                            {"text":"Loyd Carrier tow","cost":5,"v":0}
+                                            {"text":"Loyd Carrier tow","cost":5,"v":150}
                                         ]
                                     }
                                 ]
@@ -14664,7 +14664,7 @@ var forces = [
                                         "name":"Tow",
                                         "choices":[
                                             {"text":"None"},
-                                            {"text":"Loyd Carrier tow","cost":5,"v":0}
+                                            {"text":"Loyd Carrier tow","cost":5,"v":150}
                                         ]
                                     }
                                 ]
@@ -15757,7 +15757,7 @@ var forces = [
                                         "name":"Tow",
                                         "choices":[
                                             {"text":"None"},
-                                            {"text":"Loyd Carrier tow","cost":5,"v":0}
+                                            {"text":"Loyd Carrier tow","cost":5,"v":150}
                                         ]
                                     }
                                 ]
@@ -22375,7 +22375,7 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"text":"88mmL71 PaK43 with 4 crew","cost":23,"w":20}
+                                {"text":"88mmL71 PaK43 with 4 crew","w":20}
                             ]
                         },
                         {
@@ -22838,7 +22838,7 @@ var forces = [
                                         "name":"Tow",
                                         "choices":[
                                             {"text":"None"},
-                                            {"text":"Loyd Carrier tow","cost":5,"v":0},
+                                            {"text":"Loyd Carrier tow","cost":5,"v":150},
                                             {"text":"Medium Truck tow","cost":4,"v":91}
                                         ]
                                     }
@@ -23028,7 +23028,7 @@ var forces = [
                                         "name":"Tow",
                                         "choices":[
                                             {"text":"None"},
-                                            {"text":"Loyd Carrier tow","cost":5,"v":0}
+                                            {"text":"Loyd Carrier tow","cost":5,"v":150}
                                         ]
                                     }
                                 ]
@@ -27715,7 +27715,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"text":"88mmL71 PaK43 with 4 crew","cost":23,"w":20},
+                                    {"text":"88mmL71 PaK43 with 4 crew","w":20},
                                     {"text":"128mmL55 PaK44 with 4 crew","cost":23,"w":118}
                                 ]
                             },
