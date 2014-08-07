@@ -14,12 +14,15 @@ function sub_timeout(sub_units, div) {
 }
 function army_size_string() { // todo check this costs in the book!
     var cost =  parseInt($('#force_cost').text(),10);
-    if (cost <= 350 )
+    if (cost <= 350 ) {
         return 'Squad';
-    if (cost <= 750 )
+    }
+    if (cost <= 750 ) {
         return 'Platoon';
-    if (cost <= 1500 )
+    }
+    if (cost <= 1500 ) {
         return 'Company';
+    }
     return 'Battalion';
 }
 function getURLParameter(name) {
@@ -29571,11 +29574,12 @@ function render_sub_units_to(sub) {
         var dynamic = new Array();
         var forceID, sectionID, unitID;
         var force;
-        for ( var i=0; i<sub.refer.length; i++ ) {
+        var i, j;
+        for ( i=0; i<sub.refer.length; i++ ) {
             force = force_by_id(sub.refer[i][0]);
             sectionID = sub.refer[i][1];
             entryArray = sub.refer[i][2];
-            for ( var j=0; j<entryArray.length; j++ ) {
+            for ( j=0; j<entryArray.length; j++ ) {
                 dynamic.push(force.sections[sectionID-1].entries[entryArray[j]-1]);
                 dynamic[dynamic.length-1].unique='true';
             }
