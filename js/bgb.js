@@ -17006,8 +17006,8 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"text":"3 M10 Wolverines","v":132},
-                                    {"text":"4 M10 Wolverines","cost":34,"br":2,"v":132}
+                                    {"text":"3 M10 Wolverines","v":132,"vc":3},
+                                    {"text":"4 M10 Wolverines","cost":34,"br":2,"v":132,"vc":4}
                                 ] 
                             } 
                         ] 
@@ -17121,7 +17121,7 @@ var forces = [
                     {
                         "name":"Heavy Mortar Team",
                         "cost":29,
-                        "br":0,
+                        "br":1,
                         "w":62,
                         "options":[
                             {
