@@ -25207,7 +25207,7 @@ var forces = [
                         "multiplier":2,
                         "br":6,
                         "officer":true,
-                        "v":76,
+                        "v":229,
                         "vc":2,
                         "options":[
                             {
