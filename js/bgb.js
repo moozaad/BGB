@@ -8204,7 +8204,7 @@ var forces = [
                         "name":"KV-1 Platoon",
                         "cost":140,
                         "multiplier":2,
-                        "br":6,
+                        "br":9,
                         "vc":3,
                         "options":[
                             {
@@ -8887,7 +8887,11 @@ var forces = [
                             "choices":[
                                 {"text":"None"},
                                 {"text":"Horse & limber","cost":2,"v":93},
-                                {"text":"Medium truck","cost":4,"v":91}
+                                {"text":"Medium truck","cost":4,"v":91},
+                                {"text":"2 x Horse & limber","cost":4,"vc":2,"v":93},
+                                {"text":"2 Medium trucks","cost":8,"vc":2,"v":91},
+                                {"text":"3 x Horse & limber","cost":6,"vc":3,"v":93},
+                                {"text":"3 Medium trucks","cost":12,"vc":3,"v":91}
                             ]
                         }
                     ]
