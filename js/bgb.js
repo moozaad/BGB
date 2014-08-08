@@ -29701,7 +29701,7 @@ var forces = [
                             "choices":[
                                 {"text":"Medium Radio Truck","v":91},
                                 {"text":"SdKfz 263","cost":6,"v":198},
-                                {"text":"SdKfz 222","cost":6,"v":33}
+                                {"text":"SdKfz 222","cost":6,"v":32}
                             ]
                         },
                         {
@@ -30868,33 +30868,30 @@ var forces = [
                         ] 
                     }
                 ]
-            }
-            /* 
-            ,
-            //greg got to here...
+            },
             {
                 "name":"Artillery Units",
                 "allows":[10],
                 "requires":false,
+                "officer":true,
                 "entries":[
                     {
                         "name":"Forward Observer Team",
-                        "cost":16,
+                        "cost":21,
                         "br":1,
                         "options":[
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"text":"Kübelwagen","v":54},
-                                    {"text":"SdKfz 250/12 (as SdKfz 250/3)","cost":16,"v":44},
-                                    {"text":"SdKfz 251/18 (as SdKfz 251/3)","cost":16,"v":39}
+                                    {"text":"Light Car","v":54},
+                                    {"text":"SdKfz 251/3","cost":8,"v":39}
                                 ]
                             }
                         ]
                     },
                     {
                         "name":"Aerial Artillery Observer",
-                        "cost":66,
+                        "cost":71,
                         "br":3,
                         "unique":true,
                         "options":[
@@ -30907,62 +30904,16 @@ var forces = [
                         ]
                     },
                     {
-                        "name":"Light Panzer Artillery Battery",
-                        "cost":86,
-                        "br":4,
-                        "v":29,
-                        "vc":2,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"text":"2 Wespe"}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name":"Medium Panzer Artillery Battery",
-                        "cost":136,
-                        "br":4,
-                        "v":30,
-                        "vc":2,
+                        "name":"Self-Propelled Battery",
+                        "cost":22,
                         "restricted":true,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"text":"2 Hummel"}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name":"Nebelwerfer Artillery Battery",
-                        "cost":86,
-                        "br":2,
-                        "vc":2,
-                        "restricted":true,
-                        "options":[
-                            {
-                                "name":"Composition",
-                                "choices":[
-                                    {"text":"2 SdKfz 251 Werfrahmen 40","v":203}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name":"Self-Propelled Artillery",
-                        "cost":43,
                         "br":2,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"text":"Wespe","v":29},
-                                    {"text":"Hummel","cost":25, "restricted":true,"v":30},
-                                    {"text":"SdKfz Wurfrahmen", "restricted":true}
+                                    {"text":"sIG33 auf Pz I","v":0}, //greg
+                                    {"text":"SdKfz 251 Wurfrahmen 40","cost":21,"v":203}
                                 ]
                             }
                         ]
@@ -30980,7 +30931,6 @@ var forces = [
                                     {"text":"2 100mm cannon","cost":36,'w':21},
                                     {"text":"2 170mm cannon","cost":108,'w':28},
                                     {"text":"2 150mm Nebelwerfer","cost":45,'w':27},
-                                    {"text":"2 210mm Nebelwerfer","cost":118,'w':30},
                                     {"text":"2 280mm Nebelwerfer","cost":162,'w':31}
                                 ]
                             }
@@ -30988,43 +30938,27 @@ var forces = [
                     },
                     {
                         "name":"Armoured Forward Observer",
-                        "cost":29,
+                        "cost":24,
                         "br":2,
+                        "unique":true,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"text":"1 Panzer II F","v":13},
-                                    {"text":"1 Panzer III H","v":6}
+                                    {"text":"SdKfz 265 Panzerbefehlswagen","v":0} // greg
                                 ]
                             }
                         ]
                     },
                     {
-                        "name":"Heavy Mortar Team",
-                        "cost":29,
-                        "br":1,
-                        "w":3,
+                        "name":"Off-Table Mortar Fire",
+                        "cost":54,
+                        "br":0,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"text":"120mm mortar & 3 crew"}
-                                ]
-                            },
-                            {
-                                "name":"Loader team",
-                                "choices":[
-                                    {"text":"None"},
-                                    {"text":"3-man loader team","cost":10}
-                                ]
-                            },
-                            {
-                                "name":"Mount",
-                                "choices":[
-                                    {"text":"None"},
-                                    {"text":"Medium Truck","cost":4,"v":91},
-                                    {"text":"Heavy Car","cost":4,"v":56}
+                                    {"text":"2 80mm mortars","w":2}
                                 ]
                             }
                         ]
@@ -31046,7 +30980,6 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"text":"None"},
-                                    {"text":"Medium Truck","cost":4,"v":91},
                                     {"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                 ]
                             }
@@ -31068,31 +31001,6 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"text":"None"},
-                                    {"text":"Heavy Truck","cost":6,"v":61},
-                                    {"text":"SdKfz 6 halftrack","cost":8,"v":64}
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name":"100mm Cannon",
-                        "cost":50,
-                        "br":2,
-                        "w":21,
-                        "restricted":true,
-                        "options":[
-                            {
-                                "name":"Loader team",
-                                "choices":[
-                                    {"text":"None"},
-                                    {"text":"3-man loader team","cost":10}
-                                ]
-                            },
-                            {
-                                "name":"Tow",
-                                "choices":[
-                                    {"text":"None"},
-                                    {"text":"Medium Truck","cost":6,"v":91},
                                     {"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                 ]
                             }
@@ -31115,22 +31023,22 @@ var forces = [
                                 "name":"Tow",
                                 "choices":[
                                     {"text":"None"},
-                                    {"text":"Medium Truck","cost":6,"v":91},
                                     {"text":"SdKfz 6 halftrack","cost":8,"v":64}
                                 ]
                             }
                         ]
                     },
                     {
-                        "name":"Off-Table Mortar Fire",
-                        "cost":54,
-                        "br":0,
+                        "name":"Nebelwerfer Artillery Battery",
+                        "cost":86,
+                        "br":2,
+                        "vc":2,
+                        "restricted":true,
                         "options":[
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"text":"2 80mm mortars","w":2},
-                                    {"text":"2 120mm mortars","cost":20,"w":3}
+                                    {"text":"2 SdKfz 251 Werfrahmen 40","v":203}
                                 ]
                             }
                         ]
@@ -31144,8 +31052,8 @@ var forces = [
                 "entries":[
                     {
                         "name":"Improvised Barricades",
-                        "cost":5,
-                        "br":0
+                        "br":0,
+                        "cost":5
                     },
                     {
                         "name":"Machine Gun Dug-out",
@@ -31158,36 +31066,25 @@ var forces = [
                         "br":1
                     },
                     {
-                        "name":"Fortified Building",
-                        "cost":30,
-                        "br":0
-                    },
-                    {
                         "name":"Foxholes",
-                        "cost":10,
-                        "br":0
+                        "br":0,
+                        "cost":10
                     },
                     {
                         "name":"Sniper Hideout",
-                        "cost":15,
                         "br":0,
-                        "restricted":true
-                    },
-                    {
-                        "name":"AT Gun Dug-out",
-                        "cost":20,
-                        "br":0,
-                        "restricted":true
-                    },
-                    {
-                        "name":"Booby Trapped Building",
-                        "cost":25,
-                        "br":0
+                        "cost":15
                     },
                     {
                         "name":"Improvised Road Block",
-                        "cost":5,
-                        "br":0
+                        "br":0,
+                        "cost":5
+                    },
+                    {
+                        "name":"AT Ditch/Embankment",
+                        "br":0,
+                        "cost":20,
+                        "restricted":true
                     }
                 ]
             },
@@ -31211,17 +31108,28 @@ var forces = [
                     ]
                 },
                 {
-                    "name":"Mounted Panzer Grenadier Patrol",
-                    "cost":28,
-                    "br":3,
+                    "name":"Recon Command",
+                    "cost":30,
+                    "br":2,
+                    "unique":true,
+                    "officer":true,
                     "options":[
                         {
-                            "name":"AT grenades",
+                            "name":"Transport",
                             "choices":[
-                                {"text":"None"},
-                                {"text":"Anti-tank grenades","cost":5}
+                                {"text":"SdKfz 223","v":33},
+                                {"text":"SdKfz 222","cost":4,"v":32},
+                                {"text":"SdKfz 231 or 232","cost":8,"v":34}
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "name":"Schützen Motorised Patrol",
+                    "cost":24,
+                    "br":3,
+                    "restricted":true,
+                    "options":[
                         {
                             "name":"Transport",
                             "choices":[
@@ -31231,37 +31139,51 @@ var forces = [
                     ]
                 },
                 {
-                    "name":"Motorcycle Reconnaissance Patrol",
-                    "cost":18,
-                    "br":1
+                    "name":"Motorised Panzerjaeger",
+                    "cost":26,
+                    "br":2,
+                    "unique":true,
+                    "w":7,
+                    "options":[
+                        {
+                            "name":"Tow",
+                            "choices":[
+                            {"text":"SdKfz 10 halftrack","v":62}
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "name":"Recon Platoon Command",
-                    "cost":44,
-                    "br":2,
+                    "name":"Schützen Motorised Recce Command",
+                    "cost":30,
+                    "br":3,
                     "unique":true,
                     "officer":true,
                     "options":[
                         {
                             "name":"Transport",
                             "choices":[
-                                {"text":"SdKfz 250/10","v":48},
-                                {"text":"SdKfz 250/11","v":49}
+                                {"text":"SdKfz 250/10","v":48}
                             ]
                         }
                     ]
                 },
                 {
-                    "name":"Panzer Grenadier Foot Patrol",
-                    "cost":36,
-                    "br":3,
+                    "name":"Kradschützen MG Patrol",
+                    "cost":27,
+                    "br":1
+                },
+                {
+                    "name":"Kradschützen Recce Patrol",
+                    "br":2,
+                    "cost":39,
                     "s":1,
                     "options":[
                         {
-                            "name":"MG",
+                            "name":"Mortar Spotter",
                             "choices":[
-                                {"text":"Bipod MG34"},
-                                {"text":"Bipod MG42","cost":4}
+                                {"text":"None"},
+                                {"text":"Mortar Spotter","cost":5}
                             ]
                         },
                         {
@@ -31270,44 +31192,47 @@ var forces = [
                                 {"text":"None"},
                                 {"text":"Anti-tank grenades","cost":5}
                             ]
-                        }
-                    ]
-                },
-                {
-                    "name":"Armoured Car",
-                    "cost":20,
-                    "br":1,
-                    "options":[
+                        },
                         {
-                            "name":"Composition",
+                            "name":"MG",
                             "choices":[
-                                {"text":"SdKfz 222","v":32},
-                                {"text":"SdKfz 231 or 232","cost":4,"v":34},
-                                {"text":"SdKfz 233","cost":14,"v":35},
-                                {"text":"SdKfz 250/7","cost":10, restricted:"true","v":45},
-                                {"text":"SdKfz 250/8","cost":4, restricted:"true","v":46},
-                                {"text":"SdKfz 250/9","cost":4, restricted:"true","v":47}
+                                {"text":"Bipod MG34"}
                             ]
                         }
                     ]
                 },
                 {
-                    "name":"Aerial Reconnaissance",
-                    "cost":50,
+                    "name":"Schützen Foot Patrol",
                     "br":2,
-                    "unique":true,
+                    "cost":33,
+                    "s":1,
                     "options":[
                         {
-                            "name":"Composition",
+                            "name":"Mortar Spotter",
                             "choices":[
-                                {"text":"Hs-126"},
-                                {"text":"Fw-189A 'UHU'","cost":20, br:"1"}
+                                {"text":"None"},
+                                {"text":"Mortar Spotter","cost":5}
+                            ]
+                        },
+                        {
+                            "name":"AT grenades",
+                            "choices":[
+                                {"text":"None"},
+                                {"text":"Anti-tank grenades","cost":5}
+                            ]
+                        },
+                        {
+                            "name":"MG",
+                            "choices":[
+                                {"text":"Bipod MG34"}
                             ]
                         }
                     ]
                 }
             ]
-        },
+        }
+            /*
+        ,      
         {
             "name":"Engineer Support Units",
             "allows":null,
