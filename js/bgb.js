@@ -29711,7 +29711,7 @@ var forces = [
     {
         "id":22,
         "group":"German",
-        "name":"Panzer Division (WIP Barbarossa)",
+        "name":"Panzer Division (Barbarossa)",
         "infantry":[
             [[1,0],[0,1]],
             [[0,1],[0,2]],
