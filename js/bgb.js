@@ -134,7 +134,7 @@ var vehicles = [
 },
 {
     'id':13,
-    'name':'Panzer II',
+    'name':'Panzer II F',
     'armour':true,
     'weapons':[4],
     'mg':true,
@@ -2097,6 +2097,85 @@ var vehicles = [
     'name':'SdKfz 251/4',
     'armour':true,
     'open':true,
+    'mg':true
+},
+{
+    'id':282,
+    'name':'SdKfz 247',
+    'armour':true,
+    'open':true
+},
+{
+    'id':283,
+    'name':'Panzerjaeger auf Pz I',
+    'armour':true,
+    'weapons':[114],
+    'ammo':true
+},
+{
+    'id':284,
+    'name':'sIG33 auf Pz I',
+    'armour':true,
+    'weapons':[25],
+    'ammo':true
+},
+{
+    'id':285,
+    'name':'SdKfz 265 Panzerbefehlswagen',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':286,
+    'name':'Panzer I',
+    'armour':true,
+    'mg':true
+},
+{
+    'id':287,
+    'name':'Panzer II C',
+    'armour':true,
+    'weapons':[4],
+    'mg':true,
+    'ammo':true
+},
+{
+    'id':288,
+    'name':'Panzer III F',
+    'armour':true,
+    'weapons':[123],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':289,
+    'name':'Panzer III G',
+    'armour':true,
+    'weapons':[8],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':290,
+    'name':'Toldi I',
+    'armour':true,
+    'weapons':[4],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':291,
+    'name':'Toldi II',
+    'armour':true,
+    'weapons':[4],
+    'ammo':true,
+    'mg':true
+},
+{
+    'id':292,
+    'name':'Flammpanzer II',
+    'armour':true,
+    'weapons':[32],
     'mg':true
 },
     // greg to-do, landing craft
@@ -29656,8 +29735,8 @@ var forces = [
                             "name":"Transport",
                             "choices":[
                                 {"text":"SdKfz 251/3","v":39},
-                                {"text":"SdKfz 247","v":0}, //greg
-                                {"text":"SdKfz 265 Panzerbefehlswagen","v":0}, //greg
+                                {"text":"SdKfz 247","v":282},
+                                {"text":"SdKfz 265 Panzerbefehlswagen","v":285},
                                 {"text":"Panzer II/F","cost":8,"v":13},
                                 {"text":"Panzer III/H or J","cost":26,"v":1},
                                 {"text":"Panzer III/H Panzerbefehlswagen","cost":10,"v":6},
@@ -30177,7 +30256,7 @@ var forces = [
                                     {
                                         "name":"Transport",
                                         "choices":[
-                                            {"text":"Light Car","v":0} //greg
+                                            {"text":"Light Car","v":53}
                                         ]
                                     }
                                 ]
@@ -30677,26 +30756,25 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"text":"3 Panzer II Cs","v":0}, //greg
-                                    {"text":"2 Panzer II Cs, 1 Panzer II F","cost":2,"vc":"[2,1]","v":"[0,13]"}, // greg
-                                    {"text":"1 Panzer II C, 2 Panzer II Fs","cost":4,"vc":"[1,2]","v":"[0,13]"}, // greg
+                                    {"text":"3 Panzer II Cs","v":287},
+                                    {"text":"2 Panzer II Cs, 1 Panzer II F","cost":2,"vc":"[2,1]","v":"[287,13]"},
+                                    {"text":"1 Panzer II C, 2 Panzer II Fs","cost":4,"vc":"[1,2]","v":"[287,13]"},
                                     {"text":"3 Panzer II/Fs","cost":6,"v":13},
-                                    {"text":"4 Panzer II Cs","cost":20,"vc":4,"v":0}, //greg
-                                    {"text":"3 Panzer II C, 1 Panzer II Fs","cost":22,"vc":"[3,1]","v":"[0,13]"}, // greg
-                                    {"text":"2 Panzer II C, 2 Panzer II Fs","cost":24,"vc":"[2,2]","v":"[0,13]"}, // greg
-                                    {"text":"1 Panzer II C, 3 Panzer II Fs","cost":26,"vc":"[1,3]","v":"[0,13]"}, // greg
+                                    {"text":"4 Panzer II Cs","cost":20,"vc":4,"v":287},
+                                    {"text":"3 Panzer II C, 1 Panzer II Fs","cost":22,"vc":"[3,1]","v":"[287,13]"},
+                                    {"text":"2 Panzer II C, 2 Panzer II Fs","cost":24,"vc":"[2,2]","v":"[287,13]"},
+                                    {"text":"1 Panzer II C, 3 Panzer II Fs","cost":26,"vc":"[1,3]","v":"[287,13]"},
                                     {"text":"4 Panzer II/Fs","cost":28,"vc":4,"v":13},
-                                    {"text":"5 Panzer II Cs","cost":40,"vc":5,"v":0}, //greg
-                                    {"text":"4 Panzer II C, 1 Panzer II Fs","cost":42,"vc":"[4,1]","v":"[0,13]"}, // greg
-                                    {"text":"3 Panzer II C, 2 Panzer II Fs","cost":44,"vc":"[3,2]","v":"[0,13]"}, // greg
-                                    {"text":"2 Panzer II C, 3 Panzer II Fs","cost":46,"vc":"[2,3]","v":"[0,13]"}, // greg
-                                    {"text":"1 Panzer II C, 4 Panzer II Fs","cost":48,"vc":"[1,4]","v":"[0,13]"}, // greg
+                                    {"text":"5 Panzer II Cs","cost":40,"vc":5,"v":287},
+                                    {"text":"4 Panzer II C, 1 Panzer II Fs","cost":42,"vc":"[4,1]","v":"[287,13]"},
+                                    {"text":"3 Panzer II C, 2 Panzer II Fs","cost":44,"vc":"[3,2]","v":"[287,13]"},
+                                    {"text":"2 Panzer II C, 3 Panzer II Fs","cost":46,"vc":"[2,3]","v":"[287,13]"},
+                                    {"text":"1 Panzer II C, 4 Panzer II Fs","cost":48,"vc":"[1,4]","v":"[287,13]"},
                                     {"text":"5 Panzer II/Fs","cost":50,"vc":5,"v":13}
                                 ]
                             }
                         ]
                     },
-                //greg here
                     {
                         "name":"Panzer III Squadron",
                         "cost":85,
@@ -30853,7 +30931,7 @@ var forces = [
                             { 
                                 "name":"Composition", 
                                 "choices":[ 
-                                    {"text":"Panzer I","restricted":true,"v":0}, // greg
+                                    {"text":"Panzer I","restricted":true,"v":286},
                                     {"text":"Panzer II C","v":0,"cost":6,"br":1},  //greg
                                     {"text":"Panzer II F","v":13,"cost":8,"br":1},
                                     {"text":"Panzer III F","v":0,"cost":20,"br":2},  //greg
@@ -30883,7 +30961,7 @@ var forces = [
                             {
                                 "name":"Transport",
                                 "choices":[
-                                    {"text":"Light Car","v":54},
+                                    {"text":"Light Car","v":53},
                                     {"text":"SdKfz 251/3","cost":8,"v":39}
                                 ]
                             }
@@ -30912,7 +30990,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"text":"sIG33 auf Pz I","v":0}, //greg
+                                    {"text":"sIG33 auf Pz I","v":284},
                                     {"text":"SdKfz 251 Wurfrahmen 40","cost":21,"v":203}
                                 ]
                             }
@@ -30945,7 +31023,7 @@ var forces = [
                             {
                                 "name":"Composition",
                                 "choices":[
-                                    {"text":"SdKfz 265 Panzerbefehlswagen","v":0} // greg
+                                    {"text":"SdKfz 265 Panzerbefehlswagen","v":285}
                                 ]
                             }
                         ]
@@ -31230,9 +31308,7 @@ var forces = [
                     ]
                 }
             ]
-        }
-            /*
-        ,      
+        },      
         {
             "name":"Engineer Support Units",
             "allows":null,
@@ -31272,20 +31348,6 @@ var forces = [
                     ]
                 },
                 {
-                    "name":"Flammpanzer III",
-                    "cost":50,
-                    "br":3,
-                    "restricted":true,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"text":"1 Flammpanzer III Ausf. M","v":5}
-                            ]
-                        }
-                    ]
-                },
-                {
                     "name":"Recovery Vehicle",
                     "cost":18,
                     "br":1,
@@ -31293,35 +31355,18 @@ var forces = [
                         {
                             "name":"Composition",
                             "choices":[
-                                {"text":"SdKfz 9 'Famo'","v":67},
-                                {"text":"Bergepanther","cost":20, "br":1, "restricted":true,"v":188}
+                                {"text":"SdKfz 9 'Famo'","v":67}
                             ]
                         }
                     ]
                 },
                 {
-                    "name":"Borgward Demolition Squadron",
-                    "cost":74,
-                    "br":5,
-                    "officer":true,
-                    "options":[
-                        {
-                            "name":"Command",
-                            "choices":[
-                                {"text":"StuG III Ausf. F","v":16},
-                                {"text":"Panzer III Ausf. L","v":2}
-                                ]
-                        },
-                        {
-                            "name":"Borgwards",
-                            "choices":[
-                                {"text":"1 Borgward B-IV","v":14},
-                                {"text":"2 Borgward B-IV","cost":10, "br":1,"v":14},
-                                {"text":"3 Borgward B-IV","cost":20, "br":2,"v":14},
-                                {"text":"4 Borgward B-IV","cost":30, "br":3,"v":14}
-                            ]
-                        }
-                    ]
+                    "name":"Flammpanzer II",
+                    "cost":22,
+                    "br":3,
+                    "v":292,
+                    "restricted":true,
+                    "unique":true
                 }
             ]
         },
@@ -31377,8 +31422,7 @@ var forces = [
                         {
                         "name":"Composition",
                         "choices":[
-                            {"text":"Kübelwagen Ambulance","v":54},
-                            {"text":"Ambulance medium truck","cost":2,"v":91},
+                            {"text":"Ambulance medium truck","v":91},
                             {"text":"SdKfz 251/8 Ambulance","cost":6,"v":228}
                         ]
                         }
@@ -31407,15 +31451,96 @@ var forces = [
             "requires":true,
             "entries":[
                 {
-                    "name":"Heavy Anti-Tank Gun",
+                    "name":"Heavy AA Gun",
                     "cost":51,
                     "br":3,
+                    "restricted":true,
                     "w":19,
+                    "options":[
+                        {
+                            "name":"Loader team",
+                            "choices":[
+                                {"text":"None"},
+                                {"text":"3-man loader team","cost":10}
+                            ]
+                        },
+                        {
+                            "name":"Tow",
+                            "choices":[
+                                {"text":"None"},
+                                {"text":"SdkFz 7","cost":8}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"Self-Propelled Anti-Tank Gun",
+                    "cost":18,
+                    "br":1,
+                    "restricted":true,
                     "options":[
                         {
                             "name":"Composition",
                             "choices":[
-                                {"text":"88mm AA/AT with 4 crew"}
+                                {"text":"Panzerjaeger auf Pz I","v":283}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"Panzerjaeger Battery",
+                    "cost":54,
+                    "br":4,
+                    "restricted":true,
+                    "options":[
+                        {
+                            "name":"Gun type",
+                            "choices":[
+                                {"text":"50mm PaK38","w":9}
+                            ]
+                        },
+                        {
+                            "name":"Loader team",
+                            "choices":[
+                                {"text":"None"},
+                                {"text":"3-man loader team","cost":10}
+                            ]
+                        },
+                        {
+                            "name":"Tow",
+                            "choices":[
+                                {"text":"None"},
+                                {"text":"Medium truck","cost":4,"v":91},
+                                {"text":"SdKfz 11","cost":6,"v":63}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"StuG III",
+                    "cost":24,
+                    "br":3,
+                    "v":15,
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"text":"1 StuG II (A to E)"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"Heavy Anti-Tank Gun",
+                    "cost":50,
+                    "br":2,
+                    "restricted":true,
+                    "w":21,
+                    "options":[
+                        {
+                            "name":"Composition",
+                            "choices":[
+                                {"text":"100mmL52 K18 Cannon with 4 crew"}
                             ]
                         },
                         {
@@ -31435,68 +31560,6 @@ var forces = [
                     ]
                 },
                 {
-                    "name":"Self-Propelled Anti-Tank Gun",
-                    "cost":30,
-                    "br":1,
-                    "restricted":true,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"text":"Marder II","v":20},
-                                {"text":"Marder III H","cost":4,"v":21},
-                                {"text":"Marder III M","cost":-2,"v":22},
-                                {"text":"Marder 38t (36r)","cost":4,"v":23}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name":"Panzer VI Squadron",
-                    "cost":223,
-                    "br":12,
-                    "multiplier":3,
-                    "unique":true,
-                    "officer":true,
-                    "v":11,
-                    "vc":3,
-                    "options":[
-                        {
-                        "name":"Composition",
-                        "choices":[
-                            {"text":"3 Tigers Is", "restricted":true}
-                        ]
-                        }
-                    ]
-                },
-                {
-                    "name":"Heavy Tank Hunter",
-                    "cost":136,
-                    "br":5,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"text":"1 Ferdinand", "restricted":true,"v":24},
-                                {"text":"1 Hornisse","cost":-80, "restricted":true,"br":-2,"v":25}
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name":"Captured Tank",
-                    "cost":42,
-                    "br":3,
-                    "options":[
-                        {
-                            "name":"Composition",
-                            "choices":[
-                                {"text":"1 Panzer T-34r","v":12}
-                            ]
-                        }
-                    ]
-                },
-                {
                     "name":"Anti-Aircraft Vehicle",
                     "cost":16,
                     "br":1,
@@ -31507,38 +31570,52 @@ var forces = [
                             "name":"Composition",
                             "choices":[
                             {"text":"SdKfz 10 with 20mm","w":4},
-                            {"text":"SdKfz with 37mm","cost":4,"w":5},
-                            {"text":"SdKfz with 20mm Flakvierling","cost":20,"w":4}
+                            {"text":"SdKfz 6 with 37mm","cost":4,"w":5,"v":64}
                             ]
                         }
                     ]
                 },
                 {
-                    "name":"Assault Howitzer",
-                    "cost":44,
-                    "br":3,
+                    "name":"20mm AA Gun",
+                    "cost":28,
+                    "br":1,
+                    "w":4,
                     "options":[
                         {
-                            "name":"Composition",
+                            "name":"Loader team",
                             "choices":[
-                                {"text":"StuH 42 F", "restricted":true,"v":17},
-                                {"text":"StuH 42 G","cost":6, "restricted":true,"v":19},
-                                {"text":"Brummbär","cost":20, "restricted":true, "br":1,"v":26}
+                                {"text":"None"},
+                                {"text":"3-man loader team","cost":10}
+                                ]
+                        },
+                        {
+                            "name":"Tow",
+                            "choices":[
+                            {"text":"None"},
+                            {"text":"Medium Truck tow","cost":4,"v":91},
+                            {"text":"SdKfz 10 halftrack", "cost":8,"v":62}
                             ]
                         }
                     ]
                 },
                 {
-                    "name":"Panzer VI",
-                    "cost":85,
-                    "br":4,
-                    "restricted":true,
-                    "v":11,
+                    "name":"37mm AA Gun",
+                    "cost":36,
+                    "br":1,
                     "options":[
                         {
-                            "name":"Composition",
+                            "name":"Loader team",
                             "choices":[
-                                {"text":"1 Panzer VI Tiger"}
+                                {"text":"None"},
+                                {"text":"3-man loader team","cost":10}
+                                ]
+                        },
+                        {
+                            "name":"Tow",
+                            "choices":[
+                            {"text":"None"},
+                            {"text":"Medium Truck tow","cost":4,"v":91},
+                            {"text":"SdKfz 11 halftrack", "cost":8,"v":63}
                             ]
                         }
                     ]
@@ -31587,8 +31664,14 @@ var forces = [
                     "br":0
                 },
                 {
-                    "name":"Timed FW-190 Air Strike",
-                    "cost":5,
+                    "name":"Timed Nebelwerfer Barrage",
+                    "cost":30,
+                    "br":0
+                },
+                {
+                    "name":"Timed 210mm Barrage",
+                    "cost":40,
+                    "unique":true,
                     "br":0
                 },
                 {
@@ -31597,14 +31680,12 @@ var forces = [
                     "br":0
                 },
                 {
-                    "name":"Timed He-111 Air Strike",
-                    "cost":25,
-                    "restricted":true,
+                    "name":"Timed Be-110 Air Strike",
+                    "cost":10,
                     "br":0
                 }
             ]
         }
-    */
         ]
     }
 ];
